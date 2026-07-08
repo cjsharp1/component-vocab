@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{COMPONENT_NAME}} — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#{{CATEGORY_ANCHOR}}">{{CATEGORY_NAME}}</a></li>
+        <li>{{COMPONENT_NAME}}</li>
+      </ul>
+    </nav>
+
+    <!-- Component Header -->
+    <section>
+      <h1>{{COMPONENT_NAME}}</h1>
+      <p>{{FUNCTIONAL_DESCRIPTION}}</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>{{ALSO_KNOWN_AS — or "No direct equivalent in major systems"}}</dd>
+        <dt>Semantic element</dt>
+        <dd><code>{{HTML_ELEMENT}}</code></dd>
+        <dt>Category</dt>
+        <dd>{{CATEGORY_NAME}}</dd>
+      </dl>
+    </section>
+
+    <!-- Elements -->
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- {{ELEMENTS_ROWS}} -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Default Wireframe -->
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <!-- {{DEFAULT_WIREFRAME_SVG}} -->
+      </div>
+    </section>
+
+    <!-- Configuration Options -->
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Config</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Config</th>
+            <th>Options</th>
+            <th>Affects Layout</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- {{CONFIG_ROWS}} -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Layout Variations -->
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <!-- {{VARIATION_WIREFRAMES}} -->
+      </div>
+    </section>
+
+    <!-- Collection Layout (if applicable) -->
+    <!-- {{COLLECTION_SECTION}} -->
+
+    <!-- Usage Notes -->
+    <section>
+      <h2>Usage Notes</h2>
+      <!-- {{USAGE_NOTES}} -->
+    </section>
+
+    <!-- Prev/Next Nav -->
+    <nav class="component-nav">
+      <a href="{{PREV_COMPONENT}}.html">&larr; {{PREV_NAME}}</a>
+      <a href="{{NEXT_COMPONENT}}.html">{{NEXT_NAME}} &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
