@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spinner — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#indicators-status">Indicators &amp; Status</a></li>
+        <li>Spinner</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Spinner</h1>
+      <p>A generic loading or processing animation indicating that work is in progress. Used when duration is unknown.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Spinner (Bootstrap), Circular Progress indeterminate (Material), Spin (Ant), Activity Indicator (Apple), Spinner (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code> with role="status"</dd>
+        <dt>Category</dt>
+        <dd>Indicators &amp; Status</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Animation</td><td>Yes</td><td>Spinning, pulsing, or animated indicator</td></tr>
+          <tr><td>Label</td><td>No</td><td>Text like "Loading..." for context</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="350" />
+
+          <!-- Animation (circular spinner) -->
+          <rect class="hover-target" x="340" y="120" width="120" height="120" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="115" x2="400" y2="95" />
+            <rect class="label-bg" x="342" y="79" width="116" height="20" />
+            <text class="label-text" x="400" y="93" text-anchor="middle">Animation</text>
+          </g>
+          <circle cx="400" cy="180" r="50" fill="none" stroke="#e0e0e0" stroke-width="6" />
+          <circle cx="400" cy="180" r="50" fill="none" stroke="#4a90d9" stroke-width="6" stroke-dasharray="157 314" stroke-linecap="round" />
+
+          <!-- Label (optional) -->
+          <rect class="hover-target" x="330" y="255" width="140" height="25" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="285" x2="400" y2="305" />
+            <rect class="label-bg" x="367" y="307" width="66" height="20" />
+            <text class="label-text" x="400" y="321" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="350" y1="267" x2="450" y2="267" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Size</td><td>Small, Default, Large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Style</td><td>Circular, Dots, Bars</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Label</td><td>Shown, Hidden</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Overlay</td><td>None, Full-page, Inline</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Small circular spinner -->
+              <circle cx="200" cy="100" r="20" fill="none" stroke="#e0e0e0" stroke-width="3" />
+              <circle cx="200" cy="100" r="20" fill="none" stroke="#4a90d9" stroke-width="3" stroke-dasharray="62 126" />
+            </svg>
+          </div>
+          <figcaption>Size: Small (circular)</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Large circular spinner -->
+              <circle cx="200" cy="100" r="60" fill="none" stroke="#e0e0e0" stroke-width="8" />
+              <circle cx="200" cy="100" r="60" fill="none" stroke="#4a90d9" stroke-width="8" stroke-dasharray="188 377" />
+            </svg>
+          </div>
+          <figcaption>Size: Large (circular)</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Dots spinner -->
+              <circle cx="150" cy="100" r="12" fill="#4a90d9" opacity="1.0" />
+              <circle cx="200" cy="100" r="12" fill="#4a90d9" opacity="0.6" />
+              <circle cx="250" cy="100" r="12" fill="#4a90d9" opacity="0.3" />
+            </svg>
+          </div>
+          <figcaption>Style: Dots</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Bars spinner -->
+              <rect x="165" y="70" width="8" height="60" rx="4" fill="#4a90d9" opacity="0.3" />
+              <rect x="185" y="60" width="8" height="80" rx="4" fill="#4a90d9" opacity="0.6" />
+              <rect x="205" y="50" width="8" height="100" rx="4" fill="#4a90d9" opacity="1.0" />
+              <rect x="225" y="60" width="8" height="80" rx="4" fill="#4a90d9" opacity="0.6" />
+            </svg>
+          </div>
+          <figcaption>Style: Bars</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for indeterminate loading when duration is unknown. For known progress, use Progress.</li>
+        <li>For content-shaped loading states, use Skeleton instead.</li>
+        <li>Provide accessible labeling with <code>role="status"</code> and an <code>aria-label</code> or visually-hidden text.</li>
+        <li>Full-page overlays block all interaction. Use sparingly and only for critical operations.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="progress.html">&larr; Progress</a>
+      <a href="dropdown.html">Dropdown &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

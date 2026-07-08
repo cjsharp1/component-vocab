@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#indicators-status">Indicators &amp; Status</a></li>
+        <li>Progress</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Progress</h1>
+      <p>A visual indicator of task or process completion. Shows how far along a process is.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Progress (Bootstrap), Linear/Circular Progress (Material), Progress (Ant), Progress View (Apple), Progress (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;progress&gt;</code> or <code>&lt;div&gt;</code> with role="progressbar"</dd>
+        <dt>Category</dt>
+        <dd>Indicators &amp; Status</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Bar/indicator</td><td>Yes</td><td>Visual representation of progress</td></tr>
+          <tr><td>Label/percentage</td><td>No</td><td>Numeric or text label showing progress</td></tr>
+          <tr><td>Steps</td><td>No</td><td>Discrete milestones in stepped progress</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="350" />
+
+          <!-- Label/percentage (optional) -->
+          <rect class="hover-target" x="100" y="120" width="100" height="25" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="150" y1="115" x2="150" y2="95" />
+            <rect class="label-bg" x="61" y="79" width="178" height="20" />
+            <text class="label-text" x="150" y="93" text-anchor="middle">Label/percentage</text>
+          </g>
+          <line class="text-line" x1="110" y1="135" x2="185" y2="135" />
+
+          <!-- Progress bar container -->
+          <rect x="100" y="170" width="600" height="30" rx="15" fill="#e0e0e0" stroke="#999" stroke-width="1" />
+
+          <!-- Bar/indicator (filled portion) -->
+          <rect class="hover-target" x="100" y="170" width="360" height="30" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="280" y1="205" x2="280" y2="225" />
+            <rect class="label-bg" x="206" y="227" width="148" height="20" />
+            <text class="label-text" x="280" y="241" text-anchor="middle">Bar/indicator</text>
+          </g>
+          <rect x="100" y="170" width="360" height="30" rx="15" fill="#4a90d9" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Style</td><td>Linear bar, Circular ring, Steps</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Label</td><td>Percentage, Fraction, None</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Default, Large</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Linear bar -->
+              <rect x="50" y="85" width="300" height="20" rx="10" fill="#e0e0e0" />
+              <rect x="50" y="85" width="180" height="20" rx="10" fill="#4a90d9" />
+              <text x="200" y="145" text-anchor="middle" font-size="14" fill="#666">60%</text>
+            </svg>
+          </div>
+          <figcaption>Style: Linear bar</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Circular ring -->
+              <circle cx="200" cy="100" r="50" fill="none" stroke="#e0e0e0" stroke-width="10" />
+              <circle cx="200" cy="100" r="50" fill="none" stroke="#4a90d9" stroke-width="10" stroke-dasharray="188 314" stroke-dashoffset="78.5" transform="rotate(-90 200 100)" />
+              <text x="200" y="108" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">60%</text>
+            </svg>
+          </div>
+          <figcaption>Style: Circular ring</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Steps -->
+              <circle cx="80" cy="100" r="15" fill="#4a90d9" stroke="none" />
+              <line x1="95" y1="100" x2="145" y2="100" stroke="#4a90d9" stroke-width="3" />
+              <circle cx="160" cy="100" r="15" fill="#4a90d9" stroke="none" />
+              <line x1="175" y1="100" x2="225" y2="100" stroke="#e0e0e0" stroke-width="3" />
+              <circle cx="240" cy="100" r="15" fill="none" stroke="#e0e0e0" stroke-width="3" />
+              <line x1="255" y1="100" x2="305" y2="100" stroke="#e0e0e0" stroke-width="3" />
+              <circle cx="320" cy="100" r="15" fill="none" stroke="#e0e0e0" stroke-width="3" />
+            </svg>
+          </div>
+          <figcaption>Style: Steps</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Small progress -->
+              <rect x="80" y="90" width="240" height="12" rx="6" fill="#e0e0e0" />
+              <rect x="80" y="90" width="120" height="12" rx="6" fill="#4a90d9" />
+              <text x="200" y="130" text-anchor="middle" font-size="12" fill="#666">50%</text>
+            </svg>
+          </div>
+          <figcaption>Size: Small</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use when completion percentage is known. For indeterminate loading, use Spinner.</li>
+        <li>Linear bars are best for horizontal layouts. Circular rings work well for compact spaces.</li>
+        <li>Steps are ideal for multi-stage processes like forms or onboarding.</li>
+        <li>Ensure the progress indicator is labeled with <code>aria-valuenow</code>, <code>aria-valuemin</code>, and <code>aria-valuemax</code> for accessibility.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="skeleton.html">&larr; Skeleton</a>
+      <a href="spinner.html">Spinner &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

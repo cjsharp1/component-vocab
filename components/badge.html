@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Badge — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#indicators-status">Indicators &amp; Status</a></li>
+        <li>Badge</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Badge</h1>
+      <p>A small indicator attached to another element — showing a count, status, or "new" marker. Draws attention to changes or unread items.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Badge (Bootstrap), Badge (Material), Badge (Ant), Badge (Apple), Badge (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;span&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Indicators &amp; Status</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Value/content</td><td>Yes</td><td>Count number, dot, or text label</td></tr>
+          <tr><td>Position anchor</td><td>Yes</td><td>The element the badge is attached to</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="350" />
+
+          <!-- Position anchor (example: icon button) -->
+          <rect class="hover-target" x="320" y="130" width="160" height="160" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="295" x2="400" y2="315" />
+            <rect class="label-bg" x="324" y="317" width="152" height="20" />
+            <text class="label-text" x="400" y="331" text-anchor="middle">Position anchor</text>
+          </g>
+          <rect class="interactive" x="320" y="130" width="160" height="160" rx="8" />
+          <circle cx="400" cy="210" r="50" fill="none" stroke="#4a90d9" stroke-width="3" />
+          <rect x="385" y="175" width="30" height="70" rx="4" fill="none" stroke="#4a90d9" stroke-width="3" />
+
+          <!-- Badge -->
+          <rect class="hover-target" x="455" y="115" width="50" height="50" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="480" y1="110" x2="480" y2="85" />
+            <rect class="label-bg" x="412" y="69" width="136" height="20" />
+            <text class="label-text" x="480" y="83" text-anchor="middle">Value/content</text>
+          </g>
+          <circle cx="480" cy="140" r="25" fill="#ff4444" stroke="#fff" stroke-width="3" />
+          <text x="480" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#fff">5</text>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Type</td><td>Count, Dot, Text label</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Position</td><td>Top-right, Top-left, Inline</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Color</td><td>Default, Success, Warning, Error</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Icon with count badge -->
+              <rect class="interactive" x="160" y="60" width="80" height="80" rx="6" />
+              <circle cx="200" cy="100" r="25" fill="none" stroke="#4a90d9" stroke-width="2" />
+              <circle cx="230" cy="70" r="15" fill="#ff4444" />
+              <text x="230" y="77" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">3</text>
+            </svg>
+          </div>
+          <figcaption>Type: Count (top-right)</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Icon with dot badge -->
+              <rect class="interactive" x="160" y="60" width="80" height="80" rx="6" />
+              <circle cx="200" cy="100" r="25" fill="none" stroke="#4a90d9" stroke-width="2" />
+              <circle cx="230" cy="70" r="8" fill="#ff4444" />
+            </svg>
+          </div>
+          <figcaption>Type: Dot</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Icon with top-left badge -->
+              <rect class="interactive" x="160" y="60" width="80" height="80" rx="6" />
+              <circle cx="200" cy="100" r="25" fill="none" stroke="#4a90d9" stroke-width="2" />
+              <circle cx="170" cy="70" r="15" fill="#ff4444" />
+              <text x="170" y="77" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">9</text>
+            </svg>
+          </div>
+          <figcaption>Position: Top-left</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Text with inline badge -->
+              <line class="text-line" x1="100" y1="95" x2="180" y2="95" />
+              <rect x="190" y="85" width="45" height="20" rx="10" fill="#4444ff" />
+              <text x="212" y="99" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">NEW</text>
+              <line class="text-line" x1="245" y1="95" x2="300" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Position: Inline (text label)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for notification counts, unread indicators, or status dots attached to buttons, icons, or avatars.</li>
+        <li>For counts over 99, consider truncating to "99+" to keep the badge compact.</li>
+        <li>Ensure color choices meet accessibility contrast requirements against both the badge background and the page/anchor element.</li>
+        <li>A dot badge is useful when you want to indicate presence or activity without a specific count.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="drawer.html">&larr; Drawer</a>
+      <a href="skeleton.html">Skeleton &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

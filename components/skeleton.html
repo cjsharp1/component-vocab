@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skeleton — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#indicators-status">Indicators &amp; Status</a></li>
+        <li>Skeleton</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Skeleton</h1>
+      <p>A placeholder loading state that mimics the shape of content to come. Shows the layout structure before real content loads.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Placeholder (Bootstrap), — (Material), Skeleton (Ant), Redacted (Apple), Skeleton (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code> with aria-busy="true"</dd>
+        <dt>Category</dt>
+        <dd>Indicators &amp; Status</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Content shapes</td><td>Yes</td><td>Rectangles mimicking text, circles for avatars, etc.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="350" />
+
+          <!-- Content shapes (text lines) -->
+          <rect class="hover-target" x="100" y="80" width="600" height="200" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="75" x2="400" y2="55" />
+            <rect class="label-bg" x="318" y="39" width="164" height="20" />
+            <text class="label-text" x="400" y="53" text-anchor="middle">Content shapes</text>
+          </g>
+
+          <!-- Avatar circle placeholder -->
+          <circle cx="130" cy="120" r="30" fill="#ddd" stroke="none" />
+
+          <!-- Text line placeholders -->
+          <rect x="180" y="95" width="520" height="20" rx="4" fill="#ddd" />
+          <rect x="180" y="130" width="480" height="20" rx="4" fill="#ddd" />
+          <rect x="180" y="165" width="420" height="20" rx="4" fill="#ddd" />
+
+          <!-- Second block -->
+          <rect x="100" y="220" width="600" height="20" rx="4" fill="#ddd" />
+          <rect x="100" y="255" width="550" height="20" rx="4" fill="#ddd" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Shape</td><td>Text lines, Circle, Rectangle, Card-shaped</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Density</td><td>Match target, Simplified</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Animation</td><td>Pulse, Wave, None</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Text lines -->
+              <rect x="20" y="40" width="360" height="15" rx="3" fill="#ddd" />
+              <rect x="20" y="70" width="320" height="15" rx="3" fill="#ddd" />
+              <rect x="20" y="100" width="340" height="15" rx="3" fill="#ddd" />
+              <rect x="20" y="130" width="280" height="15" rx="3" fill="#ddd" />
+            </svg>
+          </div>
+          <figcaption>Shape: Text lines</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Avatar circles -->
+              <circle cx="70" cy="100" r="40" fill="#ddd" />
+              <circle cx="180" cy="100" r="40" fill="#ddd" />
+              <circle cx="290" cy="100" r="40" fill="#ddd" />
+            </svg>
+          </div>
+          <figcaption>Shape: Circle (avatars)</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Card skeleton -->
+              <rect x="20" y="20" width="160" height="100" rx="6" fill="#ddd" />
+              <rect x="20" y="130" width="120" height="12" rx="3" fill="#ddd" />
+              <rect x="20" y="150" width="140" height="12" rx="3" fill="#ddd" />
+            </svg>
+          </div>
+          <figcaption>Shape: Card-shaped</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Simplified density -->
+              <circle cx="50" cy="100" r="25" fill="#ddd" />
+              <rect x="90" y="85" width="290" height="18" rx="4" fill="#ddd" />
+              <rect x="90" y="115" width="200" height="18" rx="4" fill="#ddd" />
+            </svg>
+          </div>
+          <figcaption>Density: Simplified</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use when content takes more than 300ms to load. For indeterminate loading without showing layout, use Spinner.</li>
+        <li>Match the skeleton shape to the actual content layout. Users should recognize what's loading.</li>
+        <li>Consider a pulse or wave animation to indicate activity, but ensure it is not distracting.</li>
+        <li>Use <code>aria-busy="true"</code> and provide an accessible label like "Loading content" for screen readers.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="badge.html">&larr; Badge</a>
+      <a href="progress.html">Progress &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
