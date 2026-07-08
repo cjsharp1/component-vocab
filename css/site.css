@@ -168,3 +168,31 @@ body > header nav {
   padding-top: 1rem;
   border-top: 1px solid var(--wireframe-border);
 }
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .component-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .variation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .component-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* === Print === */
+@media print {
+  .wireframe-container svg .label-group {
+    opacity: 1;
+  }
+
+  nav, .component-nav {
+    display: none;
+  }
+}
