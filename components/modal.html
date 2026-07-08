@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modal — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#forms-feedback">Forms &amp; Feedback</a></li>
+        <li>Modal</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Modal</h1>
+      <p>An overlay dialog that requires user attention or action. Appears above the page content, blocking interaction with the background until dismissed.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Modal (Bootstrap), Dialog (Material), Modal (Ant), Sheet/Alert (Apple), Dialog (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;dialog&gt;</code> or <code>&lt;div&gt;</code> with role="dialog"</dd>
+        <dt>Category</dt>
+        <dd>Forms &amp; Feedback</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Title</td><td>Yes</td><td>Modal heading</td></tr>
+          <tr><td>Content</td><td>Yes</td><td>Modal body text or form</td></tr>
+          <tr><td>Close button</td><td>Yes</td><td>Dismiss control (X icon)</td></tr>
+          <tr><td>Action buttons</td><td>No</td><td>Confirm/cancel buttons</td></tr>
+          <tr><td>Backdrop/overlay</td><td>Yes</td><td>Semi-transparent background</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background page (dimmed) -->
+          <rect class="region" x="0" y="0" width="800" height="350" fill="rgba(0,0,0,0.5)" />
+
+          <!-- Modal -->
+          <rect class="hover-target" x="200" y="50" width="400" height="250" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="150" y1="175" x2="130" y2="175" />
+            <rect class="label-bg" x="76" y="165" width="58" height="20" />
+            <text class="label-text" x="105" y="179" text-anchor="middle">Modal</text>
+          </g>
+          <rect x="200" y="50" width="400" height="250" fill="#fff" stroke="#999" stroke-width="2" rx="8" />
+
+          <!-- Header -->
+          <rect class="hover-target" x="200" y="50" width="400" height="50" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="45" x2="400" y2="25" />
+            <rect class="label-bg" x="369" y="9" width="62" height="20" />
+            <text class="label-text" x="400" y="23" text-anchor="middle">Header</text>
+          </g>
+          <line class="text-line" x1="220" y1="75" x2="350" y2="75" />
+
+          <!-- Close button -->
+          <circle cx="570" cy="75" r="12" class="interactive" />
+          <line x1="565" y1="70" x2="575" y2="80" stroke="#fff" stroke-width="2" />
+          <line x1="575" y1="70" x2="565" y2="80" stroke="#fff" stroke-width="2" />
+
+          <!-- Divider -->
+          <line x1="200" y1="100" x2="600" y2="100" stroke="#ccc" stroke-width="1" />
+
+          <!-- Content -->
+          <rect class="hover-target" x="220" y="120" width="360" height="120" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="650" y1="180" x2="670" y2="180" />
+            <rect class="label-bg" x="672" y="170" width="60" height="20" />
+            <text class="label-text" x="702" y="184" text-anchor="middle">Content</text>
+          </g>
+          <line class="text-line" x1="220" y1="135" x2="560" y2="135" />
+          <line class="text-line" x1="220" y1="155" x2="540" y2="155" />
+          <line class="text-line" x1="220" y1="175" x2="550" y2="175" />
+          <line class="text-line" x1="220" y1="195" x2="530" y2="195" />
+
+          <!-- Footer buttons -->
+          <line x1="200" y1="250" x2="600" y2="250" stroke="#ccc" stroke-width="1" />
+          <rect class="interactive" x="440" y="260" width="70" height="30" rx="4" />
+          <rect class="interactive" x="520" y="260" width="70" height="30" rx="4" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Size</td><td>Small, Medium, Large, Full-screen</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Position</td><td>Center, Top, Bottom sheet</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Close method</td><td>Button, Backdrop click, Escape</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" fill="rgba(0,0,0,0.4)" />
+              <rect x="100" y="40" width="200" height="120" fill="#fff" stroke="#999" stroke-width="2" rx="6" />
+              <line class="text-line" x1="115" y1="60" x2="205" y2="60" />
+              <line x1="100" y1="75" x2="300" y2="75" stroke="#ccc" stroke-width="1" />
+              <line class="text-line" x1="115" y1="90" x2="270" y2="90" />
+              <line class="text-line" x1="115" y1="105" x2="260" y2="105" />
+            </svg>
+          </div>
+          <figcaption>Small — compact dialog</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" fill="rgba(0,0,0,0.4)" />
+              <rect x="20" y="20" width="360" height="160" fill="#fff" stroke="#999" stroke-width="2" rx="6" />
+              <line class="text-line" x1="35" y1="40" x2="165" y2="40" />
+              <line x1="20" y1="55" x2="380" y2="55" stroke="#ccc" stroke-width="1" />
+              <line class="text-line" x1="35" y1="75" x2="350" y2="75" />
+            </svg>
+          </div>
+          <figcaption>Large — more content space</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" fill="rgba(0,0,0,0.4)" />
+              <rect x="100" y="10" width="200" height="120" fill="#fff" stroke="#999" stroke-width="2" rx="6" />
+              <line class="text-line" x1="115" y1="30" x2="205" y2="30" />
+              <line x1="100" y1="45" x2="300" y2="45" stroke="#ccc" stroke-width="1" />
+            </svg>
+          </div>
+          <figcaption>Top position — aligned to top</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" fill="rgba(0,0,0,0.4)" />
+              <rect x="0" y="100" width="400" height="100" fill="#fff" stroke="#999" stroke-width="2" rx="12 12 0 0" />
+              <line class="text-line" x1="20" y1="120" x2="150" y2="120" />
+              <line x1="0" y1="135" x2="400" y2="135" stroke="#ccc" stroke-width="1" />
+            </svg>
+          </div>
+          <figcaption>Bottom sheet — mobile-friendly</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use sparingly — modals interrupt the user.</li>
+        <li>For non-blocking notifications, use <strong>Toast</strong>.</li>
+        <li>For side panels, use <strong>Drawer</strong>.</li>
+        <li>Always provide a way to dismiss (close button, backdrop click, or Escape key).</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="form.html">&larr; Form</a>
+      <a href="alert.html">Alert &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#forms-feedback">Forms &amp; Feedback</a></li>
+        <li>Form</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Form</h1>
+      <p>A data collection interface — contact forms, signup forms, search bars, filters. Groups input fields with labels, validation, and a submit action.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Form (Bootstrap), Text Field/Select (Material, individual), Form (Ant), Form (Apple), Form (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;form&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Forms &amp; Feedback</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Input fields</td><td>Yes</td><td>Text, email, select, textarea, etc.</td></tr>
+          <tr><td>Labels</td><td>Yes</td><td>Labels for each field</td></tr>
+          <tr><td>Submit button</td><td>Yes</td><td>Primary action to submit the form</td></tr>
+          <tr><td>Helper text</td><td>No</td><td>Instructional text below fields</td></tr>
+          <tr><td>Validation messages</td><td>No</td><td>Error or success messages</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="350" />
+
+          <!-- Field 1 -->
+          <rect class="hover-target" x="150" y="40" width="150" height="15" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="100" y1="47" x2="80" y2="47" />
+            <rect class="label-bg" x="42" y="37" width="42" height="20" />
+            <text class="label-text" x="63" y="51" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="150" y1="47" x2="240" y2="47" />
+          <rect class="hover-target" x="150" y="65" width="500" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="700" y1="85" x2="720" y2="85" />
+            <rect class="label-bg" x="722" y="75" width="78" height="20" />
+            <text class="label-text" x="761" y="89" text-anchor="middle">Input field</text>
+          </g>
+          <rect class="interactive" x="150" y="65" width="500" height="40" rx="4" />
+
+          <!-- Field 2 -->
+          <line class="text-line" x1="150" y1="137" x2="240" y2="137" />
+          <rect class="interactive" x="150" y="155" width="500" height="40" rx="4" />
+
+          <!-- Field 3 -->
+          <line class="text-line" x1="150" y1="227" x2="240" y2="227" />
+          <rect class="interactive" x="150" y="245" width="500" height="40" rx="4" />
+
+          <!-- Submit button -->
+          <rect class="hover-target" x="150" y="305" width="150" height="45" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="100" y1="327" x2="80" y2="327" />
+            <rect class="label-bg" x="9" y="317" width="75" height="20" />
+            <text class="label-text" x="46" y="331" text-anchor="middle">Submit</text>
+          </g>
+          <rect class="interactive" x="150" y="305" width="150" height="45" rx="4" />
+          <line class="text-line" x="185" y="327" x2="265" y2="327" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Layout</td><td>Vertical labels, Horizontal labels, Inline</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Compact, Default, Large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Columns</td><td>Single, Two-column</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="30" x2="100" y2="30" />
+              <rect class="interactive" x="30" y="40" width="340" height="30" rx="4" />
+              <line class="text-line" x1="30" y1="90" x2="100" y2="90" />
+              <rect class="interactive" x="30" y="100" width="340" height="30" rx="4" />
+              <rect class="interactive" x="30" y="150" width="100" height="35" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Vertical labels — default</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="45" x2="100" y2="45" />
+              <rect class="interactive" x="120" y="30" width="250" height="30" rx="4" />
+              <line class="text-line" x1="30" y1="85" x2="100" y2="85" />
+              <rect class="interactive" x="120" y="70" width="250" height="30" rx="4" />
+              <rect class="interactive" x="30" y="120" width="100" height="35" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Horizontal labels — side by side</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="30" x2="100" y2="30" />
+              <rect class="interactive" x="30" y="40" width="160" height="30" rx="4" />
+              <line class="text-line" x1="210" y1="30" x2="280" y2="30" />
+              <rect class="interactive" x="210" y="40" width="160" height="30" rx="4" />
+              <line class="text-line" x1="30" y1="90" x2="100" y2="90" />
+              <rect class="interactive" x="30" y="100" width="340" height="30" rx="4" />
+              <rect class="interactive" x="30" y="150" width="100" height="35" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Two-column — side-by-side fields</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="87" x2="80" y2="87" />
+              <rect class="interactive" x="90" y="75" width="200" height="25" rx="4" />
+              <rect class="interactive" x="300" y="75" width="70" height="25" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Inline — compact single row</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for any user input collection.</li>
+        <li>Keep forms short. Group related fields.</li>
+        <li>Always include labels and validation feedback.</li>
+        <li>Mark required fields clearly.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="pricing.html">&larr; Pricing</a>
+      <a href="modal.html">Modal &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
