@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Table — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#text-lists">Text &amp; Lists</a></li>
+        <li>Table</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Table</h1>
+      <p>Tabular data presented in rows and columns. For structured data that benefits from alignment and comparison across rows.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Table (Bootstrap), Data Table (Material), Table (Ant), — (Apple), Table (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;table&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Text &amp; Lists</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Header row</td><td>Yes</td><td>Column headers</td></tr>
+          <tr><td>Data rows</td><td>Yes</td><td>The tabular data cells</td></tr>
+          <tr><td>Caption</td><td>No</td><td>Table title or description</td></tr>
+          <tr><td>Footer row</td><td>No</td><td>Summary row (totals, averages)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="250" />
+
+          <!-- Table container -->
+          <rect x="100" y="50" width="600" height="150" fill="none" stroke="#999" stroke-width="2" />
+
+          <!-- Header row -->
+          <rect class="hover-target" x="100" y="50" width="600" height="35" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="45" x2="400" y2="25" />
+            <rect class="label-bg" x="337" y="9" width="126" height="20" />
+            <text class="label-text" x="400" y="23" text-anchor="middle">Header row</text>
+          </g>
+          <rect class="interactive" x="100" y="50" width="200" height="35" />
+          <rect class="interactive" x="300" y="50" width="200" height="35" />
+          <rect class="interactive" x="500" y="50" width="200" height="35" />
+          <line class="text-line" x1="120" y1="67" x2="220" y2="67" />
+          <line class="text-line" x1="320" y1="67" x2="420" y2="67" />
+          <line class="text-line" x1="520" y1="67" x2="620" y2="67" />
+
+          <!-- Data row 1 -->
+          <rect class="hover-target" x="100" y="85" width="600" height="35" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="50" y1="102" x2="30" y2="102" />
+            <rect class="label-bg" x="-34" y="92" width="68" height="20" />
+            <text class="label-text" x="0" y="106" text-anchor="middle">Data row</text>
+          </g>
+          <line x1="100" y1="85" x2="700" y2="85" stroke="#ccc" stroke-width="1" />
+          <line class="text-line" x1="120" y1="102" x2="190" y2="102" />
+          <line class="text-line" x1="320" y1="102" x2="390" y2="102" />
+          <line class="text-line" x1="520" y1="102" x2="590" y2="102" />
+
+          <!-- Data row 2 -->
+          <line x1="100" y1="120" x2="700" y2="120" stroke="#ccc" stroke-width="1" />
+          <line class="text-line" x1="120" y1="137" x2="200" y2="137" />
+          <line class="text-line" x1="320" y1="137" x2="400" y2="137" />
+          <line class="text-line" x1="520" y1="137" x2="600" y2="137" />
+
+          <!-- Data row 3 -->
+          <line x1="100" y1="155" x2="700" y2="155" stroke="#ccc" stroke-width="1" />
+          <line class="text-line" x1="120" y1="172" x2="195" y2="172" />
+          <line class="text-line" x1="320" y1="172" x2="395" y2="172" />
+          <line class="text-line" x1="520" y1="172" x2="595" y2="172" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Style</td><td>Default, Striped, Bordered</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Compact, Default, Spacious</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Responsive</td><td>Scroll, Stack</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Sortable</td><td>Yes, No</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <rect x="20" y="30" width="360" height="140" fill="none" stroke="#999" stroke-width="2" />
+              <rect class="interactive" x="20" y="30" width="120" height="28" />
+              <rect class="interactive" x="140" y="30" width="120" height="28" />
+              <rect class="interactive" x="260" y="30" width="120" height="28" />
+              <line x1="20" y1="58" x2="380" y2="58" stroke="#ccc" stroke-width="1" />
+              <line x1="20" y1="86" x2="380" y2="86" stroke="#ccc" stroke-width="1" />
+              <line x1="20" y1="114" x2="380" y2="114" stroke="#ccc" stroke-width="1" />
+              <line x1="20" y1="142" x2="380" y2="142" stroke="#ccc" stroke-width="1" />
+            </svg>
+          </div>
+          <figcaption>Default — clean rows</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <rect x="20" y="30" width="360" height="140" fill="none" stroke="#999" stroke-width="2" />
+              <rect class="interactive" x="20" y="30" width="120" height="28" />
+              <rect class="interactive" x="140" y="30" width="120" height="28" />
+              <rect class="interactive" x="260" y="30" width="120" height="28" />
+              <rect x="20" y="58" width="360" height="28" fill="rgba(0,0,0,0.05)" />
+              <rect x="20" y="114" width="360" height="28" fill="rgba(0,0,0,0.05)" />
+            </svg>
+          </div>
+          <figcaption>Striped — alternating row backgrounds</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <rect x="20" y="30" width="360" height="140" fill="none" stroke="#999" stroke-width="2" />
+              <rect class="interactive" x="20" y="30" width="120" height="28" />
+              <rect class="interactive" x="140" y="30" width="120" height="28" />
+              <rect class="interactive" x="260" y="30" width="120" height="28" />
+              <line x1="140" y1="30" x2="140" y2="170" stroke="#999" stroke-width="1" />
+              <line x1="260" y1="30" x2="260" y2="170" stroke="#999" stroke-width="1" />
+              <line x1="20" y1="58" x2="380" y2="58" stroke="#999" stroke-width="1" />
+              <line x1="20" y1="86" x2="380" y2="86" stroke="#999" stroke-width="1" />
+              <line x1="20" y1="114" x2="380" y2="114" stroke="#999" stroke-width="1" />
+              <line x1="20" y1="142" x2="380" y2="142" stroke="#999" stroke-width="1" />
+            </svg>
+          </div>
+          <figcaption>Bordered — all cells outlined</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <rect class="interactive" x="20" y="30" width="160" height="25" rx="4" />
+              <line class="text-line" x1="30" y1="42" x2="100" y2="42" />
+              <rect x="20" y="60" width="160" height="25" fill="none" stroke="#ccc" stroke-width="1" rx="4" />
+              <line class="text-line" x1="30" y1="72" x2="110" y2="72" />
+              <rect class="interactive" x="20" y="95" width="160" height="25" rx="4" />
+              <line class="text-line" x1="30" y1="107" x2="105" y2="107" />
+              <rect x="20" y="125" width="160" height="25" fill="none" stroke="#ccc" stroke-width="1" rx="4" />
+              <line class="text-line" x1="30" y1="137" x2="115" y2="137" />
+            </svg>
+          </div>
+          <figcaption>Stack (mobile) — vertical card layout</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for structured data. For feature comparisons, prefer <strong>Comparison</strong>. For key-value pairs, use <strong>Snapshot</strong>.</li>
+        <li>Keep tables simple — if it needs many interactive features, it's probably an app data grid.</li>
+        <li>Always include a header row to label columns.</li>
+        <li>For responsive tables on small screens, use horizontal scroll or stack into cards.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="list.html">&larr; List</a>
+      <a href="accordion.html">Accordion &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
