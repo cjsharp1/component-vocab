@@ -1,0 +1,170 @@
+/* === Custom Properties === */
+:root {
+  --wireframe-bg: #f0f0f0;
+  --wireframe-media: #cccccc;
+  --wireframe-border: #999999;
+  --wireframe-interactive: #4a90d9;
+  --wireframe-optional: #999999;
+  --wireframe-text-line: #bbb;
+  --wireframe-label-bg: #333;
+  --wireframe-label-text: #fff;
+  --wireframe-label-font: 'Courier New', monospace;
+  --nav-max-width: 1200px;
+}
+
+/* === Wireframe SVG Base === */
+.wireframe-container {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.wireframe-container svg {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--wireframe-border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+/* Content region fills */
+.wireframe-container svg .region {
+  fill: var(--wireframe-bg);
+  stroke: var(--wireframe-border);
+  stroke-width: 1;
+}
+
+/* Media/image placeholders */
+.wireframe-container svg .media-placeholder {
+  fill: var(--wireframe-media);
+  stroke: var(--wireframe-border);
+  stroke-width: 1;
+}
+
+/* Interactive elements (buttons, links) */
+.wireframe-container svg .interactive {
+  fill: none;
+  stroke: var(--wireframe-interactive);
+  stroke-width: 2;
+}
+
+/* Optional elements */
+.wireframe-container svg .optional {
+  fill: none;
+  stroke: var(--wireframe-optional);
+  stroke-width: 1;
+  stroke-dasharray: 4 2;
+}
+
+/* Text placeholder lines */
+.wireframe-container svg .text-line {
+  stroke: var(--wireframe-text-line);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* === Hover Labels === */
+.wireframe-container svg .label-group {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.wireframe-container svg .hover-target:hover + .label-group,
+.wireframe-container svg .hover-target:focus + .label-group,
+.wireframe-container svg .label-group.visible {
+  opacity: 1;
+}
+
+.wireframe-container svg .label-bg {
+  fill: var(--wireframe-label-bg);
+  rx: 3;
+  ry: 3;
+}
+
+.wireframe-container svg .label-text {
+  fill: var(--wireframe-label-text);
+  font-family: var(--wireframe-label-font);
+  font-size: 11px;
+}
+
+.wireframe-container svg .label-line {
+  stroke: var(--wireframe-label-bg);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+}
+
+/* === Component Grid (Index Page) === */
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.component-grid li {
+  border: 1px solid var(--wireframe-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.component-grid li:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.component-grid li a {
+  text-decoration: none;
+}
+
+.component-grid li svg {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+/* === Variation Grid === */
+.variation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.variation-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.variation-grid figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* === Config Table === */
+table .affects-layout {
+  color: var(--wireframe-interactive);
+  font-weight: 600;
+}
+
+/* === Navigation Overrides === */
+body > header nav {
+  max-width: var(--nav-max-width);
+  margin: 0 auto;
+}
+
+/* === Category Headings === */
+.category-heading {
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--wireframe-border);
+}
+
+/* === Prev/Next Navigation === */
+.component-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--wireframe-border);
+}
