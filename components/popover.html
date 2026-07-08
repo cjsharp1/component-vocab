@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popover — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#overlays-menus">Overlays &amp; Menus</a></li>
+        <li>Popover</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Popover</h1>
+      <p>A floating panel of rich content triggered by a click. More complex than a Tooltip — can contain headings, images, links, or forms.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Popover (Bootstrap), Menu (Material, partial), Popover (Ant), Popover (Apple), Popover (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code> with appropriate ARIA</dd>
+        <dt>Category</dt>
+        <dd>Overlays &amp; Menus</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Trigger element</td><td>Yes</td><td>Button or element that activates the popover</td></tr>
+          <tr><td>Content area</td><td>Yes</td><td>Rich content container</td></tr>
+          <tr><td>Header/title</td><td>No</td><td>Optional heading at top</td></tr>
+          <tr><td>Close button</td><td>No</td><td>Explicit dismiss control</td></tr>
+          <tr><td>Arrow</td><td>No</td><td>Visual pointer connecting to trigger</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="350" />
+
+          <!-- Trigger element -->
+          <rect class="hover-target" x="320" y="250" width="160" height="45" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="300" x2="400" y2="320" />
+            <rect class="label-bg" x="332" y="322" width="136" height="20" />
+            <text class="label-text" x="400" y="336" text-anchor="middle">Trigger element</text>
+          </g>
+          <rect class="interactive" x="320" y="250" width="160" height="45" rx="4" />
+          <line class="text-line" x1="360" y1="272" x2="440" y2="272" />
+
+          <!-- Popover panel -->
+          <rect x="250" y="40" width="300" height="180" rx="6" fill="#fff" stroke="#999" stroke-width="2" />
+
+          <!-- Header/title (optional) -->
+          <rect class="hover-target" x="265" y="50" width="270" height="30" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="45" x2="400" y2="25" />
+            <rect class="label-bg" x="342" y="9" width="116" height="20" />
+            <text class="label-text" x="400" y="23" text-anchor="middle">Header/title</text>
+          </g>
+          <line class="text-line" x1="275" y1="65" x2="400" y2="65" />
+          <line x1="265" y1="85" x2="535" y2="85" stroke="#ddd" stroke-width="1" />
+
+          <!-- Content area -->
+          <rect class="hover-target" x="265" y="100" width="270" height="105" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="265" y1="150" x2="220" y2="150" />
+            <rect class="label-bg" x="120" y="134" width="98" height="20" />
+            <text class="label-text" x="169" y="148" text-anchor="middle">Content area</text>
+          </g>
+          <line class="text-line" x1="275" y1="110" x2="510" y2="110" />
+          <line class="text-line" x1="275" y1="130" x2="490" y2="130" />
+          <line class="text-line" x1="275" y1="150" x2="520" y2="150" />
+          <rect class="interactive" x="275" y="175" width="100" height="25" rx="4" />
+          <line class="text-line" x1="295" y1="187" x2="355" y2="187" />
+
+          <!-- Close button (optional) -->
+          <rect class="hover-target" x="515" y="50" width="20" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="535" y1="60" x2="570" y2="60" />
+            <rect class="label-bg" x="572" y="44" width="98" height="20" />
+            <text class="label-text" x="621" y="58" text-anchor="middle">Close button</text>
+          </g>
+          <circle class="optional" cx="525" cy="60" r="8" />
+          <line x1="521" y1="56" x2="529" y2="64" stroke="#999" stroke-width="1.5" />
+          <line x1="529" y1="56" x2="521" y2="64" stroke="#999" stroke-width="1.5" />
+
+          <!-- Arrow -->
+          <rect class="hover-target" x="390" y="220" width="20" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="240" x2="450" y2="240" />
+            <rect class="label-bg" x="452" y="224" width="50" height="20" />
+            <text class="label-text" x="477" y="238" text-anchor="middle">Arrow</text>
+          </g>
+          <path class="optional" d="M 390 220 L 400 230 L 410 220 Z" fill="#fff" stroke="#999" stroke-width="2" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Position</td><td>Top, Right, Bottom, Left, Auto</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Medium, Large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Arrow</td><td>Shown, Hidden</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Trigger</td><td>Click, Hover</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Trigger -->
+              <rect class="interactive" x="175" y="140" width="50" height="25" rx="4" />
+              <!-- Small popover -->
+              <rect x="150" y="50" width="100" height="70" rx="4" fill="#fff" stroke="#999" stroke-width="2" />
+              <line class="text-line" x1="160" y1="65" x2="230" y2="65" />
+              <line class="text-line" x1="160" y1="80" x2="220" y2="80" />
+              <rect class="interactive" x="160" y="95" width="60" height="20" rx="3" />
+              <path d="M 195 120 L 200 125 L 205 120 Z" fill="#fff" stroke="#999" stroke-width="2" />
+            </svg>
+          </div>
+          <figcaption>Size: Small</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Trigger -->
+              <rect class="interactive" x="175" y="150" width="50" height="25" rx="4" />
+              <!-- Medium popover -->
+              <rect x="100" y="40" width="200" height="90" rx="4" fill="#fff" stroke="#999" stroke-width="2" />
+              <line class="text-line" x1="110" y1="55" x2="200" y2="55" />
+              <line x1="110" y1="70" x2="290" y2="70" stroke="#ddd" />
+              <line class="text-line" x1="110" y1="85" x2="270" y2="85" />
+              <line class="text-line" x1="110" y1="100" x2="250" y2="100" />
+              <rect class="interactive" x="110" y="108" width="70" height="20" rx="3" />
+              <path d="M 195 130 L 200 135 L 205 130 Z" fill="#fff" stroke="#999" stroke-width="2" />
+            </svg>
+          </div>
+          <figcaption>Size: Medium</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Trigger -->
+              <rect class="interactive" x="175" y="160" width="50" height="25" rx="4" />
+              <!-- Large popover -->
+              <rect x="50" y="20" width="300" height="120" rx="4" fill="#fff" stroke="#999" stroke-width="2" />
+              <line class="text-line" x1="65" y1="35" x2="180" y2="35" />
+              <line x1="65" y1="50" x2="335" y2="50" stroke="#ddd" />
+              <line class="text-line" x1="65" y1="65" x2="310" y2="65" />
+              <line class="text-line" x1="65" y1="80" x2="295" y2="80" />
+              <line class="text-line" x1="65" y1="95" x2="320" y2="95" />
+              <rect class="interactive" x="65" y="110" width="80" height="25" rx="3" />
+              <path d="M 195 140 L 200 145 L 205 140 Z" fill="#fff" stroke="#999" stroke-width="2" />
+            </svg>
+          </div>
+          <figcaption>Size: Large</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Trigger -->
+              <rect class="interactive" x="175" y="87" width="50" height="25" rx="4" />
+              <!-- No arrow -->
+              <rect x="130" y="25" width="140" height="50" rx="4" fill="#fff" stroke="#999" stroke-width="2" />
+              <line class="text-line" x1="140" y1="40" x2="240" y2="40" />
+              <line class="text-line" x1="140" y1="55" x2="220" y2="55" />
+            </svg>
+          </div>
+          <figcaption>Arrow: Hidden</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for supplemental content that is richer than a Tooltip allows. For simple text hints, use Tooltip.</li>
+        <li>For action lists, use Dropdown. Popover is for informational or form content.</li>
+        <li>Dismiss on outside click or Escape key. Optionally provide a close button for clarity.</li>
+        <li>Position automatically to stay in viewport, or allow manual positioning.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="tooltip.html">&larr; Tooltip</a>
+      <a href="drawer.html">Drawer &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
