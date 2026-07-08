@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avatar — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#interactive">Interactive</a></li>
+        <li>Avatar</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Avatar</h1>
+      <p>A small identity image representing a user or entity. Used in comments, chat, attribution lines.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>— (Bootstrap), — (Material), Avatar (Ant), — (Apple), Avatar (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;img&gt;</code> or <code>&lt;span&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Interactive</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Image</td><td>Yes</td><td>User photo or placeholder</td></tr>
+          <tr><td>Status indicator</td><td>No</td><td>Online/offline dot</td></tr>
+          <tr><td>Badge</td><td>No</td><td>Notification or count badge</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="350" />
+
+          <!-- Avatar image -->
+          <rect class="hover-target" x="300" y="100" width="200" height="200" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="95" x2="400" y2="75" />
+            <rect class="label-bg" x="367" y="59" width="66" height="20" />
+            <text class="label-text" x="400" y="73" text-anchor="middle">Image</text>
+          </g>
+          <circle class="media-placeholder" cx="400" cy="200" r="100" />
+          <circle cx="400" cy="180" r="35" fill="#aaa" />
+          <path d="M 340 270 Q 340 230 400 230 Q 460 230 460 270" fill="#aaa" />
+
+          <!-- Status indicator (optional) -->
+          <rect class="hover-target" x="475" y="265" width="40" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="495" y1="310" x2="495" y2="330" />
+            <rect class="label-bg" x="395" y="332" width="200" height="20" />
+            <text class="label-text" x="495" y="346" text-anchor="middle">Status indicator</text>
+          </g>
+          <circle class="optional" cx="485" cy="285" r="20" fill="#4caf50" stroke="#fff" stroke-width="4" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Size</td><td>XS, S, M, L, XL</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Group</td><td>Stack overlapping, Row</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Shape</td><td>Circle, Square, Rounded</td><td>No</td></tr>
+          <tr><td>Fallback</td><td>Initials, Icon, Placeholder</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Size variations -->
+              <circle class="media-placeholder" cx="70" cy="100" r="20" />
+              <circle class="media-placeholder" cx="140" cy="100" r="30" />
+              <circle class="media-placeholder" cx="230" cy="100" r="40" />
+              <circle class="media-placeholder" cx="340" cy="100" r="50" />
+            </svg>
+          </div>
+          <figcaption>Sizes: XS, S, M, L</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Stacked group -->
+              <circle class="media-placeholder" cx="160" cy="100" r="35" />
+              <circle class="media-placeholder" cx="200" cy="100" r="35" stroke="#fff" stroke-width="3" />
+              <circle class="media-placeholder" cx="240" cy="100" r="35" stroke="#fff" stroke-width="3" />
+            </svg>
+          </div>
+          <figcaption>Group: Stack overlapping</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- Row group -->
+              <circle class="media-placeholder" cx="120" cy="100" r="35" />
+              <circle class="media-placeholder" cx="200" cy="100" r="35" />
+              <circle class="media-placeholder" cx="280" cy="100" r="35" />
+            </svg>
+          </div>
+          <figcaption>Group: Row</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <!-- With status -->
+              <circle class="media-placeholder" cx="200" cy="100" r="45" />
+              <circle cx="200" cy="90" r="18" fill="#aaa" />
+              <path d="M 175 120 Q 175 105 200 105 Q 225 105 225 120" fill="#aaa" />
+              <circle cx="230" cy="130" r="12" fill="#4caf50" stroke="#fff" stroke-width="3" />
+            </svg>
+          </div>
+          <figcaption>With status indicator</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for small user identity markers in comments, chat, lists, or attribution lines. For full person display with name and bio, use Profile.</li>
+        <li>Provide fallback content when no image is available: initials from the user's name, a generic icon, or a placeholder.</li>
+        <li>Status indicators (online/offline/busy) are typically small dots placed at the bottom-right of the avatar.</li>
+        <li>In avatar groups, use overlapping stacks to save space or a row layout for clarity.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="carousel.html">&larr; Carousel</a>
+      <a href="divider.html">Divider &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
