@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breadcrumb — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#navigation">Navigation</a></li>
+        <li>Breadcrumb</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Breadcrumb</h1>
+      <p>A hierarchical trail showing the user's location within the site structure. Provides orientation and quick navigation to parent pages.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Breadcrumb (Bootstrap), — (Material), Breadcrumb (Ant), — (Apple), Breadcrumb (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;nav&gt;</code> with aria-label="breadcrumb"</dd>
+        <dt>Category</dt>
+        <dd>Navigation</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Path items</td><td>Yes</td><td>Links in the breadcrumb trail</td></tr>
+          <tr><td>Separators</td><td>Yes</td><td>Visual dividers between items (/, &gt;, or arrow)</td></tr>
+          <tr><td>Current page</td><td>Yes</td><td>The last item, not linked</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect class="region" x="0" y="0" width="800" height="250" />
+
+          <!-- Breadcrumb trail -->
+          <rect class="hover-target" x="100" y="95" width="600" height="30" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="90" x2="400" y2="70" />
+            <rect class="label-bg" x="321" y="54" width="158" height="20" />
+            <text class="label-text" x="400" y="68" text-anchor="middle">Breadcrumb trail</text>
+          </g>
+
+          <!-- Home link -->
+          <line class="text-line" x1="100" y1="110" x2="150" y2="110" style="stroke:#0066cc" />
+          <text x="175" y="114" font-size="16" fill="#666">/</text>
+
+          <!-- Category link -->
+          <line class="text-line" x1="195" y1="110" x2="265" y2="110" style="stroke:#0066cc" />
+          <text x="285" y="114" font-size="16" fill="#666">/</text>
+
+          <!-- Subcategory link -->
+          <line class="text-line" x1="305" y1="110" x2="400" y2="110" style="stroke:#0066cc" />
+          <text x="420" y="114" font-size="16" fill="#666">/</text>
+
+          <!-- Current page (not linked) -->
+          <rect class="hover-target" x="440" y="95" width="110" height="30" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="495" y1="130" x2="495" y2="150" />
+            <rect class="label-bg" x="429" y="152" width="132" height="20" />
+            <text class="label-text" x="495" y="166" text-anchor="middle">Current page</text>
+          </g>
+          <line class="text-line" x1="440" y1="110" x2="550" y2="110" />
+
+          <!-- Separator label -->
+          <rect class="hover-target" x="170" y="100" width="15" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="177" y1="130" x2="177" y2="150" />
+            <rect class="label-bg" x="131" y="152" width="92" height="20" />
+            <text class="label-text" x="177" y="166" text-anchor="middle">Separator</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Separator style</td><td>Slash, Chevron, Arrow</td><td>No</td></tr>
+          <tr><td>Truncation</td><td>None, Ellipsis for long paths</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="95" x2="80" y2="95" style="stroke:#0066cc" />
+              <text x="90" y="99" font-size="14" fill="#666">/</text>
+              <line class="text-line" x1="105" y1="95" x2="175" y2="95" style="stroke:#0066cc" />
+              <text x="185" y="99" font-size="14" fill="#666">/</text>
+              <line class="text-line" x1="200" y1="95" x2="290" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Slash — simple forward slash</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="95" x2="80" y2="95" style="stroke:#0066cc" />
+              <path d="M 90 90 L 100 95 L 90 100" stroke="#666" stroke-width="1.5" fill="none" />
+              <line class="text-line" x1="110" y1="95" x2="180" y2="95" style="stroke:#0066cc" />
+              <path d="M 190 90 L 200 95 L 190 100" stroke="#666" stroke-width="1.5" fill="none" />
+              <line class="text-line" x1="210" y1="95" x2="300" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Chevron — right-pointing arrow</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="95" x2="80" y2="95" style="stroke:#0066cc" />
+              <text x="90" y="99" font-size="14" fill="#666">&rarr;</text>
+              <line class="text-line" x1="110" y1="95" x2="180" y2="95" style="stroke:#0066cc" />
+              <text x="190" y="99" font-size="14" fill="#666">&rarr;</text>
+              <line class="text-line" x1="210" y1="95" x2="300" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Arrow — styled arrow character</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="0" y="0" width="400" height="200" />
+              <line class="text-line" x1="30" y1="95" x2="80" y2="95" style="stroke:#0066cc" />
+              <text x="90" y="99" font-size="14" fill="#666">/</text>
+              <text x="105" y="99" font-size="14" fill="#666">...</text>
+              <text x="130" y="99" font-size="14" fill="#666">/</text>
+              <line class="text-line" x1="145" y1="95" x2="235" y2="95" style="stroke:#0066cc" />
+              <text x="245" y="99" font-size="14" fill="#666">/</text>
+              <line class="text-line" x1="260" y1="95" x2="350" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Truncated — ellipsis for long paths</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Place at the top of page content, below the <strong>Header</strong>.</li>
+        <li>Last item is the current page and should not be a link.</li>
+        <li>Don't use on single-level sites.</li>
+        <li>For very deep hierarchies, consider truncating middle items with an ellipsis.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="nav.html">&larr; Nav</a>
+      <a href="pagination.html">Pagination &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
