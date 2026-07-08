@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content Display</a></li>
+        <li>Profile</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Profile</h1>
+      <p>A person or team member presentation. Shows photo, name, role, and optional bio and social links. Used for team pages, author bios, and speaker lists.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>— (Bootstrap), — (Material), Avatar + Card (Ant, composed), — (Apple), Avatar + Card (shadcn, composed)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Content Display</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Photo</td><td>Yes</td><td>Person's headshot/avatar</td></tr>
+          <tr><td>Name</td><td>Yes</td><td>Person's name</td></tr>
+          <tr><td>Role/Title</td><td>No</td><td>Job title or role</td></tr>
+          <tr><td>Bio</td><td>No</td><td>Short biography text</td></tr>
+          <tr><td>Social links</td><td>No</td><td>Links to social profiles</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Photo -->
+          <rect class="hover-target" x="330" y="40" width="140" height="140" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="35" x2="400" y2="15" />
+            <rect class="label-bg" x="367" y="0" width="66" height="20" />
+            <text class="label-text" x="400" y="14" text-anchor="middle">Photo</text>
+          </g>
+          <circle class="media-placeholder" cx="400" cy="110" r="70" />
+
+          <!-- Name -->
+          <rect class="hover-target" x="320" y="200" width="160" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="195" x2="400" y2="175" />
+            <rect class="label-bg" x="368" y="159" width="64" height="20" />
+            <text class="label-text" x="400" y="173" text-anchor="middle">Name</text>
+          </g>
+          <line class="text-line" x1="340" y1="210" x2="460" y2="210" />
+
+          <!-- Role/Title -->
+          <rect class="hover-target" x="330" y="230" width="140" height="15" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="250" x2="400" y2="270" />
+            <rect class="label-bg" x="349" y="272" width="102" height="20" />
+            <text class="label-text" x="400" y="286" text-anchor="middle">Role/Title</text>
+          </g>
+          <line class="text-line optional" x1="350" y1="240" x2="450" y2="240" stroke-width="1" opacity="0.6" />
+
+          <!-- Bio -->
+          <rect class="hover-target" x="280" y="265" width="240" height="45" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="500" y1="290" x2="520" y2="290" />
+            <rect class="label-bg" x="522" y="280" width="38" height="20" />
+            <text class="label-text" x="541" y="294" text-anchor="middle">Bio</text>
+          </g>
+          <line class="text-line optional" x1="300" y1="275" x2="500" y2="275" stroke-width="1" opacity="0.7" />
+          <line class="text-line optional" x1="290" y1="290" x2="510" y2="290" stroke-width="1" opacity="0.7" />
+          <line class="text-line optional" x1="300" y1="305" x2="480" y2="305" stroke-width="1" opacity="0.7" />
+
+          <!-- Social links -->
+          <rect class="hover-target" x="350" y="320" width="100" height="15" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="280" y1="330" x2="260" y2="330" />
+            <rect class="label-bg" x="165" y="320" width="90" height="20" />
+            <text class="label-text" x="210" y="334" text-anchor="middle">Social links</text>
+          </g>
+          <circle class="interactive optional" cx="370" cy="328" r="8" />
+          <circle class="interactive optional" cx="400" cy="328" r="8" />
+          <circle class="interactive optional" cx="430" cy="328" r="8" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Profile List Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Profile 1 -->
+          <circle class="media-placeholder" cx="130" cy="80" r="45" />
+          <line class="text-line" x1="90" y1="145" x2="170" y2="145" />
+          <line class="text-line" x1="95" y1="160" x2="165" y2="160" stroke-width="1" opacity="0.6" />
+          <line class="text-line" x1="75" y1="180" x2="185" y2="180" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="80" y1="195" x2="180" y2="195" stroke-width="1" opacity="0.7" />
+          <circle class="interactive" cx="115" cy="220" r="6" />
+          <circle class="interactive" cx="135" cy="220" r="6" />
+          <circle class="interactive" cx="155" cy="220" r="6" />
+
+          <!-- Profile 2 -->
+          <circle class="media-placeholder" cx="400" cy="80" r="45" />
+          <line class="text-line" x1="360" y1="145" x2="440" y2="145" />
+          <line class="text-line" x1="365" y1="160" x2="435" y2="160" stroke-width="1" opacity="0.6" />
+          <line class="text-line" x1="345" y1="180" x2="455" y2="180" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="350" y1="195" x2="450" y2="195" stroke-width="1" opacity="0.7" />
+          <circle class="interactive" cx="385" cy="220" r="6" />
+          <circle class="interactive" cx="405" cy="220" r="6" />
+          <circle class="interactive" cx="425" cy="220" r="6" />
+
+          <!-- Profile 3 -->
+          <circle class="media-placeholder" cx="670" cy="80" r="45" />
+          <line class="text-line" x1="630" y1="145" x2="710" y2="145" />
+          <line class="text-line" x1="635" y1="160" x2="705" y2="160" stroke-width="1" opacity="0.6" />
+          <line class="text-line" x1="615" y1="180" x2="725" y2="180" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="620" y1="195" x2="720" y2="195" stroke-width="1" opacity="0.7" />
+          <circle class="interactive" cx="655" cy="220" r="6" />
+          <circle class="interactive" cx="675" cy="220" r="6" />
+          <circle class="interactive" cx="695" cy="220" r="6" />
+        </svg>
+      </div>
+      <p><em>Profile List — 3-column grid layout</em></p>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Layout</td><td>Vertical (photo top), Horizontal (photo side)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Photo shape</td><td>Circle, Square, Rounded</td><td>No</td></tr>
+          <tr><td>Content density</td><td>Minimal (photo + name + role), Full (+ bio + links)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Collection layout</td><td>Grid, List, Carousel</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="media-placeholder" cx="200" cy="60" r="35" />
+              <line class="text-line" x1="160" y1="115" x2="240" y2="115" />
+              <line class="text-line" x1="165" y1="130" x2="235" y2="130" stroke-width="1" opacity="0.6" />
+              <line class="text-line" x1="145" y1="150" x2="255" y2="150" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="150" y1="165" x2="250" y2="165" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Vertical — photo on top</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="media-placeholder" cx="80" cy="100" r="35" />
+              <line class="text-line" x1="135" y1="80" x2="250" y2="80" />
+              <line class="text-line" x1="135" y1="95" x2="235" y2="95" stroke-width="1" opacity="0.6" />
+              <line class="text-line" x1="135" y1="115" x2="300" y2="115" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="135" y1="130" x2="290" y2="130" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Horizontal — photo on left</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="media-placeholder" cx="200" cy="70" r="35" />
+              <line class="text-line" x1="160" y1="125" x2="240" y2="125" />
+              <line class="text-line" x1="165" y1="140" x2="235" y2="140" stroke-width="1" opacity="0.6" />
+            </svg>
+          </div>
+          <figcaption>Minimal — photo, name, role only</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="140" y="40" width="120" height="120" rx="8" />
+              <line class="text-line" x1="160" y1="175" x2="240" y2="175" />
+            </svg>
+          </div>
+          <figcaption>Square photo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for team pages, speaker lists, or author attribution. For a small inline avatar (e.g., in a comment), use Avatar instead.</li>
+        <li>Photos should be consistent in size and aspect ratio within a collection.</li>
+        <li>For accessibility, always include <code>alt</code> text on profile photos describing the person.</li>
+        <li>Social links should use recognizable icons with appropriate <code>aria-label</code> attributes.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="embed.html">&larr; Embed</a>
+      <a href="testimonial.html">Testimonial &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

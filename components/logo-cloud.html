@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logo Cloud — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content Display</a></li>
+        <li>Logo Cloud</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Logo Cloud</h1>
+      <p>A collection of partner, client, or technology logos arranged in a row or grid. Communicates trust and social proof through recognizable brand marks.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>— (no direct equivalent in major systems, common marketing pattern)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Content Display</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Logos</td><td>Yes</td><td>Brand/partner logo images</td></tr>
+          <tr><td>Heading</td><td>No</td><td>"Trusted by" or "Our partners" title</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+          <!-- Heading -->
+          <rect class="hover-target" x="300" y="30" width="200" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="25" x2="400" y2="5" />
+            <rect class="label-bg" x="351" y="0" width="98" height="20" />
+            <text class="label-text" x="400" y="14" text-anchor="middle">Heading</text>
+          </g>
+          <line class="text-line optional" x1="330" y1="40" x2="470" y2="40" />
+
+          <!-- Logos -->
+          <rect class="hover-target" x="50" y="90" width="700" height="100" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="85" x2="400" y2="65" />
+            <rect class="label-bg" x="367" y="49" width="66" height="20" />
+            <text class="label-text" x="400" y="63" text-anchor="middle">Logos</text>
+          </g>
+
+          <!-- Logo placeholders -->
+          <rect class="media-placeholder" x="70" y="110" width="120" height="50" rx="4" opacity="0.5" />
+          <text x="130" y="140" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">LOGO</text>
+
+          <rect class="media-placeholder" x="220" y="110" width="120" height="50" rx="4" opacity="0.5" />
+          <text x="280" y="140" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">LOGO</text>
+
+          <rect class="media-placeholder" x="370" y="110" width="120" height="50" rx="4" opacity="0.5" />
+          <text x="430" y="140" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">LOGO</text>
+
+          <rect class="media-placeholder" x="520" y="110" width="120" height="50" rx="4" opacity="0.5" />
+          <text x="580" y="140" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">LOGO</text>
+
+          <rect class="media-placeholder" x="670" y="110" width="60" height="50" rx="4" opacity="0.5" />
+          <text x="700" y="140" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">LG</text>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Layout</td><td>Single row, Grid (multiple rows), Scrolling (Marquee-style)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Logo treatment</td><td>Full color, Grayscale, Monochrome</td><td>No</td></tr>
+          <tr><td>Density</td><td>Compact (many logos), Spacious (fewer, larger)</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="150" y1="30" x2="250" y2="30" />
+              <rect class="media-placeholder" x="30" y="70" width="80" height="40" rx="4" opacity="0.5" />
+              <text x="70" y="95" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="130" y="70" width="80" height="40" rx="4" opacity="0.5" />
+              <text x="170" y="95" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="230" y="70" width="80" height="40" rx="4" opacity="0.5" />
+              <text x="270" y="95" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="330" y="70" width="50" height="40" rx="4" opacity="0.5" />
+              <text x="355" y="95" text-anchor="middle" font-size="8" fill="#666" opacity="0.7">LG</text>
+            </svg>
+          </div>
+          <figcaption>Single row</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="150" y1="20" x2="250" y2="20" />
+              <!-- Row 1 -->
+              <rect class="media-placeholder" x="50" y="50" width="70" height="35" rx="4" opacity="0.5" />
+              <text x="85" y="72" text-anchor="middle" font-size="9" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="140" y="50" width="70" height="35" rx="4" opacity="0.5" />
+              <text x="175" y="72" text-anchor="middle" font-size="9" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="230" y="50" width="70" height="35" rx="4" opacity="0.5" />
+              <text x="265" y="72" text-anchor="middle" font-size="9" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="320" y="50" width="40" height="35" rx="4" opacity="0.5" />
+              <text x="340" y="72" text-anchor="middle" font-size="8" fill="#666" opacity="0.7">LG</text>
+              <!-- Row 2 -->
+              <rect class="media-placeholder" x="50" y="100" width="70" height="35" rx="4" opacity="0.5" />
+              <text x="85" y="122" text-anchor="middle" font-size="9" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="140" y="100" width="70" height="35" rx="4" opacity="0.5" />
+              <text x="175" y="122" text-anchor="middle" font-size="9" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="230" y="100" width="70" height="35" rx="4" opacity="0.5" />
+              <text x="265" y="122" text-anchor="middle" font-size="9" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="320" y="100" width="40" height="35" rx="4" opacity="0.5" />
+              <text x="340" y="122" text-anchor="middle" font-size="8" fill="#666" opacity="0.7">LG</text>
+            </svg>
+          </div>
+          <figcaption>Grid (2 rows)</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="150" y1="30" x2="250" y2="30" />
+              <rect class="media-placeholder" x="40" y="80" width="60" height="30" rx="4" opacity="0.3" />
+              <rect class="media-placeholder" x="110" y="80" width="60" height="30" rx="4" opacity="0.3" />
+              <rect class="media-placeholder" x="180" y="80" width="60" height="30" rx="4" opacity="0.3" />
+              <rect class="media-placeholder" x="250" y="80" width="60" height="30" rx="4" opacity="0.3" />
+              <text x="200" y="95" text-anchor="middle" font-size="10" fill="#999">Grayscale</text>
+            </svg>
+          </div>
+          <figcaption>Grayscale treatment</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="150" y1="30" x2="250" y2="30" />
+              <rect class="media-placeholder" x="50" y="70" width="100" height="60" rx="4" opacity="0.5" />
+              <text x="100" y="105" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">LOGO</text>
+              <rect class="media-placeholder" x="180" y="70" width="100" height="60" rx="4" opacity="0.5" />
+              <text x="230" y="105" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">LOGO</text>
+            </svg>
+          </div>
+          <figcaption>Spacious — fewer, larger</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for showing client/partner logos on a landing page. Keep logos at consistent heights. Grayscale treatment prevents visual competition with page content.</li>
+        <li>Normalize logo sizes by height (not width) to maintain visual balance.</li>
+        <li>Grayscale or monochrome treatment creates a cohesive look and prevents color clashes.</li>
+        <li>Include alt text for each logo for accessibility.</li>
+        <li>For scrolling/animated logos, use Marquee instead.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="timeline.html">&larr; Timeline</a>
+      <a href="marquee.html">Marquee &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

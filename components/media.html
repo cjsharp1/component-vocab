@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content Display</a></li>
+        <li>Media</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Media</h1>
+      <p>Pairs an image or video with adjacent text content. A fundamental pattern for content that needs visual accompaniment with explanatory text side by side.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Media object (Bootstrap, deprecated), — (Material), — (Ant), — (Apple), — (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Content Display</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Image/Video</td><td>Yes</td><td>Visual media content</td></tr>
+          <tr><td>Heading</td><td>No</td><td>Title for the text content</td></tr>
+          <tr><td>Text</td><td>Yes</td><td>Descriptive or explanatory text</td></tr>
+          <tr><td>Button</td><td>No</td><td>Optional action</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Image/Video (left) -->
+          <rect class="hover-target" x="50" y="50" width="350" height="250" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="225" y1="170" x2="225" y2="150" />
+            <rect class="label-bg" x="168" y="134" width="114" height="20" />
+            <text class="label-text" x="225" y="148" text-anchor="middle">Image/Video</text>
+          </g>
+          <rect class="media-placeholder" x="50" y="50" width="350" height="250" rx="4" />
+
+          <!-- Heading (right) -->
+          <rect class="hover-target" x="430" y="80" width="320" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="590" y1="75" x2="590" y2="55" />
+            <rect class="label-bg" x="551" y="39" width="78" height="20" />
+            <text class="label-text" x="590" y="53" text-anchor="middle">Heading</text>
+          </g>
+          <line class="text-line" x1="430" y1="90" x2="700" y2="90" />
+
+          <!-- Text (right) -->
+          <rect class="hover-target" x="430" y="120" width="320" height="90" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="590" y1="215" x2="590" y2="235" />
+            <rect class="label-bg" x="565" y="237" width="50" height="20" />
+            <text class="label-text" x="590" y="251" text-anchor="middle">Text</text>
+          </g>
+          <line class="text-line" x1="430" y1="130" x2="730" y2="130" />
+          <line class="text-line" x1="430" y1="150" x2="710" y2="150" />
+          <line class="text-line" x1="430" y1="170" x2="740" y2="170" />
+          <line class="text-line" x1="430" y1="190" x2="700" y2="190" />
+
+          <!-- Button (right) -->
+          <rect class="hover-target" x="430" y="240" width="100" height="35" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="480" y1="280" x2="480" y2="300" />
+            <rect class="label-bg" x="440" y="302" width="80" height="20" />
+            <text class="label-text" x="480" y="316" text-anchor="middle">Button</text>
+          </g>
+          <rect class="interactive optional" x="430" y="240" width="100" height="35" rx="4" />
+          <line class="text-line" x="460" y="257" x2="500" y2="257" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Media position</td><td>Left, Right</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Media size</td><td>Equal (50/50), Media dominant (60/40), Text dominant (40/60)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Media type</td><td>Image, Video, Illustration</td><td>No</td></tr>
+          <tr><td>Vertical alignment</td><td>Top, Center, Bottom</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="20" y="30" width="170" height="140" rx="4" />
+              <line class="text-line" x1="210" y1="40" x2="360" y2="40" />
+              <line class="text-line" x1="210" y1="60" x2="370" y2="60" />
+              <line class="text-line" x1="210" y1="75" x2="350" y2="75" />
+              <line class="text-line" x1="210" y1="90" x2="365" y2="90" />
+              <rect class="interactive" x="210" y="120" width="70" height="25" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Media left — 50/50 split</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="30" y1="40" x2="180" y2="40" />
+              <line class="text-line" x1="30" y1="60" x2="190" y2="60" />
+              <line class="text-line" x1="30" y1="75" x2="170" y2="75" />
+              <line class="text-line" x1="30" y1="90" x2="185" y2="90" />
+              <rect class="interactive" x="30" y="120" width="70" height="25" rx="4" />
+              <rect class="media-placeholder" x="210" y="30" width="170" height="140" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Media right — 50/50 split</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="20" y="30" width="220" height="140" rx="4" />
+              <line class="text-line" x1="260" y1="40" x2="360" y2="40" />
+              <line class="text-line" x1="260" y1="60" x2="370" y2="60" />
+              <line class="text-line" x1="260" y1="75" x2="350" y2="75" />
+              <line class="text-line" x1="260" y1="90" x2="365" y2="90" />
+            </svg>
+          </div>
+          <figcaption>Media dominant — 60/40 split</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="20" y="30" width="120" height="140" rx="4" />
+              <line class="text-line" x1="160" y1="40" x2="360" y2="40" />
+              <line class="text-line" x1="160" y1="60" x2="370" y2="60" />
+              <line class="text-line" x1="160" y1="75" x2="350" y2="75" />
+              <line class="text-line" x1="160" y1="90" x2="365" y2="90" />
+              <line class="text-line" x1="160" y1="105" x2="340" y2="105" />
+              <line class="text-line" x1="160" y1="120" x2="370" y2="120" />
+            </svg>
+          </div>
+          <figcaption>Text dominant — 40/60 split</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for content that pairs text and image side by side. For full-width image with caption below, use Figure. For image-led previews, use Card.</li>
+        <li>Ensure vertical alignment looks balanced — center alignment often works best.</li>
+        <li>On mobile, Media typically stacks vertically with the image on top.</li>
+        <li>For videos, include play controls and consider autoplay policies.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="feature.html">&larr; Feature</a>
+      <a href="figure.html">Figure &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

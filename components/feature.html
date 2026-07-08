@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feature — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content Display</a></li>
+        <li>Feature</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Feature</h1>
+      <p>A single feature or benefit highlight. Presents an icon, heading, and short description to explain a capability or value proposition. Read in place, not a link to elsewhere.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>— (no direct equivalent in major systems)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Content Display</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Icon</td><td>No</td><td>Visual symbol representing the feature</td></tr>
+          <tr><td>Heading</td><td>Yes</td><td>Feature name or title</td></tr>
+          <tr><td>Description</td><td>No</td><td>Short explanation text</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+          <!-- Icon -->
+          <rect class="hover-target" x="330" y="40" width="140" height="60" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="35" x2="400" y2="15" />
+            <rect class="label-bg" x="377" y="0" width="46" height="20" />
+            <text class="label-text" x="400" y="14" text-anchor="middle">Icon</text>
+          </g>
+          <circle class="interactive optional" cx="400" cy="70" r="28" />
+          <circle cx="400" cy="70" r="12" fill="#0066cc" opacity="0.3" />
+
+          <!-- Heading -->
+          <rect class="hover-target" x="300" y="120" width="200" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="115" x2="400" y2="95" />
+            <rect class="label-bg" x="361" y="79" width="78" height="20" />
+            <text class="label-text" x="400" y="93" text-anchor="middle">Heading</text>
+          </g>
+          <line class="text-line" x1="300" y1="130" x2="500" y2="130" />
+
+          <!-- Description -->
+          <rect class="hover-target" x="280" y="155" width="240" height="50" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="210" x2="400" y2="230" />
+            <rect class="label-bg" x="349" y="232" width="102" height="20" />
+            <text class="label-text" x="400" y="246" text-anchor="middle">Description</text>
+          </g>
+          <line class="text-line" x1="280" y1="165" x2="520" y2="165" />
+          <line class="text-line" x1="300" y1="180" x2="500" y2="180" />
+          <line class="text-line" x1="310" y1="195" x2="490" y2="195" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Feature List Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+          <!-- Feature 1 -->
+          <circle class="interactive" cx="130" cy="70" r="22" />
+          <circle cx="130" cy="70" r="10" fill="#0066cc" opacity="0.3" />
+          <line class="text-line" x1="70" y1="120" x2="190" y2="120" />
+          <line class="text-line" x1="50" y1="140" x2="210" y2="140" />
+          <line class="text-line" x1="60" y1="155" x2="200" y2="155" />
+          <line class="text-line" x1="55" y1="170" x2="205" y2="170" />
+
+          <!-- Feature 2 -->
+          <circle class="interactive" cx="400" cy="70" r="22" />
+          <circle cx="400" cy="70" r="10" fill="#0066cc" opacity="0.3" />
+          <line class="text-line" x1="340" y1="120" x2="460" y2="120" />
+          <line class="text-line" x1="320" y1="140" x2="480" y2="140" />
+          <line class="text-line" x1="330" y1="155" x2="470" y2="155" />
+          <line class="text-line" x1="325" y1="170" x2="475" y2="170" />
+
+          <!-- Feature 3 -->
+          <circle class="interactive" cx="670" cy="70" r="22" />
+          <circle cx="670" cy="70" r="10" fill="#0066cc" opacity="0.3" />
+          <line class="text-line" x1="610" y1="120" x2="730" y2="120" />
+          <line class="text-line" x1="590" y1="140" x2="750" y2="140" />
+          <line class="text-line" x1="600" y1="155" x2="740" y2="155" />
+          <line class="text-line" x1="595" y1="170" x2="745" y2="170" />
+        </svg>
+      </div>
+      <p><em>Feature List — 3-column row layout</em></p>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Icon position</td><td>Top (centered), Left (inline)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Collection layout</td><td>Grid (2-col, 3-col, 4-col), Single column</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Content density</td><td>Icon + heading only, Icon + heading + description</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="interactive" cx="200" cy="50" r="22" />
+              <circle cx="200" cy="50" r="10" fill="#0066cc" opacity="0.3" />
+              <line class="text-line" x1="140" y1="95" x2="260" y2="95" />
+              <line class="text-line" x1="120" y1="115" x2="280" y2="115" />
+              <line class="text-line" x1="130" y1="130" x2="270" y2="130" />
+              <line class="text-line" x1="125" y1="145" x2="275" y2="145" />
+            </svg>
+          </div>
+          <figcaption>Top (centered) icon</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="interactive" cx="80" cy="90" r="22" />
+              <circle cx="80" cy="90" r="10" fill="#0066cc" opacity="0.3" />
+              <line class="text-line" x1="120" y1="70" x2="280" y2="70" />
+              <line class="text-line" x1="120" y1="90" x2="300" y2="90" />
+              <line class="text-line" x1="120" y1="105" x2="290" y2="105" />
+              <line class="text-line" x1="120" y1="120" x2="295" y2="120" />
+            </svg>
+          </div>
+          <figcaption>Left (inline) icon</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="interactive" cx="200" cy="60" r="22" />
+              <circle cx="200" cy="60" r="10" fill="#0066cc" opacity="0.3" />
+              <line class="text-line" x1="140" y1="110" x2="260" y2="110" />
+            </svg>
+          </div>
+          <figcaption>Minimal — icon + heading only</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="160" />
+              <!-- Row 1 -->
+              <circle class="interactive" cx="100" cy="60" r="18" />
+              <line class="text-line" x1="50" y1="90" x2="150" y2="90" />
+              <circle class="interactive" cx="300" cy="60" r="18" />
+              <line class="text-line" x1="250" y1="90" x2="350" y2="90" />
+              <!-- Row 2 -->
+              <circle class="interactive" cx="100" cy="140" r="18" />
+              <line class="text-line" x1="50" y1="170" x2="150" y2="170" />
+              <circle class="interactive" cx="300" cy="140" r="18" />
+              <line class="text-line" x1="250" y1="170" x2="350" y2="170" />
+            </svg>
+          </div>
+          <figcaption>Grid (2x2) — compact spacing</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use Feature for explaining capabilities/benefits. For content previews that link somewhere, use Card. For statistics, use Stat.</li>
+        <li>Icons should be consistent in size and style across all features in a collection.</li>
+        <li>Keep descriptions concise — 1-3 sentences. Features are meant to be scannable.</li>
+        <li>Common use case: landing page "Why choose us" sections with 3-4 features in a row.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="card.html">&larr; Card</a>
+      <a href="media.html">Media &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

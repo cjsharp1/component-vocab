@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Embed — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content Display</a></li>
+        <li>Embed</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Embed</h1>
+      <p>Third-party content embedded inline within the page. Videos, maps, social media posts, or interactive widgets from external services.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Embed (HTML standard), — (Bootstrap), — (Material), — (Ant), — (Apple), — (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code> containing <code>&lt;iframe&gt;</code> or <code>&lt;embed&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Content Display</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Embedded content</td><td>Yes</td><td>The iframe/embed element</td></tr>
+          <tr><td>Caption</td><td>No</td><td>Description of the embedded content</td></tr>
+          <tr><td>Fallback</td><td>No</td><td>Content shown if embed fails to load</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <!-- Embedded content -->
+          <rect class="hover-target" x="100" y="40" width="600" height="230" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="145" x2="400" y2="125" />
+            <rect class="label-bg" x="318" y="109" width="164" height="20" />
+            <text class="label-text" x="400" y="123" text-anchor="middle">Embedded content</text>
+          </g>
+          <rect class="media-placeholder" x="100" y="40" width="600" height="230" rx="4" />
+          <text x="400" y="160" text-anchor="middle" font-size="16" fill="#666" opacity="0.6">iframe / embed</text>
+
+          <!-- Caption -->
+          <rect class="hover-target" x="100" y="285" width="600" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="280" x2="400" y2="260" />
+            <rect class="label-bg" x="362" y="244" width="76" height="20" />
+            <text class="label-text" x="400" y="258" text-anchor="middle">Caption</text>
+          </g>
+          <line class="text-line optional" x1="150" y1="295" x2="650" y2="295" stroke-width="1" opacity="0.7" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Aspect ratio</td><td>16:9, 4:3, 1:1, Auto</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Contained, Full-width</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Type</td><td>Video, Map, Social post, Generic</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="40" y="30" width="320" height="140" rx="4" />
+              <text x="200" y="105" text-anchor="middle" font-size="12" fill="#666" opacity="0.6">16:9 video</text>
+            </svg>
+          </div>
+          <figcaption>16:9 — YouTube, Vimeo</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="40" y="15" width="320" height="170" rx="4" />
+              <text x="200" y="105" text-anchor="middle" font-size="12" fill="#666" opacity="0.6">4:3 map</text>
+            </svg>
+          </div>
+          <figcaption>4:3 — maps, older content</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="100" y="20" width="200" height="160" rx="4" />
+              <text x="200" y="105" text-anchor="middle" font-size="12" fill="#666" opacity="0.6">1:1</text>
+            </svg>
+          </div>
+          <figcaption>1:1 — social posts</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="20" y="20" width="360" height="140" rx="4" />
+              <text x="200" y="95" text-anchor="middle" font-size="12" fill="#666" opacity="0.6">Full-width</text>
+              <line class="text-line" x1="70" y1="175" x2="330" y2="175" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Full-width — with caption</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use for YouTube/Vimeo videos, Google Maps, tweets, or any iframe content. Always provide a fallback or description for accessibility. Maintain aspect ratio.</li>
+        <li>Wrap iframes in a container with <code>padding-bottom</code> hack or <code>aspect-ratio</code> CSS to maintain responsive aspect ratios.</li>
+        <li>Include <code>loading="lazy"</code> attribute on iframes to improve page load performance.</li>
+        <li>Consider privacy implications — third-party embeds often include tracking. Use privacy-friendly alternatives when available.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="figure.html">&larr; Figure</a>
+      <a href="profile.html">Profile &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callout — Component Naming System</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content Display</a></li>
+        <li>Callout</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Callout</h1>
+      <p>A visually distinct block that draws attention to specific information. Tips, notes, warnings, or pull-quotes that need to stand out from surrounding content.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>— (Bootstrap), — (Material), Alert (Ant, partial), — (Apple), — (shadcn)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;aside&gt;</code> or <code>&lt;blockquote&gt;</code></dd>
+        <dt>Category</dt>
+        <dd>Content Display</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Content</td><td>Yes</td><td>The highlighted text/information</td></tr>
+          <tr><td>Title/Label</td><td>No</td><td>"Note:", "Tip:", "Warning:" label</td></tr>
+          <tr><td>Icon</td><td>No</td><td>Visual indicator of type</td></tr>
+          <tr><td>Border/Accent</td><td>No</td><td>Left border or background tint</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+          <!-- Callout box with left border accent -->
+          <rect class="region" x="150" y="50" width="500" height="150" rx="4" />
+          <rect x="150" y="50" width="6" height="150" rx="4 0 0 4" fill="#0066cc" />
+
+          <!-- Icon -->
+          <rect class="hover-target" x="180" y="75" width="40" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="200" y1="70" x2="200" y2="50" />
+            <rect class="label-bg" x="177" y="34" width="46" height="20" />
+            <text class="label-text" x="200" y="48" text-anchor="middle">Icon</text>
+          </g>
+          <circle class="interactive optional" cx="200" cy="95" r="18" />
+          <text x="200" y="100" text-anchor="middle" font-size="14" fill="#0066cc">i</text>
+
+          <!-- Title/Label -->
+          <rect class="hover-target" x="240" y="75" width="100" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="290" y1="70" x2="290" y2="50" />
+            <rect class="label-bg" x="232" y="34" width="116" height="20" />
+            <text class="label-text" x="290" y="48" text-anchor="middle">Title/Label</text>
+          </g>
+          <line class="text-line optional" x1="240" y1="85" x2="320" y2="85" />
+
+          <!-- Content -->
+          <rect class="hover-target" x="240" y="110" width="380" height="70" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="430" y1="185" x2="430" y2="205" />
+            <rect class="label-bg" x="387" y="207" width="86" height="20" />
+            <text class="label-text" x="430" y="221" text-anchor="middle">Content</text>
+          </g>
+          <line class="text-line" x1="240" y1="120" x2="600" y2="120" />
+          <line class="text-line" x1="240" y1="140" x2="580" y2="140" />
+          <line class="text-line" x1="240" y1="160" x2="610" y2="160" />
+
+          <!-- Border/Accent indicator -->
+          <rect class="hover-target" x="150" y="50" width="6" height="150" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="145" y1="125" x2="125" y2="125" />
+            <rect class="label-bg" x="15" y="115" width="105" height="20" />
+            <text class="label-text" x="67" y="129" text-anchor="middle">Border/Accent</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <h3>Universal</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Type</td><td>Info, Tip, Warning, Note, Quote</td><td>No (changes color/icon)</td></tr>
+          <tr><td>Icon</td><td>Shown, Hidden</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Style</td><td>Left border accent, Full background tint, Outlined</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="50" width="320" height="100" rx="4" />
+              <rect x="40" y="50" width="5" height="100" rx="4 0 0 4" fill="#0066cc" />
+              <circle class="interactive" cx="70" cy="80" r="12" />
+              <text x="70" y="84" text-anchor="middle" font-size="10" fill="#0066cc">i</text>
+              <line class="text-line" x1="95" y1="70" x2="150" y2="70" />
+              <line class="text-line" x1="95" y1="90" x2="330" y2="90" />
+              <line class="text-line" x1="95" y1="105" x2="310" y2="105" />
+              <line class="text-line" x1="95" y1="120" x2="320" y2="120" />
+            </svg>
+          </div>
+          <figcaption>Info — left border accent</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="50" width="320" height="100" rx="4" />
+              <rect x="40" y="50" width="5" height="100" rx="4 0 0 4" fill="#f5a623" />
+              <circle class="interactive" cx="70" cy="80" r="12" />
+              <text x="70" y="86" text-anchor="middle" font-size="12" fill="#f5a623">!</text>
+              <line class="text-line" x1="95" y1="70" x2="180" y2="70" />
+              <line class="text-line" x1="95" y1="90" x2="330" y2="90" />
+              <line class="text-line" x1="95" y1="105" x2="310" y2="105" />
+              <line class="text-line" x1="95" y1="120" x2="320" y2="120" />
+            </svg>
+          </div>
+          <figcaption>Warning — orange accent</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="50" width="320" height="100" rx="4" fill="#e8f4ff" />
+              <line class="text-line" x1="60" y1="75" x2="330" y2="75" />
+              <line class="text-line" x1="60" y1="90" x2="310" y2="90" />
+              <line class="text-line" x1="60" y1="105" x2="320" y2="105" />
+              <line class="text-line" x1="60" y1="120" x2="300" y2="120" />
+            </svg>
+          </div>
+          <figcaption>Full background tint</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="50" width="320" height="100" rx="4" fill="none" stroke="#0a0" stroke-width="2" />
+              <circle class="interactive" cx="70" cy="80" r="12" />
+              <text x="70" y="84" text-anchor="middle" font-size="10" fill="#0a0">✓</text>
+              <line class="text-line" x1="95" y1="70" x2="150" y2="70" />
+              <line class="text-line" x1="95" y1="90" x2="330" y2="90" />
+              <line class="text-line" x1="95" y1="105" x2="310" y2="105" />
+              <line class="text-line" x1="95" y1="120" x2="320" y2="120" />
+            </svg>
+          </div>
+          <figcaption>Outlined — success/tip</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use within Prose for editorial emphasis. For user-action feedback (form errors, success), use Alert. For quotes with attribution, use Testimonial.</li>
+        <li>Color coding helps users quickly identify type: blue for info, yellow/orange for warnings, red for errors, green for tips/success.</li>
+        <li>Use semantic elements: <code>&lt;aside&gt;</code> for notes/tips, <code>&lt;blockquote&gt;</code> for pull-quotes.</li>
+        <li>Include appropriate ARIA roles when needed: <code>role="note"</code> or <code>role="complementary"</code>.</li>
+      </ul>
+    </section>
+
+    <nav class="component-nav">
+      <a href="mosaic.html">&larr; Mosaic</a>
+      <a href="snapshot.html">Snapshot &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
