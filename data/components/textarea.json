@@ -1,0 +1,75 @@
+{
+  "slug": "textarea",
+  "name": "Textarea",
+  "order": 46,
+  "status": "draft",
+  "group": "forms",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "`<textarea>`",
+  "aria": "",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Textbox"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "alias",
+      "name": "Textarea Autosize"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Text area"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Text area"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Textarea"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Text Area"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Textarea"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Textarea"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Textarea"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Text views"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

@@ -65,6 +65,7 @@
     "grid"
   ],
   "children": [
+    "stack",
     "separator",
     "heading",
     "rich-text",
@@ -74,7 +75,9 @@
     "card",
     "description-list",
     "embed",
+    "button-group",
     "menu-button",
+    "segmented-control",
     "switch",
     "tabs",
     "pagination",

@@ -1,7 +1,7 @@
 {
   "slug": "table",
   "name": "Table",
-  "order": 15,
+  "order": 17,
   "status": "stable",
   "group": "content-display",
   "description": "Tabular data presented in rows and columns. For structured data that benefits from alignment and comparison across rows.",

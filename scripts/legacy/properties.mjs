@@ -55,6 +55,9 @@ for (const line of s4.split('\n')) {
     group: letterToGroup[letter],
   });
 }
+// Aliases that would collide (research R4 and section 5): "Label" is reserved
+// for <label>; "Stepper" stays with Steps, not Number input.
+const ALIAS_DROP = { tag: ['Label'], 'number-input': ['Stepper'] };
 const slugify = n => n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const csvFor = name => csv.find(r => r.Canonical.toLowerCase() === name.toLowerCase());
 const frameworks = row => Object.fromEntries(SYSTEMS.map(s => {
@@ -114,7 +117,7 @@ if (bi !== -1) {
       collections: [],
       usageNotes: [],
       related: [],
-      aliases: r.aliases.filter(a => a.toLowerCase() !== r.name.toLowerCase()),
+      aliases: r.aliases.filter(a => a.toLowerCase() !== r.name.toLowerCase() && !(ALIAS_DROP[slugify(r.name)] || []).includes(a)),
       frameworkSource: cr ? 'csv' : 'none',
       frameworkNames: frameworks(cr),
       frameworkNotes: cr?.Notes ?? '',

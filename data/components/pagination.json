@@ -1,7 +1,7 @@
 {
   "slug": "pagination",
   "name": "Pagination",
-  "order": 24,
+  "order": 29,
   "status": "stable",
   "group": "wayfinding",
   "description": "Page-by-page navigation for content split across multiple pages. Provides numbered pages, previous/next, and optionally first/last.",

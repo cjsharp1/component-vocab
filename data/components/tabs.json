@@ -1,7 +1,7 @@
 {
   "slug": "tabs",
   "name": "Tabs",
-  "order": 23,
+  "order": 28,
   "status": "stable",
   "group": "wayfinding",
   "description": "Content organized into switchable panels. Only one panel is visible at a time; tab buttons switch between them.",
@@ -136,6 +136,7 @@
   "children": [
     "rich-text",
     "image",
-    "list"
+    "list",
+    "button-group"
   ]
 }

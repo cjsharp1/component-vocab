@@ -1,0 +1,76 @@
+{
+  "slug": "button-group",
+  "name": "Button group",
+  "order": 24,
+  "status": "draft",
+  "group": "actions",
+  "description": "A CTA pair is not a toolbar",
+  "summary": "A CTA pair is not a toolbar",
+  "htmlElement": "",
+  "nativeHtml": "`<div role=\"group\">`",
+  "aria": "Toolbar (only if roving tabindex is needed)",
+  "researchNote": "A CTA pair is not a toolbar",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Toolbar"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Button Group"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Button group"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Button group"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Button Group"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Toolbar"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Toolbars"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot",
+    "hero",
+    "tabs",
+    "accordion"
+  ],
+  "children": []
+}

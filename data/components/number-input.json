@@ -1,0 +1,74 @@
+{
+  "slug": "number-input",
+  "name": "Number input",
+  "order": 52,
+  "status": "draft",
+  "group": "forms",
+  "description": "The +/- control",
+  "summary": "The +/- control",
+  "htmlElement": "",
+  "nativeHtml": "`<input type=\"number\">`",
+  "aria": "Spinbutton",
+  "researchNote": "The +/- control",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Quantity",
+    "Counter",
+    "Nudger"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "InputNumber"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Number input"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Number field"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Number Input"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Spin button"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Steppers"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

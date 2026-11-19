@@ -120,6 +120,7 @@
   "parents": [],
   "children": [
     "grid",
+    "stack",
     "separator",
     "heading",
     "rich-text",
@@ -130,7 +131,9 @@
     "hero",
     "description-list",
     "embed",
+    "button-group",
     "menu-button",
+    "segmented-control",
     "switch",
     "tabs",
     "pagination",

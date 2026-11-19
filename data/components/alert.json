@@ -1,7 +1,7 @@
 {
   "slug": "alert",
   "name": "Alert",
-  "order": 32,
+  "order": 37,
   "status": "stable",
   "group": "feedback-status",
   "description": "An inline feedback message communicating the result of a user action or system state. Success, warning, error, or informational messages that appear in context.",

@@ -1,0 +1,72 @@
+{
+  "slug": "stack",
+  "name": "Stack",
+  "order": 9,
+  "status": "draft",
+  "group": "layout",
+  "description": "Vertical flow with a consistent gap",
+  "summary": "Vertical flow with a consistent gap",
+  "htmlElement": "",
+  "nativeHtml": "`<div>` + gap",
+  "aria": "",
+  "researchNote": "Vertical flow with a consistent gap",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Stack"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Stacks"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Space"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Stack"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Stack"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Stack"
+    },
+    "Radix Themes": {
+      "match": "different",
+      "name": "Flex"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

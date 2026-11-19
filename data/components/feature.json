@@ -1,7 +1,7 @@
 {
   "slug": "feature",
   "name": "Feature",
-  "order": 45,
+  "order": 55,
   "status": "stable",
   "group": "page-patterns",
   "description": "A single feature or benefit highlight. Presents an icon, heading, and short description to explain a capability or value proposition. Read in place, not a link to elsewhere.",

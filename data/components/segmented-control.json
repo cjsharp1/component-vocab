@@ -1,0 +1,74 @@
+{
+  "slug": "segmented-control",
+  "name": "Segmented control",
+  "order": 26,
+  "status": "draft",
+  "group": "actions",
+  "description": "Mutually exclusive options",
+  "summary": "Mutually exclusive options",
+  "htmlElement": "",
+  "nativeHtml": "radio inputs or buttons",
+  "aria": "",
+  "researchNote": "Mutually exclusive options",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Toggle button group"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "alias",
+      "name": "Toggle Button"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Segmented"
+    },
+    "Carbon": {
+      "match": "different",
+      "name": "Content switcher"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Segmented Control"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Segmented Control"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Toggle Group"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "same",
+      "name": "Segmented controls"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "date-picker",
+  "name": "Date picker",
+  "order": 53,
+  "status": "draft",
+  "group": "forms",
+  "description": "Calendar popup",
+  "summary": "Calendar popup",
+  "htmlElement": "",
+  "nativeHtml": "",
+  "aria": "",
+  "researchNote": "Calendar popup",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Calendar",
+    "Datetime picker"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "DatePicker"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Date picker"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Date picker"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Date time picker"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Date Picker"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Date Picker"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Pickers"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

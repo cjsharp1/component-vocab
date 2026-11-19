@@ -121,3 +121,6 @@ Usage notes, descriptions and element names that pointed at a retired or renamed
 
 - Accordion no longer lists "Disclosure" as an alias: Disclosure is its own component (research §5).
 - Menu button no longer lists "Dropdown" as an alias (kept in `formerNames`; `components/dropdown.html` still redirects to it). Select keeps "Dropdown", as research §4 lists it. Research §5 retires "Dropdown" as a component name.
+- Badge no longer lists "Tag", "Label" or "Chip", and Tag no longer lists "Label": Tag, Label and Chip are their own components, and research R4 reserves "Label" for `<label>`.
+- "Stepper" stays an alias of Steps only; research §5 splits it into Steps (process) and Number input (quantity).
+- Logo cloud dropped the alias "Logo Cloud" (same as its name).

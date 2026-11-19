@@ -1,7 +1,7 @@
 {
   "slug": "accordion",
   "name": "Accordion",
-  "order": 26,
+  "order": 31,
   "status": "stable",
   "group": "disclosure-overlays",
   "description": "Expandable/collapsible content panels. Each panel has a header that reveals or hides associated content when triggered.",
@@ -143,6 +143,7 @@
   "children": [
     "rich-text",
     "image",
-    "list"
+    "list",
+    "button-group"
   ]
 }

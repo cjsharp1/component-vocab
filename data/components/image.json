@@ -1,7 +1,7 @@
 {
   "slug": "image",
   "name": "Image",
-  "order": 12,
+  "order": 13,
   "status": "stable",
   "group": "content-display",
   "description": "An image, illustration, diagram, or code snippet accompanied by a caption. Used for visual content that needs attribution or explanation.",

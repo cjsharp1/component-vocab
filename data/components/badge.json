@@ -1,7 +1,7 @@
 {
   "slug": "badge",
   "name": "Badge",
-  "order": 34,
+  "order": 39,
   "status": "stable",
   "group": "feedback-status",
   "description": "A small indicator attached to another element — showing a count, status, or \"new\" marker. Draws attention to changes or unread items.",
@@ -67,11 +67,7 @@
     "A dot badge is useful when you want to indicate presence or activity without a specific count."
   ],
   "related": [],
-  "aliases": [
-    "Tag",
-    "Label",
-    "Chip"
-  ],
+  "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {
     "MUI": {

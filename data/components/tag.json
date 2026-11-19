@@ -1,0 +1,68 @@
+{
+  "slug": "tag",
+  "name": "Tag",
+  "order": 40,
+  "status": "draft",
+  "group": "feedback-status",
+  "description": "Static categorization",
+  "summary": "Static categorization",
+  "htmlElement": "",
+  "nativeHtml": "`<span>` or `<a>`",
+  "aria": "",
+  "researchNote": "Static categorization",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Tag"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Tag"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Tag"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Tag"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Tag"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Tag"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

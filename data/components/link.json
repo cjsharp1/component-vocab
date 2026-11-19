@@ -1,0 +1,72 @@
+{
+  "slug": "link",
+  "name": "Link",
+  "order": 22,
+  "status": "draft",
+  "group": "actions",
+  "description": "Navigates",
+  "summary": "Navigates",
+  "htmlElement": "",
+  "nativeHtml": "`<a href>`",
+  "aria": "Link",
+  "researchNote": "Navigates",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Anchor",
+    "Hyperlink"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Link"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Link"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Link"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Link"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Link"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Link"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Link"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

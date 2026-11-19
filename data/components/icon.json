@@ -1,0 +1,68 @@
+{
+  "slug": "icon",
+  "name": "Icon",
+  "order": 14,
+  "status": "draft",
+  "group": "content-display",
+  "description": "Decorative icons `aria-hidden`",
+  "summary": "Decorative icons `aria-hidden`",
+  "htmlElement": "",
+  "nativeHtml": "inline `<svg>`",
+  "aria": "img or hidden",
+  "researchNote": "Decorative icons `aria-hidden`",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Icons"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Icon"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Icon"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Icon"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Icon"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Icon"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

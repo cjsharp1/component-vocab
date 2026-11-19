@@ -1,7 +1,7 @@
 {
   "slug": "testimonial",
   "name": "Testimonial",
-  "order": 46,
+  "order": 56,
   "status": "stable",
   "group": "page-patterns",
   "description": "A quote, review, or endorsement attributed to a specific person or organization. Provides social proof and credibility.",

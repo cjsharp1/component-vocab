@@ -1,7 +1,7 @@
 {
   "slug": "logo-cloud",
   "name": "Logo cloud",
-  "order": 48,
+  "order": 58,
   "status": "stable",
   "group": "page-patterns",
   "description": "A collection of partner, client, or technology logos arranged in a row or grid. Communicates trust and social proof through recognizable brand marks.",
@@ -78,9 +78,7 @@
   "formerNames": [
     "Logo Cloud"
   ],
-  "aliases": [
-    "Logo Cloud"
-  ],
+  "aliases": [],
   "frameworkSource": "legacy",
   "frameworkNames": {
     "MUI": {
