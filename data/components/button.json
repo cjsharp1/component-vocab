@@ -1,0 +1,74 @@
+{
+  "slug": "button",
+  "name": "Button",
+  "order": 20,
+  "status": "draft",
+  "group": "actions",
+  "description": "Acts",
+  "summary": "Acts",
+  "htmlElement": "",
+  "nativeHtml": "`<button>`",
+  "aria": "Button",
+  "researchNote": "Acts",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Buttons"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Button"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Button"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Button"
+    },
+    "Apple HIG": {
+      "match": "same",
+      "name": "Buttons"
+    }
+  },
+  "frameworkNotes": "12 of 12, same name.",
+  "parents": [],
+  "children": []
+}

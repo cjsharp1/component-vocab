@@ -1,0 +1,97 @@
+{
+  "slug": "slot",
+  "name": "Slot",
+  "order": 8,
+  "status": "draft",
+  "group": "layout",
+  "description": "Auto-managed by Grid",
+  "summary": "Auto-managed by Grid",
+  "htmlElement": "",
+  "nativeHtml": "`<div>`",
+  "aria": "",
+  "researchNote": "Auto-managed by Grid",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Column",
+    "Col"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Columns"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "Only Bootstrap lists Column as its own entry. Everyone else treats it as part of Grid.",
+  "parents": [
+    "grid"
+  ],
+  "children": [
+    "separator",
+    "heading",
+    "rich-text",
+    "image",
+    "list",
+    "table",
+    "card",
+    "description-list",
+    "embed",
+    "menu-button",
+    "switch",
+    "tabs",
+    "pagination",
+    "timeline",
+    "accordion",
+    "disclosure",
+    "alert",
+    "progress-bar",
+    "spinner",
+    "skeleton",
+    "form",
+    "carousel",
+    "feature",
+    "testimonial",
+    "stats",
+    "logo-cloud",
+    "call-to-action",
+    "pricing-table"
+  ]
+}

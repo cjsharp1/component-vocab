@@ -1,7 +1,7 @@
 {
   "slug": "skeleton",
   "name": "Skeleton",
-  "order": 32,
+  "order": 37,
   "status": "stable",
   "group": "feedback-status",
   "description": "A placeholder loading state that mimics the shape of content to come. Shows the layout structure before real content loads.",
@@ -117,7 +117,8 @@
   "researchNote": "",
   "frameworkNotes": "",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": []
 }

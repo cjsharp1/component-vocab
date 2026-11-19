@@ -116,3 +116,8 @@ Legacy column → CSV column: Bootstrap → Bootstrap, Material → MUI, Ant →
 ### Cross-references updated
 
 Usage notes, descriptions and element names that pointed at a retired or renamed page now use the new names (39 edits in 26 files): for example "use Profile" became "use the person variant (formerly Profile)", "use Dropdown" became "use Menu button", "use Progress" became "use Progress bar", and Timeline's "use Progress" became "use Steps" (research §4 E). Notes that explain a change on purpose ("rather than a separate Profile component") keep the old name. Testimonial now points to Quote and Timeline to Steps; both are Phase 7 draft pages.
+
+## Phase 7: alias collisions resolved
+
+- Accordion no longer lists "Disclosure" as an alias: Disclosure is its own component (research §5).
+- Menu button no longer lists "Dropdown" as an alias (kept in `formerNames`; `components/dropdown.html` still redirects to it). Select keeps "Dropdown", as research §4 lists it. Research §5 retires "Dropdown" as a component name.

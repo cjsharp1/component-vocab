@@ -1,7 +1,7 @@
 {
   "slug": "progress-bar",
   "name": "Progress bar",
-  "order": 30,
+  "order": 35,
   "status": "stable",
   "group": "feedback-status",
   "description": "A visual indicator of task or process completion. Shows how far along a process is.",
@@ -133,7 +133,8 @@
   "researchNote": "Task completion",
   "frameworkNotes": "Progress 7, Progress bar 3.",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": []
 }

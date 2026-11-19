@@ -1,0 +1,78 @@
+{
+  "slug": "radio-group",
+  "name": "Radio group",
+  "order": 42,
+  "status": "draft",
+  "group": "forms",
+  "description": "The group is the unit",
+  "summary": "The group is the unit",
+  "htmlElement": "",
+  "nativeHtml": "fieldset + radio inputs",
+  "aria": "Radio Group",
+  "researchNote": "The group is the unit",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Radio",
+    "Radio button"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Radio Group"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Checks & radios"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Radio"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Radio button"
+    },
+    "Polaris": {
+      "match": "different",
+      "name": "Choice list"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Radio"
+    },
+    "Chakra UI": {
+      "match": "alias",
+      "name": "Radio"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Radio Group"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Radio Group"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Radio group"
+    },
+    "GOV.UK": {
+      "match": "alias",
+      "name": "Radios"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "Radio group 4, plain Radio (any form) 6.",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

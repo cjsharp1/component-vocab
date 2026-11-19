@@ -1,7 +1,7 @@
 {
   "slug": "rich-text",
   "name": "Rich Text",
-  "order": 9,
+  "order": 11,
   "status": "stable",
   "group": "content-display",
   "description": "Long-form rich text content — article bodies, descriptions, documentation. Provides appropriate typography and spacing for readable paragraphs, headings, lists, and inline elements.",
@@ -154,6 +154,7 @@
   "frameworkNotes": "",
   "parents": [
     "section",
+    "slot",
     "hero",
     "tabs",
     "accordion"

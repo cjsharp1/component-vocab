@@ -1,0 +1,79 @@
+{
+  "slug": "select",
+  "name": "Select",
+  "order": 40,
+  "status": "draft",
+  "group": "forms",
+  "description": "Choose a value",
+  "summary": "Choose a value",
+  "htmlElement": "",
+  "nativeHtml": "`<select>`",
+  "aria": "Listbox (custom)",
+  "researchNote": "Choose a value",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Dropdown",
+    "Select input"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Dropdown"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Select"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Dropdown"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Select"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Pop-up buttons"
+    }
+  },
+  "frameworkNotes": "Select 9 of 12.",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

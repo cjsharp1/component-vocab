@@ -1,7 +1,7 @@
 {
   "slug": "description-list",
   "name": "Description list",
-  "order": 16,
+  "order": 18,
   "status": "stable",
   "group": "content-display",
   "description": "A compact summary block showing key details at a glance. Key-value metadata presented in a structured format — event info, product specs, recipe metadata.",
@@ -124,7 +124,8 @@
   "researchNote": "",
   "frameworkNotes": "",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": []
 }

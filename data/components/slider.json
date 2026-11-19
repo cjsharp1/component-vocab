@@ -1,0 +1,76 @@
+{
+  "slug": "slider",
+  "name": "Slider",
+  "order": 43,
+  "status": "draft",
+  "group": "forms",
+  "description": "Never used for a Carousel",
+  "summary": "Never used for a Carousel",
+  "htmlElement": "",
+  "nativeHtml": "`<input type=\"range\">`",
+  "aria": "Slider",
+  "researchNote": "Never used for a Carousel",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Range input"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Slider"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Range"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Slider"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Slider"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Range"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Slider"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Slider"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Slider"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Slider"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "same",
+      "name": "Sliders"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

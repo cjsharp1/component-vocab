@@ -1,0 +1,76 @@
+{
+  "slug": "text-input",
+  "name": "Text input",
+  "order": 39,
+  "status": "draft",
+  "group": "forms",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "`<input type=\"text\">`",
+  "aria": "",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "different",
+      "name": "Text Field"
+    },
+    "Bootstrap": {
+      "match": "different",
+      "name": "Form control"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Input"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Text input"
+    },
+    "Polaris": {
+      "match": "different",
+      "name": "Text field"
+    },
+    "Atlassian": {
+      "match": "different",
+      "name": "Text field"
+    },
+    "Chakra UI": {
+      "match": "different",
+      "name": "Input"
+    },
+    "Radix Themes": {
+      "match": "different",
+      "name": "Text Field"
+    },
+    "shadcn/ui": {
+      "match": "different",
+      "name": "Input"
+    },
+    "Fluent UI": {
+      "match": "different",
+      "name": "Input"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Text input"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Text fields"
+    }
+  },
+  "frameworkNotes": "Text field 5, Input 4, Text input 2, Form control 1. The canonical name loses this one.",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

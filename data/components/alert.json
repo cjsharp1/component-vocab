@@ -1,7 +1,7 @@
 {
   "slug": "alert",
   "name": "Alert",
-  "order": 27,
+  "order": 32,
   "status": "stable",
   "group": "feedback-status",
   "description": "An inline feedback message communicating the result of a user action or system state. Success, warning, error, or informational messages that appear in context.",
@@ -157,7 +157,8 @@
   "researchNote": "In-flow message",
   "frameworkNotes": "Alert 6, Banner 2, Notification 2, Callout 1, Message bar 1.",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": []
 }

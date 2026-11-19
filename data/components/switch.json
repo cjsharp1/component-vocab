@@ -1,0 +1,78 @@
+{
+  "slug": "switch",
+  "name": "Switch",
+  "order": 22,
+  "status": "draft",
+  "group": "actions",
+  "description": "Takes effect immediately",
+  "summary": "Takes effect immediately",
+  "htmlElement": "",
+  "nativeHtml": "checkbox + `role=\"switch\"`",
+  "aria": "Switch",
+  "researchNote": "Takes effect immediately",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Toggle",
+    "Lightswitch"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Switch"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Switch"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Toggle"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Switch"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Toggle"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Switch"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Switch"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Switch"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Switch"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Toggles"
+    }
+  },
+  "frameworkNotes": "Switch 7, Toggle 3.",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

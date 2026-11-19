@@ -1,0 +1,75 @@
+{
+  "slug": "checkbox",
+  "name": "Checkbox",
+  "order": 41,
+  "status": "draft",
+  "group": "forms",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "`<input type=\"checkbox\">`",
+  "aria": "Checkbox",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Checks & radios"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Checkbox"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Checkboxes"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

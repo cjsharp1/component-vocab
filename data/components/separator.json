@@ -1,7 +1,7 @@
 {
   "slug": "separator",
   "name": "Separator",
-  "order": 8,
+  "order": 9,
   "status": "stable",
   "group": "layout",
   "description": "A visual separator between content sections.",
@@ -144,7 +144,8 @@
   "researchNote": "Decorative lines belong in CSS",
   "frameworkNotes": "Divider 4, Separator 3, Vertical rule 1.",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": []
 }

@@ -1,7 +1,7 @@
 {
   "slug": "accordion",
   "name": "Accordion",
-  "order": 22,
+  "order": 26,
   "status": "stable",
   "group": "disclosure-overlays",
   "description": "Expandable/collapsible content panels. Each panel has a header that reveals or hides associated content when triggered.",
@@ -82,8 +82,7 @@
     "Collapse",
     "Expander",
     "Details",
-    "Collapsible",
-    "Disclosure"
+    "Collapsible"
   ],
   "frameworkSource": "csv",
   "frameworkNames": {
@@ -138,7 +137,8 @@
   "researchNote": "A group of related disclosures",
   "frameworkNotes": "Accordion 7 of 12.",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": [
     "rich-text",

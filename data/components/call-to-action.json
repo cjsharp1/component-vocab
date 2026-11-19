@@ -1,7 +1,7 @@
 {
   "slug": "call-to-action",
   "name": "Call to action",
-  "order": 39,
+  "order": 49,
   "status": "stable",
   "group": "page-patterns",
   "description": "A prominent call-to-action block designed to convert visitors. Contains a compelling headline, supporting text, and one or more buttons urging the user to take action.",
@@ -132,7 +132,8 @@
   "researchNote": "",
   "frameworkNotes": "",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": []
 }

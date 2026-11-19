@@ -1,7 +1,7 @@
 {
   "slug": "carousel",
   "name": "Carousel",
-  "order": 34,
+  "order": 44,
   "status": "stable",
   "group": "collections",
   "description": "A paginated slideshow cycling through cards, images, or content panels. Shows one or a few items at a time with navigation.",
@@ -130,7 +130,8 @@
   "researchNote": "Auto-rotation needs a pause control (WCAG 2.2.2)",
   "frameworkNotes": "",
   "parents": [
-    "section"
+    "section",
+    "slot"
   ],
   "children": []
 }

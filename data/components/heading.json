@@ -1,0 +1,75 @@
+{
+  "slug": "heading",
+  "name": "Heading",
+  "order": 10,
+  "status": "draft",
+  "group": "content-display",
+  "description": "Level is not size",
+  "summary": "Level is not size",
+  "htmlElement": "",
+  "nativeHtml": "`h1` to `h6`",
+  "aria": "heading",
+  "researchNote": "Level is not size",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "different",
+      "name": "Typography"
+    },
+    "Bootstrap": {
+      "match": "different",
+      "name": "Typography"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Typography"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Heading"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Heading"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Heading"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Heading"
+    },
+    "shadcn/ui": {
+      "match": "different",
+      "name": "Typography"
+    },
+    "Fluent UI": {
+      "match": "different",
+      "name": "Text"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "Split: Heading 4, Typography 4, Text 1.",
+  "parents": [
+    "section",
+    "slot",
+    "hero"
+  ],
+  "children": []
+}

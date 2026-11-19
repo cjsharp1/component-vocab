@@ -1,7 +1,7 @@
 {
   "slug": "image",
   "name": "Image",
-  "order": 10,
+  "order": 12,
   "status": "stable",
   "group": "content-display",
   "description": "An image, illustration, diagram, or code snippet accompanied by a caption. Used for visual content that needs attribution or explanation.",
@@ -143,6 +143,7 @@
   "frameworkNotes": "",
   "parents": [
     "section",
+    "slot",
     "hero",
     "tabs",
     "accordion"
