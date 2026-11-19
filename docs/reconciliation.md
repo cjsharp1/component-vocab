@@ -188,24 +188,24 @@ Recommendations repeat the plan unless a correction above changes them. Fill in 
 
 | # | Decision | Recommendation | Needs confirmation | Answer |
 |---|---|---|---|---|
-| D1 | Reconciliation | The research list wins; apply §1 of this document | | |
-| D2 | Source of truth | One JSON file per component in `data/components/`, a JSON Schema, and a dependency-free `scripts/build.mjs`. Generated HTML is committed. This relaxes "no build tools, no npm" to "no dependencies" | **Yes** | |
-| D3 | Gap vocabulary (research §6) | Not in this rework. §1 shows none of the existing patterns needs a coined name, so no blocker remains for a later pass | | |
-| D4 | Comparison table | The CSV's 12 systems replace the current 5; Material becomes MUI | Yes (column naming, see Q5) | |
-| D5 | Taxonomy | Research groups A to I, plus J "Page patterns (not framework consensus)" for the six patterns | **Yes** | |
-| D6 | Retired and renamed slugs | Small redirect pages (meta refresh plus a visible link) | Yes | |
-| D7 | Universal config table | One shared section instead of a copy on every page | | |
-| D8 | Where `design/overhaul` lands | Merged in Phase 2, before extraction | | |
+| D1 | Reconciliation | The research list wins; apply §1 of this document | | Yes (accepted) |
+| D2 | Source of truth | One JSON file per component in `data/components/`, a JSON Schema, and a dependency-free `scripts/build.mjs`. Generated HTML is committed. This relaxes "no build tools, no npm" to "no dependencies" | **Yes** | Yes (accepted) |
+| D3 | Gap vocabulary (research §6) | Not in this rework. §1 shows none of the existing patterns needs a coined name, so no blocker remains for a later pass | | Yes (accepted) |
+| D4 | Comparison table | The CSV's 12 systems replace the current 5; Material becomes MUI | Yes (column naming, see Q5) | Yes (accepted) |
+| D5 | Taxonomy | Research groups A to I, plus J "Page patterns (not framework consensus)" for the six patterns | **Yes** | Yes (accepted) |
+| D6 | Retired and renamed slugs | Small redirect pages (meta refresh plus a visible link) | Yes | Yes (accepted) |
+| D7 | Universal config table | One shared section instead of a copy on every page | | Yes (accepted) |
+| D8 | Where `design/overhaul` lands | Merged in Phase 2, before extraction | | Yes (accepted) |
 
 ## 5. Open questions
 
 | # | Question | Recommendation | Answer |
 |---|---|---|---|
 | Q1 | Which framework is missing from the CSV? | **Closed** (C6): none; 12 is correct | — |
-| Q2 | Should Text/Typography, Code, Calendar, Scroll area, Hover card, Context menu, Aspect ratio or Kbd join the canonical list? | Not in this rework. None is in the CSV or §4, so they'd need evidence first; log them for the gap pass | |
-| Q3 | Redirect stubs for old URLs, or delete them? | Redirects (D6). They cost 11 tiny files and keep links working | |
-| Q4 | Keep group J, or fold or drop those patterns? | Keep J. §6 explicitly treats all six as already-named sections | |
-| Q5 | MUI or Material Design 3 for the comparison column? | MUI, because that is what the CSV records. Note in the key that Material 3 names some things differently | |
-| Q6 | Old Figure "Gallery layout": Image variant, or a new Gallery component? | Image variant. Gallery isn't in §4 or the CSV, and §2 Q3 treats it as a multi-up block with a "per row" setting, which fits a variant | |
-| Q7 | Group J names: the plan's short forms (Feature, Stat, Pricing, Call to action) or §6's forms (Feature section, Stats, Pricing table, CTA section)? (C5) | §6's forms with "section" dropped where the group already implies it: Feature, Testimonial, Stats, Logo cloud, Call to action, Pricing table. Follows R1 (name the thing) and avoids the abbreviation | |
-| Q8 | "Slot" or "Column" as the page name for the Grid cell? (C7) | **Slot** as canonical, "Column" as alias. It matches the research's data model and avoids implying a free-standing block | |
+| Q2 | Should Text/Typography, Code, Calendar, Scroll area, Hover card, Context menu, Aspect ratio or Kbd join the canonical list? | Not in this rework. None is in the CSV or §4, so they'd need evidence first; log them for the gap pass | Yes (accepted) |
+| Q3 | Redirect stubs for old URLs, or delete them? | Redirects (D6). They cost 11 tiny files and keep links working | Yes (accepted) |
+| Q4 | Keep group J, or fold or drop those patterns? | Keep J. §6 explicitly treats all six as already-named sections | Yes (accepted) |
+| Q5 | MUI or Material Design 3 for the comparison column? | MUI, because that is what the CSV records. Note in the key that Material 3 names some things differently | Yes (accepted) |
+| Q6 | Old Figure "Gallery layout": Image variant, or a new Gallery component? | Image variant. Gallery isn't in §4 or the CSV, and §2 Q3 treats it as a multi-up block with a "per row" setting, which fits a variant | Yes (accepted) |
+| Q7 | Group J names: the plan's short forms (Feature, Stat, Pricing, Call to action) or §6's forms (Feature section, Stats, Pricing table, CTA section)? (C5) | §6's forms with "section" dropped where the group already implies it: Feature, Testimonial, Stats, Logo cloud, Call to action, Pricing table. Follows R1 (name the thing) and avoids the abbreviation | Yes (accepted) |
+| Q8 | "Slot" or "Column" as the page name for the Grid cell? (C7) | **Slot** as canonical, "Column" as alias. It matches the research's data model and avoids implying a free-standing block | Yes (accepted) |
