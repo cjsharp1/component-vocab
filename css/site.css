@@ -735,3 +735,6 @@ body > footer p { margin: 0; max-width: none; }
 .table-scroll-controls small { color: var(--ink-3); font-size: 0.8rem; }
 
 code, pre { font-variant-ligatures: none; }
+
+/* Index thumbnails: dashed optional outlines (without this, SVG's default black fill shows) */
+.component-grid svg .optional { fill: none; stroke: var(--wireframe-optional); stroke-width: 1; stroke-dasharray: 4 3; }
