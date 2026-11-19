@@ -75,7 +75,6 @@
     "Use the Navigation component inside Header for the navigation links.",
     "Sticky headers should have a solid background or backdrop blur."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

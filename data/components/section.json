@@ -67,7 +67,6 @@
     "Add an id attribute for anchor link navigation.",
     "Width is a Section setting (narrow, content, wide, full), not a separate Container block."
   ],
-  "related": [],
   "absorbed": [
     "Container"
   ],

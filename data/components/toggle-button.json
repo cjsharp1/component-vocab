@@ -79,7 +79,6 @@
     "Icon-only toggle buttons need an accessible name, such as <code>aria-label=\"Bold\"</code>.",
     "In a group, each toggle button keeps its own <code>aria-pressed</code> and can be pressed independently."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

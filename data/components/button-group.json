@@ -85,7 +85,6 @@
     "Keep the source order the same as the visual order so reading and focus order match (WCAG 1.3.2, 2.4.3). Don't reverse the buttons with CSS alone.",
     "For choosing one of several options, use a Segmented control. For several buttons that each stay pressed, use Toggle buttons."
   ],
-  "related": [],
   "aliases": [
     "Toolbar"
   ],

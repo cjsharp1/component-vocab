@@ -71,7 +71,6 @@
     "Steps are ideal for multi-stage processes like forms or onboarding.",
     "Ensure the progress indicator is labeled with <code>aria-valuenow</code>, <code>aria-valuemin</code>, and <code>aria-valuemax</code> for accessibility."
   ],
-  "related": [],
   "formerNames": [
     "Progress"
   ],

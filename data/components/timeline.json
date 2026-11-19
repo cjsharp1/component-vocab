@@ -76,7 +76,6 @@
     "Use semantic <code>&lt;ol&gt;</code> for ordered list of events with proper list item markup.",
     "Alternating layout works well for detailed events; left-aligned is better for compact timelines."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

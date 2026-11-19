@@ -70,7 +70,6 @@
     "Prefer auto-fit for content-driven layouts where item count varies.",
     "Grid is a layout utility — it doesn't add visual styling to its children."
   ],
-  "related": [],
   "absorbed": [
     "Mosaic"
   ],

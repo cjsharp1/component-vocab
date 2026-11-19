@@ -44,7 +44,6 @@ scripts/
   structure.mjs            derives parents/children from structure.json
   wireframe.mjs            draws wireframe SVGs from wireframes/<slug>/spec.json
   templates/               page templates and static index fragments
-  legacy/                  one-off migration scripts, kept for the record
 components/, index.html    generated output (don't edit by hand)
 css/, js/                  site styles and behavior
 ```
@@ -78,11 +77,10 @@ To rename or retire a page, change or delete its JSON and add `"old-slug": "new-
 
 - `docs/research/`: the research inputs (consensus list, naming collisions, gap vocabulary, framework survey).
 - `docs/reconciliation.md`: how the original 50 pages mapped to the research list, plus the signed-off decisions.
-- `docs/migration-log.md`: what the migration scripts changed, including every legacy-vs-CSV disagreement.
-- `component-vocab-brief.md`: a survey of the repository for planning changes.
-- `docs/superpowers/`: the original 2026-07-08 spec and plan (historical).
+- `docs/migration-log.md`: how the data was migrated from the original 50 hand-written pages, including every legacy-vs-CSV disagreement and what was dropped.
+
+The original 2026-07-08 spec, plan and migration scripts were removed once the rework landed; they remain in git history.
 
 ## Not yet done
 
 - The 30-name gap vocabulary (research §6) is deferred; none of the current pages needed a coined name.
-- Twelve SVG `rx` values in older wireframes use a four-value form browsers ignore (Card, Alert, Dialog wireframes); corners render square.

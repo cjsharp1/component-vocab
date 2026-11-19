@@ -77,7 +77,6 @@
     "Status indicators (online/offline/busy) are typically small dots placed at the bottom-right of the avatar.",
     "In avatar groups, use overlapping stacks to save space or a row layout for clarity."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

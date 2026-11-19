@@ -76,7 +76,6 @@
     "Show 5-7 page numbers maximum. Use ellipsis for longer lists.",
     "Disable Previous on the first page and Next on the last page."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

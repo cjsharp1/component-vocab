@@ -81,7 +81,6 @@
     "Always include labels and validation feedback.",
     "Mark required fields clearly."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

@@ -83,7 +83,6 @@
     "The ARIA Authoring Practices give feeds Page Down and Page Up to move between articles, and Control+End and Control+Home to move focus past the feed, so keyboard users are not trapped in it.",
     "Endless loading puts the footer out of reach and makes it hard to return to a position. Consider a Load more button, or Pagination when people need to come back to a specific place."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "none",
   "frameworkNames": {

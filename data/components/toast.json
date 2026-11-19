@@ -76,7 +76,6 @@
     "For blocking actions, use a modal <strong>Dialog</strong>.",
     "Keep messages short — toasts are meant to be glanceable."
   ],
-  "related": [],
   "aliases": [
     "Snackbar"
   ],

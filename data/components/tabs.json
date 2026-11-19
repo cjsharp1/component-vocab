@@ -71,7 +71,6 @@
     "Keep tab count under 7. If you need more, consider a different pattern (Menu button, Sidebar navigation).",
     "Always show which tab is currently active with a clear visual indicator."
   ],
-  "related": [],
   "aliases": [
     "Tabbed interface"
   ],

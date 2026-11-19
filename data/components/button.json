@@ -85,7 +85,6 @@
     "Inside a form, set <code>type=\"button\"</code> on buttons that shouldn't submit; the default type is submit.",
     "Avoid disabling a button without saying why. Prefer leaving it enabled and explaining what is missing when it's pressed."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

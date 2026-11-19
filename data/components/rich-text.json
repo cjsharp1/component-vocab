@@ -96,7 +96,6 @@
     "Use lead text or drop cap to visually signal the start of long-form content.",
     "Use <code>&lt;article&gt;</code> only for self-contained content such as a post or a Card in a list; plain body text is a <code>&lt;div&gt;</code>."
   ],
-  "related": [],
   "absorbed": [
     "Article"
   ],

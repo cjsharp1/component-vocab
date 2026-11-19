@@ -76,7 +76,6 @@
     "Keep list items concise. If items have substantial content, consider using <strong>Accordion</strong> or <strong>Card</strong>.",
     "Icon-led lists work well for feature benefits (checkmark icons convey completion or inclusion)."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

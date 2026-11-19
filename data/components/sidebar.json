@@ -65,7 +65,6 @@
     "On mobile, sidebars typically collapse into a drawer or move below main content.",
     "Do not use Sidebar for primary navigation — use Navigation in Header instead."
   ],
-  "related": [],
   "formerNames": [
     "Aside"
   ],

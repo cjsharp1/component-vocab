@@ -77,7 +77,6 @@
     "Don't nest Accordions.",
     "Keep panel headers short and descriptive — they should clearly indicate what content is hidden."
   ],
-  "related": [],
   "aliases": [
     "Collapse",
     "Expander",

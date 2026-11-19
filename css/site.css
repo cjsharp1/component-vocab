@@ -625,7 +625,7 @@ body > footer p { margin: 0; max-width: none; }
   .wireframe-container { background-image: none; }
 }
 
-/* === Phase 6: groups, counts, 12-system comparison === */
+/* === Groups, counts, 12-system comparison === */
 .chip-count {
   margin-left: 0.3em;
   font-family: var(--font-mono);
@@ -655,7 +655,7 @@ body > footer p { margin: 0; max-width: none; }
 #comparison td.match-different .match-symbol { color: var(--ink-3); }
 #comparison sup { color: var(--accent); }
 
-/* === Phase 7: draft pages, HTML outline === */
+/* === Draft pages, HTML outline === */
 .draft-badge {
   display: flex;
   gap: 0.6rem;

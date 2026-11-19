@@ -90,7 +90,6 @@
     "Don't show the state by color alone (WCAG 1.4.1). The thumb position carries it, and the track and thumb need 3:1 contrast against their surroundings (WCAG 1.4.11).",
     "For a button that stays pressed, such as Bold in an editor, use a Toggle button."
   ],
-  "related": [],
   "aliases": [
     "Toggle",
     "Lightswitch"

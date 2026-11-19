@@ -97,7 +97,6 @@
   ],
   "wireframe": "wireframes/file-upload/default.svg",
   "thumbnail": "wireframes/file-upload/thumbnail.svg",
-  "related": [],
   "aliases": [
     "File input",
     "Dropzone"

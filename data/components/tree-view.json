@@ -90,7 +90,6 @@
     "For rows with several columns that can also expand, use a Data grid (the treegrid pattern) instead.",
     "Don't rely on indentation alone to show nesting. Pair it with expand icons, and with indent guides when the tree is deep."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

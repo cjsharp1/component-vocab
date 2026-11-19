@@ -77,7 +77,6 @@
     "Tooltips should appear on hover or focus, not on click. For click-triggered content, use Popover or Menu button.",
     "Ensure the trigger element is keyboard-accessible and the tooltip is announced by screen readers."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

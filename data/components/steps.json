@@ -90,7 +90,6 @@
     "Steps shows position in a process. For the share of a task that is done, use a Progress bar; for dated events, use a Timeline; for a quantity with + and − buttons, use a Number input.",
     "A long row of steps rarely fits on a small screen. Switch to the vertical layout, or show only the current step and the count."
   ],
-  "related": [],
   "aliases": [
     "Stepper",
     "Progress tracker"

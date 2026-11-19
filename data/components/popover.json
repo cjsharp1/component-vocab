@@ -87,7 +87,6 @@
     "Dismiss on outside click or Escape key. Optionally provide a close button for clarity.",
     "Position automatically to stay in viewport, or allow manual positioning."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {

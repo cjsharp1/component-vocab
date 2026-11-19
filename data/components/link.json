@@ -79,7 +79,6 @@
     "A link styled as a button is still a Link: it is activated with Enter, not Space, and screen readers announce it as a link. For actions, use a Button.",
     "If a link opens a new tab or downloads a file, say so in the text or with an icon that has a text alternative. For downloads, see File."
   ],
-  "related": [],
   "aliases": [
     "Anchor",
     "Hyperlink"

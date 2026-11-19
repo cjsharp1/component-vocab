@@ -83,7 +83,6 @@
     "The \"None\" style provides spacing without a visible line, useful when a subtle break is needed.",
     "Ensure sufficient color contrast for the line in both light and dark themes."
   ],
-  "related": [],
   "formerNames": [
     "Divider"
   ],

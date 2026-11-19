@@ -71,7 +71,6 @@
     "Include <code>loading=\"lazy\"</code> attribute on iframes to improve page load performance.",
     "Consider privacy implications — third-party embeds often include tracking. Use privacy-friendly alternatives when available."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "legacy",
   "frameworkNames": {

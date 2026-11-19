@@ -81,7 +81,6 @@
     "For side panels, use <strong>Drawer</strong>.",
     "Always provide a way to dismiss (close button, backdrop click, or Escape key)."
   ],
-  "related": [],
   "formerNames": [
     "Modal"
   ],

@@ -90,7 +90,6 @@
     "If the top-level item also has its own page, add a link to it inside the panel, such as \"All products\". Don't make the button both open the panel and navigate.",
     "On small screens, show the same groups as stacked Disclosures, often inside a Drawer."
   ],
-  "related": [],
   "aliases": [],
   "frameworkSource": "none",
   "frameworkNames": {

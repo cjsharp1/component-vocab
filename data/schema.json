@@ -19,7 +19,6 @@
     "variants",
     "collections",
     "usageNotes",
-    "related",
     "aliases",
     "frameworkSource",
     "frameworkNames",
@@ -184,12 +183,6 @@
       "items": {
         "type": "string",
         "minLength": 1
-      }
-    },
-    "related": {
-      "type": "array",
-      "items": {
-        "type": "string"
       }
     },
     "aliases": {

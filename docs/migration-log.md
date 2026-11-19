@@ -1,5 +1,7 @@
 # Migration log
 
+> The migration scripts named below (`scripts/legacy/*.mjs`) and the original hand-written pages were removed after the rework; both remain in git history.
+
 Written by `scripts/legacy/extract.mjs` (Phase 3). Lists anything the extractor could not parse or found inconsistent between `index.html` and the pages.
 
 - Components extracted: 50

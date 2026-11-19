@@ -82,7 +82,6 @@
     "Format large numbers for readability (e.g., 1.5M instead of 1,500,000).",
     "Trend indicators should be meaningful — show percentage change and time period."
   ],
-  "related": [],
   "formerNames": [
     "Stat"
   ],

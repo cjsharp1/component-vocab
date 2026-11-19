@@ -84,7 +84,6 @@
     "If each option shows a different panel of content, use Tabs. A Segmented control changes a value or a view setting.",
     "Icon-only segments need an accessible name each. Show the selected segment with more than a color change, and give it 3:1 contrast against the others (WCAG 1.4.1, 1.4.11)."
   ],
-  "related": [],
   "aliases": [
     "Toggle button group"
   ],

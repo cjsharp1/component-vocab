@@ -72,7 +72,6 @@
     "Provide accessible labeling with <code>role=\"status\"</code> and an <code>aria-label</code> or visually-hidden text.",
     "Full-page overlays block all interaction. Use sparingly and only for critical operations."
   ],
-  "related": [],
   "aliases": [
     "Loader",
     "Loading"

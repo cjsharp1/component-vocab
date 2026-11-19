@@ -77,7 +77,6 @@
     "Provide clear navigation: arrows, dots, or swipe gestures on touch devices.",
     "Ensure keyboard navigation is supported: arrow keys to navigate slides, Tab to focus controls."
   ],
-  "related": [],
   "aliases": [
     "Content slider"
   ],

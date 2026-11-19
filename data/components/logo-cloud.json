@@ -71,7 +71,6 @@
     "Include alt text for each logo for accessibility.",
     "For scrolling/animated logos, use the scrolling variant (formerly Marquee)."
   ],
-  "related": [],
   "absorbed": [
     "Marquee"
   ],

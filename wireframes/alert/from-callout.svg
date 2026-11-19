@@ -1,7 +1,7 @@
 <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
   <!-- Callout box with left border accent -->
   <rect class="region" x="150" y="50" width="500" height="150" rx="4" />
-  <rect x="150" y="50" width="6" height="150" rx="4 0 0 4" fill="#0066cc" />
+  <rect x="150" y="50" width="6" height="150" rx="4" fill="#0066cc" />
 
   <!-- Icon -->
   <rect class="hover-target" x="180" y="75" width="40" height="40" fill="none" stroke="none" style="cursor:pointer" />

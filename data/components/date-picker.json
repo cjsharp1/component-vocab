@@ -93,7 +93,6 @@
   ],
   "wireframe": "wireframes/date-picker/default.svg",
   "thumbnail": "wireframes/date-picker/thumbnail.svg",
-  "related": [],
   "aliases": [
     "Calendar",
     "Datetime picker"

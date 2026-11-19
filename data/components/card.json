@@ -106,7 +106,6 @@
     "For image-less cards, consider using a subtle border or shadow to define card boundaries.",
     "For people, use a Card with an Avatar (person variant) rather than a separate Profile component."
   ],
-  "related": [],
   "absorbed": [
     "Media",
     "Profile",

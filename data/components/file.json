@@ -84,7 +84,6 @@
     "Use File for documents you offer. To let people choose a file to send, use File upload (<code>&lt;input type=\"file\"&gt;</code>).",
     "When the content is meant to be read on screen, prefer an HTML page and offer the file as an extra format."
   ],
-  "related": [],
   "aliases": [
     "Attachment",
     "Download"

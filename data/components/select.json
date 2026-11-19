@@ -97,7 +97,6 @@
   ],
   "wireframe": "wireframes/select/default.svg",
   "thumbnail": "wireframes/select/thumbnail.svg",
-  "related": [],
   "aliases": [
     "Dropdown",
     "Select input"

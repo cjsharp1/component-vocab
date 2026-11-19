@@ -65,7 +65,6 @@
     "Don't use on single-level sites.",
     "For very deep hierarchies, consider truncating middle items with an ellipsis."
   ],
-  "related": [],
   "formerNames": [
     "Breadcrumb"
   ],

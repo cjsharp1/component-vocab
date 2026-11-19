@@ -82,7 +82,6 @@
     "The \"Overlay\" behavior places the drawer above content. \"Push\" behavior shifts the main content aside.",
     "Always provide a way to dismiss: close button, backdrop click, or Escape key."
   ],
-  "related": [],
   "aliases": [
     "Tray",
     "Flyout",

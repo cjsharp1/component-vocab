@@ -93,7 +93,6 @@
   ],
   "wireframe": "wireframes/combobox/default.svg",
   "thumbnail": "wireframes/combobox/thumbnail.svg",
-  "related": [],
   "aliases": [
     "Autocomplete",
     "Autosuggest"

@@ -61,7 +61,6 @@
     "Consider a pulse or wave animation to indicate activity, but ensure it is not distracting.",
     "Use <code>aria-busy=\"true\"</code> and provide an accessible label like \"Loading content\" for screen readers."
   ],
-  "related": [],
   "aliases": [
     "Skeleton loader"
   ],

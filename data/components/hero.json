@@ -92,7 +92,6 @@
     "When using a background image, always provide an overlay or ensure text contrast meets WCAG AA.",
     "The \"Split\" layouts work best with a side image or illustration, not a background image."
   ],
-  "related": [],
   "aliases": [
     "Jumbotron"
   ],
