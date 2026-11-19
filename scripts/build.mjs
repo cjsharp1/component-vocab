@@ -52,7 +52,9 @@ function checkLinks(out) {
     return ids.get(file);
   };
   for (const [file, html] of out) {
-    for (const [, attr, href] of html.matchAll(/\s(href|src)="([^"]+)"/g)) {
+    // Ignore markup shown as text (escaped code such as &lt;a href="#main"&gt;).
+    const live = html.replace(/&lt;[\s\S]*?&gt;/g, '');
+    for (const [, attr, href] of live.matchAll(/\s(href|src)="([^"]+)"/g)) {
       if (/^(https?:|mailto:|data:)/.test(href) || href === '#') continue;
       const [path, frag] = href.split('#');
       const target = path ? normalize(join(dirname(file), path)).replace(/\\/g, '/') : file;
