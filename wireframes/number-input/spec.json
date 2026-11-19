@@ -1,0 +1,47 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "line", "x": 260, "y": 90, "w": 100, "label": "Label" },
+      { "type": "interactive", "x": 260, "y": 115, "w": 48, "h": 48, "rx": 6, "label": "Decrease", "at": "below" },
+      { "type": "text", "x": 284, "y": 146, "value": "−", "size": 20 },
+      { "type": "interactive", "x": 308, "y": 115, "w": 184, "h": 48, "label": "Field" },
+      { "type": "line", "x": 380, "y": 139, "w": 40 },
+      { "type": "interactive", "x": 492, "y": 115, "w": 48, "h": 48, "rx": 6, "label": "Increase", "at": "below" },
+      { "type": "text", "x": 516, "y": 146, "value": "+", "size": 20 },
+      { "type": "line", "x": 260, "y": 215, "w": 200, "weight": 1, "label": "Hint (optional)", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "interactive", "x": 70, "y": 25, "w": 30, "h": 30, "rx": 4 },
+      { "type": "text", "x": 85, "y": 45, "value": "−", "size": 14 },
+      { "type": "interactive", "x": 100, "y": 25, "w": 50, "h": 30 },
+      { "type": "line", "x": 115, "y": 40, "w": 20 },
+      { "type": "interactive", "x": 150, "y": 25, "w": 30, "h": 30, "rx": 4 },
+      { "type": "text", "x": 165, "y": 45, "value": "+", "size": 14 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 120, "y": 70, "w": 80 },
+      { "type": "interactive", "x": 120, "y": 85, "w": 160, "h": 40, "rx": 4 },
+      { "type": "line", "x": 136, "y": 105, "w": 30 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 120, "y": 70, "w": 80 },
+      { "type": "interactive", "x": 120, "y": 85, "w": 160, "h": 40, "rx": 4 },
+      { "type": "line", "x": 136, "y": 105, "w": 30 },
+      { "type": "interactive", "x": 250, "y": 85, "w": 30, "h": 20 },
+      { "type": "text", "x": 265, "y": 99, "value": "▴", "size": 10 },
+      { "type": "interactive", "x": 250, "y": 105, "w": 30, "h": 20 },
+      { "type": "text", "x": 265, "y": 119, "value": "▾", "size": 10 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 120, "y": 70, "w": 80 },
+      { "type": "interactive", "x": 120, "y": 85, "w": 160, "h": 40, "rx": 4 },
+      { "type": "line", "x": 136, "y": 105, "w": 40 },
+      { "type": "text", "x": 264, "y": 110, "value": "kg", "size": 12, "anchor": "end" }
+    ] }
+  ]
+}

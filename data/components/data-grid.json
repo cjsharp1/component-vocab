@@ -2,19 +2,97 @@
   "slug": "data-grid",
   "name": "Data grid",
   "order": 78,
-  "status": "draft",
+  "status": "stable",
   "group": "collections",
-  "description": "Interactive and keyboard-navigable. The name avoids the layout Grid",
-  "summary": "Interactive and keyboard-navigable. The name avoids the layout Grid",
-  "htmlElement": "",
+  "description": "An interactive table where people move between cells with the arrow keys and can sort, select or edit. Use it for spreadsheet-like work; for data that people only read, use a Table.",
+  "summary": "Keyboard-navigable table for sorting and editing",
+  "htmlElement": "<code>&lt;table role=\"grid\"&gt;</code>, or <code>role=\"treegrid\"</code> for expandable rows",
   "nativeHtml": "`<table>` + roles",
   "aria": "Grid, Treegrid",
   "researchNote": "Interactive and keyboard-navigable. The name avoids the layout Grid",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Column headers",
+      "required": "Yes",
+      "description": "Name each column; a sorted column carries <code>aria-sort</code>"
+    },
+    {
+      "name": "Cells",
+      "required": "Yes",
+      "description": "Reached with the arrow keys; only one is in the tab order at a time"
+    },
+    {
+      "name": "Sort control",
+      "required": "No",
+      "description": "A button inside the header that sorts by that column"
+    },
+    {
+      "name": "Row checkbox",
+      "required": "No",
+      "description": "Selects a row; one in the header selects all"
+    },
+    {
+      "name": "Toolbar",
+      "required": "No",
+      "description": "Filter, search and bulk actions above the grid"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Selection",
+      "options": "None, Single row, Multiple rows",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Density",
+      "options": "Compact, Default, Comfortable",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Hierarchy",
+      "options": "Flat, Expandable rows (treegrid)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Sorting",
+      "options": "None, Single column, Multiple columns",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Editing",
+      "options": "Read-only, Edit in cell",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Row selection — checkbox column",
+      "wireframe": "wireframes/data-grid/variation-1.svg"
+    },
+    {
+      "caption": "Compact — shorter rows",
+      "wireframe": "wireframes/data-grid/variation-2.svg"
+    },
+    {
+      "caption": "Treegrid — rows that expand to show child rows",
+      "wireframe": "wireframes/data-grid/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Table when people read data and a Data grid only when they need to act on cells. <code>role=\"grid\"</code> changes keyboard behavior: Tab enters the grid once, and the arrow keys move between cells.",
+    "Follow the APG Grid pattern: the current cell has <code>tabindex=\"0\"</code> and the rest <code>-1</code> (roving tabindex), with Home, End, Page Up and Page Down for large grids.",
+    "Mark the sorted column with <code>aria-sort</code> on its header, and put the sort control inside the header as a <code>&lt;button&gt;</code>.",
+    "For editable cells, Enter or F2 starts editing and Escape cancels, handing the arrow keys back to cell navigation.",
+    "Data grid is named apart from Grid, the CSS layout primitive. Use <code>role=\"treegrid\"</code> when rows can expand to show child rows."
+  ],
+  "wireframe": "wireframes/data-grid/default.svg",
+  "thumbnail": "wireframes/data-grid/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "none",

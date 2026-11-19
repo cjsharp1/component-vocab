@@ -30,14 +30,17 @@
 
     <section>
       <h1>Segmented control</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Mutually exclusive options</p>
+      <p>A row of joined segments for choosing one option from a small set, such as List or Grid view. Build it from radio inputs in a <code>&lt;fieldset&gt;</code> so it behaves like a Radio group.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Toggle button group. In design systems: Toggle Button (MUI); Segmented (Ant Design); Content switcher (Carbon); Segmented Control (Chakra UI, Radix Themes); Toggle Group (shadcn/ui); Segmented controls (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;fieldset&gt;</code> of <code>&lt;input type="radio"&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd>radio inputs or buttons</dd>
+        <dt>Research note</dt>
+        <dd>Mutually exclusive options</dd>
         <dt>Category</dt>
         <dd>D. Actions and links</dd>
       </dl>
@@ -51,6 +54,141 @@
   &lt;label&gt;&lt;input type="radio" name="view" checked&gt; List&lt;/label&gt;
   &lt;label&gt;&lt;input type="radio" name="view"&gt; Grid&lt;/label&gt;
 &lt;/fieldset&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>Legend naming the choice; can be visually hidden if the context is clear</td></tr>
+          <tr><td>Segment</td><td>Yes</td><td>One option, with text, an icon or both</td></tr>
+          <tr><td>Selected segment</td><td>Yes</td><td>Exactly one segment is selected and shown filled</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="220" y="104" width="80" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="260" y1="102" x2="260" y2="90" />
+            <rect class="label-bg" x="234.5" y="70" width="51" height="20" />
+            <text class="label-text" x="260" y="84" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="220" y1="110" x2="300" y2="110" />
+          <rect class="region" x="214" y="134" width="372" height="56" rx="8" />
+          <rect class="hover-target" x="220" y="140" width="120" height="44" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="280" y1="186" x2="280" y2="198" />
+            <rect class="label-bg" x="216" y="198" width="128" height="20" />
+            <text class="label-text" x="280" y="212" text-anchor="middle">Selected segment</text>
+          </g>
+          <rect class="interactive" x="220" y="140" width="120" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <rect class="hover-target" x="340" y="140" width="120" height="44" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="138" x2="400" y2="126" />
+            <rect class="label-bg" x="367.5" y="106" width="65" height="20" />
+            <text class="label-text" x="400" y="120" text-anchor="middle">Segment</text>
+          </g>
+          <rect class="interactive" x="340" y="140" width="120" height="44" rx="6" />
+          <line class="text-line" x1="365" y1="162" x2="435" y2="162" />
+          <line class="text-line" x1="485" y1="162" x2="555" y2="162" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Content</td><td>Text, Icon only, Icon and text</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Width</td><td>Auto, Full width (equal segments)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Label</td><td>Visible above, Visually hidden</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Medium, Large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Applies</td><td>Immediately, On form submit</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="50" y="78" width="300" height="44" rx="8" />
+              <rect class="interactive" x="54" y="82" width="96" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="172" y1="100" x2="228" y2="100" />
+              <line class="text-line" x1="272" y1="100" x2="328" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Text — three labeled segments</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="130" y="78" width="140" height="44" rx="8" />
+              <rect class="interactive" x="134" y="82" width="42" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="155" cy="100" r="8" />
+              <circle class="region" cx="200" cy="100" r="8" />
+              <circle class="region" cx="245" cy="100" r="8" />
+            </svg>
+          </div>
+          <figcaption>Icon only — view switcher</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="55" x2="200" y2="55" />
+              <rect class="region" x="40" y="85" width="320" height="44" rx="8" />
+              <rect class="interactive" x="44" y="89" width="103" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="172" y1="107" x2="228" y2="107" />
+              <line class="text-line" x1="279" y1="107" x2="335" y2="107" />
+              <line class="text-line" x1="40" y1="155" x2="340" y2="155" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Full width — equal segments across the container</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="90" y1="70" x2="160" y2="70" />
+              <rect class="region" x="90" y="90" width="220" height="44" rx="8" />
+              <rect class="interactive" x="94" y="94" width="70" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="180" y1="112" x2="220" y2="112" />
+              <line class="text-line" x1="253" y1="112" x2="293" y2="112" />
+            </svg>
+          </div>
+          <figcaption>Visible label — legend above the segments</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use it for two to five short, mutually exclusive options. With more options or long labels, use a Radio group or a Select.</li>
+        <li>Radio inputs give the expected keyboard behavior for free: one tab stop, with arrow keys moving the selection. If you build it from buttons instead, follow the ARIA Authoring Practices radio group pattern.</li>
+        <li>If each option shows a different panel of content, use Tabs. A Segmented control changes a value or a view setting.</li>
+        <li>Icon-only segments need an accessible name each. Show the selected segment with more than a color change, and give it 3:1 contrast against the others (WCAG 1.4.1, 1.4.11).</li>
+      </ul>
     </section>
 
     <section>

@@ -1,0 +1,50 @@
+{
+  "default": {
+    "height": 320,
+    "shapes": [
+      { "type": "line", "x": 200, "y": 80, "w": 300 },
+      { "type": "line", "x": 200, "y": 105, "w": 400, "weight": 1 },
+      { "type": "optional", "x": 185, "y": 158, "w": 350, "h": 68, "rx": 8, "label": "Group" },
+      { "type": "filled", "x": 200, "y": 170, "w": 150, "h": 44, "rx": 6, "label": "Primary action", "at": "below" },
+      { "type": "interactive", "x": 370, "y": 170, "w": 150, "h": 44, "rx": 6, "label": "Secondary action", "at": "below" },
+      { "type": "line", "x": 405, "y": 192, "w": 80 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "optional", "x": 42, "y": 18, "w": 166, "h": 44, "rx": 6 },
+      { "type": "filled", "x": 50, "y": 26, "w": 70, "h": 28, "rx": 4 },
+      { "type": "interactive", "x": 130, "y": 26, "w": 70, "h": 28, "rx": 4 },
+      { "type": "line", "x": 145, "y": 40, "w": 40 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "filled", "x": 60, "y": 82, "w": 130, "h": 36, "rx": 6 },
+      { "type": "interactive", "x": 205, "y": 82, "w": 130, "h": 36, "rx": 6 },
+      { "type": "line", "x": 235, "y": 100, "w": 70 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 120, "y": 20, "w": 160, "h": 160, "rx": 6 },
+      { "type": "lines", "x": 135, "y": 45, "w": 120, "count": 2 },
+      { "type": "filled", "x": 135, "y": 90, "w": 130, "h": 34, "rx": 6 },
+      { "type": "interactive", "x": 135, "y": 134, "w": 130, "h": 34, "rx": 6 },
+      { "type": "line", "x": 165, "y": 151, "w": 70 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 110, "y": 50, "w": 180 },
+      { "type": "line", "x": 80, "y": 75, "w": 240, "weight": 1 },
+      { "type": "filled", "x": 85, "y": 115, "w": 110, "h": 36, "rx": 6 },
+      { "type": "interactive", "x": 205, "y": 115, "w": 110, "h": 36, "rx": 6 },
+      { "type": "line", "x": 225, "y": 133, "w": 70 }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 80, "y": 82, "w": 80, "h": 36 },
+      { "type": "line", "x": 100, "y": 100, "w": 40 },
+      { "type": "interactive", "x": 160, "y": 82, "w": 80, "h": 36 },
+      { "type": "line", "x": 180, "y": 100, "w": 40 },
+      { "type": "interactive", "x": 240, "y": 82, "w": 80, "h": 36 },
+      { "type": "line", "x": 260, "y": 100, "w": 40 }
+    ] }
+  ]
+}

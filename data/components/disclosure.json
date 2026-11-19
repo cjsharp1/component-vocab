@@ -2,19 +2,83 @@
   "slug": "disclosure",
   "name": "Disclosure",
   "order": 45,
-  "status": "draft",
+  "status": "stable",
   "group": "disclosure-overlays",
-  "description": "A single one",
-  "summary": "A single one",
-  "htmlElement": "",
+  "description": "A control that shows and hides one section of content, such as extra help under a form field. Use <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>; for a set of related sections, use an Accordion.",
+  "summary": "Shows and hides one section of content",
+  "htmlElement": "<code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>",
   "nativeHtml": "`<details>`",
   "aria": "Disclosure",
   "researchNote": "A single one",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Summary",
+      "required": "Yes",
+      "description": "Always-visible label that opens and closes the content"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Triangle or chevron that turns when open"
+    },
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "Hidden until opened; can hold any flow content"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Default state",
+      "options": "Closed, Open",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Plain, Boxed",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Icon position",
+      "options": "Before, After, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Full, Small (hint text)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Closed — summary between paragraphs",
+      "wireframe": "wireframes/disclosure/variation-1.svg"
+    },
+    {
+      "caption": "Open — content below the summary",
+      "wireframe": "wireframes/disclosure/variation-2.svg"
+    },
+    {
+      "caption": "Boxed — bordered, icon after",
+      "wireframe": "wireframes/disclosure/variation-3.svg"
+    },
+    {
+      "caption": "Small — help text under a form field",
+      "wireframe": "wireframes/disclosure/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Native <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> work with the keyboard and screen readers without any script. Don't put links or other controls inside the <code>&lt;summary&gt;</code>.",
+    "If you build it from a button instead, set <code>aria-expanded</code> on the button and show or hide the content it controls, as in the ARIA Authoring Practices Disclosure pattern.",
+    "Use one Disclosure for a single optional section. For several related sections, use an Accordion; to switch between views of the same space, use Tabs.",
+    "Write a summary that says what is inside, such as \"Help with your reference number\", not just \"More\".",
+    "Don't hide content that most people need to complete the task. Leave it visible instead."
+  ],
   "related": [],
   "aliases": [],
   "frameworkSource": "none",
@@ -62,5 +126,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<details>\n  <summary>Show details</summary>\n  <p>Hidden content…</p>\n</details>"
+  "htmlOutline": "<details>\n  <summary>Show details</summary>\n  <p>Hidden content…</p>\n</details>",
+  "wireframe": "wireframes/disclosure/default.svg",
+  "thumbnail": "wireframes/disclosure/thumbnail.svg"
 }

@@ -2,19 +2,91 @@
   "slug": "tag",
   "name": "Tag",
   "order": 55,
-  "status": "draft",
+  "status": "stable",
   "group": "feedback-status",
-  "description": "Static categorization",
-  "summary": "Static categorization",
-  "htmlElement": "",
+  "description": "A short label that puts an item in a category, such as a topic on an article. If it can be selected or removed, use a Chip; for a status or a count, use a Badge.",
+  "summary": "Short label that puts an item in a category",
+  "htmlElement": "<code>&lt;span&gt;</code>, or <code>&lt;a&gt;</code> when it links to the category; a set goes in a <code>&lt;ul&gt;</code>",
   "nativeHtml": "`<span>` or `<a>`",
   "aria": "",
   "researchNote": "Static categorization",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Text",
+      "required": "Yes",
+      "description": "The category name, one or two words"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Leading icon or color dot; the text still carries the meaning"
+    },
+    {
+      "name": "List",
+      "required": "No",
+      "description": "A <code>&lt;ul&gt;</code> around several tags so their number is announced"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Kind",
+      "options": "Static, Link",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Icon",
+      "options": "None, Leading icon, Color dot",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Overflow",
+      "options": "Wrap, Single row with \"+N\"",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Color",
+      "options": "Neutral, One color per category",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Sizes — small and medium",
+      "wireframe": "wireframes/tag/variation-1.svg"
+    },
+    {
+      "caption": "Icon — leading icon and color dot",
+      "wireframe": "wireframes/tag/variation-2.svg"
+    },
+    {
+      "caption": "Wrap — tags flow onto more lines",
+      "wireframe": "wireframes/tag/variation-3.svg"
+    },
+    {
+      "caption": "Single row — extra tags collapsed into \"+3\"",
+      "wireframe": "wireframes/tag/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "A Tag puts something in a category and a Badge shows a status or count. Neither is interactive. If people can select, filter with or remove it in place, it's a Chip.",
+    "When a tag leads to a page listing everything in that category, make it an <code>&lt;a href&gt;</code>; otherwise use a <code>&lt;span&gt;</code>. Don't attach a click handler to a span.",
+    "Put a set of tags in a <code>&lt;ul&gt;</code> so screen readers announce how many there are. Add a visible or visually hidden label such as \"Topics\" if the list needs context.",
+    "Don't rely on color alone to tell categories apart (WCAG 1.4.1 Use of Color), and keep the text at 4.5:1 contrast against the tag background (WCAG 1.4.3 Contrast, Minimum).",
+    "This component is not called Label, because Label is reserved for the form element."
+  ],
+  "wireframe": "wireframes/tag/default.svg",
+  "thumbnail": "wireframes/tag/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

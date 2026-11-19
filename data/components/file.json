@@ -2,19 +2,88 @@
   "slug": "file",
   "name": "File",
   "order": 27,
-  "status": "draft",
+  "status": "stable",
   "group": "content-display",
-  "description": "Ambiguous in code (File API). \"File link\" is a reasonable alternative",
-  "summary": "Ambiguous in code (File API). \"File link\" is a reasonable alternative",
-  "htmlElement": "",
+  "description": "A link to a document people can download, such as a PDF or spreadsheet, shown with its file type and size so they know what they will get. To let people send you a file, use File upload instead.",
+  "summary": "Link to a downloadable document",
+  "htmlElement": "<code>&lt;a href download&gt;</code>",
   "nativeHtml": "`<a download>`",
   "aria": "",
   "researchNote": "Ambiguous in code (File API). \"File link\" is a reasonable alternative",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Name",
+      "required": "Yes",
+      "description": "Link text naming the document"
+    },
+    {
+      "name": "File details",
+      "required": "Yes",
+      "description": "File type and size, such as PDF, 2.4 MB"
+    },
+    {
+      "name": "File icon",
+      "required": "No",
+      "description": "Icon or first-page thumbnail showing the file type; decorative"
+    },
+    {
+      "name": "Download icon",
+      "required": "No",
+      "description": "Arrow that signals a download; decorative, since the text already says it"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Inline (in text), Block",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Preview",
+      "options": "None, Icon, Thumbnail",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Grouping",
+      "options": "Single file, List of files",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Behavior",
+      "options": "Download, Open in browser",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Inline — link inside a sentence",
+      "wireframe": "wireframes/file/variation-1.svg"
+    },
+    {
+      "caption": "Block — icon, name and details",
+      "wireframe": "wireframes/file/variation-2.svg"
+    },
+    {
+      "caption": "Thumbnail — first-page preview beside the details",
+      "wireframe": "wireframes/file/variation-3.svg"
+    },
+    {
+      "caption": "List — several files stacked",
+      "wireframe": "wireframes/file/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Put the file type and size in the link text or right after it, as in \"Annual report (PDF, 2.4 MB)\", so people can decide before they download.",
+    "Name the document, not the action: \"2025 annual report\", not \"Download\" or \"Click here\". Several links that all say \"Download\" can't be told apart in a screen reader's list of links (WCAG 2.4.4).",
+    "The <code>download</code> attribute only applies to same-origin URLs. For files on another domain, browsers ignore it and may open the file instead.",
+    "Use File for documents you offer. To let people choose a file to send, use File upload (<code>&lt;input type=\"file\"&gt;</code>).",
+    "When the content is meant to be read on screen, prefer an HTML page and offer the file as an extra format."
+  ],
   "related": [],
   "aliases": [
     "Attachment",
@@ -65,5 +134,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<a href=\"/files/report.pdf\" download>\n  Annual report <span>(PDF, 2.4 MB)</span>\n</a>"
+  "htmlOutline": "<a href=\"/files/report.pdf\" download>\n  Annual report <span>(PDF, 2.4 MB)</span>\n</a>",
+  "wireframe": "wireframes/file/default.svg",
+  "thumbnail": "wireframes/file/thumbnail.svg"
 }

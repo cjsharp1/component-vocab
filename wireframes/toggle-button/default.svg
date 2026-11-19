@@ -1,0 +1,31 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="200" y="130" width="150" height="48" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="275" y1="128" x2="275" y2="116" />
+    <rect class="label-bg" x="228.5" y="96" width="93" height="20" />
+    <text class="label-text" x="275" y="110" text-anchor="middle">Not pressed</text>
+  </g>
+  <rect class="interactive" x="200" y="130" width="150" height="48" rx="6" />
+  <rect class="hover-target" x="240" y="148" width="70" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="275" y1="162" x2="275" y2="174" />
+    <rect class="label-bg" x="249.5" y="174" width="51" height="20" />
+    <text class="label-text" x="275" y="188" text-anchor="middle">Label</text>
+  </g>
+  <line class="text-line" x1="240" y1="154" x2="310" y2="154" />
+  <rect class="hover-target" x="420" y="130" width="150" height="48" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="495" y1="128" x2="495" y2="116" />
+    <rect class="label-bg" x="462.5" y="96" width="65" height="20" />
+    <text class="label-text" x="495" y="110" text-anchor="middle">Pressed</text>
+  </g>
+  <rect class="interactive" x="420" y="130" width="150" height="48" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="hover-target" x="442" y="146" width="16" height="16" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="450" y1="164" x2="450" y2="176" />
+    <rect class="label-bg" x="389.5" y="176" width="121" height="20" />
+    <text class="label-text" x="450" y="190" text-anchor="middle">Icon (optional)</text>
+  </g>
+  <circle class="region" cx="450" cy="154" r="8" />
+  <line class="text-line" x1="470" y1="154" x2="540" y2="154" />
+</svg>

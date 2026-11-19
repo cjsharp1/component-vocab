@@ -1,0 +1,48 @@
+{
+  "default": {
+    "height": 320,
+    "shapes": [
+      { "type": "line", "x": 200, "y": 90, "w": 100, "label": "Label" },
+      { "type": "line", "x": 200, "y": 115, "w": 400, "weight": 1, "label": "Hint (optional)" },
+      { "type": "interactive", "x": 200, "y": 135, "w": 340, "h": 44, "rx": 4, "label": "Field", "at": "below" },
+      { "type": "region", "x": 540, "y": 135, "w": 60, "h": 44, "rx": 4, "label": "Suffix (optional)", "at": "below" },
+      { "type": "line", "x": 552, "y": 157, "w": 36, "weight": 1 },
+      { "type": "text", "x": 206, "y": 245, "value": "!", "size": 14 },
+      { "type": "line", "x": 220, "y": 240, "w": 200, "label": "Error message", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 40, "y": 22, "w": 60 },
+      { "type": "interactive", "x": 40, "y": 34, "w": 170, "h": 28, "rx": 3 },
+      { "type": "line", "x": 52, "y": 48, "w": 60, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 55, "w": 80 },
+      { "type": "interactive", "x": 60, "y": 68, "w": 90, "h": 34, "rx": 4 },
+      { "type": "line", "x": 60, "y": 130, "w": 80 },
+      { "type": "interactive", "x": 60, "y": 143, "w": 280, "h": 34, "rx": 4 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 60, "y": 60, "w": 40, "h": 36, "rx": 4 },
+      { "type": "text", "x": 80, "y": 83, "value": "$", "size": 14 },
+      { "type": "interactive", "x": 100, "y": 60, "w": 200, "h": 36, "rx": 4 },
+      { "type": "interactive", "x": 60, "y": 120, "w": 200, "h": 36, "rx": 4 },
+      { "type": "region", "x": 260, "y": 120, "w": 60, "h": 36, "rx": 4 },
+      { "type": "line", "x": 272, "y": 138, "w": 36, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 50, "w": 90 },
+      { "type": "text", "x": 65, "y": 85, "value": "!", "size": 14 },
+      { "type": "line", "x": 78, "y": 80, "w": 160 },
+      { "type": "interactive", "x": 60, "y": 100, "w": 280, "h": 38, "rx": 4 }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 90, "y": 35, "w": 220, "h": 28, "rx": 4 },
+      { "type": "interactive", "x": 90, "y": 80, "w": 220, "h": 36, "rx": 4 },
+      { "type": "interactive", "x": 90, "y": 133, "w": 220, "h": 44, "rx": 4 }
+    ] }
+  ]
+}

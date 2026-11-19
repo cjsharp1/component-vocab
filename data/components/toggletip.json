@@ -2,19 +2,85 @@
   "slug": "toggletip",
   "name": "Toggletip",
   "order": 51,
-  "status": "draft",
+  "status": "stable",
   "group": "disclosure-overlays",
-  "description": "A tooltip opened by click. Keeping the name because it behaves differently for assistive tech",
-  "summary": "A tooltip opened by click. Keeping the name because it behaves differently for assistive tech",
-  "htmlElement": "",
+  "description": "A small info button that shows a short explanation when pressed and hides it again on a second press, Escape or a click elsewhere. Use it instead of a Tooltip when the button exists only to reveal the explanation, or where hover isn't available.",
+  "summary": "Click-opened bubble with a short explanation",
+  "htmlElement": "<code>&lt;button&gt;</code> plus a live region with <code>role=\"status\"</code>",
   "nativeHtml": "",
   "aria": "",
   "researchNote": "A tooltip opened by click. Keeping the name because it behaves differently for assistive tech",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Trigger",
+      "required": "Yes",
+      "description": "Button, often an \"i\" or \"?\" icon, with an accessible name such as \"More info\""
+    },
+    {
+      "name": "Bubble",
+      "required": "Yes",
+      "description": "Holds the explanation: plain text, no links or controls"
+    },
+    {
+      "name": "Arrow",
+      "required": "No",
+      "description": "Points from the bubble to the trigger"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Placement",
+      "options": "Top, Bottom, Start, End",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Trigger",
+      "options": "Icon only, Icon with text",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Auto, Max width with wrapping",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Dismiss",
+      "options": "Second press, Escape, Click outside",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Bottom — bubble below the trigger",
+      "wireframe": "wireframes/toggletip/variation-1.svg"
+    },
+    {
+      "caption": "End — bubble beside the trigger",
+      "wireframe": "wireframes/toggletip/variation-2.svg"
+    },
+    {
+      "caption": "Icon with text — visible trigger label",
+      "wireframe": "wireframes/toggletip/variation-3.svg"
+    },
+    {
+      "caption": "Max width — longer text wraps",
+      "wireframe": "wireframes/toggletip/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Toggletip when the explanation should appear on a press. Use a Tooltip for a short label shown on hover and focus, and a Popover when the content includes links or controls.",
+    "Make the trigger a <code>&lt;button&gt;</code> with an accessible name. Put the message in a live region such as <code>role=\"status\"</code> so screen readers announce it when it appears.",
+    "Close it on Escape, on a second press of the trigger and on a click outside, and leave focus on the trigger.",
+    "Keep the content to a sentence or two. Anything people need to complete a task belongs on the page, not behind an icon.",
+    "Give the trigger a target of at least 24 by 24 CSS pixels (WCAG 2.5.8 Target Size, Minimum)."
+  ],
+  "wireframe": "wireframes/toggletip/default.svg",
+  "thumbnail": "wireframes/toggletip/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

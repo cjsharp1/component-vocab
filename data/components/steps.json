@@ -2,19 +2,94 @@
   "slug": "steps",
   "name": "Steps",
   "order": 39,
-  "status": "draft",
+  "status": "stable",
   "group": "wayfinding",
-  "description": "`aria-current=\"step\"`",
-  "summary": "`aria-current=\"step\"`",
-  "htmlElement": "",
+  "description": "A numbered list that shows where the user is in a multi-step process, such as checkout, and which steps are done or still to come. Mark the current step with <code>aria-current=\"step\"</code>.",
+  "summary": "Shows progress through a multi-step process",
+  "htmlElement": "<code>&lt;ol&gt;</code> with <code>aria-current=\"step\"</code>",
   "nativeHtml": "`<ol>`",
   "aria": "",
   "researchNote": "`aria-current=\"step\"`",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Step marker",
+      "required": "Yes",
+      "description": "Number or check icon showing the step's position and state"
+    },
+    {
+      "name": "Step label",
+      "required": "Yes",
+      "description": "Short name of the step"
+    },
+    {
+      "name": "Connector",
+      "required": "No",
+      "description": "Line joining the markers; decorative"
+    },
+    {
+      "name": "Description",
+      "required": "No",
+      "description": "Extra line under the label, usually in vertical layouts"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Orientation",
+      "options": "Horizontal, Vertical",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Label position",
+      "options": "Below the marker, Beside the marker",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Small screens",
+      "options": "Full list, Current step and count only",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Marker",
+      "options": "Number, Dot, Check for completed",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Completed steps",
+      "options": "Static, Links back to the step",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Labels below — markers in a row",
+      "wireframe": "wireframes/steps/variation-1.svg"
+    },
+    {
+      "caption": "Vertical — stacked steps with descriptions",
+      "wireframe": "wireframes/steps/variation-2.svg"
+    },
+    {
+      "caption": "Labels beside — compact horizontal row",
+      "wireframe": "wireframes/steps/variation-3.svg"
+    },
+    {
+      "caption": "Count only — current step name and \"Step 2 of 4\"",
+      "wireframe": "wireframes/steps/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use an <code>&lt;ol&gt;</code> so the number of steps and each step's position are announced, and put <code>aria-current=\"step\"</code> on the current one.",
+    "Show completed, current and upcoming states with text or icons as well as color (WCAG 1.4.1), for example visually hidden \"Completed\" text in each finished step.",
+    "Make completed steps links only if users can safely go back to them. Upcoming steps should not be links.",
+    "Steps shows position in a process. For the share of a task that is done, use a Progress bar; for dated events, use a Timeline; for a quantity with + and − buttons, use a Number input.",
+    "A long row of steps rarely fits on a small screen. Switch to the vertical layout, or show only the current step and the count."
+  ],
   "related": [],
   "aliases": [
     "Stepper",
@@ -70,5 +145,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<ol class=\"steps\">\n  <li>Account</li>\n  <li aria-current=\"step\">Shipping</li>\n  <li>Payment</li>\n</ol>"
+  "htmlOutline": "<ol class=\"steps\">\n  <li>Account</li>\n  <li aria-current=\"step\">Shipping</li>\n  <li>Payment</li>\n</ol>",
+  "wireframe": "wireframes/steps/default.svg",
+  "thumbnail": "wireframes/steps/thumbnail.svg"
 }

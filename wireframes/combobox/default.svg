@@ -1,0 +1,36 @@
+<svg viewBox="0 0 800 330" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="220" y="64" width="100" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="270" y1="62" x2="270" y2="50" />
+    <rect class="label-bg" x="244.5" y="30" width="51" height="20" />
+    <text class="label-text" x="270" y="44" text-anchor="middle">Label</text>
+  </g>
+  <line class="text-line" x1="220" y1="70" x2="320" y2="70" />
+  <rect class="hover-target" x="220" y="90" width="360" height="44" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="88" x2="400" y2="76" />
+    <rect class="label-bg" x="374.5" y="56" width="51" height="20" />
+    <text class="label-text" x="400" y="70" text-anchor="middle">Input</text>
+  </g>
+  <rect class="interactive" x="220" y="90" width="360" height="44" rx="6" />
+  <line class="text-line" x1="236" y1="112" x2="296" y2="112" />
+  <rect class="hover-target" x="540" y="96" width="34" height="32" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="557" y1="94" x2="557" y2="82" />
+    <rect class="label-bg" x="489.5" y="62" width="135" height="20" />
+    <text class="label-text" x="557" y="76" text-anchor="middle">Toggle (optional)</text>
+  </g>
+  <rect class="optional" x="540" y="96" width="34" height="32" rx="4" />
+  <text x="557" y="117" font-size="14" text-anchor="middle">▾</text>
+  <rect class="hover-target" x="220" y="140" width="360" height="140" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="282" x2="400" y2="294" />
+    <rect class="label-bg" x="367.5" y="294" width="65" height="20" />
+    <text class="label-text" x="400" y="308" text-anchor="middle">Listbox</text>
+  </g>
+  <rect class="region" x="220" y="140" width="360" height="140" rx="4" />
+  <rect class="interactive" x="228" y="148" width="344" height="30" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <line class="text-line" x1="240" y1="200" x2="420" y2="200" />
+  <line class="text-line" x1="240" y1="230" x2="360" y2="230" />
+  <line class="text-line" x1="240" y1="260" x2="400" y2="260" />
+</svg>

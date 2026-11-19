@@ -30,14 +30,17 @@
 
     <section>
       <h1>Combobox</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Input plus suggestion popup</p>
+      <p>A text input with a popup list of suggestions that narrows as you type. Use it when the list is long enough that typing is faster than scrolling, or when people may enter a value that isn't in the list.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Autocomplete, Autosuggest. In design systems: Autocomplete (MUI); AutoComplete (Ant Design); Combobox (Chakra UI, shadcn/ui, Fluent UI); Combo boxes (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;input role="combobox"&gt;</code> with a <code>role="listbox"</code> popup</dd>
         <dt>ARIA pattern</dt>
         <dd>Combobox</dd>
+        <dt>Research note</dt>
+        <dd>Input plus suggestion popup</dd>
         <dt>Category</dt>
         <dd>H. Forms</dd>
       </dl>
@@ -51,6 +54,155 @@
 &lt;ul id="cb-list" role="listbox" hidden&gt;
   &lt;li role="option"&gt;Apple&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>Visible <code>&lt;label&gt;</code> for the input</td></tr>
+          <tr><td>Input</td><td>Yes</td><td>Text field; typing filters the suggestions</td></tr>
+          <tr><td>Listbox</td><td>Yes</td><td>Popup of matching options; opens on typing or with the Down arrow</td></tr>
+          <tr><td>Toggle button</td><td>No</td><td>▾ button that opens the full list without typing</td></tr>
+          <tr><td>Hint or error text</td><td>No</td><td>Says whether free text is allowed, or what went wrong</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 330" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="220" y="64" width="100" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="270" y1="62" x2="270" y2="50" />
+            <rect class="label-bg" x="244.5" y="30" width="51" height="20" />
+            <text class="label-text" x="270" y="44" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="220" y1="70" x2="320" y2="70" />
+          <rect class="hover-target" x="220" y="90" width="360" height="44" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="88" x2="400" y2="76" />
+            <rect class="label-bg" x="374.5" y="56" width="51" height="20" />
+            <text class="label-text" x="400" y="70" text-anchor="middle">Input</text>
+          </g>
+          <rect class="interactive" x="220" y="90" width="360" height="44" rx="6" />
+          <line class="text-line" x1="236" y1="112" x2="296" y2="112" />
+          <rect class="hover-target" x="540" y="96" width="34" height="32" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="557" y1="94" x2="557" y2="82" />
+            <rect class="label-bg" x="489.5" y="62" width="135" height="20" />
+            <text class="label-text" x="557" y="76" text-anchor="middle">Toggle (optional)</text>
+          </g>
+          <rect class="optional" x="540" y="96" width="34" height="32" rx="4" />
+          <text x="557" y="117" font-size="14" text-anchor="middle">▾</text>
+          <rect class="hover-target" x="220" y="140" width="360" height="140" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="282" x2="400" y2="294" />
+            <rect class="label-bg" x="367.5" y="294" width="65" height="20" />
+            <text class="label-text" x="400" y="308" text-anchor="middle">Listbox</text>
+          </g>
+          <rect class="region" x="220" y="140" width="360" height="140" rx="4" />
+          <rect class="interactive" x="228" y="148" width="344" height="30" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <line class="text-line" x1="240" y1="200" x2="420" y2="200" />
+          <line class="text-line" x1="240" y1="230" x2="360" y2="230" />
+          <line class="text-line" x1="240" y1="260" x2="400" y2="260" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Selection</td><td>Single, Multiple (shown as Chips)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Toggle button</td><td>Shown, Hidden</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Option content</td><td>Text, Text with icon and description</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Autocomplete</td><td>List only, List with inline completion, None</td><td>No</td></tr>
+          <tr><td>Free text</td><td>Must pick from list, Any value allowed</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="55" x2="120" y2="55" />
+              <rect class="interactive" x="40" y="70" width="320" height="48" rx="6" />
+              <rect class="region" x="50" y="80" width="72" height="28" rx="14" />
+              <line class="text-line" x1="62" y1="94" x2="98" y2="94" />
+              <text x="110" y="98" font-size="12" text-anchor="middle">×</text>
+              <rect class="region" x="130" y="80" width="82" height="28" rx="14" />
+              <line class="text-line" x1="142" y1="94" x2="188" y2="94" />
+              <text x="200" y="98" font-size="12" text-anchor="middle">×</text>
+              <line class="text-line" x1="226" y1="94" x2="266" y2="94" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Multiple — chosen values shown as Chips</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="50" x2="120" y2="50" />
+              <rect class="interactive" x="40" y="65" width="320" height="40" rx="6" />
+              <line class="text-line" x1="56" y1="85" x2="96" y2="85" />
+              <rect class="region" x="40" y="110" width="320" height="75" rx="4" />
+              <line class="text-line" x1="56" y1="130" x2="256" y2="130" />
+              <line class="text-line" x1="56" y1="150" x2="256" y2="150" />
+              <line class="text-line" x1="56" y1="170" x2="196" y2="170" />
+            </svg>
+          </div>
+          <figcaption>No toggle button — list opens on typing</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="40" y="15" width="320" height="36" rx="6" />
+              <line class="text-line" x1="56" y1="33" x2="96" y2="33" />
+              <rect class="region" x="40" y="58" width="320" height="130" rx="4" />
+              <circle class="media-placeholder" cx="64" cy="84" r="12" />
+              <line class="text-line" x1="86" y1="78" x2="206" y2="78" />
+              <line class="text-line" x1="86" y1="92" x2="266" y2="92" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="44" y="106" width="312" height="38" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="media-placeholder" cx="64" cy="125" r="12" />
+              <line class="text-line" x1="86" y1="119" x2="186" y2="119" />
+              <line class="text-line" x1="86" y1="133" x2="246" y2="133" stroke-width="1" opacity="0.7" />
+              <circle class="media-placeholder" cx="64" cy="166" r="12" />
+              <line class="text-line" x1="86" y1="160" x2="196" y2="160" />
+              <line class="text-line" x1="86" y1="174" x2="236" y2="174" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Rich options — icon and description per option</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Choose a Combobox over a Select when people know what they want and typing is faster, such as picking an airport from hundreds. For short lists, a Select or Radio group is simpler.</li>
+        <li>Follow the APG Combobox pattern: focus stays in the input, arrow keys move through options using <code>aria-activedescendant</code>, Enter picks one and Escape closes the popup.</li>
+        <li>Tell screen reader users how many results match, for example with a polite live region, because the list changes as they type.</li>
+        <li>Decide whether values outside the list are allowed and say so in the hint. If only listed values are valid, show an error when the typed text matches nothing.</li>
+        <li><code>&lt;input list&gt;</code> with <code>&lt;datalist&gt;</code> gives native suggestions with no script, but browsers filter and style it inconsistently. Test it before relying on it.</li>
+      </ul>
     </section>
 
     <section>

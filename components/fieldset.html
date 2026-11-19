@@ -30,11 +30,13 @@
 
     <section>
       <h1>Fieldset</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
+      <p>Groups related form controls under a caption, such as the fields of an address or a set of radio buttons. Use it whenever several controls answer one question or belong together.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Fieldset (Chakra UI, GOV.UK)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;fieldset&gt;</code> with <code>&lt;legend&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;fieldset&gt;&lt;legend&gt;</code></dd>
         <dt>ARIA pattern</dt>
@@ -53,6 +55,163 @@
   &lt;input id="street" name="street"&gt;
   …
 &lt;/fieldset&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Legend</td><td>Yes</td><td>Caption for the group; the first child of the fieldset</td></tr>
+          <tr><td>Hint</td><td>No</td><td>Guidance for the whole group, linked with aria-describedby</td></tr>
+          <tr><td>Controls</td><td>Yes</td><td>The inputs in the group, each with its own Label</td></tr>
+          <tr><td>Error message</td><td>No</td><td>Group-level error, such as "Choose a delivery option"</td></tr>
+          <tr><td>Border</td><td>No</td><td>Visual frame; can be removed with CSS without losing the grouping</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="160" y="70" width="480" height="240" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="68" x2="400" y2="56" />
+            <rect class="label-bg" x="332.5" y="36" width="135" height="20" />
+            <text class="label-text" x="400" y="50" text-anchor="middle">Border (optional)</text>
+          </g>
+          <rect class="region" x="160" y="70" width="480" height="240" rx="6" />
+          <rect class="hover-target" x="180" y="64" width="160" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="260" y1="62" x2="260" y2="50" />
+            <rect class="label-bg" x="231" y="30" width="58" height="20" />
+            <text class="label-text" x="260" y="44" text-anchor="middle">Legend</text>
+          </g>
+          <line class="text-line" x1="180" y1="70" x2="340" y2="70" />
+          <rect class="hover-target" x="180" y="99" width="260" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="310" y1="113" x2="310" y2="125" />
+            <rect class="label-bg" x="249.5" y="125" width="121" height="20" />
+            <text class="label-text" x="310" y="139" text-anchor="middle">Hint (optional)</text>
+          </g>
+          <line class="text-line" x1="180" y1="105" x2="440" y2="105" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="180" y1="165" x2="250" y2="165" stroke-width="1" opacity="0.7" />
+          <rect class="interactive" x="180" y="178" width="200" height="34" rx="4" />
+          <line class="text-line" x1="180" y1="235" x2="250" y2="235" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="180" y="248" width="280" height="34" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="320" y1="284" x2="320" y2="296" />
+            <rect class="label-bg" x="284" y="296" width="72" height="20" />
+            <text class="label-text" x="320" y="310" text-anchor="middle">Controls</text>
+          </g>
+          <rect class="interactive" x="180" y="248" width="280" height="34" rx="4" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Border</td><td>Visible, None</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Control layout</td><td>Stacked, Inline row</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Hint</td><td>None, Below the legend</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Error</td><td>None, Message below the legend</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>State</td><td>Default, Disabled</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="45" x2="200" y2="45" />
+              <line class="text-line" x1="60" y1="75" x2="120" y2="75" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="60" y="88" width="220" height="30" rx="4" />
+              <line class="text-line" x1="60" y1="138" x2="120" y2="138" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="60" y="150" width="220" height="30" rx="4" />
+            </svg>
+          </div>
+          <figcaption>No border — legend styled as a heading</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="50" width="320" height="110" rx="6" />
+              <line class="text-line" x1="55" y1="50" x2="155" y2="50" />
+              <line class="text-line" x1="60" y1="85" x2="100" y2="85" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="60" y="98" width="60" height="32" rx="4" />
+              <line class="text-line" x1="135" y1="85" x2="175" y2="85" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="135" y="98" width="60" height="32" rx="4" />
+              <line class="text-line" x1="210" y1="85" x2="250" y2="85" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="210" y="98" width="100" height="32" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Inline row — day, month and year fields</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="50" y="30" width="300" height="150" rx="6" />
+              <line class="text-line" x1="65" y1="30" x2="185" y2="30" />
+              <line class="text-line" x1="70" y1="60" x2="270" y2="60" stroke-width="1" opacity="0.7" />
+              <circle class="interactive" cx="80" cy="95" r="8" />
+              <line class="text-line" x1="95" y1="95" x2="195" y2="95" />
+              <circle class="interactive" cx="80" cy="125" r="8" />
+              <line class="text-line" x1="95" y1="125" x2="175" y2="125" />
+              <circle class="interactive" cx="80" cy="155" r="8" />
+              <line class="text-line" x1="95" y1="155" x2="205" y2="155" />
+            </svg>
+          </div>
+          <figcaption>Hint — guidance above a set of radio buttons</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="50" y="30" width="300" height="150" rx="6" />
+              <line class="text-line" x1="65" y1="30" x2="185" y2="30" />
+              <text x="75" y="65" font-size="14" text-anchor="middle">!</text>
+              <line class="text-line" x1="88" y1="60" x2="258" y2="60" />
+              <circle class="interactive" cx="80" cy="95" r="8" />
+              <line class="text-line" x1="95" y1="95" x2="195" y2="95" />
+              <circle class="interactive" cx="80" cy="125" r="8" />
+              <line class="text-line" x1="95" y1="125" x2="175" y2="125" />
+              <circle class="interactive" cx="80" cy="155" r="8" />
+              <line class="text-line" x1="95" y1="155" x2="205" y2="155" />
+            </svg>
+          </div>
+          <figcaption>Error — message under the legend</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use a Fieldset for checkboxes or radio buttons that answer one question, and for groups like an address or a date of birth. A Radio group is built on one.</li>
+        <li>Keep the <code>&lt;legend&gt;</code> short, since screen readers may repeat it with each control in the group. Put longer guidance in a hint linked with <code>aria-describedby</code>.</li>
+        <li>When the group is the only question on the page, the legend can contain the page's <code>&lt;h1&gt;</code> so the heading isn't read twice.</li>
+        <li>Setting <code>disabled</code> on the fieldset disables every control inside it.</li>
+        <li>Don't wrap a single control in a fieldset; a Label is enough. Avoid nesting fieldsets, which makes the announced names long and confusing.</li>
+      </ul>
     </section>
 
     <section>

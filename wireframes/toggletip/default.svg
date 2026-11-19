@@ -1,0 +1,27 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="290" y="70" width="240" height="80" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="410" y1="68" x2="410" y2="56" />
+    <rect class="label-bg" x="381" y="36" width="58" height="20" />
+    <text class="label-text" x="410" y="50" text-anchor="middle">Bubble</text>
+  </g>
+  <rect class="region" x="290" y="70" width="240" height="80" rx="6" />
+  <line class="text-line" x1="310" y1="100" x2="510" y2="100" />
+  <line class="text-line" x1="310" y1="115" x2="450" y2="115" />
+  <rect class="optional" x="352" y="150" width="16" height="12" rx="2" />
+  <rect class="hover-target" x="180" y="184" width="150" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="255" y1="198" x2="255" y2="210" />
+    <rect class="label-bg" x="208.5" y="210" width="93" height="20" />
+    <text class="label-text" x="255" y="224" text-anchor="middle">Field label</text>
+  </g>
+  <line class="text-line" x1="180" y1="190" x2="330" y2="190" />
+  <rect class="hover-target" x="347" y="177" width="26" height="26" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="360" y1="205" x2="360" y2="217" />
+    <rect class="label-bg" x="327.5" y="217" width="65" height="20" />
+    <text class="label-text" x="360" y="231" text-anchor="middle">Trigger</text>
+  </g>
+  <circle class="interactive" cx="360" cy="190" r="13" />
+  <text x="360" y="195" font-size="14" text-anchor="middle">i</text>
+</svg>

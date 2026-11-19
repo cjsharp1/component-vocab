@@ -1,0 +1,42 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "line", "x": 160, "y": 110, "w": 140, "label": "Label" },
+      { "type": "line", "x": 560, "y": 110, "w": 80, "weight": 1, "label": "Value text (optional)" },
+      { "type": "region", "x": 160, "y": 150, "w": 480, "h": 20, "rx": 10, "label": "Track", "at": "below" },
+      { "type": "filled", "x": 160, "y": 150, "w": 340, "h": 20, "rx": 10, "label": "Fill" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 30, "y": 28, "w": 80 },
+      { "type": "line", "x": 190, "y": 28, "w": 30, "weight": 1 },
+      { "type": "region", "x": 30, "y": 42, "w": 190, "h": 12, "rx": 6 },
+      { "type": "filled", "x": 30, "y": 42, "w": 130, "h": 12, "rx": 6 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 30, "y": 100, "w": 70 },
+      { "type": "region", "x": 115, "y": 92, "w": 200, "h": 16, "rx": 8 },
+      { "type": "filled", "x": 115, "y": 92, "w": 140, "h": 16, "rx": 8 },
+      { "type": "line", "x": 330, "y": 100, "w": 40, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 70, "w": 100 },
+      { "type": "filled", "x": 60, "y": 92, "w": 52, "h": 14, "rx": 3 },
+      { "type": "filled", "x": 118, "y": 92, "w": 52, "h": 14, "rx": 3 },
+      { "type": "filled", "x": 176, "y": 92, "w": 52, "h": 14, "rx": 3 },
+      { "type": "region", "x": 234, "y": 92, "w": 52, "h": 14, "rx": 3 },
+      { "type": "region", "x": 292, "y": 92, "w": 52, "h": 14, "rx": 3 },
+      { "type": "line", "x": 60, "y": 132, "w": 120, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 188, "y": 25, "w": 24, "h": 140, "rx": 12 },
+      { "type": "filled", "x": 188, "y": 75, "w": 24, "h": 90, "rx": 12 },
+      { "type": "line", "x": 225, "y": 75, "w": 50, "weight": 1 },
+      { "type": "line", "x": 170, "y": 185, "w": 60 }
+    ] }
+  ]
+}

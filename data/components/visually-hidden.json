@@ -2,19 +2,79 @@
   "slug": "visually-hidden",
   "name": "Visually hidden",
   "order": 14,
-  "status": "draft",
+  "status": "stable",
   "group": "layout",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "A utility that hides text on screen but keeps it available to screen readers. Use it to name icon-only controls or to add context that sighted users get from the layout.",
+  "summary": "Text for screen readers, hidden on screen",
+  "htmlElement": "<code>&lt;span&gt;</code> with a <code>visually-hidden</code> class",
   "nativeHtml": "utility class",
   "aria": "",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Hidden text",
+      "required": "Yes",
+      "description": "The words screen readers announce"
+    },
+    {
+      "name": "Visible context",
+      "required": "Yes",
+      "description": "The icon or layout that conveys the same thing on screen"
+    },
+    {
+      "name": "Focus reveal",
+      "required": "No",
+      "description": "Styles that show the element while it has focus, as with a Skip link"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Reveal on focus",
+      "options": "Never, While focused",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Purpose",
+      "options": "Control name, Link context, Section heading",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Element",
+      "options": "<code>&lt;span&gt;</code>, heading, <code>&lt;label&gt;</code>",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Control name — text inside an icon-only button",
+      "wireframe": "wireframes/visually-hidden/variation-1.svg"
+    },
+    {
+      "caption": "Link context — \"Read more\" plus hidden detail",
+      "wireframe": "wireframes/visually-hidden/variation-2.svg"
+    },
+    {
+      "caption": "Hidden heading — names a section for screen readers",
+      "wireframe": "wireframes/visually-hidden/variation-3.svg"
+    },
+    {
+      "caption": "Reveal on focus — hidden, then shown while focused",
+      "wireframe": "wireframes/visually-hidden/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Hide the text with a clipping pattern (<code>position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap</code>). <code>display: none</code>, <code>visibility: hidden</code> and the <code>hidden</code> attribute hide it from screen readers too.",
+    "Use it only when sighted users get the same information another way, such as the icon on an icon-only Button. Text everyone needs should stay visible.",
+    "Hidden text is translated along with the rest of the page by browser translation tools, which often skip <code>aria-label</code>.",
+    "Don't use it on focusable elements unless they become visible on focus, like a Skip link. A focused element nobody can see fails WCAG 2.4.7 Focus Visible.",
+    "For the opposite case, content that is visible but should be skipped by screen readers, use <code>aria-hidden=\"true\"</code>, as on a decorative Icon."
+  ],
+  "wireframe": "wireframes/visually-hidden/default.svg",
+  "thumbnail": "wireframes/visually-hidden/thumbnail.svg",
   "related": [],
   "aliases": [
     "Screenreader only"

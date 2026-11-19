@@ -30,14 +30,17 @@
 
     <section>
       <h1>Stack</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Vertical flow with a consistent gap</p>
+      <p>A wrapper that lays out its children in a vertical column with one consistent gap between them. Use it to space a group of blocks instead of adding margins or empty spacer elements.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Stack (MUI, Polaris, Atlassian, Chakra UI); Stacks (Bootstrap); Space (Ant Design); Flex (Radix Themes)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code> with CSS <code>gap</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;div&gt;</code> + gap</dd>
+        <dt>Research note</dt>
+        <dd>Vertical flow with a consistent gap</dd>
         <dt>Category</dt>
         <dd>B. Layout primitives</dd>
       </dl>
@@ -51,6 +54,147 @@
   &lt;p&gt;…&lt;/p&gt;
   &lt;a href="…"&gt;…&lt;/a&gt;
 &lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Children</td><td>Yes</td><td>Any blocks, laid out top to bottom in source order</td></tr>
+          <tr><td>Gap</td><td>Yes</td><td>One value from the spacing scale, applied only between children</td></tr>
+          <tr><td>Separators</td><td>No</td><td>A Separator line between each pair of children</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 330" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="150" y="40" width="500" height="270" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="38" x2="400" y2="26" />
+            <rect class="label-bg" x="374.5" y="6" width="51" height="20" />
+            <text class="label-text" x="400" y="20" text-anchor="middle">Stack</text>
+          </g>
+          <rect class="region" x="150" y="40" width="500" height="270" rx="6" />
+          <rect class="region" x="170" y="60" width="360" height="60" rx="4" />
+          <line class="text-line" x1="190" y1="80" x2="350" y2="80" />
+          <line class="text-line" x1="190" y1="100" x2="490" y2="100" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="545" y="120" width="80" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="585" y1="118" x2="585" y2="106" />
+            <rect class="label-bg" x="565" y="86" width="40" height="20" />
+            <text class="label-text" x="585" y="100" text-anchor="middle">Gap</text>
+          </g>
+          <rect class="optional" x="545" y="120" width="80" height="20" rx="2" />
+          <rect class="media-placeholder" x="170" y="140" width="360" height="70" rx="4" />
+          <rect class="optional" x="545" y="210" width="80" height="20" rx="2" />
+          <rect class="hover-target" x="170" y="230" width="140" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="240" y1="272" x2="240" y2="284" />
+            <rect class="label-bg" x="172.5" y="284" width="135" height="20" />
+            <text class="label-text" x="240" y="298" text-anchor="middle">Child (any block)</text>
+          </g>
+          <rect class="interactive" x="170" y="230" width="140" height="40" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gap</td><td>None, Extra small, Small, Medium, Large, Extra large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Horizontal alignment</td><td>Stretch, Start, Center, End</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Separators</td><td>None, Between children</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Element</td><td><code>&lt;div&gt;</code>, <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> for a list of like items</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="50" y="50" width="130" height="30" rx="3" />
+              <rect class="region" x="50" y="86" width="130" height="30" rx="3" />
+              <rect class="region" x="50" y="122" width="130" height="30" rx="3" />
+              <rect class="region" x="220" y="20" width="130" height="30" rx="3" />
+              <rect class="region" x="220" y="85" width="130" height="30" rx="3" />
+              <rect class="region" x="220" y="150" width="130" height="30" rx="3" />
+            </svg>
+          </div>
+          <figcaption>Gap — small and large</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="140" y1="50" x2="260" y2="50" />
+              <line class="text-line" x1="100" y1="80" x2="300" y2="80" />
+              <line class="text-line" x1="100" y1="95" x2="240" y2="95" />
+              <rect class="interactive" x="150" y="125" width="100" height="34" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+            </svg>
+          </div>
+          <figcaption>Centered — children aligned to the center</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="80" y1="40" x2="320" y2="40" />
+              <line class="text-line" x1="80" y1="54" x2="248" y2="54" />
+              <line class="text-line" x1="80" y1="76" x2="320" y2="76" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="80" y1="96" x2="320" y2="96" />
+              <line class="text-line" x1="80" y1="110" x2="248" y2="110" />
+              <line class="text-line" x1="80" y1="132" x2="320" y2="132" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="80" y1="152" x2="320" y2="152" />
+              <line class="text-line" x1="80" y1="166" x2="248" y2="166" />
+            </svg>
+          </div>
+          <figcaption>Separators — a line between children</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="80" y="15" width="240" height="170" rx="4" />
+              <rect class="optional" x="95" y="28" width="210" height="52" rx="3" />
+              <line class="text-line" x1="108" y1="44" x2="228" y2="44" />
+              <line class="text-line" x1="108" y1="62" x2="278" y2="62" stroke-width="1" opacity="0.7" />
+              <rect class="media-placeholder" x="95" y="100" width="210" height="50" rx="3" />
+              <rect class="interactive" x="95" y="162" width="90" height="16" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+            </svg>
+          </div>
+          <figcaption>Nested — a tight stack inside a loose one</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Stack only sets spacing and adds no meaning. Render a <code>&lt;div&gt;</code>, or a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> when the children are a list of like items.</li>
+        <li>Build it with flexbox or grid and <code>gap</code>, so space appears only between children and never before the first or after the last.</li>
+        <li>Section and Slot already have a stack gap setting. Add a separate Stack only for a group that needs a tighter or looser gap, such as a heading with its intro text.</li>
+        <li>Take gap values from the spacing scale rather than one-off sizes, so spacing stays consistent across the page.</li>
+        <li>For side-by-side columns, use Grid. For a row of related actions, use Button group.</li>
+      </ul>
     </section>
 
     <section>

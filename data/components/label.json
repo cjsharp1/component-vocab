@@ -2,19 +2,92 @@
   "slug": "label",
   "name": "Label",
   "order": 64,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "The word \"label\" is reserved for this",
-  "summary": "The word \"label\" is reserved for this",
-  "htmlElement": "",
+  "description": "The visible name of a form control, tied to it so that clicking the text focuses the control and screen readers announce the name. Every input, select and textarea needs one.",
+  "summary": "Visible name of a form control",
+  "htmlElement": "<code>&lt;label&gt;</code>",
   "nativeHtml": "`<label>`",
   "aria": "",
   "researchNote": "The word \"label\" is reserved for this",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Text",
+      "required": "Yes",
+      "description": "Names the control in a few words"
+    },
+    {
+      "name": "Required marker",
+      "required": "No",
+      "description": "Marks required or optional fields; its meaning is explained in text"
+    },
+    {
+      "name": "Hint",
+      "required": "No",
+      "description": "Extra guidance under the label, linked to the control with <code>aria-describedby</code>"
+    },
+    {
+      "name": "Control",
+      "required": "Yes",
+      "description": "The field it names, matched by <code>for</code> and <code>id</code> or nested inside the label"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Position",
+      "options": "Above, Beside (start)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Hint",
+      "options": "None, Below the label",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Association",
+      "options": "Separate (for / id), Wraps the control (checkbox, radio)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Required marking",
+      "options": "None, Asterisk, \"(optional)\" text",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Visibility",
+      "options": "Visible, Visually hidden",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Beside — label to the start of the field",
+      "wireframe": "wireframes/label/variation-1.svg"
+    },
+    {
+      "caption": "Hint — guidance under the label",
+      "wireframe": "wireframes/label/variation-2.svg"
+    },
+    {
+      "caption": "Wraps the control — label after each checkbox",
+      "wireframe": "wireframes/label/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "The name Label is reserved for the form element. For a short category marker use a Tag, and for a status use a Badge.",
+    "Connect it with <code>for</code> matching the control's <code>id</code>, or by wrapping the control. Clicking the label then focuses or toggles the control, which also makes small checkboxes easier to hit.",
+    "Keep the label visible. Placeholder text is not a label: it disappears when people type and often has low contrast (WCAG 3.3.2 Labels or Instructions).",
+    "If the accessible name differs from the visible text, it must contain that text (WCAG 2.5.3 Label in Name), so voice control users can say what they see.",
+    "Mark either the required fields or the optional ones and say what the marker means. Add the <code>required</code> attribute so the requirement is announced."
+  ],
+  "wireframe": "wireframes/label/default.svg",
+  "thumbnail": "wireframes/label/thumbnail.svg",
   "related": [],
   "aliases": [
     "Form label"

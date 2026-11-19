@@ -2,19 +2,96 @@
   "slug": "empty-state",
   "name": "Empty state",
   "order": 26,
-  "status": "draft",
+  "status": "stable",
   "group": "content-display",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "A message shown where content would be but isn't yet, such as an empty list or a search with no results. It says why the area is empty and offers the next step.",
+  "summary": "Explains missing content and offers a next step",
+  "htmlElement": "<code>&lt;div&gt;</code> with a heading, text and an action",
   "nativeHtml": "",
   "aria": "",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Illustration",
+      "required": "No",
+      "description": "Icon or image; decorative, so hidden from screen readers"
+    },
+    {
+      "name": "Heading",
+      "required": "Yes",
+      "description": "Says what is empty, e.g. \"No projects yet\""
+    },
+    {
+      "name": "Description",
+      "required": "No",
+      "description": "Why it is empty or what will appear here"
+    },
+    {
+      "name": "Action",
+      "required": "No",
+      "description": "Button or Link for the next step, such as creating an item or clearing filters"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Illustration",
+      "options": "None, Icon, Image",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Compact (inside a Card or Table), Full area",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Alignment",
+      "options": "Center, Start",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Actions",
+      "options": "None, One, Primary and secondary",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Reason",
+      "options": "First use, No results, Cleared",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Full area — illustration, text and action",
+      "wireframe": "wireframes/empty-state/variation-1.svg"
+    },
+    {
+      "caption": "Compact — inside a Table",
+      "wireframe": "wireframes/empty-state/variation-2.svg"
+    },
+    {
+      "caption": "Start aligned — icon beside the text",
+      "wireframe": "wireframes/empty-state/variation-3.svg"
+    },
+    {
+      "caption": "Two actions — primary and secondary",
+      "wireframe": "wireframes/empty-state/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Say what is empty and what to do next. A bare \"No data\" leaves people guessing whether something failed.",
+    "Treat the illustration as decorative (<code>aria-hidden=\"true\"</code> or an empty <code>alt</code>); the heading and text carry the message.",
+    "When it replaces results after a search or filter change, announce it in a <code>role=\"status\"</code> region so screen reader users know the update happened (WCAG 4.1.3 Status Messages).",
+    "Pick the heading level from where it sits in the outline, not from the size you want (see Heading).",
+    "Use Empty state for missing content. Use Alert for errors that need attention, and Skeleton or Spinner while content is still loading."
+  ],
+  "wireframe": "wireframes/empty-state/default.svg",
+  "thumbnail": "wireframes/empty-state/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

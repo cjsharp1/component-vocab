@@ -1,0 +1,62 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "line", "x": 240, "y": 80, "w": 130, "label": "Legend" },
+      { "type": "line", "x": 240, "y": 105, "w": 400, "weight": 1, "label": "Hint (optional)" },
+      { "type": "circle", "cx": 252, "cy": 160, "r": 11, "style": "interactive", "label": "Radio" },
+      { "type": "circle", "cx": 252, "cy": 160, "r": 5, "style": "filled" },
+      { "type": "line", "x": 275, "y": 160, "w": 150, "label": "Option label" },
+      { "type": "circle", "cx": 252, "cy": 205, "r": 11, "style": "interactive" },
+      { "type": "line", "x": 275, "y": 205, "w": 110 },
+      { "type": "circle", "cx": 252, "cy": 250, "r": 11, "style": "interactive" },
+      { "type": "line", "x": 275, "y": 250, "w": 160 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "circle", "cx": 70, "cy": 26, "r": 8, "style": "interactive" },
+      { "type": "circle", "cx": 70, "cy": 26, "r": 4, "style": "filled" },
+      { "type": "line", "x": 86, "y": 26, "w": 90 },
+      { "type": "circle", "cx": 70, "cy": 54, "r": 8, "style": "interactive" },
+      { "type": "line", "x": 86, "y": 54, "w": 70 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 70, "w": 140 },
+      { "type": "circle", "cx": 50, "cy": 110, "r": 9, "style": "interactive" },
+      { "type": "circle", "cx": 50, "cy": 110, "r": 4, "style": "filled" },
+      { "type": "line", "x": 66, "y": 110, "w": 60 },
+      { "type": "circle", "cx": 160, "cy": 110, "r": 9, "style": "interactive" },
+      { "type": "line", "x": 176, "y": 110, "w": 60 },
+      { "type": "circle", "cx": 270, "cy": 110, "r": 9, "style": "interactive" },
+      { "type": "line", "x": 286, "y": 110, "w": 60 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 80, "y": 30, "w": 140 },
+      { "type": "circle", "cx": 90, "cy": 65, "r": 9, "style": "interactive" },
+      { "type": "circle", "cx": 90, "cy": 65, "r": 4, "style": "filled" },
+      { "type": "line", "x": 108, "y": 62, "w": 120 },
+      { "type": "line", "x": 108, "y": 78, "w": 200, "weight": 1 },
+      { "type": "circle", "cx": 90, "cy": 115, "r": 9, "style": "interactive" },
+      { "type": "line", "x": 108, "y": 112, "w": 100 },
+      { "type": "line", "x": 108, "y": 128, "w": 180, "weight": 1 },
+      { "type": "circle", "cx": 90, "cy": 165, "r": 9, "style": "interactive" },
+      { "type": "line", "x": 108, "y": 162, "w": 130 },
+      { "type": "line", "x": 108, "y": 178, "w": 190, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 60, "y": 28, "w": 280, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 84, "cy": 50, "r": 9, "style": "interactive" },
+      { "type": "circle", "cx": 84, "cy": 50, "r": 4, "style": "filled" },
+      { "type": "line", "x": 104, "y": 50, "w": 140 },
+      { "type": "region", "x": 60, "y": 80, "w": 280, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 84, "cy": 102, "r": 9, "style": "interactive" },
+      { "type": "line", "x": 104, "y": 102, "w": 110 },
+      { "type": "region", "x": 60, "y": 132, "w": 280, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 84, "cy": 154, "r": 9, "style": "interactive" },
+      { "type": "line", "x": 104, "y": 154, "w": 160 }
+    ] }
+  ]
+}

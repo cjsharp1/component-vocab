@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="60" y1="60" x2="160" y2="60" />
+  <circle class="interactive" cx="76" cy="105" r="16" style="fill: var(--wireframe-interactive)" />
+  <circle class="media-placeholder" cx="121" cy="105" r="16" />
+  <circle class="media-placeholder" cx="166" cy="105" r="16" />
+  <circle class="media-placeholder" cx="211" cy="105" r="16" />
+  <circle class="media-placeholder" cx="256" cy="105" r="16" />
+  <circle class="optional" cx="301" cy="105" r="16" />
+  <text x="301" y="111" font-size="16" text-anchor="middle">+</text>
+</svg>

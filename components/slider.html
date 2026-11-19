@@ -30,16 +30,19 @@
 
     <section>
       <h1>Slider</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Never used for a Carousel</p>
+      <p>A control for setting a value, or a range between two values, by moving a thumb along a track. Use it when the relative position matters more than the exact number, such as volume or a price range.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Range input. In design systems: Slider (MUI, Ant Design, Carbon, Chakra UI, Radix Themes, shadcn/ui, Fluent UI); Range (Bootstrap, Atlassian); Sliders (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;input type="range"&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;input type="range"&gt;</code></dd>
         <dt>ARIA pattern</dt>
         <dd>Slider</dd>
+        <dt>Research note</dt>
+        <dd>Never used for a Carousel</dd>
         <dt>Category</dt>
         <dd>H. Forms</dd>
       </dl>
@@ -50,6 +53,164 @@
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="vol"&gt;Volume&lt;/label&gt;
 &lt;input id="vol" type="range" min="0" max="10" value="5"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>Visible <code>&lt;label&gt;</code> that names the value</td></tr>
+          <tr><td>Track</td><td>Yes</td><td>The line from minimum to maximum; the part before the thumb is often filled</td></tr>
+          <tr><td>Thumb</td><td>Yes</td><td>The handle people drag or move with arrow keys; two thumbs for a range</td></tr>
+          <tr><td>Value display</td><td>No</td><td>Current value as text, beside the track or in a number field</td></tr>
+          <tr><td>Tick marks</td><td>No</td><td>Marked steps, with or without labels, such as from <code>&lt;datalist&gt;</code></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="200" y="84" width="120" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="260" y1="82" x2="260" y2="70" />
+            <rect class="label-bg" x="234.5" y="50" width="51" height="20" />
+            <text class="label-text" x="260" y="64" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="200" y1="90" x2="320" y2="90" />
+          <rect class="hover-target" x="540" y="84" width="60" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="570" y1="82" x2="570" y2="70" />
+            <rect class="label-bg" x="506" y="50" width="128" height="20" />
+            <text class="label-text" x="570" y="64" text-anchor="middle">Value (optional)</text>
+          </g>
+          <line class="text-line" x1="540" y1="90" x2="600" y2="90" />
+          <rect class="hover-target" x="200" y="145" width="400" height="8" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="155" x2="400" y2="167" />
+            <rect class="label-bg" x="374.5" y="167" width="51" height="20" />
+            <text class="label-text" x="400" y="181" text-anchor="middle">Track</text>
+          </g>
+          <rect class="region" x="200" y="145" width="400" height="8" rx="4" />
+          <rect class="interactive" x="200" y="145" width="160" height="8" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <rect class="hover-target" x="347" y="136" width="26" height="26" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="360" y1="134" x2="360" y2="122" />
+            <rect class="label-bg" x="334.5" y="102" width="51" height="20" />
+            <text class="label-text" x="360" y="116" text-anchor="middle">Thumb</text>
+          </g>
+          <circle class="interactive" cx="360" cy="149" r="13" />
+          <text x="200" y="185" font-size="12" text-anchor="middle">0</text>
+          <text x="600" y="185" font-size="12" text-anchor="middle">100</text>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Thumbs</td><td>One value, Range (two thumbs)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Value display</td><td>None, Text beside track, Number input</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Ticks</td><td>None, Steps, Labeled steps</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Orientation</td><td>Horizontal, Vertical</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Step</td><td>Continuous, Fixed step</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="60" x2="160" y2="60" />
+              <rect class="region" x="60" y="106" width="280" height="8" rx="4" />
+              <rect class="interactive" x="130" y="106" width="130" height="8" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="interactive" cx="130" cy="110" r="12" />
+              <circle class="interactive" cx="260" cy="110" r="12" />
+              <text x="130" y="145" font-size="12" text-anchor="middle">20</text>
+              <text x="260" y="145" font-size="12" text-anchor="middle">80</text>
+            </svg>
+          </div>
+          <figcaption>Range — two thumbs for a minimum and maximum</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="70" x2="140" y2="70" />
+              <rect class="region" x="40" y="106" width="220" height="8" rx="4" />
+              <rect class="interactive" x="40" y="106" width="120" height="8" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="interactive" cx="160" cy="110" r="12" />
+              <rect class="interactive" x="290" y="90" width="70" height="40" rx="4" />
+              <line class="text-line" x1="305" y1="110" x2="335" y2="110" />
+            </svg>
+          </div>
+          <figcaption>With number field — exact value beside the track</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="50" x2="160" y2="50" />
+              <rect class="region" x="60" y="96" width="280" height="8" rx="4" />
+              <rect class="interactive" x="60" y="96" width="140" height="8" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <rect class="region" x="59" y="118" width="2" height="8" />
+              <rect class="region" x="129" y="118" width="2" height="8" />
+              <rect class="region" x="199" y="118" width="2" height="8" />
+              <rect class="region" x="269" y="118" width="2" height="8" />
+              <rect class="region" x="339" y="118" width="2" height="8" />
+              <circle class="interactive" cx="200" cy="100" r="12" />
+              <text x="60" y="148" font-size="11" text-anchor="middle">0</text>
+              <text x="130" y="148" font-size="11" text-anchor="middle">25</text>
+              <text x="200" y="148" font-size="11" text-anchor="middle">50</text>
+              <text x="270" y="148" font-size="11" text-anchor="middle">75</text>
+              <text x="340" y="148" font-size="11" text-anchor="middle">100</text>
+            </svg>
+          </div>
+          <figcaption>Labeled steps — tick marks under the track</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="30" x2="120" y2="30" />
+              <rect class="region" x="196" y="20" width="8" height="160" rx="4" />
+              <rect class="interactive" x="196" y="100" width="8" height="80" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="interactive" cx="200" cy="100" r="12" />
+              <text x="225" y="32" font-size="11" text-anchor="start">100</text>
+              <text x="225" y="182" font-size="11" text-anchor="start">0</text>
+            </svg>
+          </div>
+          <figcaption>Vertical — track runs bottom to top</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Slider means a range input only. A rotating set of slides is a Carousel.</li>
+        <li>Sliders are hard to set to an exact value, especially by touch. When the exact number matters, use a Number input, or add one next to the slider.</li>
+        <li>Show the current value and the limits. Custom sliders follow the APG Slider pattern: <code>role="slider"</code> with <code>aria-valuenow</code>, <code>aria-valuemin</code> and <code>aria-valuemax</code>, plus <code>aria-valuetext</code> when the number alone isn't meaningful, such as "$20 to $80".</li>
+        <li>Arrow keys change the value by one step, and Page Up, Page Down, Home and End make larger jumps. Dragging must not be the only way to set it (WCAG 2.5.7).</li>
+        <li>For a range, give each thumb its own accessible name, such as "Minimum price" and "Maximum price".</li>
+      </ul>
     </section>
 
     <section>

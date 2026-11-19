@@ -1,0 +1,49 @@
+{
+  "default": {
+    "height": 340,
+    "shapes": [
+      { "type": "region", "x": 120, "y": 40, "w": 560, "h": 32, "rx": 4, "label": "Header" },
+      { "type": "optional", "x": 130, "y": 46, "w": 110, "h": 20, "rx": 4, "label": "Skip link (focus only)" },
+      { "type": "line", "x": 520, "y": 56, "w": 140, "weight": 1 },
+      { "type": "region", "x": 120, "y": 110, "w": 560, "h": 140, "rx": 6, "label": "Main (id=\"main\")" },
+      { "type": "line", "x": 150, "y": 140, "w": 220 },
+      { "type": "lines", "x": 150, "y": 170, "w": 480, "count": 3 },
+      { "type": "region", "x": 120, "y": 290, "w": 560, "h": 28, "rx": 4, "label": "Footer" },
+      { "type": "line", "x": 150, "y": 304, "w": 180, "weight": 1 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "region", "x": 20, "y": 8, "w": 210, "h": 12, "rx": 2 },
+      { "type": "region", "x": 20, "y": 26, "w": 210, "h": 34, "rx": 3 },
+      { "type": "line", "x": 32, "y": 38, "w": 90 },
+      { "type": "line", "x": 32, "y": 50, "w": 150, "weight": 1 },
+      { "type": "region", "x": 20, "y": 66, "w": 210, "h": 8, "rx": 2 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "region", "x": 20, "y": 15, "w": 360, "h": 28, "rx": 4 },
+      { "type": "region", "x": 20, "y": 53, "w": 360, "h": 100, "rx": 4 },
+      { "type": "line", "x": 40, "y": 75, "w": 140 },
+      { "type": "lines", "x": 40, "y": 100, "w": 300, "count": 3 },
+      { "type": "region", "x": 20, "y": 163, "w": 360, "h": 22, "rx": 4 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 20, "y": 15, "w": 360, "h": 28, "rx": 4 },
+      { "type": "region", "x": 20, "y": 53, "w": 90, "h": 100, "rx": 4 },
+      { "type": "lines", "x": 32, "y": 72, "w": 60, "count": 4 },
+      { "type": "region", "x": 120, "y": 53, "w": 260, "h": 100, "rx": 4 },
+      { "type": "line", "x": 140, "y": 75, "w": 120 },
+      { "type": "lines", "x": 140, "y": 100, "w": 210, "count": 3 },
+      { "type": "region", "x": 20, "y": 163, "w": 360, "h": 22, "rx": 4 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 20, "y": 15, "w": 360, "h": 28, "rx": 4 },
+      { "type": "region", "x": 90, "y": 53, "w": 220, "h": 100, "rx": 4 },
+      { "type": "line", "x": 110, "y": 75, "w": 110 },
+      { "type": "lines", "x": 110, "y": 100, "w": 170, "count": 3 },
+      { "type": "region", "x": 20, "y": 163, "w": 360, "h": 22, "rx": 4 }
+    ] }
+  ]
+}

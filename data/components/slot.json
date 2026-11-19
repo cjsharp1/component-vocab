@@ -2,19 +2,87 @@
   "slug": "slot",
   "name": "Slot",
   "order": 11,
-  "status": "draft",
+  "status": "stable",
   "group": "layout",
-  "description": "Auto-managed by Grid",
-  "summary": "Auto-managed by Grid",
-  "htmlElement": "",
+  "description": "One cell of a Grid that holds a vertical stack of content blocks. The Grid's layout preset creates and removes slots; editors see them as columns.",
+  "summary": "One Grid cell holding stacked content blocks",
+  "htmlElement": "<code>&lt;div&gt;</code>",
   "nativeHtml": "`<div>`",
   "aria": "",
   "researchNote": "Auto-managed by Grid",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Content blocks",
+      "required": "Yes",
+      "description": "Any content block, stacked top to bottom; never a Section or Grid"
+    },
+    {
+      "name": "Background",
+      "required": "No",
+      "description": "Color or image behind this cell only"
+    },
+    {
+      "name": "Padding",
+      "required": "No",
+      "description": "Inner space, mostly used with a background"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Vertical alignment",
+      "options": "Top, Center, Bottom, Stretch",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Padding",
+      "options": "None, Small, Medium, Large, Extra large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Stacked order",
+      "options": "Source order, First, Last (on narrow screens)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Stack gap",
+      "options": "Inherit from Section, None to Extra large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Background",
+      "options": "None, Color, Image",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Vertical alignment — top, center, bottom",
+      "wireframe": "wireframes/slot/variation-1.svg"
+    },
+    {
+      "caption": "Padding — inner space in one slot",
+      "wireframe": "wireframes/slot/variation-2.svg"
+    },
+    {
+      "caption": "Stacked order — second slot first on narrow screens",
+      "wireframe": "wireframes/slot/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Slots exist only inside a Grid. The Grid's preset (1:1, 2:1, 1:1:1) decides how many there are, so change the preset to add or remove one.",
+    "Put content blocks in a slot, never another Grid or a Section. Blocks that repeat items, such as a list of Cards, set their own number per row instead.",
+    "Render it as a plain <code>&lt;div&gt;</code>. It has no role of its own; headings inside it carry the structure.",
+    "Stacked order changes only the visual order. Keep the source order meaningful, because screen readers and keyboard focus follow the DOM (WCAG 1.3.2 Meaningful Sequence, 2.4.3 Focus Order).",
+    "Make each slot a size container (<code>container-type: inline-size</code>) so blocks inside respond to the slot's width, not the viewport."
+  ],
+  "wireframe": "wireframes/slot/default.svg",
+  "thumbnail": "wireframes/slot/thumbnail.svg",
   "related": [],
   "aliases": [
     "Column",

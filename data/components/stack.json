@@ -2,19 +2,85 @@
   "slug": "stack",
   "name": "Stack",
   "order": 12,
-  "status": "draft",
+  "status": "stable",
   "group": "layout",
-  "description": "Vertical flow with a consistent gap",
-  "summary": "Vertical flow with a consistent gap",
-  "htmlElement": "",
+  "description": "A wrapper that lays out its children in a vertical column with one consistent gap between them. Use it to space a group of blocks instead of adding margins or empty spacer elements.",
+  "summary": "Vertical flow of blocks with a consistent gap",
+  "htmlElement": "<code>&lt;div&gt;</code> with CSS <code>gap</code>",
   "nativeHtml": "`<div>` + gap",
   "aria": "",
   "researchNote": "Vertical flow with a consistent gap",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Children",
+      "required": "Yes",
+      "description": "Any blocks, laid out top to bottom in source order"
+    },
+    {
+      "name": "Gap",
+      "required": "Yes",
+      "description": "One value from the spacing scale, applied only between children"
+    },
+    {
+      "name": "Separators",
+      "required": "No",
+      "description": "A Separator line between each pair of children"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Gap",
+      "options": "None, Extra small, Small, Medium, Large, Extra large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Horizontal alignment",
+      "options": "Stretch, Start, Center, End",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Separators",
+      "options": "None, Between children",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Element",
+      "options": "<code>&lt;div&gt;</code>, <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> for a list of like items",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Gap — small and large",
+      "wireframe": "wireframes/stack/variation-1.svg"
+    },
+    {
+      "caption": "Centered — children aligned to the center",
+      "wireframe": "wireframes/stack/variation-2.svg"
+    },
+    {
+      "caption": "Separators — a line between children",
+      "wireframe": "wireframes/stack/variation-3.svg"
+    },
+    {
+      "caption": "Nested — a tight stack inside a loose one",
+      "wireframe": "wireframes/stack/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Stack only sets spacing and adds no meaning. Render a <code>&lt;div&gt;</code>, or a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> when the children are a list of like items.",
+    "Build it with flexbox or grid and <code>gap</code>, so space appears only between children and never before the first or after the last.",
+    "Section and Slot already have a stack gap setting. Add a separate Stack only for a group that needs a tighter or looser gap, such as a heading with its intro text.",
+    "Take gap values from the spacing scale rather than one-off sizes, so spacing stays consistent across the page.",
+    "For side-by-side columns, use Grid. For a row of related actions, use Button group."
+  ],
+  "wireframe": "wireframes/stack/default.svg",
+  "thumbnail": "wireframes/stack/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

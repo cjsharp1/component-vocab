@@ -1,0 +1,51 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "line", "x": 220, "y": 110, "w": 80, "label": "Label" },
+      { "type": "region", "x": 214, "y": 134, "w": 372, "h": 56, "rx": 8 },
+      { "type": "filled", "x": 220, "y": 140, "w": 120, "h": 44, "rx": 6, "label": "Selected segment", "at": "below" },
+      { "type": "interactive", "x": 340, "y": 140, "w": 120, "h": 44, "rx": 6, "label": "Segment" },
+      { "type": "line", "x": 365, "y": 162, "w": 70 },
+      { "type": "line", "x": 485, "y": 162, "w": 70 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "region", "x": 45, "y": 24, "w": 160, "h": 32, "rx": 6 },
+      { "type": "filled", "x": 48, "y": 27, "w": 52, "h": 26, "rx": 4 },
+      { "type": "line", "x": 112, "y": 40, "w": 30 },
+      { "type": "line", "x": 165, "y": 40, "w": 30 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "region", "x": 50, "y": 78, "w": 300, "h": 44, "rx": 8 },
+      { "type": "filled", "x": 54, "y": 82, "w": 96, "h": 36, "rx": 6 },
+      { "type": "line", "x": 172, "y": 100, "w": 56 },
+      { "type": "line", "x": 272, "y": 100, "w": 56 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 130, "y": 78, "w": 140, "h": 44, "rx": 8 },
+      { "type": "filled", "x": 134, "y": 82, "w": 42, "h": 36, "rx": 6 },
+      { "type": "circle", "cx": 155, "cy": 100, "r": 8, "style": "region" },
+      { "type": "circle", "cx": 200, "cy": 100, "r": 8, "style": "region" },
+      { "type": "circle", "cx": 245, "cy": 100, "r": 8, "style": "region" }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 55, "w": 160 },
+      { "type": "region", "x": 40, "y": 85, "w": 320, "h": 44, "rx": 8 },
+      { "type": "filled", "x": 44, "y": 89, "w": 103, "h": 36, "rx": 6 },
+      { "type": "line", "x": 172, "y": 107, "w": 56 },
+      { "type": "line", "x": 279, "y": 107, "w": 56 },
+      { "type": "line", "x": 40, "y": 155, "w": 300, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 90, "y": 70, "w": 70 },
+      { "type": "region", "x": 90, "y": 90, "w": 220, "h": 44, "rx": 8 },
+      { "type": "filled", "x": 94, "y": 94, "w": 70, "h": 36, "rx": 6 },
+      { "type": "line", "x": 180, "y": 112, "w": 40 },
+      { "type": "line", "x": 253, "y": 112, "w": 40 }
+    ] }
+  ]
+}

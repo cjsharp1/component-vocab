@@ -2,19 +2,90 @@
   "slug": "color-picker",
   "name": "Color picker",
   "order": 76,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "A control for choosing a color, either the native <code>&lt;input type=\"color\"&gt;</code> or a panel with a color area, hue slider and value field. Use it when any color is allowed; for a few fixed colors, use a Radio group of swatches.",
+  "summary": "Choose a color from a swatch or panel",
+  "htmlElement": "<code>&lt;input type=\"color\"&gt;</code>",
   "nativeHtml": "`<input type=\"color\">`",
   "aria": "",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible <code>&lt;label&gt;</code> that names what the color is for"
+    },
+    {
+      "name": "Swatch",
+      "required": "Yes",
+      "description": "Shows the current color and opens the picker"
+    },
+    {
+      "name": "Value field",
+      "required": "No",
+      "description": "Text input for a hex or other color value"
+    },
+    {
+      "name": "Color area",
+      "required": "No",
+      "description": "Two-dimensional area for saturation and brightness"
+    },
+    {
+      "name": "Hue slider",
+      "required": "No",
+      "description": "Slider for hue; sometimes a second one for opacity"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Display",
+      "options": "Swatch only, Swatch and value field, Inline panel",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Presets",
+      "options": "None, Row of swatches",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Opacity",
+      "options": "Off, Opacity slider",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Value format",
+      "options": "Hex, RGB, HSL",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Swatch and value field — compact row",
+      "wireframe": "wireframes/color-picker/variation-1.svg"
+    },
+    {
+      "caption": "Inline panel — color area, hue slider and value",
+      "wireframe": "wireframes/color-picker/variation-2.svg"
+    },
+    {
+      "caption": "Presets — row of swatches with an add button",
+      "wireframe": "wireframes/color-picker/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Start with the native <code>&lt;input type=\"color\"&gt;</code>. It opens the system picker, works with the keyboard, and always returns a hex value such as <code>#2350d1</code>.",
+    "Show the value as text next to the swatch, ideally in an editable field, so people can paste an exact color and the choice isn't shown by color alone (WCAG 1.4.1).",
+    "If only a few colors are allowed, such as product colors, use a Radio group styled as swatches and give each option a name (\"Navy\", not just a color).",
+    "A custom color area has no native role and needs dragging. Pair it with value fields or sliders built on the APG Slider pattern so the color can be set without dragging (WCAG 2.5.7)."
+  ],
+  "wireframe": "wireframes/color-picker/default.svg",
+  "thumbnail": "wireframes/color-picker/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

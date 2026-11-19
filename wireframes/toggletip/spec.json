@@ -1,0 +1,54 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "region", "x": 290, "y": 70, "w": 240, "h": 80, "rx": 6, "label": "Bubble" },
+      { "type": "lines", "x": 310, "y": 100, "w": 200, "count": 2 },
+      { "type": "optional", "x": 352, "y": 150, "w": 16, "h": 12, "rx": 2 },
+      { "type": "line", "x": 180, "y": 190, "w": 150, "label": "Field label", "at": "below" },
+      { "type": "circle", "cx": 360, "cy": 190, "r": 13, "label": "Trigger", "at": "below" },
+      { "type": "text", "x": 360, "y": 195, "value": "i", "size": 14 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "region", "x": 80, "y": 6, "w": 120, "h": 36, "rx": 4 },
+      { "type": "lines", "x": 92, "y": 18, "w": 96, "count": 2, "gap": 12 },
+      { "type": "optional", "x": 134, "y": 42, "w": 12, "h": 8, "rx": 1 },
+      { "type": "line", "x": 40, "y": 62, "w": 80 },
+      { "type": "circle", "cx": 140, "cy": 62, "r": 9 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "circle", "cx": 200, "cy": 50, "r": 12 },
+      { "type": "text", "x": 200, "y": 55, "value": "i", "size": 14 },
+      { "type": "optional", "x": 192, "y": 64, "w": 16, "h": 10, "rx": 2 },
+      { "type": "region", "x": 100, "y": 74, "w": 200, "h": 70, "rx": 6 },
+      { "type": "lines", "x": 120, "y": 98, "w": 160, "count": 2 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 50, "y": 100, "w": 100 },
+      { "type": "circle", "cx": 175, "cy": 100, "r": 12 },
+      { "type": "text", "x": 175, "y": 105, "value": "i", "size": 14 },
+      { "type": "optional", "x": 189, "y": 94, "w": 12, "h": 12, "rx": 2 },
+      { "type": "region", "x": 201, "y": 65, "w": 160, "h": 70, "rx": 6 },
+      { "type": "lines", "x": 218, "y": 90, "w": 125, "count": 2 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 70, "y": 40, "w": 200, "h": 64, "rx": 6 },
+      { "type": "lines", "x": 90, "y": 63, "w": 160, "count": 2 },
+      { "type": "optional", "x": 103, "y": 104, "w": 14, "h": 10, "rx": 2 },
+      { "type": "interactive", "x": 90, "y": 120, "w": 130, "h": 34, "rx": 17 },
+      { "type": "circle", "cx": 110, "cy": 137, "r": 9, "style": "region" },
+      { "type": "line", "x": 126, "y": 137, "w": 80 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 110, "y": 20, "w": 180, "h": 110, "rx": 6 },
+      { "type": "lines", "x": 128, "y": 45, "w": 145, "count": 5 },
+      { "type": "optional", "x": 193, "y": 130, "w": 14, "h": 10, "rx": 2 },
+      { "type": "circle", "cx": 200, "cy": 160, "r": 12 },
+      { "type": "text", "x": 200, "y": 165, "value": "i", "size": 14 }
+    ] }
+  ]
+}

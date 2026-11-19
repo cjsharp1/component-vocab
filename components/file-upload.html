@@ -30,11 +30,13 @@
 
     <section>
       <h1>File upload</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
+      <p>A control for choosing one or more files from the device to send with a form, built on <code>&lt;input type="file"&gt;</code>. It can add a drop zone for dragged files and a list of the files chosen.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>File input, Dropzone. In design systems: Upload (Ant Design); File uploader (Carbon); Drop zone (Polaris); File Upload (Chakra UI); File upload (GOV.UK)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;input type="file"&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;input type="file"&gt;</code></dd>
         <dt>Category</dt>
@@ -47,6 +49,167 @@
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="cv"&gt;Upload your CV&lt;/label&gt;
 &lt;input id="cv" type="file" name="cv" accept=".pdf,.docx"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>Visible <code>&lt;label&gt;</code> that says what to upload</td></tr>
+          <tr><td>Choose button</td><td>Yes</td><td>Opens the system file chooser</td></tr>
+          <tr><td>Hint text</td><td>No</td><td>Allowed file types and the size limit</td></tr>
+          <tr><td>Drop zone</td><td>No</td><td>Area that accepts dragged files, around the button</td></tr>
+          <tr><td>File list</td><td>No</td><td>Chosen files with name, size or progress, and a remove button</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="200" y="44" width="120" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="260" y1="42" x2="260" y2="30" />
+            <rect class="label-bg" x="234.5" y="10" width="51" height="20" />
+            <text class="label-text" x="260" y="24" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="200" y1="50" x2="320" y2="50" />
+          <rect class="hover-target" x="200" y="66" width="400" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="64" x2="400" y2="52" />
+            <rect class="label-bg" x="339.5" y="32" width="121" height="20" />
+            <text class="label-text" x="400" y="46" text-anchor="middle">Hint (optional)</text>
+          </g>
+          <line class="text-line" x1="200" y1="72" x2="600" y2="72" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="200" y="90" width="400" height="120" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="212" x2="400" y2="224" />
+            <rect class="label-bg" x="322" y="224" width="156" height="20" />
+            <text class="label-text" x="400" y="238" text-anchor="middle">Drop zone (optional)</text>
+          </g>
+          <rect class="optional" x="200" y="90" width="400" height="120" rx="8" />
+          <rect class="hover-target" x="330" y="125" width="140" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="123" x2="400" y2="111" />
+            <rect class="label-bg" x="371" y="91" width="58" height="20" />
+            <text class="label-text" x="400" y="105" text-anchor="middle">Button</text>
+          </g>
+          <rect class="interactive" x="330" y="125" width="140" height="40" rx="6" />
+          <line class="text-line" x1="360" y1="145" x2="440" y2="145" />
+          <line class="text-line" x1="340" y1="188" x2="460" y2="188" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="200" y="255" width="400" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="297" x2="400" y2="309" />
+            <rect class="label-bg" x="322" y="309" width="156" height="20" />
+            <text class="label-text" x="400" y="323" text-anchor="middle">File list (optional)</text>
+          </g>
+          <rect class="region" x="200" y="255" width="400" height="40" rx="4" />
+          <rect class="region" x="210" y="263" width="24" height="24" rx="3" />
+          <line class="text-line" x1="246" y1="275" x2="386" y2="275" />
+          <text x="584" y="280" font-size="14" text-anchor="middle">×</text>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Drop zone</td><td>None, Drop zone</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>File list</td><td>None, Names, Names with progress</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Preview</td><td>None, Image thumbnails</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Multiple</td><td>One file, Several files</td><td>No</td></tr>
+          <tr><td>Accepted types</td><td>Any file, Listed types</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="70" x2="160" y2="70" />
+              <rect class="interactive" x="60" y="85" width="110" height="36" rx="4" />
+              <line class="text-line" x1="80" y1="103" x2="150" y2="103" />
+              <line class="text-line" x1="185" y1="103" x2="305" y2="103" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Plain — native button and file name</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="optional" x="60" y="25" width="280" height="150" rx="8" />
+              <circle class="region" cx="200" cy="65" r="14" />
+              <line class="text-line" x1="140" y1="100" x2="260" y2="100" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="150" y="120" width="100" height="32" rx="6" />
+              <line class="text-line" x1="170" y1="136" x2="230" y2="136" />
+            </svg>
+          </div>
+          <figcaption>Drop zone — dashed area with a button inside</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="60" y="40" width="280" height="40" rx="4" />
+              <line class="text-line" x1="76" y1="54" x2="196" y2="54" />
+              <rect class="region" x="76" y="66" width="200" height="6" rx="3" />
+              <rect class="interactive" x="76" y="66" width="120" height="6" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <text x="322" y="65" font-size="14" text-anchor="middle">×</text>
+              <rect class="region" x="60" y="90" width="280" height="40" rx="4" />
+              <line class="text-line" x1="76" y1="104" x2="216" y2="104" />
+              <line class="text-line" x1="76" y1="118" x2="136" y2="118" stroke-width="1" opacity="0.7" />
+              <text x="322" y="115" font-size="14" text-anchor="middle">×</text>
+              <rect class="region" x="60" y="140" width="280" height="40" rx="4" />
+              <line class="text-line" x1="76" y1="154" x2="176" y2="154" />
+              <line class="text-line" x1="76" y1="168" x2="136" y2="168" stroke-width="1" opacity="0.7" />
+              <text x="322" y="165" font-size="14" text-anchor="middle">×</text>
+            </svg>
+          </div>
+          <figcaption>File list — progress and remove buttons</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="30" y="60" width="80" height="80" rx="4" />
+              <rect class="media-placeholder" x="125" y="60" width="80" height="80" rx="4" />
+              <rect class="media-placeholder" x="220" y="60" width="80" height="80" rx="4" />
+              <rect class="optional" x="315" y="60" width="80" height="80" rx="4" />
+              <text x="355" y="107" font-size="20" text-anchor="middle">+</text>
+            </svg>
+          </div>
+          <figcaption>Previews — image thumbnails with an add tile</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Keep the native <code>&lt;input type="file"&gt;</code> underneath any custom design. It already works with keyboards, screen readers and mobile file choosers.</li>
+        <li>Dragging must never be the only way to add a file. Always include a button that opens the file chooser (WCAG 2.5.7).</li>
+        <li>State the allowed file types and size limit in the hint before people choose, and set <code>accept</code> to match. Check files on the server as well.</li>
+        <li>When a file is rejected, name the file and the reason in the error message, such as "report.exe is not an allowed file type", and keep the other files.</li>
+        <li>Tell screen reader users about upload progress and completion, for example with a Progress bar and a polite live region.</li>
+      </ul>
     </section>
 
     <section>

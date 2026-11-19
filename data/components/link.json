@@ -2,19 +2,83 @@
   "slug": "link",
   "name": "Link",
   "order": 30,
-  "status": "draft",
+  "status": "stable",
   "group": "actions",
-  "description": "Navigates",
-  "summary": "Navigates",
-  "htmlElement": "",
+  "description": "Text that takes the user to another page, another place on the same page, or a file. If the control performs an action on the current page instead, use a Button.",
+  "summary": "Navigates to another page or location",
+  "htmlElement": "<code>&lt;a href&gt;</code>",
   "nativeHtml": "`<a href>`",
   "aria": "Link",
   "researchNote": "Navigates",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Link text",
+      "required": "Yes",
+      "description": "Says where the link goes and makes sense on its own"
+    },
+    {
+      "name": "Underline",
+      "required": "No",
+      "description": "Keeps links in body text recognizable without relying on color"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Trailing arrow, or an external-link icon with a text alternative"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Context",
+      "options": "Inline (in text), Standalone",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Icon",
+      "options": "None, Trailing arrow, External",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Default, Subtle, Button-styled",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Underline",
+      "options": "Always, On hover (standalone only)",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Inline — underlined within a paragraph",
+      "wireframe": "wireframes/link/variation-1.svg"
+    },
+    {
+      "caption": "Standalone — with a trailing arrow",
+      "wireframe": "wireframes/link/variation-2.svg"
+    },
+    {
+      "caption": "External — with an external-link icon",
+      "wireframe": "wireframes/link/variation-3.svg"
+    },
+    {
+      "caption": "Button-styled — still a link",
+      "wireframe": "wireframes/link/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use <code>&lt;a href&gt;</code> for anything that changes the URL or moves to another place on the page. An <code>&lt;a&gt;</code> without <code>href</code> is not focusable and is not announced as a link.",
+    "Write link text that makes sense on its own (WCAG 2.4.4). Avoid \"Click here\" and \"Read more\" unless the surrounding sentence or visually hidden text supplies the context.",
+    "In body text, don't mark links by color alone (WCAG 1.4.1). Keep the underline or another visible cue.",
+    "A link styled as a button is still a Link: it is activated with Enter, not Space, and screen readers announce it as a link. For actions, use a Button.",
+    "If a link opens a new tab or downloads a file, say so in the text or with an icon that has a text alternative. For downloads, see File."
+  ],
   "related": [],
   "aliases": [
     "Anchor",
@@ -69,5 +133,7 @@
   "frameworkNotes": "",
   "parents": [],
   "children": [],
-  "htmlOutline": "<a href=\"/pricing\">See pricing</a>\n\n<!-- styled as a button, still a link -->\n<a class=\"button\" href=\"/signup\">Sign up</a>"
+  "htmlOutline": "<a href=\"/pricing\">See pricing</a>\n\n<!-- styled as a button, still a link -->\n<a class=\"button\" href=\"/signup\">Sign up</a>",
+  "wireframe": "wireframes/link/default.svg",
+  "thumbnail": "wireframes/link/thumbnail.svg"
 }

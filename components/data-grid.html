@@ -30,16 +30,19 @@
 
     <section>
       <h1>Data grid</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Interactive and keyboard-navigable. The name avoids the layout Grid</p>
+      <p>An interactive table where people move between cells with the arrow keys and can sort, select or edit. Use it for spreadsheet-like work; for data that people only read, use a Table.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>No equivalent in the surveyed design systems</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;table role="grid"&gt;</code>, or <code>role="treegrid"</code> for expandable rows</dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;table&gt;</code> + roles</dd>
         <dt>ARIA pattern</dt>
         <dd>Grid, Treegrid</dd>
+        <dt>Research note</dt>
+        <dd>Interactive and keyboard-navigable. The name avoids the layout Grid</dd>
         <dt>Category</dt>
         <dd>I. Collections</dd>
       </dl>
@@ -56,6 +59,188 @@
     &lt;tr&gt;&lt;td role="gridcell" tabindex="0"&gt;2024-03-01&lt;/td&gt;&lt;td role="gridcell" tabindex="-1"&gt;$40&lt;/td&gt;&lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Column headers</td><td>Yes</td><td>Name each column; a sorted column carries <code>aria-sort</code></td></tr>
+          <tr><td>Cells</td><td>Yes</td><td>Reached with the arrow keys; only one is in the tab order at a time</td></tr>
+          <tr><td>Sort control</td><td>No</td><td>A button inside the header that sorts by that column</td></tr>
+          <tr><td>Row checkbox</td><td>No</td><td>Selects a row; one in the header selects all</td></tr>
+          <tr><td>Toolbar</td><td>No</td><td>Filter, search and bulk actions above the grid</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <rect class="region" x="100" y="60" width="600" height="240" rx="4" />
+          <rect class="hover-target" x="100" y="60" width="600" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="58" x2="400" y2="46" />
+            <rect class="label-bg" x="343" y="26" width="114" height="20" />
+            <text class="label-text" x="400" y="40" text-anchor="middle">Column headers</text>
+          </g>
+          <rect class="region" x="100" y="60" width="600" height="40" rx="4" />
+          <line class="text-line" x1="160" y1="80" x2="250" y2="80" />
+          <rect class="hover-target" x="258" y="73" width="20" height="16" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="268" y1="71" x2="268" y2="59" />
+            <rect class="label-bg" x="218" y="39" width="100" height="20" />
+            <text class="label-text" x="268" y="53" text-anchor="middle">Sort control</text>
+          </g>
+          <text x="268" y="85" font-size="11" text-anchor="middle">▲</text>
+          <line class="text-line" x1="330" y1="80" x2="410" y2="80" />
+          <line class="text-line" x1="500" y1="80" x2="570" y2="80" />
+          <rect class="interactive" x="116" y="117" width="16" height="16" rx="2" />
+          <line class="text-line" x1="160" y1="125" x2="280" y2="125" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="330" y1="125" x2="430" y2="125" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="500" y1="125" x2="590" y2="125" stroke-width="1" opacity="0.7" />
+          <rect class="interactive" x="116" y="167" width="16" height="16" rx="2" />
+          <line class="text-line" x1="160" y1="175" x2="260" y2="175" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="330" y1="175" x2="450" y2="175" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="500" y1="175" x2="580" y2="175" stroke-width="1" opacity="0.7" />
+          <rect class="interactive" x="116" y="217" width="16" height="16" rx="2" />
+          <line class="text-line" x1="160" y1="225" x2="270" y2="225" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="330" y1="225" x2="420" y2="225" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="500" y1="225" x2="600" y2="225" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="116" y="267" width="16" height="16" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="124" y1="285" x2="124" y2="297" />
+            <rect class="label-bg" x="35.5" y="297" width="177" height="20" />
+            <text class="label-text" x="124" y="311" text-anchor="middle">Row checkbox (optional)</text>
+          </g>
+          <rect class="interactive" x="116" y="267" width="16" height="16" rx="2" />
+          <line class="text-line" x1="160" y1="275" x2="280" y2="275" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="318" y="254" width="150" height="42" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="393" y1="298" x2="393" y2="310" />
+            <rect class="label-bg" x="343" y="310" width="100" height="20" />
+            <text class="label-text" x="393" y="324" text-anchor="middle">Focused cell</text>
+          </g>
+          <rect class="interactive" x="318" y="254" width="150" height="42" rx="2" />
+          <line class="text-line" x1="330" y1="275" x2="430" y2="275" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="500" y1="275" x2="570" y2="275" stroke-width="1" opacity="0.7" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Selection</td><td>None, Single row, Multiple rows</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Density</td><td>Compact, Default, Comfortable</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Hierarchy</td><td>Flat, Expandable rows (treegrid)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Sorting</td><td>None, Single column, Multiple columns</td><td>No</td></tr>
+          <tr><td>Editing</td><td>Read-only, Edit in cell</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="30" width="320" height="140" rx="4" />
+              <rect class="region" x="40" y="30" width="320" height="30" rx="4" />
+              <rect class="interactive" x="52" y="38" width="14" height="14" rx="2" />
+              <line class="text-line" x1="85" y1="45" x2="155" y2="45" />
+              <line class="text-line" x1="200" y1="45" x2="260" y2="45" />
+              <rect class="interactive" x="52" y="73" width="14" height="14" rx="2" />
+              <line class="text-line" x1="85" y1="80" x2="165" y2="80" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="200" y1="80" x2="260" y2="80" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="52" y="103" width="14" height="14" rx="2" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="85" y1="110" x2="155" y2="110" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="200" y1="110" x2="270" y2="110" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="52" y="133" width="14" height="14" rx="2" />
+              <line class="text-line" x1="85" y1="140" x2="175" y2="140" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="200" y1="140" x2="250" y2="140" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Row selection — checkbox column</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="20" width="320" height="160" rx="4" />
+              <rect class="region" x="40" y="20" width="320" height="24" rx="4" />
+              <line class="text-line" x1="55" y1="32" x2="115" y2="32" />
+              <line class="text-line" x1="170" y1="32" x2="230" y2="32" />
+              <line class="text-line" x1="280" y1="32" x2="330" y2="32" />
+              <line class="text-line" x1="55" y1="58" x2="135" y2="58" />
+              <line class="text-line" x1="55" y1="78" x2="135" y2="78" />
+              <line class="text-line" x1="55" y1="98" x2="135" y2="98" />
+              <line class="text-line" x1="55" y1="118" x2="135" y2="118" />
+              <line class="text-line" x1="55" y1="138" x2="135" y2="138" />
+              <line class="text-line" x1="55" y1="158" x2="111" y2="158" />
+              <line class="text-line" x1="170" y1="58" x2="240" y2="58" />
+              <line class="text-line" x1="170" y1="78" x2="240" y2="78" />
+              <line class="text-line" x1="170" y1="98" x2="240" y2="98" />
+              <line class="text-line" x1="170" y1="118" x2="240" y2="118" />
+              <line class="text-line" x1="170" y1="138" x2="240" y2="138" />
+              <line class="text-line" x1="170" y1="158" x2="219" y2="158" />
+              <line class="text-line" x1="280" y1="58" x2="340" y2="58" />
+              <line class="text-line" x1="280" y1="78" x2="340" y2="78" />
+              <line class="text-line" x1="280" y1="98" x2="340" y2="98" />
+              <line class="text-line" x1="280" y1="118" x2="340" y2="118" />
+              <line class="text-line" x1="280" y1="138" x2="340" y2="138" />
+              <line class="text-line" x1="280" y1="158" x2="322" y2="158" />
+            </svg>
+          </div>
+          <figcaption>Compact — shorter rows</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="30" width="320" height="140" rx="4" />
+              <rect class="region" x="40" y="30" width="320" height="30" rx="4" />
+              <line class="text-line" x1="70" y1="45" x2="150" y2="45" />
+              <line class="text-line" x1="240" y1="45" x2="300" y2="45" />
+              <text x="56" y="84" font-size="12" text-anchor="middle">▾</text>
+              <line class="text-line" x1="70" y1="80" x2="160" y2="80" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="240" y1="80" x2="300" y2="80" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="92" y1="110" x2="172" y2="110" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="240" y1="110" x2="300" y2="110" stroke-width="1" opacity="0.7" />
+              <text x="56" y="144" font-size="12" text-anchor="middle">▸</text>
+              <line class="text-line" x1="70" y1="140" x2="160" y2="140" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="240" y1="140" x2="300" y2="140" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Treegrid — rows that expand to show child rows</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use a Table when people read data and a Data grid only when they need to act on cells. <code>role="grid"</code> changes keyboard behavior: Tab enters the grid once, and the arrow keys move between cells.</li>
+        <li>Follow the APG Grid pattern: the current cell has <code>tabindex="0"</code> and the rest <code>-1</code> (roving tabindex), with Home, End, Page Up and Page Down for large grids.</li>
+        <li>Mark the sorted column with <code>aria-sort</code> on its header, and put the sort control inside the header as a <code>&lt;button&gt;</code>.</li>
+        <li>For editable cells, Enter or F2 starts editing and Escape cancels, handing the arrow keys back to cell navigation.</li>
+        <li>Data grid is named apart from Grid, the CSS layout primitive. Use <code>role="treegrid"</code> when rows can expand to show child rows.</li>
+      </ul>
     </section>
 
     <section>

@@ -1,0 +1,39 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "text", "x": 170, "y": 125, "value": "“", "size": 56, "label": "Quote mark (optional)" },
+      { "type": "region", "x": 205, "y": 98, "w": 5, "h": 150, "rx": 2 },
+      { "type": "lines", "x": 230, "y": 110, "w": 420, "count": 3, "gap": 22, "label": "Quote text" },
+      { "type": "line", "x": 230, "y": 230, "w": 180, "weight": 1, "label": "Attribution (optional)", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "region", "x": 40, "y": 12, "w": 4, "h": 56, "rx": 2 },
+      { "type": "line", "x": 56, "y": 20, "w": 150 },
+      { "type": "line", "x": 56, "y": 32, "w": 150 },
+      { "type": "line", "x": 56, "y": 44, "w": 100 },
+      { "type": "line", "x": 56, "y": 62, "w": 70, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "region", "x": 60, "y": 48, "w": 5, "h": 112, "rx": 2 },
+      { "type": "lines", "x": 80, "y": 60, "w": 260, "count": 3, "gap": 18 },
+      { "type": "line", "x": 80, "y": 145, "w": 100, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "lines", "x": 30, "y": 30, "w": 200, "count": 8, "gap": 20 },
+      { "type": "line", "x": 255, "y": 60, "w": 115, "weight": 1 },
+      { "type": "lines", "x": 255, "y": 85, "w": 115, "count": 3, "gap": 20 },
+      { "type": "line", "x": 255, "y": 150, "w": 115, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "text", "x": 200, "y": 75, "value": "“", "size": 48 },
+      { "type": "line", "x": 90, "y": 100, "w": 220 },
+      { "type": "line", "x": 120, "y": 122, "w": 160 },
+      { "type": "line", "x": 160, "y": 160, "w": 80, "weight": 1 }
+    ] }
+  ]
+}

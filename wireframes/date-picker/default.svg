@@ -1,0 +1,63 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="200" y="44" width="100" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="250" y1="42" x2="250" y2="30" />
+    <rect class="label-bg" x="224.5" y="10" width="51" height="20" />
+    <text class="label-text" x="250" y="24" text-anchor="middle">Label</text>
+  </g>
+  <line class="text-line" x1="200" y1="50" x2="300" y2="50" />
+  <rect class="hover-target" x="200" y="65" width="260" height="44" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="330" y1="63" x2="330" y2="51" />
+    <rect class="label-bg" x="304.5" y="31" width="51" height="20" />
+    <text class="label-text" x="330" y="45" text-anchor="middle">Field</text>
+  </g>
+  <rect class="interactive" x="200" y="65" width="260" height="44" rx="6" />
+  <line class="text-line" x1="216" y1="87" x2="316" y2="87" stroke-width="1" opacity="0.7" />
+  <rect class="hover-target" x="420" y="71" width="34" height="32" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="437" y1="69" x2="437" y2="57" />
+    <rect class="label-bg" x="408" y="37" width="58" height="20" />
+    <text class="label-text" x="437" y="51" text-anchor="middle">Button</text>
+  </g>
+  <rect class="interactive" x="420" y="71" width="34" height="32" rx="4" />
+  <rect class="region" x="427" y="79" width="20" height="17" rx="2" />
+  <rect class="hover-target" x="200" y="120" width="300" height="190" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="350" y1="312" x2="350" y2="324" />
+    <rect class="label-bg" x="314" y="324" width="72" height="20" />
+    <text class="label-text" x="350" y="338" text-anchor="middle">Calendar</text>
+  </g>
+  <rect class="region" x="200" y="120" width="300" height="190" rx="6" />
+  <text x="225" y="149" font-size="16" text-anchor="middle">‹</text>
+  <line class="text-line" x1="300" y1="144" x2="400" y2="144" />
+  <text x="475" y="149" font-size="16" text-anchor="middle">›</text>
+  <rect class="region" x="216" y="165" width="28" height="22" rx="3" />
+  <rect class="region" x="256" y="165" width="28" height="22" rx="3" />
+  <rect class="region" x="296" y="165" width="28" height="22" rx="3" />
+  <rect class="region" x="336" y="165" width="28" height="22" rx="3" />
+  <rect class="region" x="376" y="165" width="28" height="22" rx="3" />
+  <rect class="region" x="416" y="165" width="28" height="22" rx="3" />
+  <rect class="region" x="456" y="165" width="28" height="22" rx="3" />
+  <rect class="region" x="216" y="197" width="28" height="22" rx="3" />
+  <rect class="region" x="256" y="197" width="28" height="22" rx="3" />
+  <rect class="region" x="296" y="197" width="28" height="22" rx="3" />
+  <rect class="interactive" x="336" y="197" width="28" height="22" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="region" x="376" y="197" width="28" height="22" rx="3" />
+  <rect class="region" x="416" y="197" width="28" height="22" rx="3" />
+  <rect class="region" x="456" y="197" width="28" height="22" rx="3" />
+  <rect class="region" x="216" y="229" width="28" height="22" rx="3" />
+  <rect class="region" x="256" y="229" width="28" height="22" rx="3" />
+  <rect class="region" x="296" y="229" width="28" height="22" rx="3" />
+  <rect class="region" x="336" y="229" width="28" height="22" rx="3" />
+  <rect class="region" x="376" y="229" width="28" height="22" rx="3" />
+  <rect class="region" x="416" y="229" width="28" height="22" rx="3" />
+  <rect class="region" x="456" y="229" width="28" height="22" rx="3" />
+  <rect class="region" x="216" y="261" width="28" height="22" rx="3" />
+  <rect class="region" x="256" y="261" width="28" height="22" rx="3" />
+  <rect class="region" x="296" y="261" width="28" height="22" rx="3" />
+  <rect class="region" x="336" y="261" width="28" height="22" rx="3" />
+  <rect class="region" x="376" y="261" width="28" height="22" rx="3" />
+  <rect class="region" x="416" y="261" width="28" height="22" rx="3" />
+  <rect class="region" x="456" y="261" width="28" height="22" rx="3" />
+</svg>

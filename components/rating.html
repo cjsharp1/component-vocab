@@ -30,11 +30,13 @@
 
     <section>
       <h1>Rating</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
+      <p>Shows a score as a row of stars or similar symbols, or lets people choose one. Use the display version for averages and reviews, and the input version in review forms.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Rating (MUI, Chakra UI, Fluent UI); Rate (Ant Design); Rating indicators (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd>Display: text with a text alternative. Input: <code>&lt;fieldset&gt;</code> with radio inputs</dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -44,7 +46,10 @@
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;!-- display --&gt;
-&lt;p class="rating" aria-label="4 out of 5 stars"&gt;★★★★☆&lt;/p&gt;
+&lt;p class="rating"&gt;
+  &lt;span aria-hidden="true"&gt;★★★★☆&lt;/span&gt;
+  &lt;span class="visually-hidden"&gt;4 out of 5 stars&lt;/span&gt;
+&lt;/p&gt;
 
 &lt;!-- input --&gt;
 &lt;fieldset&gt;
@@ -52,6 +57,157 @@
   &lt;label&gt;&lt;input type="radio" name="r" value="1"&gt; 1 star&lt;/label&gt;
   …
 &lt;/fieldset&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Symbols</td><td>Yes</td><td>Stars or other icons, filled up to the score; hidden from screen readers</td></tr>
+          <tr><td>Value text</td><td>No</td><td>The score as text, such as "4.2 out of 5"</td></tr>
+          <tr><td>Count</td><td>No</td><td>Number of ratings, often a link to the reviews</td></tr>
+          <tr><td>Legend</td><td>No</td><td>Names what is being rated; required in the input version</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="190" y="153" width="20" height="16" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="200" y1="151" x2="200" y2="139" />
+            <rect class="label-bg" x="153.5" y="119" width="93" height="20" />
+            <text class="label-text" x="200" y="133" text-anchor="middle">Filled star</text>
+          </g>
+          <text x="200" y="165" font-size="32" text-anchor="middle">★</text>
+          <text x="245" y="165" font-size="32" text-anchor="middle">★</text>
+          <text x="290" y="165" font-size="32" text-anchor="middle">★</text>
+          <text x="335" y="165" font-size="32" text-anchor="middle">★</text>
+          <rect class="hover-target" x="370" y="153" width="20" height="16" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="380" y1="171" x2="380" y2="183" />
+            <rect class="label-bg" x="337" y="183" width="86" height="20" />
+            <text class="label-text" x="380" y="197" text-anchor="middle">Empty star</text>
+          </g>
+          <text x="380" y="165" font-size="32" text-anchor="middle">☆</text>
+          <rect class="hover-target" x="430" y="149" width="60" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="460" y1="147" x2="460" y2="135" />
+            <rect class="label-bg" x="417" y="115" width="86" height="20" />
+            <text class="label-text" x="460" y="129" text-anchor="middle">Value text</text>
+          </g>
+          <line class="text-line" x1="430" y1="155" x2="490" y2="155" />
+          <rect class="hover-target" x="520" y="149" width="80" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="560" y1="163" x2="560" y2="175" />
+            <rect class="label-bg" x="496" y="175" width="128" height="20" />
+            <text class="label-text" x="560" y="189" text-anchor="middle">Count (optional)</text>
+          </g>
+          <line class="text-line" x1="520" y1="155" x2="600" y2="155" stroke-width="1" opacity="0.7" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mode</td><td>Display, Input</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Style</td><td>Full row, Single star with value</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Text</td><td>None, Value, Value and count</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Medium, Large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Precision</td><td>Whole, Half, Exact fill</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <text x="70" y="108" font-size="24" text-anchor="middle">★</text>
+              <text x="95" y="108" font-size="24" text-anchor="middle">★</text>
+              <text x="120" y="108" font-size="24" text-anchor="middle">★</text>
+              <text x="145" y="108" font-size="24" text-anchor="middle">★</text>
+              <text x="170" y="108" font-size="24" text-anchor="middle">☆</text>
+              <line class="text-line" x1="195" y1="100" x2="235" y2="100" />
+              <line class="text-line" x1="250" y1="100" x2="330" y2="100" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Value and count — text after the stars</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <text x="150" y="110" font-size="28" text-anchor="middle">★</text>
+              <line class="text-line" x1="175" y1="100" x2="225" y2="100" />
+              <line class="text-line" x1="240" y1="100" x2="300" y2="100" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Single star — one star with the value</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="80" y="40" width="240" height="120" rx="6" />
+              <line class="text-line" x1="100" y1="65" x2="200" y2="65" />
+              <text x="120" y="128" font-size="32" text-anchor="middle">★</text>
+              <text x="160" y="128" font-size="32" text-anchor="middle">★</text>
+              <text x="200" y="128" font-size="32" text-anchor="middle">★</text>
+              <text x="240" y="128" font-size="32" text-anchor="middle">☆</text>
+              <text x="280" y="128" font-size="32" text-anchor="middle">☆</text>
+            </svg>
+          </div>
+          <figcaption>Input — legend above selectable stars</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <text x="140" y="75" font-size="16" text-anchor="middle">★</text>
+              <text x="158" y="75" font-size="16" text-anchor="middle">★</text>
+              <text x="176" y="75" font-size="16" text-anchor="middle">★</text>
+              <text x="194" y="75" font-size="16" text-anchor="middle">★</text>
+              <text x="212" y="75" font-size="16" text-anchor="middle">☆</text>
+              <text x="120" y="145" font-size="32" text-anchor="middle">★</text>
+              <text x="160" y="145" font-size="32" text-anchor="middle">★</text>
+              <text x="200" y="145" font-size="32" text-anchor="middle">★</text>
+              <text x="240" y="145" font-size="32" text-anchor="middle">★</text>
+              <text x="280" y="145" font-size="32" text-anchor="middle">☆</text>
+            </svg>
+          </div>
+          <figcaption>Size — small and large</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>There is no native rating element. For display, give the whole rating one text alternative, such as visually hidden text "4 out of 5 stars", and hide the individual symbols with <code>aria-hidden="true"</code>. An <code>aria-label</code> on a plain <code>&lt;p&gt;</code> or <code>&lt;span&gt;</code> isn't reliably announced.</li>
+        <li>For input, use a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> and one radio input per score, each labeled like "3 stars". Arrow keys and screen readers then work without extra scripting.</li>
+        <li>Filled and empty stars must differ by more than color, such as solid versus outline shapes (WCAG 1.4.1 Use of Color). Showing the number as text helps too.</li>
+        <li>Show the scale ("out of 5") and, where it matters, the number of ratings, so a perfect score from two people isn't read as strong evidence.</li>
+        <li>In the input version, make each star at least 24 by 24 CSS pixels (WCAG 2.5.8 Target Size, Minimum).</li>
+      </ul>
     </section>
 
     <section>

@@ -30,14 +30,17 @@
 
     <section>
       <h1>Tag</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Static categorization</p>
+      <p>A short label that puts an item in a category, such as a topic on an article. If it can be selected or removed, use a Chip; for a status or a count, use a Badge.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Tag (Ant Design, Carbon, Atlassian, Chakra UI, Fluent UI, GOV.UK)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;span&gt;</code>, or <code>&lt;a&gt;</code> when it links to the category; a set goes in a <code>&lt;ul&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;span&gt;</code> or <code>&lt;a&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>Static categorization</dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -50,6 +53,158 @@
   &lt;li&gt;&lt;a class="tag" href="/tags/design"&gt;Design&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;span class="tag"&gt;Draft&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Text</td><td>Yes</td><td>The category name, one or two words</td></tr>
+          <tr><td>Icon</td><td>No</td><td>Leading icon or color dot; the text still carries the meaning</td></tr>
+          <tr><td>List</td><td>No</td><td>A <code>&lt;ul&gt;</code> around several tags so their number is announced</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <line class="text-line" x1="160" y1="75" x2="440" y2="75" />
+          <rect class="hover-target" x="140" y="130" width="440" height="70" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="360" y1="128" x2="360" y2="116" />
+            <rect class="label-bg" x="299.5" y="96" width="121" height="20" />
+            <text class="label-text" x="360" y="110" text-anchor="middle">List (optional)</text>
+          </g>
+          <rect class="optional" x="140" y="130" width="440" height="70" rx="6" />
+          <rect class="hover-target" x="160" y="149" width="100" height="32" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="210" y1="183" x2="210" y2="195" />
+            <rect class="label-bg" x="190" y="195" width="40" height="20" />
+            <text class="label-text" x="210" y="209" text-anchor="middle">Tag</text>
+          </g>
+          <rect class="region" x="160" y="149" width="100" height="32" rx="16" />
+          <line class="text-line" x1="180" y1="165" x2="240" y2="165" />
+          <rect class="hover-target" x="280" y="149" width="110" height="32" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="335" y1="183" x2="335" y2="195" />
+            <rect class="label-bg" x="299" y="195" width="72" height="20" />
+            <text class="label-text" x="335" y="209" text-anchor="middle">Link tag</text>
+          </g>
+          <rect class="interactive" x="280" y="149" width="110" height="32" rx="16" />
+          <line class="text-line" x1="300" y1="165" x2="370" y2="165" />
+          <rect class="region" x="410" y="149" width="120" height="32" rx="16" />
+          <rect class="hover-target" x="424" y="159" width="12" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="430" y1="173" x2="430" y2="185" />
+            <rect class="label-bg" x="408" y="185" width="44" height="20" />
+            <text class="label-text" x="430" y="199" text-anchor="middle">Icon</text>
+          </g>
+          <circle class="region" cx="430" cy="165" r="6" />
+          <line class="text-line" x1="445" y1="165" x2="515" y2="165" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Kind</td><td>Static, Link</td><td>No</td></tr>
+          <tr><td>Size</td><td>Small, Medium</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Icon</td><td>None, Leading icon, Color dot</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Overflow</td><td>Wrap, Single row with "+N"</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Color</td><td>Neutral, One color per category</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="80" y="88" width="70" height="24" rx="12" />
+              <line class="text-line" x1="95" y1="100" x2="135" y2="100" stroke-width="1" opacity="0.7" />
+              <rect class="region" x="170" y="82" width="100" height="36" rx="18" />
+              <line class="text-line" x1="190" y1="100" x2="250" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Sizes — small and medium</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="70" y="82" width="120" height="36" rx="18" />
+              <circle class="region" cx="92" cy="100" r="7" />
+              <line class="text-line" x1="106" y1="100" x2="172" y2="100" />
+              <rect class="region" x="210" y="82" width="120" height="36" rx="18" />
+              <circle class="interactive" cx="230" cy="100" r="5" style="fill: var(--wireframe-interactive)" />
+              <line class="text-line" x1="244" y1="100" x2="310" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Icon — leading icon and color dot</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="80" y="40" width="240" height="120" rx="6" />
+              <rect class="region" x="95" y="56" width="80" height="28" rx="14" />
+              <line class="text-line" x1="110" y1="70" x2="160" y2="70" />
+              <rect class="region" x="185" y="56" width="110" height="28" rx="14" />
+              <line class="text-line" x1="200" y1="70" x2="280" y2="70" />
+              <rect class="region" x="95" y="94" width="100" height="28" rx="14" />
+              <line class="text-line" x1="110" y1="108" x2="180" y2="108" />
+              <rect class="region" x="205" y="94" width="70" height="28" rx="14" />
+              <line class="text-line" x1="220" y1="108" x2="260" y2="108" />
+            </svg>
+          </div>
+          <figcaption>Wrap — tags flow onto more lines</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="50" y="86" width="80" height="28" rx="14" />
+              <line class="text-line" x1="65" y1="100" x2="115" y2="100" />
+              <rect class="region" x="140" y="86" width="90" height="28" rx="14" />
+              <line class="text-line" x1="155" y1="100" x2="215" y2="100" />
+              <rect class="region" x="240" y="86" width="70" height="28" rx="14" />
+              <line class="text-line" x1="255" y1="100" x2="295" y2="100" />
+              <rect class="region" x="320" y="86" width="40" height="28" rx="14" />
+              <text x="340" y="104" font-size="12" text-anchor="middle">+3</text>
+            </svg>
+          </div>
+          <figcaption>Single row — extra tags collapsed into "+3"</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>A Tag puts something in a category and a Badge shows a status or count. Neither is interactive. If people can select, filter with or remove it in place, it's a Chip.</li>
+        <li>When a tag leads to a page listing everything in that category, make it an <code>&lt;a href&gt;</code>; otherwise use a <code>&lt;span&gt;</code>. Don't attach a click handler to a span.</li>
+        <li>Put a set of tags in a <code>&lt;ul&gt;</code> so screen readers announce how many there are. Add a visible or visually hidden label such as "Topics" if the list needs context.</li>
+        <li>Don't rely on color alone to tell categories apart (WCAG 1.4.1 Use of Color), and keep the text at 4.5:1 contrast against the tag background (WCAG 1.4.3 Contrast, Minimum).</li>
+        <li>This component is not called Label, because Label is reserved for the form element.</li>
+      </ul>
     </section>
 
     <section>

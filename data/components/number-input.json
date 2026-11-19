@@ -2,19 +2,91 @@
   "slug": "number-input",
   "name": "Number input",
   "order": 72,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "The +/- control",
-  "summary": "The +/- control",
-  "htmlElement": "",
+  "description": "A field for entering a number, often with minus and plus buttons that step the value. Use it for amounts people count, such as a quantity; for digit strings like postcodes, use a Text input.",
+  "summary": "Enter or step a number, such as a quantity",
+  "htmlElement": "<code>&lt;input type=\"number\"&gt;</code>",
   "nativeHtml": "`<input type=\"number\">`",
   "aria": "Spinbutton",
   "researchNote": "The +/- control",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible <code>&lt;label&gt;</code> that names the amount"
+    },
+    {
+      "name": "Field",
+      "required": "Yes",
+      "description": "Holds the typed value; respects <code>min</code>, <code>max</code> and <code>step</code>"
+    },
+    {
+      "name": "Step buttons",
+      "required": "No",
+      "description": "Minus and plus buttons with names such as \"Decrease quantity\""
+    },
+    {
+      "name": "Hint text",
+      "required": "No",
+      "description": "The allowed range or unit, such as \"1 to 10\""
+    },
+    {
+      "name": "Error message",
+      "required": "No",
+      "description": "Says what is allowed, such as \"Quantity must be 10 or fewer\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Step buttons",
+      "options": "None, Both sides, Stacked at the end",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Unit",
+      "options": "None, Prefix, Suffix",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Narrow, Auto, Full width",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Limits",
+      "options": "None, Minimum, Maximum, Both",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Plain — field only, no step buttons",
+      "wireframe": "wireframes/number-input/variation-1.svg"
+    },
+    {
+      "caption": "Stacked — small up and down buttons at the end",
+      "wireframe": "wireframes/number-input/variation-2.svg"
+    },
+    {
+      "caption": "Unit — suffix inside the field",
+      "wireframe": "wireframes/number-input/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "This is the quantity control that is sometimes called a stepper. A sequence of numbered stages in a process is Steps.",
+    "Use <code>type=\"number\"</code> only for amounts. Card numbers, postcodes and phone numbers aren't counted; use a Text input with <code>inputmode=\"numeric\"</code>.",
+    "Set <code>min</code>, <code>max</code> and <code>step</code>, and state the limits in the hint so people know them before they see an error.",
+    "Custom versions follow the APG Spinbutton pattern: <code>role=\"spinbutton\"</code> with <code>aria-valuenow</code>, <code>aria-valuemin</code> and <code>aria-valuemax</code>, Up and Down arrows to step, and typing still allowed.",
+    "Give the minus and plus buttons accessible names, such as \"Decrease quantity\", and targets of at least 24 by 24 CSS pixels (WCAG 2.5.8)."
+  ],
+  "wireframe": "wireframes/number-input/default.svg",
+  "thumbnail": "wireframes/number-input/thumbnail.svg",
   "related": [],
   "aliases": [
     "Quantity",

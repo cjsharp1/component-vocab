@@ -1,0 +1,5 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <circle class="region" cx="120" cy="100" r="8" />
+  <circle class="region" cx="200" cy="100" r="14" />
+  <circle class="region" cx="290" cy="100" r="22" />
+</svg>

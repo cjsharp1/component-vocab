@@ -2,19 +2,97 @@
   "slug": "combobox",
   "name": "Combobox",
   "order": 68,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "Input plus suggestion popup",
-  "summary": "Input plus suggestion popup",
-  "htmlElement": "",
+  "description": "A text input with a popup list of suggestions that narrows as you type. Use it when the list is long enough that typing is faster than scrolling, or when people may enter a value that isn't in the list.",
+  "summary": "Text input with filtered suggestions",
+  "htmlElement": "<code>&lt;input role=\"combobox\"&gt;</code> with a <code>role=\"listbox\"</code> popup",
   "nativeHtml": "",
   "aria": "Combobox",
   "researchNote": "Input plus suggestion popup",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible <code>&lt;label&gt;</code> for the input"
+    },
+    {
+      "name": "Input",
+      "required": "Yes",
+      "description": "Text field; typing filters the suggestions"
+    },
+    {
+      "name": "Listbox",
+      "required": "Yes",
+      "description": "Popup of matching options; opens on typing or with the Down arrow"
+    },
+    {
+      "name": "Toggle button",
+      "required": "No",
+      "description": "▾ button that opens the full list without typing"
+    },
+    {
+      "name": "Hint or error text",
+      "required": "No",
+      "description": "Says whether free text is allowed, or what went wrong"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Selection",
+      "options": "Single, Multiple (shown as Chips)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Toggle button",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Option content",
+      "options": "Text, Text with icon and description",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Autocomplete",
+      "options": "List only, List with inline completion, None",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Free text",
+      "options": "Must pick from list, Any value allowed",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Multiple — chosen values shown as Chips",
+      "wireframe": "wireframes/combobox/variation-1.svg"
+    },
+    {
+      "caption": "No toggle button — list opens on typing",
+      "wireframe": "wireframes/combobox/variation-2.svg"
+    },
+    {
+      "caption": "Rich options — icon and description per option",
+      "wireframe": "wireframes/combobox/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Choose a Combobox over a Select when people know what they want and typing is faster, such as picking an airport from hundreds. For short lists, a Select or Radio group is simpler.",
+    "Follow the APG Combobox pattern: focus stays in the input, arrow keys move through options using <code>aria-activedescendant</code>, Enter picks one and Escape closes the popup.",
+    "Tell screen reader users how many results match, for example with a polite live region, because the list changes as they type.",
+    "Decide whether values outside the list are allowed and say so in the hint. If only listed values are valid, show an error when the typed text matches nothing.",
+    "<code>&lt;input list&gt;</code> with <code>&lt;datalist&gt;</code> gives native suggestions with no script, but browsers filter and style it inconsistently. Test it before relying on it."
+  ],
+  "wireframe": "wireframes/combobox/default.svg",
+  "thumbnail": "wireframes/combobox/thumbnail.svg",
   "related": [],
   "aliases": [
     "Autocomplete",

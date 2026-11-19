@@ -1,0 +1,88 @@
+{
+  "default": {
+    "height": 350,
+    "shapes": [
+      { "type": "region", "x": 100, "y": 60, "w": 600, "h": 240, "rx": 4 },
+      { "type": "region", "x": 100, "y": 60, "w": 600, "h": 40, "rx": 4, "label": "Column headers" },
+      { "type": "line", "x": 160, "y": 80, "w": 90 },
+      { "type": "text", "x": 268, "y": 85, "value": "▲", "size": 11, "label": "Sort control" },
+      { "type": "line", "x": 330, "y": 80, "w": 80 },
+      { "type": "line", "x": 500, "y": 80, "w": 70 },
+      { "type": "interactive", "x": 116, "y": 117, "w": 16, "h": 16, "rx": 2 },
+      { "type": "line", "x": 160, "y": 125, "w": 120, "weight": 1 },
+      { "type": "line", "x": 330, "y": 125, "w": 100, "weight": 1 },
+      { "type": "line", "x": 500, "y": 125, "w": 90, "weight": 1 },
+      { "type": "interactive", "x": 116, "y": 167, "w": 16, "h": 16, "rx": 2 },
+      { "type": "line", "x": 160, "y": 175, "w": 100, "weight": 1 },
+      { "type": "line", "x": 330, "y": 175, "w": 120, "weight": 1 },
+      { "type": "line", "x": 500, "y": 175, "w": 80, "weight": 1 },
+      { "type": "interactive", "x": 116, "y": 217, "w": 16, "h": 16, "rx": 2 },
+      { "type": "line", "x": 160, "y": 225, "w": 110, "weight": 1 },
+      { "type": "line", "x": 330, "y": 225, "w": 90, "weight": 1 },
+      { "type": "line", "x": 500, "y": 225, "w": 100, "weight": 1 },
+      { "type": "interactive", "x": 116, "y": 267, "w": 16, "h": 16, "rx": 2, "label": "Row checkbox (optional)", "at": "below" },
+      { "type": "line", "x": 160, "y": 275, "w": 120, "weight": 1 },
+      { "type": "interactive", "x": 318, "y": 254, "w": 150, "h": 42, "rx": 2, "label": "Focused cell", "at": "below" },
+      { "type": "line", "x": 330, "y": 275, "w": 100, "weight": 1 },
+      { "type": "line", "x": 500, "y": 275, "w": 70, "weight": 1 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "region", "x": 20, "y": 8, "w": 210, "h": 66, "rx": 3 },
+      { "type": "region", "x": 20, "y": 8, "w": 210, "h": 16, "rx": 3 },
+      { "type": "line", "x": 30, "y": 34, "w": 50, "weight": 1 },
+      { "type": "line", "x": 100, "y": 34, "w": 40, "weight": 1 },
+      { "type": "line", "x": 170, "y": 34, "w": 40, "weight": 1 },
+      { "type": "interactive", "x": 94, "y": 42, "w": 56, "h": 13, "rx": 1 },
+      { "type": "line", "x": 30, "y": 48, "w": 50, "weight": 1 },
+      { "type": "line", "x": 100, "y": 48, "w": 40, "weight": 1 },
+      { "type": "line", "x": 170, "y": 48, "w": 40, "weight": 1 },
+      { "type": "line", "x": 30, "y": 63, "w": 50, "weight": 1 },
+      { "type": "line", "x": 100, "y": 63, "w": 40, "weight": 1 },
+      { "type": "line", "x": 170, "y": 63, "w": 40, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "region", "x": 40, "y": 30, "w": 320, "h": 140, "rx": 4 },
+      { "type": "region", "x": 40, "y": 30, "w": 320, "h": 30, "rx": 4 },
+      { "type": "interactive", "x": 52, "y": 38, "w": 14, "h": 14, "rx": 2 },
+      { "type": "line", "x": 85, "y": 45, "w": 70 },
+      { "type": "line", "x": 200, "y": 45, "w": 60 },
+      { "type": "interactive", "x": 52, "y": 73, "w": 14, "h": 14, "rx": 2 },
+      { "type": "line", "x": 85, "y": 80, "w": 80, "weight": 1 },
+      { "type": "line", "x": 200, "y": 80, "w": 60, "weight": 1 },
+      { "type": "filled", "x": 52, "y": 103, "w": 14, "h": 14, "rx": 2 },
+      { "type": "line", "x": 85, "y": 110, "w": 70, "weight": 1 },
+      { "type": "line", "x": 200, "y": 110, "w": 70, "weight": 1 },
+      { "type": "interactive", "x": 52, "y": 133, "w": 14, "h": 14, "rx": 2 },
+      { "type": "line", "x": 85, "y": 140, "w": 90, "weight": 1 },
+      { "type": "line", "x": 200, "y": 140, "w": 50, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 40, "y": 20, "w": 320, "h": 160, "rx": 4 },
+      { "type": "region", "x": 40, "y": 20, "w": 320, "h": 24, "rx": 4 },
+      { "type": "line", "x": 55, "y": 32, "w": 60 },
+      { "type": "line", "x": 170, "y": 32, "w": 60 },
+      { "type": "line", "x": 280, "y": 32, "w": 50 },
+      { "type": "lines", "x": 55, "y": 58, "w": 80, "count": 6, "gap": 20 },
+      { "type": "lines", "x": 170, "y": 58, "w": 70, "count": 6, "gap": 20 },
+      { "type": "lines", "x": 280, "y": 58, "w": 60, "count": 6, "gap": 20 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 40, "y": 30, "w": 320, "h": 140, "rx": 4 },
+      { "type": "region", "x": 40, "y": 30, "w": 320, "h": 30, "rx": 4 },
+      { "type": "line", "x": 70, "y": 45, "w": 80 },
+      { "type": "line", "x": 240, "y": 45, "w": 60 },
+      { "type": "text", "x": 56, "y": 84, "value": "▾", "size": 12 },
+      { "type": "line", "x": 70, "y": 80, "w": 90, "weight": 1 },
+      { "type": "line", "x": 240, "y": 80, "w": 60, "weight": 1 },
+      { "type": "line", "x": 92, "y": 110, "w": 80, "weight": 1 },
+      { "type": "line", "x": 240, "y": 110, "w": 60, "weight": 1 },
+      { "type": "text", "x": 56, "y": 144, "value": "▸", "size": 12 },
+      { "type": "line", "x": 70, "y": 140, "w": 90, "weight": 1 },
+      { "type": "line", "x": 240, "y": 140, "w": 60, "weight": 1 }
+    ] }
+  ]
+}

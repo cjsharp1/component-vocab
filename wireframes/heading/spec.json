@@ -1,0 +1,35 @@
+{
+  "default": {
+    "height": 320,
+    "shapes": [
+      { "type": "line", "x": 160, "y": 100, "w": 100, "weight": 1, "label": "Eyebrow (optional)" },
+      { "type": "line", "x": 160, "y": 140, "w": 360, "label": "Heading text", "at": "below" },
+      { "type": "optional", "x": 540, "y": 128, "w": 26, "h": 24, "rx": 4, "label": "Anchor link (optional)" },
+      { "type": "lines", "x": 160, "y": 210, "w": 480, "count": 3, "label": "Following content", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 30, "y": 26, "w": 150 },
+      { "type": "line", "x": 30, "y": 46, "w": 190, "weight": 1 },
+      { "type": "line", "x": 30, "y": 56, "w": 140, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "text", "x": 60, "y": 62, "value": "Heading", "size": 32, "anchor": "start" },
+      { "type": "text", "x": 60, "y": 112, "value": "Heading", "size": 22, "anchor": "start" },
+      { "type": "text", "x": 60, "y": 152, "value": "Heading", "size": 15, "anchor": "start" }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 120, "y": 70, "w": 160 },
+      { "type": "line", "x": 80, "y": 105, "w": 240, "weight": 1 },
+      { "type": "line", "x": 110, "y": 122, "w": 180, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 55, "w": 70, "weight": 1 },
+      { "type": "line", "x": 60, "y": 80, "w": 220 },
+      { "type": "lines", "x": 60, "y": 115, "w": 280, "count": 3 }
+    ] }
+  ]
+}

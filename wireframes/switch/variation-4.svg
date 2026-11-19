@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="60" y1="100" x2="180" y2="100" />
+  <rect class="interactive" x="210" y="86" width="50" height="28" rx="14" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <circle class="region" cx="246" cy="100" r="10" />
+  <text x="275" y="104" font-size="12" text-anchor="start">On</text>
+</svg>

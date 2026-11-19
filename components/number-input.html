@@ -30,16 +30,19 @@
 
     <section>
       <h1>Number input</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>The +/- control</p>
+      <p>A field for entering a number, often with minus and plus buttons that step the value. Use it for amounts people count, such as a quantity; for digit strings like postcodes, use a Text input.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Quantity, Counter, Nudger. In design systems: InputNumber (Ant Design); Number input (Carbon); Number field (Polaris); Number Input (Chakra UI); Spin button (Fluent UI); Steppers (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;input type="number"&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;input type="number"&gt;</code></dd>
         <dt>ARIA pattern</dt>
         <dd>Spinbutton</dd>
+        <dt>Research note</dt>
+        <dd>The +/- control</dd>
         <dt>Category</dt>
         <dd>H. Forms</dd>
       </dl>
@@ -50,6 +53,143 @@
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="qty"&gt;Quantity&lt;/label&gt;
 &lt;input id="qty" type="number" min="1" max="10" value="1"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>Visible <code>&lt;label&gt;</code> that names the amount</td></tr>
+          <tr><td>Field</td><td>Yes</td><td>Holds the typed value; respects <code>min</code>, <code>max</code> and <code>step</code></td></tr>
+          <tr><td>Step buttons</td><td>No</td><td>Minus and plus buttons with names such as "Decrease quantity"</td></tr>
+          <tr><td>Hint text</td><td>No</td><td>The allowed range or unit, such as "1 to 10"</td></tr>
+          <tr><td>Error message</td><td>No</td><td>Says what is allowed, such as "Quantity must be 10 or fewer"</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="260" y="84" width="100" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="310" y1="82" x2="310" y2="70" />
+            <rect class="label-bg" x="284.5" y="50" width="51" height="20" />
+            <text class="label-text" x="310" y="64" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="260" y1="90" x2="360" y2="90" />
+          <rect class="hover-target" x="260" y="115" width="48" height="48" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="284" y1="165" x2="284" y2="177" />
+            <rect class="label-bg" x="248" y="177" width="72" height="20" />
+            <text class="label-text" x="284" y="191" text-anchor="middle">Decrease</text>
+          </g>
+          <rect class="interactive" x="260" y="115" width="48" height="48" rx="6" />
+          <text x="284" y="146" font-size="20" text-anchor="middle">−</text>
+          <rect class="hover-target" x="308" y="115" width="184" height="48" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="113" x2="400" y2="101" />
+            <rect class="label-bg" x="374.5" y="81" width="51" height="20" />
+            <text class="label-text" x="400" y="95" text-anchor="middle">Field</text>
+          </g>
+          <rect class="interactive" x="308" y="115" width="184" height="48" />
+          <line class="text-line" x1="380" y1="139" x2="420" y2="139" />
+          <rect class="hover-target" x="492" y="115" width="48" height="48" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="516" y1="165" x2="516" y2="177" />
+            <rect class="label-bg" x="480" y="177" width="72" height="20" />
+            <text class="label-text" x="516" y="191" text-anchor="middle">Increase</text>
+          </g>
+          <rect class="interactive" x="492" y="115" width="48" height="48" rx="6" />
+          <text x="516" y="146" font-size="20" text-anchor="middle">+</text>
+          <rect class="hover-target" x="260" y="209" width="200" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="360" y1="223" x2="360" y2="235" />
+            <rect class="label-bg" x="299.5" y="235" width="121" height="20" />
+            <text class="label-text" x="360" y="249" text-anchor="middle">Hint (optional)</text>
+          </g>
+          <line class="text-line" x1="260" y1="215" x2="460" y2="215" stroke-width="1" opacity="0.7" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Step buttons</td><td>None, Both sides, Stacked at the end</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Unit</td><td>None, Prefix, Suffix</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Width</td><td>Narrow, Auto, Full width</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Limits</td><td>None, Minimum, Maximum, Both</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="120" y1="70" x2="200" y2="70" />
+              <rect class="interactive" x="120" y="85" width="160" height="40" rx="4" />
+              <line class="text-line" x1="136" y1="105" x2="166" y2="105" />
+            </svg>
+          </div>
+          <figcaption>Plain — field only, no step buttons</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="120" y1="70" x2="200" y2="70" />
+              <rect class="interactive" x="120" y="85" width="160" height="40" rx="4" />
+              <line class="text-line" x1="136" y1="105" x2="166" y2="105" />
+              <rect class="interactive" x="250" y="85" width="30" height="20" />
+              <text x="265" y="99" font-size="10" text-anchor="middle">▴</text>
+              <rect class="interactive" x="250" y="105" width="30" height="20" />
+              <text x="265" y="119" font-size="10" text-anchor="middle">▾</text>
+            </svg>
+          </div>
+          <figcaption>Stacked — small up and down buttons at the end</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="120" y1="70" x2="200" y2="70" />
+              <rect class="interactive" x="120" y="85" width="160" height="40" rx="4" />
+              <line class="text-line" x1="136" y1="105" x2="176" y2="105" />
+              <text x="264" y="110" font-size="12" text-anchor="end">kg</text>
+            </svg>
+          </div>
+          <figcaption>Unit — suffix inside the field</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>This is the quantity control that is sometimes called a stepper. A sequence of numbered stages in a process is Steps.</li>
+        <li>Use <code>type="number"</code> only for amounts. Card numbers, postcodes and phone numbers aren't counted; use a Text input with <code>inputmode="numeric"</code>.</li>
+        <li>Set <code>min</code>, <code>max</code> and <code>step</code>, and state the limits in the hint so people know them before they see an error.</li>
+        <li>Custom versions follow the APG Spinbutton pattern: <code>role="spinbutton"</code> with <code>aria-valuenow</code>, <code>aria-valuemin</code> and <code>aria-valuemax</code>, Up and Down arrows to step, and typing still allowed.</li>
+        <li>Give the minus and plus buttons accessible names, such as "Decrease quantity", and targets of at least 24 by 24 CSS pixels (WCAG 2.5.8).</li>
+      </ul>
     </section>
 
     <section>

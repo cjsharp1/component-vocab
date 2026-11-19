@@ -1,0 +1,12 @@
+<svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="10" y="6" width="230" height="16" rx="2" />
+  <rect class="interactive" x="30" y="9" width="36" height="10" rx="2" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="region" x="10" y="26" width="230" height="48" rx="2" />
+  <rect class="text-line" x="22" y="36" width="40" height="5" />
+  <rect class="text-line" x="22" y="48" width="50" height="3" />
+  <rect class="text-line" x="22" y="60" width="40" height="3" />
+  <rect class="text-line" x="92" y="36" width="40" height="5" />
+  <rect class="text-line" x="92" y="48" width="50" height="3" />
+  <rect class="text-line" x="92" y="60" width="40" height="3" />
+  <rect class="media-placeholder" x="170" y="32" width="60" height="36" rx="2" />
+</svg>

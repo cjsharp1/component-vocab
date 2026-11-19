@@ -1,0 +1,72 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "circle", "cx": 160, "cy": 140, "r": 18, "style": "filled", "label": "Completed" },
+      { "type": "line", "x": 178, "y": 140, "w": 120, "weight": 1 },
+      { "type": "circle", "cx": 320, "cy": 140, "r": 22, "style": "filled", "label": "Current step" },
+      { "type": "line", "x": 342, "y": 140, "w": 120, "weight": 1 },
+      { "type": "circle", "cx": 480, "cy": 140, "r": 18 },
+      { "type": "line", "x": 498, "y": 140, "w": 124, "weight": 1, "label": "Connector", "at": "below" },
+      { "type": "circle", "cx": 640, "cy": 140, "r": 18, "label": "Upcoming" },
+      { "type": "line", "x": 125, "y": 195, "w": 70, "weight": 1 },
+      { "type": "line", "x": 285, "y": 195, "w": 70 },
+      { "type": "line", "x": 445, "y": 195, "w": 70, "weight": 1, "label": "Step label", "at": "below" },
+      { "type": "line", "x": 605, "y": 195, "w": 70, "weight": 1 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "circle", "cx": 50, "cy": 32, "r": 9, "style": "filled" },
+      { "type": "line", "x": 59, "y": 32, "w": 57, "weight": 1 },
+      { "type": "circle", "cx": 125, "cy": 32, "r": 9, "style": "filled" },
+      { "type": "line", "x": 134, "y": 32, "w": 57, "weight": 1 },
+      { "type": "circle", "cx": 200, "cy": 32, "r": 9 },
+      { "type": "line", "x": 35, "y": 60, "w": 30, "weight": 1 },
+      { "type": "line", "x": 110, "y": 60, "w": 30, "weight": 1 },
+      { "type": "line", "x": 185, "y": 60, "w": 30, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "circle", "cx": 80, "cy": 85, "r": 14, "style": "filled" },
+      { "type": "line", "x": 94, "y": 85, "w": 52, "weight": 1 },
+      { "type": "circle", "cx": 160, "cy": 85, "r": 14, "style": "filled" },
+      { "type": "line", "x": 174, "y": 85, "w": 52, "weight": 1 },
+      { "type": "circle", "cx": 240, "cy": 85, "r": 14 },
+      { "type": "line", "x": 254, "y": 85, "w": 52, "weight": 1 },
+      { "type": "circle", "cx": 320, "cy": 85, "r": 14 },
+      { "type": "line", "x": 55, "y": 125, "w": 50, "weight": 1 },
+      { "type": "line", "x": 135, "y": 125, "w": 50 },
+      { "type": "line", "x": 215, "y": 125, "w": 50, "weight": 1 },
+      { "type": "line", "x": 295, "y": 125, "w": 50, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "circle", "cx": 80, "cy": 40, "r": 12, "style": "filled" },
+      { "type": "region", "x": 79, "y": 54, "w": 2, "h": 32 },
+      { "type": "circle", "cx": 80, "cy": 100, "r": 12, "style": "filled" },
+      { "type": "region", "x": 79, "y": 114, "w": 2, "h": 32 },
+      { "type": "circle", "cx": 80, "cy": 160, "r": 12 },
+      { "type": "line", "x": 105, "y": 36, "w": 120 },
+      { "type": "line", "x": 105, "y": 52, "w": 180, "weight": 1 },
+      { "type": "line", "x": 105, "y": 96, "w": 140 },
+      { "type": "line", "x": 105, "y": 112, "w": 200, "weight": 1 },
+      { "type": "line", "x": 105, "y": 156, "w": 100 },
+      { "type": "line", "x": 105, "y": 172, "w": 170, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "circle", "cx": 50, "cy": 100, "r": 10, "style": "filled" },
+      { "type": "line", "x": 66, "y": 100, "w": 50 },
+      { "type": "line", "x": 124, "y": 100, "w": 24, "weight": 1 },
+      { "type": "circle", "cx": 166, "cy": 100, "r": 10, "style": "filled" },
+      { "type": "line", "x": 182, "y": 100, "w": 50 },
+      { "type": "line", "x": 240, "y": 100, "w": 24, "weight": 1 },
+      { "type": "circle", "cx": 282, "cy": 100, "r": 10 },
+      { "type": "line", "x": 298, "y": 100, "w": 50 }
+    ] },
+    { "shapes": [
+      { "type": "text", "x": 200, "y": 90, "value": "Step 2 of 4", "size": 14 },
+      { "type": "line", "x": 140, "y": 120, "w": 120 }
+    ] }
+  ]
+}

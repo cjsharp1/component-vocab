@@ -2,19 +2,92 @@
   "slug": "radio-group",
   "name": "Radio group",
   "order": 70,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "The group is the unit",
-  "summary": "The group is the unit",
-  "htmlElement": "",
+  "description": "A set of options, all visible at once, where people pick exactly one. Use it for a small number of choices; for long lists, use a Select.",
+  "summary": "Pick exactly one option from a visible set",
+  "htmlElement": "<code>&lt;fieldset&gt;</code> with <code>&lt;input type=\"radio\"&gt;</code>",
   "nativeHtml": "fieldset + radio inputs",
   "aria": "Radio Group",
   "researchNote": "The group is the unit",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Legend",
+      "required": "Yes",
+      "description": "The question, in a <code>&lt;legend&gt;</code>"
+    },
+    {
+      "name": "Options",
+      "required": "Yes",
+      "description": "Two or more radio inputs sharing one <code>name</code>, each with its own <code>&lt;label&gt;</code>"
+    },
+    {
+      "name": "Hint text",
+      "required": "No",
+      "description": "Guidance for the whole group or a line under each option"
+    },
+    {
+      "name": "Error message",
+      "required": "No",
+      "description": "Says what to choose, such as \"Select a delivery option\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Orientation",
+      "options": "Vertical, Horizontal",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Option hint",
+      "options": "None, Under each label",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Plain, Tiles (bordered box per option)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Initial selection",
+      "options": "None, Preselected option",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Horizontal — short options in a row",
+      "wireframe": "wireframes/radio-group/variation-1.svg"
+    },
+    {
+      "caption": "With hints — a line of detail under each option",
+      "wireframe": "wireframes/radio-group/variation-2.svg"
+    },
+    {
+      "caption": "Tiles — each option in a bordered box",
+      "wireframe": "wireframes/radio-group/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Radio group when people must choose exactly one option and seeing every option helps them decide. Use Checkbox when several can be chosen, and a Select when the list is long.",
+    "Wrap the radios in a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> and give them the same <code>name</code>. The group is the unit; a single radio on its own means nothing.",
+    "Native radios move and select with the arrow keys, and Tab leaves the group, as in the APG Radio Group pattern. Custom versions must keep that behavior.",
+    "A chosen radio can't be cleared. Add an option such as \"None\" when no answer is valid, and avoid preselecting an answer when the choice matters.",
+    "A Segmented control offers the same single choice as a compact row of buttons. It suits switching views or settings; use a Radio group for questions in a form."
+  ],
+  "wireframe": "wireframes/radio-group/default.svg",
+  "thumbnail": "wireframes/radio-group/thumbnail.svg",
   "related": [],
   "aliases": [
     "Radio",

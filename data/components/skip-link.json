@@ -2,19 +2,81 @@
   "slug": "skip-link",
   "name": "Skip link",
   "order": 7,
-  "status": "draft",
+  "status": "stable",
   "group": "page-structure",
-  "description": "First focusable element",
-  "summary": "First focusable element",
-  "htmlElement": "",
+  "description": "A link at the very start of the page that jumps past the Header and Navigation to the Main content. It usually stays hidden until it receives keyboard focus.",
+  "summary": "Lets keyboard users jump past navigation",
+  "htmlElement": "<code>&lt;a href=\"#main\"&gt;</code>",
   "nativeHtml": "`<a href=\"#main\">`",
   "aria": "",
   "researchNote": "First focusable element",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Link text",
+      "required": "Yes",
+      "description": "Names the destination, e.g. \"Skip to main content\""
+    },
+    {
+      "name": "Target",
+      "required": "Yes",
+      "description": "The element with the matching <code>id</code>, usually <code>&lt;main&gt;</code>"
+    },
+    {
+      "name": "Extra links",
+      "required": "No",
+      "description": "A second skip link, e.g. to Search; keep the set short"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Visibility",
+      "options": "Shown on focus only, Always visible",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Position",
+      "options": "Overlays the top of the page, Pushes the page down",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Number of links",
+      "options": "One, Two",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Target",
+      "options": "Main, Search, Other landmark",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Focus only — appears over the Header when focused",
+      "wireframe": "wireframes/skip-link/variation-1.svg"
+    },
+    {
+      "caption": "Always visible — a bar above the Header",
+      "wireframe": "wireframes/skip-link/variation-2.svg"
+    },
+    {
+      "caption": "Two links — content and a second target",
+      "wireframe": "wireframes/skip-link/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Make it the first focusable element in <code>&lt;body&gt;</code>, so the first Tab press reaches it. It is the usual way to meet WCAG 2.4.1 Bypass Blocks.",
+    "Hide it in a way that keeps it focusable, such as the Visually hidden pattern, and reveal it on <code>:focus</code>. <code>display: none</code> and the <code>hidden</code> attribute remove it for keyboard users too.",
+    "When focused it must be visible with a clear focus indicator (WCAG 2.4.7) and not covered by a sticky Header (WCAG 2.4.11 Focus Not Obscured).",
+    "Point it at an element with a matching <code>id</code>, usually Main. Adding <code>tabindex=\"-1\"</code> to the target makes focus move there reliably, so the next Tab continues from the content.",
+    "Use text that names the destination. One link is usually enough; a long list of skip links brings back the problem it was meant to solve."
+  ],
+  "wireframe": "wireframes/skip-link/default.svg",
+  "thumbnail": "wireframes/skip-link/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

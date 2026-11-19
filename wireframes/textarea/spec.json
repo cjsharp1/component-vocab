@@ -1,0 +1,40 @@
+{
+  "default": {
+    "height": 350,
+    "shapes": [
+      { "type": "line", "x": 200, "y": 80, "w": 100, "label": "Label" },
+      { "type": "line", "x": 200, "y": 105, "w": 400, "weight": 1, "label": "Hint (optional)" },
+      { "type": "interactive", "x": 200, "y": 125, "w": 400, "h": 120, "rx": 4, "label": "Field", "at": "below" },
+      { "type": "lines", "x": 220, "y": 150, "w": 300, "count": 3 },
+      { "type": "optional", "x": 584, "y": 229, "w": 12, "h": 12, "rx": 1, "label": "Resize handle", "at": "below" },
+      { "type": "line", "x": 480, "y": 300, "w": 120, "weight": 1, "label": "Character count (optional)", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 40, "y": 12, "w": 60 },
+      { "type": "interactive", "x": 40, "y": 22, "w": 170, "h": 50, "rx": 3 },
+      { "type": "lines", "x": 52, "y": 36, "w": 120, "count": 2, "gap": 12 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 45, "w": 60 },
+      { "type": "interactive", "x": 40, "y": 58, "w": 150, "h": 50, "rx": 4 },
+      { "type": "line", "x": 210, "y": 18, "w": 60 },
+      { "type": "interactive", "x": 210, "y": 30, "w": 150, "h": 145, "rx": 4 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 35, "w": 90 },
+      { "type": "interactive", "x": 60, "y": 50, "w": 280, "h": 100, "rx": 4 },
+      { "type": "lines", "x": 75, "y": 72, "w": 240, "count": 2 },
+      { "type": "line", "x": 260, "y": 170, "w": 80, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 35, "w": 90 },
+      { "type": "text", "x": 65, "y": 65, "value": "!", "size": 14 },
+      { "type": "line", "x": 78, "y": 60, "w": 160 },
+      { "type": "interactive", "x": 60, "y": 78, "w": 280, "h": 100, "rx": 4 }
+    ] }
+  ]
+}

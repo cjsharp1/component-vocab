@@ -30,16 +30,19 @@
 
     <section>
       <h1>Button group</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>A CTA pair is not a toolbar</p>
+      <p>A set of related buttons or links shown together, such as a primary and a secondary call to action. It groups them visually and, when useful, with <code>role="group"</code>, but adds no keyboard behavior of its own.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Toolbar. In design systems: Button Group (MUI, shadcn/ui); Button group (Bootstrap, Polaris); Toolbar (Fluent UI); Toolbars (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code>, optionally with <code>role="group"</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;div role="group"&gt;</code></dd>
         <dt>ARIA pattern</dt>
         <dd>Toolbar (only if roving tabindex is needed)</dd>
+        <dt>Research note</dt>
+        <dd>A CTA pair is not a toolbar</dd>
         <dt>Category</dt>
         <dd>D. Actions and links</dd>
       </dl>
@@ -52,6 +55,142 @@
   &lt;a href="/start"&gt;Get started&lt;/a&gt;
   &lt;a href="/tour"&gt;Take the tour&lt;/a&gt;
 &lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Primary action</td><td>Yes</td><td>The main link or button, first in source order</td></tr>
+          <tr><td>Secondary action</td><td>No</td><td>A less emphasized alternative</td></tr>
+          <tr><td>Group</td><td>No</td><td>Wrapper that sets spacing and alignment; gets role="group" and a label only when the grouping is meaningful</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+          <line class="text-line" x1="200" y1="80" x2="500" y2="80" />
+          <line class="text-line" x1="200" y1="105" x2="600" y2="105" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="185" y="158" width="350" height="68" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="360" y1="156" x2="360" y2="144" />
+            <rect class="label-bg" x="334.5" y="124" width="51" height="20" />
+            <text class="label-text" x="360" y="138" text-anchor="middle">Group</text>
+          </g>
+          <rect class="optional" x="185" y="158" width="350" height="68" rx="8" />
+          <rect class="hover-target" x="200" y="170" width="150" height="44" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="275" y1="216" x2="275" y2="228" />
+            <rect class="label-bg" x="218" y="228" width="114" height="20" />
+            <text class="label-text" x="275" y="242" text-anchor="middle">Primary action</text>
+          </g>
+          <rect class="interactive" x="200" y="170" width="150" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <rect class="hover-target" x="370" y="170" width="150" height="44" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="445" y1="216" x2="445" y2="228" />
+            <rect class="label-bg" x="381" y="228" width="128" height="20" />
+            <text class="label-text" x="445" y="242" text-anchor="middle">Secondary action</text>
+          </g>
+          <rect class="interactive" x="370" y="170" width="150" height="44" rx="6" />
+          <line class="text-line" x1="405" y1="192" x2="485" y2="192" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Orientation</td><td>Horizontal, Stacked</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Alignment</td><td>Start, Center, End</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Joined</td><td>Separate, Attached (shared edges)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Small screens</td><td>Wrap, Stack full width</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Group role</td><td>None, role="group" with a label</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="60" y="82" width="130" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <rect class="interactive" x="205" y="82" width="130" height="36" rx="6" />
+              <line class="text-line" x1="235" y1="100" x2="305" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Horizontal — primary then secondary</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="120" y="20" width="160" height="160" rx="6" />
+              <line class="text-line" x1="135" y1="45" x2="255" y2="45" />
+              <line class="text-line" x1="135" y1="60" x2="219" y2="60" />
+              <rect class="interactive" x="135" y="90" width="130" height="34" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <rect class="interactive" x="135" y="134" width="130" height="34" rx="6" />
+              <line class="text-line" x1="165" y1="151" x2="235" y2="151" />
+            </svg>
+          </div>
+          <figcaption>Stacked — full width on a narrow screen</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="110" y1="50" x2="290" y2="50" />
+              <line class="text-line" x1="80" y1="75" x2="320" y2="75" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="85" y="115" width="110" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <rect class="interactive" x="205" y="115" width="110" height="36" rx="6" />
+              <line class="text-line" x1="225" y1="133" x2="295" y2="133" />
+            </svg>
+          </div>
+          <figcaption>Centered — under centered content</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="80" y="82" width="80" height="36" />
+              <line class="text-line" x1="100" y1="100" x2="140" y2="100" />
+              <rect class="interactive" x="160" y="82" width="80" height="36" />
+              <line class="text-line" x1="180" y1="100" x2="220" y2="100" />
+              <rect class="interactive" x="240" y="82" width="80" height="36" />
+              <line class="text-line" x1="260" y1="100" x2="300" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Attached — buttons share edges</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Calls to action usually go somewhere, so make them <code>&lt;a href&gt;</code> links styled as buttons. Use <code>&lt;button&gt;</code> only for actions on the current page.</li>
+        <li>Don't add <code>role="toolbar"</code>. The ARIA Authoring Practices toolbar pattern expects a single tab stop with arrow-key movement, which a pair of calls to action doesn't need. Each item stays in the normal tab order.</li>
+        <li>Add <code>role="group"</code> with <code>aria-label</code> only when the grouping tells screen reader users something, such as a set of actions for one item in a list.</li>
+        <li>Keep the source order the same as the visual order so reading and focus order match (WCAG 1.3.2, 2.4.3). Don't reverse the buttons with CSS alone.</li>
+        <li>For choosing one of several options, use a Segmented control. For several buttons that each stay pressed, use Toggle buttons.</li>
+      </ul>
     </section>
 
     <section>

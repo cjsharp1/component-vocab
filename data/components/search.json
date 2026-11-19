@@ -2,19 +2,96 @@
   "slug": "search",
   "name": "Search",
   "order": 6,
-  "status": "draft",
+  "status": "stable",
   "group": "page-structure",
-  "description": "Older stacks use `role=\"search\"`",
-  "summary": "Older stacks use `role=\"search\"`",
-  "htmlElement": "",
+  "description": "A search landmark holding a labeled search field and a submit button. Use it for site or page search, and for controls that filter a list.",
+  "summary": "Labeled search field and button in a landmark",
+  "htmlElement": "<code>&lt;search&gt;</code> wrapping <code>&lt;input type=\"search\"&gt;</code>",
   "nativeHtml": "`<search>` wrapping `<input type=\"search\">`",
   "aria": "search",
   "researchNote": "Older stacks use `role=\"search\"`",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Names the field; may be visually hidden when the button makes the purpose clear"
+    },
+    {
+      "name": "Search field",
+      "required": "Yes",
+      "description": "<code>&lt;input type=\"search\"&gt;</code>; browsers may add a clear control"
+    },
+    {
+      "name": "Submit button",
+      "required": "Yes",
+      "description": "Runs the search; text or an icon with an accessible name"
+    },
+    {
+      "name": "Suggestions",
+      "required": "No",
+      "description": "Popup list of suggested queries; turns the field into a Combobox"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Label",
+      "options": "Visible, Visually hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Submit button",
+      "options": "Text, Icon only",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Compact (in the Header), Full width",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Collapsed",
+      "options": "Off, Behind a button that reveals the field",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Suggestions",
+      "options": "None, Suggestion list",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Full width — visible label above the field",
+      "wireframe": "wireframes/search/variation-1.svg"
+    },
+    {
+      "caption": "Icon only — submit button with an icon",
+      "wireframe": "wireframes/search/variation-2.svg"
+    },
+    {
+      "caption": "Compact — inside the Header",
+      "wireframe": "wireframes/search/variation-3.svg"
+    },
+    {
+      "caption": "Collapsed — a button reveals the field",
+      "wireframe": "wireframes/search/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Wrap the form in <code>&lt;search&gt;</code> so it is exposed as a search landmark. For browsers without <code>&lt;search&gt;</code> support, use <code>&lt;form role=\"search\"&gt;</code> instead.",
+    "Every search field needs a label. A visually hidden <code>&lt;label&gt;</code> is fine when the button makes the purpose clear, but placeholder text is not a label (WCAG 1.3.1, 3.3.2).",
+    "An icon-only submit button needs an accessible name such as \"Search\", given with Visually hidden text or <code>aria-label</code>.",
+    "The landmark is for the search controls, not the results. Show results in Main. If a page has more than one search landmark, give each an <code>aria-label</code> so they can be told apart.",
+    "If the field shows suggestions as you type, it becomes a Combobox and should follow the ARIA Authoring Practices combobox pattern."
+  ],
+  "wireframe": "wireframes/search/default.svg",
+  "thumbnail": "wireframes/search/thumbnail.svg",
   "related": [],
   "aliases": [
     "Search input"

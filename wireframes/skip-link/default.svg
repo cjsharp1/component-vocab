@@ -1,0 +1,31 @@
+<svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="120" y="70" width="560" height="50" rx="4" />
+  <rect class="hover-target" x="130" y="78" width="150" height="34" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="205" y1="76" x2="205" y2="64" />
+    <rect class="label-bg" x="120" y="44" width="170" height="20" />
+    <text class="label-text" x="205" y="58" text-anchor="middle">Skip link (focus only)</text>
+  </g>
+  <rect class="optional" x="130" y="78" width="150" height="34" rx="4" />
+  <line class="text-line" x1="150" y1="95" x2="250" y2="95" />
+  <rect class="hover-target" x="420" y="89" width="60" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="450" y1="87" x2="450" y2="75" />
+    <rect class="label-bg" x="407" y="55" width="86" height="20" />
+    <text class="label-text" x="450" y="69" text-anchor="middle">Navigation</text>
+  </g>
+  <line class="text-line" x1="420" y1="95" x2="480" y2="95" stroke-width="1" opacity="0.7" />
+  <line class="text-line" x1="500" y1="95" x2="560" y2="95" stroke-width="1" opacity="0.7" />
+  <line class="text-line" x1="580" y1="95" x2="640" y2="95" stroke-width="1" opacity="0.7" />
+  <rect class="hover-target" x="120" y="160" width="560" height="150" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="158" x2="400" y2="146" />
+    <rect class="label-bg" x="346.5" y="126" width="107" height="20" />
+    <text class="label-text" x="400" y="140" text-anchor="middle">Main (target)</text>
+  </g>
+  <rect class="region" x="120" y="160" width="560" height="150" rx="6" />
+  <line class="text-line" x1="150" y1="190" x2="350" y2="190" />
+  <line class="text-line" x1="150" y1="220" x2="630" y2="220" />
+  <line class="text-line" x1="150" y1="235" x2="630" y2="235" />
+  <line class="text-line" x1="150" y1="250" x2="486" y2="250" />
+</svg>

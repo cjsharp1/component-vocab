@@ -1,0 +1,46 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "region", "x": 150, "y": 90, "w": 500, "h": 110, "rx": 6 },
+      { "type": "line", "x": 180, "y": 130, "w": 200, "label": "Label" },
+      { "type": "line", "x": 180, "y": 158, "w": 260, "weight": 1, "label": "Description (optional)", "at": "below" },
+      { "type": "filled", "x": 540, "y": 126, "w": 72, "h": 36, "rx": 18, "label": "Track" },
+      { "type": "circle", "cx": 594, "cy": 144, "r": 14, "style": "region", "label": "Thumb", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 40, "y": 40, "w": 100 },
+      { "type": "filled", "x": 165, "y": 28, "w": 48, "h": 24, "rx": 12 },
+      { "type": "circle", "cx": 201, "cy": 40, "r": 9, "style": "region" }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 70, "w": 150 },
+      { "type": "interactive", "x": 290, "y": 56, "w": 50, "h": 28, "rx": 14 },
+      { "type": "circle", "cx": 304, "cy": 70, "r": 10, "style": "region" },
+      { "type": "line", "x": 60, "y": 130, "w": 120 },
+      { "type": "filled", "x": 290, "y": 116, "w": 50, "h": 28, "rx": 14 },
+      { "type": "circle", "cx": 326, "cy": 130, "r": 10, "style": "region" }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 80, "y": 86, "w": 50, "h": 28, "rx": 14 },
+      { "type": "circle", "cx": 94, "cy": 100, "r": 10, "style": "region" },
+      { "type": "line", "x": 150, "y": 100, "w": 160 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 85, "w": 160 },
+      { "type": "line", "x": 60, "y": 110, "w": 200, "weight": 1 },
+      { "type": "filled", "x": 290, "y": 84, "w": 50, "h": 28, "rx": 14 },
+      { "type": "circle", "cx": 326, "cy": 98, "r": 10, "style": "region" }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 100, "w": 120 },
+      { "type": "filled", "x": 210, "y": 86, "w": 50, "h": 28, "rx": 14 },
+      { "type": "circle", "cx": 246, "cy": 100, "r": 10, "style": "region" },
+      { "type": "text", "x": 275, "y": 104, "value": "On", "anchor": "start" }
+    ] }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "interactive", "x": 200, "y": 130, "w": 150, "h": 48, "rx": 6, "label": "Not pressed" },
+      { "type": "line", "x": 240, "y": 154, "w": 70, "label": "Label", "at": "below" },
+      { "type": "filled", "x": 420, "y": 130, "w": 150, "h": 48, "rx": 6, "label": "Pressed" },
+      { "type": "circle", "cx": 450, "cy": 154, "r": 8, "style": "region", "label": "Icon (optional)", "at": "below" },
+      { "type": "line", "x": 470, "y": 154, "w": 70 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "interactive", "x": 60, "y": 24, "w": 60, "h": 32, "rx": 4 },
+      { "type": "line", "x": 75, "y": 40, "w": 30 },
+      { "type": "filled", "x": 130, "y": 24, "w": 60, "h": 32, "rx": 4 },
+      { "type": "line", "x": 145, "y": 40, "w": 30 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "interactive", "x": 70, "y": 80, "w": 120, "h": 40, "rx": 6 },
+      { "type": "line", "x": 100, "y": 100, "w": 60 },
+      { "type": "filled", "x": 210, "y": 80, "w": 120, "h": 40, "rx": 6 },
+      { "type": "line", "x": 240, "y": 100, "w": 60 }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 140, "y": 78, "w": 44, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 162, "cy": 100, "r": 9, "style": "region" },
+      { "type": "filled", "x": 216, "y": 78, "w": 44, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 238, "cy": 100, "r": 9, "style": "region" }
+    ] },
+    { "shapes": [
+      { "type": "filled", "x": 120, "y": 78, "w": 160, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 148, "cy": 100, "r": 9, "style": "region" },
+      { "type": "line", "x": 168, "y": 100, "w": 80 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 80, "y": 70, "w": 240, "h": 60, "rx": 6 },
+      { "type": "filled", "x": 92, "y": 78, "w": 44, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 114, "cy": 100, "r": 8, "style": "region" },
+      { "type": "interactive", "x": 148, "y": 78, "w": 44, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 170, "cy": 100, "r": 8, "style": "region" },
+      { "type": "filled", "x": 204, "y": 78, "w": 44, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 226, "cy": 100, "r": 8, "style": "region" },
+      { "type": "interactive", "x": 260, "y": 78, "w": 44, "h": 44, "rx": 6 },
+      { "type": "circle", "cx": 282, "cy": 100, "r": 8, "style": "region" }
+    ] }
+  ]
+}

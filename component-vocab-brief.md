@@ -3,7 +3,7 @@
 Survey of the repository after the vocabulary rework (Phases 1 to 8 of `docs/plan/vocab-rework-plan.md`), refreshed 2026-11-19 on branch `phase-8-docs`. It replaces the original brief, which described the 50 hand-written pages that existed before the rework (see that version in git history on `main`). Items marked **(inferred)** were not confirmed by running them.
 
 **Summary**
-- **What it is:** a static docs site for a website component vocabulary. There are 84 components in groups A to J: 40 stable and 44 drafts.
+- **What it is:** a static docs site for a website component vocabulary. There are 84 components in groups A to J, all stable (44 were drafts until Phase 9).
 - **How it's built:** one JSON file per component. A dependency-free Node generator writes the pages, and the generated HTML is committed.
 - **Checks:** `node scripts/build.mjs --check` validates the data and the generated output, and CI runs it on every push.
 - **Branches:** each phase is its own branch, chained off `research-inputs`. None is merged into `main`.
@@ -41,7 +41,7 @@ The `README.md` covers purpose, naming rules R1 to R7, the commands and how to a
 │   ├── systems.json              12 design systems
 │   ├── structure.json            parent/child rules (research §3)
 │   └── redirects.json            23 old slugs
-├── wireframes/<slug>/*.svg       256 SVGs for the 40 stable components
+├── wireframes/<slug>/            503 SVGs (+ spec.json for the 44 drawn with scripts/wireframe.mjs)
 ├── scripts/
 │   ├── build.mjs, validate.mjs, structure.mjs
 │   ├── templates/                component.mjs, index.mjs, util.mjs, index-*.html fragments
@@ -77,9 +77,9 @@ The `README.md` covers purpose, naming rules R1 to R7, the commands and how to a
 - **Name and framework fields:** aliases, formerNames, absorbed, frameworkSource (`csv`, `legacy` or `none`), frameworkNames (12 systems, each `same` / `alias` / `different` / `none`), frameworkNotes.
 - **Structure and links:** parents, children, wireframe, thumbnail, related.
 
-See `data/components/card.json` for a stable component and `data/components/combobox.json` for a draft.
+See `data/components/card.json` (hand-drawn wireframes) and `data/components/combobox.json` (wireframes from `spec.json`).
 
-**Count:** 84 (40 stable, 44 draft). Names in page order, by group:
+**Count:** 84, all stable. Names in page order, by group (\* marks the 44 promoted from draft in Phase 9):
 
 | Group | Components |
 |---|---|
@@ -94,7 +94,7 @@ See `data/components/card.json` for a stable component and `data/components/comb
 | I. Collections | Carousel, Data grid\* |
 | J. Page patterns | Feature, Testimonial, Stats, Logo cloud, Call to action, Pricing table |
 
-\* draft
+\* promoted from draft in Phase 9; wireframes drawn with `scripts/wireframe.mjs` from `wireframes/<slug>/spec.json`
 
 ## 5. Component pages
 
@@ -142,7 +142,7 @@ Still duplicated, by design:
 
 ## 9. Gaps and known issues
 
-1. **44 draft components** have no wireframe, elements or usage guidance.
+1. **The 44 components promoted in Phase 9** were written partly from general HTML, APG and WCAG knowledge where the research row was thin (Rating, Empty state, Checkbox, File upload, Color picker, Tree view, Video). Worth an expert read.
 2. **16 components aren't in the CSV.**
    - Nine (Rich Text, Embed, Description list and the six J patterns) keep framework names from their old pages, which covered 5 systems. Only Rich Text (3), Embed (1), Description list (1) and Stats (1) have any match. They're marked with \* in the comparison table.
    - Seven drafts (Main, Video, File, Feed, Mega menu, Disclosure, Data grid) have no framework data at all.

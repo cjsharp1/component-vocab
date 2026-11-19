@@ -2,19 +2,95 @@
   "slug": "alert-dialog",
   "name": "Alert dialog",
   "order": 47,
-  "status": "draft",
+  "status": "stable",
   "group": "disclosure-overlays",
-  "description": "Demands a response",
-  "summary": "Demands a response",
-  "htmlElement": "",
+  "description": "A Dialog that interrupts the user to confirm or acknowledge something important, such as deleting a file. It stays open until the user picks a response.",
+  "summary": "Interrupts to confirm a consequential action",
+  "htmlElement": "<code>&lt;dialog&gt;</code> with <code>role=\"alertdialog\"</code>",
   "nativeHtml": "`<dialog role=\"alertdialog\">`",
   "aria": "Alert and Message Dialogs",
   "researchNote": "Demands a response",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Title",
+      "required": "Yes",
+      "description": "States the question or warning; referenced by aria-labelledby"
+    },
+    {
+      "name": "Message",
+      "required": "Yes",
+      "description": "Explains the consequence; referenced by aria-describedby"
+    },
+    {
+      "name": "Confirm button",
+      "required": "Yes",
+      "description": "Names the action, such as \"Delete file\""
+    },
+    {
+      "name": "Cancel button",
+      "required": "No",
+      "description": "Closes without acting; left out only when the dialog just needs acknowledging"
+    },
+    {
+      "name": "Backdrop",
+      "required": "Yes",
+      "description": "Covers the page; the dialog is always modal"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Type",
+      "options": "Confirm (two actions), Acknowledge (one action)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Tone",
+      "options": "Neutral, Warning, Destructive",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Icon",
+      "options": "None, Leading icon beside the title",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Action layout",
+      "options": "Inline (end-aligned), Stacked full width",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Confirm — cancel and confirm actions",
+      "wireframe": "wireframes/alert-dialog/variation-1.svg"
+    },
+    {
+      "caption": "Acknowledge — a single action",
+      "wireframe": "wireframes/alert-dialog/variation-2.svg"
+    },
+    {
+      "caption": "Icon — warning icon beside the title",
+      "wireframe": "wireframes/alert-dialog/variation-3.svg"
+    },
+    {
+      "caption": "Stacked actions — full-width buttons",
+      "wireframe": "wireframes/alert-dialog/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use an Alert dialog only when the user must respond before going on, such as confirming a deletion. For information that needs no decision, use an Alert or a Toast.",
+    "Open it with <code>showModal()</code> and set <code>role=\"alertdialog\"</code>, with <code>aria-labelledby</code> pointing at the title and <code>aria-describedby</code> at the message, so screen readers announce both.",
+    "Move focus into the dialog when it opens. The APG suggests focusing the least destructive action, usually Cancel, when the confirm action can't be undone.",
+    "Label buttons with the action (\"Delete\", \"Keep editing\") rather than \"Yes\" and \"No\", so the choice makes sense without rereading the message.",
+    "Escape should close it as Cancel, and focus should return to the control that opened it."
+  ],
+  "wireframe": "wireframes/alert-dialog/default.svg",
+  "thumbnail": "wireframes/alert-dialog/thumbnail.svg",
   "related": [],
   "aliases": [
     "Confirm dialog"

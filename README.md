@@ -7,7 +7,7 @@ Open `index.html` in a browser. Pages work from `file://` and from any static ho
 ## What's in it
 
 - **84 components** in groups A to J. Groups A to I follow the research consensus list (`docs/research/component-vocabulary-and-page-structure.md` §4). Group J holds page patterns (Feature, Testimonial, Stats, Logo cloud, Call to action, Pricing table): standard industry terms that no surveyed UI framework ships.
-- **40 stable** components with wireframes and usage guidance, and **44 drafts** that list only what the research and the framework survey record. Drafts carry a visible Draft badge and no wireframe.
+- **All 84 are stable**, with wireframes, configuration options and usage guidance. The site still supports `"status": "draft"` for new entries: a draft carries a visible Draft badge and no wireframe.
 - A **comparison table** across MUI, Bootstrap, Ant Design, Carbon, Polaris, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI, GOV.UK and Apple HIG, from `docs/research/framework-alignment.csv`.
 - **Redirect pages** at every old slug that was renamed or folded (`data/redirects.json`), so old links keep working.
 
@@ -42,6 +42,7 @@ scripts/
   build.mjs                writes components/*.html and index.html; --check verifies
   validate.mjs             schema and cross-file checks
   structure.mjs            derives parents/children from structure.json
+  wireframe.mjs            draws wireframe SVGs from wireframes/<slug>/spec.json
   templates/               page templates and static index fragments
   legacy/                  one-off migration scripts, kept for the record
 components/, index.html    generated output (don't edit by hand)
@@ -67,7 +68,7 @@ node scripts/build.mjs --check   # fail if output is stale, data is invalid, or 
 
 1. Pick the name with the rules above. Check `data/components/` and the aliases in them for collisions.
 2. Copy a similar file in `data/components/` to `<slug>.json` (lowercase, hyphenated) and edit it. A new entry can start as `"status": "draft"` with no wireframe.
-3. For a stable component, add `wireframes/<slug>/default.svg`, `thumbnail.svg` and any `variation-N.svg`, and point to them from the JSON. Use the wireframe classes in `css/site.css` (`region`, `media-placeholder`, `interactive`, `optional`, `text-line`). For a hover label, follow each `hover-target` rect immediately with its `label-group`.
+3. For a stable component, describe its wireframes in `wireframes/<slug>/spec.json` and run `node scripts/wireframe.mjs <slug>`. That writes `default.svg`, `thumbnail.svg` and `variation-N.svg` with hover labels placed inside the frame (the spec format is in the script's header comment; `wireframes/button/spec.json` is an example). Point to the files from the JSON. Older components have hand-drawn SVGs that use the same classes (`region`, `media-placeholder`, `interactive`, `optional`, `text-line`), with each `hover-target` rect followed immediately by its `label-group`.
 4. Set `group` to a slug from `data/groups.json`.
 5. Run `node scripts/structure.mjs`, then `node scripts/build.mjs`, then `node scripts/build.mjs --check`.
 
@@ -84,5 +85,4 @@ To rename or retire a page, change or delete its JSON and add `"old-slug": "new-
 ## Not yet done
 
 - The 30-name gap vocabulary (research §6) is deferred; none of the current pages needed a coined name.
-- Drafts need wireframes and usage guidance before they can become stable.
 - Twelve SVG `rx` values in older wireframes use a four-value form browsers ignore (Card, Alert, Dialog wireframes); corners render square.

@@ -1,0 +1,50 @@
+{
+  "default": {
+    "height": 320,
+    "shapes": [
+      { "type": "line", "x": 160, "y": 135, "w": 60, "label": "Label" },
+      { "type": "interactive", "x": 160, "y": 160, "w": 380, "h": 44, "rx": 6, "label": "Search field" },
+      { "type": "line", "x": 180, "y": 182, "w": 120, "weight": 1 },
+      { "type": "filled", "x": 550, "y": 160, "w": 110, "h": 44, "rx": 6, "label": "Submit button", "at": "below" },
+      { "type": "optional", "x": 160, "y": 212, "w": 380, "h": 70, "rx": 6, "label": "Suggestions (optional)", "at": "below" },
+      { "type": "lines", "x": 180, "y": 232, "w": 200, "count": 3 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "interactive", "x": 30, "y": 26, "w": 150, "h": 28, "rx": 4 },
+      { "type": "line", "x": 42, "y": 40, "w": 60, "weight": 1 },
+      { "type": "filled", "x": 186, "y": 26, "w": 34, "h": 28, "rx": 4 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 65, "w": 60 },
+      { "type": "interactive", "x": 40, "y": 80, "w": 230, "h": 40, "rx": 6 },
+      { "type": "filled", "x": 280, "y": 80, "w": 80, "h": 40, "rx": 6 }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 80, "y": 80, "w": 196, "h": 40, "rx": 6 },
+      { "type": "line", "x": 96, "y": 100, "w": 80, "weight": 1 },
+      { "type": "filled", "x": 280, "y": 80, "w": 40, "h": 40, "rx": 6 },
+      { "type": "circle", "cx": 300, "cy": 100, "r": 8, "style": "region" }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 20, "y": 70, "w": 360, "h": 60, "rx": 4 },
+      { "type": "line", "x": 40, "y": 100, "w": 60 },
+      { "type": "interactive", "x": 190, "y": 84, "w": 140, "h": 32, "rx": 4 },
+      { "type": "filled", "x": 334, "y": 84, "w": 32, "h": 32, "rx": 4 },
+      { "type": "circle", "cx": 350, "cy": 100, "r": 7, "style": "region" }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 20, "y": 30, "w": 360, "h": 50, "rx": 4 },
+      { "type": "line", "x": 40, "y": 55, "w": 60 },
+      { "type": "interactive", "x": 334, "y": 39, "w": 32, "h": 32, "rx": 4 },
+      { "type": "circle", "cx": 350, "cy": 55, "r": 7, "style": "region" },
+      { "type": "region", "x": 20, "y": 110, "w": 360, "h": 60, "rx": 4 },
+      { "type": "optional", "x": 40, "y": 124, "w": 280, "h": 32, "rx": 4 },
+      { "type": "filled", "x": 334, "y": 124, "w": 32, "h": 32, "rx": 4 },
+      { "type": "circle", "cx": 350, "cy": 140, "r": 7, "style": "region" }
+    ] }
+  ]
+}

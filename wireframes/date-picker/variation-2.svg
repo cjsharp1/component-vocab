@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="60" y="15" width="280" height="170" rx="6" />
+  <text x="80" y="44" font-size="14" text-anchor="middle">‹</text>
+  <line class="text-line" x1="160" y1="40" x2="240" y2="40" />
+  <text x="320" y="44" font-size="14" text-anchor="middle">›</text>
+  <rect class="region" x="76" y="65" width="30" height="22" rx="3" />
+  <rect class="region" x="114" y="65" width="30" height="22" rx="3" />
+  <rect class="region" x="152" y="65" width="30" height="22" rx="3" />
+  <rect class="region" x="190" y="65" width="30" height="22" rx="3" />
+  <rect class="region" x="228" y="65" width="30" height="22" rx="3" />
+  <rect class="region" x="266" y="65" width="30" height="22" rx="3" />
+  <rect class="region" x="304" y="65" width="30" height="22" rx="3" />
+  <rect class="region" x="76" y="94" width="30" height="22" rx="3" />
+  <rect class="region" x="114" y="94" width="30" height="22" rx="3" />
+  <rect class="region" x="152" y="94" width="30" height="22" rx="3" />
+  <rect class="region" x="190" y="94" width="30" height="22" rx="3" />
+  <rect class="region" x="228" y="94" width="30" height="22" rx="3" />
+  <rect class="region" x="266" y="94" width="30" height="22" rx="3" />
+  <rect class="region" x="304" y="94" width="30" height="22" rx="3" />
+  <rect class="region" x="76" y="123" width="30" height="22" rx="3" />
+  <rect class="region" x="114" y="123" width="30" height="22" rx="3" />
+  <rect class="region" x="152" y="123" width="30" height="22" rx="3" />
+  <rect class="region" x="190" y="123" width="30" height="22" rx="3" />
+  <rect class="interactive" x="228" y="123" width="30" height="22" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="region" x="266" y="123" width="30" height="22" rx="3" />
+  <rect class="region" x="304" y="123" width="30" height="22" rx="3" />
+  <rect class="region" x="76" y="152" width="30" height="22" rx="3" />
+  <rect class="region" x="114" y="152" width="30" height="22" rx="3" />
+  <rect class="region" x="152" y="152" width="30" height="22" rx="3" />
+  <rect class="region" x="190" y="152" width="30" height="22" rx="3" />
+  <rect class="region" x="228" y="152" width="30" height="22" rx="3" />
+  <rect class="region" x="266" y="152" width="30" height="22" rx="3" />
+  <rect class="region" x="304" y="152" width="30" height="22" rx="3" />
+</svg>

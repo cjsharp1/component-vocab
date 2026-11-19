@@ -2,19 +2,94 @@
   "slug": "switch",
   "name": "Switch",
   "order": 35,
-  "status": "draft",
+  "status": "stable",
   "group": "actions",
-  "description": "Takes effect immediately",
-  "summary": "Takes effect immediately",
-  "htmlElement": "",
+  "description": "An on/off control for a setting that takes effect as soon as it is flipped, such as email notifications. If the choice is only applied when a form is submitted, use a Checkbox.",
+  "summary": "On/off setting that applies immediately",
+  "htmlElement": "<code>&lt;input type=\"checkbox\" role=\"switch\"&gt;</code>",
   "nativeHtml": "checkbox + `role=\"switch\"`",
   "aria": "Switch",
   "researchNote": "Takes effect immediately",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Names the setting; stays the same when on or off"
+    },
+    {
+      "name": "Track",
+      "required": "Yes",
+      "description": "Background that shows the on or off state"
+    },
+    {
+      "name": "Thumb",
+      "required": "Yes",
+      "description": "Knob that sits at the start when off and the end when on"
+    },
+    {
+      "name": "Description",
+      "required": "No",
+      "description": "Hint under the label, linked with aria-describedby"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Label position",
+      "options": "Before (switch at the end), After",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Description",
+      "options": "None, Below the label",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State text",
+      "options": "None, On/Off beside the track",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Off, On, Disabled",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Label before — settings list, off and on",
+      "wireframe": "wireframes/switch/variation-1.svg"
+    },
+    {
+      "caption": "Label after — switch first, then label",
+      "wireframe": "wireframes/switch/variation-2.svg"
+    },
+    {
+      "caption": "Description — hint text under the label",
+      "wireframe": "wireframes/switch/variation-3.svg"
+    },
+    {
+      "caption": "State text — On or Off beside the track",
+      "wireframe": "wireframes/switch/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Switch for a setting that applies the moment it's flipped. In a form that is saved with a submit button, use a Checkbox.",
+    "Add <code>role=\"switch\"</code> to a native checkbox so screen readers announce on and off instead of checked. The checkbox still handles focus, Space and form submission.",
+    "Label the setting, not the action: \"Email notifications\", not \"Turn on email notifications\". The label must not change between states.",
+    "Don't show the state by color alone (WCAG 1.4.1). The thumb position carries it, and the track and thumb need 3:1 contrast against their surroundings (WCAG 1.4.11).",
+    "For a button that stays pressed, such as Bold in an editor, use a Toggle button."
+  ],
   "related": [],
   "aliases": [
     "Toggle",
@@ -75,5 +150,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<label>\n  <input type=\"checkbox\" role=\"switch\" checked>\n  Email notifications\n</label>"
+  "htmlOutline": "<label>\n  <input type=\"checkbox\" role=\"switch\" checked>\n  Email notifications\n</label>",
+  "wireframe": "wireframes/switch/default.svg",
+  "thumbnail": "wireframes/switch/thumbnail.svg"
 }

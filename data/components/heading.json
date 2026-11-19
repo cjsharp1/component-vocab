@@ -2,19 +2,87 @@
   "slug": "heading",
   "name": "Heading",
   "order": 15,
-  "status": "draft",
+  "status": "stable",
   "group": "content-display",
-  "description": "Level is not size",
-  "summary": "Level is not size",
-  "htmlElement": "",
+  "description": "A title that starts a section of content, marked up as <code>h1</code> to <code>h6</code>. The level follows the page outline; how large it looks is a separate setting.",
+  "summary": "Section title; level follows the outline",
+  "htmlElement": "<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>",
   "nativeHtml": "`h1` to `h6`",
   "aria": "heading",
   "researchNote": "Level is not size",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Heading text",
+      "required": "Yes",
+      "description": "Short title that describes the content that follows"
+    },
+    {
+      "name": "Eyebrow",
+      "required": "No",
+      "description": "Small line above, such as a category; kept outside the heading element"
+    },
+    {
+      "name": "Anchor link",
+      "required": "No",
+      "description": "Link to the heading's <code>id</code> so people can share the section"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Level",
+      "options": "h1 to h6 (set by the outline)",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large, Extra large, Display",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Alignment",
+      "options": "Start, Center",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Eyebrow",
+      "options": "None, Shown",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Anchor link",
+      "options": "None, Shown on hover and focus",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Size — same level, three sizes",
+      "wireframe": "wireframes/heading/variation-1.svg"
+    },
+    {
+      "caption": "Centered — heading and intro text",
+      "wireframe": "wireframes/heading/variation-2.svg"
+    },
+    {
+      "caption": "Eyebrow — small line above the heading",
+      "wireframe": "wireframes/heading/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Choose the level from the outline, not the look: one <code>h1</code> for the page title (usually in the Hero), <code>h2</code> for sections, <code>h3</code> inside them, without skipping levels. Set the size separately.",
+    "Screen reader users often move through a page by headings, so each heading should describe what follows (WCAG 1.3.1 Info and Relationships, 2.4.6 Headings and Labels).",
+    "Don't use a heading element just to make text large or bold. Use a text style instead.",
+    "Keep an eyebrow or subtitle outside the heading element, for example in a <code>&lt;p&gt;</code> before it, so the heading's text stays short when listed out of context.",
+    "A Section that has a heading becomes a named region when it points to the heading with <code>aria-labelledby</code>."
+  ],
+  "wireframe": "wireframes/heading/default.svg",
+  "thumbnail": "wireframes/heading/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

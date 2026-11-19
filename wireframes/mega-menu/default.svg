@@ -1,0 +1,54 @@
+<svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="40" y="40" width="720" height="50" rx="4" />
+  <line class="text-line" x1="80" y1="65" x2="140" y2="65" />
+  <rect class="hover-target" x="170" y="50" width="110" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="225" y1="48" x2="225" y2="36" />
+    <rect class="label-bg" x="168" y="16" width="114" height="20" />
+    <text class="label-text" x="225" y="30" text-anchor="middle">Top-level item</text>
+  </g>
+  <rect class="interactive" x="170" y="50" width="110" height="30" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <line class="text-line" x1="310" y1="65" x2="370" y2="65" />
+  <line class="text-line" x1="400" y1="65" x2="460" y2="65" />
+  <rect class="hover-target" x="40" y="100" width="720" height="200" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="302" x2="400" y2="314" />
+    <rect class="label-bg" x="374.5" y="314" width="51" height="20" />
+    <text class="label-text" x="400" y="328" text-anchor="middle">Panel</text>
+  </g>
+  <rect class="region" x="40" y="100" width="720" height="200" rx="4" />
+  <rect class="hover-target" x="70" y="129" width="100" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="120" y1="127" x2="120" y2="115" />
+    <rect class="label-bg" x="66.5" y="95" width="107" height="20" />
+    <text class="label-text" x="120" y="109" text-anchor="middle">Group heading</text>
+  </g>
+  <line class="text-line" x1="70" y1="135" x2="170" y2="135" />
+  <rect class="hover-target" x="70" y="159" width="140" height="57" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="140" y1="218" x2="140" y2="230" />
+    <rect class="label-bg" x="114.5" y="230" width="51" height="20" />
+    <text class="label-text" x="140" y="244" text-anchor="middle">Links</text>
+  </g>
+  <line class="text-line" x1="70" y1="165" x2="210" y2="165" />
+  <line class="text-line" x1="70" y1="180" x2="210" y2="180" />
+  <line class="text-line" x1="70" y1="195" x2="210" y2="195" />
+  <line class="text-line" x1="70" y1="210" x2="168" y2="210" />
+  <line class="text-line" x1="250" y1="135" x2="350" y2="135" />
+  <line class="text-line" x1="250" y1="165" x2="390" y2="165" />
+  <line class="text-line" x1="250" y1="180" x2="390" y2="180" />
+  <line class="text-line" x1="250" y1="195" x2="390" y2="195" />
+  <line class="text-line" x1="250" y1="210" x2="348" y2="210" />
+  <line class="text-line" x1="420" y1="135" x2="520" y2="135" />
+  <line class="text-line" x1="420" y1="165" x2="550" y2="165" />
+  <line class="text-line" x1="420" y1="180" x2="550" y2="180" />
+  <line class="text-line" x1="420" y1="195" x2="550" y2="195" />
+  <line class="text-line" x1="420" y1="210" x2="511" y2="210" />
+  <rect class="hover-target" x="580" y="125" width="150" height="110" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="655" y1="123" x2="655" y2="111" />
+    <rect class="label-bg" x="580.5" y="91" width="149" height="20" />
+    <text class="label-text" x="655" y="105" text-anchor="middle">Featured (optional)</text>
+  </g>
+  <rect class="media-placeholder" x="580" y="125" width="150" height="110" rx="4" />
+</svg>

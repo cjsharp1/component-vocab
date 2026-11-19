@@ -30,16 +30,19 @@
 
     <section>
       <h1>Switch</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Takes effect immediately</p>
+      <p>An on/off control for a setting that takes effect as soon as it is flipped, such as email notifications. If the choice is only applied when a form is submitted, use a Checkbox.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Toggle, Lightswitch. In design systems: Switch (MUI, Ant Design, Polaris, Chakra UI, Radix Themes, shadcn/ui, Fluent UI); Toggle (Carbon, Atlassian); Toggles (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;input type="checkbox" role="switch"&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd>checkbox + <code>role="switch"</code></dd>
         <dt>ARIA pattern</dt>
         <dd>Switch</dd>
+        <dt>Research note</dt>
+        <dd>Takes effect immediately</dd>
         <dt>Category</dt>
         <dd>D. Actions and links</dd>
       </dl>
@@ -52,6 +55,145 @@
   &lt;input type="checkbox" role="switch" checked&gt;
   Email notifications
 &lt;/label&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>Names the setting; stays the same when on or off</td></tr>
+          <tr><td>Track</td><td>Yes</td><td>Background that shows the on or off state</td></tr>
+          <tr><td>Thumb</td><td>Yes</td><td>Knob that sits at the start when off and the end when on</td></tr>
+          <tr><td>Description</td><td>No</td><td>Hint under the label, linked with aria-describedby</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="region" x="150" y="90" width="500" height="110" rx="6" />
+          <rect class="hover-target" x="180" y="124" width="200" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="280" y1="122" x2="280" y2="110" />
+            <rect class="label-bg" x="254.5" y="90" width="51" height="20" />
+            <text class="label-text" x="280" y="104" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="180" y1="130" x2="380" y2="130" />
+          <rect class="hover-target" x="180" y="152" width="260" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="310" y1="166" x2="310" y2="178" />
+            <rect class="label-bg" x="225" y="178" width="170" height="20" />
+            <text class="label-text" x="310" y="192" text-anchor="middle">Description (optional)</text>
+          </g>
+          <line class="text-line" x1="180" y1="158" x2="440" y2="158" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="540" y="126" width="72" height="36" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="576" y1="124" x2="576" y2="112" />
+            <rect class="label-bg" x="550.5" y="92" width="51" height="20" />
+            <text class="label-text" x="576" y="106" text-anchor="middle">Track</text>
+          </g>
+          <rect class="interactive" x="540" y="126" width="72" height="36" rx="18" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <rect class="hover-target" x="580" y="130" width="28" height="28" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="594" y1="160" x2="594" y2="172" />
+            <rect class="label-bg" x="568.5" y="172" width="51" height="20" />
+            <text class="label-text" x="594" y="186" text-anchor="middle">Thumb</text>
+          </g>
+          <circle class="region" cx="594" cy="144" r="14" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Label position</td><td>Before (switch at the end), After</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Description</td><td>None, Below the label</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>State text</td><td>None, On/Off beside the track</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Medium</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>State</td><td>Off, On, Disabled</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="70" x2="210" y2="70" />
+              <rect class="interactive" x="290" y="56" width="50" height="28" rx="14" />
+              <circle class="region" cx="304" cy="70" r="10" />
+              <line class="text-line" x1="60" y1="130" x2="180" y2="130" />
+              <rect class="interactive" x="290" y="116" width="50" height="28" rx="14" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="326" cy="130" r="10" />
+            </svg>
+          </div>
+          <figcaption>Label before — settings list, off and on</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="80" y="86" width="50" height="28" rx="14" />
+              <circle class="region" cx="94" cy="100" r="10" />
+              <line class="text-line" x1="150" y1="100" x2="310" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Label after — switch first, then label</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="85" x2="220" y2="85" />
+              <line class="text-line" x1="60" y1="110" x2="260" y2="110" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="290" y="84" width="50" height="28" rx="14" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="326" cy="98" r="10" />
+            </svg>
+          </div>
+          <figcaption>Description — hint text under the label</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="100" x2="180" y2="100" />
+              <rect class="interactive" x="210" y="86" width="50" height="28" rx="14" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="246" cy="100" r="10" />
+              <text x="275" y="104" font-size="12" text-anchor="start">On</text>
+            </svg>
+          </div>
+          <figcaption>State text — On or Off beside the track</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use a Switch for a setting that applies the moment it's flipped. In a form that is saved with a submit button, use a Checkbox.</li>
+        <li>Add <code>role="switch"</code> to a native checkbox so screen readers announce on and off instead of checked. The checkbox still handles focus, Space and form submission.</li>
+        <li>Label the setting, not the action: "Email notifications", not "Turn on email notifications". The label must not change between states.</li>
+        <li>Don't show the state by color alone (WCAG 1.4.1). The thumb position carries it, and the track and thumb need 3:1 contrast against their surroundings (WCAG 1.4.11).</li>
+        <li>For a button that stays pressed, such as Bold in an editor, use a Toggle button.</li>
+      </ul>
     </section>
 
     <section>

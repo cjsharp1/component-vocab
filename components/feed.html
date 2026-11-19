@@ -30,14 +30,17 @@
 
     <section>
       <h1>Feed</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Auto-loading list of articles</p>
+      <p>A scrolling list of articles that loads more as the user reaches the end, such as a news or social stream. The ARIA <code>feed</code> role lets screen reader users move from article to article while new ones load.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>No equivalent in the surveyed design systems</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div role="feed"&gt;</code> of <code>&lt;article&gt;</code> elements</dd>
         <dt>ARIA pattern</dt>
         <dd>Feed</dd>
+        <dt>Research note</dt>
+        <dd>Auto-loading list of articles</dd>
         <dt>Category</dt>
         <dd>E. Wayfinding and sequence</dd>
       </dl>
@@ -50,6 +53,150 @@
   &lt;article aria-posinset="1" aria-setsize="-1"&gt;…&lt;/article&gt;
   &lt;article aria-posinset="2" aria-setsize="-1"&gt;…&lt;/article&gt;
 &lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Article</td><td>Yes</td><td>One focusable item, labelled by its heading, with aria-posinset and aria-setsize</td></tr>
+          <tr><td>Image</td><td>No</td><td>Thumbnail beside or above the article text</td></tr>
+          <tr><td>Loading indicator</td><td>No</td><td>Shown while more articles load; the feed has aria-busy="true" meanwhile</td></tr>
+          <tr><td>Load more button</td><td>No</td><td>Loads the next batch on request instead of on scroll</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="180" y="40" width="440" height="80" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="38" x2="400" y2="26" />
+            <rect class="label-bg" x="367.5" y="6" width="65" height="20" />
+            <text class="label-text" x="400" y="20" text-anchor="middle">Article</text>
+          </g>
+          <rect class="region" x="180" y="40" width="440" height="80" rx="6" />
+          <rect class="hover-target" x="195" y="55" width="70" height="50" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="230" y1="53" x2="230" y2="41" />
+            <rect class="label-bg" x="166" y="21" width="128" height="20" />
+            <text class="label-text" x="230" y="35" text-anchor="middle">Image (optional)</text>
+          </g>
+          <rect class="media-placeholder" x="195" y="55" width="70" height="50" rx="3" />
+          <line class="text-line" x1="280" y1="70" x2="500" y2="70" />
+          <line class="text-line" x1="280" y1="92" x2="560" y2="92" stroke-width="1" opacity="0.7" />
+          <rect class="region" x="180" y="135" width="440" height="80" rx="6" />
+          <rect class="media-placeholder" x="195" y="150" width="70" height="50" rx="3" />
+          <line class="text-line" x1="280" y1="165" x2="460" y2="165" />
+          <line class="text-line" x1="280" y1="187" x2="540" y2="187" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="388" y="233" width="24" height="24" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="259" x2="400" y2="271" />
+            <rect class="label-bg" x="332.5" y="271" width="135" height="20" />
+            <text class="label-text" x="400" y="285" text-anchor="middle">Loading indicator</text>
+          </g>
+          <circle class="optional" cx="400" cy="245" r="12" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Article layout</td><td>Text only, With image</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Separation</td><td>Plain rows, Cards</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Loading</td><td>Automatic on scroll, Load more button</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Batch size</td><td>10, 20, 50 articles</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="60" y="20" width="60" height="40" rx="3" />
+              <line class="text-line" x1="135" y1="33" x2="315" y2="33" />
+              <line class="text-line" x1="135" y1="50" x2="255" y2="50" stroke-width="1" opacity="0.7" />
+              <rect class="media-placeholder" x="60" y="80" width="60" height="40" rx="3" />
+              <line class="text-line" x1="135" y1="93" x2="295" y2="93" />
+              <line class="text-line" x1="135" y1="110" x2="265" y2="110" stroke-width="1" opacity="0.7" />
+              <rect class="media-placeholder" x="60" y="140" width="60" height="40" rx="3" />
+              <line class="text-line" x1="135" y1="153" x2="325" y2="153" />
+              <line class="text-line" x1="135" y1="170" x2="245" y2="170" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>With image — thumbnail beside each article</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="60" y="20" width="280" height="70" rx="6" />
+              <line class="text-line" x1="80" y1="45" x2="260" y2="45" />
+              <line class="text-line" x1="80" y1="66" x2="310" y2="66" stroke-width="1" opacity="0.7" />
+              <rect class="region" x="60" y="105" width="280" height="70" rx="6" />
+              <line class="text-line" x1="80" y1="130" x2="230" y2="130" />
+              <line class="text-line" x1="80" y1="151" x2="300" y2="151" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Cards — each article in a box</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="40" x2="310" y2="40" />
+              <line class="text-line" x1="60" y1="58" x2="260" y2="58" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="60" y1="90" x2="290" y2="90" />
+              <line class="text-line" x1="60" y1="108" x2="240" y2="108" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="140" y="140" width="120" height="34" rx="6" />
+              <line class="text-line" x1="170" y1="157" x2="230" y2="157" />
+            </svg>
+          </div>
+          <figcaption>Load more — button instead of loading on scroll</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="40" x2="310" y2="40" />
+              <line class="text-line" x1="60" y1="58" x2="260" y2="58" stroke-width="1" opacity="0.7" />
+              <rect class="optional" x="60" y="80" width="280" height="36" rx="4" />
+              <rect class="optional" x="60" y="126" width="280" height="36" rx="4" />
+              <circle class="optional" cx="200" cy="180" r="10" />
+            </svg>
+          </div>
+          <figcaption>Automatic — placeholders while the next batch loads</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use <code>role="feed"</code> only for a list of articles that grows as the user scrolls. A fixed set of posts is a List, or a Grid of Cards.</li>
+        <li>Make each <code>&lt;article&gt;</code> focusable and label it, usually with its heading. Set <code>aria-posinset</code> and <code>aria-setsize</code> (-1 when the total is unknown), and <code>aria-busy="true"</code> on the feed while articles are added.</li>
+        <li>The ARIA Authoring Practices give feeds Page Down and Page Up to move between articles, and Control+End and Control+Home to move focus past the feed, so keyboard users are not trapped in it.</li>
+        <li>Endless loading puts the footer out of reach and makes it hard to return to a position. Consider a Load more button, or Pagination when people need to come back to a specific place.</li>
+      </ul>
     </section>
 
     <section>

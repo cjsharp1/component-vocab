@@ -30,14 +30,17 @@
 
     <section>
       <h1>Slot</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Auto-managed by Grid</p>
+      <p>One cell of a Grid that holds a vertical stack of content blocks. The Grid's layout preset creates and removes slots; editors see them as columns.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Column, Col. In design systems: Columns (Bootstrap)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;div&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>Auto-managed by Grid</dd>
         <dt>Category</dt>
         <dd>B. Layout primitives</dd>
       </dl>
@@ -51,6 +54,152 @@
     &lt;!-- content blocks only; no Section or Grid --&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Content blocks</td><td>Yes</td><td>Any content block, stacked top to bottom; never a Section or Grid</td></tr>
+          <tr><td>Background</td><td>No</td><td>Color or image behind this cell only</td></tr>
+          <tr><td>Padding</td><td>No</td><td>Inner space, mostly used with a background</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="100" y="50" width="600" height="250" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="48" x2="400" y2="36" />
+            <rect class="label-bg" x="378" y="16" width="44" height="20" />
+            <text class="label-text" x="400" y="30" text-anchor="middle">Grid</text>
+          </g>
+          <rect class="region" x="100" y="50" width="600" height="250" rx="6" />
+          <rect class="hover-target" x="120" y="70" width="270" height="210" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="255" y1="282" x2="255" y2="294" />
+            <rect class="label-bg" x="233" y="294" width="44" height="20" />
+            <text class="label-text" x="255" y="308" text-anchor="middle">Slot</text>
+          </g>
+          <rect class="region" x="120" y="70" width="270" height="210" rx="4" />
+          <line class="text-line" x1="140" y1="100" x2="290" y2="100" />
+          <rect class="hover-target" x="140" y="119" width="220" height="42" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="250" y1="163" x2="250" y2="175" />
+            <rect class="label-bg" x="193" y="175" width="114" height="20" />
+            <text class="label-text" x="250" y="189" text-anchor="middle">Content blocks</text>
+          </g>
+          <line class="text-line" x1="140" y1="125" x2="360" y2="125" />
+          <line class="text-line" x1="140" y1="140" x2="360" y2="140" />
+          <line class="text-line" x1="140" y1="155" x2="294" y2="155" />
+          <rect class="media-placeholder" x="140" y="205" width="230" height="55" rx="4" />
+          <rect class="region" x="410" y="70" width="270" height="210" rx="4" />
+          <rect class="hover-target" x="430" y="90" width="230" height="170" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="545" y1="262" x2="545" y2="274" />
+            <rect class="label-bg" x="474" y="274" width="142" height="20" />
+            <text class="label-text" x="545" y="288" text-anchor="middle">Padding (optional)</text>
+          </g>
+          <rect class="optional" x="430" y="90" width="230" height="170" rx="4" />
+          <line class="text-line" x1="450" y1="125" x2="640" y2="125" />
+          <line class="text-line" x1="450" y1="140" x2="640" y2="140" />
+          <line class="text-line" x1="450" y1="155" x2="583" y2="155" />
+          <rect class="interactive" x="450" y="200" width="110" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Vertical alignment</td><td>Top, Center, Bottom, Stretch</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Padding</td><td>None, Small, Medium, Large, Extra large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Stacked order</td><td>Source order, First, Last (on narrow screens)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Stack gap</td><td>Inherit from Section, None to Extra large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Background</td><td>None, Color, Image</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="160" rx="4" />
+              <rect class="region" x="30" y="30" width="106" height="140" rx="3" />
+              <line class="text-line" x1="42" y1="48" x2="122" y2="48" />
+              <line class="text-line" x1="42" y1="63" x2="98" y2="63" />
+              <rect class="region" x="147" y="30" width="106" height="140" rx="3" />
+              <line class="text-line" x1="159" y1="93" x2="239" y2="93" />
+              <line class="text-line" x1="159" y1="108" x2="215" y2="108" />
+              <rect class="region" x="264" y="30" width="106" height="140" rx="3" />
+              <line class="text-line" x1="276" y1="140" x2="356" y2="140" />
+              <line class="text-line" x1="276" y1="155" x2="332" y2="155" />
+            </svg>
+          </div>
+          <figcaption>Vertical alignment — top, center, bottom</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="160" rx="4" />
+              <rect class="region" x="30" y="30" width="165" height="140" rx="3" />
+              <line class="text-line" x1="45" y1="62" x2="175" y2="62" />
+              <line class="text-line" x1="45" y1="77" x2="175" y2="77" />
+              <line class="text-line" x1="45" y1="92" x2="136" y2="92" />
+              <rect class="region" x="205" y="30" width="165" height="140" rx="3" />
+              <rect class="optional" x="220" y="45" width="135" height="110" rx="3" />
+              <line class="text-line" x1="232" y1="62" x2="342" y2="62" />
+              <line class="text-line" x1="232" y1="77" x2="342" y2="77" />
+              <line class="text-line" x1="232" y1="92" x2="309" y2="92" />
+            </svg>
+          </div>
+          <figcaption>Padding — inner space in one slot</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="140" y="15" width="120" height="170" rx="8" />
+              <rect class="region" x="152" y="27" width="96" height="68" rx="3" />
+              <text x="200" y="66" font-size="18" text-anchor="middle">2</text>
+              <rect class="region" x="152" y="105" width="96" height="68" rx="3" />
+              <text x="200" y="144" font-size="18" text-anchor="middle">1</text>
+            </svg>
+          </div>
+          <figcaption>Stacked order — second slot first on narrow screens</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Slots exist only inside a Grid. The Grid's preset (1:1, 2:1, 1:1:1) decides how many there are, so change the preset to add or remove one.</li>
+        <li>Put content blocks in a slot, never another Grid or a Section. Blocks that repeat items, such as a list of Cards, set their own number per row instead.</li>
+        <li>Render it as a plain <code>&lt;div&gt;</code>. It has no role of its own; headings inside it carry the structure.</li>
+        <li>Stacked order changes only the visual order. Keep the source order meaningful, because screen readers and keyboard focus follow the DOM (WCAG 1.3.2 Meaningful Sequence, 2.4.3 Focus Order).</li>
+        <li>Make each slot a size container (<code>container-type: inline-size</code>) so blocks inside respond to the slot's width, not the viewport.</li>
+      </ul>
     </section>
 
     <section>

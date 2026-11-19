@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="220" y="104" width="80" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="260" y1="102" x2="260" y2="90" />
+    <rect class="label-bg" x="234.5" y="70" width="51" height="20" />
+    <text class="label-text" x="260" y="84" text-anchor="middle">Label</text>
+  </g>
+  <line class="text-line" x1="220" y1="110" x2="300" y2="110" />
+  <rect class="region" x="214" y="134" width="372" height="56" rx="8" />
+  <rect class="hover-target" x="220" y="140" width="120" height="44" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="280" y1="186" x2="280" y2="198" />
+    <rect class="label-bg" x="216" y="198" width="128" height="20" />
+    <text class="label-text" x="280" y="212" text-anchor="middle">Selected segment</text>
+  </g>
+  <rect class="interactive" x="220" y="140" width="120" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="hover-target" x="340" y="140" width="120" height="44" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="138" x2="400" y2="126" />
+    <rect class="label-bg" x="367.5" y="106" width="65" height="20" />
+    <text class="label-text" x="400" y="120" text-anchor="middle">Segment</text>
+  </g>
+  <rect class="interactive" x="340" y="140" width="120" height="44" rx="6" />
+  <line class="text-line" x1="365" y1="162" x2="435" y2="162" />
+  <line class="text-line" x1="485" y1="162" x2="555" y2="162" />
+</svg>

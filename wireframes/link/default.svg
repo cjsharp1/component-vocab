@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="150" y1="110" x2="330" y2="110" stroke-width="1" opacity="0.7" />
+  <rect class="hover-target" x="340" y="104" width="150" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="415" y1="102" x2="415" y2="90" />
+    <rect class="label-bg" x="375.5" y="70" width="79" height="20" />
+    <text class="label-text" x="415" y="84" text-anchor="middle">Link text</text>
+  </g>
+  <line class="text-line" x1="340" y1="110" x2="490" y2="110" />
+  <line class="text-line" x1="500" y1="110" x2="650" y2="110" stroke-width="1" opacity="0.7" />
+  <line class="text-line" x1="150" y1="135" x2="570" y2="135" stroke-width="1" opacity="0.7" />
+  <rect class="hover-target" x="150" y="204" width="130" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="215" y1="202" x2="215" y2="190" />
+    <rect class="label-bg" x="154.5" y="170" width="121" height="20" />
+    <text class="label-text" x="215" y="184" text-anchor="middle">Standalone link</text>
+  </g>
+  <line class="text-line" x1="150" y1="210" x2="280" y2="210" />
+  <rect class="hover-target" x="291" y="203" width="14" height="14" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="298" y1="219" x2="298" y2="231" />
+    <rect class="label-bg" x="237.5" y="231" width="121" height="20" />
+    <text class="label-text" x="298" y="245" text-anchor="middle">Icon (optional)</text>
+  </g>
+  <circle class="region" cx="298" cy="210" r="7" />
+  <rect class="hover-target" x="450" y="204" width="110" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="505" y1="202" x2="505" y2="190" />
+    <rect class="label-bg" x="451.5" y="170" width="107" height="20" />
+    <text class="label-text" x="505" y="184" text-anchor="middle">External link</text>
+  </g>
+  <line class="text-line" x1="450" y1="210" x2="560" y2="210" />
+  <rect class="hover-target" x="568" y="203" width="14" height="14" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="575" y1="219" x2="575" y2="231" />
+    <rect class="label-bg" x="521.5" y="231" width="107" height="20" />
+    <text class="label-text" x="575" y="245" text-anchor="middle">External icon</text>
+  </g>
+  <rect class="interactive" x="568" y="203" width="14" height="14" rx="2" />
+</svg>

@@ -30,14 +30,17 @@
 
     <section>
       <h1>Toggle button</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>A pressed-state button, not a setting</p>
+      <p>A button that stays pressed or not pressed, such as Bold in a text editor or Mute in a video player. For a setting that is on or off, use a Switch.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Toggle Button (MUI); Toggle (shadcn/ui)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;button aria-pressed&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;button aria-pressed&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>A pressed-state button, not a setting</dd>
         <dt>Category</dt>
         <dd>D. Actions and links</dd>
       </dl>
@@ -47,6 +50,146 @@
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button type="button" aria-pressed="false"&gt;Bold&lt;/button&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>Names the action; stays the same in both states. Can be visually hidden on icon-only buttons</td></tr>
+          <tr><td>Pressed style</td><td>Yes</td><td>Filled background or border that marks the pressed state</td></tr>
+          <tr><td>Icon</td><td>No</td><td>Leading icon, or the only visible content</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="200" y="130" width="150" height="48" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="275" y1="128" x2="275" y2="116" />
+            <rect class="label-bg" x="228.5" y="96" width="93" height="20" />
+            <text class="label-text" x="275" y="110" text-anchor="middle">Not pressed</text>
+          </g>
+          <rect class="interactive" x="200" y="130" width="150" height="48" rx="6" />
+          <rect class="hover-target" x="240" y="148" width="70" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="275" y1="162" x2="275" y2="174" />
+            <rect class="label-bg" x="249.5" y="174" width="51" height="20" />
+            <text class="label-text" x="275" y="188" text-anchor="middle">Label</text>
+          </g>
+          <line class="text-line" x1="240" y1="154" x2="310" y2="154" />
+          <rect class="hover-target" x="420" y="130" width="150" height="48" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="495" y1="128" x2="495" y2="116" />
+            <rect class="label-bg" x="462.5" y="96" width="65" height="20" />
+            <text class="label-text" x="495" y="110" text-anchor="middle">Pressed</text>
+          </g>
+          <rect class="interactive" x="420" y="130" width="150" height="48" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <rect class="hover-target" x="442" y="146" width="16" height="16" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="450" y1="164" x2="450" y2="176" />
+            <rect class="label-bg" x="389.5" y="176" width="121" height="20" />
+            <text class="label-text" x="450" y="190" text-anchor="middle">Icon (optional)</text>
+          </g>
+          <circle class="region" cx="450" cy="154" r="8" />
+          <line class="text-line" x1="470" y1="154" x2="540" y2="154" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Content</td><td>Text, Icon only, Icon and text</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Medium, Large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Grouping</td><td>Single, Group of independent toggles</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>State</td><td>Not pressed, Pressed, Disabled</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="70" y="80" width="120" height="40" rx="6" />
+              <line class="text-line" x1="100" y1="100" x2="160" y2="100" />
+              <rect class="interactive" x="210" y="80" width="120" height="40" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="240" y1="100" x2="300" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Text — not pressed and pressed</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="140" y="78" width="44" height="44" rx="6" />
+              <circle class="region" cx="162" cy="100" r="9" />
+              <rect class="interactive" x="216" y="78" width="44" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="238" cy="100" r="9" />
+            </svg>
+          </div>
+          <figcaption>Icon only — not pressed and pressed</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="120" y="78" width="160" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="148" cy="100" r="9" />
+              <line class="text-line" x1="168" y1="100" x2="248" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Icon and text — pressed</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="80" y="70" width="240" height="60" rx="6" />
+              <rect class="interactive" x="92" y="78" width="44" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="114" cy="100" r="8" />
+              <rect class="interactive" x="148" y="78" width="44" height="44" rx="6" />
+              <circle class="region" cx="170" cy="100" r="8" />
+              <rect class="interactive" x="204" y="78" width="44" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <circle class="region" cx="226" cy="100" r="8" />
+              <rect class="interactive" x="260" y="78" width="44" height="44" rx="6" />
+              <circle class="region" cx="282" cy="100" r="8" />
+            </svg>
+          </div>
+          <figcaption>Group — independent toggles side by side</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Keep the label the same in both states and let <code>aria-pressed</code> carry the state. If the label changes, as with Play and Pause, drop <code>aria-pressed</code>; the ARIA Authoring Practices advise against changing both.</li>
+        <li>Use a Toggle button for a pressed state in an editor or player. For a setting that is on or off, use a Switch. For one choice among several, use a Segmented control.</li>
+        <li>Show the pressed state with more than color, such as a filled background plus a border (WCAG 1.4.1, 1.4.11).</li>
+        <li>Icon-only toggle buttons need an accessible name, such as <code>aria-label="Bold"</code>.</li>
+        <li>In a group, each toggle button keeps its own <code>aria-pressed</code> and can be pressed independently.</li>
+      </ul>
     </section>
 
     <section>

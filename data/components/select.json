@@ -2,19 +2,101 @@
   "slug": "select",
   "name": "Select",
   "order": 67,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "Choose a value",
-  "summary": "Choose a value",
-  "htmlElement": "",
+  "description": "A native drop-down list for choosing one option from a known set, built on <code>&lt;select&gt;</code>. Use it when there are too many options for a Radio group and people don't need to type to find one.",
+  "summary": "Choose one option from a list",
+  "htmlElement": "<code>&lt;select&gt;</code> with <code>&lt;option&gt;</code>",
   "nativeHtml": "`<select>`",
   "aria": "Listbox (custom)",
   "researchNote": "Choose a value",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible <code>&lt;label&gt;</code> linked to the field with <code>for</code>"
+    },
+    {
+      "name": "Field",
+      "required": "Yes",
+      "description": "Shows the chosen option and a ▾ indicator; opens the list"
+    },
+    {
+      "name": "Options",
+      "required": "Yes",
+      "description": "<code>&lt;option&gt;</code> elements, optionally grouped with <code>&lt;optgroup&gt;</code>"
+    },
+    {
+      "name": "Hint text",
+      "required": "No",
+      "description": "Extra guidance, linked with <code>aria-describedby</code>"
+    },
+    {
+      "name": "Error message",
+      "required": "No",
+      "description": "Says what to choose, such as \"Select a country\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Label position",
+      "options": "Above, Beside",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Auto, Fixed, Full width",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Selection",
+      "options": "Single, Multiple (visible list box)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Default, Disabled, Invalid",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Label beside — label and field on one row",
+      "wireframe": "wireframes/select/variation-1.svg"
+    },
+    {
+      "caption": "Full width — fills a narrow container",
+      "wireframe": "wireframes/select/variation-2.svg"
+    },
+    {
+      "caption": "Multiple — list box with several options selected",
+      "wireframe": "wireframes/select/variation-3.svg"
+    },
+    {
+      "caption": "Size — small, medium, large",
+      "wireframe": "wireframes/select/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Select for one choice from a list of known options. With about five options or fewer, a Radio group shows them all and saves a click.",
+    "If people need to type to find an option in a long list, use a Combobox. Avoid rebuilding <code>&lt;select&gt;</code> with custom markup for looks; the native element brings keyboard, mobile and screen reader support for free.",
+    "Give it a visible <code>&lt;label&gt;</code>. A first option such as \"Choose…\" is not a label.",
+    "Don't submit the form or go to another page when the value changes. A change of context on input needs a warning first (WCAG 3.2.2).",
+    "\"Dropdown\" is retired as a name because it could mean a Select or a Menu button. For a list of actions, use a Menu button."
+  ],
+  "wireframe": "wireframes/select/default.svg",
+  "thumbnail": "wireframes/select/thumbnail.svg",
   "related": [],
   "aliases": [
     "Dropdown",

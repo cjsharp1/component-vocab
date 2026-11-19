@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="100" y1="80" x2="250" y2="80" />
+  <circle class="region" cx="268" cy="80" r="7" />
+  <line class="text-line" x1="100" y1="120" x2="220" y2="120" />
+  <circle class="region" cx="238" cy="120" r="7" />
+</svg>

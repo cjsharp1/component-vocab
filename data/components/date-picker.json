@@ -2,19 +2,97 @@
   "slug": "date-picker",
   "name": "Date picker",
   "order": 74,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "Calendar popup",
-  "summary": "Calendar popup",
-  "htmlElement": "",
+  "description": "A date field with a button that opens a calendar for choosing a day. Use it when the date is close to today or the weekday matters, such as booking a stay; people should still be able to type the date.",
+  "summary": "Choose a date from a calendar popup",
+  "htmlElement": "<code>&lt;input&gt;</code> and <code>&lt;button&gt;</code> opening a <code>&lt;dialog&gt;</code> with a date grid",
   "nativeHtml": "",
   "aria": "",
   "researchNote": "Calendar popup",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible <code>&lt;label&gt;</code> for the date field"
+    },
+    {
+      "name": "Field",
+      "required": "Yes",
+      "description": "Accepts a typed date in the stated format"
+    },
+    {
+      "name": "Calendar button",
+      "required": "Yes",
+      "description": "Opens the calendar; has a name such as \"Choose date\""
+    },
+    {
+      "name": "Calendar",
+      "required": "Yes",
+      "description": "Month heading, previous and next buttons, and a grid of days in a Dialog or Popover"
+    },
+    {
+      "name": "Hint text",
+      "required": "No",
+      "description": "The expected format, such as \"dd/mm/yyyy\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Selection",
+      "options": "Single date, Date range",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Display",
+      "options": "Popup, Inline calendar",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Months shown",
+      "options": "One, Two",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Time",
+      "options": "Date only, Date and time",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Unavailable dates",
+      "options": "None, Past dates, Custom list",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Range — start and end days with the span between",
+      "wireframe": "wireframes/date-picker/variation-1.svg"
+    },
+    {
+      "caption": "Inline — calendar always visible, no popup",
+      "wireframe": "wireframes/date-picker/variation-2.svg"
+    },
+    {
+      "caption": "Two months — side by side",
+      "wireframe": "wireframes/date-picker/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Choose a Date picker for dates near today, such as appointments or bookings, where seeing the weekday helps. For birth dates and other known dates, a Date input is faster.",
+    "Always let people type the date. The calendar is a helper, and a typed field is easier for many keyboard and screen reader users.",
+    "Follow the APG Date Picker Dialog example: the button opens a dialog, arrow keys move through the grid of days, Escape closes it and focus returns to the button.",
+    "Give each day an accessible name with the full date, not just the number, and mark today and the selected day in a way that doesn't rely on color alone (WCAG 1.4.1).",
+    "Show unavailable dates as disabled rather than hiding them, and tell people why a date can't be chosen when the reason isn't obvious."
+  ],
+  "wireframe": "wireframes/date-picker/default.svg",
+  "thumbnail": "wireframes/date-picker/thumbnail.svg",
   "related": [],
   "aliases": [
     "Calendar",

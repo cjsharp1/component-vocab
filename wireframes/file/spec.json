@@ -1,0 +1,53 @@
+{
+  "default": {
+    "height": 320,
+    "shapes": [
+      { "type": "region", "x": 180, "y": 90, "w": 440, "h": 110, "rx": 6 },
+      { "type": "media", "x": 205, "y": 110, "w": 56, "h": 70, "rx": 3, "label": "File icon" },
+      { "type": "line", "x": 285, "y": 125, "w": 220, "label": "Name" },
+      { "type": "line", "x": 285, "y": 150, "w": 120, "weight": 1, "label": "File details", "at": "below" },
+      { "type": "circle", "cx": 585, "cy": 145, "r": 12, "style": "region", "label": "Download icon (optional)", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "media", "x": 40, "y": 18, "w": 34, "h": 44, "rx": 2 },
+      { "type": "line", "x": 88, "y": 32, "w": 110 },
+      { "type": "line", "x": 88, "y": 50, "w": 60, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 80, "w": 320, "weight": 1 },
+      { "type": "line", "x": 40, "y": 100, "w": 90, "weight": 1 },
+      { "type": "line", "x": 140, "y": 100, "w": 130 },
+      { "type": "line", "x": 280, "y": 100, "w": 80, "weight": 1 },
+      { "type": "line", "x": 40, "y": 120, "w": 200, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 60, "y": 60, "w": 280, "h": 80, "rx": 6 },
+      { "type": "media", "x": 80, "y": 75, "w": 40, "h": 50, "rx": 2 },
+      { "type": "line", "x": 140, "y": 92, "w": 150 },
+      { "type": "line", "x": 140, "y": 114, "w": 80, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 60, "y": 30, "w": 280, "h": 140, "rx": 6 },
+      { "type": "media", "x": 80, "y": 50, "w": 75, "h": 100, "rx": 2 },
+      { "type": "line", "x": 175, "y": 75, "w": 140 },
+      { "type": "line", "x": 175, "y": 100, "w": 140, "weight": 1 },
+      { "type": "line", "x": 175, "y": 120, "w": 110, "weight": 1 },
+      { "type": "line", "x": 175, "y": 145, "w": 70, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "media", "x": 60, "y": 40, "w": 28, "h": 34, "rx": 2 },
+      { "type": "line", "x": 105, "y": 51, "w": 170 },
+      { "type": "line", "x": 105, "y": 67, "w": 80, "weight": 1 },
+      { "type": "media", "x": 60, "y": 90, "w": 28, "h": 34, "rx": 2 },
+      { "type": "line", "x": 105, "y": 101, "w": 140 },
+      { "type": "line", "x": 105, "y": 117, "w": 80, "weight": 1 },
+      { "type": "media", "x": 60, "y": 140, "w": 28, "h": 34, "rx": 2 },
+      { "type": "line", "x": 105, "y": 151, "w": 190 },
+      { "type": "line", "x": 105, "y": 167, "w": 80, "weight": 1 }
+    ] }
+  ]
+}

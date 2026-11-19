@@ -1,0 +1,36 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="150" y="132" width="130" height="36" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="215" y1="130" x2="215" y2="118" />
+    <rect class="label-bg" x="179" y="98" width="72" height="20" />
+    <text class="label-text" x="215" y="112" text-anchor="middle">Selected</text>
+  </g>
+  <rect class="interactive" x="150" y="132" width="130" height="36" rx="18" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <text x="172" y="155" font-size="14" text-anchor="middle">✓</text>
+  <line class="text-line" x1="188" y1="150" x2="258" y2="150" />
+  <rect class="hover-target" x="310" y="132" width="110" height="36" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="365" y1="170" x2="365" y2="182" />
+    <rect class="label-bg" x="322" y="182" width="86" height="20" />
+    <text class="label-text" x="365" y="196" text-anchor="middle">Unselected</text>
+  </g>
+  <rect class="interactive" x="310" y="132" width="110" height="36" rx="18" />
+  <line class="text-line" x1="330" y1="150" x2="400" y2="150" />
+  <rect class="interactive" x="470" y="132" width="150" height="36" rx="18" />
+  <rect class="hover-target" x="482" y="140" width="20" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="492" y1="138" x2="492" y2="126" />
+    <rect class="label-bg" x="424.5" y="106" width="135" height="20" />
+    <text class="label-text" x="492" y="120" text-anchor="middle">Avatar (optional)</text>
+  </g>
+  <circle class="media-placeholder" cx="492" cy="150" r="10" />
+  <line class="text-line" x1="510" y1="150" x2="580" y2="150" />
+  <rect class="hover-target" x="591" y="141" width="18" height="18" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="600" y1="161" x2="600" y2="173" />
+    <rect class="label-bg" x="546.5" y="173" width="107" height="20" />
+    <text class="label-text" x="600" y="187" text-anchor="middle">Remove button</text>
+  </g>
+  <circle class="region" cx="600" cy="150" r="9" />
+  <text x="600" y="154" font-size="13" text-anchor="middle">×</text>
+</svg>

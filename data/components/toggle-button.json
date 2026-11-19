@@ -2,19 +2,83 @@
   "slug": "toggle-button",
   "name": "Toggle button",
   "order": 36,
-  "status": "draft",
+  "status": "stable",
   "group": "actions",
-  "description": "A pressed-state button, not a setting",
-  "summary": "A pressed-state button, not a setting",
-  "htmlElement": "",
+  "description": "A button that stays pressed or not pressed, such as Bold in a text editor or Mute in a video player. For a setting that is on or off, use a Switch.",
+  "summary": "Button that stays pressed until pressed again",
+  "htmlElement": "<code>&lt;button aria-pressed&gt;</code>",
   "nativeHtml": "`<button aria-pressed>`",
   "aria": "",
   "researchNote": "A pressed-state button, not a setting",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Names the action; stays the same in both states. Can be visually hidden on icon-only buttons"
+    },
+    {
+      "name": "Pressed style",
+      "required": "Yes",
+      "description": "Filled background or border that marks the pressed state"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Leading icon, or the only visible content"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Content",
+      "options": "Text, Icon only, Icon and text",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Grouping",
+      "options": "Single, Group of independent toggles",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Not pressed, Pressed, Disabled",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Text — not pressed and pressed",
+      "wireframe": "wireframes/toggle-button/variation-1.svg"
+    },
+    {
+      "caption": "Icon only — not pressed and pressed",
+      "wireframe": "wireframes/toggle-button/variation-2.svg"
+    },
+    {
+      "caption": "Icon and text — pressed",
+      "wireframe": "wireframes/toggle-button/variation-3.svg"
+    },
+    {
+      "caption": "Group — independent toggles side by side",
+      "wireframe": "wireframes/toggle-button/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Keep the label the same in both states and let <code>aria-pressed</code> carry the state. If the label changes, as with Play and Pause, drop <code>aria-pressed</code>; the ARIA Authoring Practices advise against changing both.",
+    "Use a Toggle button for a pressed state in an editor or player. For a setting that is on or off, use a Switch. For one choice among several, use a Segmented control.",
+    "Show the pressed state with more than color, such as a filled background plus a border (WCAG 1.4.1, 1.4.11).",
+    "Icon-only toggle buttons need an accessible name, such as <code>aria-label=\"Bold\"</code>.",
+    "In a group, each toggle button keeps its own <code>aria-pressed</code> and can be pressed independently."
+  ],
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",
@@ -61,5 +125,7 @@
   "frameworkNotes": "'Toggle' means a switch in Carbon and Atlassian, and a pressed button in shadcn/ui.",
   "parents": [],
   "children": [],
-  "htmlOutline": "<button type=\"button\" aria-pressed=\"false\">Bold</button>"
+  "htmlOutline": "<button type=\"button\" aria-pressed=\"false\">Bold</button>",
+  "wireframe": "wireframes/toggle-button/default.svg",
+  "thumbnail": "wireframes/toggle-button/thumbnail.svg"
 }

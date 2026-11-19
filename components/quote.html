@@ -30,14 +30,17 @@
 
     <section>
       <h1>Quote</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>A pull quote repeats text already on the page, so hide the duplicate from screen readers</p>
+      <p>Text quoted from another source, marked up as <code>&lt;blockquote&gt;</code> with an optional attribution. Its pull quote variant repeats a line from the page in large type for emphasis.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Block quote, Pull quote. In design systems: Blockquote (Chakra UI, Radix Themes)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;figure&gt;</code> with <code>&lt;blockquote&gt;</code> and <code>&lt;figcaption&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;blockquote&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>A pull quote repeats text already on the page, so hide the duplicate from screen readers</dd>
         <dt>Category</dt>
         <dd>C. Content display</dd>
       </dl>
@@ -52,6 +55,135 @@
   &lt;/blockquote&gt;
   &lt;figcaption&gt;— Name, &lt;cite&gt;Source&lt;/cite&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Quote text</td><td>Yes</td><td>The quoted words, as one or more paragraphs</td></tr>
+          <tr><td>Attribution</td><td>No</td><td>Who said it, in <code>&lt;figcaption&gt;</code>; the title of the work goes in <code>&lt;cite&gt;</code></td></tr>
+          <tr><td>Quote mark</td><td>No</td><td>Decorative quotation mark, hidden from screen readers</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="160" y="113" width="20" height="16" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="170" y1="111" x2="170" y2="99" />
+            <rect class="label-bg" x="88.5" y="79" width="163" height="20" />
+            <text class="label-text" x="170" y="93" text-anchor="middle">Quote mark (optional)</text>
+          </g>
+          <text x="170" y="125" font-size="56" text-anchor="middle">“</text>
+          <rect class="region" x="205" y="98" width="5" height="150" rx="2" />
+          <rect class="hover-target" x="230" y="104" width="420" height="56" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="440" y1="102" x2="440" y2="90" />
+            <rect class="label-bg" x="397" y="70" width="86" height="20" />
+            <text class="label-text" x="440" y="84" text-anchor="middle">Quote text</text>
+          </g>
+          <line class="text-line" x1="230" y1="110" x2="650" y2="110" />
+          <line class="text-line" x1="230" y1="132" x2="650" y2="132" />
+          <line class="text-line" x1="230" y1="154" x2="524" y2="154" />
+          <rect class="hover-target" x="230" y="224" width="180" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="320" y1="238" x2="320" y2="250" />
+            <rect class="label-bg" x="235" y="250" width="170" height="20" />
+            <text class="label-text" x="320" y="264" text-anchor="middle">Attribution (optional)</text>
+          </g>
+          <line class="text-line" x1="230" y1="230" x2="410" y2="230" stroke-width="1" opacity="0.7" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Style</td><td>Block quote, Pull quote</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Body, Large</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Alignment</td><td>Start, Center</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Quote mark</td><td>None, Shown</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="60" y="48" width="5" height="112" rx="2" />
+              <line class="text-line" x1="80" y1="60" x2="340" y2="60" />
+              <line class="text-line" x1="80" y1="78" x2="340" y2="78" />
+              <line class="text-line" x1="80" y1="96" x2="262" y2="96" />
+              <line class="text-line" x1="80" y1="145" x2="180" y2="145" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Block quote — indented with a rule at the start</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="30" y1="30" x2="230" y2="30" />
+              <line class="text-line" x1="30" y1="50" x2="230" y2="50" />
+              <line class="text-line" x1="30" y1="70" x2="230" y2="70" />
+              <line class="text-line" x1="30" y1="90" x2="230" y2="90" />
+              <line class="text-line" x1="30" y1="110" x2="230" y2="110" />
+              <line class="text-line" x1="30" y1="130" x2="230" y2="130" />
+              <line class="text-line" x1="30" y1="150" x2="230" y2="150" />
+              <line class="text-line" x1="30" y1="170" x2="170" y2="170" />
+              <line class="text-line" x1="255" y1="60" x2="370" y2="60" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="255" y1="85" x2="370" y2="85" />
+              <line class="text-line" x1="255" y1="105" x2="370" y2="105" />
+              <line class="text-line" x1="255" y1="125" x2="335.5" y2="125" />
+              <line class="text-line" x1="255" y1="150" x2="370" y2="150" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Pull quote — large text beside the body</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <text x="200" y="75" font-size="48" text-anchor="middle">“</text>
+              <line class="text-line" x1="90" y1="100" x2="310" y2="100" />
+              <line class="text-line" x1="120" y1="122" x2="280" y2="122" />
+              <line class="text-line" x1="160" y1="160" x2="240" y2="160" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Centered — large text with a quote mark</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use <code>&lt;blockquote&gt;</code> only for quoted text, never just to indent. For a short quote inside a sentence, use <code>&lt;q&gt;</code>.</li>
+        <li>Put the attribution in a <code>&lt;figcaption&gt;</code> inside a <code>&lt;figure&gt;</code>, outside the <code>&lt;blockquote&gt;</code>. <code>&lt;cite&gt;</code> marks the title of a work, not the person's name.</li>
+        <li>A pull quote repeats text already on the page, so hide the duplicate from screen readers with <code>aria-hidden="true"</code> and don't mark it up as a <code>&lt;blockquote&gt;</code>.</li>
+        <li>Add decorative quotation marks with CSS or an <code>aria-hidden</code> graphic so they aren't read aloud.</li>
+        <li>For a customer quote with a name, photo and role, use Testimonial.</li>
+      </ul>
     </section>
 
     <section>

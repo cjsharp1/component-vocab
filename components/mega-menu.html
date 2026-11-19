@@ -30,16 +30,19 @@
 
     <section>
       <h1>Mega menu</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>A Navigation variant, not a Menu</p>
+      <p>A large panel of grouped links that opens from a top-level item in the site Navigation, for sections with too many pages for a short list. It is built from disclosure buttons and lists of links, not from an ARIA <code>menu</code>.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>No equivalent in the surveyed design systems</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;nav&gt;</code> with <code>&lt;button aria-expanded&gt;</code> and lists of links</dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;nav&gt;</code> + disclosure buttons</dd>
         <dt>ARIA pattern</dt>
         <dd>disclosure-navigation example</dd>
+        <dt>Research note</dt>
+        <dd>A Navigation variant, not a Menu</dd>
         <dt>Category</dt>
         <dd>E. Wayfinding and sequence</dd>
       </dl>
@@ -58,6 +61,209 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Top-level item</td><td>Yes</td><td>Button with aria-expanded and aria-controls that opens its panel</td></tr>
+          <tr><td>Panel</td><td>Yes</td><td>Panel below the navigation bar, hidden until opened</td></tr>
+          <tr><td>Link group</td><td>Yes</td><td>Heading and list of links for one subsection</td></tr>
+          <tr><td>Featured content</td><td>No</td><td>A promoted page with an image and a link</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+          <rect class="region" x="40" y="40" width="720" height="50" rx="4" />
+          <line class="text-line" x1="80" y1="65" x2="140" y2="65" />
+          <rect class="hover-target" x="170" y="50" width="110" height="30" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="225" y1="48" x2="225" y2="36" />
+            <rect class="label-bg" x="168" y="16" width="114" height="20" />
+            <text class="label-text" x="225" y="30" text-anchor="middle">Top-level item</text>
+          </g>
+          <rect class="interactive" x="170" y="50" width="110" height="30" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <line class="text-line" x1="310" y1="65" x2="370" y2="65" />
+          <line class="text-line" x1="400" y1="65" x2="460" y2="65" />
+          <rect class="hover-target" x="40" y="100" width="720" height="200" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="302" x2="400" y2="314" />
+            <rect class="label-bg" x="374.5" y="314" width="51" height="20" />
+            <text class="label-text" x="400" y="328" text-anchor="middle">Panel</text>
+          </g>
+          <rect class="region" x="40" y="100" width="720" height="200" rx="4" />
+          <rect class="hover-target" x="70" y="129" width="100" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="120" y1="127" x2="120" y2="115" />
+            <rect class="label-bg" x="66.5" y="95" width="107" height="20" />
+            <text class="label-text" x="120" y="109" text-anchor="middle">Group heading</text>
+          </g>
+          <line class="text-line" x1="70" y1="135" x2="170" y2="135" />
+          <rect class="hover-target" x="70" y="159" width="140" height="57" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="140" y1="218" x2="140" y2="230" />
+            <rect class="label-bg" x="114.5" y="230" width="51" height="20" />
+            <text class="label-text" x="140" y="244" text-anchor="middle">Links</text>
+          </g>
+          <line class="text-line" x1="70" y1="165" x2="210" y2="165" />
+          <line class="text-line" x1="70" y1="180" x2="210" y2="180" />
+          <line class="text-line" x1="70" y1="195" x2="210" y2="195" />
+          <line class="text-line" x1="70" y1="210" x2="168" y2="210" />
+          <line class="text-line" x1="250" y1="135" x2="350" y2="135" />
+          <line class="text-line" x1="250" y1="165" x2="390" y2="165" />
+          <line class="text-line" x1="250" y1="180" x2="390" y2="180" />
+          <line class="text-line" x1="250" y1="195" x2="390" y2="195" />
+          <line class="text-line" x1="250" y1="210" x2="348" y2="210" />
+          <line class="text-line" x1="420" y1="135" x2="520" y2="135" />
+          <line class="text-line" x1="420" y1="165" x2="550" y2="165" />
+          <line class="text-line" x1="420" y1="180" x2="550" y2="180" />
+          <line class="text-line" x1="420" y1="195" x2="550" y2="195" />
+          <line class="text-line" x1="420" y1="210" x2="511" y2="210" />
+          <rect class="hover-target" x="580" y="125" width="150" height="110" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="655" y1="123" x2="655" y2="111" />
+            <rect class="label-bg" x="580.5" y="91" width="149" height="20" />
+            <text class="label-text" x="655" y="105" text-anchor="middle">Featured (optional)</text>
+          </g>
+          <rect class="media-placeholder" x="580" y="125" width="150" height="110" rx="4" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Panel width</td><td>Full width, Under the item</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Columns</td><td>2, 3, 4</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Featured content</td><td>None, Image and link</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Small screens</td><td>Stacked disclosures below the bar, Stacked disclosures in a Drawer</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Opens on</td><td>Click, Click and hover</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="30" rx="3" />
+              <rect class="interactive" x="60" y="26" width="60" height="18" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="140" y1="35" x2="180" y2="35" />
+              <line class="text-line" x1="200" y1="35" x2="240" y2="35" />
+              <rect class="region" x="20" y="58" width="360" height="122" rx="3" />
+              <line class="text-line" x1="40" y1="78" x2="110" y2="78" />
+              <line class="text-line" x1="40" y1="100" x2="120" y2="100" />
+              <line class="text-line" x1="40" y1="115" x2="120" y2="115" />
+              <line class="text-line" x1="40" y1="130" x2="120" y2="130" />
+              <line class="text-line" x1="40" y1="145" x2="96" y2="145" />
+              <line class="text-line" x1="155" y1="78" x2="225" y2="78" />
+              <line class="text-line" x1="155" y1="100" x2="235" y2="100" />
+              <line class="text-line" x1="155" y1="115" x2="235" y2="115" />
+              <line class="text-line" x1="155" y1="130" x2="235" y2="130" />
+              <line class="text-line" x1="155" y1="145" x2="211" y2="145" />
+              <line class="text-line" x1="270" y1="78" x2="340" y2="78" />
+              <line class="text-line" x1="270" y1="100" x2="350" y2="100" />
+              <line class="text-line" x1="270" y1="115" x2="350" y2="115" />
+              <line class="text-line" x1="270" y1="130" x2="350" y2="130" />
+              <line class="text-line" x1="270" y1="145" x2="326" y2="145" />
+            </svg>
+          </div>
+          <figcaption>Columns — three link groups</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="30" rx="3" />
+              <rect class="interactive" x="60" y="26" width="60" height="18" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="140" y1="35" x2="180" y2="35" />
+              <line class="text-line" x1="200" y1="35" x2="240" y2="35" />
+              <rect class="region" x="20" y="58" width="360" height="122" rx="3" />
+              <line class="text-line" x1="40" y1="78" x2="110" y2="78" />
+              <line class="text-line" x1="40" y1="100" x2="120" y2="100" />
+              <line class="text-line" x1="40" y1="115" x2="120" y2="115" />
+              <line class="text-line" x1="40" y1="130" x2="120" y2="130" />
+              <line class="text-line" x1="40" y1="145" x2="96" y2="145" />
+              <line class="text-line" x1="150" y1="78" x2="220" y2="78" />
+              <line class="text-line" x1="150" y1="100" x2="230" y2="100" />
+              <line class="text-line" x1="150" y1="115" x2="230" y2="115" />
+              <line class="text-line" x1="150" y1="130" x2="230" y2="130" />
+              <line class="text-line" x1="150" y1="145" x2="206" y2="145" />
+              <rect class="media-placeholder" x="260" y="72" width="100" height="90" rx="3" />
+            </svg>
+          </div>
+          <figcaption>Featured — link groups plus a promoted page</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="30" rx="3" />
+              <rect class="interactive" x="60" y="26" width="60" height="18" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="140" y1="35" x2="180" y2="35" />
+              <line class="text-line" x1="200" y1="35" x2="240" y2="35" />
+              <rect class="region" x="60" y="58" width="180" height="122" rx="3" />
+              <line class="text-line" x1="78" y1="78" x2="158" y2="78" />
+              <line class="text-line" x1="78" y1="100" x2="208" y2="100" />
+              <line class="text-line" x1="78" y1="115" x2="208" y2="115" />
+              <line class="text-line" x1="78" y1="130" x2="208" y2="130" />
+              <line class="text-line" x1="78" y1="145" x2="169" y2="145" />
+            </svg>
+          </div>
+          <figcaption>Under the item — narrow panel below its button</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="130" y="10" width="140" height="180" rx="8" />
+              <line class="text-line" x1="145" y1="35" x2="215" y2="35" />
+              <circle class="region" cx="250" cy="35" r="5" />
+              <line class="text-line" x1="145" y1="65" x2="225" y2="65" />
+              <circle class="interactive" cx="250" cy="65" r="5" style="fill: var(--wireframe-interactive)" />
+              <line class="text-line" x1="160" y1="88" x2="250" y2="88" />
+              <line class="text-line" x1="160" y1="103" x2="250" y2="103" />
+              <line class="text-line" x1="160" y1="118" x2="223" y2="118" />
+              <line class="text-line" x1="145" y1="145" x2="215" y2="145" />
+              <circle class="region" cx="250" cy="145" r="5" />
+              <line class="text-line" x1="145" y1="170" x2="205" y2="170" />
+              <circle class="region" cx="250" cy="170" r="5" />
+            </svg>
+          </div>
+          <figcaption>Small screen — stacked disclosures, one open</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Open each panel with a <code>&lt;button aria-expanded aria-controls&gt;</code>, as in the ARIA Authoring Practices disclosure navigation example. Don't use <code>role="menu"</code>: it expects application-style arrow-key behavior and changes how the links are announced.</li>
+        <li>Panels must open on click, Enter and Space, and close with Escape, returning focus to the button. If they also open on hover, keep them open while the pointer moves into the panel (WCAG 1.4.13).</li>
+        <li>Give each link group a heading and mark the links up as a list, so screen reader users can skim the panel's structure.</li>
+        <li>If the top-level item also has its own page, add a link to it inside the panel, such as "All products". Don't make the button both open the panel and navigate.</li>
+        <li>On small screens, show the same groups as stacked Disclosures, often inside a Drawer.</li>
+      </ul>
     </section>
 
     <section>

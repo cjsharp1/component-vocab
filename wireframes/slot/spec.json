@@ -1,0 +1,53 @@
+{
+  "default": {
+    "height": 340,
+    "shapes": [
+      { "type": "region", "x": 100, "y": 50, "w": 600, "h": 250, "rx": 6, "label": "Grid" },
+      { "type": "region", "x": 120, "y": 70, "w": 270, "h": 210, "rx": 4, "label": "Slot", "at": "below" },
+      { "type": "line", "x": 140, "y": 100, "w": 150 },
+      { "type": "lines", "x": 140, "y": 125, "w": 220, "count": 3, "label": "Content blocks", "at": "below" },
+      { "type": "media", "x": 140, "y": 205, "w": 230, "h": 55, "rx": 4 },
+      { "type": "region", "x": 410, "y": 70, "w": 270, "h": 210, "rx": 4 },
+      { "type": "optional", "x": 430, "y": 90, "w": 230, "h": 170, "rx": 4, "label": "Padding (optional)", "at": "below" },
+      { "type": "lines", "x": 450, "y": 125, "w": 190, "count": 3 },
+      { "type": "filled", "x": 450, "y": 200, "w": 110, "h": 36, "rx": 6 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "region", "x": 20, "y": 8, "w": 210, "h": 64, "rx": 4 },
+      { "type": "region", "x": 30, "y": 16, "w": 92, "h": 48, "rx": 3 },
+      { "type": "line", "x": 40, "y": 28, "w": 60 },
+      { "type": "line", "x": 40, "y": 40, "w": 70, "weight": 1 },
+      { "type": "region", "x": 128, "y": 16, "w": 92, "h": 48, "rx": 3 },
+      { "type": "line", "x": 138, "y": 28, "w": 60 },
+      { "type": "line", "x": 138, "y": 40, "w": 70, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "region", "x": 20, "y": 20, "w": 360, "h": 160, "rx": 4 },
+      { "type": "region", "x": 30, "y": 30, "w": 106, "h": 140, "rx": 3 },
+      { "type": "lines", "x": 42, "y": 48, "w": 80, "count": 2 },
+      { "type": "region", "x": 147, "y": 30, "w": 106, "h": 140, "rx": 3 },
+      { "type": "lines", "x": 159, "y": 93, "w": 80, "count": 2 },
+      { "type": "region", "x": 264, "y": 30, "w": 106, "h": 140, "rx": 3 },
+      { "type": "lines", "x": 276, "y": 140, "w": 80, "count": 2 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 20, "y": 20, "w": 360, "h": 160, "rx": 4 },
+      { "type": "region", "x": 30, "y": 30, "w": 165, "h": 140, "rx": 3 },
+      { "type": "lines", "x": 45, "y": 62, "w": 130, "count": 3 },
+      { "type": "region", "x": 205, "y": 30, "w": 165, "h": 140, "rx": 3 },
+      { "type": "optional", "x": 220, "y": 45, "w": 135, "h": 110, "rx": 3 },
+      { "type": "lines", "x": 232, "y": 62, "w": 110, "count": 3 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 140, "y": 15, "w": 120, "h": 170, "rx": 8 },
+      { "type": "region", "x": 152, "y": 27, "w": 96, "h": 68, "rx": 3 },
+      { "type": "text", "x": 200, "y": 66, "value": "2", "size": 18 },
+      { "type": "region", "x": 152, "y": 105, "w": 96, "h": 68, "rx": 3 },
+      { "type": "text", "x": 200, "y": 144, "value": "1", "size": 18 }
+    ] }
+  ]
+}

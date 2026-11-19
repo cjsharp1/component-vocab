@@ -2,19 +2,94 @@
   "slug": "mega-menu",
   "name": "Mega menu",
   "order": 43,
-  "status": "draft",
+  "status": "stable",
   "group": "wayfinding",
-  "description": "A Navigation variant, not a Menu",
-  "summary": "A Navigation variant, not a Menu",
-  "htmlElement": "",
+  "description": "A large panel of grouped links that opens from a top-level item in the site Navigation, for sections with too many pages for a short list. It is built from disclosure buttons and lists of links, not from an ARIA <code>menu</code>.",
+  "summary": "Large panel of grouped navigation links",
+  "htmlElement": "<code>&lt;nav&gt;</code> with <code>&lt;button aria-expanded&gt;</code> and lists of links",
   "nativeHtml": "`<nav>` + disclosure buttons",
   "aria": "disclosure-navigation example",
   "researchNote": "A Navigation variant, not a Menu",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Top-level item",
+      "required": "Yes",
+      "description": "Button with aria-expanded and aria-controls that opens its panel"
+    },
+    {
+      "name": "Panel",
+      "required": "Yes",
+      "description": "Panel below the navigation bar, hidden until opened"
+    },
+    {
+      "name": "Link group",
+      "required": "Yes",
+      "description": "Heading and list of links for one subsection"
+    },
+    {
+      "name": "Featured content",
+      "required": "No",
+      "description": "A promoted page with an image and a link"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Panel width",
+      "options": "Full width, Under the item",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Columns",
+      "options": "2, 3, 4",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Featured content",
+      "options": "None, Image and link",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Small screens",
+      "options": "Stacked disclosures below the bar, Stacked disclosures in a Drawer",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Opens on",
+      "options": "Click, Click and hover",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Columns — three link groups",
+      "wireframe": "wireframes/mega-menu/variation-1.svg"
+    },
+    {
+      "caption": "Featured — link groups plus a promoted page",
+      "wireframe": "wireframes/mega-menu/variation-2.svg"
+    },
+    {
+      "caption": "Under the item — narrow panel below its button",
+      "wireframe": "wireframes/mega-menu/variation-3.svg"
+    },
+    {
+      "caption": "Small screen — stacked disclosures, one open",
+      "wireframe": "wireframes/mega-menu/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Open each panel with a <code>&lt;button aria-expanded aria-controls&gt;</code>, as in the ARIA Authoring Practices disclosure navigation example. Don't use <code>role=\"menu\"</code>: it expects application-style arrow-key behavior and changes how the links are announced.",
+    "Panels must open on click, Enter and Space, and close with Escape, returning focus to the button. If they also open on hover, keep them open while the pointer moves into the panel (WCAG 1.4.13).",
+    "Give each link group a heading and mark the links up as a list, so screen reader users can skim the panel's structure.",
+    "If the top-level item also has its own page, add a link to it inside the panel, such as \"All products\". Don't make the button both open the panel and navigate.",
+    "On small screens, show the same groups as stacked Disclosures, often inside a Drawer."
+  ],
   "related": [],
   "aliases": [],
   "frameworkSource": "none",
@@ -62,5 +137,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<nav aria-label=\"Main\">\n  <ul>\n    <li>\n      <button aria-expanded=\"false\" aria-controls=\"products\">Products</button>\n      <div id=\"products\" hidden>\n        <!-- columns of links -->\n      </div>\n    </li>\n  </ul>\n</nav>"
+  "htmlOutline": "<nav aria-label=\"Main\">\n  <ul>\n    <li>\n      <button aria-expanded=\"false\" aria-controls=\"products\">Products</button>\n      <div id=\"products\" hidden>\n        <!-- columns of links -->\n      </div>\n    </li>\n  </ul>\n</nav>",
+  "wireframe": "wireframes/mega-menu/default.svg",
+  "thumbnail": "wireframes/mega-menu/thumbnail.svg"
 }

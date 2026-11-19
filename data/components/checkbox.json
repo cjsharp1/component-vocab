@@ -2,19 +2,95 @@
   "slug": "checkbox",
   "name": "Checkbox",
   "order": 69,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "A box that people tick to turn one option on or off, or to pick any number of options from a set. Use a Switch instead when the change takes effect immediately.",
+  "summary": "Tick one or more independent options",
+  "htmlElement": "<code>&lt;input type=\"checkbox\"&gt;</code>",
   "nativeHtml": "`<input type=\"checkbox\">`",
   "aria": "Checkbox",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Box",
+      "required": "Yes",
+      "description": "The control: unchecked, checked or indeterminate"
+    },
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Clickable text in a <code>&lt;label&gt;</code> that names the option"
+    },
+    {
+      "name": "Hint text",
+      "required": "No",
+      "description": "Extra detail under the label, linked with <code>aria-describedby</code>"
+    },
+    {
+      "name": "Legend",
+      "required": "No",
+      "description": "<code>&lt;legend&gt;</code> that asks the question for a group of checkboxes"
+    },
+    {
+      "name": "Error message",
+      "required": "No",
+      "description": "Says what to do, such as \"Select at least one topic\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Single, Group stacked, Group inline",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Hint",
+      "options": "None, Under each label",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Unchecked, Checked, Indeterminate, Disabled",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Group stacked — options in a column under a legend",
+      "wireframe": "wireframes/checkbox/variation-1.svg"
+    },
+    {
+      "caption": "Group inline — short options in a row",
+      "wireframe": "wireframes/checkbox/variation-2.svg"
+    },
+    {
+      "caption": "With hints — a line of detail under each label",
+      "wireframe": "wireframes/checkbox/variation-3.svg"
+    },
+    {
+      "caption": "Size — small, medium, large",
+      "wireframe": "wireframes/checkbox/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Checkbox when each option stands alone and any combination is valid. When exactly one option must be chosen, use a Radio group.",
+    "Put related checkboxes in a <code>&lt;fieldset&gt;</code> whose <code>&lt;legend&gt;</code> asks the question. Each box still needs its own <code>&lt;label&gt;</code>.",
+    "Wrap the input in its <code>&lt;label&gt;</code> or link them with <code>for</code>, so clicking the text toggles the box. This also gives a larger target (WCAG 2.5.8).",
+    "Use the indeterminate state only for a parent box whose children are partly checked. It is set with script (<code>indeterminate = true</code>) and is not a submitted value.",
+    "An unchecked box sends nothing with the form. When agreement is required, use <code>required</code> and an error that says what to do, such as \"Confirm that you agree to the terms\"."
+  ],
+  "wireframe": "wireframes/checkbox/default.svg",
+  "thumbnail": "wireframes/checkbox/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

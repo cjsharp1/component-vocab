@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="200" y="84" width="120" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="260" y1="82" x2="260" y2="70" />
+    <rect class="label-bg" x="234.5" y="50" width="51" height="20" />
+    <text class="label-text" x="260" y="64" text-anchor="middle">Label</text>
+  </g>
+  <line class="text-line" x1="200" y1="90" x2="320" y2="90" />
+  <rect class="hover-target" x="540" y="84" width="60" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="570" y1="82" x2="570" y2="70" />
+    <rect class="label-bg" x="506" y="50" width="128" height="20" />
+    <text class="label-text" x="570" y="64" text-anchor="middle">Value (optional)</text>
+  </g>
+  <line class="text-line" x1="540" y1="90" x2="600" y2="90" />
+  <rect class="hover-target" x="200" y="145" width="400" height="8" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="155" x2="400" y2="167" />
+    <rect class="label-bg" x="374.5" y="167" width="51" height="20" />
+    <text class="label-text" x="400" y="181" text-anchor="middle">Track</text>
+  </g>
+  <rect class="region" x="200" y="145" width="400" height="8" rx="4" />
+  <rect class="interactive" x="200" y="145" width="160" height="8" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="hover-target" x="347" y="136" width="26" height="26" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="360" y1="134" x2="360" y2="122" />
+    <rect class="label-bg" x="334.5" y="102" width="51" height="20" />
+    <text class="label-text" x="360" y="116" text-anchor="middle">Thumb</text>
+  </g>
+  <circle class="interactive" cx="360" cy="149" r="13" />
+  <text x="200" y="185" font-size="12" text-anchor="middle">0</text>
+  <text x="600" y="185" font-size="12" text-anchor="middle">100</text>
+</svg>

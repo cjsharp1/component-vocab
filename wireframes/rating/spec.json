@@ -1,0 +1,61 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "text", "x": 200, "y": 165, "value": "★", "size": 32, "label": "Filled star" },
+      { "type": "text", "x": 245, "y": 165, "value": "★", "size": 32 },
+      { "type": "text", "x": 290, "y": 165, "value": "★", "size": 32 },
+      { "type": "text", "x": 335, "y": 165, "value": "★", "size": 32 },
+      { "type": "text", "x": 380, "y": 165, "value": "☆", "size": 32, "label": "Empty star", "at": "below" },
+      { "type": "line", "x": 430, "y": 155, "w": 60, "label": "Value text" },
+      { "type": "line", "x": 520, "y": 155, "w": 80, "weight": 1, "label": "Count (optional)", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "text", "x": 50, "y": 50, "value": "★", "size": 22 },
+      { "type": "text", "x": 78, "y": 50, "value": "★", "size": 22 },
+      { "type": "text", "x": 106, "y": 50, "value": "★", "size": 22 },
+      { "type": "text", "x": 134, "y": 50, "value": "★", "size": 22 },
+      { "type": "text", "x": 162, "y": 50, "value": "☆", "size": 22 },
+      { "type": "line", "x": 185, "y": 43, "w": 40 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "text", "x": 70, "y": 108, "value": "★", "size": 24 },
+      { "type": "text", "x": 95, "y": 108, "value": "★", "size": 24 },
+      { "type": "text", "x": 120, "y": 108, "value": "★", "size": 24 },
+      { "type": "text", "x": 145, "y": 108, "value": "★", "size": 24 },
+      { "type": "text", "x": 170, "y": 108, "value": "☆", "size": 24 },
+      { "type": "line", "x": 195, "y": 100, "w": 40 },
+      { "type": "line", "x": 250, "y": 100, "w": 80, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "text", "x": 150, "y": 110, "value": "★", "size": 28 },
+      { "type": "line", "x": 175, "y": 100, "w": 50 },
+      { "type": "line", "x": 240, "y": 100, "w": 60, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 80, "y": 40, "w": 240, "h": 120, "rx": 6 },
+      { "type": "line", "x": 100, "y": 65, "w": 100 },
+      { "type": "text", "x": 120, "y": 128, "value": "★", "size": 32 },
+      { "type": "text", "x": 160, "y": 128, "value": "★", "size": 32 },
+      { "type": "text", "x": 200, "y": 128, "value": "★", "size": 32 },
+      { "type": "text", "x": 240, "y": 128, "value": "☆", "size": 32 },
+      { "type": "text", "x": 280, "y": 128, "value": "☆", "size": 32 }
+    ] },
+    { "shapes": [
+      { "type": "text", "x": 140, "y": 75, "value": "★", "size": 16 },
+      { "type": "text", "x": 158, "y": 75, "value": "★", "size": 16 },
+      { "type": "text", "x": 176, "y": 75, "value": "★", "size": 16 },
+      { "type": "text", "x": 194, "y": 75, "value": "★", "size": 16 },
+      { "type": "text", "x": 212, "y": 75, "value": "☆", "size": 16 },
+      { "type": "text", "x": 120, "y": 145, "value": "★", "size": 32 },
+      { "type": "text", "x": 160, "y": 145, "value": "★", "size": 32 },
+      { "type": "text", "x": 200, "y": 145, "value": "★", "size": 32 },
+      { "type": "text", "x": 240, "y": 145, "value": "★", "size": 32 },
+      { "type": "text", "x": 280, "y": 145, "value": "☆", "size": 32 }
+    ] }
+  ]
+}

@@ -2,19 +2,88 @@
   "slug": "segmented-control",
   "name": "Segmented control",
   "order": 34,
-  "status": "draft",
+  "status": "stable",
   "group": "actions",
-  "description": "Mutually exclusive options",
-  "summary": "Mutually exclusive options",
-  "htmlElement": "",
+  "description": "A row of joined segments for choosing one option from a small set, such as List or Grid view. Build it from radio inputs in a <code>&lt;fieldset&gt;</code> so it behaves like a Radio group.",
+  "summary": "Pick one of a few options in a joined row",
+  "htmlElement": "<code>&lt;fieldset&gt;</code> of <code>&lt;input type=\"radio\"&gt;</code>",
   "nativeHtml": "radio inputs or buttons",
   "aria": "",
   "researchNote": "Mutually exclusive options",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Legend naming the choice; can be visually hidden if the context is clear"
+    },
+    {
+      "name": "Segment",
+      "required": "Yes",
+      "description": "One option, with text, an icon or both"
+    },
+    {
+      "name": "Selected segment",
+      "required": "Yes",
+      "description": "Exactly one segment is selected and shown filled"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Content",
+      "options": "Text, Icon only, Icon and text",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Auto, Full width (equal segments)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Label",
+      "options": "Visible above, Visually hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Applies",
+      "options": "Immediately, On form submit",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Text — three labeled segments",
+      "wireframe": "wireframes/segmented-control/variation-1.svg"
+    },
+    {
+      "caption": "Icon only — view switcher",
+      "wireframe": "wireframes/segmented-control/variation-2.svg"
+    },
+    {
+      "caption": "Full width — equal segments across the container",
+      "wireframe": "wireframes/segmented-control/variation-3.svg"
+    },
+    {
+      "caption": "Visible label — legend above the segments",
+      "wireframe": "wireframes/segmented-control/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use it for two to five short, mutually exclusive options. With more options or long labels, use a Radio group or a Select.",
+    "Radio inputs give the expected keyboard behavior for free: one tab stop, with arrow keys moving the selection. If you build it from buttons instead, follow the ARIA Authoring Practices radio group pattern.",
+    "If each option shows a different panel of content, use Tabs. A Segmented control changes a value or a view setting.",
+    "Icon-only segments need an accessible name each. Show the selected segment with more than a color change, and give it 3:1 contrast against the others (WCAG 1.4.1, 1.4.11)."
+  ],
   "related": [],
   "aliases": [
     "Toggle button group"
@@ -71,5 +140,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<fieldset class=\"segmented\">\n  <legend>View</legend>\n  <label><input type=\"radio\" name=\"view\" checked> List</label>\n  <label><input type=\"radio\" name=\"view\"> Grid</label>\n</fieldset>"
+  "htmlOutline": "<fieldset class=\"segmented\">\n  <legend>View</legend>\n  <label><input type=\"radio\" name=\"view\" checked> List</label>\n  <label><input type=\"radio\" name=\"view\"> Grid</label>\n</fieldset>",
+  "wireframe": "wireframes/segmented-control/default.svg",
+  "thumbnail": "wireframes/segmented-control/thumbnail.svg"
 }

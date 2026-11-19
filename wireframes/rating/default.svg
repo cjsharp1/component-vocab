@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="190" y="153" width="20" height="16" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="200" y1="151" x2="200" y2="139" />
+    <rect class="label-bg" x="153.5" y="119" width="93" height="20" />
+    <text class="label-text" x="200" y="133" text-anchor="middle">Filled star</text>
+  </g>
+  <text x="200" y="165" font-size="32" text-anchor="middle">★</text>
+  <text x="245" y="165" font-size="32" text-anchor="middle">★</text>
+  <text x="290" y="165" font-size="32" text-anchor="middle">★</text>
+  <text x="335" y="165" font-size="32" text-anchor="middle">★</text>
+  <rect class="hover-target" x="370" y="153" width="20" height="16" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="380" y1="171" x2="380" y2="183" />
+    <rect class="label-bg" x="337" y="183" width="86" height="20" />
+    <text class="label-text" x="380" y="197" text-anchor="middle">Empty star</text>
+  </g>
+  <text x="380" y="165" font-size="32" text-anchor="middle">☆</text>
+  <rect class="hover-target" x="430" y="149" width="60" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="460" y1="147" x2="460" y2="135" />
+    <rect class="label-bg" x="417" y="115" width="86" height="20" />
+    <text class="label-text" x="460" y="129" text-anchor="middle">Value text</text>
+  </g>
+  <line class="text-line" x1="430" y1="155" x2="490" y2="155" />
+  <rect class="hover-target" x="520" y="149" width="80" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="560" y1="163" x2="560" y2="175" />
+    <rect class="label-bg" x="496" y="175" width="128" height="20" />
+    <text class="label-text" x="560" y="189" text-anchor="middle">Count (optional)</text>
+  </g>
+  <line class="text-line" x1="520" y1="155" x2="600" y2="155" stroke-width="1" opacity="0.7" />
+</svg>

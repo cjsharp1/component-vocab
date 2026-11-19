@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="interactive" x="70" y="80" width="120" height="40" rx="6" />
+  <line class="text-line" x1="100" y1="100" x2="160" y2="100" />
+  <rect class="interactive" x="210" y="80" width="120" height="40" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <line class="text-line" x1="240" y1="100" x2="300" y2="100" />
+</svg>

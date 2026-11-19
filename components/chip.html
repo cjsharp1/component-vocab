@@ -30,14 +30,17 @@
 
     <section>
       <h1>Chip</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Interactive: removable or selectable</p>
+      <p>A compact control for a filter option or an entered value that can be selected or removed, such as a filter for "Remote" jobs or a recipient in an email field. For a static category, use a Tag.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Chip (MUI, Polaris)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;button&gt;</code> with <code>aria-pressed</code>, or text with a remove <code>&lt;button&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;button&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>Interactive: removable or selectable</dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -51,6 +54,158 @@
 &lt;span class="chip"&gt;
   Paris &lt;button aria-label="Remove Paris"&gt;×&lt;/button&gt;
 &lt;/span&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Label</td><td>Yes</td><td>The option or value, kept short</td></tr>
+          <tr><td>Leading icon</td><td>No</td><td>Icon, Avatar or check mark before the label</td></tr>
+          <tr><td>Remove button</td><td>No</td><td>A separate <code>&lt;button&gt;</code> named like "Remove Paris"</td></tr>
+          <tr><td>Selected state</td><td>No</td><td>Fill plus a check mark, so the state doesn't depend on color alone</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="150" y="132" width="130" height="36" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="215" y1="130" x2="215" y2="118" />
+            <rect class="label-bg" x="179" y="98" width="72" height="20" />
+            <text class="label-text" x="215" y="112" text-anchor="middle">Selected</text>
+          </g>
+          <rect class="interactive" x="150" y="132" width="130" height="36" rx="18" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+          <text x="172" y="155" font-size="14" text-anchor="middle">✓</text>
+          <line class="text-line" x1="188" y1="150" x2="258" y2="150" />
+          <rect class="hover-target" x="310" y="132" width="110" height="36" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="365" y1="170" x2="365" y2="182" />
+            <rect class="label-bg" x="322" y="182" width="86" height="20" />
+            <text class="label-text" x="365" y="196" text-anchor="middle">Unselected</text>
+          </g>
+          <rect class="interactive" x="310" y="132" width="110" height="36" rx="18" />
+          <line class="text-line" x1="330" y1="150" x2="400" y2="150" />
+          <rect class="interactive" x="470" y="132" width="150" height="36" rx="18" />
+          <rect class="hover-target" x="482" y="140" width="20" height="20" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="492" y1="138" x2="492" y2="126" />
+            <rect class="label-bg" x="424.5" y="106" width="135" height="20" />
+            <text class="label-text" x="492" y="120" text-anchor="middle">Avatar (optional)</text>
+          </g>
+          <circle class="media-placeholder" cx="492" cy="150" r="10" />
+          <line class="text-line" x1="510" y1="150" x2="580" y2="150" />
+          <rect class="hover-target" x="591" y="141" width="18" height="18" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="600" y1="161" x2="600" y2="173" />
+            <rect class="label-bg" x="546.5" y="173" width="107" height="20" />
+            <text class="label-text" x="600" y="187" text-anchor="middle">Remove button</text>
+          </g>
+          <circle class="region" cx="600" cy="150" r="9" />
+          <text x="600" y="154" font-size="13" text-anchor="middle">×</text>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Type</td><td>Filter (toggles on and off), Input (removable value)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Selected</td><td>On, Off</td><td>No</td></tr>
+          <tr><td>Leading</td><td>None, Icon, Avatar, Check mark when selected</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Medium</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>State</td><td>Default, Disabled</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="60" y="82" width="100" height="36" rx="18" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <text x="80" y="105" font-size="14" text-anchor="middle">✓</text>
+              <line class="text-line" x1="95" y1="100" x2="145" y2="100" />
+              <rect class="interactive" x="175" y="82" width="80" height="36" rx="18" />
+              <line class="text-line" x1="195" y1="100" x2="235" y2="100" />
+              <rect class="interactive" x="270" y="82" width="80" height="36" rx="18" />
+              <line class="text-line" x1="290" y1="100" x2="330" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Filter — one selected, two not</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="40" y="75" width="320" height="50" rx="6" />
+              <rect class="interactive" x="52" y="85" width="100" height="30" rx="15" />
+              <line class="text-line" x1="66" y1="100" x2="116" y2="100" />
+              <text x="136" y="104" font-size="13" text-anchor="middle">×</text>
+              <rect class="interactive" x="160" y="85" width="100" height="30" rx="15" />
+              <line class="text-line" x1="174" y1="100" x2="224" y2="100" />
+              <text x="244" y="104" font-size="13" text-anchor="middle">×</text>
+              <line class="text-line" x1="272" y1="100" x2="332" y2="100" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Input — removable values inside a field</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="70" y="82" width="120" height="36" rx="18" />
+              <circle class="region" cx="90" cy="100" r="8" />
+              <line class="text-line" x1="106" y1="100" x2="172" y2="100" />
+              <rect class="interactive" x="210" y="82" width="120" height="36" rx="18" />
+              <circle class="media-placeholder" cx="228" cy="100" r="12" />
+              <line class="text-line" x1="246" y1="100" x2="312" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Leading — icon and Avatar</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="90" y="88" width="80" height="24" rx="12" />
+              <line class="text-line" x1="105" y1="100" x2="155" y2="100" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="190" y="80" width="120" height="40" rx="20" />
+              <line class="text-line" x1="215" y1="100" x2="285" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Size — small and medium</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>A Chip is interactive; a Tag and a Badge are not. If nothing happens when it's pressed, use a Tag.</li>
+        <li>Build a filter chip as a <code>&lt;button&gt;</code> with <code>aria-pressed</code>, like the APG toggle button. When only one option can be chosen, use a Radio group or Segmented control rather than chips that just look exclusive.</li>
+        <li>Make the remove control its own <code>&lt;button&gt;</code> with a name that includes the value, such as "Remove Paris". A bare "×" gives screen reader users nothing to go on.</li>
+        <li>When a chip is removed, move focus to the next chip or back to the input so keyboard users keep their place.</li>
+        <li>Show the selected state with more than color, such as a check mark plus a change of fill (WCAG 1.4.1 Use of Color).</li>
+      </ul>
     </section>
 
     <section>

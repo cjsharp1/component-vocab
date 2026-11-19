@@ -30,14 +30,17 @@
 
     <section>
       <h1>Label</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>The word "label" is reserved for this</p>
+      <p>The visible name of a form control, tied to it so that clicking the text focuses the control and screen readers announce the name. Every input, select and textarea needs one.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Form label. In design systems: Label (shadcn/ui, Fluent UI)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;label&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;label&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>The word "label" is reserved for this</dd>
         <dt>Category</dt>
         <dd>H. Forms</dd>
       </dl>
@@ -48,6 +51,121 @@
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="name"&gt;Full name&lt;/label&gt;
 &lt;input id="name" name="name"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Text</td><td>Yes</td><td>Names the control in a few words</td></tr>
+          <tr><td>Required marker</td><td>No</td><td>Marks required or optional fields; its meaning is explained in text</td></tr>
+          <tr><td>Hint</td><td>No</td><td>Extra guidance under the label, linked to the control with <code>aria-describedby</code></td></tr>
+          <tr><td>Control</td><td>Yes</td><td>The field it names, matched by <code>for</code> and <code>id</code> or nested inside the label</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="200" y="109" width="120" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="260" y1="107" x2="260" y2="95" />
+            <rect class="label-bg" x="217" y="75" width="86" height="20" />
+            <text class="label-text" x="260" y="89" text-anchor="middle">Label text</text>
+          </g>
+          <line class="text-line" x1="200" y1="115" x2="320" y2="115" />
+          <rect class="hover-target" x="335" y="109" width="70" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="370" y1="107" x2="370" y2="95" />
+            <rect class="label-bg" x="309.5" y="75" width="121" height="20" />
+            <text class="label-text" x="370" y="89" text-anchor="middle">Required marker</text>
+          </g>
+          <line class="text-line" x1="335" y1="115" x2="405" y2="115" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="200" y="140" width="400" height="44" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="186" x2="400" y2="198" />
+            <rect class="label-bg" x="367.5" y="198" width="65" height="20" />
+            <text class="label-text" x="400" y="212" text-anchor="middle">Control</text>
+          </g>
+          <rect class="interactive" x="200" y="140" width="400" height="44" rx="4" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Position</td><td>Above, Beside (start)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Hint</td><td>None, Below the label</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Association</td><td>Separate (for / id), Wraps the control (checkbox, radio)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Required marking</td><td>None, Asterisk, "(optional)" text</td><td>No</td></tr>
+          <tr><td>Visibility</td><td>Visible, Visually hidden</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="100" x2="120" y2="100" />
+              <rect class="interactive" x="140" y="82" width="220" height="36" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Beside — label to the start of the field</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="60" x2="160" y2="60" />
+              <line class="text-line" x1="60" y1="85" x2="280" y2="85" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="60" y="105" width="280" height="36" rx="4" />
+            </svg>
+          </div>
+          <figcaption>Hint — guidance under the label</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="80" y="70" width="20" height="20" rx="3" />
+              <line class="text-line" x1="115" y1="80" x2="255" y2="80" />
+              <rect class="interactive" x="80" y="110" width="20" height="20" rx="3" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="115" y1="120" x2="225" y2="120" />
+            </svg>
+          </div>
+          <figcaption>Wraps the control — label after each checkbox</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>The name Label is reserved for the form element. For a short category marker use a Tag, and for a status use a Badge.</li>
+        <li>Connect it with <code>for</code> matching the control's <code>id</code>, or by wrapping the control. Clicking the label then focuses or toggles the control, which also makes small checkboxes easier to hit.</li>
+        <li>Keep the label visible. Placeholder text is not a label: it disappears when people type and often has low contrast (WCAG 3.3.2 Labels or Instructions).</li>
+        <li>If the accessible name differs from the visible text, it must contain that text (WCAG 2.5.3 Label in Name), so voice control users can say what they see.</li>
+        <li>Mark either the required fields or the optional ones and say what the marker means. Add the <code>required</code> attribute so the requirement is announced.</li>
+      </ul>
     </section>
 
     <section>

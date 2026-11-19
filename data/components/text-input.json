@@ -2,19 +2,101 @@
   "slug": "text-input",
   "name": "Text input",
   "order": 65,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "A single-line field for short free text, such as a name, email address or city. For answers that may run to several lines, use a Textarea.",
+  "summary": "Single-line field for short text",
+  "htmlElement": "<code>&lt;input type=\"text\"&gt;</code>, or a more specific type such as email, tel or url",
   "nativeHtml": "`<input type=\"text\">`",
   "aria": "",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible name linked with <code>for</code>; see Label"
+    },
+    {
+      "name": "Field",
+      "required": "Yes",
+      "description": "The input box; its width hints at the expected length"
+    },
+    {
+      "name": "Hint",
+      "required": "No",
+      "description": "Format or guidance, linked with <code>aria-describedby</code>"
+    },
+    {
+      "name": "Prefix or suffix",
+      "required": "No",
+      "description": "Fixed text or icon, such as a currency sign or unit, outside the typed value"
+    },
+    {
+      "name": "Error message",
+      "required": "No",
+      "description": "Says what's wrong and how to fix it; linked with <code>aria-describedby</code>"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Width",
+      "options": "Full, Fixed to the expected length",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Adornment",
+      "options": "None, Prefix, Suffix, Icon",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Default, Error, Disabled, Read-only",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Type",
+      "options": "text, email, tel, url, password, search",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Width — fixed for short values, full for long ones",
+      "wireframe": "wireframes/text-input/variation-1.svg"
+    },
+    {
+      "caption": "Prefix and suffix — currency sign and unit",
+      "wireframe": "wireframes/text-input/variation-2.svg"
+    },
+    {
+      "caption": "Error — message above the field",
+      "wireframe": "wireframes/text-input/variation-3.svg"
+    },
+    {
+      "caption": "Size — small, medium and large",
+      "wireframe": "wireframes/text-input/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Pick the most specific <code>type</code> (email, tel, url) and add <code>inputmode</code> where it helps, so mobile keyboards match. For digits that aren't amounts, like card numbers, use <code>inputmode=\"numeric\"</code> rather than <code>type=\"number\"</code>; for a quantity with +/- buttons, use a Number input.",
+    "Add <code>autocomplete</code> to fields that collect the user's own details, such as name, email and address (WCAG 1.3.5 Identify Input Purpose).",
+    "Every field needs a visible Label. Placeholder text isn't a substitute, and format help belongs in a hint linked with <code>aria-describedby</code>.",
+    "Show errors as text next to the field, set <code>aria-invalid=\"true\"</code> and link the message with <code>aria-describedby</code> (WCAG 3.3.1 Error Identification).",
+    "Size the field to the expected answer: short for a postcode, full width for a street address."
+  ],
+  "wireframe": "wireframes/text-input/default.svg",
+  "thumbnail": "wireframes/text-input/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

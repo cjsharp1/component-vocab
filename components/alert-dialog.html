@@ -30,16 +30,19 @@
 
     <section>
       <h1>Alert dialog</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Demands a response</p>
+      <p>A Dialog that interrupts the user to confirm or acknowledge something important, such as deleting a file. It stays open until the user picks a response.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Confirm dialog. In design systems: Popconfirm (Ant Design); Alert Dialog (Radix Themes, shadcn/ui); Alerts (Apple HIG)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;dialog&gt;</code> with <code>role="alertdialog"</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;dialog role="alertdialog"&gt;</code></dd>
         <dt>ARIA pattern</dt>
         <dd>Alert and Message Dialogs</dd>
+        <dt>Research note</dt>
+        <dd>Demands a response</dd>
         <dt>Category</dt>
         <dd>F. Disclosure and overlays</dd>
       </dl>
@@ -54,6 +57,165 @@
   &lt;button&gt;Cancel&lt;/button&gt;
   &lt;button&gt;Delete&lt;/button&gt;
 &lt;/dialog&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Title</td><td>Yes</td><td>States the question or warning; referenced by aria-labelledby</td></tr>
+          <tr><td>Message</td><td>Yes</td><td>Explains the consequence; referenced by aria-describedby</td></tr>
+          <tr><td>Confirm button</td><td>Yes</td><td>Names the action, such as "Delete file"</td></tr>
+          <tr><td>Cancel button</td><td>No</td><td>Closes without acting; left out only when the dialog just needs acknowledging</td></tr>
+          <tr><td>Backdrop</td><td>Yes</td><td>Covers the page; the dialog is always modal</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="40" y="40" width="720" height="290" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="38" x2="400" y2="26" />
+            <rect class="label-bg" x="364" y="6" width="72" height="20" />
+            <text class="label-text" x="400" y="20" text-anchor="middle">Backdrop</text>
+          </g>
+          <rect class="region" x="40" y="40" width="720" height="290" rx="6" />
+          <rect class="region" x="230" y="70" width="340" height="220" rx="8" />
+          <rect class="hover-target" x="260" y="109" width="170" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="345" y1="107" x2="345" y2="95" />
+            <rect class="label-bg" x="319.5" y="75" width="51" height="20" />
+            <text class="label-text" x="345" y="89" text-anchor="middle">Title</text>
+          </g>
+          <line class="text-line" x1="260" y1="115" x2="430" y2="115" />
+          <rect class="hover-target" x="260" y="144" width="280" height="27" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="173" x2="400" y2="185" />
+            <rect class="label-bg" x="367.5" y="185" width="65" height="20" />
+            <text class="label-text" x="400" y="199" text-anchor="middle">Message</text>
+          </g>
+          <line class="text-line" x1="260" y1="150" x2="540" y2="150" />
+          <line class="text-line" x1="260" y1="165" x2="456" y2="165" />
+          <rect class="hover-target" x="370" y="225" width="90" height="36" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="415" y1="263" x2="415" y2="275" />
+            <rect class="label-bg" x="386" y="275" width="58" height="20" />
+            <text class="label-text" x="415" y="289" text-anchor="middle">Cancel</text>
+          </g>
+          <rect class="interactive" x="370" y="225" width="90" height="36" rx="6" />
+          <line class="text-line" x1="390" y1="243" x2="440" y2="243" />
+          <rect class="hover-target" x="470" y="225" width="80" height="36" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="510" y1="263" x2="510" y2="275" />
+            <rect class="label-bg" x="477.5" y="275" width="65" height="20" />
+            <text class="label-text" x="510" y="289" text-anchor="middle">Confirm</text>
+          </g>
+          <rect class="interactive" x="470" y="225" width="80" height="36" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Type</td><td>Confirm (two actions), Acknowledge (one action)</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Tone</td><td>Neutral, Warning, Destructive</td><td>No</td></tr>
+          <tr><td>Icon</td><td>None, Leading icon beside the title</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Action layout</td><td>Inline (end-aligned), Stacked full width</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="90" y="30" width="220" height="140" rx="6" />
+              <line class="text-line" x1="110" y1="60" x2="230" y2="60" />
+              <line class="text-line" x1="110" y1="85" x2="290" y2="85" />
+              <line class="text-line" x1="110" y1="100" x2="236" y2="100" />
+              <rect class="interactive" x="150" y="128" width="70" height="28" rx="5" />
+              <line class="text-line" x1="165" y1="142" x2="205" y2="142" />
+              <rect class="interactive" x="230" y="128" width="65" height="28" rx="5" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+            </svg>
+          </div>
+          <figcaption>Confirm — cancel and confirm actions</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="90" y="30" width="220" height="140" rx="6" />
+              <line class="text-line" x1="110" y1="60" x2="230" y2="60" />
+              <line class="text-line" x1="110" y1="85" x2="290" y2="85" />
+              <line class="text-line" x1="110" y1="100" x2="236" y2="100" />
+              <rect class="interactive" x="230" y="128" width="65" height="28" rx="5" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+            </svg>
+          </div>
+          <figcaption>Acknowledge — a single action</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="90" y="30" width="220" height="140" rx="6" />
+              <circle class="region" cx="122" cy="62" r="12" />
+              <text x="122" y="67" font-size="14" text-anchor="middle">!</text>
+              <line class="text-line" x1="145" y1="62" x2="255" y2="62" />
+              <line class="text-line" x1="145" y1="90" x2="290" y2="90" />
+              <line class="text-line" x1="145" y1="105" x2="246.5" y2="105" />
+              <rect class="interactive" x="150" y="128" width="70" height="28" rx="5" />
+              <line class="text-line" x1="165" y1="142" x2="205" y2="142" />
+              <rect class="interactive" x="230" y="128" width="65" height="28" rx="5" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+            </svg>
+          </div>
+          <figcaption>Icon — warning icon beside the title</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="120" y="15" width="160" height="170" rx="6" />
+              <line class="text-line" x1="140" y1="40" x2="240" y2="40" />
+              <line class="text-line" x1="140" y1="62" x2="260" y2="62" />
+              <line class="text-line" x1="140" y1="77" x2="224" y2="77" />
+              <rect class="interactive" x="140" y="105" width="120" height="28" rx="5" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <rect class="interactive" x="140" y="141" width="120" height="28" rx="5" />
+              <line class="text-line" x1="170" y1="155" x2="230" y2="155" />
+            </svg>
+          </div>
+          <figcaption>Stacked actions — full-width buttons</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use an Alert dialog only when the user must respond before going on, such as confirming a deletion. For information that needs no decision, use an Alert or a Toast.</li>
+        <li>Open it with <code>showModal()</code> and set <code>role="alertdialog"</code>, with <code>aria-labelledby</code> pointing at the title and <code>aria-describedby</code> at the message, so screen readers announce both.</li>
+        <li>Move focus into the dialog when it opens. The APG suggests focusing the least destructive action, usually Cancel, when the confirm action can't be undone.</li>
+        <li>Label buttons with the action ("Delete", "Keep editing") rather than "Yes" and "No", so the choice makes sense without rereading the message.</li>
+        <li>Escape should close it as Cancel, and focus should return to the control that opened it.</li>
+      </ul>
     </section>
 
     <section>

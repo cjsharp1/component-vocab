@@ -2,19 +2,81 @@
   "slug": "main",
   "name": "Main",
   "order": 3,
-  "status": "draft",
+  "status": "stable",
   "group": "page-structure",
-  "description": "One per page",
-  "summary": "One per page",
-  "htmlElement": "",
+  "description": "The landmark that holds the primary content of the page, everything except the shared Header, Navigation and Footer. Use one visible <code>&lt;main&gt;</code> per page.",
+  "summary": "Landmark for the page's primary content",
+  "htmlElement": "<code>&lt;main&gt;</code>",
   "nativeHtml": "`<main>`",
   "aria": "main",
   "researchNote": "One per page",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Page content",
+      "required": "Yes",
+      "description": "The Sections and blocks unique to this page"
+    },
+    {
+      "name": "Page heading",
+      "required": "Yes",
+      "description": "One <code>h1</code> that names the page, at or near the start (often in the Hero)"
+    },
+    {
+      "name": "Target id",
+      "required": "No",
+      "description": "An <code>id</code> such as <code>main</code> that the Skip link points to"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Sidebar",
+      "options": "None, Left, Right",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Full width (Sections set their own width), Constrained",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Skip link target",
+      "options": "On (<code>id</code> on main), Off",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Hidden",
+      "options": "No, Yes (<code>hidden</code> on inactive views in a single-page app)",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Full width — between Header and Footer",
+      "wireframe": "wireframes/main/variation-1.svg"
+    },
+    {
+      "caption": "Sidebar — main beside a Sidebar",
+      "wireframe": "wireframes/main/variation-2.svg"
+    },
+    {
+      "caption": "Constrained — centered with a maximum width",
+      "wireframe": "wireframes/main/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use one <code>&lt;main&gt;</code> per page. HTML allows more only when all but one carry the <code>hidden</code> attribute.",
+    "Put only content unique to the page inside it. The site Header, Navigation and Footer sit outside, so the banner and contentinfo landmarks stay separate from main.",
+    "Place it directly in <code>&lt;body&gt;</code> (a wrapping <code>&lt;div&gt;</code> is fine). HTML does not allow it inside <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> or <code>&lt;nav&gt;</code>.",
+    "Give it an <code>id</code> and point the Skip link at it, so keyboard users can bypass repeated navigation (WCAG 2.4.1 Bypass Blocks).",
+    "Start it with the page's <code>h1</code>, so jumping to the main landmark and jumping to the first heading land in the same place."
+  ],
+  "wireframe": "wireframes/main/default.svg",
+  "thumbnail": "wireframes/main/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "none",

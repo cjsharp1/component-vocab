@@ -2,19 +2,101 @@
   "slug": "file-upload",
   "name": "File upload",
   "order": 75,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "A control for choosing one or more files from the device to send with a form, built on <code>&lt;input type=\"file\"&gt;</code>. It can add a drop zone for dragged files and a list of the files chosen.",
+  "summary": "Choose files from the device to send",
+  "htmlElement": "<code>&lt;input type=\"file\"&gt;</code>",
   "nativeHtml": "`<input type=\"file\">`",
   "aria": "",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible <code>&lt;label&gt;</code> that says what to upload"
+    },
+    {
+      "name": "Choose button",
+      "required": "Yes",
+      "description": "Opens the system file chooser"
+    },
+    {
+      "name": "Hint text",
+      "required": "No",
+      "description": "Allowed file types and the size limit"
+    },
+    {
+      "name": "Drop zone",
+      "required": "No",
+      "description": "Area that accepts dragged files, around the button"
+    },
+    {
+      "name": "File list",
+      "required": "No",
+      "description": "Chosen files with name, size or progress, and a remove button"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Drop zone",
+      "options": "None, Drop zone",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "File list",
+      "options": "None, Names, Names with progress",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Preview",
+      "options": "None, Image thumbnails",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Multiple",
+      "options": "One file, Several files",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Accepted types",
+      "options": "Any file, Listed types",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Plain — native button and file name",
+      "wireframe": "wireframes/file-upload/variation-1.svg"
+    },
+    {
+      "caption": "Drop zone — dashed area with a button inside",
+      "wireframe": "wireframes/file-upload/variation-2.svg"
+    },
+    {
+      "caption": "File list — progress and remove buttons",
+      "wireframe": "wireframes/file-upload/variation-3.svg"
+    },
+    {
+      "caption": "Previews — image thumbnails with an add tile",
+      "wireframe": "wireframes/file-upload/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Keep the native <code>&lt;input type=\"file\"&gt;</code> underneath any custom design. It already works with keyboards, screen readers and mobile file choosers.",
+    "Dragging must never be the only way to add a file. Always include a button that opens the file chooser (WCAG 2.5.7).",
+    "State the allowed file types and size limit in the hint before people choose, and set <code>accept</code> to match. Check files on the server as well.",
+    "When a file is rejected, name the file and the reason in the error message, such as \"report.exe is not an allowed file type\", and keep the other files.",
+    "Tell screen reader users about upload progress and completion, for example with a Progress bar and a polite live region."
+  ],
+  "wireframe": "wireframes/file-upload/default.svg",
+  "thumbnail": "wireframes/file-upload/thumbnail.svg",
   "related": [],
   "aliases": [
     "File input",

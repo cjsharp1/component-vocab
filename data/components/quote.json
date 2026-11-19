@@ -2,19 +2,81 @@
   "slug": "quote",
   "name": "Quote",
   "order": 21,
-  "status": "draft",
+  "status": "stable",
   "group": "content-display",
-  "description": "A pull quote repeats text already on the page, so hide the duplicate from screen readers",
-  "summary": "A pull quote repeats text already on the page, so hide the duplicate from screen readers",
-  "htmlElement": "",
+  "description": "Text quoted from another source, marked up as <code>&lt;blockquote&gt;</code> with an optional attribution. Its pull quote variant repeats a line from the page in large type for emphasis.",
+  "summary": "Quoted text with an optional attribution",
+  "htmlElement": "<code>&lt;figure&gt;</code> with <code>&lt;blockquote&gt;</code> and <code>&lt;figcaption&gt;</code>",
   "nativeHtml": "`<blockquote>`",
   "aria": "",
   "researchNote": "A pull quote repeats text already on the page, so hide the duplicate from screen readers",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Quote text",
+      "required": "Yes",
+      "description": "The quoted words, as one or more paragraphs"
+    },
+    {
+      "name": "Attribution",
+      "required": "No",
+      "description": "Who said it, in <code>&lt;figcaption&gt;</code>; the title of the work goes in <code>&lt;cite&gt;</code>"
+    },
+    {
+      "name": "Quote mark",
+      "required": "No",
+      "description": "Decorative quotation mark, hidden from screen readers"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Block quote, Pull quote",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Body, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Alignment",
+      "options": "Start, Center",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Quote mark",
+      "options": "None, Shown",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Block quote — indented with a rule at the start",
+      "wireframe": "wireframes/quote/variation-1.svg"
+    },
+    {
+      "caption": "Pull quote — large text beside the body",
+      "wireframe": "wireframes/quote/variation-2.svg"
+    },
+    {
+      "caption": "Centered — large text with a quote mark",
+      "wireframe": "wireframes/quote/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use <code>&lt;blockquote&gt;</code> only for quoted text, never just to indent. For a short quote inside a sentence, use <code>&lt;q&gt;</code>.",
+    "Put the attribution in a <code>&lt;figcaption&gt;</code> inside a <code>&lt;figure&gt;</code>, outside the <code>&lt;blockquote&gt;</code>. <code>&lt;cite&gt;</code> marks the title of a work, not the person's name.",
+    "A pull quote repeats text already on the page, so hide the duplicate from screen readers with <code>aria-hidden=\"true\"</code> and don't mark it up as a <code>&lt;blockquote&gt;</code>.",
+    "Add decorative quotation marks with CSS or an <code>aria-hidden</code> graphic so they aren't read aloud.",
+    "For a customer quote with a name, photo and role, use Testimonial."
+  ],
+  "wireframe": "wireframes/quote/default.svg",
+  "thumbnail": "wireframes/quote/thumbnail.svg",
   "related": [],
   "aliases": [
     "Block quote",

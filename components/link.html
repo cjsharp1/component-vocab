@@ -30,16 +30,19 @@
 
     <section>
       <h1>Link</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Navigates</p>
+      <p>Text that takes the user to another page, another place on the same page, or a file. If the control performs an action on the current page instead, use a Button.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Anchor, Hyperlink. In design systems: Link (MUI, Carbon, Polaris, Atlassian, Chakra UI, Radix Themes, Fluent UI)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;a href&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;a href&gt;</code></dd>
         <dt>ARIA pattern</dt>
         <dd>Link</dd>
+        <dt>Research note</dt>
+        <dd>Navigates</dd>
         <dt>Category</dt>
         <dd>D. Actions and links</dd>
       </dl>
@@ -52,6 +55,148 @@
 
 &lt;!-- styled as a button, still a link --&gt;
 &lt;a class="button" href="/signup"&gt;Sign up&lt;/a&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Link text</td><td>Yes</td><td>Says where the link goes and makes sense on its own</td></tr>
+          <tr><td>Underline</td><td>No</td><td>Keeps links in body text recognizable without relying on color</td></tr>
+          <tr><td>Icon</td><td>No</td><td>Trailing arrow, or an external-link icon with a text alternative</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <line class="text-line" x1="150" y1="110" x2="330" y2="110" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="340" y="104" width="150" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="415" y1="102" x2="415" y2="90" />
+            <rect class="label-bg" x="375.5" y="70" width="79" height="20" />
+            <text class="label-text" x="415" y="84" text-anchor="middle">Link text</text>
+          </g>
+          <line class="text-line" x1="340" y1="110" x2="490" y2="110" />
+          <line class="text-line" x1="500" y1="110" x2="650" y2="110" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="150" y1="135" x2="570" y2="135" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="150" y="204" width="130" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="215" y1="202" x2="215" y2="190" />
+            <rect class="label-bg" x="154.5" y="170" width="121" height="20" />
+            <text class="label-text" x="215" y="184" text-anchor="middle">Standalone link</text>
+          </g>
+          <line class="text-line" x1="150" y1="210" x2="280" y2="210" />
+          <rect class="hover-target" x="291" y="203" width="14" height="14" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="298" y1="219" x2="298" y2="231" />
+            <rect class="label-bg" x="237.5" y="231" width="121" height="20" />
+            <text class="label-text" x="298" y="245" text-anchor="middle">Icon (optional)</text>
+          </g>
+          <circle class="region" cx="298" cy="210" r="7" />
+          <rect class="hover-target" x="450" y="204" width="110" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="505" y1="202" x2="505" y2="190" />
+            <rect class="label-bg" x="451.5" y="170" width="107" height="20" />
+            <text class="label-text" x="505" y="184" text-anchor="middle">External link</text>
+          </g>
+          <line class="text-line" x1="450" y1="210" x2="560" y2="210" />
+          <rect class="hover-target" x="568" y="203" width="14" height="14" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="575" y1="219" x2="575" y2="231" />
+            <rect class="label-bg" x="521.5" y="231" width="107" height="20" />
+            <text class="label-text" x="575" y="245" text-anchor="middle">External icon</text>
+          </g>
+          <rect class="interactive" x="568" y="203" width="14" height="14" rx="2" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Context</td><td>Inline (in text), Standalone</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Icon</td><td>None, Trailing arrow, External</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Style</td><td>Default, Subtle, Button-styled</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Underline</td><td>Always, On hover (standalone only)</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="80" x2="360" y2="80" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="40" y1="100" x2="140" y2="100" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="150" y1="100" x2="240" y2="100" />
+              <line class="text-line" x1="250" y1="100" x2="360" y2="100" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="40" y1="120" x2="260" y2="120" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Inline — underlined within a paragraph</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="100" y1="80" x2="250" y2="80" />
+              <circle class="region" cx="268" cy="80" r="7" />
+              <line class="text-line" x1="100" y1="120" x2="220" y2="120" />
+              <circle class="region" cx="238" cy="120" r="7" />
+            </svg>
+          </div>
+          <figcaption>Standalone — with a trailing arrow</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="110" y1="100" x2="260" y2="100" />
+              <rect class="interactive" x="270" y="92" width="16" height="16" rx="2" />
+            </svg>
+          </div>
+          <figcaption>External — with an external-link icon</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="interactive" x="130" y="80" width="140" height="40" rx="6" />
+              <line class="text-line" x1="160" y1="100" x2="240" y2="100" />
+            </svg>
+          </div>
+          <figcaption>Button-styled — still a link</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use <code>&lt;a href&gt;</code> for anything that changes the URL or moves to another place on the page. An <code>&lt;a&gt;</code> without <code>href</code> is not focusable and is not announced as a link.</li>
+        <li>Write link text that makes sense on its own (WCAG 2.4.4). Avoid "Click here" and "Read more" unless the surrounding sentence or visually hidden text supplies the context.</li>
+        <li>In body text, don't mark links by color alone (WCAG 1.4.1). Keep the underline or another visible cue.</li>
+        <li>A link styled as a button is still a Link: it is activated with Enter, not Space, and screen readers announce it as a link. For actions, use a Button.</li>
+        <li>If a link opens a new tab or downloads a file, say so in the text or with an icon that has a text alternative. For downloads, see File.</li>
+      </ul>
     </section>
 
     <section>

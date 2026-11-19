@@ -2,19 +2,101 @@
   "slug": "fieldset",
   "name": "Fieldset",
   "order": 63,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "Groups related form controls under a caption, such as the fields of an address or a set of radio buttons. Use it whenever several controls answer one question or belong together.",
+  "summary": "Groups related form controls under a legend",
+  "htmlElement": "<code>&lt;fieldset&gt;</code> with <code>&lt;legend&gt;</code>",
   "nativeHtml": "`<fieldset><legend>`",
   "aria": "group",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Legend",
+      "required": "Yes",
+      "description": "Caption for the group; the first child of the fieldset"
+    },
+    {
+      "name": "Hint",
+      "required": "No",
+      "description": "Guidance for the whole group, linked with aria-describedby"
+    },
+    {
+      "name": "Controls",
+      "required": "Yes",
+      "description": "The inputs in the group, each with its own Label"
+    },
+    {
+      "name": "Error message",
+      "required": "No",
+      "description": "Group-level error, such as \"Choose a delivery option\""
+    },
+    {
+      "name": "Border",
+      "required": "No",
+      "description": "Visual frame; can be removed with CSS without losing the grouping"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Border",
+      "options": "Visible, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Control layout",
+      "options": "Stacked, Inline row",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Hint",
+      "options": "None, Below the legend",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Error",
+      "options": "None, Message below the legend",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Default, Disabled",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "No border — legend styled as a heading",
+      "wireframe": "wireframes/fieldset/variation-1.svg"
+    },
+    {
+      "caption": "Inline row — day, month and year fields",
+      "wireframe": "wireframes/fieldset/variation-2.svg"
+    },
+    {
+      "caption": "Hint — guidance above a set of radio buttons",
+      "wireframe": "wireframes/fieldset/variation-3.svg"
+    },
+    {
+      "caption": "Error — message under the legend",
+      "wireframe": "wireframes/fieldset/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Fieldset for checkboxes or radio buttons that answer one question, and for groups like an address or a date of birth. A Radio group is built on one.",
+    "Keep the <code>&lt;legend&gt;</code> short, since screen readers may repeat it with each control in the group. Put longer guidance in a hint linked with <code>aria-describedby</code>.",
+    "When the group is the only question on the page, the legend can contain the page's <code>&lt;h1&gt;</code> so the heading isn't read twice.",
+    "Setting <code>disabled</code> on the fieldset disables every control inside it.",
+    "Don't wrap a single control in a fieldset; a Label is enough. Avoid nesting fieldsets, which makes the announced names long and confusing."
+  ],
+  "wireframe": "wireframes/fieldset/default.svg",
+  "thumbnail": "wireframes/fieldset/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

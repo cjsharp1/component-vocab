@@ -2,19 +2,86 @@
   "slug": "date-input",
   "name": "Date input",
   "order": 73,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "Typed",
-  "summary": "Typed",
-  "htmlElement": "",
+  "description": "A typed date, entered in a native <code>&lt;input type=\"date\"&gt;</code> or in separate day, month and year fields. Use it for dates people already know, such as a date of birth; use a Date picker when choosing from a calendar helps.",
+  "summary": "Type a known date, such as a date of birth",
+  "htmlElement": "<code>&lt;input type=\"date\"&gt;</code>, or a <code>&lt;fieldset&gt;</code> of text inputs",
   "nativeHtml": "`<input type=\"date\">` or three fields",
   "aria": "",
   "researchNote": "Typed",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Legend or label",
+      "required": "Yes",
+      "description": "<code>&lt;legend&gt;</code> for separate fields, <code>&lt;label&gt;</code> for a single field"
+    },
+    {
+      "name": "Fields",
+      "required": "Yes",
+      "description": "One date field, or day, month and year fields, each with its own label"
+    },
+    {
+      "name": "Hint text",
+      "required": "No",
+      "description": "An example in the expected format, such as \"For example, 27 3 2007\""
+    },
+    {
+      "name": "Error message",
+      "required": "No",
+      "description": "Says which part is wrong, such as \"Date of birth must include a year\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Format",
+      "options": "Separate fields, Native date field",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Precision",
+      "options": "Full date, Month and year",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Error",
+      "options": "None, Message above the fields",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Field order",
+      "options": "Day month year, Month day year, Year month day",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Native field — browser date control",
+      "wireframe": "wireframes/date-input/variation-1.svg"
+    },
+    {
+      "caption": "Month and year — two fields, such as a card expiry date",
+      "wireframe": "wireframes/date-input/variation-2.svg"
+    },
+    {
+      "caption": "Error — message above the fields",
+      "wireframe": "wireframes/date-input/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Date input for dates people know without looking them up, such as a birth date or a card expiry date. Typing them is faster than paging back through a calendar.",
+    "With separate fields, wrap them in a <code>&lt;fieldset&gt;</code> whose <code>&lt;legend&gt;</code> asks the question, label each field (Day, Month, Year), and use <code>inputmode=\"numeric\"</code> rather than <code>type=\"number\"</code>.",
+    "Show the expected format in a hint linked with <code>aria-describedby</code>, and size each field to its content so the widths suggest the format.",
+    "Add <code>autocomplete</code> values where they apply, such as <code>bday-day</code>, <code>bday-month</code> and <code>bday-year</code>, so browsers can fill them in (WCAG 1.3.5).",
+    "Native <code>type=\"date\"</code> looks and behaves differently across browsers and follows the user's locale format. Test it with your audience before relying on it."
+  ],
+  "wireframe": "wireframes/date-input/default.svg",
+  "thumbnail": "wireframes/date-input/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

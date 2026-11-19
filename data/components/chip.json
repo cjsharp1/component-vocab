@@ -2,19 +2,96 @@
   "slug": "chip",
   "name": "Chip",
   "order": 56,
-  "status": "draft",
+  "status": "stable",
   "group": "feedback-status",
-  "description": "Interactive: removable or selectable",
-  "summary": "Interactive: removable or selectable",
-  "htmlElement": "",
+  "description": "A compact control for a filter option or an entered value that can be selected or removed, such as a filter for \"Remote\" jobs or a recipient in an email field. For a static category, use a Tag.",
+  "summary": "Compact control that can be selected or removed",
+  "htmlElement": "<code>&lt;button&gt;</code> with <code>aria-pressed</code>, or text with a remove <code>&lt;button&gt;</code>",
   "nativeHtml": "`<button>`",
   "aria": "",
   "researchNote": "Interactive: removable or selectable",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "The option or value, kept short"
+    },
+    {
+      "name": "Leading icon",
+      "required": "No",
+      "description": "Icon, Avatar or check mark before the label"
+    },
+    {
+      "name": "Remove button",
+      "required": "No",
+      "description": "A separate <code>&lt;button&gt;</code> named like \"Remove Paris\""
+    },
+    {
+      "name": "Selected state",
+      "required": "No",
+      "description": "Fill plus a check mark, so the state doesn't depend on color alone"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Type",
+      "options": "Filter (toggles on and off), Input (removable value)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Selected",
+      "options": "On, Off",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Leading",
+      "options": "None, Icon, Avatar, Check mark when selected",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Default, Disabled",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Filter — one selected, two not",
+      "wireframe": "wireframes/chip/variation-1.svg"
+    },
+    {
+      "caption": "Input — removable values inside a field",
+      "wireframe": "wireframes/chip/variation-2.svg"
+    },
+    {
+      "caption": "Leading — icon and Avatar",
+      "wireframe": "wireframes/chip/variation-3.svg"
+    },
+    {
+      "caption": "Size — small and medium",
+      "wireframe": "wireframes/chip/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "A Chip is interactive; a Tag and a Badge are not. If nothing happens when it's pressed, use a Tag.",
+    "Build a filter chip as a <code>&lt;button&gt;</code> with <code>aria-pressed</code>, like the APG toggle button. When only one option can be chosen, use a Radio group or Segmented control rather than chips that just look exclusive.",
+    "Make the remove control its own <code>&lt;button&gt;</code> with a name that includes the value, such as \"Remove Paris\". A bare \"×\" gives screen reader users nothing to go on.",
+    "When a chip is removed, move focus to the next chip or back to the input so keyboard users keep their place.",
+    "Show the selected state with more than color, such as a check mark plus a change of fill (WCAG 1.4.1 Use of Color)."
+  ],
+  "wireframe": "wireframes/chip/default.svg",
+  "thumbnail": "wireframes/chip/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

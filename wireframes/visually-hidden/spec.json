@@ -1,0 +1,49 @@
+{
+  "default": {
+    "height": 310,
+    "shapes": [
+      { "type": "interactive", "x": 150, "y": 130, "w": 60, "h": 60, "rx": 8, "label": "Icon-only button" },
+      { "type": "circle", "cx": 180, "cy": 160, "r": 12, "style": "region" },
+      { "type": "optional", "x": 150, "y": 210, "w": 150, "h": 34, "rx": 4, "label": "Hidden name (read aloud)", "at": "below" },
+      { "type": "line", "x": 165, "y": 227, "w": 100, "weight": 1 },
+      { "type": "line", "x": 430, "y": 160, "w": 110, "label": "Visible link text" },
+      { "type": "optional", "x": 550, "y": 146, "w": 140, "h": 28, "rx": 4, "label": "Hidden context", "at": "below" },
+      { "type": "line", "x": 562, "y": 160, "w": 110, "weight": 1 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "interactive", "x": 40, "y": 20, "w": 40, "h": 40, "rx": 6 },
+      { "type": "circle", "cx": 60, "cy": 40, "r": 8, "style": "region" },
+      { "type": "optional", "x": 100, "y": 30, "w": 110, "h": 20, "rx": 3 },
+      { "type": "line", "x": 110, "y": 40, "w": 80, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "interactive", "x": 100, "y": 70, "w": 60, "h": 60, "rx": 8 },
+      { "type": "circle", "cx": 130, "cy": 100, "r": 12, "style": "region" },
+      { "type": "optional", "x": 190, "y": 85, "w": 120, "h": 30, "rx": 4 },
+      { "type": "line", "x": 202, "y": 100, "w": 90, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "lines", "x": 40, "y": 60, "w": 320, "count": 2 },
+      { "type": "line", "x": 40, "y": 120, "w": 90 },
+      { "type": "optional", "x": 138, "y": 106, "w": 150, "h": 28, "rx": 4 },
+      { "type": "line", "x": 150, "y": 120, "w": 120, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "optional", "x": 60, "y": 30, "w": 160, "h": 30, "rx": 4 },
+      { "type": "line", "x": 72, "y": 45, "w": 110 },
+      { "type": "region", "x": 60, "y": 75, "w": 280, "h": 100, "rx": 4 },
+      { "type": "lines", "x": 80, "y": 100, "w": 230, "count": 4, "gap": 18 }
+    ] },
+    { "shapes": [
+      { "type": "optional", "x": 40, "y": 50, "w": 130, "h": 36, "rx": 4 },
+      { "type": "line", "x": 55, "y": 68, "w": 90, "weight": 1 },
+      { "type": "filled", "x": 230, "y": 50, "w": 130, "h": 36, "rx": 4 },
+      { "type": "region", "x": 40, "y": 110, "w": 130, "h": 60, "rx": 4 },
+      { "type": "region", "x": 230, "y": 110, "w": 130, "h": 60, "rx": 4 }
+    ] }
+  ]
+}

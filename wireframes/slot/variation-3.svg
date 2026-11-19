@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="140" y="15" width="120" height="170" rx="8" />
+  <rect class="region" x="152" y="27" width="96" height="68" rx="3" />
+  <text x="200" y="66" font-size="18" text-anchor="middle">2</text>
+  <rect class="region" x="152" y="105" width="96" height="68" rx="3" />
+  <text x="200" y="144" font-size="18" text-anchor="middle">1</text>
+</svg>

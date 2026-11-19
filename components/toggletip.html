@@ -30,12 +30,15 @@
 
     <section>
       <h1>Toggletip</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>A tooltip opened by click. Keeping the name because it behaves differently for assistive tech</p>
+      <p>A small info button that shows a short explanation when pressed and hides it again on a second press, Escape or a click elsewhere. Use it instead of a Tooltip when the button exists only to reveal the explanation, or where hover isn't available.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Toggletip (Carbon); Toggle Tip (Chakra UI)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;button&gt;</code> plus a live region with <code>role="status"</code></dd>
+        <dt>Research note</dt>
+        <dd>A tooltip opened by click. Keeping the name because it behaves differently for assistive tech</dd>
         <dt>Category</dt>
         <dd>F. Disclosure and overlays</dd>
       </dl>
@@ -46,6 +49,151 @@
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button aria-expanded="false" aria-controls="tt-info"&gt;More info&lt;/button&gt;
 &lt;div id="tt-info" role="status" hidden&gt;Short explanation.&lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Trigger</td><td>Yes</td><td>Button, often an "i" or "?" icon, with an accessible name such as "More info"</td></tr>
+          <tr><td>Bubble</td><td>Yes</td><td>Holds the explanation: plain text, no links or controls</td></tr>
+          <tr><td>Arrow</td><td>No</td><td>Points from the bubble to the trigger</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="290" y="70" width="240" height="80" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="410" y1="68" x2="410" y2="56" />
+            <rect class="label-bg" x="381" y="36" width="58" height="20" />
+            <text class="label-text" x="410" y="50" text-anchor="middle">Bubble</text>
+          </g>
+          <rect class="region" x="290" y="70" width="240" height="80" rx="6" />
+          <line class="text-line" x1="310" y1="100" x2="510" y2="100" />
+          <line class="text-line" x1="310" y1="115" x2="450" y2="115" />
+          <rect class="optional" x="352" y="150" width="16" height="12" rx="2" />
+          <rect class="hover-target" x="180" y="184" width="150" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="255" y1="198" x2="255" y2="210" />
+            <rect class="label-bg" x="208.5" y="210" width="93" height="20" />
+            <text class="label-text" x="255" y="224" text-anchor="middle">Field label</text>
+          </g>
+          <line class="text-line" x1="180" y1="190" x2="330" y2="190" />
+          <rect class="hover-target" x="347" y="177" width="26" height="26" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="360" y1="205" x2="360" y2="217" />
+            <rect class="label-bg" x="327.5" y="217" width="65" height="20" />
+            <text class="label-text" x="360" y="231" text-anchor="middle">Trigger</text>
+          </g>
+          <circle class="interactive" cx="360" cy="190" r="13" />
+          <text x="360" y="195" font-size="14" text-anchor="middle">i</text>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Placement</td><td>Top, Bottom, Start, End</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Trigger</td><td>Icon only, Icon with text</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Width</td><td>Auto, Max width with wrapping</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Dismiss</td><td>Second press, Escape, Click outside</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="interactive" cx="200" cy="50" r="12" />
+              <text x="200" y="55" font-size="14" text-anchor="middle">i</text>
+              <rect class="optional" x="192" y="64" width="16" height="10" rx="2" />
+              <rect class="region" x="100" y="74" width="200" height="70" rx="6" />
+              <line class="text-line" x1="120" y1="98" x2="280" y2="98" />
+              <line class="text-line" x1="120" y1="113" x2="232" y2="113" />
+            </svg>
+          </div>
+          <figcaption>Bottom — bubble below the trigger</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="50" y1="100" x2="150" y2="100" />
+              <circle class="interactive" cx="175" cy="100" r="12" />
+              <text x="175" y="105" font-size="14" text-anchor="middle">i</text>
+              <rect class="optional" x="189" y="94" width="12" height="12" rx="2" />
+              <rect class="region" x="201" y="65" width="160" height="70" rx="6" />
+              <line class="text-line" x1="218" y1="90" x2="343" y2="90" />
+              <line class="text-line" x1="218" y1="105" x2="305.5" y2="105" />
+            </svg>
+          </div>
+          <figcaption>End — bubble beside the trigger</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="70" y="40" width="200" height="64" rx="6" />
+              <line class="text-line" x1="90" y1="63" x2="250" y2="63" />
+              <line class="text-line" x1="90" y1="78" x2="202" y2="78" />
+              <rect class="optional" x="103" y="104" width="14" height="10" rx="2" />
+              <rect class="interactive" x="90" y="120" width="130" height="34" rx="17" />
+              <circle class="region" cx="110" cy="137" r="9" />
+              <line class="text-line" x1="126" y1="137" x2="206" y2="137" />
+            </svg>
+          </div>
+          <figcaption>Icon with text — visible trigger label</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="110" y="20" width="180" height="110" rx="6" />
+              <line class="text-line" x1="128" y1="45" x2="273" y2="45" />
+              <line class="text-line" x1="128" y1="60" x2="273" y2="60" />
+              <line class="text-line" x1="128" y1="75" x2="273" y2="75" />
+              <line class="text-line" x1="128" y1="90" x2="273" y2="90" />
+              <line class="text-line" x1="128" y1="105" x2="229.5" y2="105" />
+              <rect class="optional" x="193" y="130" width="14" height="10" rx="2" />
+              <circle class="interactive" cx="200" cy="160" r="12" />
+              <text x="200" y="165" font-size="14" text-anchor="middle">i</text>
+            </svg>
+          </div>
+          <figcaption>Max width — longer text wraps</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use a Toggletip when the explanation should appear on a press. Use a Tooltip for a short label shown on hover and focus, and a Popover when the content includes links or controls.</li>
+        <li>Make the trigger a <code>&lt;button&gt;</code> with an accessible name. Put the message in a live region such as <code>role="status"</code> so screen readers announce it when it appears.</li>
+        <li>Close it on Escape, on a second press of the trigger and on a click outside, and leave focus on the trigger.</li>
+        <li>Keep the content to a sentence or two. Anything people need to complete a task belongs on the page, not behind an icon.</li>
+        <li>Give the trigger a target of at least 24 by 24 CSS pixels (WCAG 2.5.8 Target Size, Minimum).</li>
+      </ul>
     </section>
 
     <section>

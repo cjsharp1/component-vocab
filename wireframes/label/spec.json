@@ -1,0 +1,33 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "line", "x": 200, "y": 115, "w": 120, "label": "Label text" },
+      { "type": "line", "x": 335, "y": 115, "w": 70, "weight": 1, "label": "Required marker" },
+      { "type": "interactive", "x": 200, "y": 140, "w": 400, "h": 44, "rx": 4, "label": "Control", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 40, "y": 26, "w": 70 },
+      { "type": "interactive", "x": 40, "y": 38, "w": 170, "h": 28, "rx": 3 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 100, "w": 80 },
+      { "type": "interactive", "x": 140, "y": 82, "w": 220, "h": 36, "rx": 4 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 60, "w": 100 },
+      { "type": "line", "x": 60, "y": 85, "w": 220, "weight": 1 },
+      { "type": "interactive", "x": 60, "y": 105, "w": 280, "h": 36, "rx": 4 }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 80, "y": 70, "w": 20, "h": 20, "rx": 3 },
+      { "type": "line", "x": 115, "y": 80, "w": 140 },
+      { "type": "filled", "x": 80, "y": 110, "w": 20, "h": 20, "rx": 3 },
+      { "type": "line", "x": 115, "y": 120, "w": 110 }
+    ] }
+  ]
+}

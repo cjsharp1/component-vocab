@@ -1,0 +1,25 @@
+<svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+  <rect class="interactive" x="70" y="6" width="110" height="18" rx="3" />
+  <rect class="region" x="70" y="28" width="110" height="46" rx="3" />
+  <rect class="region" x="76" y="34" width="10" height="8" rx="2" />
+  <rect class="region" x="90" y="34" width="10" height="8" rx="2" />
+  <rect class="region" x="104" y="34" width="10" height="8" rx="2" />
+  <rect class="region" x="118" y="34" width="10" height="8" rx="2" />
+  <rect class="region" x="132" y="34" width="10" height="8" rx="2" />
+  <rect class="region" x="146" y="34" width="10" height="8" rx="2" />
+  <rect class="region" x="160" y="34" width="10" height="8" rx="2" />
+  <rect class="region" x="76" y="47" width="10" height="8" rx="2" />
+  <rect class="region" x="90" y="47" width="10" height="8" rx="2" />
+  <rect class="interactive" x="104" y="47" width="10" height="8" rx="2" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="region" x="118" y="47" width="10" height="8" rx="2" />
+  <rect class="region" x="132" y="47" width="10" height="8" rx="2" />
+  <rect class="region" x="146" y="47" width="10" height="8" rx="2" />
+  <rect class="region" x="160" y="47" width="10" height="8" rx="2" />
+  <rect class="region" x="76" y="60" width="10" height="8" rx="2" />
+  <rect class="region" x="90" y="60" width="10" height="8" rx="2" />
+  <rect class="region" x="104" y="60" width="10" height="8" rx="2" />
+  <rect class="region" x="118" y="60" width="10" height="8" rx="2" />
+  <rect class="region" x="132" y="60" width="10" height="8" rx="2" />
+  <rect class="region" x="146" y="60" width="10" height="8" rx="2" />
+  <rect class="region" x="160" y="60" width="10" height="8" rx="2" />
+</svg>

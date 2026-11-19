@@ -1,0 +1,29 @@
+<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="180" y="40" width="440" height="80" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="38" x2="400" y2="26" />
+    <rect class="label-bg" x="367.5" y="6" width="65" height="20" />
+    <text class="label-text" x="400" y="20" text-anchor="middle">Article</text>
+  </g>
+  <rect class="region" x="180" y="40" width="440" height="80" rx="6" />
+  <rect class="hover-target" x="195" y="55" width="70" height="50" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="230" y1="53" x2="230" y2="41" />
+    <rect class="label-bg" x="166" y="21" width="128" height="20" />
+    <text class="label-text" x="230" y="35" text-anchor="middle">Image (optional)</text>
+  </g>
+  <rect class="media-placeholder" x="195" y="55" width="70" height="50" rx="3" />
+  <line class="text-line" x1="280" y1="70" x2="500" y2="70" />
+  <line class="text-line" x1="280" y1="92" x2="560" y2="92" stroke-width="1" opacity="0.7" />
+  <rect class="region" x="180" y="135" width="440" height="80" rx="6" />
+  <rect class="media-placeholder" x="195" y="150" width="70" height="50" rx="3" />
+  <line class="text-line" x1="280" y1="165" x2="460" y2="165" />
+  <line class="text-line" x1="280" y1="187" x2="540" y2="187" stroke-width="1" opacity="0.7" />
+  <rect class="hover-target" x="388" y="233" width="24" height="24" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="259" x2="400" y2="271" />
+    <rect class="label-bg" x="332.5" y="271" width="135" height="20" />
+    <text class="label-text" x="400" y="285" text-anchor="middle">Loading indicator</text>
+  </g>
+  <circle class="optional" cx="400" cy="245" r="12" />
+</svg>

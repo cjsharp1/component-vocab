@@ -2,19 +2,86 @@
   "slug": "meter",
   "name": "Meter",
   "order": 58,
-  "status": "draft",
+  "status": "stable",
   "group": "feedback-status",
-  "description": "A value within a known range",
-  "summary": "A value within a known range",
-  "htmlElement": "",
+  "description": "Shows a measurement within a known range, such as disk usage, password strength or battery level. Use <code>&lt;meter&gt;</code> for a value that can go up or down; for progress toward finishing a task, use a Progress bar.",
+  "summary": "Shows a measurement within a known range",
+  "htmlElement": "<code>&lt;meter&gt;</code>",
   "nativeHtml": "`<meter>`",
   "aria": "Meter",
   "researchNote": "A value within a known range",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Names what is measured; linked with <code>&lt;label for&gt;</code>"
+    },
+    {
+      "name": "Track",
+      "required": "Yes",
+      "description": "The full range from min to max"
+    },
+    {
+      "name": "Fill",
+      "required": "Yes",
+      "description": "Its length shows the current value"
+    },
+    {
+      "name": "Value text",
+      "required": "No",
+      "description": "The value in words or numbers, such as \"72 GB of 100 GB\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Label position",
+      "options": "Above, Inline (start)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Continuous, Segmented",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Orientation",
+      "options": "Horizontal, Vertical",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Thresholds",
+      "options": "None, Low / high / optimum ranges",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Inline label — label, bar and value on one row",
+      "wireframe": "wireframes/meter/variation-1.svg"
+    },
+    {
+      "caption": "Segmented — discrete steps, as in password strength",
+      "wireframe": "wireframes/meter/variation-2.svg"
+    },
+    {
+      "caption": "Vertical — upright bar",
+      "wireframe": "wireframes/meter/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Meter for a measurement in a fixed range and a Progress bar for how much of a task is done. <code>&lt;meter&gt;</code> and <code>&lt;progress&gt;</code> are different elements with different meanings.",
+    "Set <code>min</code>, <code>max</code> and <code>value</code>, and use <code>low</code>, <code>high</code> and <code>optimum</code> to mark good and bad ranges. A custom meter needs <code>role=\"meter\"</code> with <code>aria-valuemin</code>, <code>aria-valuemax</code> and <code>aria-valuenow</code>, as in the APG Meter pattern.",
+    "Give it an accessible name with a <code>&lt;label&gt;</code>. If the number alone isn't meaningful, add <code>aria-valuetext</code>, such as \"72 GB of 100 GB\".",
+    "Show the value as text too, and don't use color alone to say a value is good or bad (WCAG 1.4.1 Use of Color). Keep the fill at 3:1 contrast against the track (WCAG 1.4.11 Non-text Contrast).",
+    "A Meter only displays a value. If people should set it, use a Slider."
+  ],
+  "wireframe": "wireframes/meter/default.svg",
+  "thumbnail": "wireframes/meter/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

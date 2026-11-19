@@ -2,19 +2,87 @@
   "slug": "icon",
   "name": "Icon",
   "order": 19,
-  "status": "draft",
+  "status": "stable",
   "group": "content-display",
-  "description": "Decorative icons `aria-hidden`",
-  "summary": "Decorative icons `aria-hidden`",
-  "htmlElement": "",
+  "description": "A small symbol, usually an inline <code>&lt;svg&gt;</code>, that supports a text label or stands in for one. Decorative icons are hidden from screen readers; an icon that carries meaning on its own needs a text alternative.",
+  "summary": "Small symbol, decorative or labeled",
+  "htmlElement": "inline <code>&lt;svg&gt;</code>",
   "nativeHtml": "inline `<svg>`",
   "aria": "img or hidden",
   "researchNote": "Decorative icons `aria-hidden`",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Symbol",
+      "required": "Yes",
+      "description": "The SVG shape, sized to the text or control around it"
+    },
+    {
+      "name": "Visible label",
+      "required": "No",
+      "description": "Text beside the icon; when present, the icon is decorative"
+    },
+    {
+      "name": "Accessible name",
+      "required": "No",
+      "description": "<code>role=\"img\"</code> with <code>aria-label</code>, or Visually hidden text, when the icon carries meaning alone"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Size",
+      "options": "Inherit text size, Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Position",
+      "options": "Before text, After text, Alone",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Background shape",
+      "options": "None, Circle, Rounded square",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Meaning",
+      "options": "Decorative, Meaningful",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Color",
+      "options": "Current text color, Status color",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Size — small, medium, large",
+      "wireframe": "wireframes/icon/variation-1.svg"
+    },
+    {
+      "caption": "Position — before text, after text, alone",
+      "wireframe": "wireframes/icon/variation-2.svg"
+    },
+    {
+      "caption": "Background shape — circle and rounded square",
+      "wireframe": "wireframes/icon/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Hide decorative icons with <code>aria-hidden=\"true\"</code> so screen readers don't announce them next to a visible label. Older guidance also adds <code>focusable=\"false\"</code> to the <code>&lt;svg&gt;</code>.",
+    "An icon that stands alone and carries meaning needs a text alternative (WCAG 1.1.1): <code>role=\"img\"</code> with <code>aria-label</code>, or Visually hidden text. In an icon-only Button, give the name to the button, not the icon.",
+    "Don't rely on an icon's shape or color alone to convey status; pair it with text (WCAG 1.4.1 Use of Color).",
+    "Icons that convey information need a contrast ratio of at least 3:1 against their background (WCAG 1.4.11 Non-text Contrast).",
+    "Use <code>fill=\"currentColor\"</code> and size icons in <code>em</code> so they follow the color and size of the text around them."
+  ],
+  "wireframe": "wireframes/icon/default.svg",
+  "thumbnail": "wireframes/icon/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",

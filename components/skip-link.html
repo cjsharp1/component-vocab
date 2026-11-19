@@ -30,14 +30,17 @@
 
     <section>
       <h1>Skip link</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>First focusable element</p>
+      <p>A link at the very start of the page that jumps past the Header and Navigation to the Main content. It usually stays hidden until it receives keyboard focus.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Skip Nav (Chakra UI); Skip link (GOV.UK)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;a href="#main"&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;a href="#main"&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>First focusable element</dd>
         <dt>Category</dt>
         <dd>A. Page structure</dd>
       </dl>
@@ -49,6 +52,143 @@
       <pre class="html-outline"><code>&lt;a class="skip-link" href="#main"&gt;Skip to content&lt;/a&gt;
 …
 &lt;main id="main"&gt;…&lt;/main&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Link text</td><td>Yes</td><td>Names the destination, e.g. "Skip to main content"</td></tr>
+          <tr><td>Target</td><td>Yes</td><td>The element with the matching <code>id</code>, usually <code>&lt;main&gt;</code></td></tr>
+          <tr><td>Extra links</td><td>No</td><td>A second skip link, e.g. to Search; keep the set short</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+          <rect class="region" x="120" y="70" width="560" height="50" rx="4" />
+          <rect class="hover-target" x="130" y="78" width="150" height="34" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="205" y1="76" x2="205" y2="64" />
+            <rect class="label-bg" x="120" y="44" width="170" height="20" />
+            <text class="label-text" x="205" y="58" text-anchor="middle">Skip link (focus only)</text>
+          </g>
+          <rect class="optional" x="130" y="78" width="150" height="34" rx="4" />
+          <line class="text-line" x1="150" y1="95" x2="250" y2="95" />
+          <rect class="hover-target" x="420" y="89" width="60" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="450" y1="87" x2="450" y2="75" />
+            <rect class="label-bg" x="407" y="55" width="86" height="20" />
+            <text class="label-text" x="450" y="69" text-anchor="middle">Navigation</text>
+          </g>
+          <line class="text-line" x1="420" y1="95" x2="480" y2="95" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="500" y1="95" x2="560" y2="95" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="580" y1="95" x2="640" y2="95" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="120" y="160" width="560" height="150" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="158" x2="400" y2="146" />
+            <rect class="label-bg" x="346.5" y="126" width="107" height="20" />
+            <text class="label-text" x="400" y="140" text-anchor="middle">Main (target)</text>
+          </g>
+          <rect class="region" x="120" y="160" width="560" height="150" rx="6" />
+          <line class="text-line" x1="150" y1="190" x2="350" y2="190" />
+          <line class="text-line" x1="150" y1="220" x2="630" y2="220" />
+          <line class="text-line" x1="150" y1="235" x2="630" y2="235" />
+          <line class="text-line" x1="150" y1="250" x2="486" y2="250" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Visibility</td><td>Shown on focus only, Always visible</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Position</td><td>Overlays the top of the page, Pushes the page down</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Number of links</td><td>One, Two</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Target</td><td>Main, Search, Other landmark</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="40" width="360" height="40" rx="4" />
+              <rect class="interactive" x="30" y="48" width="110" height="24" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <line class="text-line" x1="250" y1="60" x2="300" y2="60" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="310" y1="60" x2="360" y2="60" stroke-width="1" opacity="0.7" />
+              <rect class="region" x="20" y="95" width="360" height="85" rx="4" />
+              <line class="text-line" x1="40" y1="120" x2="340" y2="120" />
+              <line class="text-line" x1="40" y1="135" x2="340" y2="135" />
+              <line class="text-line" x1="40" y1="150" x2="250" y2="150" />
+            </svg>
+          </div>
+          <figcaption>Focus only — appears over the Header when focused</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="26" rx="4" />
+              <line class="text-line" x1="36" y1="33" x2="126" y2="33" />
+              <rect class="region" x="20" y="54" width="360" height="40" rx="4" />
+              <line class="text-line" x1="250" y1="74" x2="300" y2="74" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="310" y1="74" x2="360" y2="74" stroke-width="1" opacity="0.7" />
+              <rect class="region" x="20" y="104" width="360" height="76" rx="4" />
+              <line class="text-line" x1="40" y1="128" x2="340" y2="128" />
+              <line class="text-line" x1="40" y1="143" x2="340" y2="143" />
+              <line class="text-line" x1="40" y1="158" x2="250" y2="158" />
+            </svg>
+          </div>
+          <figcaption>Always visible — a bar above the Header</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="40" width="360" height="40" rx="4" />
+              <rect class="interactive" x="30" y="48" width="110" height="24" rx="4" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <rect class="optional" x="148" y="48" width="110" height="24" rx="4" />
+              <line class="text-line" x1="163" y1="60" x2="243" y2="60" stroke-width="1" opacity="0.7" />
+              <rect class="region" x="20" y="95" width="360" height="85" rx="4" />
+              <line class="text-line" x1="40" y1="120" x2="340" y2="120" />
+              <line class="text-line" x1="40" y1="135" x2="340" y2="135" />
+              <line class="text-line" x1="40" y1="150" x2="250" y2="150" />
+            </svg>
+          </div>
+          <figcaption>Two links — content and a second target</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Make it the first focusable element in <code>&lt;body&gt;</code>, so the first Tab press reaches it. It is the usual way to meet WCAG 2.4.1 Bypass Blocks.</li>
+        <li>Hide it in a way that keeps it focusable, such as the Visually hidden pattern, and reveal it on <code>:focus</code>. <code>display: none</code> and the <code>hidden</code> attribute remove it for keyboard users too.</li>
+        <li>When focused it must be visible with a clear focus indicator (WCAG 2.4.7) and not covered by a sticky Header (WCAG 2.4.11 Focus Not Obscured).</li>
+        <li>Point it at an element with a matching <code>id</code>, usually Main. Adding <code>tabindex="-1"</code> to the target makes focus move there reliably, so the next Tab continues from the content.</li>
+        <li>Use text that names the destination. One link is usually enough; a long list of skip links brings back the problem it was meant to solve.</li>
+      </ul>
     </section>
 
     <section>

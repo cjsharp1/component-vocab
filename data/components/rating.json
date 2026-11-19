@@ -2,19 +2,96 @@
   "slug": "rating",
   "name": "Rating",
   "order": 61,
-  "status": "draft",
+  "status": "stable",
   "group": "feedback-status",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "Shows a score as a row of stars or similar symbols, or lets people choose one. Use the display version for averages and reviews, and the input version in review forms.",
+  "summary": "Shows or collects a score, usually as stars",
+  "htmlElement": "Display: text with a text alternative. Input: <code>&lt;fieldset&gt;</code> with radio inputs",
   "nativeHtml": "",
   "aria": "",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Symbols",
+      "required": "Yes",
+      "description": "Stars or other icons, filled up to the score; hidden from screen readers"
+    },
+    {
+      "name": "Value text",
+      "required": "No",
+      "description": "The score as text, such as \"4.2 out of 5\""
+    },
+    {
+      "name": "Count",
+      "required": "No",
+      "description": "Number of ratings, often a link to the reviews"
+    },
+    {
+      "name": "Legend",
+      "required": "No",
+      "description": "Names what is being rated; required in the input version"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Mode",
+      "options": "Display, Input",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Full row, Single star with value",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Text",
+      "options": "None, Value, Value and count",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Precision",
+      "options": "Whole, Half, Exact fill",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Value and count — text after the stars",
+      "wireframe": "wireframes/rating/variation-1.svg"
+    },
+    {
+      "caption": "Single star — one star with the value",
+      "wireframe": "wireframes/rating/variation-2.svg"
+    },
+    {
+      "caption": "Input — legend above selectable stars",
+      "wireframe": "wireframes/rating/variation-3.svg"
+    },
+    {
+      "caption": "Size — small and large",
+      "wireframe": "wireframes/rating/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "There is no native rating element. For display, give the whole rating one text alternative, such as visually hidden text \"4 out of 5 stars\", and hide the individual symbols with <code>aria-hidden=\"true\"</code>. An <code>aria-label</code> on a plain <code>&lt;p&gt;</code> or <code>&lt;span&gt;</code> isn't reliably announced.",
+    "For input, use a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> and one radio input per score, each labeled like \"3 stars\". Arrow keys and screen readers then work without extra scripting.",
+    "Filled and empty stars must differ by more than color, such as solid versus outline shapes (WCAG 1.4.1 Use of Color). Showing the number as text helps too.",
+    "Show the scale (\"out of 5\") and, where it matters, the number of ratings, so a perfect score from two people isn't read as strong evidence.",
+    "In the input version, make each star at least 24 by 24 CSS pixels (WCAG 2.5.8 Target Size, Minimum)."
+  ],
+  "wireframe": "wireframes/rating/default.svg",
+  "thumbnail": "wireframes/rating/thumbnail.svg",
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",
@@ -67,5 +144,5 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<!-- display -->\n<p class=\"rating\" aria-label=\"4 out of 5 stars\">★★★★☆</p>\n\n<!-- input -->\n<fieldset>\n  <legend>Your rating</legend>\n  <label><input type=\"radio\" name=\"r\" value=\"1\"> 1 star</label>\n  …\n</fieldset>"
+  "htmlOutline": "<!-- display -->\n<p class=\"rating\">\n  <span aria-hidden=\"true\">★★★★☆</span>\n  <span class=\"visually-hidden\">4 out of 5 stars</span>\n</p>\n\n<!-- input -->\n<fieldset>\n  <legend>Your rating</legend>\n  <label><input type=\"radio\" name=\"r\" value=\"1\"> 1 star</label>\n  …\n</fieldset>"
 }

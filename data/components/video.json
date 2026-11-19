@@ -2,19 +2,97 @@
   "slug": "video",
   "name": "Video",
   "order": 18,
-  "status": "draft",
+  "status": "stable",
   "group": "content-display",
-  "description": "Captions",
-  "summary": "Captions",
-  "htmlElement": "",
+  "description": "A video file played in the page with the native <code>&lt;video&gt;</code> element, with controls and captions. For a video hosted on another service, use Embed.",
+  "summary": "Native video player with captions",
+  "htmlElement": "<code>&lt;video&gt;</code> with <code>&lt;track&gt;</code>",
   "nativeHtml": "`<video>`",
   "aria": "",
   "researchNote": "Captions",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Video",
+      "required": "Yes",
+      "description": "The video file, with one or more <code>&lt;source&gt;</code> formats"
+    },
+    {
+      "name": "Controls",
+      "required": "Yes",
+      "description": "Play and pause, seek, volume, captions and full screen"
+    },
+    {
+      "name": "Captions",
+      "required": "Yes",
+      "description": "<code>&lt;track kind=\"captions\"&gt;</code> for speech and meaningful sound"
+    },
+    {
+      "name": "Poster",
+      "required": "No",
+      "description": "Still image shown before playback starts"
+    },
+    {
+      "name": "Caption",
+      "required": "No",
+      "description": "Visible text below the player, such as a title or transcript link"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Aspect ratio",
+      "options": "16:9, 4:3, 1:1, 9:16",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Content width, Full bleed",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Caption",
+      "options": "None, Below the player",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Playback",
+      "options": "Click to play, Autoplay muted (with a pause control)",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Controls",
+      "options": "Native, Custom",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Portrait — 9:16",
+      "wireframe": "wireframes/video/variation-1.svg"
+    },
+    {
+      "caption": "Full bleed — edge to edge between text",
+      "wireframe": "wireframes/video/variation-2.svg"
+    },
+    {
+      "caption": "With caption — text and transcript link below",
+      "wireframe": "wireframes/video/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Provide captions for prerecorded speech (WCAG 1.2.2) with <code>&lt;track kind=\"captions\"&gt;</code>. When the picture carries information the audio doesn't, add audio description or a transcript (WCAG 1.2.3, 1.2.5).",
+    "Don't autoplay with sound. Sound that plays for more than three seconds needs a way to stop it (WCAG 1.4.2), and moving video that starts on its own and lasts more than five seconds needs a way to pause it (WCAG 2.2.2).",
+    "Keep the <code>controls</code> attribute unless you build custom controls. Custom buttons need accessible names and must work with the keyboard.",
+    "Set <code>width</code> and <code>height</code> or a CSS <code>aspect-ratio</code> so the page doesn't shift while the video loads, and use <code>preload=\"metadata\"</code> with a <code>poster</code> to keep the first load light.",
+    "Use Video for files you host. For YouTube, Vimeo and other services that provide an iframe, use Embed."
+  ],
+  "wireframe": "wireframes/video/default.svg",
+  "thumbnail": "wireframes/video/thumbnail.svg",
   "related": [],
   "aliases": [
     "Video player"

@@ -1,0 +1,46 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "line", "x": 150, "y": 110, "w": 180, "weight": 1 },
+      { "type": "line", "x": 340, "y": 110, "w": 150, "label": "Link text" },
+      { "type": "line", "x": 500, "y": 110, "w": 150, "weight": 1 },
+      { "type": "line", "x": 150, "y": 135, "w": 420, "weight": 1 },
+      { "type": "line", "x": 150, "y": 210, "w": 130, "label": "Standalone link" },
+      { "type": "circle", "cx": 298, "cy": 210, "r": 7, "style": "region", "label": "Icon (optional)", "at": "below" },
+      { "type": "line", "x": 450, "y": 210, "w": 110, "label": "External link" },
+      { "type": "interactive", "x": 568, "y": 203, "w": 14, "h": 14, "rx": 2, "label": "External icon", "at": "below" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 30, "y": 34, "w": 60, "weight": 1 },
+      { "type": "line", "x": 100, "y": 34, "w": 70 },
+      { "type": "line", "x": 180, "y": 34, "w": 40, "weight": 1 },
+      { "type": "line", "x": 30, "y": 52, "w": 130, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 80, "w": 320, "weight": 1 },
+      { "type": "line", "x": 40, "y": 100, "w": 100, "weight": 1 },
+      { "type": "line", "x": 150, "y": 100, "w": 90 },
+      { "type": "line", "x": 250, "y": 100, "w": 110, "weight": 1 },
+      { "type": "line", "x": 40, "y": 120, "w": 220, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 100, "y": 80, "w": 150 },
+      { "type": "circle", "cx": 268, "cy": 80, "r": 7, "style": "region" },
+      { "type": "line", "x": 100, "y": 120, "w": 120 },
+      { "type": "circle", "cx": 238, "cy": 120, "r": 7, "style": "region" }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 110, "y": 100, "w": 150 },
+      { "type": "interactive", "x": 270, "y": 92, "w": 16, "h": 16, "rx": 2 }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 130, "y": 80, "w": 140, "h": 40, "rx": 6 },
+      { "type": "line", "x": 160, "y": 100, "w": 80 }
+    ] }
+  ]
+}

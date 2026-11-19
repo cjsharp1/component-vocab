@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="200" y1="80" x2="500" y2="80" />
+  <line class="text-line" x1="200" y1="105" x2="600" y2="105" stroke-width="1" opacity="0.7" />
+  <rect class="hover-target" x="185" y="158" width="350" height="68" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="360" y1="156" x2="360" y2="144" />
+    <rect class="label-bg" x="334.5" y="124" width="51" height="20" />
+    <text class="label-text" x="360" y="138" text-anchor="middle">Group</text>
+  </g>
+  <rect class="optional" x="185" y="158" width="350" height="68" rx="8" />
+  <rect class="hover-target" x="200" y="170" width="150" height="44" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="275" y1="216" x2="275" y2="228" />
+    <rect class="label-bg" x="218" y="228" width="114" height="20" />
+    <text class="label-text" x="275" y="242" text-anchor="middle">Primary action</text>
+  </g>
+  <rect class="interactive" x="200" y="170" width="150" height="44" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+  <rect class="hover-target" x="370" y="170" width="150" height="44" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="445" y1="216" x2="445" y2="228" />
+    <rect class="label-bg" x="381" y="228" width="128" height="20" />
+    <text class="label-text" x="445" y="242" text-anchor="middle">Secondary action</text>
+  </g>
+  <rect class="interactive" x="370" y="170" width="150" height="44" rx="6" />
+  <line class="text-line" x1="405" y1="192" x2="485" y2="192" />
+</svg>

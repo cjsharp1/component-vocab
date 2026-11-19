@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="interactive" x="70" y="82" width="120" height="36" rx="18" />
+  <circle class="region" cx="90" cy="100" r="8" />
+  <line class="text-line" x1="106" y1="100" x2="172" y2="100" />
+  <rect class="interactive" x="210" y="82" width="120" height="36" rx="18" />
+  <circle class="media-placeholder" cx="228" cy="100" r="12" />
+  <line class="text-line" x1="246" y1="100" x2="312" y2="100" />
+</svg>

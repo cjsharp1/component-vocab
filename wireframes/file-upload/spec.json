@@ -1,0 +1,62 @@
+{
+  "default": {
+    "height": 340,
+    "shapes": [
+      { "type": "line", "x": 200, "y": 50, "w": 120, "label": "Label" },
+      { "type": "line", "x": 200, "y": 72, "w": 400, "weight": 1, "label": "Hint (optional)" },
+      { "type": "optional", "x": 200, "y": 90, "w": 400, "h": 120, "rx": 8, "label": "Drop zone (optional)", "at": "below" },
+      { "type": "interactive", "x": 330, "y": 125, "w": 140, "h": 40, "rx": 6, "label": "Button" },
+      { "type": "line", "x": 360, "y": 145, "w": 80 },
+      { "type": "line", "x": 340, "y": 188, "w": 120, "weight": 1 },
+      { "type": "region", "x": 200, "y": 255, "w": 400, "h": 40, "rx": 4, "label": "File list (optional)", "at": "below" },
+      { "type": "region", "x": 210, "y": 263, "w": 24, "h": 24, "rx": 3 },
+      { "type": "line", "x": 246, "y": 275, "w": 140 },
+      { "type": "text", "x": 584, "y": 280, "value": "×", "size": 14 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "optional", "x": 40, "y": 8, "w": 170, "h": 64, "rx": 6 },
+      { "type": "interactive", "x": 85, "y": 22, "w": 80, "h": 22, "rx": 4 },
+      { "type": "line", "x": 105, "y": 33, "w": 40 },
+      { "type": "line", "x": 95, "y": 58, "w": 60, "weight": 1 }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 70, "w": 100 },
+      { "type": "interactive", "x": 60, "y": 85, "w": 110, "h": 36, "rx": 4 },
+      { "type": "line", "x": 80, "y": 103, "w": 70 },
+      { "type": "line", "x": 185, "y": 103, "w": 120, "weight": 1 }
+    ] },
+    { "shapes": [
+      { "type": "optional", "x": 60, "y": 25, "w": 280, "h": 150, "rx": 8 },
+      { "type": "circle", "cx": 200, "cy": 65, "r": 14, "style": "region" },
+      { "type": "line", "x": 140, "y": 100, "w": 120, "weight": 1 },
+      { "type": "interactive", "x": 150, "y": 120, "w": 100, "h": 32, "rx": 6 },
+      { "type": "line", "x": 170, "y": 136, "w": 60 }
+    ] },
+    { "shapes": [
+      { "type": "region", "x": 60, "y": 40, "w": 280, "h": 40, "rx": 4 },
+      { "type": "line", "x": 76, "y": 54, "w": 120 },
+      { "type": "region", "x": 76, "y": 66, "w": 200, "h": 6, "rx": 3 },
+      { "type": "filled", "x": 76, "y": 66, "w": 120, "h": 6, "rx": 3 },
+      { "type": "text", "x": 322, "y": 65, "value": "×", "size": 14 },
+      { "type": "region", "x": 60, "y": 90, "w": 280, "h": 40, "rx": 4 },
+      { "type": "line", "x": 76, "y": 104, "w": 140 },
+      { "type": "line", "x": 76, "y": 118, "w": 60, "weight": 1 },
+      { "type": "text", "x": 322, "y": 115, "value": "×", "size": 14 },
+      { "type": "region", "x": 60, "y": 140, "w": 280, "h": 40, "rx": 4 },
+      { "type": "line", "x": 76, "y": 154, "w": 100 },
+      { "type": "line", "x": 76, "y": 168, "w": 60, "weight": 1 },
+      { "type": "text", "x": 322, "y": 165, "value": "×", "size": 14 }
+    ] },
+    { "shapes": [
+      { "type": "media", "x": 30, "y": 60, "w": 80, "h": 80, "rx": 4 },
+      { "type": "media", "x": 125, "y": 60, "w": 80, "h": 80, "rx": 4 },
+      { "type": "media", "x": 220, "y": 60, "w": 80, "h": 80, "rx": 4 },
+      { "type": "optional", "x": 315, "y": 60, "w": 80, "h": 80, "rx": 4 },
+      { "type": "text", "x": 355, "y": 107, "value": "+", "size": 20 }
+    ] }
+  ]
+}

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="160" y1="75" x2="440" y2="75" />
+  <rect class="hover-target" x="140" y="130" width="440" height="70" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="360" y1="128" x2="360" y2="116" />
+    <rect class="label-bg" x="299.5" y="96" width="121" height="20" />
+    <text class="label-text" x="360" y="110" text-anchor="middle">List (optional)</text>
+  </g>
+  <rect class="optional" x="140" y="130" width="440" height="70" rx="6" />
+  <rect class="hover-target" x="160" y="149" width="100" height="32" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="210" y1="183" x2="210" y2="195" />
+    <rect class="label-bg" x="190" y="195" width="40" height="20" />
+    <text class="label-text" x="210" y="209" text-anchor="middle">Tag</text>
+  </g>
+  <rect class="region" x="160" y="149" width="100" height="32" rx="16" />
+  <line class="text-line" x1="180" y1="165" x2="240" y2="165" />
+  <rect class="hover-target" x="280" y="149" width="110" height="32" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="335" y1="183" x2="335" y2="195" />
+    <rect class="label-bg" x="299" y="195" width="72" height="20" />
+    <text class="label-text" x="335" y="209" text-anchor="middle">Link tag</text>
+  </g>
+  <rect class="interactive" x="280" y="149" width="110" height="32" rx="16" />
+  <line class="text-line" x1="300" y1="165" x2="370" y2="165" />
+  <rect class="region" x="410" y="149" width="120" height="32" rx="16" />
+  <rect class="hover-target" x="424" y="159" width="12" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="430" y1="173" x2="430" y2="185" />
+    <rect class="label-bg" x="408" y="185" width="44" height="20" />
+    <text class="label-text" x="430" y="199" text-anchor="middle">Icon</text>
+  </g>
+  <circle class="region" cx="430" cy="165" r="6" />
+  <line class="text-line" x1="445" y1="165" x2="515" y2="165" />
+</svg>

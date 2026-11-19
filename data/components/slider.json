@@ -2,19 +2,101 @@
   "slug": "slider",
   "name": "Slider",
   "order": 71,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "Never used for a Carousel",
-  "summary": "Never used for a Carousel",
-  "htmlElement": "",
+  "description": "A control for setting a value, or a range between two values, by moving a thumb along a track. Use it when the relative position matters more than the exact number, such as volume or a price range.",
+  "summary": "Set a value by moving a thumb along a track",
+  "htmlElement": "<code>&lt;input type=\"range\"&gt;</code>",
   "nativeHtml": "`<input type=\"range\">`",
   "aria": "Slider",
   "researchNote": "Never used for a Carousel",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible <code>&lt;label&gt;</code> that names the value"
+    },
+    {
+      "name": "Track",
+      "required": "Yes",
+      "description": "The line from minimum to maximum; the part before the thumb is often filled"
+    },
+    {
+      "name": "Thumb",
+      "required": "Yes",
+      "description": "The handle people drag or move with arrow keys; two thumbs for a range"
+    },
+    {
+      "name": "Value display",
+      "required": "No",
+      "description": "Current value as text, beside the track or in a number field"
+    },
+    {
+      "name": "Tick marks",
+      "required": "No",
+      "description": "Marked steps, with or without labels, such as from <code>&lt;datalist&gt;</code>"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Thumbs",
+      "options": "One value, Range (two thumbs)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Value display",
+      "options": "None, Text beside track, Number input",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Ticks",
+      "options": "None, Steps, Labeled steps",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Orientation",
+      "options": "Horizontal, Vertical",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Step",
+      "options": "Continuous, Fixed step",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Range — two thumbs for a minimum and maximum",
+      "wireframe": "wireframes/slider/variation-1.svg"
+    },
+    {
+      "caption": "With number field — exact value beside the track",
+      "wireframe": "wireframes/slider/variation-2.svg"
+    },
+    {
+      "caption": "Labeled steps — tick marks under the track",
+      "wireframe": "wireframes/slider/variation-3.svg"
+    },
+    {
+      "caption": "Vertical — track runs bottom to top",
+      "wireframe": "wireframes/slider/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Slider means a range input only. A rotating set of slides is a Carousel.",
+    "Sliders are hard to set to an exact value, especially by touch. When the exact number matters, use a Number input, or add one next to the slider.",
+    "Show the current value and the limits. Custom sliders follow the APG Slider pattern: <code>role=\"slider\"</code> with <code>aria-valuenow</code>, <code>aria-valuemin</code> and <code>aria-valuemax</code>, plus <code>aria-valuetext</code> when the number alone isn't meaningful, such as \"$20 to $80\".",
+    "Arrow keys change the value by one step, and Page Up, Page Down, Home and End make larger jumps. Dragging must not be the only way to set it (WCAG 2.5.7).",
+    "For a range, give each thumb its own accessible name, such as \"Minimum price\" and \"Maximum price\"."
+  ],
+  "wireframe": "wireframes/slider/default.svg",
+  "thumbnail": "wireframes/slider/thumbnail.svg",
   "related": [],
   "aliases": [
     "Range input"

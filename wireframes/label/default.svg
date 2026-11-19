@@ -1,0 +1,23 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect class="hover-target" x="200" y="109" width="120" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="260" y1="107" x2="260" y2="95" />
+    <rect class="label-bg" x="217" y="75" width="86" height="20" />
+    <text class="label-text" x="260" y="89" text-anchor="middle">Label text</text>
+  </g>
+  <line class="text-line" x1="200" y1="115" x2="320" y2="115" />
+  <rect class="hover-target" x="335" y="109" width="70" height="12" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="370" y1="107" x2="370" y2="95" />
+    <rect class="label-bg" x="309.5" y="75" width="121" height="20" />
+    <text class="label-text" x="370" y="89" text-anchor="middle">Required marker</text>
+  </g>
+  <line class="text-line" x1="335" y1="115" x2="405" y2="115" stroke-width="1" opacity="0.7" />
+  <rect class="hover-target" x="200" y="140" width="400" height="44" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="186" x2="400" y2="198" />
+    <rect class="label-bg" x="367.5" y="198" width="65" height="20" />
+    <text class="label-text" x="400" y="212" text-anchor="middle">Control</text>
+  </g>
+  <rect class="interactive" x="200" y="140" width="400" height="44" rx="4" />
+</svg>

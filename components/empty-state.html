@@ -30,11 +30,13 @@
 
     <section>
       <h1>Empty state</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
+      <p>A message shown where content would be but isn't yet, such as an empty list or a search with no results. It says why the area is empty and offers the next step.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>In design systems: Empty (Ant Design, shadcn/ui); Empty state (Polaris, Atlassian); Empty State (Chakra UI)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;div&gt;</code> with a heading, text and an action</dd>
         <dt>Category</dt>
         <dd>C. Content display</dd>
       </dl>
@@ -49,6 +51,145 @@
   &lt;p&gt;Projects you create appear here.&lt;/p&gt;
   &lt;button&gt;Create a project&lt;/button&gt;
 &lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Illustration</td><td>No</td><td>Icon or image; decorative, so hidden from screen readers</td></tr>
+          <tr><td>Heading</td><td>Yes</td><td>Says what is empty, e.g. "No projects yet"</td></tr>
+          <tr><td>Description</td><td>No</td><td>Why it is empty or what will appear here</td></tr>
+          <tr><td>Action</td><td>No</td><td>Button or Link for the next step, such as creating an item or clearing filters</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 330" xmlns="http://www.w3.org/2000/svg">
+          <rect class="region" x="120" y="30" width="560" height="280" rx="6" />
+          <rect class="hover-target" x="366" y="56" width="68" height="68" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="54" x2="400" y2="42" />
+            <rect class="label-bg" x="311.5" y="22" width="177" height="20" />
+            <text class="label-text" x="400" y="36" text-anchor="middle">Illustration (optional)</text>
+          </g>
+          <circle class="media-placeholder" cx="400" cy="90" r="34" />
+          <rect class="hover-target" x="310" y="164" width="180" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="162" x2="400" y2="150" />
+            <rect class="label-bg" x="367.5" y="130" width="65" height="20" />
+            <text class="label-text" x="400" y="144" text-anchor="middle">Heading</text>
+          </g>
+          <line class="text-line" x1="310" y1="170" x2="490" y2="170" />
+          <line class="text-line" x1="260" y1="200" x2="540" y2="200" stroke-width="1" opacity="0.7" />
+          <line class="text-line" x1="290" y1="216" x2="510" y2="216" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="330" y="245" width="140" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="287" x2="400" y2="299" />
+            <rect class="label-bg" x="332.5" y="299" width="135" height="20" />
+            <text class="label-text" x="400" y="313" text-anchor="middle">Action (optional)</text>
+          </g>
+          <rect class="interactive" x="330" y="245" width="140" height="40" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Illustration</td><td>None, Icon, Image</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Compact (inside a Card or Table), Full area</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Alignment</td><td>Center, Start</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Actions</td><td>None, One, Primary and secondary</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Reason</td><td>First use, No results, Cleared</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="10" width="360" height="180" rx="4" />
+              <circle class="media-placeholder" cx="200" cy="55" r="22" />
+              <line class="text-line" x1="150" y1="100" x2="250" y2="100" />
+              <line class="text-line" x1="120" y1="120" x2="280" y2="120" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="150" y="140" width="100" height="30" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+            </svg>
+          </div>
+          <figcaption>Full area — illustration, text and action</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="20" y="20" width="360" height="160" rx="4" />
+              <rect class="region" x="20" y="20" width="360" height="30" rx="4" />
+              <line class="text-line" x1="36" y1="35" x2="96" y2="35" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="150" y1="35" x2="210" y2="35" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="264" y1="35" x2="324" y2="35" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="150" y1="100" x2="250" y2="100" />
+              <line class="text-line" x1="130" y1="120" x2="270" y2="120" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="170" y1="148" x2="230" y2="148" />
+            </svg>
+          </div>
+          <figcaption>Compact — inside a Table</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="media-placeholder" cx="70" cy="80" r="22" />
+              <line class="text-line" x1="110" y1="70" x2="260" y2="70" />
+              <line class="text-line" x1="110" y1="92" x2="340" y2="92" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="110" y="112" width="100" height="30" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+            </svg>
+          </div>
+          <figcaption>Start aligned — icon beside the text</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="150" y1="70" x2="250" y2="70" />
+              <line class="text-line" x1="110" y1="95" x2="290" y2="95" stroke-width="1" opacity="0.7" />
+              <rect class="interactive" x="95" y="125" width="100" height="32" rx="6" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
+              <rect class="interactive" x="205" y="125" width="100" height="32" rx="6" />
+              <line class="text-line" x1="225" y1="141" x2="285" y2="141" />
+            </svg>
+          </div>
+          <figcaption>Two actions — primary and secondary</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Say what is empty and what to do next. A bare "No data" leaves people guessing whether something failed.</li>
+        <li>Treat the illustration as decorative (<code>aria-hidden="true"</code> or an empty <code>alt</code>); the heading and text carry the message.</li>
+        <li>When it replaces results after a search or filter change, announce it in a <code>role="status"</code> region so screen reader users know the update happened (WCAG 4.1.3 Status Messages).</li>
+        <li>Pick the heading level from where it sits in the outline, not from the size you want (see Heading).</li>
+        <li>Use Empty state for missing content. Use Alert for errors that need attention, and Skeleton or Spinner while content is still loading.</li>
+      </ul>
     </section>
 
     <section>

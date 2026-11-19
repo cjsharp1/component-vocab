@@ -30,16 +30,19 @@
 
     <section>
       <h1>Disclosure</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>A single one</p>
+      <p>A control that shows and hides one section of content, such as extra help under a form field. Use <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>; for a set of related sections, use an Accordion.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>No equivalent in the surveyed design systems</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;details&gt;</code></dd>
         <dt>ARIA pattern</dt>
         <dd>Disclosure</dd>
+        <dt>Research note</dt>
+        <dd>A single one</dd>
         <dt>Category</dt>
         <dd>F. Disclosure and overlays</dd>
       </dl>
@@ -52,6 +55,142 @@
   &lt;summary&gt;Show details&lt;/summary&gt;
   &lt;p&gt;Hidden content…&lt;/p&gt;
 &lt;/details&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Summary</td><td>Yes</td><td>Always-visible label that opens and closes the content</td></tr>
+          <tr><td>Icon</td><td>No</td><td>Triangle or chevron that turns when open</td></tr>
+          <tr><td>Content</td><td>Yes</td><td>Hidden until opened; can hold any flow content</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="182" y="102" width="16" height="16" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="190" y1="100" x2="190" y2="88" />
+            <rect class="label-bg" x="168" y="68" width="44" height="20" />
+            <text class="label-text" x="190" y="82" text-anchor="middle">Icon</text>
+          </g>
+          <circle class="region" cx="190" cy="110" r="8" />
+          <rect class="hover-target" x="210" y="104" width="220" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="320" y1="102" x2="320" y2="90" />
+            <rect class="label-bg" x="287.5" y="70" width="65" height="20" />
+            <text class="label-text" x="320" y="84" text-anchor="middle">Summary</text>
+          </g>
+          <line class="text-line" x1="210" y1="110" x2="430" y2="110" />
+          <rect class="hover-target" x="180" y="140" width="460" height="120" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="410" y1="262" x2="410" y2="274" />
+            <rect class="label-bg" x="377.5" y="274" width="65" height="20" />
+            <text class="label-text" x="410" y="288" text-anchor="middle">Content</text>
+          </g>
+          <rect class="region" x="180" y="140" width="460" height="120" rx="4" />
+          <line class="text-line" x1="205" y1="170" x2="605" y2="170" />
+          <line class="text-line" x1="205" y1="190" x2="605" y2="190" />
+          <line class="text-line" x1="205" y1="210" x2="605" y2="210" />
+          <line class="text-line" x1="205" y1="230" x2="485" y2="230" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Default state</td><td>Closed, Open</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Style</td><td>Plain, Boxed</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Icon position</td><td>Before, After, None</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Full, Small (hint text)</td><td class="affects-layout">Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="60" x2="340" y2="60" stroke-width="1" opacity="0.7" />
+              <circle class="region" cx="68" cy="100" r="7" />
+              <line class="text-line" x1="86" y1="100" x2="266" y2="100" />
+              <line class="text-line" x1="60" y1="140" x2="310" y2="140" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Closed — summary between paragraphs</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="region" cx="68" cy="50" r="7" />
+              <line class="text-line" x1="86" y1="50" x2="266" y2="50" />
+              <line class="text-line" x1="86" y1="85" x2="336" y2="85" />
+              <line class="text-line" x1="86" y1="105" x2="336" y2="105" />
+              <line class="text-line" x1="86" y1="125" x2="336" y2="125" />
+              <line class="text-line" x1="86" y1="145" x2="261" y2="145" />
+            </svg>
+          </div>
+          <figcaption>Open — content below the summary</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="region" x="50" y="40" width="300" height="120" rx="6" />
+              <line class="text-line" x1="70" y1="65" x2="230" y2="65" />
+              <circle class="region" cx="325" cy="65" r="7" />
+              <line class="text-line" x1="70" y1="100" x2="320" y2="100" />
+              <line class="text-line" x1="70" y1="118" x2="320" y2="118" />
+              <line class="text-line" x1="70" y1="136" x2="245" y2="136" />
+            </svg>
+          </div>
+          <figcaption>Boxed — bordered, icon after</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="50" x2="160" y2="50" />
+              <rect class="interactive" x="60" y="65" width="220" height="36" rx="4" />
+              <circle class="region" cx="66" cy="125" r="5" />
+              <line class="text-line" x1="78" y1="125" x2="218" y2="125" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Small — help text under a form field</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Native <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> work with the keyboard and screen readers without any script. Don't put links or other controls inside the <code>&lt;summary&gt;</code>.</li>
+        <li>If you build it from a button instead, set <code>aria-expanded</code> on the button and show or hide the content it controls, as in the ARIA Authoring Practices Disclosure pattern.</li>
+        <li>Use one Disclosure for a single optional section. For several related sections, use an Accordion; to switch between views of the same space, use Tabs.</li>
+        <li>Write a summary that says what is inside, such as "Help with your reference number", not just "More".</li>
+        <li>Don't hide content that most people need to complete the task. Leave it visible instead.</li>
+      </ul>
     </section>
 
     <section>

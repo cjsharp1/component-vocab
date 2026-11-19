@@ -2,19 +2,91 @@
   "slug": "textarea",
   "name": "Textarea",
   "order": 66,
-  "status": "draft",
+  "status": "stable",
   "group": "forms",
-  "description": "",
-  "summary": "Draft entry",
-  "htmlElement": "",
+  "description": "A multi-line field for longer free text, such as a message or a description. Use it when the answer may run past one line; for short values, use a Text input.",
+  "summary": "Multi-line field for longer text",
+  "htmlElement": "<code>&lt;textarea&gt;</code>",
   "nativeHtml": "`<textarea>`",
   "aria": "",
   "researchNote": "",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Visible name linked with <code>for</code>; see Label"
+    },
+    {
+      "name": "Field",
+      "required": "Yes",
+      "description": "The text box; its height, set with <code>rows</code>, hints at the expected length"
+    },
+    {
+      "name": "Hint",
+      "required": "No",
+      "description": "Guidance, linked with <code>aria-describedby</code>"
+    },
+    {
+      "name": "Character count",
+      "required": "No",
+      "description": "Shows how many characters are left when there's a limit"
+    },
+    {
+      "name": "Resize handle",
+      "required": "No",
+      "description": "Lets people drag the field taller; browsers add it by default"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Rows",
+      "options": "Short (2-3), Tall (6+), Auto-grow",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Character count",
+      "options": "Hidden, Shown below the field",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Default, Error, Disabled, Read-only",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Resize",
+      "options": "Vertical, None, Both",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Rows — short and tall",
+      "wireframe": "wireframes/textarea/variation-1.svg"
+    },
+    {
+      "caption": "Character count — characters left below the field",
+      "wireframe": "wireframes/textarea/variation-2.svg"
+    },
+    {
+      "caption": "Error — message above the field",
+      "wireframe": "wireframes/textarea/variation-3.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use a Textarea when the answer can be longer than a line. Use a Text input for short single-line values; Enter in a Textarea adds a line break instead of submitting the form.",
+    "Set <code>rows</code> to suit the expected length. If the height grows with the content, still allow vertical resizing so people can see more of what they wrote.",
+    "With a character limit, show how many characters remain and announce the count through a polite live region after typing pauses, not on every keystroke. Letting people go over and showing an error is kinder than <code>maxlength</code>, which silently cuts off pasted text.",
+    "Give it a visible <code>&lt;label&gt;</code> and link hints and errors with <code>aria-describedby</code>, as for a Text input.",
+    "The alias \"Textbox\" is the ARIA role a <code>&lt;textarea&gt;</code> already has (<code>textbox</code> with <code>aria-multiline</code>). The component keeps the HTML element's name."
+  ],
+  "wireframe": "wireframes/textarea/default.svg",
+  "thumbnail": "wireframes/textarea/thumbnail.svg",
   "related": [],
   "aliases": [
     "Textbox"

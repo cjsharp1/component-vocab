@@ -2,19 +2,87 @@
   "slug": "feed",
   "name": "Feed",
   "order": 42,
-  "status": "draft",
+  "status": "stable",
   "group": "wayfinding",
-  "description": "Auto-loading list of articles",
-  "summary": "Auto-loading list of articles",
-  "htmlElement": "",
+  "description": "A scrolling list of articles that loads more as the user reaches the end, such as a news or social stream. The ARIA <code>feed</code> role lets screen reader users move from article to article while new ones load.",
+  "summary": "Scrolling list of articles that loads more",
+  "htmlElement": "<code>&lt;div role=\"feed\"&gt;</code> of <code>&lt;article&gt;</code> elements",
   "nativeHtml": "",
   "aria": "Feed",
   "researchNote": "Auto-loading list of articles",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Article",
+      "required": "Yes",
+      "description": "One focusable item, labelled by its heading, with aria-posinset and aria-setsize"
+    },
+    {
+      "name": "Image",
+      "required": "No",
+      "description": "Thumbnail beside or above the article text"
+    },
+    {
+      "name": "Loading indicator",
+      "required": "No",
+      "description": "Shown while more articles load; the feed has aria-busy=\"true\" meanwhile"
+    },
+    {
+      "name": "Load more button",
+      "required": "No",
+      "description": "Loads the next batch on request instead of on scroll"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Article layout",
+      "options": "Text only, With image",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Separation",
+      "options": "Plain rows, Cards",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Loading",
+      "options": "Automatic on scroll, Load more button",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Batch size",
+      "options": "10, 20, 50 articles",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "With image — thumbnail beside each article",
+      "wireframe": "wireframes/feed/variation-1.svg"
+    },
+    {
+      "caption": "Cards — each article in a box",
+      "wireframe": "wireframes/feed/variation-2.svg"
+    },
+    {
+      "caption": "Load more — button instead of loading on scroll",
+      "wireframe": "wireframes/feed/variation-3.svg"
+    },
+    {
+      "caption": "Automatic — placeholders while the next batch loads",
+      "wireframe": "wireframes/feed/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use <code>role=\"feed\"</code> only for a list of articles that grows as the user scrolls. A fixed set of posts is a List, or a Grid of Cards.",
+    "Make each <code>&lt;article&gt;</code> focusable and label it, usually with its heading. Set <code>aria-posinset</code> and <code>aria-setsize</code> (-1 when the total is unknown), and <code>aria-busy=\"true\"</code> on the feed while articles are added.",
+    "The ARIA Authoring Practices give feeds Page Down and Page Up to move between articles, and Control+End and Control+Home to move focus past the feed, so keyboard users are not trapped in it.",
+    "Endless loading puts the footer out of reach and makes it hard to return to a position. Consider a Load more button, or Pagination when people need to come back to a specific place."
+  ],
   "related": [],
   "aliases": [],
   "frameworkSource": "none",
@@ -62,5 +130,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<div role=\"feed\" aria-busy=\"false\">\n  <article aria-posinset=\"1\" aria-setsize=\"-1\">…</article>\n  <article aria-posinset=\"2\" aria-setsize=\"-1\">…</article>\n</div>"
+  "htmlOutline": "<div role=\"feed\" aria-busy=\"false\">\n  <article aria-posinset=\"1\" aria-setsize=\"-1\">…</article>\n  <article aria-posinset=\"2\" aria-setsize=\"-1\">…</article>\n</div>",
+  "wireframe": "wireframes/feed/default.svg",
+  "thumbnail": "wireframes/feed/thumbnail.svg"
 }

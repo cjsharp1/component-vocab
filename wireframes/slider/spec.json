@@ -1,0 +1,64 @@
+{
+  "default": {
+    "height": 300,
+    "shapes": [
+      { "type": "line", "x": 200, "y": 90, "w": 120, "label": "Label" },
+      { "type": "line", "x": 540, "y": 90, "w": 60, "label": "Value (optional)" },
+      { "type": "region", "x": 200, "y": 145, "w": 400, "h": 8, "rx": 4, "label": "Track", "at": "below" },
+      { "type": "filled", "x": 200, "y": 145, "w": 160, "h": 8, "rx": 4 },
+      { "type": "circle", "cx": 360, "cy": 149, "r": 13, "style": "interactive", "label": "Thumb" },
+      { "type": "text", "x": 200, "y": 185, "value": "0", "size": 12 },
+      { "type": "text", "x": 600, "y": 185, "value": "100", "size": 12 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "region", "x": 30, "y": 37, "w": 190, "h": 6, "rx": 3 },
+      { "type": "filled", "x": 30, "y": 37, "w": 90, "h": 6, "rx": 3 },
+      { "type": "circle", "cx": 120, "cy": 40, "r": 10, "style": "interactive" }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 60, "w": 100 },
+      { "type": "region", "x": 60, "y": 106, "w": 280, "h": 8, "rx": 4 },
+      { "type": "filled", "x": 130, "y": 106, "w": 130, "h": 8, "rx": 4 },
+      { "type": "circle", "cx": 130, "cy": 110, "r": 12, "style": "interactive" },
+      { "type": "circle", "cx": 260, "cy": 110, "r": 12, "style": "interactive" },
+      { "type": "text", "x": 130, "y": 145, "value": "20", "size": 12 },
+      { "type": "text", "x": 260, "y": 145, "value": "80", "size": 12 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 70, "w": 100 },
+      { "type": "region", "x": 40, "y": 106, "w": 220, "h": 8, "rx": 4 },
+      { "type": "filled", "x": 40, "y": 106, "w": 120, "h": 8, "rx": 4 },
+      { "type": "circle", "cx": 160, "cy": 110, "r": 12, "style": "interactive" },
+      { "type": "interactive", "x": 290, "y": 90, "w": 70, "h": 40, "rx": 4 },
+      { "type": "line", "x": 305, "y": 110, "w": 30 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 60, "y": 50, "w": 100 },
+      { "type": "region", "x": 60, "y": 96, "w": 280, "h": 8, "rx": 4 },
+      { "type": "filled", "x": 60, "y": 96, "w": 140, "h": 8, "rx": 4 },
+      { "type": "region", "x": 59, "y": 118, "w": 2, "h": 8 },
+      { "type": "region", "x": 129, "y": 118, "w": 2, "h": 8 },
+      { "type": "region", "x": 199, "y": 118, "w": 2, "h": 8 },
+      { "type": "region", "x": 269, "y": 118, "w": 2, "h": 8 },
+      { "type": "region", "x": 339, "y": 118, "w": 2, "h": 8 },
+      { "type": "circle", "cx": 200, "cy": 100, "r": 12, "style": "interactive" },
+      { "type": "text", "x": 60, "y": 148, "value": "0", "size": 11 },
+      { "type": "text", "x": 130, "y": 148, "value": "25", "size": 11 },
+      { "type": "text", "x": 200, "y": 148, "value": "50", "size": 11 },
+      { "type": "text", "x": 270, "y": 148, "value": "75", "size": 11 },
+      { "type": "text", "x": 340, "y": 148, "value": "100", "size": 11 }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 40, "y": 30, "w": 80 },
+      { "type": "region", "x": 196, "y": 20, "w": 8, "h": 160, "rx": 4 },
+      { "type": "filled", "x": 196, "y": 100, "w": 8, "h": 80, "rx": 4 },
+      { "type": "circle", "cx": 200, "cy": 100, "r": 12, "style": "interactive" },
+      { "type": "text", "x": 225, "y": 32, "value": "100", "size": 11, "anchor": "start" },
+      { "type": "text", "x": 225, "y": 182, "value": "0", "size": 11, "anchor": "start" }
+    ] }
+  ]
+}

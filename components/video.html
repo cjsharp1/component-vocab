@@ -30,14 +30,17 @@
 
     <section>
       <h1>Video</h1>
-      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
-      <p>Captions</p>
+      <p>A video file played in the page with the native <code>&lt;video&gt;</code> element, with controls and captions. For a video hosted on another service, use Embed.</p>
 
       <dl>
         <dt>Also known as</dt>
         <dd>Video player</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;video&gt;</code> with <code>&lt;track&gt;</code></dd>
         <dt>Native HTML</dt>
         <dd><code>&lt;video&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>Captions</dd>
         <dt>Category</dt>
         <dd>C. Content display</dd>
       </dl>
@@ -50,6 +53,133 @@
   &lt;source src="intro.mp4" type="video/mp4"&gt;
   &lt;track kind="captions" src="intro.vtt" srclang="en" label="English"&gt;
 &lt;/video&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Video</td><td>Yes</td><td>The video file, with one or more <code>&lt;source&gt;</code> formats</td></tr>
+          <tr><td>Controls</td><td>Yes</td><td>Play and pause, seek, volume, captions and full screen</td></tr>
+          <tr><td>Captions</td><td>Yes</td><td><code>&lt;track kind="captions"&gt;</code> for speech and meaningful sound</td></tr>
+          <tr><td>Poster</td><td>No</td><td>Still image shown before playback starts</td></tr>
+          <tr><td>Caption</td><td>No</td><td>Visible text below the player, such as a title or transcript link</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+          <rect class="hover-target" x="200" y="40" width="400" height="225" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="38" x2="400" y2="26" />
+            <rect class="label-bg" x="374.5" y="6" width="51" height="20" />
+            <text class="label-text" x="400" y="20" text-anchor="middle">Video</text>
+          </g>
+          <rect class="media-placeholder" x="200" y="40" width="400" height="225" rx="4" />
+          <circle class="interactive" cx="400" cy="125" r="24" style="fill: var(--wireframe-interactive)" />
+          <rect class="hover-target" x="300" y="194" width="200" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="192" x2="400" y2="180" />
+            <rect class="label-bg" x="364" y="160" width="72" height="20" />
+            <text class="label-text" x="400" y="174" text-anchor="middle">Captions</text>
+          </g>
+          <line class="text-line" x1="300" y1="200" x2="500" y2="200" />
+          <rect class="hover-target" x="210" y="225" width="380" height="30" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="400" y1="257" x2="400" y2="269" />
+            <rect class="label-bg" x="364" y="269" width="72" height="20" />
+            <text class="label-text" x="400" y="283" text-anchor="middle">Controls</text>
+          </g>
+          <rect class="interactive" x="210" y="225" width="380" height="30" rx="4" />
+          <circle class="region" cx="228" cy="240" r="7" />
+          <line class="text-line" x1="248" y1="240" x2="508" y2="240" stroke-width="1" opacity="0.7" />
+          <rect class="hover-target" x="200" y="299" width="260" height="12" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="330" y1="313" x2="330" y2="325" />
+            <rect class="label-bg" x="259" y="325" width="142" height="20" />
+            <text class="label-text" x="330" y="339" text-anchor="middle">Caption (optional)</text>
+          </g>
+          <line class="text-line" x1="200" y1="305" x2="460" y2="305" stroke-width="1" opacity="0.7" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Aspect ratio</td><td>16:9, 4:3, 1:1, 9:16</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Width</td><td>Content width, Full bleed</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Caption</td><td>None, Below the player</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Playback</td><td>Click to play, Autoplay muted (with a pause control)</td><td>No</td></tr>
+          <tr><td>Controls</td><td>Native, Custom</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="152" y="15" width="96" height="170" rx="4" />
+              <circle class="interactive" cx="200" cy="100" r="14" style="fill: var(--wireframe-interactive)" />
+            </svg>
+          </div>
+          <figcaption>Portrait — 9:16</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="60" y1="15" x2="340" y2="15" stroke-width="1" opacity="0.7" />
+              <rect class="media-placeholder" x="0" y="32" width="400" height="136" />
+              <circle class="interactive" cx="200" cy="100" r="16" style="fill: var(--wireframe-interactive)" />
+              <line class="text-line" x1="60" y1="185" x2="340" y2="185" stroke-width="1" opacity="0.7" />
+            </svg>
+          </div>
+          <figcaption>Full bleed — edge to edge between text</figcaption>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <rect class="media-placeholder" x="100" y="20" width="200" height="113" rx="4" />
+              <circle class="interactive" cx="200" cy="76" r="14" style="fill: var(--wireframe-interactive)" />
+              <line class="text-line" x1="100" y1="152" x2="280" y2="152" stroke-width="1" opacity="0.7" />
+              <line class="text-line" x1="100" y1="172" x2="190" y2="172" />
+            </svg>
+          </div>
+          <figcaption>With caption — text and transcript link below</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Provide captions for prerecorded speech (WCAG 1.2.2) with <code>&lt;track kind="captions"&gt;</code>. When the picture carries information the audio doesn't, add audio description or a transcript (WCAG 1.2.3, 1.2.5).</li>
+        <li>Don't autoplay with sound. Sound that plays for more than three seconds needs a way to stop it (WCAG 1.4.2), and moving video that starts on its own and lasts more than five seconds needs a way to pause it (WCAG 2.2.2).</li>
+        <li>Keep the <code>controls</code> attribute unless you build custom controls. Custom buttons need accessible names and must work with the keyboard.</li>
+        <li>Set <code>width</code> and <code>height</code> or a CSS <code>aspect-ratio</code> so the page doesn't shift while the video loads, and use <code>preload="metadata"</code> with a <code>poster</code> to keep the first load light.</li>
+        <li>Use Video for files you host. For YouTube, Vimeo and other services that provide an iframe, use Embed.</li>
+      </ul>
     </section>
 
     <section>
