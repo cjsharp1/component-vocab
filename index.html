@@ -922,7 +922,12 @@
         <li><span class="match-symbol" aria-hidden="true">—</span> No equivalent</li>
         <li><sup>*</sup> Not in the CSV: names come from the old page and cover 5 systems only</li>
       </ul>
-      <div style="overflow-x: auto;">
+      <div class="table-scroll-controls" hidden>
+        <button type="button" data-scroll="-1" aria-controls="comparison-table">&larr; Previous systems</button>
+        <button type="button" data-scroll="1" aria-controls="comparison-table">Next systems &rarr;</button>
+        <small>Or drag the table, use Shift + scroll wheel, or focus it and press &larr; / &rarr;.</small>
+      </div>
+      <div class="table-scroll" id="comparison-table" tabindex="0" role="region" aria-label="Cross-system comparison, scrolls sideways">
         <table>
           <thead>
             <tr>

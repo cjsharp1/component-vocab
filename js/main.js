@@ -68,6 +68,60 @@ function initCategoryCounts() {
   });
 }
 
+/* Wide tables: page through columns with buttons, drag with the mouse,
+   or use the arrow keys once the table has focus. The pinned first
+   column is subtracted so a page step never hides unseen columns. */
+function initTableScroll() {
+  document.querySelectorAll('.table-scroll').forEach(scroller => {
+    const controls = document.querySelector(`.table-scroll-controls [aria-controls="${scroller.id}"]`)?.parentElement;
+    const pinned = () => scroller.querySelector('th:first-child')?.offsetWidth || 0;
+    const page = dir => {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      scroller.scrollBy({ left: dir * Math.max(120, scroller.clientWidth - pinned() - 40), behavior: reduce ? 'auto' : 'smooth' });
+    };
+    const update = () => {
+      if (!controls) return;
+      const max = scroller.scrollWidth - scroller.clientWidth;
+      controls.hidden = max <= 1;
+      controls.querySelector('[data-scroll="-1"]').disabled = scroller.scrollLeft <= 1;
+      controls.querySelector('[data-scroll="1"]').disabled = scroller.scrollLeft >= max - 1;
+    };
+    controls?.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => page(Number(b.dataset.scroll))));
+    scroller.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+
+    scroller.addEventListener('keydown', e => {
+      if (e.target !== scroller) return;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        scroller.scrollBy({ left: e.key === 'ArrowRight' ? 80 : -80 });
+      } else if (e.key === 'PageDown' || e.key === 'PageUp') {
+        e.preventDefault();
+        page(e.key === 'PageDown' ? 1 : -1);
+      }
+    });
+
+    // Mouse drag (touch already scrolls natively). Links still work on a click.
+    let start = null;
+    scroller.addEventListener('pointerdown', e => {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      start = { x: e.clientX, left: scroller.scrollLeft, moved: false };
+    });
+    window.addEventListener('pointermove', e => {
+      if (!start) return;
+      const dx = e.clientX - start.x;
+      if (Math.abs(dx) > 4) { start.moved = true; scroller.classList.add('is-dragging'); }
+      if (start.moved) scroller.scrollLeft = start.left - dx;
+    });
+    window.addEventListener('pointerup', () => {
+      if (start?.moved) scroller.addEventListener('click', e => e.preventDefault(), { capture: true, once: true });
+      start = null;
+      scroller.classList.remove('is-dragging');
+    });
+  });
+}
+
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const id = anchor.getAttribute('href').slice(1);
@@ -88,5 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initWireframeLabels();
   initCategoryFilter();
   initCategoryCounts();
+  initTableScroll();
   initSmoothScroll();
 });

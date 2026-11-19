@@ -583,8 +583,11 @@ body > footer p { margin: 0; max-width: none; }
 .component-grid li a:hover strong { color: var(--accent); }
 
 /* Comparison table */
-#comparison > div { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); }
-#comparison table { border: 0; border-radius: 0; margin: 0; min-width: 760px; }
+#comparison .table-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); cursor: grab; scrollbar-width: thin; }
+#comparison .table-scroll.is-dragging { cursor: grabbing; user-select: none; }
+#comparison .table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* overflow: visible lets the first column stay sticky (Pico sets table overflow) */
+#comparison table { border: 0; border-radius: 0; margin: 0; min-width: 760px; overflow: visible; }
 #comparison th:first-child,
 #comparison td:first-child {
   position: sticky;
@@ -704,3 +707,28 @@ body > footer p { margin: 0; max-width: none; }
   tab-size: 2;
 }
 .html-outline code { padding: 0; background: none; font-size: inherit; color: var(--ink); white-space: pre; }
+
+/* Comparison table scroll controls */
+.table-scroll-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.table-scroll-controls[hidden] { display: none; }
+.table-scroll-controls button {
+  width: auto;
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  box-shadow: none;
+}
+.table-scroll-controls button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.table-scroll-controls button:disabled { opacity: 0.4; cursor: default; }
+.table-scroll-controls small { color: var(--ink-3); font-size: 0.8rem; }
