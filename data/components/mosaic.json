@@ -1,0 +1,81 @@
+{
+  "slug": "mosaic",
+  "name": "Mosaic",
+  "order": 23,
+  "status": "stable",
+  "group": "content-display",
+  "description": "An asymmetric, mixed-size layout of content blocks. Unlike a uniform Grid, items have intentionally varied sizes to create visual interest and hierarchy.",
+  "summary": "Asymmetric mixed-size content layout",
+  "alsoKnownAs": "— (no direct equivalent; CSS Grid pattern)",
+  "htmlElement": "<code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Items",
+      "required": "Yes",
+      "description": "Content blocks (images, cards, text) of varying sizes"
+    }
+  ],
+  "wireframe": "wireframes/mosaic/default.svg",
+  "thumbnail": "wireframes/mosaic/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Pattern",
+      "options": "Featured + small, Alternating sizes, Random",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Gap",
+      "options": "None, Small, Default",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Item content",
+      "options": "Images only, Cards, Mixed",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Featured + small",
+      "wireframe": "wireframes/mosaic/variation-1.svg"
+    },
+    {
+      "caption": "Alternating sizes",
+      "wireframe": "wireframes/mosaic/variation-2.svg"
+    },
+    {
+      "caption": "No gap — seamless",
+      "wireframe": "wireframes/mosaic/variation-3.svg"
+    },
+    {
+      "caption": "Random pattern",
+      "wireframe": "wireframes/mosaic/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for portfolios, image galleries, or content that benefits from visual variety. For uniform grids, use Grid. For image-only collections with captions, use Gallery (Figure collection).",
+    "Implement with CSS Grid using <code>grid-template-columns</code> and <code>grid-column</code> / <code>grid-row</code> spanning.",
+    "Plan the layout pattern in advance — random patterns can look chaotic if not carefully designed.",
+    "Ensure sufficient contrast for text overlays on images in mosaic cards.",
+    "On mobile, mosaic layouts typically revert to a single-column or simpler 2-column grid."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

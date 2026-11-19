@@ -1,0 +1,31 @@
+<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon -->
+  <rect class="hover-target" x="330" y="40" width="140" height="60" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="35" x2="400" y2="15" />
+    <rect class="label-bg" x="377" y="0" width="46" height="20" />
+    <text class="label-text" x="400" y="14" text-anchor="middle">Icon</text>
+  </g>
+  <circle class="interactive optional" cx="400" cy="70" r="28" />
+  <circle cx="400" cy="70" r="12" fill="#0066cc" opacity="0.3" />
+
+  <!-- Heading -->
+  <rect class="hover-target" x="300" y="120" width="200" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="115" x2="400" y2="95" />
+    <rect class="label-bg" x="361" y="79" width="78" height="20" />
+    <text class="label-text" x="400" y="93" text-anchor="middle">Heading</text>
+  </g>
+  <line class="text-line" x1="300" y1="130" x2="500" y2="130" />
+
+  <!-- Description -->
+  <rect class="hover-target" x="280" y="155" width="240" height="50" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="210" x2="400" y2="230" />
+    <rect class="label-bg" x="349" y="232" width="102" height="20" />
+    <text class="label-text" x="400" y="246" text-anchor="middle">Description</text>
+  </g>
+  <line class="text-line" x1="280" y1="165" x2="520" y2="165" />
+  <line class="text-line" x1="300" y1="180" x2="500" y2="180" />
+  <line class="text-line" x1="310" y1="195" x2="490" y2="195" />
+</svg>

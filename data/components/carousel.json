@@ -1,0 +1,96 @@
+{
+  "slug": "carousel",
+  "name": "Carousel",
+  "order": 48,
+  "status": "stable",
+  "group": "interactive",
+  "description": "A paginated slideshow cycling through cards, images, or content panels. Shows one or a few items at a time with navigation.",
+  "summary": "Paginated slideshow cycling through content",
+  "alsoKnownAs": "Carousel (Bootstrap), Carousel (Material), Carousel (Ant), — (Apple), Carousel (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with role=\"region\" aria-roledescription=\"carousel\"",
+  "elements": [
+    {
+      "name": "Slides/items",
+      "required": "Yes",
+      "description": "Content panels (cards, images, etc.)"
+    },
+    {
+      "name": "Navigation arrows",
+      "required": "No",
+      "description": "Previous/next buttons"
+    },
+    {
+      "name": "Dot indicators",
+      "required": "No",
+      "description": "Pagination dots showing position"
+    }
+  ],
+  "wireframe": "wireframes/carousel/default.svg",
+  "thumbnail": "wireframes/carousel/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Items visible",
+      "options": "1, 2, 3+",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Navigation",
+      "options": "Arrows, Dots, Both, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Auto-play",
+      "options": "On, Off",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Transition",
+      "options": "Slide, Fade",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Items visible: 1",
+      "wireframe": "wireframes/carousel/variation-1.svg"
+    },
+    {
+      "caption": "Items visible: 2",
+      "wireframe": "wireframes/carousel/variation-2.svg"
+    },
+    {
+      "caption": "Items visible: 3",
+      "wireframe": "wireframes/carousel/variation-3.svg"
+    },
+    {
+      "caption": "Navigation: Arrows only",
+      "wireframe": "wireframes/carousel/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use when space is limited and you want to show multiple items in sequence. For all-visible collections, use Gallery or Card List.",
+    "Avoid auto-play unless absolutely necessary. Auto-advancing carousels can be disorienting and inaccessible.",
+    "Provide clear navigation: arrows, dots, or swipe gestures on touch devices.",
+    "Ensure keyboard navigation is supported: arrow keys to navigate slides, Tab to focus controls."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Carousel",
+    "material": "Carousel",
+    "ant": "Carousel",
+    "apple": "—",
+    "shadcn": "Carousel"
+  },
+  "related": []
+}

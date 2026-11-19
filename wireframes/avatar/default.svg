@@ -1,0 +1,24 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect class="region" x="0" y="0" width="800" height="350" />
+
+  <!-- Avatar image -->
+  <rect class="hover-target" x="300" y="100" width="200" height="200" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="95" x2="400" y2="75" />
+    <rect class="label-bg" x="367" y="59" width="66" height="20" />
+    <text class="label-text" x="400" y="73" text-anchor="middle">Image</text>
+  </g>
+  <circle class="media-placeholder" cx="400" cy="200" r="100" />
+  <circle cx="400" cy="180" r="35" fill="#aaa" />
+  <path d="M 340 270 Q 340 230 400 230 Q 460 230 460 270" fill="#aaa" />
+
+  <!-- Status indicator (optional) -->
+  <rect class="hover-target" x="475" y="265" width="40" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="495" y1="310" x2="495" y2="330" />
+    <rect class="label-bg" x="395" y="332" width="200" height="20" />
+    <text class="label-text" x="495" y="346" text-anchor="middle">Status indicator</text>
+  </g>
+  <circle class="optional" cx="485" cy="285" r="20" fill="#4caf50" stroke="#fff" stroke-width="4" />
+</svg>

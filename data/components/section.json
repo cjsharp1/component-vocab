@@ -1,0 +1,81 @@
+{
+  "slug": "section",
+  "name": "Section",
+  "order": 2,
+  "status": "stable",
+  "group": "layout",
+  "description": "A thematic grouping of content that forms a distinct part of a page. Typically spans full width and contains one or more content components within a Container.",
+  "summary": "Thematic full-width page block",
+  "alsoKnownAs": "—",
+  "htmlElement": "<code>&lt;section&gt;</code>",
+  "elements": [
+    {
+      "name": "Heading",
+      "required": "No",
+      "description": "Section title (h2-h3)"
+    },
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "Any child content"
+    },
+    {
+      "name": "Background",
+      "required": "No",
+      "description": "Background color, image, or gradient"
+    }
+  ],
+  "wireframe": "wireframes/section/default.svg",
+  "thumbnail": "wireframes/section/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Padding",
+      "options": "Compact, Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Background",
+      "options": "Color, Image, Gradient, None",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Border",
+      "options": "None, Top, Bottom, Both",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Compact — reduced padding",
+      "wireframe": "wireframes/section/variation-1.svg"
+    },
+    {
+      "caption": "Spacious — increased padding",
+      "wireframe": "wireframes/section/variation-2.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Every major page block should be wrapped in a Section.",
+    "Use with Container inside for centered content.",
+    "Add an id attribute for anchor link navigation."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

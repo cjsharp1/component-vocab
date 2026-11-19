@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect class="region" x="0" y="0" width="800" height="350" />
+
+  <!-- Carousel container -->
+  <rect x="100" y="50" width="600" height="250" rx="8" fill="none" stroke="#999" stroke-width="2" />
+
+  <!-- Slide/item (visible) -->
+  <rect class="hover-target" x="130" y="70" width="540" height="180" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="160" x2="400" y2="140" />
+    <rect class="label-bg" x="344" y="124" width="112" height="20" />
+    <text class="label-text" x="400" y="138" text-anchor="middle">Slides/items</text>
+  </g>
+  <rect class="media-placeholder" x="130" y="70" width="540" height="180" rx="6" />
+  <line class="text-line" x1="150" y1="200" x2="300" y2="200" />
+  <line class="text-line" x1="150" y1="220" x2="280" y2="220" />
+
+  <!-- Navigation arrows (optional) -->
+  <rect class="hover-target" x="110" y="140" width="30" height="50" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="125" y1="135" x2="125" y2="115" />
+    <rect class="label-bg" x="40" y="99" width="170" height="20" />
+    <text class="label-text" x="125" y="113" text-anchor="middle">Navigation arrows</text>
+  </g>
+  <circle class="optional" cx="125" cy="165" r="20" />
+  <path d="M 131 165 L 121 160 L 121 170 Z" fill="#999" />
+
+  <circle class="optional" cx="675" cy="165" r="20" />
+  <path d="M 669 165 L 679 160 L 679 170 Z" fill="#999" />
+
+  <!-- Dot indicators (optional) -->
+  <rect class="hover-target" x="340" y="270" width="120" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="295" x2="400" y2="315" />
+    <rect class="label-bg" x="328" y="317" width="144" height="20" />
+    <text class="label-text" x="400" y="331" text-anchor="middle">Dot indicators</text>
+  </g>
+  <circle class="optional" cx="360" cy="280" r="6" fill="#4a90d9" />
+  <circle class="optional" cx="385" cy="280" r="6" fill="#ddd" />
+  <circle class="optional" cx="410" cy="280" r="6" fill="#ddd" />
+  <circle class="optional" cx="435" cy="280" r="6" fill="#ddd" />
+</svg>

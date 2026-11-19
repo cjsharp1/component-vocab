@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Column 1 -->
+  <rect class="hover-target" x="30" y="40" width="230" height="270" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="145" y1="30" x2="145" y2="10" />
+    <rect class="label-bg" x="90" y="-6" width="110" height="20" />
+    <text class="label-text" x="145" y="8" text-anchor="middle">Column 1</text>
+  </g>
+  <rect class="region" x="30" y="40" width="230" height="270" rx="4" />
+  <line class="text-line" x1="50" y1="70" x2="240" y2="70" />
+  <line class="text-line" x1="50" y1="90" x2="220" y2="90" />
+  <line class="text-line" x1="50" y1="110" x2="230" y2="110" />
+
+  <!-- Column 2 -->
+  <rect class="hover-target" x="285" y="40" width="230" height="270" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="30" x2="400" y2="10" />
+    <rect class="label-bg" x="345" y="-6" width="110" height="20" />
+    <text class="label-text" x="400" y="8" text-anchor="middle">Column 2</text>
+  </g>
+  <rect class="region" x="285" y="40" width="230" height="270" rx="4" />
+  <line class="text-line" x1="305" y1="70" x2="495" y2="70" />
+  <line class="text-line" x1="305" y1="90" x2="475" y2="90" />
+  <line class="text-line" x1="305" y1="110" x2="485" y2="110" />
+
+  <!-- Column 3 -->
+  <rect class="hover-target" x="540" y="40" width="230" height="270" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="655" y1="30" x2="655" y2="10" />
+    <rect class="label-bg" x="600" y="-6" width="110" height="20" />
+    <text class="label-text" x="655" y="8" text-anchor="middle">Column 3</text>
+  </g>
+  <rect class="region" x="540" y="40" width="230" height="270" rx="4" />
+  <line class="text-line" x1="560" y1="70" x2="750" y2="70" />
+  <line class="text-line" x1="560" y1="90" x2="730" y2="90" />
+  <line class="text-line" x1="560" y1="110" x2="740" y2="110" />
+</svg>

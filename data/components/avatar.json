@@ -1,0 +1,96 @@
+{
+  "slug": "avatar",
+  "name": "Avatar",
+  "order": 49,
+  "status": "stable",
+  "group": "interactive",
+  "description": "A small identity image representing a user or entity. Used in comments, chat, attribution lines.",
+  "summary": "Small identity image for attribution, comments",
+  "alsoKnownAs": "— (Bootstrap), — (Material), Avatar (Ant), — (Apple), Avatar (shadcn)",
+  "htmlElement": "<code>&lt;img&gt;</code> or <code>&lt;span&gt;</code>",
+  "elements": [
+    {
+      "name": "Image",
+      "required": "Yes",
+      "description": "User photo or placeholder"
+    },
+    {
+      "name": "Status indicator",
+      "required": "No",
+      "description": "Online/offline dot"
+    },
+    {
+      "name": "Badge",
+      "required": "No",
+      "description": "Notification or count badge"
+    }
+  ],
+  "wireframe": "wireframes/avatar/default.svg",
+  "thumbnail": "wireframes/avatar/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Size",
+      "options": "XS, S, M, L, XL",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Group",
+      "options": "Stack overlapping, Row",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Shape",
+      "options": "Circle, Square, Rounded",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Fallback",
+      "options": "Initials, Icon, Placeholder",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Sizes: XS, S, M, L",
+      "wireframe": "wireframes/avatar/variation-1.svg"
+    },
+    {
+      "caption": "Group: Stack overlapping",
+      "wireframe": "wireframes/avatar/variation-2.svg"
+    },
+    {
+      "caption": "Group: Row",
+      "wireframe": "wireframes/avatar/variation-3.svg"
+    },
+    {
+      "caption": "With status indicator",
+      "wireframe": "wireframes/avatar/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for small user identity markers in comments, chat, lists, or attribution lines. For full person display with name and bio, use Profile.",
+    "Provide fallback content when no image is available: initials from the user's name, a generic icon, or a placeholder.",
+    "Status indicators (online/offline/busy) are typically small dots placed at the bottom-right of the avatar.",
+    "In avatar groups, use overlapping stacks to save space or a row layout for clarity."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "Avatar",
+    "apple": "—",
+    "shadcn": "Avatar"
+  },
+  "related": []
+}

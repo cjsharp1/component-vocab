@@ -1,0 +1,41 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Image/Video (left) -->
+  <rect class="hover-target" x="50" y="50" width="350" height="250" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="225" y1="170" x2="225" y2="150" />
+    <rect class="label-bg" x="168" y="134" width="114" height="20" />
+    <text class="label-text" x="225" y="148" text-anchor="middle">Image/Video</text>
+  </g>
+  <rect class="media-placeholder" x="50" y="50" width="350" height="250" rx="4" />
+
+  <!-- Heading (right) -->
+  <rect class="hover-target" x="430" y="80" width="320" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="590" y1="75" x2="590" y2="55" />
+    <rect class="label-bg" x="551" y="39" width="78" height="20" />
+    <text class="label-text" x="590" y="53" text-anchor="middle">Heading</text>
+  </g>
+  <line class="text-line" x1="430" y1="90" x2="700" y2="90" />
+
+  <!-- Text (right) -->
+  <rect class="hover-target" x="430" y="120" width="320" height="90" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="590" y1="215" x2="590" y2="235" />
+    <rect class="label-bg" x="565" y="237" width="50" height="20" />
+    <text class="label-text" x="590" y="251" text-anchor="middle">Text</text>
+  </g>
+  <line class="text-line" x1="430" y1="130" x2="730" y2="130" />
+  <line class="text-line" x1="430" y1="150" x2="710" y2="150" />
+  <line class="text-line" x1="430" y1="170" x2="740" y2="170" />
+  <line class="text-line" x1="430" y1="190" x2="700" y2="190" />
+
+  <!-- Button (right) -->
+  <rect class="hover-target" x="430" y="240" width="100" height="35" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="480" y1="280" x2="480" y2="300" />
+    <rect class="label-bg" x="440" y="302" width="80" height="20" />
+    <text class="label-text" x="480" y="316" text-anchor="middle">Button</text>
+  </g>
+  <rect class="interactive optional" x="430" y="240" width="100" height="35" rx="4" />
+  <line class="text-line" x1="460" y1="257" x2="500" y2="257" />
+</svg>

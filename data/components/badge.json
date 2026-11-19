@@ -1,0 +1,85 @@
+{
+  "slug": "badge",
+  "name": "Badge",
+  "order": 43,
+  "status": "stable",
+  "group": "indicators-status",
+  "description": "A small indicator attached to another element — showing a count, status, or \"new\" marker. Draws attention to changes or unread items.",
+  "summary": "Small indicator (count, status dot) attached to an element",
+  "alsoKnownAs": "Badge (Bootstrap), Badge (Material), Badge (Ant), Badge (Apple), Badge (shadcn)",
+  "htmlElement": "<code>&lt;span&gt;</code>",
+  "elements": [
+    {
+      "name": "Value/content",
+      "required": "Yes",
+      "description": "Count number, dot, or text label"
+    },
+    {
+      "name": "Position anchor",
+      "required": "Yes",
+      "description": "The element the badge is attached to"
+    }
+  ],
+  "wireframe": "wireframes/badge/default.svg",
+  "thumbnail": "wireframes/badge/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Type",
+      "options": "Count, Dot, Text label",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Position",
+      "options": "Top-right, Top-left, Inline",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Color",
+      "options": "Default, Success, Warning, Error",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Type: Count (top-right)",
+      "wireframe": "wireframes/badge/variation-1.svg"
+    },
+    {
+      "caption": "Type: Dot",
+      "wireframe": "wireframes/badge/variation-2.svg"
+    },
+    {
+      "caption": "Position: Top-left",
+      "wireframe": "wireframes/badge/variation-3.svg"
+    },
+    {
+      "caption": "Position: Inline (text label)",
+      "wireframe": "wireframes/badge/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for notification counts, unread indicators, or status dots attached to buttons, icons, or avatars.",
+    "For counts over 99, consider truncating to \"99+\" to keep the badge compact.",
+    "Ensure color choices meet accessibility contrast requirements against both the badge background and the page/anchor element.",
+    "A dot badge is useful when you want to indicate presence or activity without a specific count."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Badge",
+    "material": "Badge",
+    "ant": "Badge",
+    "apple": "Badge",
+    "shadcn": "Badge"
+  },
+  "related": []
+}

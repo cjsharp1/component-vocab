@@ -1,0 +1,5 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <circle class="interactive" cx="200" cy="50" r="18" />
+  <text x="200" y="110" text-anchor="middle" font-size="32" font-weight="bold" fill="#333">5,000</text>
+  <line class="text-line" x1="150" y1="145" x2="250" y2="145" />
+</svg>

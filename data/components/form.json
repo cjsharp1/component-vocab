@@ -1,0 +1,100 @@
+{
+  "slug": "form",
+  "name": "Form",
+  "order": 36,
+  "status": "stable",
+  "group": "forms-feedback",
+  "description": "A data collection interface — contact forms, signup forms, search bars, filters. Groups input fields with labels, validation, and a submit action.",
+  "summary": "Data collection — contact, signup, search",
+  "alsoKnownAs": "Form (Bootstrap), Text Field/Select (Material, individual), Form (Ant), Form (Apple), Form (shadcn)",
+  "htmlElement": "<code>&lt;form&gt;</code>",
+  "elements": [
+    {
+      "name": "Input fields",
+      "required": "Yes",
+      "description": "Text, email, select, textarea, etc."
+    },
+    {
+      "name": "Labels",
+      "required": "Yes",
+      "description": "Labels for each field"
+    },
+    {
+      "name": "Submit button",
+      "required": "Yes",
+      "description": "Primary action to submit the form"
+    },
+    {
+      "name": "Helper text",
+      "required": "No",
+      "description": "Instructional text below fields"
+    },
+    {
+      "name": "Validation messages",
+      "required": "No",
+      "description": "Error or success messages"
+    }
+  ],
+  "wireframe": "wireframes/form/default.svg",
+  "thumbnail": "wireframes/form/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Vertical labels, Horizontal labels, Inline",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Compact, Default, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Columns",
+      "options": "Single, Two-column",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Vertical labels — default",
+      "wireframe": "wireframes/form/variation-1.svg"
+    },
+    {
+      "caption": "Horizontal labels — side by side",
+      "wireframe": "wireframes/form/variation-2.svg"
+    },
+    {
+      "caption": "Two-column — side-by-side fields",
+      "wireframe": "wireframes/form/variation-3.svg"
+    },
+    {
+      "caption": "Inline — compact single row",
+      "wireframe": "wireframes/form/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for any user input collection.",
+    "Keep forms short. Group related fields.",
+    "Always include labels and validation feedback.",
+    "Mark required fields clearly."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Form",
+    "material": "Text Field / Select",
+    "ant": "Form",
+    "apple": "Form",
+    "shadcn": "Form"
+  },
+  "related": []
+}

@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card border -->
+  <rect class="region" x="250" y="20" width="300" height="310" rx="8" />
+
+  <!-- Image -->
+  <rect class="hover-target" x="250" y="20" width="300" height="150" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="90" x2="400" y2="70" />
+    <rect class="label-bg" x="365" y="54" width="70" height="20" />
+    <text class="label-text" x="400" y="68" text-anchor="middle">Image</text>
+  </g>
+  <rect class="media-placeholder optional" x="250" y="20" width="300" height="150" rx="8 8 0 0" />
+
+  <!-- Title -->
+  <rect class="hover-target" x="270" y="190" width="260" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="185" x2="400" y2="165" />
+    <rect class="label-bg" x="374" y="149" width="52" height="20" />
+    <text class="label-text" x="400" y="163" text-anchor="middle">Title</text>
+  </g>
+  <line class="text-line" x1="270" y1="200" x2="500" y2="200" />
+
+  <!-- Excerpt -->
+  <rect class="hover-target" x="270" y="220" width="260" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="320" y1="265" x2="320" y2="285" />
+    <rect class="label-bg" x="283" y="287" width="74" height="20" />
+    <text class="label-text" x="320" y="301" text-anchor="middle">Excerpt</text>
+  </g>
+  <line class="text-line" x1="270" y1="230" x2="520" y2="230" />
+  <line class="text-line" x1="270" y1="245" x2="490" y2="245" />
+
+  <!-- Metadata -->
+  <rect class="hover-target" x="270" y="275" width="150" height="15" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="345" y1="270" x2="345" y2="250" />
+    <rect class="label-bg" x="301" y="234" width="88" height="20" />
+    <text class="label-text" x="345" y="248" text-anchor="middle">Metadata</text>
+  </g>
+  <line class="text-line" x1="270" y1="285" x2="380" y2="285" stroke-width="1" opacity="0.6" />
+
+  <!-- Link/Button -->
+  <rect class="hover-target" x="270" y="300" width="80" height="25" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="310" y1="330" x2="310" y2="350" />
+    <rect class="label-bg" x="262" y="352" width="96" height="20" />
+    <text class="label-text" x="310" y="366" text-anchor="middle">Link/Button</text>
+  </g>
+  <rect class="interactive optional" x="270" y="300" width="80" height="25" rx="4" />
+  <line class="text-line" x1="288" y1="312" x2="332" y2="312" />
+</svg>

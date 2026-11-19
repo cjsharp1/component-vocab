@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Photo -->
+  <rect class="hover-target" x="330" y="40" width="140" height="140" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="35" x2="400" y2="15" />
+    <rect class="label-bg" x="367" y="0" width="66" height="20" />
+    <text class="label-text" x="400" y="14" text-anchor="middle">Photo</text>
+  </g>
+  <circle class="media-placeholder" cx="400" cy="110" r="70" />
+
+  <!-- Name -->
+  <rect class="hover-target" x="320" y="200" width="160" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="195" x2="400" y2="175" />
+    <rect class="label-bg" x="368" y="159" width="64" height="20" />
+    <text class="label-text" x="400" y="173" text-anchor="middle">Name</text>
+  </g>
+  <line class="text-line" x1="340" y1="210" x2="460" y2="210" />
+
+  <!-- Role/Title -->
+  <rect class="hover-target" x="330" y="230" width="140" height="15" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="250" x2="400" y2="270" />
+    <rect class="label-bg" x="349" y="272" width="102" height="20" />
+    <text class="label-text" x="400" y="286" text-anchor="middle">Role/Title</text>
+  </g>
+  <line class="text-line optional" x1="350" y1="240" x2="450" y2="240" stroke-width="1" opacity="0.6" />
+
+  <!-- Bio -->
+  <rect class="hover-target" x="280" y="265" width="240" height="45" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="500" y1="290" x2="520" y2="290" />
+    <rect class="label-bg" x="522" y="280" width="38" height="20" />
+    <text class="label-text" x="541" y="294" text-anchor="middle">Bio</text>
+  </g>
+  <line class="text-line optional" x1="300" y1="275" x2="500" y2="275" stroke-width="1" opacity="0.7" />
+  <line class="text-line optional" x1="290" y1="290" x2="510" y2="290" stroke-width="1" opacity="0.7" />
+  <line class="text-line optional" x1="300" y1="305" x2="480" y2="305" stroke-width="1" opacity="0.7" />
+
+  <!-- Social links -->
+  <rect class="hover-target" x="350" y="320" width="100" height="15" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="280" y1="330" x2="260" y2="330" />
+    <rect class="label-bg" x="165" y="320" width="90" height="20" />
+    <text class="label-text" x="210" y="334" text-anchor="middle">Social links</text>
+  </g>
+  <circle class="interactive optional" cx="370" cy="328" r="8" />
+  <circle class="interactive optional" cx="400" cy="328" r="8" />
+  <circle class="interactive optional" cx="430" cy="328" r="8" />
+</svg>

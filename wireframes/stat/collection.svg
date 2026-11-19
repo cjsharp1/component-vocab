@@ -1,0 +1,21 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stat 1 -->
+  <circle class="interactive" cx="110" cy="50" r="18" />
+  <text x="110" y="100" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">2.5K</text>
+  <line class="text-line" x1="70" y1="130" x2="150" y2="130" />
+
+  <!-- Stat 2 -->
+  <circle class="interactive" cx="300" cy="50" r="18" />
+  <text x="300" y="100" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">98%</text>
+  <line class="text-line" x1="260" y1="130" x2="340" y2="130" />
+
+  <!-- Stat 3 -->
+  <circle class="interactive" cx="500" cy="50" r="18" />
+  <text x="500" y="100" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">15M</text>
+  <line class="text-line" x1="460" y1="130" x2="540" y2="130" />
+
+  <!-- Stat 4 -->
+  <circle class="interactive" cx="690" cy="50" r="18" />
+  <text x="690" y="100" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">4.8</text>
+  <line class="text-line" x1="650" y1="130" x2="730" y2="130" />
+</svg>

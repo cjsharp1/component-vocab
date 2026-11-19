@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (page content) -->
+  <rect class="region" x="0" y="0" width="800" height="250" />
+
+  <!-- Toast notification (top-right) -->
+  <rect class="hover-target" x="500" y="30" width="270" height="60" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="450" y1="60" x2="430" y2="60" />
+    <rect class="label-bg" x="376" y="50" width="58" height="20" />
+    <text class="label-text" x="405" y="64" text-anchor="middle">Toast</text>
+  </g>
+  <rect x="500" y="30" width="270" height="60" fill="#333" stroke="none" rx="8" />
+
+  <!-- Icon -->
+  <circle cx="525" cy="60" r="10" fill="#4caf50" />
+
+  <!-- Message -->
+  <rect class="hover-target" x="550" y="50" width="150" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="625" y1="75" x2="625" y2="95" />
+    <rect class="label-bg" x="583" y="97" width="84" height="20" />
+    <text class="label-text" x="625" y="111" text-anchor="middle">Message</text>
+  </g>
+  <line x1="550" y1="60" x2="700" y2="60" stroke="#fff" stroke-width="2" />
+
+  <!-- Dismiss button -->
+  <circle cx="745" cy="50" r="8" fill="rgba(255,255,255,0.2)" />
+  <line x1="742" y1="47" x2="748" y2="53" stroke="#fff" stroke-width="1.5" />
+  <line x1="748" y1="47" x2="742" y2="53" stroke="#fff" stroke-width="1.5" />
+</svg>

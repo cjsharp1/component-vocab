@@ -1,0 +1,6 @@
+<svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+  <rect class="media-placeholder" x="20" y="25" width="40" height="30"/>
+  <rect class="media-placeholder" x="70" y="25" width="40" height="30"/>
+  <rect class="media-placeholder" x="120" y="25" width="40" height="30"/>
+  <rect class="media-placeholder" x="170" y="25" width="40" height="30"/>
+</svg>

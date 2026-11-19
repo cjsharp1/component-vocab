@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Footer background -->
+  <rect class="region" x="0" y="0" width="800" height="350" />
+
+  <!-- Navigation columns -->
+  <rect class="hover-target" x="50" y="40" width="500" height="160" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="300" y1="30" x2="300" y2="10" />
+    <rect class="label-bg" x="205" y="-6" width="190" height="20" />
+    <text class="label-text" x="300" y="8" text-anchor="middle">Navigation columns</text>
+  </g>
+  <!-- Column 1 -->
+  <line class="text-line" x1="50" y1="50" x2="130" y2="50" stroke-width="2" />
+  <rect class="interactive" x="50" y="80" width="80" height="16" rx="2" />
+  <rect class="interactive" x="50" y="105" width="90" height="16" rx="2" />
+  <rect class="interactive" x="50" y="130" width="70" height="16" rx="2" />
+  <rect class="interactive" x="50" y="155" width="85" height="16" rx="2" />
+  <!-- Column 2 -->
+  <line class="text-line" x1="200" y1="50" x2="280" y2="50" stroke-width="2" />
+  <rect class="interactive" x="200" y="80" width="75" height="16" rx="2" />
+  <rect class="interactive" x="200" y="105" width="85" height="16" rx="2" />
+  <rect class="interactive" x="200" y="130" width="70" height="16" rx="2" />
+  <!-- Column 3 -->
+  <line class="text-line" x1="350" y1="50" x2="430" y2="50" stroke-width="2" />
+  <rect class="interactive" x="350" y="80" width="80" height="16" rx="2" />
+  <rect class="interactive" x="350" y="105" width="75" height="16" rx="2" />
+  <rect class="interactive" x="350" y="130" width="90" height="16" rx="2" />
+
+  <!-- Logo/Brand -->
+  <rect class="hover-target" x="600" y="40" width="150" height="50" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="675" y1="30" x2="675" y2="10" />
+    <rect class="label-bg" x="615" y="-6" width="120" height="20" />
+    <text class="label-text" x="675" y="8" text-anchor="middle">Logo/Brand</text>
+  </g>
+  <rect class="media-placeholder" x="600" y="40" width="40" height="30" rx="4" />
+  <line class="text-line" x1="650" y1="55" x2="740" y2="55" />
+
+  <!-- Social links -->
+  <rect class="hover-target" x="600" y="110" width="150" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="675" y1="150" x2="675" y2="170" />
+    <rect class="label-bg" x="608" y="172" width="134" height="20" />
+    <text class="label-text" x="675" y="186" text-anchor="middle">Social links</text>
+  </g>
+  <circle class="interactive" cx="615" cy="125" r="12" />
+  <circle class="interactive" cx="645" cy="125" r="12" />
+  <circle class="interactive" cx="675" cy="125" r="12" />
+  <circle class="interactive" cx="705" cy="125" r="12" />
+
+  <!-- Copyright -->
+  <rect class="hover-target" x="50" y="280" width="700" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="310" x2="400" y2="330" />
+    <rect class="label-bg" x="350" y="332" width="100" height="20" />
+    <text class="label-text" x="400" y="346" text-anchor="middle">Copyright</text>
+  </g>
+  <line x1="0" y1="260" x2="800" y2="260" stroke="#999" stroke-width="1" />
+  <line class="text-line" x1="50" y1="290" x2="300" y2="290" />
+</svg>

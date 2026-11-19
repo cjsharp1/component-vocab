@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <!-- Avatar circles -->
+  <circle cx="70" cy="100" r="40" fill="#ddd" />
+  <circle cx="180" cy="100" r="40" fill="#ddd" />
+  <circle cx="290" cy="100" r="40" fill="#ddd" />
+</svg>

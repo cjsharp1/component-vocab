@@ -1,0 +1,95 @@
+{
+  "slug": "toast",
+  "name": "Toast",
+  "order": 39,
+  "status": "stable",
+  "group": "forms-feedback",
+  "description": "A temporary, non-blocking notification message that appears briefly and then auto-dismisses. For lightweight feedback that doesn't interrupt the user's flow.",
+  "summary": "Temporary non-blocking notification",
+  "alsoKnownAs": "Toast (Bootstrap), Snackbar (Material), Message (Ant), Banner (Apple, partial), Toast/Sonner (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with role=\"status\"",
+  "elements": [
+    {
+      "name": "Message",
+      "required": "Yes",
+      "description": "The notification text"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Status or action icon"
+    },
+    {
+      "name": "Action button",
+      "required": "No",
+      "description": "Optional quick action (Undo, Retry)"
+    },
+    {
+      "name": "Dismiss button",
+      "required": "No",
+      "description": "Manual close control"
+    }
+  ],
+  "wireframe": "wireframes/toast/default.svg",
+  "thumbnail": "wireframes/toast/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Position",
+      "options": "Top-right, Top-center, Bottom-right, Bottom-center",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Duration",
+      "options": "Short 3s, Default 5s, Persistent",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Stackable",
+      "options": "Yes, No",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Top-right — default position",
+      "wireframe": "wireframes/toast/variation-1.svg"
+    },
+    {
+      "caption": "Top-center — centered at top",
+      "wireframe": "wireframes/toast/variation-2.svg"
+    },
+    {
+      "caption": "Bottom-right — bottom corner",
+      "wireframe": "wireframes/toast/variation-3.svg"
+    },
+    {
+      "caption": "Stacked — multiple toasts",
+      "wireframe": "wireframes/toast/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for non-critical confirmations (\"Saved!\", \"Copied!\").",
+    "For important feedback, use <strong>Alert</strong> (stays visible).",
+    "For blocking actions, use <strong>Modal</strong>.",
+    "Keep messages short — toasts are meant to be glanceable."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Toast",
+    "material": "Snackbar",
+    "ant": "Message",
+    "apple": "Banner (partial)",
+    "shadcn": "Toast / Sonner"
+  },
+  "related": []
+}

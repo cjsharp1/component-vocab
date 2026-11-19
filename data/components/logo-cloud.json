@@ -1,0 +1,86 @@
+{
+  "slug": "logo-cloud",
+  "name": "Logo Cloud",
+  "order": 21,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A collection of partner, client, or technology logos arranged in a row or grid. Communicates trust and social proof through recognizable brand marks.",
+  "summary": "Row/grid of partner/client logos",
+  "alsoKnownAs": "— (no direct equivalent in major systems, common marketing pattern)",
+  "htmlElement": "<code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Logos",
+      "required": "Yes",
+      "description": "Brand/partner logo images"
+    },
+    {
+      "name": "Heading",
+      "required": "No",
+      "description": "\"Trusted by\" or \"Our partners\" title"
+    }
+  ],
+  "wireframe": "wireframes/logo-cloud/default.svg",
+  "thumbnail": "wireframes/logo-cloud/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Single row, Grid (multiple rows), Scrolling (Marquee-style)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Logo treatment",
+      "options": "Full color, Grayscale, Monochrome",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Density",
+      "options": "Compact (many logos), Spacious (fewer, larger)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Single row",
+      "wireframe": "wireframes/logo-cloud/variation-1.svg"
+    },
+    {
+      "caption": "Grid (2 rows)",
+      "wireframe": "wireframes/logo-cloud/variation-2.svg"
+    },
+    {
+      "caption": "Grayscale treatment",
+      "wireframe": "wireframes/logo-cloud/variation-3.svg"
+    },
+    {
+      "caption": "Spacious — fewer, larger",
+      "wireframe": "wireframes/logo-cloud/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for showing client/partner logos on a landing page. Keep logos at consistent heights. Grayscale treatment prevents visual competition with page content.",
+    "Normalize logo sizes by height (not width) to maintain visual balance.",
+    "Grayscale or monochrome treatment creates a cohesive look and prevents color clashes.",
+    "Include alt text for each logo for accessibility.",
+    "For scrolling/animated logos, use Marquee instead."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

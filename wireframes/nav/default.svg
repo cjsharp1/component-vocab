@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect class="region" x="0" y="0" width="800" height="250" />
+
+  <!-- Nav items (horizontal) -->
+  <rect class="hover-target" x="100" y="80" width="600" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="75" x2="400" y2="55" />
+    <rect class="label-bg" x="357" y="39" width="86" height="20" />
+    <text class="label-text" x="400" y="53" text-anchor="middle">Nav items</text>
+  </g>
+
+  <!-- Active item -->
+  <rect class="interactive" x="100" y="80" width="100" height="40" style="fill:#0066cc" />
+  <line x1="120" y1="100" x2="180" y2="100" stroke="#fff" stroke-width="2" />
+
+  <!-- Other items -->
+  <rect class="interactive" x="220" y="80" width="100" height="40" />
+  <line class="text-line" x1="240" y1="100" x2="300" y2="100" />
+
+  <rect class="interactive" x="340" y="80" width="100" height="40" />
+  <line class="text-line" x1="360" y1="100" x2="420" y2="100" />
+
+  <rect class="interactive" x="460" y="80" width="100" height="40" />
+  <line class="text-line" x1="480" y1="100" x2="540" y2="100" />
+
+  <rect class="interactive" x="580" y="80" width="100" height="40" />
+  <line class="text-line" x1="600" y1="100" x2="660" y2="100" />
+
+  <!-- Active indicator label -->
+  <rect class="hover-target" x="100" y="80" width="100" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="150" y1="125" x2="150" y2="145" />
+    <rect class="label-bg" x="106" y="147" width="88" height="20" />
+    <text class="label-text" x="150" y="161" text-anchor="middle">Active link</text>
+  </g>
+</svg>

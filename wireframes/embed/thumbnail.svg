@@ -1,0 +1,4 @@
+<svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="40" y="15" width="170" height="50" rx="2"/>
+  <text x="125" y="45" text-anchor="middle" font-size="20" fill="currentColor" opacity="0.3">&lt;/&gt;</text>
+</svg>

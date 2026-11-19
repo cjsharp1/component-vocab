@@ -1,0 +1,101 @@
+{
+  "slug": "drawer",
+  "name": "Drawer",
+  "order": 42,
+  "status": "stable",
+  "group": "overlays-menus",
+  "description": "A panel that slides in from a screen edge, either overlaying content or pushing it aside. Used for navigation, filters, detail panels, or forms.",
+  "summary": "Panel sliding in from a screen edge",
+  "alsoKnownAs": "Offcanvas (Bootstrap), Side Sheet (Material), Drawer (Ant), Sheet (Apple), Sheet/Drawer (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with appropriate ARIA",
+  "elements": [
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "Panel content (nav, form, filters, etc.)"
+    },
+    {
+      "name": "Header/title",
+      "required": "No",
+      "description": "Panel heading or title"
+    },
+    {
+      "name": "Close button",
+      "required": "Yes",
+      "description": "Explicit dismiss control"
+    },
+    {
+      "name": "Backdrop",
+      "required": "No",
+      "description": "Dimmed overlay behind panel"
+    }
+  ],
+  "wireframe": "wireframes/drawer/default.svg",
+  "thumbnail": "wireframes/drawer/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Edge",
+      "options": "Left, Right, Bottom",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Behavior",
+      "options": "Overlay, Push",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Narrow, Default, Wide",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Backdrop",
+      "options": "Shown, Hidden",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Edge: Right",
+      "wireframe": "wireframes/drawer/variation-1.svg"
+    },
+    {
+      "caption": "Edge: Bottom",
+      "wireframe": "wireframes/drawer/variation-2.svg"
+    },
+    {
+      "caption": "Size: Narrow",
+      "wireframe": "wireframes/drawer/variation-3.svg"
+    },
+    {
+      "caption": "Size: Wide",
+      "wireframe": "wireframes/drawer/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for mobile nav, filter panels, or detail views that need more space than a Popover.",
+    "For blocking actions that require full attention, use Modal instead. For persistent sidebars, use Aside.",
+    "The \"Overlay\" behavior places the drawer above content. \"Push\" behavior shifts the main content aside.",
+    "Always provide a way to dismiss: close button, backdrop click, or Escape key."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Offcanvas",
+    "material": "Side Sheet",
+    "ant": "Drawer",
+    "apple": "Sheet",
+    "shadcn": "Sheet / Drawer"
+  },
+  "related": []
+}

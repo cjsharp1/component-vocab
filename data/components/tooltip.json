@@ -1,0 +1,96 @@
+{
+  "slug": "tooltip",
+  "name": "Tooltip",
+  "order": 40,
+  "status": "stable",
+  "group": "overlays-menus",
+  "description": "A contextual hint that appears on hover or focus near a trigger element. Provides brief explanatory text without cluttering the interface.",
+  "summary": "Contextual hint appearing on hover/focus",
+  "alsoKnownAs": "Tooltip (Bootstrap), Tooltip (Material), Tooltip (Ant), — (Apple), Tooltip (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with role=\"tooltip\"",
+  "elements": [
+    {
+      "name": "Trigger element",
+      "required": "Yes",
+      "description": "The element that activates the tooltip"
+    },
+    {
+      "name": "Tooltip content",
+      "required": "Yes",
+      "description": "Brief explanatory text"
+    },
+    {
+      "name": "Arrow/pointer",
+      "required": "No",
+      "description": "Visual pointer connecting tooltip to trigger"
+    }
+  ],
+  "wireframe": "wireframes/tooltip/default.svg",
+  "thumbnail": "wireframes/tooltip/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Position",
+      "options": "Top, Right, Bottom, Left",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Arrow",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Default",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Trigger",
+      "options": "Hover, Focus, Click",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Position: Top",
+      "wireframe": "wireframes/tooltip/variation-1.svg"
+    },
+    {
+      "caption": "Position: Bottom",
+      "wireframe": "wireframes/tooltip/variation-2.svg"
+    },
+    {
+      "caption": "Position: Left",
+      "wireframe": "wireframes/tooltip/variation-3.svg"
+    },
+    {
+      "caption": "Position: Right",
+      "wireframe": "wireframes/tooltip/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for brief hints (a few words or a single sentence). For rich content, use Popover.",
+    "Keep text short. If you need more than two lines, consider a different pattern.",
+    "Tooltips should appear on hover or focus, not on click. For click-triggered content, use Popover or Dropdown.",
+    "Ensure the trigger element is keyboard-accessible and the tooltip is announced by screen readers."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Tooltip",
+    "material": "Tooltip",
+    "ant": "Tooltip",
+    "apple": "—",
+    "shadcn": "Tooltip"
+  },
+  "related": []
+}

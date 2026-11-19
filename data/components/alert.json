@@ -1,0 +1,100 @@
+{
+  "slug": "alert",
+  "name": "Alert",
+  "order": 38,
+  "status": "stable",
+  "group": "forms-feedback",
+  "description": "An inline feedback message communicating the result of a user action or system state. Success, warning, error, or informational messages that appear in context.",
+  "summary": "Inline feedback message",
+  "alsoKnownAs": "Alert (Bootstrap), Snackbar (Material, partial), Alert (Ant), Inline Alert (Apple), Alert (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with role=\"alert\"",
+  "elements": [
+    {
+      "name": "Message text",
+      "required": "Yes",
+      "description": "The alert content"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Status icon (checkmark, warning, error)"
+    },
+    {
+      "name": "Title",
+      "required": "No",
+      "description": "Optional heading for the alert"
+    },
+    {
+      "name": "Dismiss button",
+      "required": "No",
+      "description": "Close/dismiss control"
+    },
+    {
+      "name": "Action link",
+      "required": "No",
+      "description": "Optional action button or link"
+    }
+  ],
+  "wireframe": "wireframes/alert/default.svg",
+  "thumbnail": "wireframes/alert/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Type",
+      "options": "Success, Warning, Error, Info",
+      "affectsLayout": "No (changes color/icon)",
+      "highlighted": false
+    },
+    {
+      "config": "Dismissible",
+      "options": "Yes, No",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Filled, Outlined, Subtle",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Success — positive feedback",
+      "wireframe": "wireframes/alert/variation-1.svg"
+    },
+    {
+      "caption": "Error — critical message",
+      "wireframe": "wireframes/alert/variation-2.svg"
+    },
+    {
+      "caption": "Outlined — lighter style",
+      "wireframe": "wireframes/alert/variation-3.svg"
+    },
+    {
+      "caption": "Dismissible — with close button",
+      "wireframe": "wireframes/alert/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for contextual feedback (form validation, system status).",
+    "For editorial emphasis, use <strong>Callout</strong>.",
+    "For temporary non-blocking messages, use <strong>Toast</strong>.",
+    "Position alerts near the relevant context (above a form, at the top of a page section)."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Alert",
+    "material": "Snackbar (partial)",
+    "ant": "Alert",
+    "apple": "Inline Alert",
+    "shadcn": "Alert"
+  },
+  "related": []
+}

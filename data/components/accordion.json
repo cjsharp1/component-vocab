@@ -1,0 +1,96 @@
+{
+  "slug": "accordion",
+  "name": "Accordion",
+  "order": 29,
+  "status": "stable",
+  "group": "text-lists",
+  "description": "Expandable/collapsible content panels. Each panel has a header that reveals or hides associated content when triggered.",
+  "summary": "Expandable/collapsible content panels",
+  "alsoKnownAs": "Accordion (Bootstrap), Expansion Panel (Material), Collapse (Ant), Disclosure Group (Apple), Accordion (shadcn)",
+  "htmlElement": "<code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> or <code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Panel header",
+      "required": "Yes",
+      "description": "Clickable header for each panel"
+    },
+    {
+      "name": "Panel content",
+      "required": "Yes",
+      "description": "Hidden/revealed content inside each panel"
+    },
+    {
+      "name": "Expand/collapse icon",
+      "required": "No",
+      "description": "Visual indicator of open/closed state"
+    }
+  ],
+  "wireframe": "wireframes/accordion/default.svg",
+  "thumbnail": "wireframes/accordion/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Behavior",
+      "options": "Single open, Multiple open",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Icon",
+      "options": "Chevron, Plus-minus, None",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Borders",
+      "options": "Divided, Boxed, Flush",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Default state",
+      "options": "All closed, First open",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Divided — gaps between panels",
+      "wireframe": "wireframes/accordion/variation-1.svg"
+    },
+    {
+      "caption": "Boxed — all panels in one bordered container",
+      "wireframe": "wireframes/accordion/variation-2.svg"
+    },
+    {
+      "caption": "Plus-minus icon — circular toggle buttons",
+      "wireframe": "wireframes/accordion/variation-3.svg"
+    },
+    {
+      "caption": "Flush — minimal styling with dividers only",
+      "wireframe": "wireframes/accordion/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for FAQs or content that benefits from progressive disclosure.",
+    "For tabbed content (switch between panels), use <strong>Tabs</strong>.",
+    "Don't nest Accordions.",
+    "Keep panel headers short and descriptive — they should clearly indicate what content is hidden."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Accordion",
+    "material": "Expansion Panel",
+    "ant": "Collapse",
+    "apple": "Disclosure Group",
+    "shadcn": "Accordion"
+  },
+  "related": []
+}

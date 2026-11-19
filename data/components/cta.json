@@ -1,0 +1,100 @@
+{
+  "slug": "cta",
+  "name": "CTA",
+  "order": 34,
+  "status": "stable",
+  "group": "calls-to-action",
+  "description": "A prominent call-to-action block designed to convert visitors. Contains a compelling headline, supporting text, and one or more buttons urging the user to take action.",
+  "summary": "Prominent call-to-action block",
+  "alsoKnownAs": "— (no direct equivalent in major systems; common marketing pattern)",
+  "htmlElement": "<code>&lt;section&gt;</code>",
+  "elements": [
+    {
+      "name": "Heading",
+      "required": "Yes",
+      "description": "Compelling call-to-action headline"
+    },
+    {
+      "name": "Supporting text",
+      "required": "No",
+      "description": "Additional context or benefits"
+    },
+    {
+      "name": "Button primary",
+      "required": "Yes",
+      "description": "Main action button"
+    },
+    {
+      "name": "Button secondary",
+      "required": "No",
+      "description": "Alternative action"
+    },
+    {
+      "name": "Background",
+      "required": "No",
+      "description": "Color, image, or gradient background"
+    }
+  ],
+  "wireframe": "wireframes/cta/default.svg",
+  "thumbnail": "wireframes/cta/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Centered, Left-aligned, Split with image",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Compact, Default, Full-page",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Background",
+      "options": "Color, Image, Gradient",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Centered — default layout",
+      "wireframe": "wireframes/cta/variation-1.svg"
+    },
+    {
+      "caption": "Left-aligned — content left",
+      "wireframe": "wireframes/cta/variation-2.svg"
+    },
+    {
+      "caption": "Split — content left, image right",
+      "wireframe": "wireframes/cta/variation-3.svg"
+    },
+    {
+      "caption": "Background image — with overlay",
+      "wireframe": "wireframes/cta/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for conversion-focused sections lower on a page.",
+    "Limit to 1-2 per page.",
+    "For page-top promotion, use <strong>Hero</strong>. For announcements, use <strong>Banner</strong>.",
+    "Keep the headline action-oriented and benefit-focused."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

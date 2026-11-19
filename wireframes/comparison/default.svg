@@ -1,0 +1,55 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Column headers -->
+  <rect class="hover-target" x="50" y="30" width="200" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="150" y1="25" x2="150" y2="5" />
+    <rect class="label-bg" x="57" y="0" width="186" height="20" />
+    <text class="label-text" x="150" y="14" text-anchor="middle">Column headers</text>
+  </g>
+  <rect class="region" x="50" y="30" width="200" height="30" />
+  <line class="text-line" x1="100" y1="47" x2="200" y2="47" />
+
+  <rect class="region" x="270" y="30" width="200" height="30" />
+  <line class="text-line" x1="320" y1="47" x2="420" y2="47" />
+  <rect class="region optional" x="275" y="25" width="80" height="15" fill="#0066cc" opacity="0.2" />
+  <text x="315" y="36" font-size="10" fill="#0066cc">Recommended</text>
+
+  <rect class="region" x="490" y="30" width="200" height="30" />
+  <line class="text-line" x1="540" y1="47" x2="640" y2="47" />
+
+  <!-- Row labels + values -->
+  <rect class="hover-target" x="50" y="75" width="200" height="25" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="40" y1="90" x2="20" y2="90" />
+    <rect class="label-bg" x="0" y="80" width="15" height="80" />
+    <text class="label-text" x="7" y="125" text-anchor="middle" writing-mode="tb">Row labels</text>
+  </g>
+  <line class="text-line" x1="60" y1="87" x2="150" y2="87" />
+
+  <rect class="region" x="270" y="75" width="200" height="25" />
+  <text x="370" y="92" text-anchor="middle" font-size="14" fill="#0a0">✓</text>
+
+  <rect class="region" x="490" y="75" width="200" height="25" />
+  <text x="590" y="92" text-anchor="middle" font-size="14" fill="#0a0">✓</text>
+
+  <!-- Row 2 -->
+  <line class="text-line" x1="60" y1="120" x2="150" y2="120" />
+  <rect class="region" x="270" y="110" width="200" height="25" />
+  <text x="370" y="127" text-anchor="middle" font-size="14" fill="#0a0">✓</text>
+  <rect class="region" x="490" y="110" width="200" height="25" />
+  <text x="590" y="127" text-anchor="middle" font-size="14" fill="#999">—</text>
+
+  <!-- Row 3 -->
+  <line class="text-line" x1="60" y1="155" x2="150" y2="155" />
+  <rect class="region" x="270" y="145" width="200" height="25" />
+  <text x="370" y="162" text-anchor="middle" font-size="14" fill="#0a0">✓</text>
+  <rect class="region" x="490" y="145" width="200" height="25" />
+  <text x="590" y="162" text-anchor="middle" font-size="14" fill="#999">—</text>
+
+  <!-- Row 4 -->
+  <line class="text-line" x1="60" y1="190" x2="150" y2="190" />
+  <rect class="region" x="270" y="180" width="200" height="25" />
+  <line class="text-line" x1="300" y1="193" x2="440" y2="193" />
+  <rect class="region" x="490" y="180" width="200" height="25" />
+  <line class="text-line" x1="520" y1="193" x2="660" y2="193" />
+</svg>

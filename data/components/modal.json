@@ -1,0 +1,100 @@
+{
+  "slug": "modal",
+  "name": "Modal",
+  "order": 37,
+  "status": "stable",
+  "group": "forms-feedback",
+  "description": "An overlay dialog that requires user attention or action. Appears above the page content, blocking interaction with the background until dismissed.",
+  "summary": "Overlay dialog requiring action",
+  "alsoKnownAs": "Modal (Bootstrap), Dialog (Material), Modal (Ant), Sheet/Alert (Apple), Dialog (shadcn)",
+  "htmlElement": "<code>&lt;dialog&gt;</code> or <code>&lt;div&gt;</code> with role=\"dialog\"",
+  "elements": [
+    {
+      "name": "Title",
+      "required": "Yes",
+      "description": "Modal heading"
+    },
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "Modal body text or form"
+    },
+    {
+      "name": "Close button",
+      "required": "Yes",
+      "description": "Dismiss control (X icon)"
+    },
+    {
+      "name": "Action buttons",
+      "required": "No",
+      "description": "Confirm/cancel buttons"
+    },
+    {
+      "name": "Backdrop/overlay",
+      "required": "Yes",
+      "description": "Semi-transparent background"
+    }
+  ],
+  "wireframe": "wireframes/modal/default.svg",
+  "thumbnail": "wireframes/modal/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large, Full-screen",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Position",
+      "options": "Center, Top, Bottom sheet",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Close method",
+      "options": "Button, Backdrop click, Escape",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Small — compact dialog",
+      "wireframe": "wireframes/modal/variation-1.svg"
+    },
+    {
+      "caption": "Large — more content space",
+      "wireframe": "wireframes/modal/variation-2.svg"
+    },
+    {
+      "caption": "Top position — aligned to top",
+      "wireframe": "wireframes/modal/variation-3.svg"
+    },
+    {
+      "caption": "Bottom sheet — mobile-friendly",
+      "wireframe": "wireframes/modal/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use sparingly — modals interrupt the user.",
+    "For non-blocking notifications, use <strong>Toast</strong>.",
+    "For side panels, use <strong>Drawer</strong>.",
+    "Always provide a way to dismiss (close button, backdrop click, or Escape key)."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Modal",
+    "material": "Dialog",
+    "ant": "Modal",
+    "apple": "Sheet / Alert",
+    "shadcn": "Dialog"
+  },
+  "related": []
+}

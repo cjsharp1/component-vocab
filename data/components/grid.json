@@ -1,0 +1,85 @@
+{
+  "slug": "grid",
+  "name": "Grid",
+  "order": 7,
+  "status": "stable",
+  "group": "layout",
+  "description": "A multi-column layout system for arranging child components side by side. Provides responsive column structure that reflows on smaller screens.",
+  "summary": "Multi-column layout system",
+  "alsoKnownAs": "Grid system (Bootstrap), Row/Col (Ant)",
+  "htmlElement": "<code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Columns",
+      "required": "Yes",
+      "description": "Child elements arranged in columns"
+    }
+  ],
+  "wireframe": "wireframes/grid/default.svg",
+  "thumbnail": "wireframes/grid/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Columns",
+      "options": "2, 3, 4, Auto-fit",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Gap",
+      "options": "None, Small, Default, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Alignment",
+      "options": "Start, Center, Stretch",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Responsive",
+      "options": "Stack on mobile, Maintain columns",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "2 columns",
+      "wireframe": "wireframes/grid/variation-1.svg"
+    },
+    {
+      "caption": "3 columns",
+      "wireframe": "wireframes/grid/variation-2.svg"
+    },
+    {
+      "caption": "4 columns",
+      "wireframe": "wireframes/grid/variation-3.svg"
+    },
+    {
+      "caption": "Auto-fit — fills available space",
+      "wireframe": "wireframes/grid/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use Grid to arrange Card Lists, Feature Lists, or any repeating content.",
+    "Prefer auto-fit for content-driven layouts where item count varies.",
+    "Grid is a layout utility — it doesn't add visual styling to its children."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Grid system",
+    "material": "—",
+    "ant": "Row/Col",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

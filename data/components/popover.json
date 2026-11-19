@@ -1,0 +1,106 @@
+{
+  "slug": "popover",
+  "name": "Popover",
+  "order": 41,
+  "status": "stable",
+  "group": "overlays-menus",
+  "description": "A floating panel of rich content triggered by a click. More complex than a Tooltip — can contain headings, images, links, or forms.",
+  "summary": "Floating panel of rich content triggered by click",
+  "alsoKnownAs": "Popover (Bootstrap), Menu (Material, partial), Popover (Ant), Popover (Apple), Popover (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with appropriate ARIA",
+  "elements": [
+    {
+      "name": "Trigger element",
+      "required": "Yes",
+      "description": "Button or element that activates the popover"
+    },
+    {
+      "name": "Content area",
+      "required": "Yes",
+      "description": "Rich content container"
+    },
+    {
+      "name": "Header/title",
+      "required": "No",
+      "description": "Optional heading at top"
+    },
+    {
+      "name": "Close button",
+      "required": "No",
+      "description": "Explicit dismiss control"
+    },
+    {
+      "name": "Arrow",
+      "required": "No",
+      "description": "Visual pointer connecting to trigger"
+    }
+  ],
+  "wireframe": "wireframes/popover/default.svg",
+  "thumbnail": "wireframes/popover/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Position",
+      "options": "Top, Right, Bottom, Left, Auto",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Arrow",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Trigger",
+      "options": "Click, Hover",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Size: Small",
+      "wireframe": "wireframes/popover/variation-1.svg"
+    },
+    {
+      "caption": "Size: Medium",
+      "wireframe": "wireframes/popover/variation-2.svg"
+    },
+    {
+      "caption": "Size: Large",
+      "wireframe": "wireframes/popover/variation-3.svg"
+    },
+    {
+      "caption": "Arrow: Hidden",
+      "wireframe": "wireframes/popover/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for supplemental content that is richer than a Tooltip allows. For simple text hints, use Tooltip.",
+    "For action lists, use Dropdown. Popover is for informational or form content.",
+    "Dismiss on outside click or Escape key. Optionally provide a close button for clarity.",
+    "Position automatically to stay in viewport, or allow manual positioning."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Popover",
+    "material": "Menu (partial)",
+    "ant": "Popover",
+    "apple": "Popover",
+    "shadcn": "Popover"
+  },
+  "related": []
+}

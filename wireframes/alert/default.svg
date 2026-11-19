@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect class="region" x="0" y="0" width="800" height="250" />
+
+  <!-- Alert box -->
+  <rect class="hover-target" x="100" y="80" width="600" height="80" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="50" y1="120" x2="30" y2="120" />
+    <rect class="label-bg" x="-8" y="110" width="42" height="20" />
+    <text class="label-text" x="13" y="124" text-anchor="middle">Alert</text>
+  </g>
+  <rect x="100" y="80" width="600" height="80" fill="rgba(0,150,255,0.1)" stroke="rgba(0,150,255,0.5)" stroke-width="2" rx="6" />
+
+  <!-- Icon -->
+  <rect class="hover-target" x="120" y="105" width="30" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="135" y1="95" x2="135" y2="75" />
+    <rect class="label-bg" x="109" y="59" width="52" height="20" />
+    <text class="label-text" x="135" y="73" text-anchor="middle">Icon</text>
+  </g>
+  <circle cx="135" cy="120" r="12" fill="rgba(0,150,255,0.3)" />
+
+  <!-- Title and message -->
+  <rect class="hover-target" x="170" y="100" width="450" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="750" y1="120" x2="770" y2="120" />
+    <rect class="label-bg" x="772" y="110" width="28" height="20" />
+    <text class="label-text" x="786" y="124" text-anchor="middle">Text</text>
+  </g>
+  <line class="text-line" x1="170" y1="110" x2="280" y2="110" stroke-width="2" />
+  <line class="text-line" x1="170" y1="130" x2="560" y2="130" />
+
+  <!-- Dismiss button -->
+  <circle cx="665" cy="110" r="10" class="optional" />
+  <line x1="661" y1="106" x2="669" y2="114" stroke="#666" stroke-width="1.5" />
+  <line x1="669" y1="106" x2="661" y2="114" stroke="#666" stroke-width="1.5" />
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect class="region" x="0" y="0" width="800" height="350" />
+
+  <!-- Content shapes (text lines) -->
+  <rect class="hover-target" x="100" y="80" width="600" height="200" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="75" x2="400" y2="55" />
+    <rect class="label-bg" x="318" y="39" width="164" height="20" />
+    <text class="label-text" x="400" y="53" text-anchor="middle">Content shapes</text>
+  </g>
+
+  <!-- Avatar circle placeholder -->
+  <circle cx="130" cy="120" r="30" fill="#ddd" stroke="none" />
+
+  <!-- Text line placeholders -->
+  <rect x="180" y="95" width="520" height="20" rx="4" fill="#ddd" />
+  <rect x="180" y="130" width="480" height="20" rx="4" fill="#ddd" />
+  <rect x="180" y="165" width="420" height="20" rx="4" fill="#ddd" />
+
+  <!-- Second block -->
+  <rect x="100" y="220" width="600" height="20" rx="4" fill="#ddd" />
+  <rect x="100" y="255" width="550" height="20" rx="4" fill="#ddd" />
+</svg>

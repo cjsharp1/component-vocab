@@ -1,0 +1,90 @@
+{
+  "slug": "embed",
+  "name": "Embed",
+  "order": 14,
+  "status": "stable",
+  "group": "content-display",
+  "description": "Third-party content embedded inline within the page. Videos, maps, social media posts, or interactive widgets from external services.",
+  "summary": "Third-party content embedded inline",
+  "alsoKnownAs": "Embed (HTML standard), — (Bootstrap), — (Material), — (Ant), — (Apple), — (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> containing <code>&lt;iframe&gt;</code> or <code>&lt;embed&gt;</code>",
+  "elements": [
+    {
+      "name": "Embedded content",
+      "required": "Yes",
+      "description": "The iframe/embed element"
+    },
+    {
+      "name": "Caption",
+      "required": "No",
+      "description": "Description of the embedded content"
+    },
+    {
+      "name": "Fallback",
+      "required": "No",
+      "description": "Content shown if embed fails to load"
+    }
+  ],
+  "wireframe": "wireframes/embed/default.svg",
+  "thumbnail": "wireframes/embed/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Aspect ratio",
+      "options": "16:9, 4:3, 1:1, Auto",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Contained, Full-width",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Type",
+      "options": "Video, Map, Social post, Generic",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "16:9 — YouTube, Vimeo",
+      "wireframe": "wireframes/embed/variation-1.svg"
+    },
+    {
+      "caption": "4:3 — maps, older content",
+      "wireframe": "wireframes/embed/variation-2.svg"
+    },
+    {
+      "caption": "1:1 — social posts",
+      "wireframe": "wireframes/embed/variation-3.svg"
+    },
+    {
+      "caption": "Full-width — with caption",
+      "wireframe": "wireframes/embed/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for YouTube/Vimeo videos, Google Maps, tweets, or any iframe content. Always provide a fallback or description for accessibility. Maintain aspect ratio.",
+    "Wrap iframes in a container with <code>padding-bottom</code> hack or <code>aspect-ratio</code> CSS to maintain responsive aspect ratios.",
+    "Include <code>loading=\"lazy\"</code> attribute on iframes to improve page load performance.",
+    "Consider privacy implications — third-party embeds often include tracking. Use privacy-friendly alternatives when available."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Embed",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

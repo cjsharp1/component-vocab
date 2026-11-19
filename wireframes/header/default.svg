@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header background -->
+  <rect class="region" x="0" y="0" width="800" height="80" />
+
+  <!-- Logo/Brand -->
+  <rect class="hover-target" x="30" y="25" width="120" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="90" y1="65" x2="90" y2="85" />
+    <rect class="label-bg" x="35" y="87" width="110" height="20" />
+    <text class="label-text" x="90" y="101" text-anchor="middle">Logo/Brand</text>
+  </g>
+  <rect class="media-placeholder" x="30" y="25" width="40" height="30" rx="4" />
+  <line class="text-line" x1="80" y1="40" x2="140" y2="40" />
+
+  <!-- Navigation -->
+  <rect class="hover-target" x="300" y="30" width="280" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="440" y1="60" x2="440" y2="80" />
+    <rect class="label-bg" x="378" y="82" width="124" height="20" />
+    <text class="label-text" x="440" y="96" text-anchor="middle">Navigation</text>
+  </g>
+  <rect class="interactive" x="300" y="30" width="60" height="20" rx="2" />
+  <rect class="interactive" x="370" y="30" width="60" height="20" rx="2" />
+  <rect class="interactive" x="440" y="30" width="60" height="20" rx="2" />
+  <rect class="interactive" x="510" y="30" width="70" height="20" rx="2" />
+
+  <!-- Actions -->
+  <rect class="hover-target" x="700" y="25" width="70" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="735" y1="65" x2="735" y2="85" />
+    <rect class="label-bg" x="693" y="87" width="84" height="20" />
+    <text class="label-text" x="735" y="101" text-anchor="middle">Actions</text>
+  </g>
+  <rect class="interactive" x="700" y="25" width="70" height="30" rx="4" />
+</svg>

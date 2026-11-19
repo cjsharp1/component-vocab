@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "layout",
+    "label": "Layout"
+  },
+  {
+    "slug": "hero-banners",
+    "label": "Hero &amp; Banners"
+  },
+  {
+    "slug": "content-display",
+    "label": "Content Display"
+  },
+  {
+    "slug": "text-lists",
+    "label": "Text &amp; Lists"
+  },
+  {
+    "slug": "navigation",
+    "label": "Navigation"
+  },
+  {
+    "slug": "calls-to-action",
+    "label": "Calls to Action"
+  },
+  {
+    "slug": "forms-feedback",
+    "label": "Forms &amp; Feedback"
+  },
+  {
+    "slug": "overlays-menus",
+    "label": "Overlays &amp; Menus"
+  },
+  {
+    "slug": "indicators-status",
+    "label": "Indicators &amp; Status"
+  },
+  {
+    "slug": "interactive",
+    "label": "Interactive"
+  },
+  {
+    "slug": "utility",
+    "label": "Utility"
+  }
+]

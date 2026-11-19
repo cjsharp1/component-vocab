@@ -1,0 +1,95 @@
+{
+  "slug": "banner",
+  "name": "Banner",
+  "order": 9,
+  "status": "stable",
+  "group": "hero-banners",
+  "description": "A narrow, high-visibility strip used for announcements, promotions, or time-sensitive alerts. Typically spans full width at the top or bottom of a page.",
+  "summary": "Narrow high-visibility strip for announcements",
+  "alsoKnownAs": "Alert (Bootstrap, partial), Banner (Material), Alert (Ant, partial), — (Apple), — (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> (role=\"banner\" or role=\"alert\")",
+  "elements": [
+    {
+      "name": "Text",
+      "required": "Yes",
+      "description": "Announcement or message"
+    },
+    {
+      "name": "Link/Button",
+      "required": "No",
+      "description": "Action or destination"
+    },
+    {
+      "name": "Dismiss button",
+      "required": "No",
+      "description": "Close/dismiss the banner"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Leading icon for context"
+    }
+  ],
+  "wireframe": "wireframes/banner/default.svg",
+  "thumbnail": "wireframes/banner/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Position",
+      "options": "Top of page, Bottom of page, Inline",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Dismissible",
+      "options": "Yes, No",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Icon",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Top of page",
+      "wireframe": "wireframes/banner/variation-1.svg"
+    },
+    {
+      "caption": "Bottom of page",
+      "wireframe": "wireframes/banner/variation-2.svg"
+    },
+    {
+      "caption": "Inline — within page content",
+      "wireframe": "wireframes/banner/variation-3.svg"
+    },
+    {
+      "caption": "No icon, no button — message only",
+      "wireframe": "wireframes/banner/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for site-wide announcements. For user-action feedback, use Alert. For temporary notifications, use Toast.",
+    "Keep Banner messages concise. Users may dismiss them quickly.",
+    "Avoid stacking multiple banners — prioritize the most important message.",
+    "Use appropriate ARIA roles: <code>role=\"banner\"</code> for general announcements, <code>role=\"alert\"</code> for urgent messages."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Alert (partial)",
+    "material": "Banner",
+    "ant": "Alert (partial)",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

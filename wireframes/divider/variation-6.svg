@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <!-- Compact spacing -->
+  <line class="text-line" x1="40" y1="60" x2="200" y2="60" />
+  <line x1="40" y1="80" x2="360" y2="80" stroke="#999" stroke-width="1" />
+  <line class="text-line" x1="40" y1="100" x2="220" y2="100" />
+</svg>

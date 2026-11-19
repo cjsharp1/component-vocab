@@ -1,0 +1,101 @@
+{
+  "slug": "media",
+  "name": "Media",
+  "order": 12,
+  "status": "stable",
+  "group": "content-display",
+  "description": "Pairs an image or video with adjacent text content. A fundamental pattern for content that needs visual accompaniment with explanatory text side by side.",
+  "summary": "Image/video paired with adjacent text",
+  "alsoKnownAs": "Media object (Bootstrap, deprecated), — (Material), — (Ant), — (Apple), — (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Image/Video",
+      "required": "Yes",
+      "description": "Visual media content"
+    },
+    {
+      "name": "Heading",
+      "required": "No",
+      "description": "Title for the text content"
+    },
+    {
+      "name": "Text",
+      "required": "Yes",
+      "description": "Descriptive or explanatory text"
+    },
+    {
+      "name": "Button",
+      "required": "No",
+      "description": "Optional action"
+    }
+  ],
+  "wireframe": "wireframes/media/default.svg",
+  "thumbnail": "wireframes/media/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Media position",
+      "options": "Left, Right",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Media size",
+      "options": "Equal (50/50), Media dominant (60/40), Text dominant (40/60)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Media type",
+      "options": "Image, Video, Illustration",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Vertical alignment",
+      "options": "Top, Center, Bottom",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Media left — 50/50 split",
+      "wireframe": "wireframes/media/variation-1.svg"
+    },
+    {
+      "caption": "Media right — 50/50 split",
+      "wireframe": "wireframes/media/variation-2.svg"
+    },
+    {
+      "caption": "Media dominant — 60/40 split",
+      "wireframe": "wireframes/media/variation-3.svg"
+    },
+    {
+      "caption": "Text dominant — 40/60 split",
+      "wireframe": "wireframes/media/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for content that pairs text and image side by side. For full-width image with caption below, use Figure. For image-led previews, use Card.",
+    "Ensure vertical alignment looks balanced — center alignment often works best.",
+    "On mobile, Media typically stacks vertically with the image on top.",
+    "For videos, include play controls and consider autoplay policies."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Media object (deprecated)",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

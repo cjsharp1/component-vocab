@@ -1,0 +1,111 @@
+{
+  "slug": "hero",
+  "name": "Hero",
+  "order": 8,
+  "status": "stable",
+  "group": "hero-banners",
+  "description": "A large introductory area typically placed at the top of a page. Contains a prominent headline, supporting text, and one or more calls to action. Sets the tone and primary message for the page content that follows.",
+  "summary": "Large intro area — headline, subtext, CTA",
+  "alsoKnownAs": "Jumbotron (Bootstrap, deprecated), Hero header, Hero banner, Landing section",
+  "htmlElement": "<code>&lt;section&gt;</code>",
+  "elements": [
+    {
+      "name": "Heading",
+      "required": "Yes",
+      "description": "Primary headline text"
+    },
+    {
+      "name": "Subheading",
+      "required": "No",
+      "description": "Supporting text beneath the heading"
+    },
+    {
+      "name": "Button (primary)",
+      "required": "No",
+      "description": "Primary call-to-action"
+    },
+    {
+      "name": "Button (secondary)",
+      "required": "No",
+      "description": "Secondary/alternative action"
+    },
+    {
+      "name": "Image",
+      "required": "No",
+      "description": "Hero image (background or beside content)"
+    },
+    {
+      "name": "Background",
+      "required": "No",
+      "description": "Background color, gradient, or image"
+    }
+  ],
+  "wireframe": "wireframes/hero/default.svg",
+  "thumbnail": "wireframes/hero/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Centered, Split Left, Split Right",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Media",
+      "options": "None, Background Image, Side Image, Video",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Content density",
+      "options": "Minimal (heading + CTA), Full (heading + subtext + CTA + secondary)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Overlay",
+      "options": "None, Dark scrim, Light scrim",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Centered — minimal content",
+      "wireframe": "wireframes/hero/variation-1.svg"
+    },
+    {
+      "caption": "Split Left — content left, image right",
+      "wireframe": "wireframes/hero/variation-2.svg"
+    },
+    {
+      "caption": "Split Right — image left, content right",
+      "wireframe": "wireframes/hero/variation-3.svg"
+    },
+    {
+      "caption": "Background Image — with dark overlay",
+      "wireframe": "wireframes/hero/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use Hero as the first content component on a page, inside a <code>&lt;section&gt;</code>.",
+    "Limit to one Hero per page. For secondary promotional areas lower on the page, use <strong>CTA</strong> instead.",
+    "When using a background image, always provide an overlay or ensure text contrast meets WCAG AA.",
+    "The \"Split\" layouts work best with a side image or illustration, not a background image."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Jumbotron (deprecated)",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

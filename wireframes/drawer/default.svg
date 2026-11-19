@@ -1,0 +1,54 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main content area (faded) -->
+  <rect class="region" x="0" y="0" width="800" height="350" opacity="0.3" />
+
+  <!-- Backdrop (optional) -->
+  <rect class="hover-target" x="280" y="0" width="520" height="350" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="540" y1="175" x2="580" y2="175" />
+    <rect class="label-bg" x="582" y="159" width="70" height="20" />
+    <text class="label-text" x="617" y="173" text-anchor="middle">Backdrop</text>
+  </g>
+  <rect class="optional" x="280" y="0" width="520" height="350" fill="rgba(0,0,0,0.2)" />
+
+  <!-- Drawer panel (from left edge) -->
+  <rect x="0" y="0" width="280" height="350" fill="#fff" stroke="#999" stroke-width="2" />
+
+  <!-- Header/title -->
+  <rect class="hover-target" x="15" y="15" width="200" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="115" y1="10" x2="115" y2="-10" />
+    <rect class="label-bg" x="56" y="-26" width="118" height="20" />
+    <text class="label-text" x="115" y="-12" text-anchor="middle">Header/title</text>
+  </g>
+  <line class="text-line" x1="25" y1="30" x2="130" y2="30" />
+
+  <!-- Close button -->
+  <rect class="hover-target" x="235" y="15" width="30" height="30" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="265" y1="30" x2="305" y2="30" />
+    <rect class="label-bg" x="307" y="14" width="98" height="20" />
+    <text class="label-text" x="356" y="28" text-anchor="middle">Close button</text>
+  </g>
+  <circle class="interactive" cx="250" cy="30" r="12" />
+  <line x1="245" y1="25" x2="255" y2="35" stroke="#4a90d9" stroke-width="2" />
+  <line x1="255" y1="25" x2="245" y2="35" stroke="#4a90d9" stroke-width="2" />
+
+  <line x1="15" y1="55" x2="265" y2="55" stroke="#ddd" stroke-width="1" />
+
+  <!-- Content area -->
+  <rect class="hover-target" x="15" y="70" width="250" height="265" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="15" y1="200" x2="-30" y2="200" />
+    <rect class="label-bg" x="-98" y="184" width="66" height="20" />
+    <text class="label-text" x="-65" y="198" text-anchor="middle">Content</text>
+  </g>
+  <line class="text-line" x1="25" y1="80" x2="180" y2="80" />
+  <line class="text-line" x1="25" y1="100" x2="200" y2="100" />
+  <line class="text-line" x1="25" y1="120" x2="170" y2="120" />
+  <line class="text-line" x1="25" y1="150" x2="190" y2="150" />
+  <line class="text-line" x1="25" y1="170" x2="210" y2="170" />
+  <line class="text-line" x1="25" y1="190" x2="160" y2="190" />
+  <line class="text-line" x1="25" y1="220" x2="180" y2="220" />
+  <line class="text-line" x1="25" y1="240" x2="195" y2="240" />
+</svg>

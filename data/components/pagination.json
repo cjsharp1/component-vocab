@@ -1,0 +1,95 @@
+{
+  "slug": "pagination",
+  "name": "Pagination",
+  "order": 33,
+  "status": "stable",
+  "group": "navigation",
+  "description": "Page-by-page navigation for content split across multiple pages. Provides numbered pages, previous/next, and optionally first/last.",
+  "summary": "Page-by-page navigation",
+  "alsoKnownAs": "Pagination (Bootstrap), — (Material), Pagination (Ant), — (Apple), Pagination (shadcn)",
+  "htmlElement": "<code>&lt;nav&gt;</code> with aria-label=\"pagination\"",
+  "elements": [
+    {
+      "name": "Page numbers",
+      "required": "Yes",
+      "description": "Numbered page links"
+    },
+    {
+      "name": "Previous/Next buttons",
+      "required": "Yes",
+      "description": "Navigate to adjacent pages"
+    },
+    {
+      "name": "First/Last buttons",
+      "required": "No",
+      "description": "Jump to first or last page"
+    },
+    {
+      "name": "Current page indicator",
+      "required": "Yes",
+      "description": "Highlights the current page"
+    }
+  ],
+  "wireframe": "wireframes/pagination/default.svg",
+  "thumbnail": "wireframes/pagination/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Numbered, Simple prev-next, Load more button",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Compact, Default",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Truncation",
+      "options": "Show all, Ellipsis",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Numbered — page numbers with arrows",
+      "wireframe": "wireframes/pagination/variation-1.svg"
+    },
+    {
+      "caption": "Simple — previous and next only",
+      "wireframe": "wireframes/pagination/variation-2.svg"
+    },
+    {
+      "caption": "Load more — single button style",
+      "wireframe": "wireframes/pagination/variation-3.svg"
+    },
+    {
+      "caption": "Compact — smaller buttons",
+      "wireframe": "wireframes/pagination/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use at the bottom of paginated content (blog archives, search results).",
+    "For single-item navigation (next/prev article), use the component-nav pattern.",
+    "Show 5-7 page numbers maximum. Use ellipsis for longer lists.",
+    "Disable Previous on the first page and Next on the last page."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Pagination",
+    "material": "—",
+    "ant": "Pagination",
+    "apple": "—",
+    "shadcn": "Pagination"
+  },
+  "related": []
+}

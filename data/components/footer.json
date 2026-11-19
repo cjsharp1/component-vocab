@@ -1,0 +1,89 @@
+{
+  "slug": "footer",
+  "name": "Footer",
+  "order": 4,
+  "status": "stable",
+  "group": "layout",
+  "description": "The bottom-level site footer containing secondary navigation, legal information, contact details, and social links. Persists across pages.",
+  "summary": "Site footer with links, legal, contact",
+  "alsoKnownAs": "Layout Footer (Ant)",
+  "htmlElement": "<code>&lt;footer&gt;</code>",
+  "elements": [
+    {
+      "name": "Navigation columns",
+      "required": "No",
+      "description": "Grouped links by category"
+    },
+    {
+      "name": "Logo/Brand",
+      "required": "No",
+      "description": "Repeated brand mark"
+    },
+    {
+      "name": "Copyright",
+      "required": "Yes",
+      "description": "Legal/copyright text"
+    },
+    {
+      "name": "Social links",
+      "required": "No",
+      "description": "Social media icons/links"
+    },
+    {
+      "name": "Newsletter",
+      "required": "No",
+      "description": "Email signup form"
+    }
+  ],
+  "wireframe": "wireframes/footer/default.svg",
+  "thumbnail": "wireframes/footer/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Simple (single row), Multi-column, Stacked",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Content density",
+      "options": "Minimal (copyright only), Standard, Full (columns + social + newsletter)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Minimal — copyright only",
+      "wireframe": "wireframes/footer/variation-1.svg"
+    },
+    {
+      "caption": "Multi-column — nav columns + copyright",
+      "wireframe": "wireframes/footer/variation-2.svg"
+    },
+    {
+      "caption": "Stacked — centered, single column",
+      "wireframe": "wireframes/footer/variation-3.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Place as the last child of <code>&lt;body&gt;</code>.",
+    "Always include copyright/legal text.",
+    "Use Grid inside Footer for multi-column layouts."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "Layout Footer",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

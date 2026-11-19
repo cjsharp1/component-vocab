@@ -1,0 +1,87 @@
+{
+  "slug": "marquee",
+  "name": "Marquee",
+  "order": 22,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A continuously scrolling horizontal strip of content. Used for logos, headlines, announcements, or image feeds that animate endlessly.",
+  "summary": "Horizontally scrolling content strip",
+  "alsoKnownAs": "— (no direct equivalent; CSS animation pattern)",
+  "htmlElement": "<code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Items",
+      "required": "Yes",
+      "description": "Repeating content (logos, text, images)"
+    }
+  ],
+  "wireframe": "wireframes/marquee/default.svg",
+  "thumbnail": "wireframes/marquee/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Direction",
+      "options": "Left-to-right, Right-to-left",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Speed",
+      "options": "Slow, Default, Fast",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Pause on hover",
+      "options": "Yes, No",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Content type",
+      "options": "Logos, Text, Images, Mixed",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Logos — left-to-right",
+      "wireframe": "wireframes/marquee/variation-1.svg"
+    },
+    {
+      "caption": "Text headlines — right-to-left",
+      "wireframe": "wireframes/marquee/variation-2.svg"
+    },
+    {
+      "caption": "Images — with pause on hover",
+      "wireframe": "wireframes/marquee/variation-3.svg"
+    },
+    {
+      "caption": "Mixed — logos and text",
+      "wireframe": "wireframes/marquee/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use sparingly — constant motion can be distracting. Provide a pause mechanism for accessibility (pause on hover at minimum). For static logo display, prefer Logo Cloud.",
+    "Always duplicate content seamlessly so the loop is continuous without gaps.",
+    "Respect <code>prefers-reduced-motion</code> media query — disable animation for users who prefer reduced motion.",
+    "Use <code>aria-live=\"off\"</code> to prevent screen readers from announcing every item as it scrolls.",
+    "Consider performance — too many or too large items can cause jank on lower-end devices."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "list",
+  "name": "List",
+  "order": 27,
+  "status": "stable",
+  "group": "text-lists",
+  "description": "A structured list of items — features, benefits, steps, or any enumerated content. More visually styled than a plain HTML list.",
+  "summary": "Structured list of items — features, steps",
+  "alsoKnownAs": "List Group (Bootstrap), List (Material), List (Ant), — (Apple), — (shadcn)",
+  "htmlElement": "<code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>",
+  "elements": [
+    {
+      "name": "List items",
+      "required": "Yes",
+      "description": "The individual items in the list"
+    },
+    {
+      "name": "Icons per item",
+      "required": "No",
+      "description": "Visual markers or icons beside each item"
+    },
+    {
+      "name": "Item description",
+      "required": "No",
+      "description": "Secondary text below the main item text"
+    },
+    {
+      "name": "Item action",
+      "required": "No",
+      "description": "Link or button associated with an item"
+    }
+  ],
+  "wireframe": "wireframes/list/default.svg",
+  "thumbnail": "wireframes/list/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Bulleted, Numbered, Icon-led, Checklist",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Density",
+      "options": "Compact, Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Dividers",
+      "options": "None, Between items, Boxed",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Bulleted — simple bullet points",
+      "wireframe": "wireframes/list/variation-1.svg"
+    },
+    {
+      "caption": "Checklist — checkmark icons",
+      "wireframe": "wireframes/list/variation-2.svg"
+    },
+    {
+      "caption": "Boxed — bordered items",
+      "wireframe": "wireframes/list/variation-3.svg"
+    },
+    {
+      "caption": "Icon-led with dividers — icons and separators",
+      "wireframe": "wireframes/list/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for feature lists, step sequences, or any ordered/unordered enumeration.",
+    "For expandable items, use <strong>Accordion</strong>. For key-value data, use <strong>Snapshot</strong>.",
+    "Keep list items concise. If items have substantial content, consider using <strong>Accordion</strong> or <strong>Card</strong>.",
+    "Icon-led lists work well for feature benefits (checkmark icons convey completion or inclusion)."
+  ],
+  "legacyComparison": {
+    "bootstrap": "List Group",
+    "material": "List",
+    "ant": "List",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

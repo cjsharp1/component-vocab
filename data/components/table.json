@@ -1,0 +1,101 @@
+{
+  "slug": "table",
+  "name": "Table",
+  "order": 28,
+  "status": "stable",
+  "group": "text-lists",
+  "description": "Tabular data presented in rows and columns. For structured data that benefits from alignment and comparison across rows.",
+  "summary": "Tabular data display",
+  "alsoKnownAs": "Table (Bootstrap), Data Table (Material), Table (Ant), — (Apple), Table (shadcn)",
+  "htmlElement": "<code>&lt;table&gt;</code>",
+  "elements": [
+    {
+      "name": "Header row",
+      "required": "Yes",
+      "description": "Column headers"
+    },
+    {
+      "name": "Data rows",
+      "required": "Yes",
+      "description": "The tabular data cells"
+    },
+    {
+      "name": "Caption",
+      "required": "No",
+      "description": "Table title or description"
+    },
+    {
+      "name": "Footer row",
+      "required": "No",
+      "description": "Summary row (totals, averages)"
+    }
+  ],
+  "wireframe": "wireframes/table/default.svg",
+  "thumbnail": "wireframes/table/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Default, Striped, Bordered",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Compact, Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Responsive",
+      "options": "Scroll, Stack",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Sortable",
+      "options": "Yes, No",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Default — clean rows",
+      "wireframe": "wireframes/table/variation-1.svg"
+    },
+    {
+      "caption": "Striped — alternating row backgrounds",
+      "wireframe": "wireframes/table/variation-2.svg"
+    },
+    {
+      "caption": "Bordered — all cells outlined",
+      "wireframe": "wireframes/table/variation-3.svg"
+    },
+    {
+      "caption": "Stack (mobile) — vertical card layout",
+      "wireframe": "wireframes/table/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for structured data. For feature comparisons, prefer <strong>Comparison</strong>. For key-value pairs, use <strong>Snapshot</strong>.",
+    "Keep tables simple — if it needs many interactive features, it's probably an app data grid.",
+    "Always include a header row to label columns.",
+    "For responsive tables on small screens, use horizontal scroll or stack into cards."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Table",
+    "material": "Data Table",
+    "ant": "Table",
+    "apple": "—",
+    "shadcn": "Table"
+  },
+  "related": []
+}

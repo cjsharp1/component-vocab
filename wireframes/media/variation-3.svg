@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="media-placeholder" x="20" y="30" width="220" height="140" rx="4" />
+  <line class="text-line" x1="260" y1="40" x2="360" y2="40" />
+  <line class="text-line" x1="260" y1="60" x2="370" y2="60" />
+  <line class="text-line" x1="260" y1="75" x2="350" y2="75" />
+  <line class="text-line" x1="260" y1="90" x2="365" y2="90" />
+</svg>

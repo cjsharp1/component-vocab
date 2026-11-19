@@ -1,0 +1,95 @@
+{
+  "slug": "callout",
+  "name": "Callout",
+  "order": 24,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A visually distinct block that draws attention to specific information. Tips, notes, warnings, or pull-quotes that need to stand out from surrounding content.",
+  "summary": "Visually distinct block — tip, note, pull-quote",
+  "alsoKnownAs": "— (Bootstrap), — (Material), Alert (Ant, partial), — (Apple), — (shadcn)",
+  "htmlElement": "<code>&lt;aside&gt;</code> or <code>&lt;blockquote&gt;</code>",
+  "elements": [
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "The highlighted text/information"
+    },
+    {
+      "name": "Title/Label",
+      "required": "No",
+      "description": "\"Note:\", \"Tip:\", \"Warning:\" label"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Visual indicator of type"
+    },
+    {
+      "name": "Border/Accent",
+      "required": "No",
+      "description": "Left border or background tint"
+    }
+  ],
+  "wireframe": "wireframes/callout/default.svg",
+  "thumbnail": "wireframes/callout/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Type",
+      "options": "Info, Tip, Warning, Note, Quote",
+      "affectsLayout": "No (changes color/icon)",
+      "highlighted": false
+    },
+    {
+      "config": "Icon",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Left border accent, Full background tint, Outlined",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Info — left border accent",
+      "wireframe": "wireframes/callout/variation-1.svg"
+    },
+    {
+      "caption": "Warning — orange accent",
+      "wireframe": "wireframes/callout/variation-2.svg"
+    },
+    {
+      "caption": "Full background tint",
+      "wireframe": "wireframes/callout/variation-3.svg"
+    },
+    {
+      "caption": "Outlined — success/tip",
+      "wireframe": "wireframes/callout/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use within Prose for editorial emphasis. For user-action feedback (form errors, success), use Alert. For quotes with attribution, use Testimonial.",
+    "Color coding helps users quickly identify type: blue for info, yellow/orange for warnings, red for errors, green for tips/success.",
+    "Use semantic elements: <code>&lt;aside&gt;</code> for notes/tips, <code>&lt;blockquote&gt;</code> for pull-quotes.",
+    "Include appropriate ARIA roles when needed: <code>role=\"note\"</code> or <code>role=\"complementary\"</code>."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "Alert (partial)",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "skeleton",
+  "name": "Skeleton",
+  "order": 44,
+  "status": "stable",
+  "group": "indicators-status",
+  "description": "A placeholder loading state that mimics the shape of content to come. Shows the layout structure before real content loads.",
+  "summary": "Placeholder loading state mimicking content shape",
+  "alsoKnownAs": "Placeholder (Bootstrap), — (Material), Skeleton (Ant), Redacted (Apple), Skeleton (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with aria-busy=\"true\"",
+  "elements": [
+    {
+      "name": "Content shapes",
+      "required": "Yes",
+      "description": "Rectangles mimicking text, circles for avatars, etc."
+    }
+  ],
+  "wireframe": "wireframes/skeleton/default.svg",
+  "thumbnail": "wireframes/skeleton/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Shape",
+      "options": "Text lines, Circle, Rectangle, Card-shaped",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Density",
+      "options": "Match target, Simplified",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Animation",
+      "options": "Pulse, Wave, None",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Shape: Text lines",
+      "wireframe": "wireframes/skeleton/variation-1.svg"
+    },
+    {
+      "caption": "Shape: Circle (avatars)",
+      "wireframe": "wireframes/skeleton/variation-2.svg"
+    },
+    {
+      "caption": "Shape: Card-shaped",
+      "wireframe": "wireframes/skeleton/variation-3.svg"
+    },
+    {
+      "caption": "Density: Simplified",
+      "wireframe": "wireframes/skeleton/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use when content takes more than 300ms to load. For indeterminate loading without showing layout, use Spinner.",
+    "Match the skeleton shape to the actual content layout. Users should recognize what's loading.",
+    "Consider a pulse or wave animation to indicate activity, but ensure it is not distracting.",
+    "Use <code>aria-busy=\"true\"</code> and provide an accessible label like \"Loading content\" for screen readers."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Placeholder",
+    "material": "—",
+    "ant": "Skeleton",
+    "apple": "Redacted",
+    "shadcn": "Skeleton"
+  },
+  "related": []
+}

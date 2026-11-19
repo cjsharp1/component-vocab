@@ -1,0 +1,7 @@
+<svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+  <line x1="40" y1="20" x2="40" y2="60" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+  <circle class="interactive" cx="40" cy="25" r="5"/>
+  <circle class="interactive" cx="40" cy="45" r="5"/>
+  <rect class="text-line" x="55" y="22" width="80" height="5"/>
+  <rect class="text-line" x="55" y="42" width="80" height="5"/>
+</svg>

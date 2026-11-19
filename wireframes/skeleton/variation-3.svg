@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <!-- Card skeleton -->
+  <rect x="20" y="20" width="160" height="100" rx="6" fill="#ddd" />
+  <rect x="20" y="130" width="120" height="12" rx="3" fill="#ddd" />
+  <rect x="20" y="150" width="140" height="12" rx="3" fill="#ddd" />
+</svg>

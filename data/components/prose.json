@@ -1,0 +1,110 @@
+{
+  "slug": "prose",
+  "name": "Prose",
+  "order": 26,
+  "status": "stable",
+  "group": "text-lists",
+  "description": "Long-form rich text content — article bodies, descriptions, documentation. Provides appropriate typography and spacing for readable paragraphs, headings, lists, and inline elements.",
+  "summary": "Long-form rich text content",
+  "alsoKnownAs": "Typography (Bootstrap), — (Material), Typography (Ant), — (Apple), Typography (shadcn, partial)",
+  "htmlElement": "<code>&lt;div&gt;</code> wrapping standard HTML content elements",
+  "elements": [
+    {
+      "name": "Headings (h2-h6)",
+      "required": "No",
+      "description": "Structural headings for the content"
+    },
+    {
+      "name": "Paragraphs",
+      "required": "Yes",
+      "description": "Body text content"
+    },
+    {
+      "name": "Inline links",
+      "required": "No",
+      "description": "Hyperlinks within text"
+    },
+    {
+      "name": "Bold/italic",
+      "required": "No",
+      "description": "Text emphasis"
+    },
+    {
+      "name": "Block quotes",
+      "required": "No",
+      "description": "Quoted text sections"
+    },
+    {
+      "name": "Inline code",
+      "required": "No",
+      "description": "Code snippets within text"
+    },
+    {
+      "name": "Lists (ul/ol)",
+      "required": "No",
+      "description": "Unordered or ordered lists"
+    }
+  ],
+  "wireframe": "wireframes/prose/default.svg",
+  "thumbnail": "wireframes/prose/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Max width",
+      "options": "Narrow, Default, Wide",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Line height",
+      "options": "Compact, Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "First paragraph",
+      "options": "Normal, Drop cap, Lead text",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Narrow — optimal reading line length",
+      "wireframe": "wireframes/prose/variation-1.svg"
+    },
+    {
+      "caption": "Wide — more content per line",
+      "wireframe": "wireframes/prose/variation-2.svg"
+    },
+    {
+      "caption": "Drop cap — decorative first letter",
+      "wireframe": "wireframes/prose/variation-3.svg"
+    },
+    {
+      "caption": "Lead text — emphasized first paragraph",
+      "wireframe": "wireframes/prose/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use inside Article for blog content. Wrap any long-form text in Prose for proper typography.",
+    "Don't nest other components inside Prose.",
+    "Keep max width narrow (65-75 characters per line) for optimal readability.",
+    "Use lead text or drop cap to visually signal the start of long-form content."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "Typography",
+    "ant": "Typography",
+    "apple": "—",
+    "shadcn": "Typography (partial)"
+  },
+  "related": []
+}

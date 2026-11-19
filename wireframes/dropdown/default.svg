@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect class="region" x="0" y="0" width="800" height="350" />
+
+  <!-- Trigger button -->
+  <rect class="hover-target" x="300" y="50" width="200" height="45" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="400" y1="45" x2="400" y2="25" />
+    <rect class="label-bg" x="320" y="9" width="160" height="20" />
+    <text class="label-text" x="400" y="23" text-anchor="middle">Trigger button</text>
+  </g>
+  <rect class="interactive" x="300" y="50" width="200" height="45" rx="4" />
+  <line class="text-line" x1="330" y1="72" x2="430" y2="72" />
+  <path d="M 460 67 L 470 77 L 480 67 Z" fill="none" stroke="#4a90d9" stroke-width="2" />
+
+  <!-- Dropdown menu -->
+  <rect x="300" y="115" width="250" height="200" rx="6" fill="#fff" stroke="#999" stroke-width="2" />
+
+  <!-- Menu items -->
+  <rect class="hover-target" x="310" y="125" width="230" height="35" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="310" y1="142" x2="270" y2="142" />
+    <rect class="label-bg" x="172" y="126" width="96" height="20" />
+    <text class="label-text" x="220" y="140" text-anchor="middle">Menu items</text>
+  </g>
+  <line class="text-line" x1="325" y1="142" x2="420" y2="142" />
+
+  <line class="text-line" x1="325" y1="177" x2="440" y2="177" />
+
+  <!-- Divider (optional) -->
+  <rect class="hover-target" x="310" y="195" width="230" height="10" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="540" y1="200" x2="580" y2="200" />
+    <rect class="label-bg" x="582" y="184" width="74" height="20" />
+    <text class="label-text" x="619" y="198" text-anchor="middle">Dividers</text>
+  </g>
+  <line class="optional" x1="310" y1="200" x2="540" y2="200" stroke="#ddd" stroke-width="1" />
+
+  <line class="text-line" x1="325" y1="222" x2="410" y2="222" />
+  <line class="text-line" x1="325" y1="257" x2="450" y2="257" />
+  <line class="text-line" x1="325" y1="292" x2="430" y2="292" />
+
+  <!-- Icons (optional) -->
+  <rect class="hover-target" x="315" y="210" width="20" height="20" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="265" y1="220" x2="230" y2="220" />
+    <rect class="label-bg" x="184" y="204" width="44" height="20" />
+    <text class="label-text" x="206" y="218" text-anchor="middle">Icons</text>
+  </g>
+  <circle class="optional" cx="325" cy="222" r="8" />
+</svg>

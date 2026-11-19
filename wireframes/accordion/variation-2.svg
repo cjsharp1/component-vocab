@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <rect x="20" y="20" width="360" height="140" fill="none" stroke="#999" stroke-width="2" rx="4" />
+  <rect class="interactive" x="20" y="20" width="360" height="35" />
+  <line class="text-line" x1="35" y1="37" x2="180" y2="37" />
+  <path d="M 360 32 L 370 42 L 360 52" stroke="#333" stroke-width="2" fill="none" />
+  <line x1="20" y1="55" x2="380" y2="55" stroke="#999" stroke-width="1" />
+  <rect class="interactive" x="20" y="55" width="360" height="35" />
+  <line class="text-line" x1="35" y1="72" x2="200" y2="72" />
+  <path d="M 360 67 L 370 77 L 360 87" stroke="#333" stroke-width="2" fill="none" />
+  <line x1="20" y1="90" x2="380" y2="90" stroke="#999" stroke-width="1" />
+  <rect class="interactive" x="20" y="90" width="360" height="35" />
+  <line class="text-line" x1="35" y1="107" x2="190" y2="107" />
+  <path d="M 360 102 L 370 112 L 360 122" stroke="#333" stroke-width="2" fill="none" />
+</svg>

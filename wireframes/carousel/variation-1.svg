@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <!-- Single item -->
+  <rect x="50" y="30" width="300" height="120" rx="6" fill="none" stroke="#999" stroke-width="2" />
+  <rect class="media-placeholder" x="60" y="40" width="280" height="100" rx="4" />
+  <circle cx="180" cy="160" r="4" fill="#4a90d9" />
+  <circle cx="200" cy="160" r="4" fill="#ddd" />
+  <circle cx="220" cy="160" r="4" fill="#ddd" />
+</svg>

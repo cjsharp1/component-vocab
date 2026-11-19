@@ -1,0 +1,90 @@
+{
+  "slug": "progress",
+  "name": "Progress",
+  "order": 45,
+  "status": "stable",
+  "group": "indicators-status",
+  "description": "A visual indicator of task or process completion. Shows how far along a process is.",
+  "summary": "Visual indicator of task/process completion",
+  "alsoKnownAs": "Progress (Bootstrap), Linear/Circular Progress (Material), Progress (Ant), Progress View (Apple), Progress (shadcn)",
+  "htmlElement": "<code>&lt;progress&gt;</code> or <code>&lt;div&gt;</code> with role=\"progressbar\"",
+  "elements": [
+    {
+      "name": "Bar/indicator",
+      "required": "Yes",
+      "description": "Visual representation of progress"
+    },
+    {
+      "name": "Label/percentage",
+      "required": "No",
+      "description": "Numeric or text label showing progress"
+    },
+    {
+      "name": "Steps",
+      "required": "No",
+      "description": "Discrete milestones in stepped progress"
+    }
+  ],
+  "wireframe": "wireframes/progress/default.svg",
+  "thumbnail": "wireframes/progress/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Linear bar, Circular ring, Steps",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Label",
+      "options": "Percentage, Fraction, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Default, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Style: Linear bar",
+      "wireframe": "wireframes/progress/variation-1.svg"
+    },
+    {
+      "caption": "Style: Circular ring",
+      "wireframe": "wireframes/progress/variation-2.svg"
+    },
+    {
+      "caption": "Style: Steps",
+      "wireframe": "wireframes/progress/variation-3.svg"
+    },
+    {
+      "caption": "Size: Small",
+      "wireframe": "wireframes/progress/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use when completion percentage is known. For indeterminate loading, use Spinner.",
+    "Linear bars are best for horizontal layouts. Circular rings work well for compact spaces.",
+    "Steps are ideal for multi-stage processes like forms or onboarding.",
+    "Ensure the progress indicator is labeled with <code>aria-valuenow</code>, <code>aria-valuemin</code>, and <code>aria-valuemax</code> for accessibility."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Progress",
+    "material": "Linear/Circular Progress",
+    "ant": "Progress",
+    "apple": "Progress View",
+    "shadcn": "Progress"
+  },
+  "related": []
+}

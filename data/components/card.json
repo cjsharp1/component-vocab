@@ -1,0 +1,113 @@
+{
+  "slug": "card",
+  "name": "Card",
+  "order": 10,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A contained preview of a piece of content. Presents an image, title, excerpt, and link as a clickable unit that leads to full content elsewhere.",
+  "summary": "Preview of content — image, title, excerpt, link",
+  "alsoKnownAs": "Card (Bootstrap), Card (Material), Card (Ant), — (Apple), Card (shadcn)",
+  "htmlElement": "<code>&lt;article&gt;</code> or <code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Image",
+      "required": "No",
+      "description": "Preview image or thumbnail"
+    },
+    {
+      "name": "Title",
+      "required": "Yes",
+      "description": "Content title/heading"
+    },
+    {
+      "name": "Excerpt",
+      "required": "No",
+      "description": "Short preview text"
+    },
+    {
+      "name": "Link/Button",
+      "required": "No",
+      "description": "Action to view full content"
+    },
+    {
+      "name": "Metadata",
+      "required": "No",
+      "description": "Date, author, category tag"
+    }
+  ],
+  "wireframe": "wireframes/card/default.svg",
+  "thumbnail": "wireframes/card/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Orientation",
+      "options": "Vertical (image top), Horizontal (image side)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Image",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Collection layout",
+      "options": "Grid (2-col, 3-col, 4-col), List, Carousel",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Link style",
+      "options": "Entire card clickable, Button only",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Vertical — image on top",
+      "wireframe": "wireframes/card/variation-1.svg"
+    },
+    {
+      "caption": "Horizontal — image on left",
+      "wireframe": "wireframes/card/variation-2.svg"
+    },
+    {
+      "caption": "No image — text only",
+      "wireframe": "wireframes/card/variation-3.svg"
+    },
+    {
+      "caption": "List — horizontal, stacked",
+      "wireframe": "wireframes/card/variation-4.svg"
+    }
+  ],
+  "collections": [
+    {
+      "title": "Card List Layout",
+      "wireframe": "wireframes/card/collection.svg",
+      "caption": "Card List — 3-column grid layout"
+    }
+  ],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "collection",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use Card for teasers that link elsewhere. For in-place content, use Feature. For people, use Profile.",
+    "When the entire card is clickable, ensure the hit area is clear with hover states.",
+    "Maintain consistent card heights in grid layouts by setting a max-height or line clamp on excerpts.",
+    "For image-less cards, consider using a subtle border or shadow to define card boundaries."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Card",
+    "material": "Card",
+    "ant": "Card",
+    "apple": "—",
+    "shadcn": "Card"
+  },
+  "related": []
+}

@@ -1,0 +1,90 @@
+{
+  "slug": "tabs",
+  "name": "Tabs",
+  "order": 30,
+  "status": "stable",
+  "group": "text-lists",
+  "description": "Content organized into switchable panels. Only one panel is visible at a time; tab buttons switch between them.",
+  "summary": "Switchable tabbed content panels",
+  "alsoKnownAs": "Nav Tabs (Bootstrap), Tabs (Material), Tabs (Ant), Segmented Control (Apple, partial), Tabs (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with role=\"tablist\"",
+  "elements": [
+    {
+      "name": "Tab buttons",
+      "required": "Yes",
+      "description": "Clickable labels for each panel"
+    },
+    {
+      "name": "Tab panels",
+      "required": "Yes",
+      "description": "Content sections shown/hidden based on active tab"
+    },
+    {
+      "name": "Icon per tab",
+      "required": "No",
+      "description": "Optional icons beside tab labels"
+    }
+  ],
+  "wireframe": "wireframes/tabs/default.svg",
+  "thumbnail": "wireframes/tabs/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Line, Boxed, Pill",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Position",
+      "options": "Top, Left, Bottom",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Scrollable",
+      "options": "Yes (when many tabs), No",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Line — underline indicator",
+      "wireframe": "wireframes/tabs/variation-1.svg"
+    },
+    {
+      "caption": "Pill — rounded button tabs",
+      "wireframe": "wireframes/tabs/variation-2.svg"
+    },
+    {
+      "caption": "Boxed — segmented control style",
+      "wireframe": "wireframes/tabs/variation-3.svg"
+    },
+    {
+      "caption": "Left position — vertical tab list",
+      "wireframe": "wireframes/tabs/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use when content is mutually exclusive — user views one section at a time.",
+    "For progressive disclosure (FAQ), use <strong>Accordion</strong>.",
+    "Keep tab count under 7. If you need more, consider a different pattern (Dropdown menu, Sidebar nav).",
+    "Always show which tab is currently active with a clear visual indicator."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Nav Tabs",
+    "material": "Tabs",
+    "ant": "Tabs",
+    "apple": "Segmented Control (partial)",
+    "shadcn": "Tabs"
+  },
+  "related": []
+}

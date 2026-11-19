@@ -1,0 +1,91 @@
+{
+  "slug": "spinner",
+  "name": "Spinner",
+  "order": 46,
+  "status": "stable",
+  "group": "indicators-status",
+  "description": "A generic loading or processing animation indicating that work is in progress. Used when duration is unknown.",
+  "summary": "Generic loading/processing animation",
+  "alsoKnownAs": "Spinner (Bootstrap), Circular Progress indeterminate (Material), Spin (Ant), Activity Indicator (Apple), Spinner (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code> with role=\"status\"",
+  "elements": [
+    {
+      "name": "Animation",
+      "required": "Yes",
+      "description": "Spinning, pulsing, or animated indicator"
+    },
+    {
+      "name": "Label",
+      "required": "No",
+      "description": "Text like \"Loading...\" for context"
+    }
+  ],
+  "wireframe": "wireframes/spinner/default.svg",
+  "thumbnail": "wireframes/spinner/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Size",
+      "options": "Small, Default, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Circular, Dots, Bars",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Label",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Overlay",
+      "options": "None, Full-page, Inline",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Size: Small (circular)",
+      "wireframe": "wireframes/spinner/variation-1.svg"
+    },
+    {
+      "caption": "Size: Large (circular)",
+      "wireframe": "wireframes/spinner/variation-2.svg"
+    },
+    {
+      "caption": "Style: Dots",
+      "wireframe": "wireframes/spinner/variation-3.svg"
+    },
+    {
+      "caption": "Style: Bars",
+      "wireframe": "wireframes/spinner/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for indeterminate loading when duration is unknown. For known progress, use Progress.",
+    "For content-shaped loading states, use Skeleton instead.",
+    "Provide accessible labeling with <code>role=\"status\"</code> and an <code>aria-label</code> or visually-hidden text.",
+    "Full-page overlays block all interaction. Use sparingly and only for critical operations."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Spinner",
+    "material": "Circular Progress (indeterminate)",
+    "ant": "Spin",
+    "apple": "Activity Indicator",
+    "shadcn": "Spinner"
+  },
+  "related": []
+}

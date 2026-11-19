@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect class="region" x="0" y="0" width="800" height="350" />
+
+  <!-- Field 1 -->
+  <rect class="hover-target" x="150" y="40" width="150" height="15" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="100" y1="47" x2="80" y2="47" />
+    <rect class="label-bg" x="42" y="37" width="42" height="20" />
+    <text class="label-text" x="63" y="51" text-anchor="middle">Label</text>
+  </g>
+  <line class="text-line" x1="150" y1="47" x2="240" y2="47" />
+  <rect class="hover-target" x="150" y="65" width="500" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="700" y1="85" x2="720" y2="85" />
+    <rect class="label-bg" x="722" y="75" width="78" height="20" />
+    <text class="label-text" x="761" y="89" text-anchor="middle">Input field</text>
+  </g>
+  <rect class="interactive" x="150" y="65" width="500" height="40" rx="4" />
+
+  <!-- Field 2 -->
+  <line class="text-line" x1="150" y1="137" x2="240" y2="137" />
+  <rect class="interactive" x="150" y="155" width="500" height="40" rx="4" />
+
+  <!-- Field 3 -->
+  <line class="text-line" x1="150" y1="227" x2="240" y2="227" />
+  <rect class="interactive" x="150" y="245" width="500" height="40" rx="4" />
+
+  <!-- Submit button -->
+  <rect class="hover-target" x="150" y="305" width="150" height="45" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="100" y1="327" x2="80" y2="327" />
+    <rect class="label-bg" x="9" y="317" width="75" height="20" />
+    <text class="label-text" x="46" y="331" text-anchor="middle">Submit</text>
+  </g>
+  <rect class="interactive" x="150" y="305" width="150" height="45" rx="4" />
+  <line class="text-line" x1="185" y1="327" x2="265" y2="327" />
+</svg>

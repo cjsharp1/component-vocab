@@ -1,0 +1,102 @@
+{
+  "slug": "stat",
+  "name": "Stat",
+  "order": 17,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A single key metric or number displayed prominently. Used to highlight impressive numbers, achievements, or key data points.",
+  "summary": "Single key metric displayed prominently",
+  "alsoKnownAs": "— (Bootstrap), — (Material), Statistic (Ant), — (Apple), — (shadcn)",
+  "htmlElement": "<code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Number/Value",
+      "required": "Yes",
+      "description": "The metric value"
+    },
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "What the number represents"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Visual context"
+    },
+    {
+      "name": "Trend",
+      "required": "No",
+      "description": "Up/down indicator"
+    }
+  ],
+  "wireframe": "wireframes/stat/default.svg",
+  "thumbnail": "wireframes/stat/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large (hero-sized)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Icon",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Collection layout",
+      "options": "Row (horizontal), Grid (2x2), Stacked",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Medium — with icon",
+      "wireframe": "wireframes/stat/variation-1.svg"
+    },
+    {
+      "caption": "Large (hero-sized)",
+      "wireframe": "wireframes/stat/variation-2.svg"
+    },
+    {
+      "caption": "Small — with trend",
+      "wireframe": "wireframes/stat/variation-3.svg"
+    },
+    {
+      "caption": "Grid (2x2)",
+      "wireframe": "wireframes/stat/variation-4.svg"
+    }
+  ],
+  "collections": [
+    {
+      "title": "Stats Layout",
+      "wireframe": "wireframes/stat/collection.svg",
+      "caption": "Stats — 4 stats in a horizontal row"
+    }
+  ],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "collection",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for key metrics that need emphasis. Group in Stats (collection) for impact. For detailed data, use Table.",
+    "Keep labels short and descriptive — 1-3 words.",
+    "Format large numbers for readability (e.g., 1.5M instead of 1,500,000).",
+    "Trend indicators should be meaningful — show percentage change and time period."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "Statistic",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

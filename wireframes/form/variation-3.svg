@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <line class="text-line" x1="30" y1="30" x2="100" y2="30" />
+  <rect class="interactive" x="30" y="40" width="160" height="30" rx="4" />
+  <line class="text-line" x1="210" y1="30" x2="280" y2="30" />
+  <rect class="interactive" x="210" y="40" width="160" height="30" rx="4" />
+  <line class="text-line" x1="30" y1="90" x2="100" y2="90" />
+  <rect class="interactive" x="30" y="100" width="340" height="30" rx="4" />
+  <rect class="interactive" x="30" y="150" width="100" height="35" rx="4" />
+</svg>

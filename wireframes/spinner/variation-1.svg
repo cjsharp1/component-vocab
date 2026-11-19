@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <!-- Small circular spinner -->
+  <circle cx="200" cy="100" r="20" fill="none" stroke="#e0e0e0" stroke-width="3" />
+  <circle cx="200" cy="100" r="20" fill="none" stroke="#4a90d9" stroke-width="3" stroke-dasharray="62 126" />
+</svg>

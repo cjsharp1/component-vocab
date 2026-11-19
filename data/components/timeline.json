@@ -1,0 +1,95 @@
+{
+  "slug": "timeline",
+  "name": "Timeline",
+  "order": 20,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A chronological sequence of events, milestones, or process steps. Displays items along a time axis with dates, titles, and descriptions.",
+  "summary": "Chronological sequence of events/milestones",
+  "alsoKnownAs": "— (Bootstrap), — (Material), Timeline (Ant), — (Apple), — (shadcn)",
+  "htmlElement": "<code>&lt;ol&gt;</code> or <code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Date/Time",
+      "required": "Yes",
+      "description": "When the event occurred"
+    },
+    {
+      "name": "Title",
+      "required": "Yes",
+      "description": "Event name"
+    },
+    {
+      "name": "Description",
+      "required": "No",
+      "description": "Event details"
+    },
+    {
+      "name": "Icon/Marker",
+      "required": "No",
+      "description": "Visual indicator on the timeline axis"
+    }
+  ],
+  "wireframe": "wireframes/timeline/default.svg",
+  "thumbnail": "wireframes/timeline/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Orientation",
+      "options": "Vertical, Horizontal",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Alignment",
+      "options": "Left-aligned, Alternating (zigzag), Centered",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Connector",
+      "options": "Line, Dotted line, None",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Vertical — left-aligned",
+      "wireframe": "wireframes/timeline/variation-1.svg"
+    },
+    {
+      "caption": "Alternating (zigzag)",
+      "wireframe": "wireframes/timeline/variation-2.svg"
+    },
+    {
+      "caption": "Horizontal",
+      "wireframe": "wireframes/timeline/variation-3.svg"
+    },
+    {
+      "caption": "Dotted connector line",
+      "wireframe": "wireframes/timeline/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for company history, project milestones, or process steps. For step-by-step progress indicators, use Progress. Timeline shows past/planned events; Progress shows current completion.",
+    "Always present events in chronological order (oldest to newest or newest to oldest).",
+    "Use semantic <code>&lt;ol&gt;</code> for ordered list of events with proper list item markup.",
+    "Alternating layout works well for detailed events; left-aligned is better for compact timelines."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "Timeline",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

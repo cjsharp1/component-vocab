@@ -1,0 +1,73 @@
+{
+  "slug": "container",
+  "name": "Container",
+  "order": 1,
+  "status": "stable",
+  "group": "layout",
+  "description": "Constrains content to a maximum width and centers it horizontally within the viewport. Acts as a wrapper to prevent content from stretching edge-to-edge on wide screens.",
+  "summary": "Constrains content to a max-width, centers horizontally",
+  "alsoKnownAs": "Container (Bootstrap)",
+  "htmlElement": "<code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "Any child content to be contained"
+    }
+  ],
+  "wireframe": "wireframes/container/default.svg",
+  "thumbnail": "wireframes/container/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Max width",
+      "options": "Small (720px), Medium (960px), Large (1200px), Full",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Padding",
+      "options": "None, Default, Wide",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Small — max 720px",
+      "wireframe": "wireframes/container/variation-1.svg"
+    },
+    {
+      "caption": "Medium — max 960px",
+      "wireframe": "wireframes/container/variation-2.svg"
+    },
+    {
+      "caption": "Large — max 1200px",
+      "wireframe": "wireframes/container/variation-3.svg"
+    },
+    {
+      "caption": "Full — no max width",
+      "wireframe": "wireframes/container/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use Container inside Section to center content within a full-width background.",
+    "Nest content components (Card, Feature, etc.) inside Container.",
+    "Do not nest Container inside Container."
+  ],
+  "legacyComparison": {
+    "bootstrap": "Container",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}

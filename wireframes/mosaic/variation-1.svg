@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Featured left -->
+  <rect class="media-placeholder" x="20" y="20" width="170" height="160" rx="4" />
+  <!-- Small items right -->
+  <rect class="media-placeholder" x="200" y="20" width="80" height="75" rx="4" />
+  <rect class="media-placeholder" x="290" y="20" width="90" height="75" rx="4" />
+  <rect class="media-placeholder" x="200" y="105" width="180" height="75" rx="4" />
+</svg>

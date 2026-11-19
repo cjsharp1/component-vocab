@@ -1,0 +1,102 @@
+{
+  "slug": "divider",
+  "name": "Divider",
+  "order": 50,
+  "status": "stable",
+  "group": "utility",
+  "description": "A visual separator between content sections.",
+  "summary": "Visual separator between content sections",
+  "alsoKnownAs": "— (Bootstrap), Divider (Material), Divider (Ant), — (Apple), Separator (shadcn)",
+  "htmlElement": "<code>&lt;hr&gt;</code>",
+  "elements": [
+    {
+      "name": "Rule/line",
+      "required": "Yes",
+      "description": "The visual separator line"
+    }
+  ],
+  "wireframe": "wireframes/divider/default.svg",
+  "thumbnail": "wireframes/divider/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Solid, Dashed, Dotted, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Full, Contained, Short centered",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Spacing",
+      "options": "Compact, Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Orientation",
+      "options": "Horizontal, Vertical",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Style: Solid",
+      "wireframe": "wireframes/divider/variation-1.svg"
+    },
+    {
+      "caption": "Style: Dashed",
+      "wireframe": "wireframes/divider/variation-2.svg"
+    },
+    {
+      "caption": "Style: Dotted",
+      "wireframe": "wireframes/divider/variation-3.svg"
+    },
+    {
+      "caption": "Width: Short centered",
+      "wireframe": "wireframes/divider/variation-4.svg"
+    },
+    {
+      "caption": "Orientation: Vertical",
+      "wireframe": "wireframes/divider/variation-5.svg"
+    },
+    {
+      "caption": "Spacing: Compact",
+      "wireframe": "wireframes/divider/variation-6.svg"
+    },
+    {
+      "caption": "Spacing: Spacious",
+      "wireframe": "wireframes/divider/variation-7.svg"
+    },
+    {
+      "caption": "Style: None (spacing only)",
+      "wireframe": "wireframes/divider/variation-8.svg"
+    }
+  ],
+  "collections": [],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use between sections when visual separation is needed beyond spacing alone.",
+    "Vertical dividers work well in horizontal layouts, such as between toolbar buttons or sidebar sections.",
+    "The \"None\" style provides spacing without a visible line, useful when a subtle break is needed.",
+    "Ensure sufficient color contrast for the line in both light and dark themes."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "Divider",
+    "ant": "Divider",
+    "apple": "—",
+    "shadcn": "Separator"
+  },
+  "related": []
+}

@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" opacity="0.3" />
+  <rect x="0" y="0" width="240" height="200" fill="rgba(0,0,0,0.2)" />
+  <!-- Drawer from left -->
+  <rect x="240" y="0" width="160" height="200" fill="#fff" stroke="#999" stroke-width="2" />
+  <circle class="interactive" cx="385" cy="15" r="8" />
+  <line class="text-line" x1="255" y1="40" x2="360" y2="40" />
+  <line class="text-line" x1="255" y1="60" x2="370" y2="60" />
+</svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect class="region" x="0" y="0" width="400" height="200" />
+  <rect class="interactive" x="80" y="80" width="100" height="35" rx="4" />
+  <line class="text-line" x1="95" y1="97" x2="165" y2="97" />
+  <rect class="interactive" x="220" y="80" width="100" height="35" rx="4" />
+  <line class="text-line" x1="235" y1="97" x2="305" y2="97" />
+</svg>

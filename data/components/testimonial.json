@@ -1,0 +1,107 @@
+{
+  "slug": "testimonial",
+  "name": "Testimonial",
+  "order": 16,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A quote, review, or endorsement attributed to a specific person or organization. Provides social proof and credibility.",
+  "summary": "Quote/review attributed to a person",
+  "alsoKnownAs": "— (no direct equivalent in major systems)",
+  "htmlElement": "<code>&lt;blockquote&gt;</code>",
+  "elements": [
+    {
+      "name": "Quote",
+      "required": "Yes",
+      "description": "The testimonial text"
+    },
+    {
+      "name": "Author name",
+      "required": "Yes",
+      "description": "Person who gave the quote"
+    },
+    {
+      "name": "Author role/company",
+      "required": "No",
+      "description": "Attribution context"
+    },
+    {
+      "name": "Author photo",
+      "required": "No",
+      "description": "Small avatar"
+    },
+    {
+      "name": "Rating",
+      "required": "No",
+      "description": "Star rating if applicable"
+    }
+  ],
+  "wireframe": "wireframes/testimonial/default.svg",
+  "thumbnail": "wireframes/testimonial/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Standard (quote above, author below), Large quote (featured), With photo",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Collection layout",
+      "options": "Grid, Carousel, Single featured",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Quote marks",
+      "options": "Shown, Hidden",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Standard — with photo",
+      "wireframe": "wireframes/testimonial/variation-1.svg"
+    },
+    {
+      "caption": "Large quote — featured",
+      "wireframe": "wireframes/testimonial/variation-2.svg"
+    },
+    {
+      "caption": "No quote marks, with rating",
+      "wireframe": "wireframes/testimonial/variation-3.svg"
+    },
+    {
+      "caption": "Horizontal — photo on left",
+      "wireframe": "wireframes/testimonial/variation-4.svg"
+    }
+  ],
+  "collections": [
+    {
+      "title": "Testimonial List Layout",
+      "wireframe": "wireframes/testimonial/collection.svg",
+      "caption": "Testimonial List — 3-column row layout"
+    }
+  ],
+  "sectionOrder": [
+    "Elements",
+    "Default Layout",
+    "collection",
+    "Configuration Options",
+    "Layout Variations",
+    "Usage Notes"
+  ],
+  "usageNotes": [
+    "Use for customer quotes and reviews. For general blockquotes within prose, use Callout. For attributed pull-quotes, use Callout.",
+    "Always wrap testimonial content in <code>&lt;blockquote&gt;</code> for semantic HTML.",
+    "Keep quotes concise — aim for 2-4 sentences. Long testimonials lose impact.",
+    "Include attribution context (role/company) to add credibility to the quote."
+  ],
+  "legacyComparison": {
+    "bootstrap": "—",
+    "material": "—",
+    "ant": "—",
+    "apple": "—",
+    "shadcn": "—"
+  },
+  "related": []
+}
