@@ -108,7 +108,9 @@
     "Prose"
   ],
   "aliases": [
-    "Prose"
+    "Prose",
+    "Text",
+    "Typography"
   ],
   "frameworkSource": "legacy",
   "frameworkNames": {

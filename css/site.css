@@ -363,6 +363,9 @@ table .affects-layout::before {
 .wireframe-container svg .text-line { stroke: var(--wireframe-text-line); stroke-width: 2; stroke-linecap: round; }
 .component-grid svg .text-line { fill: var(--wireframe-text-line); stroke: none; }
 .wireframe-container svg text { fill: var(--ink-2); font-family: var(--font-mono); }
+/* Text drawn on a filled shape (badge counts, the current page) sets fill="#fff" in the SVG.
+   The rule above would override that attribute and leave dark text on color. */
+.wireframe-container svg text[fill="#fff"] { fill: #fff; }
 
 /* Hover targets and labels */
 .wireframe-container svg .hover-target {
