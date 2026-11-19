@@ -3,7 +3,7 @@
   <rect x="0" y="0" width="240" height="200" fill="rgba(0,0,0,0.2)" />
   <!-- Drawer from left -->
   <rect x="240" y="0" width="160" height="200" fill="#fff" stroke="#999" stroke-width="2" />
-  <circle class="interactive" cx="385" cy="15" r="8" />
+  <path class="interactive" d="M380.5 10.5L389.5 19.5 M389.5 10.5L380.5 19.5" stroke-linecap="round" />
   <line class="text-line" x1="255" y1="40" x2="360" y2="40" />
   <line class="text-line" x1="255" y1="60" x2="370" y2="60" />
 </svg>

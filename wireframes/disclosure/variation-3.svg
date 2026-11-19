@@ -1,7 +1,7 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="50" y="40" width="300" height="120" rx="6" />
   <line class="text-line" x1="70" y1="65" x2="230" y2="65" />
-  <circle class="region" cx="325" cy="65" r="7" />
+  <polyline class="interactive" points="320.1,62.2 325,67.8 329.9,62.2" stroke-linecap="round" stroke-linejoin="round" />
   <line class="text-line" x1="70" y1="100" x2="320" y2="100" />
   <line class="text-line" x1="70" y1="118" x2="320" y2="118" />
   <line class="text-line" x1="70" y1="136" x2="245" y2="136" />

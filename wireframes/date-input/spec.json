@@ -23,7 +23,8 @@
       { "type": "line", "x": 100, "y": 70, "w": 100 },
       { "type": "interactive", "x": 100, "y": 85, "w": 200, "h": 40, "rx": 4 },
       { "type": "line", "x": 116, "y": 105, "w": 100, "weight": 1 },
-      { "type": "region", "x": 270, "y": 96, "w": 18, "h": 18, "rx": 2 }
+      { "type": "region", "x": 270, "y": 96, "w": 18, "h": 18, "rx": 2 },
+      { "type": "path", "x": 270, "y": 92, "w": 18, "h": 22, "d": "M270 102H288 M275 93V99 M283 93V99", "style": "region" }
     ] },
     { "shapes": [
       { "type": "line", "x": 100, "y": 60, "w": 120 },

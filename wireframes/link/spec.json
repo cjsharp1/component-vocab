@@ -9,7 +9,7 @@
       { "type": "line", "x": 150, "y": 210, "w": 130, "label": "Standalone link" },
       { "type": "circle", "cx": 298, "cy": 210, "r": 7, "style": "region", "label": "Icon (optional)", "at": "below" },
       { "type": "line", "x": 450, "y": 210, "w": 110, "label": "External link" },
-      { "type": "interactive", "x": 568, "y": 203, "w": 14, "h": 14, "rx": 2, "label": "External icon", "at": "below" }
+      { "type": "path", "x": 568, "y": 203, "w": 14, "h": 14, "d": "M574 204H569V216H581V211 M576 203H582V209 M582 203L574.5 210.5", "label": "External icon", "at": "below" }
     ]
   },
   "thumbnail": {
@@ -36,7 +36,7 @@
     ] },
     { "shapes": [
       { "type": "line", "x": 110, "y": 100, "w": 150 },
-      { "type": "interactive", "x": 270, "y": 92, "w": 16, "h": 16, "rx": 2 }
+      { "type": "path", "x": 270, "y": 92, "w": 16, "h": 16, "d": "M276.9 93.1H271.1V106.9H284.9V101.1 M279.1 92H286V98.9 M286 92L277.4 100.6" }
     ] },
     { "shapes": [
       { "type": "interactive", "x": 130, "y": 80, "w": 140, "h": 40, "rx": 6 },

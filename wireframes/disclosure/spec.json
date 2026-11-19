@@ -2,7 +2,7 @@
   "default": {
     "height": 320,
     "shapes": [
-      { "type": "circle", "cx": 190, "cy": 110, "r": 8, "style": "region", "label": "Icon" },
+      { "type": "chevron", "x": 182, "y": 102, "w": 16, "h": 16, "dir": "down", "label": "Chevron" },
       { "type": "line", "x": 210, "y": 110, "w": 220, "label": "Summary" },
       { "type": "region", "x": 180, "y": 140, "w": 460, "h": 120, "rx": 4, "label": "Content", "at": "below" },
       { "type": "lines", "x": 205, "y": 170, "w": 400, "count": 4, "gap": 20 }
@@ -10,7 +10,7 @@
   },
   "thumbnail": {
     "shapes": [
-      { "type": "circle", "cx": 40, "cy": 22, "r": 5, "style": "region" },
+      { "type": "chevron", "x": 35, "y": 17, "w": 10, "h": 10, "dir": "down" },
       { "type": "line", "x": 55, "y": 22, "w": 120 },
       { "type": "region", "x": 30, "y": 36, "w": 190, "h": 36, "rx": 3 },
       { "type": "line", "x": 42, "y": 49, "w": 150, "weight": 1 },
@@ -20,25 +20,25 @@
   "variations": [
     { "shapes": [
       { "type": "line", "x": 60, "y": 60, "w": 280, "weight": 1 },
-      { "type": "circle", "cx": 68, "cy": 100, "r": 7, "style": "region" },
+      { "type": "chevron", "x": 61, "y": 93, "w": 14, "h": 14, "dir": "right" },
       { "type": "line", "x": 86, "y": 100, "w": 180 },
       { "type": "line", "x": 60, "y": 140, "w": 250, "weight": 1 }
     ] },
     { "shapes": [
-      { "type": "circle", "cx": 68, "cy": 50, "r": 7, "style": "region" },
+      { "type": "chevron", "x": 61, "y": 43, "w": 14, "h": 14, "dir": "down" },
       { "type": "line", "x": 86, "y": 50, "w": 180 },
       { "type": "lines", "x": 86, "y": 85, "w": 250, "count": 4, "gap": 20 }
     ] },
     { "shapes": [
       { "type": "region", "x": 50, "y": 40, "w": 300, "h": 120, "rx": 6 },
       { "type": "line", "x": 70, "y": 65, "w": 160 },
-      { "type": "circle", "cx": 325, "cy": 65, "r": 7, "style": "region" },
+      { "type": "chevron", "x": 318, "y": 58, "w": 14, "h": 14, "dir": "down" },
       { "type": "lines", "x": 70, "y": 100, "w": 250, "count": 3, "gap": 18 }
     ] },
     { "shapes": [
       { "type": "line", "x": 60, "y": 50, "w": 100 },
       { "type": "interactive", "x": 60, "y": 65, "w": 220, "h": 36, "rx": 4 },
-      { "type": "circle", "cx": 66, "cy": 125, "r": 5, "style": "region" },
+      { "type": "chevron", "x": 61, "y": 120, "w": 10, "h": 10, "dir": "right" },
       { "type": "line", "x": 78, "y": 125, "w": 140, "weight": 1 }
     ] }
   ]

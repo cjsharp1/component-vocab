@@ -30,9 +30,7 @@
     <rect class="label-bg" x="307" y="14" width="98" height="20" />
     <text class="label-text" x="356" y="28" text-anchor="middle">Close button</text>
   </g>
-  <circle class="interactive" cx="250" cy="30" r="12" />
-  <line x1="245" y1="25" x2="255" y2="35" stroke="#4a90d9" stroke-width="2" />
-  <line x1="255" y1="25" x2="245" y2="35" stroke="#4a90d9" stroke-width="2" />
+  <path class="interactive" d="M244 24L256 36 M256 24L244 36" stroke-linecap="round" />
 
   <line x1="15" y1="55" x2="265" y2="55" stroke="#ddd" stroke-width="1" />
 

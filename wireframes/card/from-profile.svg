@@ -44,7 +44,7 @@
     <rect class="label-bg" x="165" y="320" width="90" height="20" />
     <text class="label-text" x="210" y="334" text-anchor="middle">Social links</text>
   </g>
-  <circle class="interactive optional" cx="370" cy="328" r="8" />
-  <circle class="interactive optional" cx="400" cy="328" r="8" />
-  <circle class="interactive optional" cx="430" cy="328" r="8" />
+  <circle class="media-placeholder optional" cx="370" cy="328" r="8" />
+  <circle class="media-placeholder optional" cx="400" cy="328" r="8" />
+  <circle class="media-placeholder optional" cx="430" cy="328" r="8" />
 </svg>

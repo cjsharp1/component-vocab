@@ -69,14 +69,14 @@
     { "shapes": [
       { "type": "region", "x": 130, "y": 10, "w": 140, "h": 180, "rx": 8 },
       { "type": "line", "x": 145, "y": 35, "w": 70 },
-      { "type": "circle", "cx": 250, "cy": 35, "r": 5, "style": "region" },
+      { "type": "chevron", "x": 245, "y": 30, "w": 10, "h": 10, "dir": "right" },
       { "type": "line", "x": 145, "y": 65, "w": 80 },
-      { "type": "circle", "cx": 250, "cy": 65, "r": 5, "style": "filled" },
+      { "type": "chevron", "x": 245, "y": 60, "w": 10, "h": 10, "dir": "down" },
       { "type": "lines", "x": 160, "y": 88, "w": 90, "count": 3 },
       { "type": "line", "x": 145, "y": 145, "w": 70 },
-      { "type": "circle", "cx": 250, "cy": 145, "r": 5, "style": "region" },
+      { "type": "chevron", "x": 245, "y": 140, "w": 10, "h": 10, "dir": "right" },
       { "type": "line", "x": 145, "y": 170, "w": 60 },
-      { "type": "circle", "cx": 250, "cy": 170, "r": 5, "style": "region" }
+      { "type": "chevron", "x": 245, "y": 165, "w": 10, "h": 10, "dir": "right" }
     ] }
   ]
 }

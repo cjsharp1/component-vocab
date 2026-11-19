@@ -3,13 +3,13 @@
   <rect class="interactive" x="20" y="20" width="360" height="30" rx="4" />
   <line class="text-line" x1="35" y1="35" x2="180" y2="35" />
   <circle cx="370" cy="35" r="8" class="interactive" />
-  <text x="370" y="39" text-anchor="middle" font-size="14" fill="#fff">+</text>
+  <path class="interactive" d="M366 35H374 M370 31V39" stroke-linecap="round" />
   <rect class="interactive" x="20" y="60" width="360" height="30" rx="4" />
   <line class="text-line" x1="35" y1="75" x2="200" y2="75" />
   <circle cx="370" cy="75" r="8" class="interactive" />
-  <text x="370" y="79" text-anchor="middle" font-size="14" fill="#fff">+</text>
+  <path class="interactive" d="M366 75H374 M370 71V79" stroke-linecap="round" />
   <rect class="interactive" x="20" y="100" width="360" height="30" rx="4" />
   <line class="text-line" x1="35" y1="115" x2="190" y2="115" />
   <circle cx="370" cy="115" r="8" class="interactive" />
-  <text x="370" y="119" text-anchor="middle" font-size="14" fill="#fff">+</text>
+  <path class="interactive" d="M366 115H374 M370 111V119" stroke-linecap="round" />
 </svg>

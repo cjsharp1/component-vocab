@@ -2,10 +2,10 @@
   <rect class="hover-target" x="182" y="102" width="16" height="16" fill="none" stroke="none" style="cursor:pointer" />
   <g class="label-group">
     <line class="label-line" x1="190" y1="100" x2="190" y2="88" />
-    <rect class="label-bg" x="168" y="68" width="44" height="20" />
-    <text class="label-text" x="190" y="82" text-anchor="middle">Icon</text>
+    <rect class="label-bg" x="157.5" y="68" width="65" height="20" />
+    <text class="label-text" x="190" y="82" text-anchor="middle">Chevron</text>
   </g>
-  <circle class="region" cx="190" cy="110" r="8" />
+  <polyline class="interactive" points="184.4,106.8 190,113.2 195.6,106.8" stroke-linecap="round" stroke-linejoin="round" />
   <rect class="hover-target" x="210" y="104" width="220" height="12" fill="none" stroke="none" style="cursor:pointer" />
   <g class="label-group">
     <line class="label-line" x1="320" y1="102" x2="320" y2="90" />

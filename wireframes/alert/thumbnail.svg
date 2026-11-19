@@ -1,5 +1,5 @@
 <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="40" y="30" width="170" height="20" rx="2"/>
-  <circle class="interactive" cx="55" cy="40" r="5"/>
+  <circle class="media-placeholder" cx="55" cy="40" r="5"/>
   <rect class="text-line" x="70" y="37" width="130" height="6"/>
 </svg>

@@ -1,4 +1,4 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <line class="text-line" x1="110" y1="100" x2="260" y2="100" />
-  <rect class="interactive" x="270" y="92" width="16" height="16" rx="2" />
+  <path class="interactive" d="M276.9 93.1H271.1V106.9H284.9V101.1 M279.1 92H286V98.9 M286 92L277.4 100.6" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

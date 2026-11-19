@@ -19,6 +19,8 @@
 //   { "type": "circle", "cx", "cy", "r", "style"?: "interactive"|"media"|"region"|"filled", "label"?, "at"? }
 //   { "type": "chevron", "x", "y", "w", "h", "dir"?: "right"|"down"|"left"|"up", "label"?, "at"? }
 //                                                                          disclosure chevron in an interactive stroke
+//   { "type": "path", "x", "y", "w", "h", "d", "style"?: "interactive"|"region"|"media", "label"?, "at"? }
+//                                                                          small icon glyph; x/y/w/h is its hover box
 //   { "type": "line", "x", "y", "w", "weight"?: 1|2, "label"?, "at"? }      text placeholder
 //   { "type": "lines", "x", "y", "w", "count", "gap"?: 15, "label"? }       stacked text lines (last one shorter)
 //   { "type": "text", "x", "y", "value", "size"?: 12, "anchor"?: "start"|"middle"|"end" }
@@ -58,6 +60,10 @@ function shapeSvg(s, thumb) {
       }[s.dir ?? 'right'];
       if (!pts) throw new Error(`unknown chevron dir ${s.dir}`);
       return `<polyline ${attrs({ class: 'interactive', points: pts.map(([px, py]) => `${r(x + px * w)},${r(y + py * h)}`).join(' '), 'stroke-linecap': 'round', 'stroke-linejoin': 'round' })} />`;
+    }
+    case 'path': {
+      const style = s.style ?? 'interactive';
+      return `<path ${attrs({ class: cls[style] ?? style, d: s.d, fill: style === 'interactive' ? null : 'none', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' })} />`;
     }
     case 'circle': {
       const style = s.style ?? 'interactive';
