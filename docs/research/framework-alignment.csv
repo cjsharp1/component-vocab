@@ -1,0 +1,70 @@
+Group,Canonical,Also called,MUI,Bootstrap,Ant Design,Carbon,Polaris,Atlassian,Chakra UI,Radix Themes,shadcn/ui,Fluent UI,GOV.UK,Apple HIG,Notes
+Page structure,Header,,○ App Bar,—,—,○ UI shell header,—,—,—,—,—,—,◐ GOV.UK header,—,"Libraries treat the site header as page chrome. Only GOV.UK, Carbon and MUI ship one."
+Page structure,Navigation,"Nav, Menu",—,◐ Navbar,◐ Menu,—,—,◐ Navigation system,—,—,◐ Navigation Menu,◐ Nav,◐ Service navigation,—,
+Page structure,Sidebar,Aside,—,—,—,○ UI shell left panel,—,◐ Side navigation,—,—,● Sidebar,—,—,—,
+Page structure,Footer,,—,—,—,—,—,—,—,—,—,—,◐ GOV.UK footer,—,Only GOV.UK ships a footer component.
+Page structure,Breadcrumbs,"Breadcrumb, Breadcrumb trail",● Breadcrumbs,● Breadcrumb,● Breadcrumb,● Breadcrumb,—,● Breadcrumbs,● Breadcrumb,—,● Breadcrumb,● Breadcrumb,● Breadcrumbs,—,"Singular or plural, nobody disagrees."
+Page structure,Skip link,,—,—,—,—,—,—,◐ Skip Nav,—,—,—,● Skip link,—,
+Layout,Section,,—,—,—,—,● Section,—,—,● Section,—,—,—,—,Radix Themes and Polaris both ship Section.
+Layout,Container,(render detail),● Container,● Containers,—,—,—,—,● Container,● Container,—,—,—,—,
+Layout,Grid,,● Grid,● Grid,● Grid,—,● Grid,● Grid,● Grid,● Grid,—,—,—,—,
+Layout,Column (Slot),Col,—,● Columns,—,—,—,—,—,—,—,—,—,—,Only Bootstrap lists Column as its own entry. Everyone else treats it as part of Grid.
+Layout,Stack,,● Stack,● Stacks,○ Space,—,● Stack,● Stack,● Stack,○ Flex,—,—,—,—,
+Layout,Separator,"Divider, Horizontal rule, Vertical rule",◐ Divider,◐ Vertical rule,◐ Divider,—,◐ Divider,—,● Separator,● Separator,● Separator,◐ Divider,—,—,"Divider 4, Separator 3, Vertical rule 1."
+Layout,Visually hidden,Screenreader only,—,● Visually hidden,—,—,—,● Visually hidden,● Visually Hidden,● Visually Hidden,—,—,—,—,
+Content display,Heading,,○ Typography,○ Typography,○ Typography,—,● Heading,● Heading,● Heading,● Heading,○ Typography,○ Text,—,—,"Split: Heading 4, Typography 4, Text 1."
+Content display,Image,Picture,—,● Images,● Image,—,● Image,● Image,● Image,—,—,● Image,—,◐ Image views,
+Content display,Icon,,● Icons,—,● Icon,—,● Icon,● Icon,● Icon,—,—,● Icon,—,—,
+Content display,Avatar,,● Avatar,—,● Avatar,—,● Avatar,● Avatar,● Avatar,● Avatar,● Avatar,● Avatar,—,—,"8 of 12 ship it, all under the same name."
+Content display,Quote,"Block quote, Pull quote",—,—,—,—,—,—,◐ Blockquote,◐ Blockquote,—,—,—,—,
+Content display,List,,● List,○ List group,● List (deprecated),● List,◐ Ordered list / Unordered list,—,● List,—,—,● List,—,◐ Lists and tables,
+Content display,Table,,● Table,● Tables,● Table,◐ Data table,● Table,● Table,● Table,● Table,● Table,—,● Table,◐ Lists and tables,
+Content display,Card,Tile,● Card,● Card,● Card,◐ Tile,—,—,● Card,● Card,● Card,● Card,—,—,
+Content display,Hero,"Jumbotron, Banner",—,—,—,—,—,—,—,—,—,—,—,—,"No framework ships a Hero. It is a page-builder term, not a library term."
+Content display,Empty state,,—,—,◐ Empty,—,● Empty state,● Empty state,● Empty State,—,◐ Empty,—,—,—,
+Actions and links,Link,"Anchor, Hyperlink",● Link,—,—,● Link,● Link,● Link,● Link,● Link,—,● Link,—,—,
+Actions and links,Button,,● Button,● Buttons,● Button,● Button,● Button,● Button,● Button,● Button,● Button,● Button,● Button,● Buttons,"12 of 12, same name."
+Actions and links,Button group,Toolbar,● Button Group,● Button group,—,—,● Button group,—,—,—,● Button Group,◐ Toolbar,—,◐ Toolbars,
+Actions and links,Menu button,Dropdown menu,◐ Menu,◐ Dropdowns,◐ Dropdown,● Menu buttons,◐ Menu,◐ Dropdown menu,◐ Menu,◐ Dropdown Menu,◐ Dropdown Menu,◐ Menu,—,○ Pull-down buttons,"Menu 4, Dropdown 5. 'Menu button' is Carbon only."
+Actions and links,Segmented control,Toggle button group,◐ Toggle Button,—,◐ Segmented,○ Content switcher,—,—,● Segmented Control,● Segmented Control,◐ Toggle Group,—,—,● Segmented controls,
+Actions and links,Switch,"Toggle, Lightswitch",● Switch,—,● Switch,◐ Toggle,● Switch,◐ Toggle,● Switch,● Switch,● Switch,● Switch,—,◐ Toggles,"Switch 7, Toggle 3."
+Actions and links,Toggle button,,● Toggle Button,—,—,—,—,—,—,—,◐ Toggle,—,—,—,"'Toggle' means a switch in Carbon and Atlassian, and a pressed button in shadcn/ui."
+Wayfinding and sequence,Tabs,Tabbed interface,● Tabs,◐ Navs & tabs,● Tabs,● Tabs,—,● Tabs,● Tabs,● Tabs,● Tabs,◐ Tablist,● Tabs,◐ Tab views,Tabs 8 of 12.
+Wayfinding and sequence,Pagination,,● Pagination,● Pagination,● Pagination,● Pagination,—,● Pagination,● Pagination,—,● Pagination,—,● Pagination,○ Page controls,
+Wayfinding and sequence,Steps,"Stepper, Progress tracker",◐ Stepper,—,● Steps,◐ Progress indicator,—,◐ Progress tracker,● Steps,—,—,—,—,—,
+Wayfinding and sequence,Timeline,,● Timeline,—,● Timeline,—,—,—,● Timeline,—,—,—,—,—,
+Wayfinding and sequence,Tree view,,—,—,◐ Tree,● Tree view,—,—,● Tree View,—,—,◐ Tree,—,○ Outline views,
+Disclosure and overlays,Accordion,"Collapse, Expander, Details, Disclosure, Collapsible",● Accordion,● Accordion,◐ Collapse,● Accordion,—,—,● Accordion,—,● Accordion,● Accordion,● Accordion,◐ Disclosure controls,Accordion 7 of 12.
+Disclosure and overlays,Dialog,"Modal, Popup, Modal window",● Dialog,◐ Modal,◐ Modal,◐ Modal,◐ Modal,◐ Modal dialog,● Dialog,● Dialog,● Dialog,● Dialog,—,○ Sheets / Alerts,"Split evenly: Dialog 5, Modal 5."
+Disclosure and overlays,Alert dialog,Confirm dialog,—,—,○ Popconfirm,—,—,—,—,● Alert Dialog,● Alert Dialog,—,—,◐ Alerts,
+Disclosure and overlays,Drawer,"Tray, Flyout, Sheet",● Drawer,○ Offcanvas,● Drawer,—,—,● Drawer,● Drawer,—,◐ Sheet,● Drawer,—,◐ Sheets,Drawer 5.
+Disclosure and overlays,Popover,,● Popover,● Popovers,● Popover,● Popover,● Popover,○ Popup,● Popover,● Popover,● Popover,● Popover,—,● Popovers,Popover 10 of 12.
+Disclosure and overlays,Tooltip,Toggletip,● Tooltip,● Tooltips,● Tooltip,● Tooltip,● Tooltip,● Tooltip,● Tooltip,● Tooltip,● Tooltip,● Tooltip,—,—,Tooltip 10 of 12.
+Disclosure and overlays,Toggletip,,—,—,—,● Toggletip,—,—,◐ Toggle Tip,—,—,—,—,—,
+Feedback and status,Alert,"Notification, Banner, Callout, Message",● Alert,● Alerts,● Alert,◐ Notification,◐ Banner,◐ Banner,● Alert,◐ Callout,● Alert,◐ Message bar,◐ Notification banner,—,"Alert 6, Banner 2, Notification 2, Callout 1, Message bar 1."
+Feedback and status,Toast,Snackbar,◐ Snackbar,● Toasts,○ Message,—,—,○ Flag,● Toast,—,● Toast,● Toast,—,—,"Toast 4, Snackbar 1, other 2, none 5."
+Feedback and status,Badge,"Tag, Label, Chip",● Badge,● Badge,● Badge,◐ Tag,● Badge,● Badge,● Badge,● Badge,● Badge,● Badge,◐ Tag,—,"Badge 9, Tag 2."
+Feedback and status,Tag,Label,—,—,● Tag,● Tag,—,● Tag,● Tag,—,—,● Tag,● Tag,—,
+Feedback and status,Chip,,● Chip,—,—,—,● Chip,—,—,—,—,—,—,—,
+Feedback and status,Progress bar,Progress,◐ Progress,◐ Progress,◐ Progress,● Progress bar,◐ Progress,● Progress bar,◐ Progress,◐ Progress,◐ Progress,● Progress bar,—,○ Progress indicators,"Progress 7, Progress bar 3."
+Feedback and status,Meter,,—,—,—,—,—,—,—,—,—,—,—,○ Gauges,Only Apple ships a separate meter-type component.
+Feedback and status,Spinner,"Loader, Loading",○ Progress,● Spinners,○ Spin,◐ Loading,● Spinner,● Spinner,● Spinner,● Spinner,● Spinner,● Spinner,—,○ Progress indicators,Spinner 7.
+Feedback and status,Skeleton,Skeleton loader,● Skeleton,○ Placeholders,● Skeleton,—,—,● Skeleton,● Skeleton,● Skeleton,● Skeleton,● Skeleton,—,—,
+Feedback and status,Rating,,● Rating,—,○ Rate,—,—,—,● Rating,—,—,● Rating,—,◐ Rating indicators,
+Forms,Form,,—,◐ Forms,● Form,● Form,—,● Form,—,—,—,—,—,—,
+Forms,Fieldset,,—,—,—,—,—,—,● Fieldset,—,—,—,● Fieldset,—,
+Forms,Label,Form label,—,—,—,—,—,—,—,—,● Label,● Label,—,—,
+Forms,Text input,,○ Text Field,○ Form control,○ Input,● Text input,○ Text field,○ Text field,○ Input,○ Text Field,○ Input,○ Input,● Text input,○ Text fields,"Text field 5, Input 4, Text input 2, Form control 1. The canonical name loses this one."
+Forms,Textarea,"Textbox, Text box",◐ Textarea Autosize,—,—,—,● Text area,● Text area,● Textarea,● Text Area,● Textarea,● Textarea,● Textarea,○ Text views,
+Forms,Select,"Dropdown, Select input",● Select,● Select,● Select,◐ Dropdown,● Select,● Select,● Select,● Select,● Select,◐ Dropdown,● Select,○ Pop-up buttons,Select 9 of 12.
+Forms,Combobox,"Autocomplete, Autosuggest",◐ Autocomplete,—,◐ AutoComplete,—,—,—,● Combobox,—,● Combobox,● Combobox,—,◐ Combo boxes,
+Forms,Checkbox,,● Checkbox,◐ Checks & radios,● Checkbox,● Checkbox,● Checkbox,● Checkbox,● Checkbox,● Checkbox,● Checkbox,● Checkbox,● Checkboxes,—,
+Forms,Radio group,"Radio, Radio button",● Radio Group,◐ Checks & radios,◐ Radio,◐ Radio button,○ Choice list,◐ Radio,◐ Radio,● Radio Group,● Radio Group,● Radio group,◐ Radios,—,"Radio group 4, plain Radio (any form) 6."
+Forms,Slider,Range input,● Slider,◐ Range,● Slider,● Slider,—,◐ Range,● Slider,● Slider,● Slider,● Slider,—,● Sliders,
+Forms,Number input,"Stepper, Quantity, Counter, Spinbutton",—,—,◐ InputNumber,● Number input,◐ Number field,—,● Number Input,—,—,◐ Spin button,—,◐ Steppers,
+Forms,Date input,,—,—,—,—,◐ Date field,—,● Date Input,—,—,—,● Date input,—,
+Forms,Date picker,"Calendar, Datetime picker",—,—,● DatePicker,● Date picker,● Date picker,◐ Date time picker,● Date Picker,—,● Date Picker,—,—,○ Pickers,
+Forms,File upload,"File input, File uploader, Dropzone",—,—,○ Upload,◐ File uploader,◐ Drop zone,—,● File Upload,—,—,—,● File upload,—,
+Forms,Color picker,,—,—,● ColorPicker,—,● Color picker,—,● Color Picker,—,—,—,—,○ Color wells,
+Forms,Search,Search input,—,—,—,● Search,◐ Search field,—,—,—,—,◐ Searchbox,—,—,
+Collections,Carousel,Content slider,—,● Carousel,● Carousel,—,—,—,● Carousel,—,● Carousel,● Carousel,—,—,
