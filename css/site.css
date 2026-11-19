@@ -705,6 +705,7 @@ body > footer p { margin: 0; max-width: none; }
   font-size: 0.82rem;
   line-height: 1.55;
   tab-size: 2;
+  font-variant-ligatures: none;
 }
 .html-outline code { padding: 0; background: none; font-size: inherit; color: var(--ink); white-space: pre; }
 
@@ -732,3 +733,5 @@ body > footer p { margin: 0; max-width: none; }
 .table-scroll-controls button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .table-scroll-controls button:disabled { opacity: 0.4; cursor: default; }
 .table-scroll-controls small { color: var(--ink-3); font-size: 0.8rem; }
+
+code, pre { font-variant-ligatures: none; }

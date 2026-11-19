@@ -2,19 +2,89 @@
   "slug": "button",
   "name": "Button",
   "order": 31,
-  "status": "draft",
+  "status": "stable",
   "group": "actions",
-  "description": "Acts",
-  "summary": "Acts",
-  "htmlElement": "",
+  "description": "A control that performs an action on the current page: submits a form, opens a dialog, saves or deletes. If the result is going somewhere else, use a Link instead.",
+  "summary": "Triggers an action on the current page",
+  "htmlElement": "<code>&lt;button&gt;</code>",
   "nativeHtml": "`<button>`",
   "aria": "Button",
   "researchNote": "Acts",
-  "elements": [],
-  "configOptions": [],
-  "variants": [],
+  "elements": [
+    {
+      "name": "Label",
+      "required": "Yes",
+      "description": "Short verb phrase that says what happens"
+    },
+    {
+      "name": "Icon",
+      "required": "No",
+      "description": "Leading or trailing icon; decorative unless the button is icon-only"
+    },
+    {
+      "name": "Loading indicator",
+      "required": "No",
+      "description": "Shown while the action runs; the button keeps its width"
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Emphasis",
+      "options": "Primary, Secondary, Tertiary (text only)",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Icon",
+      "options": "None, Leading, Trailing, Icon only",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Auto, Full width",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "State",
+      "options": "Default, Disabled, Loading",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Emphasis — primary, secondary, tertiary",
+      "wireframe": "wireframes/button/variation-1.svg"
+    },
+    {
+      "caption": "Icon — leading, icon only, round",
+      "wireframe": "wireframes/button/variation-2.svg"
+    },
+    {
+      "caption": "Full width — inside a narrow container",
+      "wireframe": "wireframes/button/variation-3.svg"
+    },
+    {
+      "caption": "States — default, disabled, loading",
+      "wireframe": "wireframes/button/variation-4.svg"
+    }
+  ],
   "collections": [],
-  "usageNotes": [],
+  "usageNotes": [
+    "Use <code>&lt;button&gt;</code> for actions and <code>&lt;a href&gt;</code> for navigation. A link styled as a button is still a Link.",
+    "Start the label with a verb (\"Save changes\", not \"OK\"). Icon-only buttons need an accessible name, such as visually hidden text.",
+    "Keep one primary button per view or section so the main action is obvious.",
+    "Inside a form, set <code>type=\"button\"</code> on buttons that shouldn't submit; the default type is submit.",
+    "Avoid disabling a button without saying why. Prefer leaving it enabled and explaining what is missing when it's pressed."
+  ],
   "related": [],
   "aliases": [],
   "frameworkSource": "csv",
@@ -71,5 +141,7 @@
   "frameworkNotes": "12 of 12, same name.",
   "parents": [],
   "children": [],
-  "htmlOutline": "<button type=\"button\">Save</button>\n\n<!-- in a form -->\n<button type=\"submit\">Send</button>"
+  "htmlOutline": "<button type=\"button\">Save</button>\n\n<!-- in a form -->\n<button type=\"submit\">Send</button>",
+  "wireframe": "wireframes/button/default.svg",
+  "thumbnail": "wireframes/button/thumbnail.svg"
 }
