@@ -1,4 +1,4 @@
-# Component Naming System — Implementation Plan
+# component-vocab — Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -23,7 +23,7 @@
 ## File Structure
 
 ```
-C:\Dev\Personal\ComponentNames\
+C:\Dev\Sandbox\component-vocab\
 ├── index.html                      # Overview page: intro, component grid, comparison table
 ├── css/
 │   ├── pico.classless.min.css      # Pico CSS classless v2 (downloaded locally)
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Component Naming System</title>
+  <title>component-vocab</title>
   <link rel="stylesheet" href="./css/pico.classless.min.css">
   <link rel="stylesheet" href="./css/site.css">
 </head>
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <header>
     <nav>
       <ul>
-        <li><strong>Component Naming System</strong></li>
+        <li><strong>component-vocab</strong></li>
       </ul>
       <ul>
         <li><a href="#components">Components</a></li>
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <main>
     <section id="intro">
-      <h1>Component Naming System</h1>
+      <h1>component-vocab</h1>
       <p>A framework-agnostic website component naming system with 50 components organized into two tiers: <strong>Structural</strong> (HTML-semantic layout primitives) and <strong>Content</strong> (functional UI patterns). Each component is documented with wireframes, configuration options, and cross-system name mappings.</p>
       <p>Names align with HTML semantics for structural components and draw from established design systems (Bootstrap, Material Design, Ant Design, Apple HIG, shadcn) for content components.</p>
     </section>
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </main>
 
   <footer>
-    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+    <p>component-vocab &mdash; A framework-agnostic reference for website components.</p>
   </footer>
 
   <script src="./js/main.js"></script>
@@ -407,7 +407,7 @@ Create `components/_template.html`:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{COMPONENT_NAME}} — Component Naming System</title>
+  <title>{{COMPONENT_NAME}} — component-vocab</title>
   <link rel="stylesheet" href="../css/pico.classless.min.css">
   <link rel="stylesheet" href="../css/site.css">
 </head>
@@ -415,7 +415,7 @@ Create `components/_template.html`:
   <header>
     <nav>
       <ul>
-        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+        <li><strong><a href="../index.html">component-vocab</a></strong></li>
       </ul>
       <ul>
         <li><a href="../index.html#components">All Components</a></li>
@@ -533,7 +533,7 @@ Create `components/_template.html`:
   </main>
 
   <footer>
-    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+    <p>component-vocab &mdash; A framework-agnostic reference for website components.</p>
   </footer>
 
   <script src="../js/main.js"></script>
@@ -549,7 +549,7 @@ Create `components/_template.html`:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hero — Component Naming System</title>
+  <title>Hero — component-vocab</title>
   <link rel="stylesheet" href="../css/pico.classless.min.css">
   <link rel="stylesheet" href="../css/site.css">
 </head>
@@ -557,7 +557,7 @@ Create `components/_template.html`:
   <header>
     <nav>
       <ul>
-        <li><strong><a href="../index.html">Component Naming System</a></strong></li>
+        <li><strong><a href="../index.html">component-vocab</a></strong></li>
       </ul>
       <ul>
         <li><a href="../index.html#components">All Components</a></li>
@@ -757,7 +757,7 @@ Create `components/_template.html`:
   </main>
 
   <footer>
-    <p>Component Naming System &mdash; A framework-agnostic reference for website components.</p>
+    <p>component-vocab &mdash; A framework-agnostic reference for website components.</p>
   </footer>
 
   <script src="../js/main.js"></script>

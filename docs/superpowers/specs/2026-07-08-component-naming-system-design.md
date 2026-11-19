@@ -1,4 +1,4 @@
-# Component Naming System — Design Spec
+# component-vocab — Design Spec
 
 **Date:** 2026-07-08
 **Status:** Draft
