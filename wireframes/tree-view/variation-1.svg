@@ -1,9 +1,9 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect class="interactive" x="60" y="33" width="14" height="14" rx="3" />
+  <polyline class="interactive" points="62.1,37.2 67,42.8 71.9,37.2" stroke-linecap="round" stroke-linejoin="round" />
   <line class="text-line" x1="85" y1="40" x2="205" y2="40" />
   <rect class="region" x="66" y="52" width="2" height="76" />
   <line class="text-line" x1="95" y1="75" x2="205" y2="75" />
   <line class="text-line" x1="95" y1="110" x2="185" y2="110" />
-  <rect class="interactive" x="60" y="138" width="14" height="14" rx="3" />
+  <polyline class="interactive" points="64.2,140.1 69.8,145 64.2,149.9" stroke-linecap="round" stroke-linejoin="round" />
   <line class="text-line" x1="85" y1="145" x2="185" y2="145" />
 </svg>

@@ -1,8 +1,8 @@
 <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-  <rect class="interactive" x="40" y="12" width="10" height="10" rx="2" />
+  <polyline class="interactive" points="41.5,15 45,19 48.5,15" stroke-linecap="round" stroke-linejoin="round" />
   <rect class="text-line" x="58" y="15" width="80" height="5" />
   <rect class="text-line" x="78" y="31" width="90" height="3" />
   <rect class="text-line" x="78" y="46" width="70" height="3" />
-  <rect class="interactive" x="40" y="59" width="10" height="10" rx="2" />
+  <polyline class="interactive" points="43,60.5 47,64 43,67.5" stroke-linecap="round" stroke-linejoin="round" />
   <rect class="text-line" x="58" y="62" width="60" height="5" />
 </svg>

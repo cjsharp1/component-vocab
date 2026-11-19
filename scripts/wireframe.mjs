@@ -17,6 +17,8 @@
 // Shapes:
 //   { "type": "region" | "media" | "interactive" | "optional" | "filled", "x", "y", "w", "h", "rx"?, "label"?, "at"? }
 //   { "type": "circle", "cx", "cy", "r", "style"?: "interactive"|"media"|"region"|"filled", "label"?, "at"? }
+//   { "type": "chevron", "x", "y", "w", "h", "dir"?: "right"|"down"|"left"|"up", "label"?, "at"? }
+//                                                                          disclosure chevron in an interactive stroke
 //   { "type": "line", "x", "y", "w", "weight"?: 1|2, "label"?, "at"? }      text placeholder
 //   { "type": "lines", "x", "y", "w", "count", "gap"?: 15, "label"? }       stacked text lines (last one shorter)
 //   { "type": "text", "x", "y", "value", "size"?: 12, "anchor"?: "start"|"middle"|"end" }
@@ -45,6 +47,18 @@ function shapeSvg(s, thumb) {
       return `<rect ${attrs({ class: cls[s.type], x: s.x, y: s.y, width: s.w, height: s.h, rx: s.rx })} />`;
     case 'filled':
       return `<rect ${attrs({ class: 'interactive', x: s.x, y: s.y, width: s.w, height: s.h, rx: s.rx, style: 'fill: var(--wireframe-interactive); fill-opacity: 0.85' })} />`;
+    case 'chevron': {
+      // Open polyline inside the w x h box; the box is the hover target.
+      const { x, y, w, h } = s;
+      const pts = {
+        right: [[0.3, 0.15], [0.7, 0.5], [0.3, 0.85]],
+        left: [[0.7, 0.15], [0.3, 0.5], [0.7, 0.85]],
+        down: [[0.15, 0.3], [0.5, 0.7], [0.85, 0.3]],
+        up: [[0.15, 0.7], [0.5, 0.3], [0.85, 0.7]],
+      }[s.dir ?? 'right'];
+      if (!pts) throw new Error(`unknown chevron dir ${s.dir}`);
+      return `<polyline ${attrs({ class: 'interactive', points: pts.map(([px, py]) => `${r(x + px * w)},${r(y + py * h)}`).join(' '), 'stroke-linecap': 'round', 'stroke-linejoin': 'round' })} />`;
+    }
     case 'circle': {
       const style = s.style ?? 'interactive';
       if (style === 'filled') return `<circle ${attrs({ class: 'interactive', cx: s.cx, cy: s.cy, r: s.r, style: 'fill: var(--wireframe-interactive)' })} />`;
