@@ -70,5 +70,6 @@
   },
   "frameworkNotes": "12 of 12, same name.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button type=\"button\">Save</button>\n\n<!-- in a form -->\n<button type=\"submit\">Send</button>"
 }

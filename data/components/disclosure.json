@@ -61,5 +61,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<details>\n  <summary>Show details</summary>\n  <p>Hidden content…</p>\n</details>"
 }

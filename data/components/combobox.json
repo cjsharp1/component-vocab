@@ -70,5 +70,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"cb\">Fruit</label>\n<input id=\"cb\" role=\"combobox\" aria-expanded=\"false\" aria-controls=\"cb-list\" aria-autocomplete=\"list\">\n<ul id=\"cb-list\" role=\"listbox\" hidden>\n  <li role=\"option\">Apple</li>\n</ul>"
 }

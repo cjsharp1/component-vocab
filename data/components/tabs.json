@@ -138,5 +138,6 @@
     "image",
     "list",
     "button-group"
-  ]
+  ],
+  "htmlOutline": "<div class=\"tabs\">\n  <div role=\"tablist\" aria-label=\"Account\">\n    <button role=\"tab\" aria-selected=\"true\" aria-controls=\"p1\" id=\"t1\">Profile</button>\n    <button role=\"tab\" aria-selected=\"false\" aria-controls=\"p2\" id=\"t2\" tabindex=\"-1\">Billing</button>\n  </div>\n  <div role=\"tabpanel\" id=\"p1\" aria-labelledby=\"t1\">…</div>\n  <div role=\"tabpanel\" id=\"p2\" aria-labelledby=\"t2\" hidden>…</div>\n</div>"
 }

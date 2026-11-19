@@ -62,5 +62,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"disk\">Disk usage</label>\n<meter id=\"disk\" min=\"0\" max=\"100\" low=\"60\" high=\"85\" value=\"72\">72%</meter>"
 }

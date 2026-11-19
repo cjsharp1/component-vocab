@@ -147,5 +147,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button aria-haspopup=\"menu\" aria-expanded=\"false\" aria-controls=\"actions\">Actions</button>\n<ul id=\"actions\" role=\"menu\" hidden>\n  <li role=\"menuitem\">Rename</li>\n  <li role=\"menuitem\">Delete</li>\n</ul>"
 }

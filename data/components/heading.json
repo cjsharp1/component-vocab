@@ -71,5 +71,6 @@
     "slot",
     "hero"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<h2>Section title</h2>\n<!-- level follows the outline; size is a separate style choice -->\n<h3 class=\"text-large\">Subsection</h3>"
 }

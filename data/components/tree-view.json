@@ -66,5 +66,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<ul role=\"tree\" aria-label=\"Files\">\n  <li role=\"treeitem\" aria-expanded=\"true\">src\n    <ul role=\"group\">\n      <li role=\"treeitem\">index.js</li>\n    </ul>\n  </li>\n</ul>"
 }

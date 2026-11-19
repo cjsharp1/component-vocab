@@ -74,5 +74,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label>\n  <input type=\"checkbox\" role=\"switch\" checked>\n  Email notifications\n</label>"
 }

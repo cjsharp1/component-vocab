@@ -146,5 +146,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<section aria-labelledby=\"plans\">\n  <h2 id=\"plans\">Plans</h2>\n  <ul class=\"pricing\">\n    <li>\n      <article>\n        <h3>Pro</h3>\n        <p><data value=\"20\">$20</data> per month</p>\n        <ul><li>Feature</li></ul>\n        <a href=\"/signup?plan=pro\">Choose Pro</a>\n      </article>\n    </li>\n  </ul>\n</section>"
 }

@@ -75,5 +75,6 @@
     "date-picker",
     "file-upload",
     "color-picker"
-  ]
+  ],
+  "htmlOutline": "<fieldset>\n  <legend>Shipping address</legend>\n  <label for=\"street\">Street</label>\n  <input id=\"street\" name=\"street\">\n  …\n</fieldset>"
 }

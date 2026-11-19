@@ -159,5 +159,6 @@
     "tabs",
     "accordion"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div class=\"rich-text\">\n  <h2>…</h2>\n  <p>…</p>\n  <ul>\n    <li>…</li>\n  </ul>\n  <blockquote><p>…</p></blockquote>\n</div>"
 }

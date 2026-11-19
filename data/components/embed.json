@@ -121,5 +121,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<iframe\n  src=\"https://example.com/embed/123\"\n  title=\"Describe the embedded content\"\n  loading=\"lazy\"\n  sandbox=\"allow-scripts allow-same-origin\">\n</iframe>"
 }

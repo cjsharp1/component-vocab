@@ -126,5 +126,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<ul class=\"feature-list\">\n  <li class=\"feature\">\n    <svg aria-hidden=\"true\">…</svg>\n    <h3>Fast setup</h3>\n    <p>Short benefit description.</p>\n  </li>\n</ul>"
 }

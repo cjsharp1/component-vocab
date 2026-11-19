@@ -117,5 +117,6 @@
   "researchNote": "",
   "frameworkNotes": "Only GOV.UK ships a footer component.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<footer>\n  <nav aria-label=\"Footer\">\n    <ul>…</ul>\n  </nav>\n  <p><small>© Company</small></p>\n</footer>"
 }

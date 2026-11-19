@@ -60,5 +60,6 @@
   },
   "frameworkNotes": "'Toggle' means a switch in Carbon and Atlassian, and a pressed button in shadcn/ui.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button type=\"button\" aria-pressed=\"false\">Bold</button>"
 }

@@ -61,5 +61,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<table role=\"grid\" aria-label=\"Orders\">\n  <thead>\n    <tr><th role=\"columnheader\" aria-sort=\"ascending\">Date</th><th role=\"columnheader\">Total</th></tr>\n  </thead>\n  <tbody>\n    <tr><td role=\"gridcell\" tabindex=\"0\">2024-03-01</td><td role=\"gridcell\" tabindex=\"-1\">$40</td></tr>\n  </tbody>\n</table>"
 }

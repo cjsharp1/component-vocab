@@ -72,5 +72,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label>\n  <input type=\"checkbox\" name=\"terms\" required>\n  I agree to the terms\n</label>"
 }

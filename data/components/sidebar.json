@@ -119,5 +119,6 @@
   "researchNote": "Persistent and in flow. Not an overlay (that's a Drawer)",
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<aside aria-label=\"Related\">\n  <h2>Related articles</h2>\n  <ul>…</ul>\n</aside>"
 }

@@ -68,5 +68,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div class=\"stack\" style=\"--gap: 1rem\">\n  <h2>…</h2>\n  <p>…</p>\n  <a href=\"…\">…</a>\n</div>"
 }

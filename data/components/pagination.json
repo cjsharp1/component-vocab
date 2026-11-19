@@ -134,5 +134,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<nav aria-label=\"Pagination\">\n  <ul>\n    <li><a href=\"?page=1\">Previous</a></li>\n    <li><a href=\"?page=1\">1</a></li>\n    <li><a href=\"?page=2\" aria-current=\"page\">2</a></li>\n    <li><a href=\"?page=3\">Next</a></li>\n  </ul>\n</nav>"
 }

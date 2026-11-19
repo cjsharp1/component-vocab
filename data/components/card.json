@@ -170,5 +170,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<ul class=\"card-list\">\n  <li>\n    <article class=\"card\">\n      <img src=\"…\" alt=\"\">\n      <h3><a href=\"/post\">Title</a></h3>\n      <p>Excerpt…</p>\n    </article>\n  </li>\n</ul>"
 }

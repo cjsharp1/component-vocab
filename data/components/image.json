@@ -148,5 +148,6 @@
     "tabs",
     "accordion"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<img src=\"photo.jpg\" alt=\"Describe the image\">\n\n<!-- captioned -->\n<figure>\n  <img src=\"chart.png\" alt=\"…\">\n  <figcaption>Caption</figcaption>\n</figure>"
 }

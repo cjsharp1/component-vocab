@@ -60,5 +60,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button aria-expanded=\"false\" aria-controls=\"tt-info\">More info</button>\n<div id=\"tt-info\" role=\"status\" hidden>Short explanation.</div>"
 }

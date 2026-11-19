@@ -64,5 +64,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<a href=\"/files/report.pdf\" download>\n  Annual report <span>(PDF, 2.4 MB)</span>\n</a>"
 }

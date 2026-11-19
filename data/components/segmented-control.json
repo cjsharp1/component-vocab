@@ -70,5 +70,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<fieldset class=\"segmented\">\n  <legend>View</legend>\n  <label><input type=\"radio\" name=\"view\" checked> List</label>\n  <label><input type=\"radio\" name=\"view\"> Grid</label>\n</fieldset>"
 }

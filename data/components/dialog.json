@@ -145,5 +145,6 @@
   "researchNote": "Modal is a variant, not a separate thing",
   "frameworkNotes": "Split evenly: Dialog 5, Modal 5.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<dialog aria-labelledby=\"d-title\">\n  <h2 id=\"d-title\">Edit profile</h2>\n  <form method=\"dialog\">\n    …\n    <button>Close</button>\n  </form>\n</dialog>\n<!-- modal: dialog.showModal() -->"
 }

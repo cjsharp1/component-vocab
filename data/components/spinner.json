@@ -135,5 +135,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div role=\"status\">\n  <svg class=\"spinner\" aria-hidden=\"true\">…</svg>\n  <span class=\"visually-hidden\">Loading…</span>\n</div>"
 }

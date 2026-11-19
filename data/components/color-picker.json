@@ -65,5 +65,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"brand\">Brand color</label>\n<input id=\"brand\" type=\"color\" value=\"#2350d1\">"
 }

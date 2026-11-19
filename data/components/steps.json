@@ -69,5 +69,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<ol class=\"steps\">\n  <li>Account</li>\n  <li aria-current=\"step\">Shipping</li>\n  <li>Payment</li>\n</ol>"
 }

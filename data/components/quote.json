@@ -66,5 +66,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<figure>\n  <blockquote>\n    <p>Quoted text.</p>\n  </blockquote>\n  <figcaption>— Name, <cite>Source</cite></figcaption>\n</figure>"
 }

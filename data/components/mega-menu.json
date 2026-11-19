@@ -61,5 +61,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<nav aria-label=\"Main\">\n  <ul>\n    <li>\n      <button aria-expanded=\"false\" aria-controls=\"products\">Products</button>\n      <div id=\"products\" hidden>\n        <!-- columns of links -->\n      </div>\n    </li>\n  </ul>\n</nav>"
 }

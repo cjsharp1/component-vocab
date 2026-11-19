@@ -68,5 +68,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<a href=\"/pricing\">See pricing</a>\n\n<!-- styled as a button, still a link -->\n<a class=\"button\" href=\"/signup\">Sign up</a>"
 }

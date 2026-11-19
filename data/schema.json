@@ -28,7 +28,8 @@
     "researchNote",
     "frameworkNotes",
     "parents",
-    "children"
+    "children",
+    "htmlOutline"
   ],
   "properties": {
     "slug": {
@@ -277,6 +278,11 @@
         "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
       },
       "description": "Inverse of parents (derived)."
+    },
+    "htmlOutline": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Illustrative semantic HTML skeleton (plain text, shown escaped). Follows the research's native HTML and ARIA guidance; not production markup."
     }
   }
 }

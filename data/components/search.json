@@ -63,5 +63,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<search>\n  <form action=\"/search\">\n    <label for=\"q\">Search</label>\n    <input id=\"q\" type=\"search\" name=\"q\">\n    <button>Search</button>\n  </form>\n</search>"
 }

@@ -66,5 +66,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div class=\"empty-state\">\n  <svg aria-hidden=\"true\">…</svg>\n  <h2>No projects yet</h2>\n  <p>Projects you create appear here.</p>\n  <button>Create a project</button>\n</div>"
 }

@@ -133,5 +133,6 @@
   "researchNote": "Non-interactive, hover/focus",
   "frameworkNotes": "Tooltip 10 of 12.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button aria-describedby=\"tip-save\">\n  <svg aria-hidden=\"true\">…</svg>\n  <span class=\"visually-hidden\">Save</span>\n</button>\n<div id=\"tip-save\" role=\"tooltip\">Save (Ctrl+S)</div>"
 }

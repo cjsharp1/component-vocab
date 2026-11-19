@@ -64,5 +64,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<dialog role=\"alertdialog\" aria-labelledby=\"a-title\" aria-describedby=\"a-desc\">\n  <h2 id=\"a-title\">Delete file?</h2>\n  <p id=\"a-desc\">This can't be undone.</p>\n  <button>Cancel</button>\n  <button>Delete</button>\n</dialog>"
 }

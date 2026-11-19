@@ -127,5 +127,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<dl>\n  <dt>Status</dt>\n  <dd>Active</dd>\n  <dt>Owner</dt>\n  <dd>Ana Ruiz</dd>\n</dl>"
 }

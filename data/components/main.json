@@ -58,5 +58,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<body>\n  <a href=\"#main\">Skip to content</a>\n  <header>…</header>\n  <main id=\"main\">\n    <!-- page content -->\n  </main>\n  <footer>…</footer>\n</body>"
 }

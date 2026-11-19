@@ -47,6 +47,19 @@
     </section>
 
     <section>
+      <h2>HTML Outline</h2>
+      <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
+      <pre class="html-outline"><code>&lt;div class="tabs"&gt;
+  &lt;div role="tablist" aria-label="Account"&gt;
+    &lt;button role="tab" aria-selected="true" aria-controls="p1" id="t1"&gt;Profile&lt;/button&gt;
+    &lt;button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1"&gt;Billing&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div role="tabpanel" id="p1" aria-labelledby="t1"&gt;…&lt;/div&gt;
+  &lt;div role="tabpanel" id="p2" aria-labelledby="t2" hidden&gt;…&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
       <h2>Elements</h2>
       <table>
         <thead>

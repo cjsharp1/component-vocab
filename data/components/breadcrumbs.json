@@ -126,5 +126,6 @@
   "researchNote": "`aria-current=\"page\"` on the last item",
   "frameworkNotes": "Singular or plural, nobody disagrees.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<nav aria-label=\"Breadcrumb\">\n  <ol>\n    <li><a href=\"/\">Home</a></li>\n    <li><a href=\"/guides\">Guides</a></li>\n    <li><a href=\"/guides/setup\" aria-current=\"page\">Setup</a></li>\n  </ol>\n</nav>"
 }

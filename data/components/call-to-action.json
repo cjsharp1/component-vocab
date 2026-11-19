@@ -135,5 +135,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <h2 id=\"cta-title\">Ready to start?</h2>\n  <p>Short supporting line.</p>\n  <div class=\"button-group\">\n    <a href=\"/signup\">Sign up</a>\n  </div>\n</section>"
 }

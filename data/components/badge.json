@@ -123,5 +123,6 @@
   "researchNote": "Static status or count",
   "frameworkNotes": "Badge 9, Tag 2.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<span class=\"badge\">New</span>\n\n<a href=\"/inbox\">Inbox <span class=\"badge\">3<span class=\"visually-hidden\"> unread</span></span></a>"
 }

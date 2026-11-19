@@ -61,5 +61,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div role=\"feed\" aria-busy=\"false\">\n  <article aria-posinset=\"1\" aria-setsize=\"-1\">…</article>\n  <article aria-posinset=\"2\" aria-setsize=\"-1\">…</article>\n</div>"
 }

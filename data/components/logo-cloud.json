@@ -126,5 +126,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<section aria-labelledby=\"lc-title\">\n  <h2 id=\"lc-title\">Trusted by</h2>\n  <ul class=\"logo-cloud\">\n    <li><img src=\"acme.svg\" alt=\"Acme\"></li>\n    <li><img src=\"globex.svg\" alt=\"Globex\"></li>\n  </ul>\n</section>"
 }

@@ -66,5 +66,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<!-- display -->\n<p class=\"rating\" aria-label=\"4 out of 5 stars\">★★★★☆</p>\n\n<!-- input -->\n<fieldset>\n  <legend>Your rating</legend>\n  <label><input type=\"radio\" name=\"r\" value=\"1\"> 1 star</label>\n  …\n</fieldset>"
 }

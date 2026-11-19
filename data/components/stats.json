@@ -137,5 +137,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<dl class=\"stats\">\n  <div>\n    <dt>Active users</dt>\n    <dd>12,000</dd>\n  </div>\n  <div>\n    <dt>Uptime</dt>\n    <dd>99.9%</dd>\n  </div>\n</dl>"
 }

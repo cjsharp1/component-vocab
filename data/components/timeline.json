@@ -128,5 +128,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<ol class=\"timeline\">\n  <li>\n    <time datetime=\"2024-03\">March 2024</time>\n    <h3>Launched</h3>\n    <p>…</p>\n  </li>\n</ol>"
 }

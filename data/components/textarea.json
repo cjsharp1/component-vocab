@@ -72,5 +72,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"msg\">Message</label>\n<textarea id=\"msg\" name=\"msg\" rows=\"4\"></textarea>"
 }

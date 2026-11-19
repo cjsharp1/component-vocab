@@ -71,5 +71,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"checkin\">Check-in</label>\n<input id=\"checkin\" aria-haspopup=\"dialog\">\n<dialog aria-label=\"Choose a date\">\n  <table role=\"grid\">…calendar…</table>\n</dialog>"
 }

@@ -64,5 +64,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"dob\">Date of birth</label>\n<input id=\"dob\" type=\"date\" name=\"dob\">"
 }

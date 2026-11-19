@@ -136,5 +136,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"upload\">Uploading</label>\n<progress id=\"upload\" max=\"100\" value=\"40\">40%</progress>"
 }

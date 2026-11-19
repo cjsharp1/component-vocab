@@ -130,5 +130,6 @@
   ],
   "children": [
     "slot"
-  ]
+  ],
+  "htmlOutline": "<div class=\"grid\" data-preset=\"2:1\">\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n</div>"
 }

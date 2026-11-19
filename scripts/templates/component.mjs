@@ -170,7 +170,14 @@ export function componentPage(c, { prev, next, group, svg, names }) {
     'Usage Notes': c.usageNotes.length > 0,
   };
   const order = ['Elements', 'Default Layout', 'Configuration Options', 'Layout Variations', ...c.collections.map((_, n) => n), 'Usage Notes'];
+  const outline = `    <section>
+      <h2>HTML Outline</h2>
+      <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
+      <pre class="html-outline"><code>${esc(c.htmlOutline)}</code></pre>
+    </section>
+`;
   const body = [
+    outline,
     ...order.filter(s => typeof s === 'number' || has[s]).map(s => (typeof s === 'number' ? sections.collection(c, svg, s) : sections[s](c, svg))),
     structureSection(c, names),
     frameworkSection(c),

@@ -149,5 +149,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<table>\n  <caption>Plans</caption>\n  <thead>\n    <tr><th scope=\"col\">Plan</th><th scope=\"col\">Price</th></tr>\n  </thead>\n  <tbody>\n    <tr><th scope=\"row\">Basic</th><td>$10</td></tr>\n  </tbody>\n</table>"
 }

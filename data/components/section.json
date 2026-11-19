@@ -163,5 +163,6 @@
     "logo-cloud",
     "call-to-action",
     "pricing-table"
-  ]
+  ],
+  "htmlOutline": "<!-- with a heading: a labelled region -->\n<section aria-labelledby=\"pricing-title\">\n  <h2 id=\"pricing-title\">Pricing</h2>\n  <!-- content blocks or a Grid -->\n</section>\n\n<!-- without a heading: just a wrapper -->\n<div class=\"section\">…</div>"
 }

@@ -64,5 +64,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<!-- decorative -->\n<svg aria-hidden=\"true\" focusable=\"false\">…</svg>\n\n<!-- meaningful -->\n<svg role=\"img\" aria-label=\"Warning\">…</svg>"
 }

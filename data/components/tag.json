@@ -64,5 +64,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<ul class=\"tags\">\n  <li><a class=\"tag\" href=\"/tags/design\">Design</a></li>\n  <li><span class=\"tag\">Draft</span></li>\n</ul>"
 }

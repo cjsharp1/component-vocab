@@ -131,5 +131,6 @@
   "researchNote": "Transient overlay. Auto-dismissing ones can fail WCAG 2.2.1 (Timing Adjustable)",
   "frameworkNotes": "Toast 4, Snackbar 1, other 2, none 5.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div class=\"toast-region\" role=\"status\" aria-live=\"polite\">\n  <div class=\"toast\">\n    Message sent.\n    <button>Undo</button>\n  </div>\n</div>"
 }

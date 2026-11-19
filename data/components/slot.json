@@ -107,5 +107,6 @@
     "logo-cloud",
     "call-to-action",
     "pricing-table"
-  ]
+  ],
+  "htmlOutline": "<div class=\"grid\">\n  <div class=\"slot\">\n    <!-- content blocks only; no Section or Grid -->\n  </div>\n</div>"
 }

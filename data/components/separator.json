@@ -147,5 +147,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<p>…end of one topic.</p>\n<hr>\n<p>Start of the next topic…</p>"
 }

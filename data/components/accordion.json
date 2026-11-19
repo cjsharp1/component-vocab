@@ -145,5 +145,6 @@
     "image",
     "list",
     "button-group"
-  ]
+  ],
+  "htmlOutline": "<div class=\"accordion\">\n  <details name=\"faq\">\n    <summary>Question one</summary>\n    <p>Answer…</p>\n  </details>\n  <details name=\"faq\">\n    <summary>Question two</summary>\n    <p>Answer…</p>\n  </details>\n</div>"
 }

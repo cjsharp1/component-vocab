@@ -148,5 +148,6 @@
     "date-picker",
     "file-upload",
     "color-picker"
-  ]
+  ],
+  "htmlOutline": "<form action=\"/contact\" method=\"post\" aria-labelledby=\"f-title\">\n  <h2 id=\"f-title\">Contact us</h2>\n  <label for=\"email\">Email</label>\n  <input id=\"email\" type=\"email\" name=\"email\" required>\n  <button type=\"submit\">Send</button>\n</form>"
 }

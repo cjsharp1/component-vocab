@@ -160,5 +160,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div role=\"status\" class=\"alert\">\n  Your changes were saved.\n</div>\n\n<!-- urgent -->\n<div role=\"alert\" class=\"alert\">Payment failed.</div>"
 }

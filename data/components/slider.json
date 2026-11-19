@@ -73,5 +73,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"vol\">Volume</label>\n<input id=\"vol\" type=\"range\" min=\"0\" max=\"10\" value=\"5\">"
 }

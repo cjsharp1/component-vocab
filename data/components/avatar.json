@@ -131,5 +131,6 @@
   "researchNote": "",
   "frameworkNotes": "8 of 12 ship it, all under the same name.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<img class=\"avatar\" src=\"ana.jpg\" alt=\"Ana Ruiz\">\n\n<!-- fallback initials -->\n<span class=\"avatar\" role=\"img\" aria-label=\"Ana Ruiz\">AR</span>"
 }

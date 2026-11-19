@@ -140,5 +140,6 @@
   "researchNote": "Edge-anchored overlay",
   "frameworkNotes": "Drawer 5.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<dialog class=\"drawer\" aria-labelledby=\"dr-title\">\n  <h2 id=\"dr-title\">Filters</h2>\n  …\n  <button>Close</button>\n</dialog>"
 }

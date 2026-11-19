@@ -69,5 +69,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"cv\">Upload your CV</label>\n<input id=\"cv\" type=\"file\" name=\"cv\" accept=\".pdf,.docx\">"
 }

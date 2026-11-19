@@ -73,5 +73,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"city\">City</label>\n<input id=\"city\" type=\"text\" name=\"city\" autocomplete=\"address-level2\">"
 }

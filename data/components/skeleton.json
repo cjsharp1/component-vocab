@@ -120,5 +120,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<section aria-busy=\"true\" aria-label=\"Loading results\">\n  <div class=\"skeleton skeleton-title\"></div>\n  <div class=\"skeleton skeleton-line\"></div>\n</section>"
 }

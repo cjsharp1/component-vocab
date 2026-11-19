@@ -135,5 +135,6 @@
     "tabs",
     "accordion"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<ul>\n  <li>Item</li>\n  <li>Item</li>\n</ul>\n\n<ol>\n  <li>First step</li>\n  <li>Second step</li>\n</ol>"
 }

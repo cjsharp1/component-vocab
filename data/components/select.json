@@ -76,5 +76,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"country\">Country</label>\n<select id=\"country\" name=\"country\">\n  <option>France</option>\n  <option>Japan</option>\n</select>"
 }

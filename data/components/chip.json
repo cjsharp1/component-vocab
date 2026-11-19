@@ -60,5 +60,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button class=\"chip\" aria-pressed=\"true\">Remote</button>\n\n<span class=\"chip\">\n  Paris <button aria-label=\"Remove Paris\">×</button>\n</span>"
 }

@@ -72,5 +72,6 @@
     "tabs",
     "accordion"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<div class=\"button-group\" role=\"group\" aria-label=\"Actions\">\n  <a href=\"/start\">Get started</a>\n  <a href=\"/tour\">Take the tour</a>\n</div>"
 }

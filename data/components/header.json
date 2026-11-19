@@ -124,5 +124,6 @@
   "researchNote": "Inside main/section/article it is not a landmark",
   "frameworkNotes": "Libraries treat the site header as page chrome. Only GOV.UK, Carbon and MUI ship one.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<header>\n  <a href=\"/\">Site name or logo</a>\n  <nav aria-label=\"Main\">…</nav>\n  <search>…</search>\n</header>"
 }

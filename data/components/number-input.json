@@ -71,5 +71,6 @@
     "form",
     "fieldset"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"qty\">Quantity</label>\n<input id=\"qty\" type=\"number\" min=\"1\" max=\"10\" value=\"1\">"
 }

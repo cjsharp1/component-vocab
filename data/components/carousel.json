@@ -133,5 +133,6 @@
     "section",
     "slot"
   ],
-  "children": []
+  "children": [],
+  "htmlOutline": "<section aria-roledescription=\"carousel\" aria-label=\"Featured\">\n  <button aria-label=\"Pause\">Pause</button>\n  <div aria-live=\"off\">\n    <div role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 4\">…</div>\n  </div>\n  <button aria-label=\"Previous slide\">‹</button>\n  <button aria-label=\"Next slide\">›</button>\n</section>"
 }

@@ -144,5 +144,6 @@
   "researchNote": "Interactive and click-opened",
   "frameworkNotes": "Popover 10 of 12.",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button popovertarget=\"share\">Share</button>\n<div id=\"share\" popover>\n  <!-- interactive content -->\n</div>"
 }

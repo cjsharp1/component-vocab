@@ -64,5 +64,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<button>\n  <svg aria-hidden=\"true\">…</svg>\n  <span class=\"visually-hidden\">Close menu</span>\n</button>"
 }

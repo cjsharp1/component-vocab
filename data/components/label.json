@@ -62,5 +62,6 @@
   },
   "frameworkNotes": "",
   "parents": [],
-  "children": []
+  "children": [],
+  "htmlOutline": "<label for=\"name\">Full name</label>\n<input id=\"name\" name=\"name\">"
 }
