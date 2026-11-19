@@ -1,0 +1,67 @@
+{
+  "slug": "search",
+  "name": "Search",
+  "order": 5,
+  "status": "draft",
+  "group": "page-structure",
+  "description": "Older stacks use `role=\"search\"`",
+  "summary": "Older stacks use `role=\"search\"`",
+  "htmlElement": "",
+  "nativeHtml": "`<search>` wrapping `<input type=\"search\">`",
+  "aria": "search",
+  "researchNote": "Older stacks use `role=\"search\"`",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Search input"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Search"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Search field"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Searchbox"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

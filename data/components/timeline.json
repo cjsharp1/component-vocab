@@ -1,7 +1,7 @@
 {
   "slug": "timeline",
   "name": "Timeline",
-  "order": 30,
+  "order": 34,
   "status": "stable",
   "group": "wayfinding",
   "description": "A chronological sequence of events, milestones, or process steps. Displays items along a time axis with dates, titles, and descriptions.",

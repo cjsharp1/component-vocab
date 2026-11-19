@@ -1,7 +1,7 @@
 {
   "slug": "stack",
   "name": "Stack",
-  "order": 9,
+  "order": 10,
   "status": "draft",
   "group": "layout",
   "description": "Vertical flow with a consistent gap",

@@ -1,0 +1,67 @@
+{
+  "slug": "date-input",
+  "name": "Date input",
+  "order": 60,
+  "status": "draft",
+  "group": "forms",
+  "description": "Typed",
+  "summary": "Typed",
+  "htmlElement": "",
+  "nativeHtml": "`<input type=\"date\">` or three fields",
+  "aria": "",
+  "researchNote": "Typed",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Date field"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Date Input"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Date input"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

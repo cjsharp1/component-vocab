@@ -1,7 +1,7 @@
 {
   "slug": "tag",
   "name": "Tag",
-  "order": 40,
+  "order": 46,
   "status": "draft",
   "group": "feedback-status",
   "description": "Static categorization",

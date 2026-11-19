@@ -1,0 +1,68 @@
+{
+  "slug": "visually-hidden",
+  "name": "Visually hidden",
+  "order": 12,
+  "status": "draft",
+  "group": "layout",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "utility class",
+  "aria": "",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Screenreader only"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Visually hidden"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Visually hidden"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Visually Hidden"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Visually Hidden"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

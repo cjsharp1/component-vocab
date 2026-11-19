@@ -1,0 +1,72 @@
+{
+  "slug": "file-upload",
+  "name": "File upload",
+  "order": 62,
+  "status": "draft",
+  "group": "forms",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "`<input type=\"file\">`",
+  "aria": "",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "File input",
+    "Dropzone"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Upload"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "File uploader"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Drop zone"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "File Upload"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "File upload"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": []
+}

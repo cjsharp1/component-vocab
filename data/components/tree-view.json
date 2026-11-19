@@ -1,0 +1,70 @@
+{
+  "slug": "tree-view",
+  "name": "Tree view",
+  "order": 35,
+  "status": "draft",
+  "group": "wayfinding",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "",
+  "aria": "Tree View",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Tree"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Tree view"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Tree View"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Tree"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Outline views"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

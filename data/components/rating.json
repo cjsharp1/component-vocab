@@ -1,0 +1,70 @@
+{
+  "slug": "rating",
+  "name": "Rating",
+  "order": 50,
+  "status": "draft",
+  "group": "feedback-status",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "",
+  "aria": "",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Rating"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Rate"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Rating"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Rating"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Rating indicators"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

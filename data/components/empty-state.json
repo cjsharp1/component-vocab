@@ -1,0 +1,70 @@
+{
+  "slug": "empty-state",
+  "name": "Empty state",
+  "order": 22,
+  "status": "draft",
+  "group": "content-display",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "",
+  "aria": "",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Empty"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Empty state"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Empty state"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Empty State"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Empty"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

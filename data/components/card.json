@@ -1,7 +1,7 @@
 {
   "slug": "card",
   "name": "Card",
-  "order": 18,
+  "order": 20,
   "status": "stable",
   "group": "content-display",
   "description": "A contained preview of a piece of content. Presents an image, title, excerpt, and link as a clickable unit that leads to full content elsewhere.",

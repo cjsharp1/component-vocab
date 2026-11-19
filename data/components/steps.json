@@ -1,0 +1,73 @@
+{
+  "slug": "steps",
+  "name": "Steps",
+  "order": 33,
+  "status": "draft",
+  "group": "wayfinding",
+  "description": "`aria-current=\"step\"`",
+  "summary": "`aria-current=\"step\"`",
+  "htmlElement": "",
+  "nativeHtml": "`<ol>`",
+  "aria": "",
+  "researchNote": "`aria-current=\"step\"`",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Stepper",
+    "Progress tracker"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "alias",
+      "name": "Stepper"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Steps"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Progress indicator"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Progress tracker"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Steps"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

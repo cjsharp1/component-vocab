@@ -1,0 +1,68 @@
+{
+  "slug": "alert-dialog",
+  "name": "Alert dialog",
+  "order": 39,
+  "status": "draft",
+  "group": "disclosure-overlays",
+  "description": "Demands a response",
+  "summary": "Demands a response",
+  "htmlElement": "",
+  "nativeHtml": "`<dialog role=\"alertdialog\">`",
+  "aria": "Alert and Message Dialogs",
+  "researchNote": "Demands a response",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Confirm dialog"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Popconfirm"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Alert Dialog"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Alert Dialog"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Alerts"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}
