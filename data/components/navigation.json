@@ -1,0 +1,132 @@
+{
+  "slug": "navigation",
+  "name": "Navigation",
+  "order": 21,
+  "status": "stable",
+  "group": "navigation",
+  "description": "Primary navigation menu presenting the main site structure. Contains links to top-level pages organized as a horizontal or vertical list.",
+  "summary": "Primary navigation menu",
+  "htmlElement": "<code>&lt;nav&gt;</code>",
+  "elements": [
+    {
+      "name": "Nav items/links",
+      "required": "Yes",
+      "description": "Links to main pages"
+    },
+    {
+      "name": "Active indicator",
+      "required": "No",
+      "description": "Highlights the current page"
+    },
+    {
+      "name": "Submenus",
+      "required": "No",
+      "description": "Nested navigation items"
+    },
+    {
+      "name": "Icons",
+      "required": "No",
+      "description": "Icons beside labels"
+    }
+  ],
+  "wireframe": "wireframes/navigation/default.svg",
+  "thumbnail": "wireframes/navigation/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Orientation",
+      "options": "Horizontal, Vertical",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Links, Buttons, Pills",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Dropdowns",
+      "options": "None, On hover, On click",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Horizontal — default top nav",
+      "wireframe": "wireframes/navigation/variation-1.svg"
+    },
+    {
+      "caption": "Vertical — sidebar navigation",
+      "wireframe": "wireframes/navigation/variation-2.svg"
+    },
+    {
+      "caption": "Pills — rounded button style",
+      "wireframe": "wireframes/navigation/variation-3.svg"
+    },
+    {
+      "caption": "With dropdown — nested submenu",
+      "wireframe": "wireframes/navigation/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use inside <strong>Header</strong> for primary site navigation.",
+    "For in-page section navigation, use <strong>Tabs</strong>.",
+    "For sidebar navigation, combine with <strong>Sidebar</strong>.",
+    "Keep top-level nav items to 5-7 for optimal usability. Use dropdowns for additional options."
+  ],
+  "related": [],
+  "formerNames": [
+    "Nav"
+  ],
+  "aliases": [
+    "Nav",
+    "Menu"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Navbar"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Menu"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Navigation system"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Navigation Menu"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Nav"
+    },
+    "GOV.UK": {
+      "match": "alias",
+      "name": "Service navigation"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
+}

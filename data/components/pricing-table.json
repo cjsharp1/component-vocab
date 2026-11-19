@@ -1,0 +1,141 @@
+{
+  "slug": "pricing-table",
+  "name": "Pricing table",
+  "order": 25,
+  "status": "stable",
+  "group": "calls-to-action",
+  "description": "Pricing plans or tiers presented for comparison and selection. Shows plan names, prices, features, and purchase actions side by side.",
+  "summary": "Pricing plans/tiers for comparison",
+  "htmlElement": "<code>&lt;section&gt;</code>",
+  "elements": [
+    {
+      "name": "Plan name",
+      "required": "Yes",
+      "description": "Name/tier of each plan"
+    },
+    {
+      "name": "Price",
+      "required": "Yes",
+      "description": "Cost and billing period"
+    },
+    {
+      "name": "Feature list",
+      "required": "Yes",
+      "description": "List of included features"
+    },
+    {
+      "name": "Call-to-action button",
+      "required": "Yes",
+      "description": "Purchase or signup button"
+    },
+    {
+      "name": "Badge/highlight",
+      "required": "No",
+      "description": "\"Popular\", \"Recommended\" marker"
+    },
+    {
+      "name": "Billing toggle",
+      "required": "No",
+      "description": "Switch between Monthly/Annual"
+    }
+  ],
+  "wireframe": "wireframes/pricing-table/default.svg",
+  "thumbnail": "wireframes/pricing-table/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Columns",
+      "options": "2 plans, 3 plans, 4 plans",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Highlight",
+      "options": "None, Recommended plan, Most popular",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Billing toggle",
+      "options": "Monthly+Annual, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Style",
+      "options": "Cards, Table",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "3 columns — standard layout",
+      "wireframe": "wireframes/pricing-table/variation-1.svg"
+    },
+    {
+      "caption": "Highlighted — featured plan emphasized",
+      "wireframe": "wireframes/pricing-table/variation-2.svg"
+    },
+    {
+      "caption": "With toggle — monthly/annual switch",
+      "wireframe": "wireframes/pricing-table/variation-3.svg"
+    },
+    {
+      "caption": "Table style — grid comparison",
+      "wireframe": "wireframes/pricing-table/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use for subscription/plan comparison.",
+    "For general feature comparison (not pricing), use the comparison variant of <strong>Table</strong>.",
+    "Highlight the recommended plan to guide user choice.",
+    "Keep feature lists consistent across plans — show what's included and what's not."
+  ],
+  "related": [],
+  "formerNames": [
+    "Pricing"
+  ],
+  "aliases": [
+    "Pricing"
+  ],
+  "frameworkSource": "legacy",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
+}

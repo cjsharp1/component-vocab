@@ -1,12 +1,11 @@
 {
   "slug": "spinner",
   "name": "Spinner",
-  "order": 46,
+  "order": 36,
   "status": "stable",
   "group": "indicators-status",
   "description": "A generic loading or processing animation indicating that work is in progress. Used when duration is unknown.",
   "summary": "Generic loading/processing animation",
-  "alsoKnownAs": "Spinner (Bootstrap), Circular Progress indeterminate (Material), Spin (Ant), Activity Indicator (Apple), Spinner (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"status\"",
   "elements": [
     {
@@ -67,25 +66,65 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
-    "Use for indeterminate loading when duration is unknown. For known progress, use Progress.",
+    "Use for indeterminate loading when duration is unknown. For known progress, use Progress bar.",
     "For content-shaped loading states, use Skeleton instead.",
     "Provide accessible labeling with <code>role=\"status\"</code> and an <code>aria-label</code> or visually-hidden text.",
     "Full-page overlays block all interaction. Use sparingly and only for critical operations."
   ],
-  "legacyComparison": {
-    "bootstrap": "Spinner",
-    "material": "Circular Progress (indeterminate)",
-    "ant": "Spin",
-    "apple": "Activity Indicator",
-    "shadcn": "Spinner"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Loader",
+    "Loading"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "different",
+      "name": "Progress"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Spinners"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Spin"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Loading"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Spinner"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Spinner"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Spinner"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Spinner"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Spinner"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Spinner"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Progress indicators"
+    }
+  }
 }

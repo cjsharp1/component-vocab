@@ -1,12 +1,11 @@
 {
   "slug": "header",
   "name": "Header",
-  "order": 3,
+  "order": 2,
   "status": "stable",
   "group": "layout",
   "description": "The top-level site header containing the brand identity and primary navigation. Persists across pages as a global landmark.",
   "summary": "Site header with branding and navigation",
-  "alsoKnownAs": "Navbar (Bootstrap, partial), Top App Bar (Material), Layout Header (Ant), Navigation Bar (Apple)",
   "htmlElement": "<code>&lt;header&gt;</code>",
   "elements": [
     {
@@ -22,7 +21,7 @@
     {
       "name": "Actions",
       "required": "No",
-      "description": "CTA buttons, search, user menu"
+      "description": "Call-to-action buttons, search, user menu"
     },
     {
       "name": "Mobile toggle",
@@ -71,24 +70,53 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Place as the first child of <code>&lt;body&gt;</code>.",
-    "Use Nav component inside Header for the navigation links.",
+    "Use the Navigation component inside Header for the navigation links.",
     "Sticky headers should have a solid background or backdrop blur."
   ],
-  "legacyComparison": {
-    "bootstrap": "Navbar (partial)",
-    "material": "Top App Bar",
-    "ant": "Layout Header",
-    "apple": "Navigation Bar",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "different",
+      "name": "App Bar"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "different",
+      "name": "UI shell header"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "alias",
+      "name": "GOV.UK header"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

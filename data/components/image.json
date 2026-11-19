@@ -1,0 +1,140 @@
+{
+  "slug": "image",
+  "name": "Image",
+  "order": 9,
+  "status": "stable",
+  "group": "content-display",
+  "description": "An image, illustration, diagram, or code snippet accompanied by a caption. Used for visual content that needs attribution or explanation.",
+  "summary": "Image/illustration with caption",
+  "htmlElement": "<code>&lt;figure&gt;</code> + <code>&lt;figcaption&gt;</code>",
+  "elements": [
+    {
+      "name": "Image",
+      "required": "Yes",
+      "description": "The visual content"
+    },
+    {
+      "name": "Caption",
+      "required": "No",
+      "description": "Descriptive text below image"
+    },
+    {
+      "name": "Attribution",
+      "required": "No",
+      "description": "Source or credit"
+    }
+  ],
+  "wireframe": "wireframes/image/default.svg",
+  "thumbnail": "wireframes/image/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Size",
+      "options": "Small (inline), Medium, Full-width",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Caption position",
+      "options": "Below, Overlay",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Border/Frame",
+      "options": "None, Subtle border, Shadow",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Gallery layout",
+      "options": "Grid (2-col, 3-col), Masonry, Carousel",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Medium — with caption below",
+      "wireframe": "wireframes/image/variation-1.svg"
+    },
+    {
+      "caption": "Full-width",
+      "wireframe": "wireframes/image/variation-2.svg"
+    },
+    {
+      "caption": "Overlay caption",
+      "wireframe": "wireframes/image/variation-3.svg"
+    },
+    {
+      "caption": "Small (inline) — floated in text",
+      "wireframe": "wireframes/image/variation-4.svg"
+    }
+  ],
+  "collections": [
+    {
+      "title": "Gallery Layout",
+      "wireframe": "wireframes/image/collection.svg",
+      "caption": "Gallery — 3-column grid layout"
+    }
+  ],
+  "usageNotes": [
+    "Use Image for any visual; a caption renders it as a figure. For image and text side by side, use the horizontal media variant of Card. For collections of figures, use the Gallery (collection) layout config.",
+    "Always use semantic <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements.",
+    "Caption text should describe or attribute the image, not repeat information already visible.",
+    "For diagrams and charts, caption should help screen reader users understand the content."
+  ],
+  "related": [],
+  "formerNames": [
+    "Figure"
+  ],
+  "aliases": [
+    "Picture",
+    "Figure"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Images"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Image"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Image"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Image"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Image"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Image"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Image views"
+    }
+  }
+}

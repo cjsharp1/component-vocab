@@ -1,12 +1,11 @@
 {
   "slug": "form",
   "name": "Form",
-  "order": 36,
+  "order": 26,
   "status": "stable",
   "group": "forms-feedback",
   "description": "A data collection interface — contact forms, signup forms, search bars, filters. Groups input fields with labels, validation, and a submit action.",
   "summary": "Data collection — contact, signup, search",
-  "alsoKnownAs": "Form (Bootstrap), Text Field/Select (Material, individual), Form (Ant), Form (Apple), Form (shadcn)",
   "htmlElement": "<code>&lt;form&gt;</code>",
   "elements": [
     {
@@ -76,25 +75,55 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for any user input collection.",
     "Keep forms short. Group related fields.",
     "Always include labels and validation feedback.",
     "Mark required fields clearly."
   ],
-  "legacyComparison": {
-    "bootstrap": "Form",
-    "material": "Text Field / Select",
-    "ant": "Form",
-    "apple": "Form",
-    "shadcn": "Form"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Forms"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Form"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Form"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Form"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

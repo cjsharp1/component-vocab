@@ -1,12 +1,11 @@
 {
   "slug": "card",
   "name": "Card",
-  "order": 10,
+  "order": 7,
   "status": "stable",
   "group": "content-display",
   "description": "A contained preview of a piece of content. Presents an image, title, excerpt, and link as a clickable unit that leads to full content elsewhere.",
   "summary": "Preview of content — image, title, excerpt, link",
-  "alsoKnownAs": "Card (Bootstrap), Card (Material), Card (Ant), — (Apple), Card (shadcn)",
   "htmlElement": "<code>&lt;article&gt;</code> or <code>&lt;div&gt;</code>",
   "elements": [
     {
@@ -79,6 +78,18 @@
     {
       "caption": "List — horizontal, stacked",
       "wireframe": "wireframes/card/variation-4.svg"
+    },
+    {
+      "caption": "Horizontal media (formerly Media)",
+      "wireframe": "wireframes/card/from-media.svg"
+    },
+    {
+      "caption": "Person (formerly Profile)",
+      "wireframe": "wireframes/card/from-profile.svg"
+    },
+    {
+      "caption": "Large feature (formerly Showcase)",
+      "wireframe": "wireframes/card/from-showcase.svg"
     }
   ],
   "collections": [
@@ -88,26 +99,67 @@
       "caption": "Card List — 3-column grid layout"
     }
   ],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "collection",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
-    "Use Card for teasers that link elsewhere. For in-place content, use Feature. For people, use Profile.",
+    "Use Card for teasers that link elsewhere. For in-place content, use Feature. For people, use the person variant (formerly Profile).",
     "When the entire card is clickable, ensure the hit area is clear with hover states.",
     "Maintain consistent card heights in grid layouts by setting a max-height or line clamp on excerpts.",
-    "For image-less cards, consider using a subtle border or shadow to define card boundaries."
+    "For image-less cards, consider using a subtle border or shadow to define card boundaries.",
+    "For people, use a Card with an Avatar (person variant) rather than a separate Profile component."
   ],
-  "legacyComparison": {
-    "bootstrap": "Card",
-    "material": "Card",
-    "ant": "Card",
-    "apple": "—",
-    "shadcn": "Card"
-  },
-  "related": []
+  "related": [],
+  "absorbed": [
+    "Media",
+    "Profile",
+    "Showcase"
+  ],
+  "aliases": [
+    "Tile"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Card"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Card"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Card"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Tile"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Card"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Card"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Card"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Card"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

@@ -26,6 +26,7 @@ export function checkSchema(value, schema, path = '$', errors = []) {
     for (const [key, v] of Object.entries(value)) {
       if (schema.properties?.[key]) checkSchema(v, schema.properties[key], `${path}.${key}`, errors);
       else if (schema.additionalProperties === false) errors.push(`${path}: unexpected "${key}"`);
+      else if (typeof schema.additionalProperties === 'object') checkSchema(v, schema.additionalProperties, `${path}.${key}`, errors);
     }
   }
   if (Array.isArray(value) && schema.items) value.forEach((v, i) => checkSchema(v, schema.items, `${path}[${i}]`, errors));
@@ -53,6 +54,17 @@ export function validate(root = process.cwd()) {
     }
     const files = [data.wireframe, data.thumbnail, ...(data.variants || []).map(v => v.wireframe), ...(data.collections || []).map(c => c.wireframe)].filter(Boolean);
     for (const f of files) if (!existsSync(join(root, f))) errors.push(`${file}: missing wireframe file ${f}`);
+  }
+  // Each alias belongs to one component and never shadows a canonical name.
+  const names = new Map(components.map(c => [c.data.name.toLowerCase(), c.data.name]));
+  const aliasOwner = new Map();
+  for (const { data } of components) {
+    for (const alias of data.aliases || []) {
+      const k = alias.toLowerCase();
+      if (names.has(k) && names.get(k) !== data.name) errors.push(`${data.slug}.json: alias "${alias}" is the name of another component`);
+      if (aliasOwner.has(k) && aliasOwner.get(k) !== data.name) errors.push(`${data.slug}.json: alias "${alias}" is also an alias of ${aliasOwner.get(k)}`);
+      aliasOwner.set(k, data.name);
+    }
   }
   const orders = components.map(c => c.data.order).sort((a, b) => a - b);
   orders.forEach((o, i) => { if (o !== i + 1) errors.push(`order values are not 1..${orders.length} without gaps (found ${o} at position ${i + 1})`); });

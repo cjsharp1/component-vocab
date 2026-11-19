@@ -1,12 +1,11 @@
 {
   "slug": "drawer",
   "name": "Drawer",
-  "order": 42,
+  "order": 32,
   "status": "stable",
   "group": "overlays-menus",
   "description": "A panel that slides in from a screen edge, either overlaying content or pushing it aside. Used for navigation, filters, detail panels, or forms.",
   "summary": "Panel sliding in from a screen edge",
-  "alsoKnownAs": "Offcanvas (Bootstrap), Side Sheet (Material), Drawer (Ant), Sheet (Apple), Sheet/Drawer (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with appropriate ARIA",
   "elements": [
     {
@@ -77,25 +76,63 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for mobile nav, filter panels, or detail views that need more space than a Popover.",
-    "For blocking actions that require full attention, use Modal instead. For persistent sidebars, use Aside.",
+    "For blocking actions that require full attention, use a modal Dialog instead. For persistent sidebars, use Sidebar.",
     "The \"Overlay\" behavior places the drawer above content. \"Push\" behavior shifts the main content aside.",
     "Always provide a way to dismiss: close button, backdrop click, or Escape key."
   ],
-  "legacyComparison": {
-    "bootstrap": "Offcanvas",
-    "material": "Side Sheet",
-    "ant": "Drawer",
-    "apple": "Sheet",
-    "shadcn": "Sheet / Drawer"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Tray",
+    "Flyout",
+    "Sheet"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Drawer"
+    },
+    "Bootstrap": {
+      "match": "different",
+      "name": "Offcanvas"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Drawer"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Drawer"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Drawer"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Sheet"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Drawer"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Sheets"
+    }
+  }
 }

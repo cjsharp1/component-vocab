@@ -1,0 +1,143 @@
+{
+  "slug": "dialog",
+  "name": "Dialog",
+  "order": 27,
+  "status": "stable",
+  "group": "forms-feedback",
+  "description": "An overlay dialog that requires user attention or action. Appears above the page content, blocking interaction with the background until dismissed.",
+  "summary": "Overlay dialog requiring action",
+  "htmlElement": "<code>&lt;dialog&gt;</code> or <code>&lt;div&gt;</code> with role=\"dialog\"",
+  "elements": [
+    {
+      "name": "Title",
+      "required": "Yes",
+      "description": "Dialog heading"
+    },
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "Dialog body text or form"
+    },
+    {
+      "name": "Close button",
+      "required": "Yes",
+      "description": "Dismiss control (X icon)"
+    },
+    {
+      "name": "Action buttons",
+      "required": "No",
+      "description": "Confirm/cancel buttons"
+    },
+    {
+      "name": "Backdrop/overlay",
+      "required": "Yes",
+      "description": "Semi-transparent background"
+    }
+  ],
+  "wireframe": "wireframes/dialog/default.svg",
+  "thumbnail": "wireframes/dialog/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Size",
+      "options": "Small, Medium, Large, Full-screen",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Position",
+      "options": "Center, Top, Bottom sheet",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Close method",
+      "options": "Button, Backdrop click, Escape",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Small — compact dialog",
+      "wireframe": "wireframes/dialog/variation-1.svg"
+    },
+    {
+      "caption": "Large — more content space",
+      "wireframe": "wireframes/dialog/variation-2.svg"
+    },
+    {
+      "caption": "Top position — aligned to top",
+      "wireframe": "wireframes/dialog/variation-3.svg"
+    },
+    {
+      "caption": "Bottom sheet — mobile-friendly",
+      "wireframe": "wireframes/dialog/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use sparingly — modals interrupt the user.",
+    "For non-blocking notifications, use <strong>Toast</strong>.",
+    "For side panels, use <strong>Drawer</strong>.",
+    "Always provide a way to dismiss (close button, backdrop click, or Escape key)."
+  ],
+  "related": [],
+  "formerNames": [
+    "Modal"
+  ],
+  "aliases": [
+    "Modal",
+    "Popup",
+    "Modal window"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Dialog"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Modal"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Modal"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Modal"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Modal"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Modal dialog"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Dialog"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Dialog"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Dialog"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Dialog"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Sheets / Alerts"
+    }
+  }
+}

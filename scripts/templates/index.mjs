@@ -39,15 +39,17 @@ ${indent(svg(c.thumbnail), 14)}
 
   const rows = components
     .map(c => {
-      const k = c.legacyComparison;
+      const fw = c.frameworkNames;
+      const cell = s => (fw[s] && fw[s].match !== 'none' ? fw[s].name : '—');
       return `            <tr>
               <td><a href="./components/${c.slug}.html">${c.name}</a></td>
-${[k.bootstrap, k.material, k.ant, k.apple, k.shadcn].map(v => `              <td>${v}</td>`).join('\n')}
+${['Bootstrap', 'MUI', 'Ant Design', 'Apple HIG', 'shadcn/ui'].map(s => `              <td>${cell(s)}</td>`).join('\n')}
             </tr>`;
     })
     .join('\n');
 
-  return `${fragment('index-head.html')}${filter}
+  const head = fragment('index-head.html').replace('    <section id="components">', fragment('index-universal.html') + '    <section id="components">');
+  return `${head}${filter}
 ${grid}    </section>
 
 ${fragment('index-comparison-head.html')}${rows}

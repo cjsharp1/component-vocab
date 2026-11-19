@@ -1,0 +1,124 @@
+{
+  "slug": "breadcrumbs",
+  "name": "Breadcrumbs",
+  "order": 22,
+  "status": "stable",
+  "group": "navigation",
+  "description": "A hierarchical trail showing the user's location within the site structure. Provides orientation and quick navigation to parent pages.",
+  "summary": "Hierarchical location trail",
+  "htmlElement": "<code>&lt;nav&gt;</code> with aria-label=\"breadcrumb\"",
+  "elements": [
+    {
+      "name": "Path items",
+      "required": "Yes",
+      "description": "Links in the breadcrumb trail"
+    },
+    {
+      "name": "Separators",
+      "required": "Yes",
+      "description": "Visual dividers between items (/, &gt;, or arrow)"
+    },
+    {
+      "name": "Current page",
+      "required": "Yes",
+      "description": "The last item, not linked"
+    }
+  ],
+  "wireframe": "wireframes/breadcrumbs/default.svg",
+  "thumbnail": "wireframes/breadcrumbs/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Separator style",
+      "options": "Slash, Chevron, Arrow",
+      "affectsLayout": "No",
+      "highlighted": false
+    },
+    {
+      "config": "Truncation",
+      "options": "None, Ellipsis for long paths",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Slash — simple forward slash",
+      "wireframe": "wireframes/breadcrumbs/variation-1.svg"
+    },
+    {
+      "caption": "Chevron — right-pointing arrow",
+      "wireframe": "wireframes/breadcrumbs/variation-2.svg"
+    },
+    {
+      "caption": "Arrow — styled arrow character",
+      "wireframe": "wireframes/breadcrumbs/variation-3.svg"
+    },
+    {
+      "caption": "Truncated — ellipsis for long paths",
+      "wireframe": "wireframes/breadcrumbs/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Place at the top of page content, below the <strong>Header</strong>.",
+    "Last item is the current page and should not be a link.",
+    "Don't use on single-level sites.",
+    "For very deep hierarchies, consider truncating middle items with an ellipsis."
+  ],
+  "related": [],
+  "formerNames": [
+    "Breadcrumb"
+  ],
+  "aliases": [
+    "Breadcrumb",
+    "Breadcrumb trail"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Breadcrumbs"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Breadcrumb"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Breadcrumb"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Breadcrumb"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Breadcrumbs"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Breadcrumb"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Breadcrumb"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Breadcrumb"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Breadcrumbs"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
+}

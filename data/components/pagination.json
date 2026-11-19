@@ -1,12 +1,11 @@
 {
   "slug": "pagination",
   "name": "Pagination",
-  "order": 33,
+  "order": 23,
   "status": "stable",
   "group": "navigation",
   "description": "Page-by-page navigation for content split across multiple pages. Provides numbered pages, previous/next, and optionally first/last.",
   "summary": "Page-by-page navigation",
-  "alsoKnownAs": "Pagination (Bootstrap), — (Material), Pagination (Ant), — (Apple), Pagination (shadcn)",
   "htmlElement": "<code>&lt;nav&gt;</code> with aria-label=\"pagination\"",
   "elements": [
     {
@@ -71,25 +70,60 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use at the bottom of paginated content (blog archives, search results).",
     "For single-item navigation (next/prev article), use the component-nav pattern.",
     "Show 5-7 page numbers maximum. Use ellipsis for longer lists.",
     "Disable Previous on the first page and Next on the last page."
   ],
-  "legacyComparison": {
-    "bootstrap": "Pagination",
-    "material": "—",
-    "ant": "Pagination",
-    "apple": "—",
-    "shadcn": "Pagination"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Pagination"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Page controls"
+    }
+  }
 }

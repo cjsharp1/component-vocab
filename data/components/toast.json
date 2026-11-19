@@ -1,12 +1,11 @@
 {
   "slug": "toast",
   "name": "Toast",
-  "order": 39,
+  "order": 29,
   "status": "stable",
   "group": "forms-feedback",
   "description": "A temporary, non-blocking notification message that appears briefly and then auto-dismisses. For lightweight feedback that doesn't interrupt the user's flow.",
   "summary": "Temporary non-blocking notification",
-  "alsoKnownAs": "Toast (Bootstrap), Snackbar (Material), Message (Ant), Banner (Apple, partial), Toast/Sonner (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"status\"",
   "elements": [
     {
@@ -71,25 +70,60 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for non-critical confirmations (\"Saved!\", \"Copied!\").",
     "For important feedback, use <strong>Alert</strong> (stays visible).",
-    "For blocking actions, use <strong>Modal</strong>.",
+    "For blocking actions, use a modal <strong>Dialog</strong>.",
     "Keep messages short — toasts are meant to be glanceable."
   ],
-  "legacyComparison": {
-    "bootstrap": "Toast",
-    "material": "Snackbar",
-    "ant": "Message",
-    "apple": "Banner (partial)",
-    "shadcn": "Toast / Sonner"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Snackbar"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "alias",
+      "name": "Snackbar"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Toasts"
+    },
+    "Ant Design": {
+      "match": "different",
+      "name": "Message"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "different",
+      "name": "Flag"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Toast"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Toast"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Toast"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

@@ -1,12 +1,11 @@
 {
   "slug": "alert",
   "name": "Alert",
-  "order": 38,
+  "order": 28,
   "status": "stable",
   "group": "forms-feedback",
   "description": "An inline feedback message communicating the result of a user action or system state. Success, warning, error, or informational messages that appear in context.",
   "summary": "Inline feedback message",
-  "alsoKnownAs": "Alert (Bootstrap), Snackbar (Material, partial), Alert (Ant), Inline Alert (Apple), Alert (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"alert\"",
   "elements": [
     {
@@ -73,28 +72,84 @@
     {
       "caption": "Dismissible — with close button",
       "wireframe": "wireframes/alert/variation-4.svg"
+    },
+    {
+      "caption": "Announcement (formerly Banner)",
+      "wireframe": "wireframes/alert/from-banner.svg"
+    },
+    {
+      "caption": "Note (formerly Callout)",
+      "wireframe": "wireframes/alert/from-callout.svg"
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for contextual feedback (form validation, system status).",
-    "For editorial emphasis, use <strong>Callout</strong>.",
+    "For editorial emphasis, use the note variant (formerly Callout).",
     "For temporary non-blocking messages, use <strong>Toast</strong>.",
-    "Position alerts near the relevant context (above a form, at the top of a page section)."
+    "Position alerts near the relevant context (above a form, at the top of a page section).",
+    "Avoid the word \"banner\" for this: it is the name of the page header landmark.",
+    "Pull-quotes belong to Quote, not Alert."
   ],
-  "legacyComparison": {
-    "bootstrap": "Alert",
-    "material": "Snackbar (partial)",
-    "ant": "Alert",
-    "apple": "Inline Alert",
-    "shadcn": "Alert"
-  },
-  "related": []
+  "related": [],
+  "absorbed": [
+    "Banner",
+    "Callout"
+  ],
+  "aliases": [
+    "Notification",
+    "Banner",
+    "Callout",
+    "Message"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Alert"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Alerts"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Alert"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Notification"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Banner"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Banner"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Alert"
+    },
+    "Radix Themes": {
+      "match": "alias",
+      "name": "Callout"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Alert"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Message bar"
+    },
+    "GOV.UK": {
+      "match": "alias",
+      "name": "Notification banner"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

@@ -3,19 +3,7 @@
 // .hover-target followed by .label-group, .component-nav).
 import { indent } from './util.mjs';
 
-const UNIVERSAL = `      <h3>Universal</h3>
-      <table>
-        <thead>
-          <tr><th>Config</th><th>Options</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
-          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
-          <tr><td>Width</td><td>Contained, Full-width</td></tr>
-          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
-          <tr><td>Theme</td><td>Light, Dark</td></tr>
-        </tbody>
-      </table>
+const UNIVERSAL = `      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
 `;
 
 const sections = {
@@ -57,8 +45,7 @@ ${col.caption != null ? `      <p><em>${col.caption}</em></p>\n` : ''}    </sect
 
   'Configuration Options': c => `    <section>
       <h2>Configuration Options</h2>
-${UNIVERSAL}
-      <h3>Component-Specific</h3>
+${UNIVERSAL}      <h3>Component-Specific</h3>
       <table>
         <thead>
           <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
@@ -92,11 +79,48 @@ ${c.usageNotes.map(n => `        <li>${n}</li>`).join('\n')}
 `,
 };
 
+// "Also known as": aliases, then design-system names grouped by name.
+// Only systems with a match are listed (no placeholder dashes).
+export function alsoKnownAs(c) {
+  const byName = new Map();
+  for (const [system, v] of Object.entries(c.frameworkNames || {})) {
+    if (v.match === 'none') continue;
+    if (!byName.has(v.name)) byName.set(v.name, []);
+    byName.get(v.name).push(system);
+  }
+  const systems = [...byName].map(([name, list]) => `${name} (${list.join(', ')})`);
+  const parts = [];
+  if (c.aliases?.length) parts.push(c.aliases.join(', '));
+  if (systems.length) parts.push(`In design systems: ${systems.join('; ')}`);
+  return parts.length ? parts.join('. ') : 'No equivalent in the surveyed design systems';
+}
+
+// Small page left at a retired or renamed slug so old links keep working.
+export function redirectPage(to) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=${to.slug}.html">
+  <title>${to.name} — component-vocab</title>
+  <link rel="canonical" href="${to.slug}.html">
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <main>
+    <p>This page has moved: <a href="${to.slug}.html">${to.name}</a>.</p>
+  </main>
+</body>
+</html>
+`;
+}
+
 export function componentPage(c, { prev, next, group, svg }) {
-  let collectionIndex = 0;
-  const body = c.sectionOrder
-    .map(s => (s === 'collection' ? sections.collection(c, svg, collectionIndex++) : sections[s](c, svg)))
-    .join('\n');
+  // One section order for every page: collections follow Layout Variations.
+  const order = ['Elements', 'Default Layout', 'Configuration Options', 'Layout Variations', ...c.collections.map((_, n) => n), 'Usage Notes'];
+  const body = order.map(s => (typeof s === 'number' ? sections.collection(c, svg, s) : sections[s](c, svg))).join('\n');
   const link = (target, label, dir) =>
     target
       ? `<a href="${target.slug}.html">${dir === 'prev' ? `&larr; ${target.name}` : `${target.name} &rarr;`}</a>`
@@ -138,7 +162,7 @@ export function componentPage(c, { prev, next, group, svg }) {
 
       <dl>
         <dt>Also known as</dt>
-        <dd>${c.alsoKnownAs}</dd>
+        <dd>${alsoKnownAs(c)}</dd>
         <dt>Semantic element</dt>
         <dd>${c.htmlElement}</dd>
         <dt>Category</dt>

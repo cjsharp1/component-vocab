@@ -1,0 +1,142 @@
+{
+  "slug": "separator",
+  "name": "Separator",
+  "order": 40,
+  "status": "stable",
+  "group": "utility",
+  "description": "A visual separator between content sections.",
+  "summary": "Visual separator between content sections",
+  "htmlElement": "<code>&lt;hr&gt;</code>",
+  "elements": [
+    {
+      "name": "Rule/line",
+      "required": "Yes",
+      "description": "The visual separator line"
+    }
+  ],
+  "wireframe": "wireframes/separator/default.svg",
+  "thumbnail": "wireframes/separator/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Solid, Dashed, Dotted, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Full, Contained, Short centered",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Spacing",
+      "options": "Compact, Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Orientation",
+      "options": "Horizontal, Vertical",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Style: Solid",
+      "wireframe": "wireframes/separator/variation-1.svg"
+    },
+    {
+      "caption": "Style: Dashed",
+      "wireframe": "wireframes/separator/variation-2.svg"
+    },
+    {
+      "caption": "Style: Dotted",
+      "wireframe": "wireframes/separator/variation-3.svg"
+    },
+    {
+      "caption": "Width: Short centered",
+      "wireframe": "wireframes/separator/variation-4.svg"
+    },
+    {
+      "caption": "Orientation: Vertical",
+      "wireframe": "wireframes/separator/variation-5.svg"
+    },
+    {
+      "caption": "Spacing: Compact",
+      "wireframe": "wireframes/separator/variation-6.svg"
+    },
+    {
+      "caption": "Spacing: Spacious",
+      "wireframe": "wireframes/separator/variation-7.svg"
+    },
+    {
+      "caption": "Style: None (spacing only)",
+      "wireframe": "wireframes/separator/variation-8.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use between sections when visual separation is needed beyond spacing alone.",
+    "Vertical dividers work well in horizontal layouts, such as between toolbar buttons or sidebar sections.",
+    "The \"None\" style provides spacing without a visible line, useful when a subtle break is needed.",
+    "Ensure sufficient color contrast for the line in both light and dark themes."
+  ],
+  "related": [],
+  "formerNames": [
+    "Divider"
+  ],
+  "aliases": [
+    "Divider",
+    "Horizontal rule",
+    "Vertical rule"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "alias",
+      "name": "Divider"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Vertical rule"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Divider"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Divider"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Separator"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Separator"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Separator"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Divider"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
+}

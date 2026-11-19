@@ -1,12 +1,11 @@
 {
   "slug": "list",
   "name": "List",
-  "order": 27,
+  "order": 17,
   "status": "stable",
   "group": "text-lists",
   "description": "A structured list of items — features, benefits, steps, or any enumerated content. More visually styled than a plain HTML list.",
   "summary": "Structured list of items — features, steps",
-  "alsoKnownAs": "List Group (Bootstrap), List (Material), List (Ant), — (Apple), — (shadcn)",
   "htmlElement": "<code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>",
   "elements": [
     {
@@ -71,25 +70,59 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for feature lists, step sequences, or any ordered/unordered enumeration.",
-    "For expandable items, use <strong>Accordion</strong>. For key-value data, use <strong>Snapshot</strong>.",
+    "For expandable items, use <strong>Accordion</strong>. For key-value data, use <strong>Description list</strong>.",
     "Keep list items concise. If items have substantial content, consider using <strong>Accordion</strong> or <strong>Card</strong>.",
     "Icon-led lists work well for feature benefits (checkmark icons convey completion or inclusion)."
   ],
-  "legacyComparison": {
-    "bootstrap": "List Group",
-    "material": "List",
-    "ant": "List",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "List"
+    },
+    "Bootstrap": {
+      "match": "different",
+      "name": "List group"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "List (deprecated)"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "List"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Ordered list / Unordered list"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "List"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "List"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Lists and tables"
+    }
+  }
 }

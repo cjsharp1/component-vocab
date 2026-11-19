@@ -1,12 +1,11 @@
 {
   "slug": "section",
   "name": "Section",
-  "order": 2,
+  "order": 1,
   "status": "stable",
   "group": "layout",
-  "description": "A thematic grouping of content that forms a distinct part of a page. Typically spans full width and contains one or more content components within a Container.",
+  "description": "A thematic grouping of content that forms a distinct part of a page. Typically spans full width and contains one or more content components within a constrained content width.",
   "summary": "Thematic full-width page block",
-  "alsoKnownAs": "—",
   "htmlElement": "<code>&lt;section&gt;</code>",
   "elements": [
     {
@@ -55,27 +54,63 @@
     {
       "caption": "Spacious — increased padding",
       "wireframe": "wireframes/section/variation-2.svg"
+    },
+    {
+      "caption": "Contained width (formerly Container)",
+      "wireframe": "wireframes/section/from-container.svg"
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Every major page block should be wrapped in a Section.",
-    "Use with Container inside for centered content.",
-    "Add an id attribute for anchor link navigation."
+    "Set the content width to keep text centered and readable.",
+    "Add an id attribute for anchor link navigation.",
+    "Width is a Section setting (narrow, content, wide, full), not a separate Container block."
   ],
-  "legacyComparison": {
-    "bootstrap": "—",
-    "material": "—",
-    "ant": "—",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "absorbed": [
+    "Container"
+  ],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Section"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Section"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

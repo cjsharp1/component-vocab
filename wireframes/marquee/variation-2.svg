@@ -1,7 +1,0 @@
-<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect class="region" x="0" y="70" width="400" height="60" />
-  <line class="text-line" x1="20" y1="95" x2="140" y2="95" />
-  <line class="text-line" x1="160" y1="95" x2="280" y2="95" />
-  <line class="text-line" x1="300" y1="95" x2="420" y2="95" />
-  <path d="M 390 100 L 395 100 L 392 97 M 395 100 L 392 103" stroke="#0066cc" stroke-width="1.5" fill="none" />
-</svg>

@@ -1,12 +1,11 @@
 {
   "slug": "hero",
   "name": "Hero",
-  "order": 8,
+  "order": 6,
   "status": "stable",
   "group": "hero-banners",
   "description": "A large introductory area typically placed at the top of a page. Contains a prominent headline, supporting text, and one or more calls to action. Sets the tone and primary message for the page content that follows.",
-  "summary": "Large intro area — headline, subtext, CTA",
-  "alsoKnownAs": "Jumbotron (Bootstrap, deprecated), Hero header, Hero banner, Landing section",
+  "summary": "Large intro area — headline, subtext, call to action",
   "htmlElement": "<code>&lt;section&gt;</code>",
   "elements": [
     {
@@ -87,25 +86,53 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use Hero as the first content component on a page, inside a <code>&lt;section&gt;</code>.",
-    "Limit to one Hero per page. For secondary promotional areas lower on the page, use <strong>CTA</strong> instead.",
+    "Limit to one Hero per page. For secondary promotional areas lower on the page, use <strong>Call to action</strong> instead.",
     "When using a background image, always provide an overlay or ensure text contrast meets WCAG AA.",
     "The \"Split\" layouts work best with a side image or illustration, not a background image."
   ],
-  "legacyComparison": {
-    "bootstrap": "Jumbotron (deprecated)",
-    "material": "—",
-    "ant": "—",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Jumbotron"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

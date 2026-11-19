@@ -1,12 +1,11 @@
 {
   "slug": "avatar",
   "name": "Avatar",
-  "order": 49,
+  "order": 39,
   "status": "stable",
   "group": "interactive",
   "description": "A small identity image representing a user or entity. Used in comments, chat, attribution lines.",
   "summary": "Small identity image for attribution, comments",
-  "alsoKnownAs": "— (Bootstrap), — (Material), Avatar (Ant), — (Apple), Avatar (shadcn)",
   "htmlElement": "<code>&lt;img&gt;</code> or <code>&lt;span&gt;</code>",
   "elements": [
     {
@@ -72,25 +71,59 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
-    "Use for small user identity markers in comments, chat, lists, or attribution lines. For full person display with name and bio, use Profile.",
+    "Use for small user identity markers in comments, chat, lists, or attribution lines. For full person display with name and bio, use a Card with an Avatar (the person variant).",
     "Provide fallback content when no image is available: initials from the user's name, a generic icon, or a placeholder.",
     "Status indicators (online/offline/busy) are typically small dots placed at the bottom-right of the avatar.",
     "In avatar groups, use overlapping stacks to save space or a row layout for clarity."
   ],
-  "legacyComparison": {
-    "bootstrap": "—",
-    "material": "—",
-    "ant": "Avatar",
-    "apple": "—",
-    "shadcn": "Avatar"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Avatar"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

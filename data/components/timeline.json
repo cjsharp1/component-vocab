@@ -1,12 +1,11 @@
 {
   "slug": "timeline",
   "name": "Timeline",
-  "order": 20,
+  "order": 13,
   "status": "stable",
   "group": "content-display",
   "description": "A chronological sequence of events, milestones, or process steps. Displays items along a time axis with dates, titles, and descriptions.",
   "summary": "Chronological sequence of events/milestones",
-  "alsoKnownAs": "— (Bootstrap), — (Material), Timeline (Ant), — (Apple), — (shadcn)",
   "htmlElement": "<code>&lt;ol&gt;</code> or <code>&lt;div&gt;</code>",
   "elements": [
     {
@@ -71,25 +70,54 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
-    "Use for company history, project milestones, or process steps. For step-by-step progress indicators, use Progress. Timeline shows past/planned events; Progress shows current completion.",
+    "Use for company history, project milestones, or process steps. For step-by-step progress indicators, use Steps. Timeline shows past/planned events; Steps show progress through a process.",
     "Always present events in chronological order (oldest to newest or newest to oldest).",
     "Use semantic <code>&lt;ol&gt;</code> for ordered list of events with proper list item markup.",
     "Alternating layout works well for detailed events; left-aligned is better for compact timelines."
   ],
-  "legacyComparison": {
-    "bootstrap": "—",
-    "material": "—",
-    "ant": "Timeline",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Timeline"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Timeline"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Timeline"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

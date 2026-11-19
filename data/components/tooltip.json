@@ -1,12 +1,11 @@
 {
   "slug": "tooltip",
   "name": "Tooltip",
-  "order": 40,
+  "order": 30,
   "status": "stable",
   "group": "overlays-menus",
   "description": "A contextual hint that appears on hover or focus near a trigger element. Provides brief explanatory text without cluttering the interface.",
   "summary": "Contextual hint appearing on hover/focus",
-  "alsoKnownAs": "Tooltip (Bootstrap), Tooltip (Material), Tooltip (Ant), — (Apple), Tooltip (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"tooltip\"",
   "elements": [
     {
@@ -72,25 +71,63 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for brief hints (a few words or a single sentence). For rich content, use Popover.",
     "Keep text short. If you need more than two lines, consider a different pattern.",
-    "Tooltips should appear on hover or focus, not on click. For click-triggered content, use Popover or Dropdown.",
+    "Tooltips should appear on hover or focus, not on click. For click-triggered content, use Popover or Menu button.",
     "Ensure the trigger element is keyboard-accessible and the tooltip is announced by screen readers."
   ],
-  "legacyComparison": {
-    "bootstrap": "Tooltip",
-    "material": "Tooltip",
-    "ant": "Tooltip",
-    "apple": "—",
-    "shadcn": "Tooltip"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Toggletip"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Tooltips"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Tooltip"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

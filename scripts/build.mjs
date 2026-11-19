@@ -10,7 +10,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
 import { join, dirname, normalize, relative } from 'node:path';
 import { validate, loadComponents } from './validate.mjs';
-import { componentPage } from './templates/component.mjs';
+import { componentPage, redirectPage } from './templates/component.mjs';
 import { indexPage } from './templates/index.mjs';
 
 const root = process.cwd();
@@ -35,6 +35,13 @@ export function build() {
     out.set(`components/${c.slug}.html`, componentPage(c, { prev: components[i - 1], next: components[i + 1], group, svg }));
   });
   out.set('index.html', indexPage({ groups, components, svg }));
+  const redirects = existsSync(join(root, 'data/redirects.json')) ? JSON.parse(read('data/redirects.json')) : {};
+  for (const [from, to] of Object.entries(redirects)) {
+    const target = components.find(c => c.slug === to);
+    if (!target) throw new Error(`redirect ${from} -> ${to}: no such component`);
+    if (components.some(c => c.slug === from)) throw new Error(`redirect ${from}: slug is still a live component`);
+    out.set(`components/${from}.html`, redirectPage(target));
+  }
   return out;
 }
 

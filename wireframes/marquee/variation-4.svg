@@ -1,9 +1,0 @@
-<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect class="region" x="0" y="70" width="400" height="60" />
-  <rect class="media-placeholder" x="20" y="85" width="50" height="30" rx="4" opacity="0.5" />
-  <line class="text-line" x1="80" y1="95" x2="140" y2="95" />
-  <rect class="media-placeholder" x="155" y="85" width="50" height="30" rx="4" opacity="0.5" />
-  <line class="text-line" x1="215" y1="95" x2="275" y2="95" />
-  <rect class="media-placeholder" x="290" y="85" width="50" height="30" rx="4" opacity="0.5" />
-  <line class="text-line" x1="350" y1="95" x2="410" y2="95" />
-</svg>

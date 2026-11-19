@@ -1,0 +1,131 @@
+{
+  "slug": "progress-bar",
+  "name": "Progress bar",
+  "order": 35,
+  "status": "stable",
+  "group": "indicators-status",
+  "description": "A visual indicator of task or process completion. Shows how far along a process is.",
+  "summary": "Visual indicator of task/process completion",
+  "htmlElement": "<code>&lt;progress&gt;</code> or <code>&lt;div&gt;</code> with role=\"progressbar\"",
+  "elements": [
+    {
+      "name": "Bar/indicator",
+      "required": "Yes",
+      "description": "Visual representation of progress"
+    },
+    {
+      "name": "Label/percentage",
+      "required": "No",
+      "description": "Numeric or text label showing progress"
+    },
+    {
+      "name": "Steps",
+      "required": "No",
+      "description": "Discrete milestones in stepped progress"
+    }
+  ],
+  "wireframe": "wireframes/progress-bar/default.svg",
+  "thumbnail": "wireframes/progress-bar/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Style",
+      "options": "Linear bar, Circular ring, Steps",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Label",
+      "options": "Percentage, Fraction, None",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Default, Large",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Style: Linear bar",
+      "wireframe": "wireframes/progress-bar/variation-1.svg"
+    },
+    {
+      "caption": "Style: Circular ring",
+      "wireframe": "wireframes/progress-bar/variation-2.svg"
+    },
+    {
+      "caption": "Style: Steps",
+      "wireframe": "wireframes/progress-bar/variation-3.svg"
+    },
+    {
+      "caption": "Size: Small",
+      "wireframe": "wireframes/progress-bar/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use when completion percentage is known. For indeterminate loading, use Spinner.",
+    "Linear bars are best for horizontal layouts. Circular rings work well for compact spaces.",
+    "Steps are ideal for multi-stage processes like forms or onboarding.",
+    "Ensure the progress indicator is labeled with <code>aria-valuenow</code>, <code>aria-valuemin</code>, and <code>aria-valuemax</code> for accessibility."
+  ],
+  "related": [],
+  "formerNames": [
+    "Progress"
+  ],
+  "aliases": [
+    "Progress"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "alias",
+      "name": "Progress"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Progress"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Progress"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Progress bar"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Progress"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Progress bar"
+    },
+    "Chakra UI": {
+      "match": "alias",
+      "name": "Progress"
+    },
+    "Radix Themes": {
+      "match": "alias",
+      "name": "Progress"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Progress"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Progress bar"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Progress indicators"
+    }
+  }
+}

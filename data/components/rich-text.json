@@ -1,0 +1,151 @@
+{
+  "slug": "rich-text",
+  "name": "Rich Text",
+  "order": 16,
+  "status": "stable",
+  "group": "text-lists",
+  "description": "Long-form rich text content — article bodies, descriptions, documentation. Provides appropriate typography and spacing for readable paragraphs, headings, lists, and inline elements.",
+  "summary": "Long-form rich text content",
+  "htmlElement": "<code>&lt;div&gt;</code> wrapping standard HTML content elements",
+  "elements": [
+    {
+      "name": "Headings (h2-h6)",
+      "required": "No",
+      "description": "Structural headings for the content"
+    },
+    {
+      "name": "Paragraphs",
+      "required": "Yes",
+      "description": "Body text content"
+    },
+    {
+      "name": "Inline links",
+      "required": "No",
+      "description": "Hyperlinks within text"
+    },
+    {
+      "name": "Bold/italic",
+      "required": "No",
+      "description": "Text emphasis"
+    },
+    {
+      "name": "Block quotes",
+      "required": "No",
+      "description": "Quoted text sections"
+    },
+    {
+      "name": "Inline code",
+      "required": "No",
+      "description": "Code snippets within text"
+    },
+    {
+      "name": "Lists (ul/ol)",
+      "required": "No",
+      "description": "Unordered or ordered lists"
+    }
+  ],
+  "wireframe": "wireframes/rich-text/default.svg",
+  "thumbnail": "wireframes/rich-text/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Max width",
+      "options": "Narrow, Default, Wide",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Line height",
+      "options": "Compact, Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "First paragraph",
+      "options": "Normal, Drop cap, Lead text",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Narrow — optimal reading line length",
+      "wireframe": "wireframes/rich-text/variation-1.svg"
+    },
+    {
+      "caption": "Wide — more content per line",
+      "wireframe": "wireframes/rich-text/variation-2.svg"
+    },
+    {
+      "caption": "Drop cap — decorative first letter",
+      "wireframe": "wireframes/rich-text/variation-3.svg"
+    },
+    {
+      "caption": "Lead text — emphasized first paragraph",
+      "wireframe": "wireframes/rich-text/variation-4.svg"
+    },
+    {
+      "caption": "Article page (formerly Article)",
+      "wireframe": "wireframes/rich-text/from-article.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use for blog and article body text. Wrap any long-form text in Rich Text for proper typography.",
+    "Don't nest other components inside Rich Text.",
+    "Keep max width narrow (65-75 characters per line) for optimal readability.",
+    "Use lead text or drop cap to visually signal the start of long-form content.",
+    "Use <code>&lt;article&gt;</code> only for self-contained content such as a post or a Card in a list; plain body text is a <code>&lt;div&gt;</code>."
+  ],
+  "related": [],
+  "absorbed": [
+    "Article"
+  ],
+  "formerNames": [
+    "Prose"
+  ],
+  "aliases": [
+    "Prose"
+  ],
+  "frameworkSource": "legacy",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Typography"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Typography"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Typography"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
+}

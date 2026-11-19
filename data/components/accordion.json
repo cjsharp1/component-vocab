@@ -1,12 +1,11 @@
 {
   "slug": "accordion",
   "name": "Accordion",
-  "order": 29,
+  "order": 19,
   "status": "stable",
   "group": "text-lists",
   "description": "Expandable/collapsible content panels. Each panel has a header that reveals or hides associated content when triggered.",
   "summary": "Expandable/collapsible content panels",
-  "alsoKnownAs": "Accordion (Bootstrap), Expansion Panel (Material), Collapse (Ant), Disclosure Group (Apple), Accordion (shadcn)",
   "htmlElement": "<code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> or <code>&lt;div&gt;</code>",
   "elements": [
     {
@@ -72,25 +71,66 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for FAQs or content that benefits from progressive disclosure.",
     "For tabbed content (switch between panels), use <strong>Tabs</strong>.",
     "Don't nest Accordions.",
     "Keep panel headers short and descriptive — they should clearly indicate what content is hidden."
   ],
-  "legacyComparison": {
-    "bootstrap": "Accordion",
-    "material": "Expansion Panel",
-    "ant": "Collapse",
-    "apple": "Disclosure Group",
-    "shadcn": "Accordion"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Collapse",
+    "Expander",
+    "Details",
+    "Collapsible",
+    "Disclosure"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Accordion"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Accordion"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Collapse"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Accordion"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Accordion"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Accordion"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Accordion"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Accordion"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Disclosure controls"
+    }
+  }
 }

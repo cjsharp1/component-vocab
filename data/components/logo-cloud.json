@@ -1,12 +1,11 @@
 {
   "slug": "logo-cloud",
-  "name": "Logo Cloud",
-  "order": 21,
+  "name": "Logo cloud",
+  "order": 14,
   "status": "stable",
   "group": "content-display",
   "description": "A collection of partner, client, or technology logos arranged in a row or grid. Communicates trust and social proof through recognizable brand marks.",
   "summary": "Row/grid of partner/client logos",
-  "alsoKnownAs": "— (no direct equivalent in major systems, common marketing pattern)",
   "htmlElement": "<code>&lt;div&gt;</code>",
   "elements": [
     {
@@ -58,29 +57,67 @@
     {
       "caption": "Spacious — fewer, larger",
       "wireframe": "wireframes/logo-cloud/variation-4.svg"
+    },
+    {
+      "caption": "Scrolling (formerly Marquee)",
+      "wireframe": "wireframes/logo-cloud/from-marquee.svg"
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for showing client/partner logos on a landing page. Keep logos at consistent heights. Grayscale treatment prevents visual competition with page content.",
     "Normalize logo sizes by height (not width) to maintain visual balance.",
     "Grayscale or monochrome treatment creates a cohesive look and prevents color clashes.",
     "Include alt text for each logo for accessibility.",
-    "For scrolling/animated logos, use Marquee instead."
+    "For scrolling/animated logos, use the scrolling variant (formerly Marquee)."
   ],
-  "legacyComparison": {
-    "bootstrap": "—",
-    "material": "—",
-    "ant": "—",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "absorbed": [
+    "Marquee"
+  ],
+  "formerNames": [
+    "Logo Cloud"
+  ],
+  "aliases": [
+    "Logo Cloud"
+  ],
+  "frameworkSource": "legacy",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

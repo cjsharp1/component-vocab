@@ -1,12 +1,11 @@
 {
   "slug": "testimonial",
   "name": "Testimonial",
-  "order": 16,
+  "order": 11,
   "status": "stable",
   "group": "content-display",
   "description": "A quote, review, or endorsement attributed to a specific person or organization. Provides social proof and credibility.",
   "summary": "Quote/review attributed to a person",
-  "alsoKnownAs": "— (no direct equivalent in major systems)",
   "htmlElement": "<code>&lt;blockquote&gt;</code>",
   "elements": [
     {
@@ -82,26 +81,51 @@
       "caption": "Testimonial List — 3-column row layout"
     }
   ],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "collection",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
-    "Use for customer quotes and reviews. For general blockquotes within prose, use Callout. For attributed pull-quotes, use Callout.",
+    "Use for customer quotes and reviews. For general blockquotes within body text, use Quote. For pull-quotes, use Quote.",
     "Always wrap testimonial content in <code>&lt;blockquote&gt;</code> for semantic HTML.",
     "Keep quotes concise — aim for 2-4 sentences. Long testimonials lose impact.",
     "Include attribution context (role/company) to add credibility to the quote."
   ],
-  "legacyComparison": {
-    "bootstrap": "—",
-    "material": "—",
-    "ant": "—",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "legacy",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

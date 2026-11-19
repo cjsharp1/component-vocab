@@ -1,0 +1,143 @@
+{
+  "slug": "menu-button",
+  "name": "Menu button",
+  "order": 37,
+  "status": "stable",
+  "group": "interactive",
+  "description": "A menu of actions or navigation links revealed from a trigger element. Appears as a floating list on click.",
+  "summary": "Menu of actions or links revealed from a trigger",
+  "htmlElement": "<code>&lt;div&gt;</code> with role=\"menu\"",
+  "elements": [
+    {
+      "name": "Trigger button",
+      "required": "Yes",
+      "description": "Button or link that opens the menu"
+    },
+    {
+      "name": "Menu items",
+      "required": "Yes",
+      "description": "List of clickable actions or links"
+    },
+    {
+      "name": "Dividers",
+      "required": "No",
+      "description": "Visual separators between groups"
+    },
+    {
+      "name": "Icons per item",
+      "required": "No",
+      "description": "Optional icons beside each item"
+    }
+  ],
+  "wireframe": "wireframes/menu-button/default.svg",
+  "thumbnail": "wireframes/menu-button/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Trigger",
+      "options": "Button, Icon, Text link",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Position",
+      "options": "Below, Above, Left, Right",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Dividers",
+      "options": "None, Between groups",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Icons",
+      "options": "Shown, Hidden",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Trigger: Icon (position below)",
+      "wireframe": "wireframes/menu-button/variation-1.svg"
+    },
+    {
+      "caption": "Position: Above",
+      "wireframe": "wireframes/menu-button/variation-2.svg"
+    },
+    {
+      "caption": "Dividers: Between groups",
+      "wireframe": "wireframes/menu-button/variation-3.svg"
+    },
+    {
+      "caption": "Icons: Shown",
+      "wireframe": "wireframes/menu-button/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use for action menus attached to buttons or icons. For primary navigation, use Navigation.",
+    "For rich informational content, use Popover. Menu button is best for lists of actions or links.",
+    "Ensure keyboard navigation is supported: arrow keys to navigate items, Enter/Space to activate, Escape to close.",
+    "Dismiss on outside click or when an action is selected."
+  ],
+  "related": [],
+  "formerNames": [
+    "Dropdown"
+  ],
+  "aliases": [
+    "Dropdown menu",
+    "Dropdown"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "alias",
+      "name": "Menu"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Dropdowns"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Dropdown"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Menu buttons"
+    },
+    "Polaris": {
+      "match": "alias",
+      "name": "Menu"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Dropdown menu"
+    },
+    "Chakra UI": {
+      "match": "alias",
+      "name": "Menu"
+    },
+    "Radix Themes": {
+      "match": "alias",
+      "name": "Dropdown Menu"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Dropdown Menu"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Menu"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Pull-down buttons"
+    }
+  }
+}

@@ -5,43 +5,123 @@
   "description": "One component in the vocabulary. String fields ending in HTML content (description, htmlElement, captions, notes) hold trusted inline HTML copied from the pages.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["slug", "name", "order", "status", "group", "description", "summary", "alsoKnownAs", "htmlElement", "elements", "wireframe", "thumbnail", "configOptions", "variants", "collections", "sectionOrder", "usageNotes", "legacyComparison", "related"],
+  "required": [
+    "slug",
+    "name",
+    "order",
+    "status",
+    "group",
+    "description",
+    "summary",
+    "htmlElement",
+    "elements",
+    "wireframe",
+    "thumbnail",
+    "configOptions",
+    "variants",
+    "collections",
+    "usageNotes",
+    "related",
+    "aliases",
+    "frameworkSource",
+    "frameworkNames"
+  ],
   "properties": {
-    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
-    "name": { "type": "string", "minLength": 1 },
-    "order": { "type": "integer", "minimum": 1 },
-    "status": { "enum": ["stable", "draft", "retired"] },
-    "group": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
-    "description": { "type": "string", "minLength": 1 },
-    "summary": { "type": "string", "minLength": 1 },
-    "alsoKnownAs": { "type": "string" },
-    "htmlElement": { "type": "string" },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "stable",
+        "draft",
+        "retired"
+      ]
+    },
+    "group": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "htmlElement": {
+      "type": "string"
+    },
     "elements": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["name", "required", "description"],
+        "required": [
+          "name",
+          "required",
+          "description"
+        ],
         "properties": {
-          "name": { "type": "string", "minLength": 1 },
-          "required": { "enum": ["Yes", "No"] },
-          "description": { "type": "string" }
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required": {
+            "enum": [
+              "Yes",
+              "No"
+            ]
+          },
+          "description": {
+            "type": "string"
+          }
         }
       }
     },
-    "wireframe": { "type": "string", "pattern": "^wireframes/.+\\.svg$" },
-    "thumbnail": { "type": "string", "pattern": "^wireframes/.+\\.svg$" },
+    "wireframe": {
+      "type": "string",
+      "pattern": "^wireframes/.+\\.svg$"
+    },
+    "thumbnail": {
+      "type": "string",
+      "pattern": "^wireframes/.+\\.svg$"
+    },
     "configOptions": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["config", "options", "affectsLayout", "highlighted"],
+        "required": [
+          "config",
+          "options",
+          "affectsLayout",
+          "highlighted"
+        ],
         "properties": {
-          "config": { "type": "string", "minLength": 1 },
-          "options": { "type": "string" },
-          "affectsLayout": { "type": "string", "minLength": 1 },
-          "highlighted": { "type": "boolean" }
+          "config": {
+            "type": "string",
+            "minLength": 1
+          },
+          "options": {
+            "type": "string"
+          },
+          "affectsLayout": {
+            "type": "string",
+            "minLength": 1
+          },
+          "highlighted": {
+            "type": "boolean"
+          }
         }
       }
     },
@@ -50,10 +130,18 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["caption", "wireframe"],
+        "required": [
+          "caption",
+          "wireframe"
+        ],
         "properties": {
-          "caption": { "type": "string" },
-          "wireframe": { "type": "string", "pattern": "^wireframes/.+\\.svg$" }
+          "caption": {
+            "type": "string"
+          },
+          "wireframe": {
+            "type": "string",
+            "pattern": "^wireframes/.+\\.svg$"
+          }
         }
       }
     },
@@ -62,31 +150,95 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["title", "wireframe", "caption"],
+        "required": [
+          "title",
+          "wireframe",
+          "caption"
+        ],
         "properties": {
-          "title": { "type": "string", "minLength": 1 },
-          "wireframe": { "type": "string", "pattern": "^wireframes/.+\\.svg$" },
-          "caption": { "type": ["string", "null"] }
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "wireframe": {
+            "type": "string",
+            "pattern": "^wireframes/.+\\.svg$"
+          },
+          "caption": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
         }
       }
     },
-    "sectionOrder": {
+    "usageNotes": {
       "type": "array",
-      "items": { "enum": ["Elements", "Default Layout", "collection", "Configuration Options", "Layout Variations", "Usage Notes"] }
-    },
-    "usageNotes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-    "legacyComparison": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["bootstrap", "material", "ant", "apple", "shadcn"],
-      "properties": {
-        "bootstrap": { "type": "string" },
-        "material": { "type": "string" },
-        "ant": { "type": "string" },
-        "apple": { "type": "string" },
-        "shadcn": { "type": "string" }
+      "items": {
+        "type": "string",
+        "minLength": 1
       }
     },
-    "related": { "type": "array", "items": { "type": "string" } }
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Other names for this component, from the research list, the CSV and former page names."
+    },
+    "formerNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Names this page had before a rename."
+    },
+    "absorbed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Retired pages folded into this one as variants."
+    },
+    "frameworkSource": {
+      "enum": [
+        "csv",
+        "legacy"
+      ],
+      "description": "csv: docs/research/framework-alignment.csv. legacy: the old page's 5-system row (component not in the CSV)."
+    },
+    "frameworkNames": {
+      "type": "object",
+      "description": "Per design system. match: same (CSV ●), alias (◐, a known alternative name), different (○, a related component under another name), none (—). The symbol meanings are inferred from the CSV; the research doc does not define them.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "match"
+        ],
+        "properties": {
+          "match": {
+            "enum": [
+              "same",
+              "alias",
+              "different",
+              "none"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
   }
 }

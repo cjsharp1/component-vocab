@@ -1,12 +1,11 @@
 {
   "slug": "embed",
   "name": "Embed",
-  "order": 14,
+  "order": 10,
   "status": "stable",
   "group": "content-display",
   "description": "Third-party content embedded inline within the page. Videos, maps, social media posts, or interactive widgets from external services.",
   "summary": "Third-party content embedded inline",
-  "alsoKnownAs": "Embed (HTML standard), — (Bootstrap), — (Material), — (Ant), — (Apple), — (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> containing <code>&lt;iframe&gt;</code> or <code>&lt;embed&gt;</code>",
   "elements": [
     {
@@ -66,25 +65,52 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for YouTube/Vimeo videos, Google Maps, tweets, or any iframe content. Always provide a fallback or description for accessibility. Maintain aspect ratio.",
     "Wrap iframes in a container with <code>padding-bottom</code> hack or <code>aspect-ratio</code> CSS to maintain responsive aspect ratios.",
     "Include <code>loading=\"lazy\"</code> attribute on iframes to improve page load performance.",
     "Consider privacy implications — third-party embeds often include tracking. Use privacy-friendly alternatives when available."
   ],
-  "legacyComparison": {
-    "bootstrap": "Embed",
-    "material": "—",
-    "ant": "—",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "legacy",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Embed"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

@@ -1,0 +1,117 @@
+{
+  "slug": "sidebar",
+  "name": "Sidebar",
+  "order": 4,
+  "status": "stable",
+  "group": "layout",
+  "description": "Complementary content that is tangentially related to the main content. Used for sidebars, related links, advertising, or supplementary information.",
+  "summary": "Sidebar or complementary content",
+  "htmlElement": "<code>&lt;aside&gt;</code>",
+  "elements": [
+    {
+      "name": "Content",
+      "required": "Yes",
+      "description": "Sidebar content (nav, widgets, related links)"
+    },
+    {
+      "name": "Heading",
+      "required": "No",
+      "description": "Optional sidebar title"
+    }
+  ],
+  "wireframe": "wireframes/sidebar/default.svg",
+  "thumbnail": "wireframes/sidebar/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Position",
+      "options": "Left, Right",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Width",
+      "options": "Narrow (200px), Default (280px), Wide (360px)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Behavior",
+      "options": "Always visible, Collapsible, Overlay (mobile)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Left — sidebar on left",
+      "wireframe": "wireframes/sidebar/variation-1.svg"
+    },
+    {
+      "caption": "Right — sidebar on right",
+      "wireframe": "wireframes/sidebar/variation-2.svg"
+    },
+    {
+      "caption": "Narrow — 200px sidebar",
+      "wireframe": "wireframes/sidebar/variation-3.svg"
+    },
+    {
+      "caption": "Wide — 360px sidebar",
+      "wireframe": "wireframes/sidebar/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use for content that supplements but isn't essential to the main content.",
+    "On mobile, sidebars typically collapse into a drawer or move below main content.",
+    "Do not use Sidebar for primary navigation — use Navigation in Header instead."
+  ],
+  "related": [],
+  "formerNames": [
+    "Aside"
+  ],
+  "aliases": [
+    "Aside"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "different",
+      "name": "UI shell left panel"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "alias",
+      "name": "Side navigation"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Sidebar"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
+}

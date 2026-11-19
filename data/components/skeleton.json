@@ -1,12 +1,11 @@
 {
   "slug": "skeleton",
   "name": "Skeleton",
-  "order": 44,
+  "order": 34,
   "status": "stable",
   "group": "indicators-status",
   "description": "A placeholder loading state that mimics the shape of content to come. Shows the layout structure before real content loads.",
   "summary": "Placeholder loading state mimicking content shape",
-  "alsoKnownAs": "Placeholder (Bootstrap), — (Material), Skeleton (Ant), Redacted (Apple), Skeleton (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with aria-busy=\"true\"",
   "elements": [
     {
@@ -56,25 +55,61 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use when content takes more than 300ms to load. For indeterminate loading without showing layout, use Spinner.",
     "Match the skeleton shape to the actual content layout. Users should recognize what's loading.",
     "Consider a pulse or wave animation to indicate activity, but ensure it is not distracting.",
     "Use <code>aria-busy=\"true\"</code> and provide an accessible label like \"Loading content\" for screen readers."
   ],
-  "legacyComparison": {
-    "bootstrap": "Placeholder",
-    "material": "—",
-    "ant": "Skeleton",
-    "apple": "Redacted",
-    "shadcn": "Skeleton"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Skeleton loader"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Skeleton"
+    },
+    "Bootstrap": {
+      "match": "different",
+      "name": "Placeholders"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Skeleton"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Skeleton"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Skeleton"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Skeleton"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Skeleton"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Skeleton"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

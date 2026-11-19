@@ -1,12 +1,11 @@
 {
   "slug": "footer",
   "name": "Footer",
-  "order": 4,
+  "order": 3,
   "status": "stable",
   "group": "layout",
   "description": "The bottom-level site footer containing secondary navigation, legal information, contact details, and social links. Persists across pages.",
   "summary": "Site footer with links, legal, contact",
-  "alsoKnownAs": "Layout Footer (Ant)",
   "htmlElement": "<code>&lt;footer&gt;</code>",
   "elements": [
     {
@@ -66,24 +65,51 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Place as the last child of <code>&lt;body&gt;</code>.",
     "Always include copyright/legal text.",
     "Use Grid inside Footer for multi-column layouts."
   ],
-  "legacyComparison": {
-    "bootstrap": "—",
-    "material": "—",
-    "ant": "Layout Footer",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "alias",
+      "name": "GOV.UK footer"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

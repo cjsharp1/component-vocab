@@ -1,12 +1,11 @@
 {
   "slug": "badge",
   "name": "Badge",
-  "order": 43,
+  "order": 33,
   "status": "stable",
   "group": "indicators-status",
   "description": "A small indicator attached to another element — showing a count, status, or \"new\" marker. Draws attention to changes or unread items.",
   "summary": "Small indicator (count, status dot) attached to an element",
-  "alsoKnownAs": "Badge (Bootstrap), Badge (Material), Badge (Ant), Badge (Apple), Badge (shadcn)",
   "htmlElement": "<code>&lt;span&gt;</code>",
   "elements": [
     {
@@ -61,25 +60,66 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for notification counts, unread indicators, or status dots attached to buttons, icons, or avatars.",
     "For counts over 99, consider truncating to \"99+\" to keep the badge compact.",
     "Ensure color choices meet accessibility contrast requirements against both the badge background and the page/anchor element.",
     "A dot badge is useful when you want to indicate presence or activity without a specific count."
   ],
-  "legacyComparison": {
-    "bootstrap": "Badge",
-    "material": "Badge",
-    "ant": "Badge",
-    "apple": "Badge",
-    "shadcn": "Badge"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Tag",
+    "Label",
+    "Chip"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Tag"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Badge"
+    },
+    "GOV.UK": {
+      "match": "alias",
+      "name": "Tag"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }

@@ -1,7 +1,0 @@
-<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Split 2-panel -->
-  <rect class="media-placeholder" x="20" y="30" width="170" height="140" rx="4" />
-  <text x="105" y="105" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">Before</text>
-  <rect class="media-placeholder" x="210" y="30" width="170" height="140" rx="4" />
-  <text x="295" y="105" text-anchor="middle" font-size="12" fill="#666" opacity="0.7">After</text>
-</svg>

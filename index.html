@@ -56,6 +56,23 @@
       <p><small>Hover over wireframe elements to see their labels. On touch devices, tap to reveal.</small></p>
     </section>
 
+    <section id="universal-configuration">
+      <h2>Universal configuration</h2>
+      <p>These options apply to every component. Each component page lists only its own options.</p>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Background</td><td>Color, Image, Gradient, None</td></tr>
+          <tr><td>Spacing</td><td>Compact, Default, Spacious</td></tr>
+          <tr><td>Width</td><td>Contained, Full-width</td></tr>
+          <tr><td>Alignment</td><td>Left, Center, Right</td></tr>
+          <tr><td>Theme</td><td>Light, Dark</td></tr>
+        </tbody>
+      </table>
+    </section>
+
     <section id="components">
       <h2>Components</h2>
       <nav>
@@ -78,15 +95,6 @@
       <div data-category="layout">
         <h3 class="category-heading">Layout</h3>
         <ul class="component-grid">
-          <li>
-            <a href="./components/container.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="10" width="170" height="60" rx="2"/>
-              </svg>
-              <strong>Container</strong>
-              <small>Constrains content to a max-width, centers horizontally</small>
-            </a>
-          </li>
           <li>
             <a href="./components/section.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
@@ -120,26 +128,14 @@
             </a>
           </li>
           <li>
-            <a href="./components/aside.html">
+            <a href="./components/sidebar.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="region" x="10" y="10" width="50" height="60" rx="2"/>
                 <rect class="text-line" x="15" y="20" width="40" height="6"/>
                 <rect class="text-line" x="15" y="30" width="40" height="6"/>
               </svg>
-              <strong>Aside</strong>
+              <strong>Sidebar</strong>
               <small>Sidebar or complementary content</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/article.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="10" width="170" height="60" rx="2"/>
-                <rect class="text-line" x="50" y="20" width="120" height="8"/>
-                <rect class="text-line" x="50" y="32" width="150" height="4"/>
-                <rect class="text-line" x="50" y="38" width="150" height="4"/>
-              </svg>
-              <strong>Article</strong>
-              <small>Self-contained distributable content</small>
             </a>
           </li>
           <li>
@@ -168,18 +164,7 @@
                 <rect class="interactive" x="100" y="50" width="50" height="12" rx="4"/>
               </svg>
               <strong>Hero</strong>
-              <small>Large intro area — headline, subtext, CTA</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/banner.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="10" y="30" width="230" height="20" rx="2"/>
-                <rect class="text-line" x="20" y="37" width="180" height="6"/>
-                <rect class="interactive" x="210" y="36" width="20" height="8" rx="2"/>
-              </svg>
-              <strong>Banner</strong>
-              <small>Narrow high-visibility strip for announcements</small>
+              <small>Large intro area — headline, subtext, call to action</small>
             </a>
           </li>
         </ul>
@@ -213,24 +198,12 @@
             </a>
           </li>
           <li>
-            <a href="./components/media.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="media-placeholder" x="20" y="15" width="80" height="50"/>
-                <rect class="text-line" x="110" y="25" width="120" height="6"/>
-                <rect class="text-line" x="110" y="35" width="100" height="4"/>
-                <rect class="text-line" x="110" y="41" width="100" height="4"/>
-              </svg>
-              <strong>Media</strong>
-              <small>Image/video paired with adjacent text</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/figure.html">
+            <a href="./components/image.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="media-placeholder" x="60" y="15" width="130" height="40"/>
                 <rect class="text-line" x="80" y="60" width="90" height="4"/>
               </svg>
-              <strong>Figure</strong>
+              <strong>Image</strong>
               <small>Image/illustration with caption</small>
             </a>
           </li>
@@ -242,17 +215,6 @@
               </svg>
               <strong>Embed</strong>
               <small>Third-party content embedded inline</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/profile.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <circle class="media-placeholder" cx="50" cy="40" r="20"/>
-                <rect class="text-line" x="80" y="30" width="80" height="8"/>
-                <rect class="text-line" x="80" y="42" width="60" height="5"/>
-              </svg>
-              <strong>Profile</strong>
-              <small>Person — photo, name, role, bio</small>
             </a>
           </li>
           <li>
@@ -268,33 +230,13 @@
             </a>
           </li>
           <li>
-            <a href="./components/stat.html">
+            <a href="./components/stats.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="text-line" x="80" y="25" width="90" height="15"/>
                 <rect class="text-line" x="100" y="45" width="50" height="6"/>
               </svg>
-              <strong>Stat</strong>
+              <strong>Stats</strong>
               <small>Single key metric displayed prominently</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/showcase.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="media-placeholder" x="60" y="10" width="130" height="50"/>
-                <rect class="text-line" x="80" y="65" width="90" height="5"/>
-              </svg>
-              <strong>Showcase</strong>
-              <small>Focused presentation of a single product/project</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/comparison.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="20" y="15" width="90" height="50" rx="2"/>
-                <rect class="region" x="140" y="15" width="90" height="50" rx="2"/>
-              </svg>
-              <strong>Comparison</strong>
-              <small>Side-by-side comparison of items</small>
             </a>
           </li>
           <li>
@@ -318,47 +260,12 @@
                 <rect class="media-placeholder" x="120" y="25" width="40" height="30"/>
                 <rect class="media-placeholder" x="170" y="25" width="40" height="30"/>
               </svg>
-              <strong>Logo Cloud</strong>
+              <strong>Logo cloud</strong>
               <small>Row/grid of partner/client logos</small>
             </a>
           </li>
           <li>
-            <a href="./components/marquee.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="10" y="30" width="230" height="20" rx="2"/>
-                <rect class="text-line" x="20" y="37" width="60" height="6"/>
-                <rect class="text-line" x="90" y="37" width="60" height="6"/>
-                <rect class="text-line" x="160" y="37" width="60" height="6"/>
-              </svg>
-              <strong>Marquee</strong>
-              <small>Horizontally scrolling content strip</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/mosaic.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="10" y="10" width="70" height="40" rx="2"/>
-                <rect class="region" x="90" y="10" width="50" height="60" rx="2"/>
-                <rect class="region" x="10" y="55" width="70" height="15" rx="2"/>
-                <rect class="region" x="150" y="10" width="90" height="30" rx="2"/>
-              </svg>
-              <strong>Mosaic</strong>
-              <small>Asymmetric mixed-size content layout</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/callout.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="25" width="170" height="30" rx="2"/>
-                <circle class="interactive" cx="55" cy="40" r="6"/>
-                <rect class="text-line" x="70" y="37" width="130" height="6"/>
-              </svg>
-              <strong>Callout</strong>
-              <small>Visually distinct block — tip, note, pull-quote</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/snapshot.html">
+            <a href="./components/description-list.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="region" x="40" y="20" width="170" height="40" rx="2"/>
                 <rect class="text-line" x="50" y="30" width="60" height="5"/>
@@ -366,7 +273,7 @@
                 <rect class="text-line" x="50" y="42" width="60" height="5"/>
                 <rect class="text-line" x="120" y="42" width="60" height="5"/>
               </svg>
-              <strong>Snapshot</strong>
+              <strong>Description list</strong>
               <small>Compact key-value summary block</small>
             </a>
           </li>
@@ -377,7 +284,7 @@
         <h3 class="category-heading">Text &amp; Lists</h3>
         <ul class="component-grid">
           <li>
-            <a href="./components/prose.html">
+            <a href="./components/rich-text.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="text-line" x="40" y="15" width="170" height="6"/>
                 <rect class="text-line" x="40" y="25" width="170" height="4"/>
@@ -386,7 +293,7 @@
                 <rect class="text-line" x="40" y="47" width="170" height="4"/>
                 <rect class="text-line" x="40" y="53" width="170" height="4"/>
               </svg>
-              <strong>Prose</strong>
+              <strong>Rich Text</strong>
               <small>Long-form rich text content</small>
             </a>
           </li>
@@ -445,19 +352,19 @@
         <h3 class="category-heading">Navigation</h3>
         <ul class="component-grid">
           <li>
-            <a href="./components/nav.html">
+            <a href="./components/navigation.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="interactive" x="40" y="30" width="40" height="10" rx="2"/>
                 <rect class="interactive" x="90" y="30" width="40" height="10" rx="2"/>
                 <rect class="interactive" x="140" y="30" width="40" height="10" rx="2"/>
                 <rect class="interactive" x="190" y="30" width="40" height="10" rx="2"/>
               </svg>
-              <strong>Nav</strong>
+              <strong>Navigation</strong>
               <small>Primary navigation menu</small>
             </a>
           </li>
           <li>
-            <a href="./components/breadcrumb.html">
+            <a href="./components/breadcrumbs.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="text-line" x="40" y="35" width="30" height="6"/>
                 <text x="75" y="40" font-size="12" fill="currentColor" opacity="0.3">/</text>
@@ -465,7 +372,7 @@
                 <text x="120" y="40" font-size="12" fill="currentColor" opacity="0.3">/</text>
                 <rect class="interactive" x="130" y="35" width="30" height="6"/>
               </svg>
-              <strong>Breadcrumb</strong>
+              <strong>Breadcrumbs</strong>
               <small>Hierarchical location trail</small>
             </a>
           </li>
@@ -488,25 +395,25 @@
         <h3 class="category-heading">Calls to Action</h3>
         <ul class="component-grid">
           <li>
-            <a href="./components/cta.html">
+            <a href="./components/call-to-action.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="region" x="40" y="15" width="170" height="50" rx="2"/>
                 <rect class="text-line" x="80" y="28" width="90" height="8"/>
                 <rect class="text-line" x="90" y="40" width="70" height="5"/>
                 <rect class="interactive" x="90" y="50" width="70" height="12" rx="4"/>
               </svg>
-              <strong>CTA</strong>
+              <strong>Call to action</strong>
               <small>Prominent call-to-action block</small>
             </a>
           </li>
           <li>
-            <a href="./components/pricing.html">
+            <a href="./components/pricing-table.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="region" x="20" y="10" width="70" height="60" rx="2"/>
                 <rect class="region" x="100" y="10" width="70" height="60" rx="2"/>
                 <rect class="region" x="180" y="10" width="60" height="60" rx="2"/>
               </svg>
-              <strong>Pricing</strong>
+              <strong>Pricing table</strong>
               <small>Pricing plans/tiers for comparison</small>
             </a>
           </li>
@@ -528,13 +435,13 @@
             </a>
           </li>
           <li>
-            <a href="./components/modal.html">
+            <a href="./components/dialog.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect x="10" y="10" width="230" height="60" fill="currentColor" opacity="0.1"/>
                 <rect class="region" x="60" y="20" width="130" height="40" rx="2"/>
                 <rect class="interactive" x="160" y="50" width="20" height="8" rx="2"/>
               </svg>
-              <strong>Modal</strong>
+              <strong>Dialog</strong>
               <small>Overlay dialog requiring action</small>
             </a>
           </li>
@@ -628,12 +535,12 @@
             </a>
           </li>
           <li>
-            <a href="./components/progress.html">
+            <a href="./components/progress-bar.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="region" x="40" y="35" width="170" height="10" rx="5"/>
                 <rect class="interactive" x="40" y="35" width="100" height="10" rx="5"/>
               </svg>
-              <strong>Progress</strong>
+              <strong>Progress bar</strong>
               <small>Visual indicator of task/process completion</small>
             </a>
           </li>
@@ -653,14 +560,14 @@
         <h3 class="category-heading">Interactive</h3>
         <ul class="component-grid">
           <li>
-            <a href="./components/dropdown.html">
+            <a href="./components/menu-button.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="interactive" x="80" y="20" width="90" height="15" rx="2"/>
                 <rect class="region" x="80" y="37" width="90" height="30" rx="2"/>
                 <rect class="text-line" x="88" y="43" width="70" height="5"/>
                 <rect class="text-line" x="88" y="52" width="70" height="5"/>
               </svg>
-              <strong>Dropdown</strong>
+              <strong>Menu button</strong>
               <small>Menu of actions or links revealed from a trigger</small>
             </a>
           </li>
@@ -691,11 +598,11 @@
         <h3 class="category-heading">Utility</h3>
         <ul class="component-grid">
           <li>
-            <a href="./components/divider.html">
+            <a href="./components/separator.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <line x1="40" y1="40" x2="210" y2="40" stroke="currentColor" stroke-width="2" opacity="0.3"/>
               </svg>
-              <strong>Divider</strong>
+              <strong>Separator</strong>
               <small>Visual separator between content sections</small>
             </a>
           </li>
@@ -711,21 +618,13 @@
             <tr>
               <th>Component</th>
               <th>Bootstrap</th>
-              <th>Material Design</th>
+              <th>MUI</th>
               <th>Ant Design</th>
               <th>Apple HIG</th>
               <th>shadcn</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><a href="./components/container.html">Container</a></td>
-              <td>Container</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
             <tr>
               <td><a href="./components/section.html">Section</a></td>
               <td>—</td>
@@ -736,57 +635,41 @@
             </tr>
             <tr>
               <td><a href="./components/header.html">Header</a></td>
-              <td>Navbar (partial)</td>
-              <td>Top App Bar</td>
-              <td>Layout Header</td>
-              <td>Navigation Bar</td>
+              <td>—</td>
+              <td>App Bar</td>
+              <td>—</td>
+              <td>—</td>
               <td>—</td>
             </tr>
             <tr>
               <td><a href="./components/footer.html">Footer</a></td>
               <td>—</td>
               <td>—</td>
-              <td>Layout Footer</td>
+              <td>—</td>
               <td>—</td>
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/aside.html">Aside</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>Layout Sider</td>
-              <td>Sidebar (partial)</td>
-              <td>Sidebar (partial)</td>
-            </tr>
-            <tr>
-              <td><a href="./components/article.html">Article</a></td>
+              <td><a href="./components/sidebar.html">Sidebar</a></td>
               <td>—</td>
               <td>—</td>
               <td>—</td>
               <td>—</td>
-              <td>—</td>
+              <td>Sidebar</td>
             </tr>
             <tr>
               <td><a href="./components/grid.html">Grid</a></td>
-              <td>Grid system</td>
-              <td>—</td>
-              <td>Row/Col</td>
+              <td>Grid</td>
+              <td>Grid</td>
+              <td>Grid</td>
               <td>—</td>
               <td>—</td>
             </tr>
             <tr>
               <td><a href="./components/hero.html">Hero</a></td>
-              <td>Jumbotron (deprecated)</td>
               <td>—</td>
               <td>—</td>
               <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/banner.html">Banner</a></td>
-              <td>Alert (partial)</td>
-              <td>Banner</td>
-              <td>Alert (partial)</td>
               <td>—</td>
               <td>—</td>
             </tr>
@@ -807,19 +690,11 @@
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/media.html">Media</a></td>
-              <td>Media object (deprecated)</td>
+              <td><a href="./components/image.html">Image</a></td>
+              <td>Images</td>
               <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/figure.html">Figure</a></td>
-              <td>Figure</td>
-              <td>—</td>
-              <td>Image (partial)</td>
-              <td>—</td>
+              <td>Image</td>
+              <td>Image views</td>
               <td>—</td>
             </tr>
             <tr>
@@ -831,14 +706,6 @@
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/profile.html">Profile</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>Avatar + Card (composed)</td>
-              <td>—</td>
-              <td>Avatar + Card (composed)</td>
-            </tr>
-            <tr>
               <td><a href="./components/testimonial.html">Testimonial</a></td>
               <td>—</td>
               <td>—</td>
@@ -847,7 +714,7 @@
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/stat.html">Stat</a></td>
+              <td><a href="./components/stats.html">Stats</a></td>
               <td>—</td>
               <td>—</td>
               <td>Statistic</td>
@@ -855,31 +722,15 @@
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/showcase.html">Showcase</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/comparison.html">Comparison</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
               <td><a href="./components/timeline.html">Timeline</a></td>
               <td>—</td>
-              <td>—</td>
+              <td>Timeline</td>
               <td>Timeline</td>
               <td>—</td>
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/logo-cloud.html">Logo Cloud</a></td>
+              <td><a href="./components/logo-cloud.html">Logo cloud</a></td>
               <td>—</td>
               <td>—</td>
               <td>—</td>
@@ -887,89 +738,65 @@
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/marquee.html">Marquee</a></td>
+              <td><a href="./components/description-list.html">Description list</a></td>
               <td>—</td>
               <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/mosaic.html">Mosaic</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
+              <td>Descriptions</td>
               <td>—</td>
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/callout.html">Callout</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>Alert (partial)</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/snapshot.html">Snapshot</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>Descriptions (partial)</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/prose.html">Prose</a></td>
+              <td><a href="./components/rich-text.html">Rich Text</a></td>
               <td>—</td>
               <td>Typography</td>
               <td>Typography</td>
               <td>—</td>
-              <td>Typography (partial)</td>
+              <td>Typography</td>
             </tr>
             <tr>
               <td><a href="./components/list.html">List</a></td>
-              <td>List Group</td>
+              <td>List group</td>
               <td>List</td>
-              <td>List</td>
-              <td>—</td>
+              <td>List (deprecated)</td>
+              <td>Lists and tables</td>
               <td>—</td>
             </tr>
             <tr>
               <td><a href="./components/table.html">Table</a></td>
+              <td>Tables</td>
               <td>Table</td>
-              <td>Data Table</td>
               <td>Table</td>
-              <td>—</td>
+              <td>Lists and tables</td>
               <td>Table</td>
             </tr>
             <tr>
               <td><a href="./components/accordion.html">Accordion</a></td>
               <td>Accordion</td>
-              <td>Expansion Panel</td>
+              <td>Accordion</td>
               <td>Collapse</td>
-              <td>Disclosure Group</td>
+              <td>Disclosure controls</td>
               <td>Accordion</td>
             </tr>
             <tr>
               <td><a href="./components/tabs.html">Tabs</a></td>
-              <td>Nav Tabs</td>
+              <td>Navs & tabs</td>
               <td>Tabs</td>
               <td>Tabs</td>
-              <td>Segmented Control (partial)</td>
+              <td>Tab views</td>
               <td>Tabs</td>
             </tr>
             <tr>
-              <td><a href="./components/nav.html">Nav</a></td>
+              <td><a href="./components/navigation.html">Navigation</a></td>
               <td>Navbar</td>
-              <td>Navigation Drawer / Top App Bar</td>
+              <td>—</td>
               <td>Menu</td>
-              <td>Tab Bar / Sidebar</td>
+              <td>—</td>
               <td>Navigation Menu</td>
             </tr>
             <tr>
-              <td><a href="./components/breadcrumb.html">Breadcrumb</a></td>
+              <td><a href="./components/breadcrumbs.html">Breadcrumbs</a></td>
               <td>Breadcrumb</td>
-              <td>—</td>
+              <td>Breadcrumbs</td>
               <td>Breadcrumb</td>
               <td>—</td>
               <td>Breadcrumb</td>
@@ -977,13 +804,13 @@
             <tr>
               <td><a href="./components/pagination.html">Pagination</a></td>
               <td>Pagination</td>
-              <td>—</td>
               <td>Pagination</td>
-              <td>—</td>
+              <td>Pagination</td>
+              <td>Page controls</td>
               <td>Pagination</td>
             </tr>
             <tr>
-              <td><a href="./components/cta.html">CTA</a></td>
+              <td><a href="./components/call-to-action.html">Call to action</a></td>
               <td>—</td>
               <td>—</td>
               <td>—</td>
@@ -991,7 +818,7 @@
               <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/pricing.html">Pricing</a></td>
+              <td><a href="./components/pricing-table.html">Pricing table</a></td>
               <td>—</td>
               <td>—</td>
               <td>—</td>
@@ -1000,39 +827,39 @@
             </tr>
             <tr>
               <td><a href="./components/form.html">Form</a></td>
+              <td>Forms</td>
+              <td>—</td>
               <td>Form</td>
-              <td>Text Field / Select</td>
-              <td>Form</td>
-              <td>Form</td>
-              <td>Form</td>
+              <td>—</td>
+              <td>—</td>
             </tr>
             <tr>
-              <td><a href="./components/modal.html">Modal</a></td>
+              <td><a href="./components/dialog.html">Dialog</a></td>
               <td>Modal</td>
               <td>Dialog</td>
               <td>Modal</td>
-              <td>Sheet / Alert</td>
+              <td>Sheets / Alerts</td>
               <td>Dialog</td>
             </tr>
             <tr>
               <td><a href="./components/alert.html">Alert</a></td>
+              <td>Alerts</td>
               <td>Alert</td>
-              <td>Snackbar (partial)</td>
               <td>Alert</td>
-              <td>Inline Alert</td>
+              <td>—</td>
               <td>Alert</td>
             </tr>
             <tr>
               <td><a href="./components/toast.html">Toast</a></td>
-              <td>Toast</td>
+              <td>Toasts</td>
               <td>Snackbar</td>
               <td>Message</td>
-              <td>Banner (partial)</td>
-              <td>Toast / Sonner</td>
+              <td>—</td>
+              <td>Toast</td>
             </tr>
             <tr>
               <td><a href="./components/tooltip.html">Tooltip</a></td>
-              <td>Tooltip</td>
+              <td>Tooltips</td>
               <td>Tooltip</td>
               <td>Tooltip</td>
               <td>—</td>
@@ -1040,64 +867,64 @@
             </tr>
             <tr>
               <td><a href="./components/popover.html">Popover</a></td>
+              <td>Popovers</td>
               <td>Popover</td>
-              <td>Menu (partial)</td>
               <td>Popover</td>
-              <td>Popover</td>
+              <td>Popovers</td>
               <td>Popover</td>
             </tr>
             <tr>
               <td><a href="./components/drawer.html">Drawer</a></td>
               <td>Offcanvas</td>
-              <td>Side Sheet</td>
               <td>Drawer</td>
+              <td>Drawer</td>
+              <td>Sheets</td>
               <td>Sheet</td>
-              <td>Sheet / Drawer</td>
             </tr>
             <tr>
               <td><a href="./components/badge.html">Badge</a></td>
               <td>Badge</td>
               <td>Badge</td>
               <td>Badge</td>
-              <td>Badge</td>
+              <td>—</td>
               <td>Badge</td>
             </tr>
             <tr>
               <td><a href="./components/skeleton.html">Skeleton</a></td>
-              <td>Placeholder</td>
-              <td>—</td>
+              <td>Placeholders</td>
               <td>Skeleton</td>
-              <td>Redacted</td>
+              <td>Skeleton</td>
+              <td>—</td>
               <td>Skeleton</td>
             </tr>
             <tr>
-              <td><a href="./components/progress.html">Progress</a></td>
+              <td><a href="./components/progress-bar.html">Progress bar</a></td>
               <td>Progress</td>
-              <td>Linear/Circular Progress</td>
               <td>Progress</td>
-              <td>Progress View</td>
+              <td>Progress</td>
+              <td>Progress indicators</td>
               <td>Progress</td>
             </tr>
             <tr>
               <td><a href="./components/spinner.html">Spinner</a></td>
-              <td>Spinner</td>
-              <td>Circular Progress (indeterminate)</td>
+              <td>Spinners</td>
+              <td>Progress</td>
               <td>Spin</td>
-              <td>Activity Indicator</td>
+              <td>Progress indicators</td>
               <td>Spinner</td>
             </tr>
             <tr>
-              <td><a href="./components/dropdown.html">Dropdown</a></td>
-              <td>Dropdown</td>
+              <td><a href="./components/menu-button.html">Menu button</a></td>
+              <td>Dropdowns</td>
               <td>Menu</td>
               <td>Dropdown</td>
-              <td>Menu</td>
+              <td>Pull-down buttons</td>
               <td>Dropdown Menu</td>
             </tr>
             <tr>
               <td><a href="./components/carousel.html">Carousel</a></td>
               <td>Carousel</td>
-              <td>Carousel</td>
+              <td>—</td>
               <td>Carousel</td>
               <td>—</td>
               <td>Carousel</td>
@@ -1105,14 +932,14 @@
             <tr>
               <td><a href="./components/avatar.html">Avatar</a></td>
               <td>—</td>
-              <td>—</td>
+              <td>Avatar</td>
               <td>Avatar</td>
               <td>—</td>
               <td>Avatar</td>
             </tr>
             <tr>
-              <td><a href="./components/divider.html">Divider</a></td>
-              <td>—</td>
+              <td><a href="./components/separator.html">Separator</a></td>
+              <td>Vertical rule</td>
               <td>Divider</td>
               <td>Divider</td>
               <td>—</td>

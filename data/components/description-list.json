@@ -1,0 +1,122 @@
+{
+  "slug": "description-list",
+  "name": "Description list",
+  "order": 15,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A compact summary block showing key details at a glance. Key-value metadata presented in a structured format — event info, product specs, recipe metadata.",
+  "summary": "Compact key-value summary block",
+  "htmlElement": "<code>&lt;dl&gt;</code> or <code>&lt;div&gt;</code>",
+  "elements": [
+    {
+      "name": "Key-value pairs",
+      "required": "Yes",
+      "description": "Label + value entries"
+    },
+    {
+      "name": "Title",
+      "required": "No",
+      "description": "What this snapshot describes"
+    },
+    {
+      "name": "Icon per row",
+      "required": "No",
+      "description": "Visual per key-value pair"
+    }
+  ],
+  "wireframe": "wireframes/description-list/default.svg",
+  "thumbnail": "wireframes/description-list/thumbnail.svg",
+  "configOptions": [
+    {
+      "config": "Layout",
+      "options": "Vertical list, Horizontal row, Grid (2-col)",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Density",
+      "options": "Compact (tight spacing), Default, Spacious",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Borders",
+      "options": "Divided rows, None, Boxed",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Vertical list — divided rows",
+      "wireframe": "wireframes/description-list/variation-1.svg"
+    },
+    {
+      "caption": "Horizontal row — inline",
+      "wireframe": "wireframes/description-list/variation-2.svg"
+    },
+    {
+      "caption": "Grid (2-col)",
+      "wireframe": "wireframes/description-list/variation-3.svg"
+    },
+    {
+      "caption": "Boxed — with border",
+      "wireframe": "wireframes/description-list/variation-4.svg"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use for structured metadata (event details, product specs). For detailed data tables, use Table. For single numbers, use Stats.",
+    "Always use semantic <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code> elements for definition lists.",
+    "Keep keys short and scannable — 1-3 words. Values can be longer.",
+    "For event information, consider including date, time, location, price as key fields.",
+    "Icons should be consistent in style and color across all rows."
+  ],
+  "related": [],
+  "formerNames": [
+    "Snapshot"
+  ],
+  "aliases": [
+    "Snapshot"
+  ],
+  "frameworkSource": "legacy",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "alias",
+      "name": "Descriptions"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
+}

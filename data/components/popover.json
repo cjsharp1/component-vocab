@@ -1,12 +1,11 @@
 {
   "slug": "popover",
   "name": "Popover",
-  "order": 41,
+  "order": 31,
   "status": "stable",
   "group": "overlays-menus",
   "description": "A floating panel of rich content triggered by a click. More complex than a Tooltip — can contain headings, images, links, or forms.",
   "summary": "Floating panel of rich content triggered by click",
-  "alsoKnownAs": "Popover (Bootstrap), Menu (Material, partial), Popover (Ant), Popover (Apple), Popover (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with appropriate ARIA",
   "elements": [
     {
@@ -82,25 +81,62 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use for supplemental content that is richer than a Tooltip allows. For simple text hints, use Tooltip.",
-    "For action lists, use Dropdown. Popover is for informational or form content.",
+    "For action lists, use Menu button. Popover is for informational or form content.",
     "Dismiss on outside click or Escape key. Optionally provide a close button for clarity.",
     "Position automatically to stay in viewport, or allow manual positioning."
   ],
-  "legacyComparison": {
-    "bootstrap": "Popover",
-    "material": "Menu (partial)",
-    "ant": "Popover",
-    "apple": "Popover",
-    "shadcn": "Popover"
-  },
-  "related": []
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Popovers"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "Atlassian": {
+      "match": "different",
+      "name": "Popup"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Popover"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "same",
+      "name": "Popovers"
+    }
+  }
 }

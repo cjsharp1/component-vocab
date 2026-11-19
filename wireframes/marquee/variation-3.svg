@@ -1,8 +1,0 @@
-<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect class="region" x="0" y="60" width="400" height="80" />
-  <rect class="media-placeholder" x="20" y="75" width="80" height="50" rx="4" opacity="0.5" />
-  <rect class="media-placeholder" x="115" y="75" width="80" height="50" rx="4" opacity="0.5" />
-  <rect class="media-placeholder" x="210" y="75" width="80" height="50" rx="4" opacity="0.5" />
-  <rect class="media-placeholder" x="305" y="75" width="80" height="50" rx="4" opacity="0.5" />
-  <text x="200" y="165" text-anchor="middle" font-size="9" fill="#666" opacity="0.7">Pauses on hover</text>
-</svg>

@@ -1,12 +1,11 @@
 {
   "slug": "table",
   "name": "Table",
-  "order": 28,
+  "order": 18,
   "status": "stable",
   "group": "text-lists",
   "description": "Tabular data presented in rows and columns. For structured data that benefits from alignment and comparison across rows.",
   "summary": "Tabular data display",
-  "alsoKnownAs": "Table (Bootstrap), Data Table (Material), Table (Ant), — (Apple), Table (shadcn)",
   "htmlElement": "<code>&lt;table&gt;</code>",
   "elements": [
     {
@@ -74,28 +73,72 @@
     {
       "caption": "Stack (mobile) — vertical card layout",
       "wireframe": "wireframes/table/variation-4.svg"
+    },
+    {
+      "caption": "Comparison (formerly Comparison)",
+      "wireframe": "wireframes/table/from-comparison.svg"
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
-    "Use for structured data. For feature comparisons, prefer <strong>Comparison</strong>. For key-value pairs, use <strong>Snapshot</strong>.",
+    "Use for structured data. For feature comparisons, use the comparison variant. For key-value pairs, use <strong>Description list</strong>.",
     "Keep tables simple — if it needs many interactive features, it's probably an app data grid.",
     "Always include a header row to label columns.",
     "For responsive tables on small screens, use horizontal scroll or stack into cards."
   ],
-  "legacyComparison": {
-    "bootstrap": "Table",
-    "material": "Data Table",
-    "ant": "Table",
-    "apple": "—",
-    "shadcn": "Table"
-  },
-  "related": []
+  "related": [],
+  "absorbed": [
+    "Comparison"
+  ],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Table"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Tables"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Table"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Data table"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Table"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Table"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Table"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Table"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Table"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Table"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Lists and tables"
+    }
+  }
 }

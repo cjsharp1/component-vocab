@@ -1,12 +1,11 @@
 {
   "slug": "tabs",
   "name": "Tabs",
-  "order": 30,
+  "order": 20,
   "status": "stable",
   "group": "text-lists",
   "description": "Content organized into switchable panels. Only one panel is visible at a time; tab buttons switch between them.",
   "summary": "Switchable tabbed content panels",
-  "alsoKnownAs": "Nav Tabs (Bootstrap), Tabs (Material), Tabs (Ant), Segmented Control (Apple, partial), Tabs (shadcn)",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"tablist\"",
   "elements": [
     {
@@ -66,25 +65,64 @@
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use when content is mutually exclusive — user views one section at a time.",
     "For progressive disclosure (FAQ), use <strong>Accordion</strong>.",
-    "Keep tab count under 7. If you need more, consider a different pattern (Dropdown menu, Sidebar nav).",
+    "Keep tab count under 7. If you need more, consider a different pattern (Menu button, Sidebar navigation).",
     "Always show which tab is currently active with a clear visual indicator."
   ],
-  "legacyComparison": {
-    "bootstrap": "Nav Tabs",
-    "material": "Tabs",
-    "ant": "Tabs",
-    "apple": "Segmented Control (partial)",
-    "shadcn": "Tabs"
-  },
-  "related": []
+  "related": [],
+  "aliases": [
+    "Tabbed interface"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "Bootstrap": {
+      "match": "alias",
+      "name": "Navs & tabs"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "Fluent UI": {
+      "match": "alias",
+      "name": "Tablist"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Tabs"
+    },
+    "Apple HIG": {
+      "match": "alias",
+      "name": "Tab views"
+    }
+  }
 }

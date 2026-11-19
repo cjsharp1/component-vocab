@@ -1,12 +1,11 @@
 {
   "slug": "grid",
   "name": "Grid",
-  "order": 7,
+  "order": 5,
   "status": "stable",
   "group": "layout",
   "description": "A multi-column layout system for arranging child components side by side. Provides responsive column structure that reflows on smaller screens.",
   "summary": "Multi-column layout system",
-  "alsoKnownAs": "Grid system (Bootstrap), Row/Col (Ant)",
   "htmlElement": "<code>&lt;div&gt;</code>",
   "elements": [
     {
@@ -59,27 +58,67 @@
     {
       "caption": "Auto-fit — fills available space",
       "wireframe": "wireframes/grid/variation-4.svg"
+    },
+    {
+      "caption": "Asymmetric (formerly Mosaic)",
+      "wireframe": "wireframes/grid/from-mosaic.svg"
     }
   ],
   "collections": [],
-  "sectionOrder": [
-    "Elements",
-    "Default Layout",
-    "Configuration Options",
-    "Layout Variations",
-    "Usage Notes"
-  ],
   "usageNotes": [
     "Use Grid to arrange Card Lists, Feature Lists, or any repeating content.",
     "Prefer auto-fit for content-driven layouts where item count varies.",
     "Grid is a layout utility — it doesn't add visual styling to its children."
   ],
-  "legacyComparison": {
-    "bootstrap": "Grid system",
-    "material": "—",
-    "ant": "Row/Col",
-    "apple": "—",
-    "shadcn": "—"
-  },
-  "related": []
+  "related": [],
+  "absorbed": [
+    "Mosaic"
+  ],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Grid"
+    },
+    "Bootstrap": {
+      "match": "same",
+      "name": "Grid"
+    },
+    "Ant Design": {
+      "match": "same",
+      "name": "Grid"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Grid"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Grid"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Grid"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Grid"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  }
 }
