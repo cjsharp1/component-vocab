@@ -46,6 +46,7 @@ scripts/
   templates/               page templates and static index fragments
 components/, index.html    generated output (don't edit by hand)
 css/, js/                  site styles and behavior
+fonts/                     self-hosted Latin WOFF2 fonts (Archivo, Public Sans, JetBrains Mono) and their OFL licenses
 ```
 
 **No dependencies.** The scripts need Node 18 or newer and nothing else: no `package.json`, no install. This relaxes the original "no build tools" rule to "no dependencies" (decision D2 in `docs/reconciliation.md`).
