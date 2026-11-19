@@ -166,7 +166,7 @@ export function componentPage(c, { prev, next, group, svg }) {
         <dt>Semantic element</dt>
         <dd>${c.htmlElement}</dd>
         <dt>Category</dt>
-        <dd>${group.label}</dd>
+        <dd>${group.letter}. ${group.label}</dd>
       </dl>
     </section>
 

@@ -1,9 +1,9 @@
 {
   "slug": "alert",
   "name": "Alert",
-  "order": 28,
+  "order": 27,
   "status": "stable",
-  "group": "forms-feedback",
+  "group": "feedback-status",
   "description": "An inline feedback message communicating the result of a user action or system state. Success, warning, error, or informational messages that appear in context.",
   "summary": "Inline feedback message",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"alert\"",

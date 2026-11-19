@@ -1,9 +1,9 @@
 {
   "slug": "form",
   "name": "Form",
-  "order": 26,
+  "order": 33,
   "status": "stable",
-  "group": "forms-feedback",
+  "group": "forms",
   "description": "A data collection interface — contact forms, signup forms, search bars, filters. Groups input fields with labels, validation, and a submit action.",
   "summary": "Data collection — contact, signup, search",
   "htmlElement": "<code>&lt;form&gt;</code>",

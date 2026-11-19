@@ -1,9 +1,9 @@
 {
   "slug": "list",
   "name": "List",
-  "order": 17,
+  "order": 12,
   "status": "stable",
-  "group": "text-lists",
+  "group": "content-display",
   "description": "A structured list of items — features, benefits, steps, or any enumerated content. More visually styled than a plain HTML list.",
   "summary": "Structured list of items — features, steps",
   "htmlElement": "<code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>",

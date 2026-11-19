@@ -1,9 +1,9 @@
 {
   "slug": "popover",
   "name": "Popover",
-  "order": 31,
+  "order": 25,
   "status": "stable",
-  "group": "overlays-menus",
+  "group": "disclosure-overlays",
   "description": "A floating panel of rich content triggered by a click. More complex than a Tooltip — can contain headings, images, links, or forms.",
   "summary": "Floating panel of rich content triggered by click",
   "htmlElement": "<code>&lt;div&gt;</code> with appropriate ARIA",

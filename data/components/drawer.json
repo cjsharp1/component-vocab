@@ -1,9 +1,9 @@
 {
   "slug": "drawer",
   "name": "Drawer",
-  "order": 32,
+  "order": 24,
   "status": "stable",
-  "group": "overlays-menus",
+  "group": "disclosure-overlays",
   "description": "A panel that slides in from a screen edge, either overlaying content or pushing it aside. Used for navigation, filters, detail panels, or forms.",
   "summary": "Panel sliding in from a screen edge",
   "htmlElement": "<code>&lt;div&gt;</code> with appropriate ARIA",

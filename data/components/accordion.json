@@ -1,9 +1,9 @@
 {
   "slug": "accordion",
   "name": "Accordion",
-  "order": 19,
+  "order": 22,
   "status": "stable",
-  "group": "text-lists",
+  "group": "disclosure-overlays",
   "description": "Expandable/collapsible content panels. Each panel has a header that reveals or hides associated content when triggered.",
   "summary": "Expandable/collapsible content panels",
   "htmlElement": "<code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> or <code>&lt;div&gt;</code>",

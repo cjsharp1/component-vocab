@@ -1,9 +1,9 @@
 {
   "slug": "separator",
   "name": "Separator",
-  "order": 40,
+  "order": 8,
   "status": "stable",
-  "group": "utility",
+  "group": "layout",
   "description": "A visual separator between content sections.",
   "summary": "Visual separator between content sections",
   "htmlElement": "<code>&lt;hr&gt;</code>",

@@ -1,9 +1,9 @@
 {
   "slug": "tabs",
   "name": "Tabs",
-  "order": 20,
+  "order": 19,
   "status": "stable",
-  "group": "text-lists",
+  "group": "wayfinding",
   "description": "Content organized into switchable panels. Only one panel is visible at a time; tab buttons switch between them.",
   "summary": "Switchable tabbed content panels",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"tablist\"",

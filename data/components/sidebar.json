@@ -1,9 +1,9 @@
 {
   "slug": "sidebar",
   "name": "Sidebar",
-  "order": 4,
+  "order": 3,
   "status": "stable",
-  "group": "layout",
+  "group": "page-structure",
   "description": "Complementary content that is tangentially related to the main content. Used for sidebars, related links, advertising, or supplementary information.",
   "summary": "Sidebar or complementary content",
   "htmlElement": "<code>&lt;aside&gt;</code>",

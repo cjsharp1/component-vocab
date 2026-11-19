@@ -621,3 +621,33 @@ body > footer p { margin: 0; max-width: none; }
   .wireframe-container svg .label-group { opacity: 1; }
   .wireframe-container { background-image: none; }
 }
+
+/* === Phase 6: groups, counts, 12-system comparison === */
+.chip-count {
+  margin-left: 0.3em;
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  color: var(--ink-3);
+}
+[data-filter][aria-current="true"] .chip-count { color: inherit; opacity: 0.75; }
+.group-note {
+  margin: -0.25rem 0 1rem;
+  font-size: 0.88rem;
+  color: var(--ink-2);
+}
+.match-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.match-key li { list-style: none; margin: 0; padding: 0; }
+.match-symbol { font-family: var(--font-mono); color: var(--accent); }
+#comparison table { min-width: 1400px; font-size: 0.85rem; }
+#comparison td, #comparison th { white-space: nowrap; }
+#comparison td.match-none { color: var(--ink-3); }
+#comparison td.match-different .match-symbol { color: var(--ink-3); }
+#comparison sup { color: var(--accent); }

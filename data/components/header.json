@@ -1,9 +1,9 @@
 {
   "slug": "header",
   "name": "Header",
-  "order": 2,
+  "order": 1,
   "status": "stable",
-  "group": "layout",
+  "group": "page-structure",
   "description": "The top-level site header containing the brand identity and primary navigation. Persists across pages as a global landmark.",
   "summary": "Site header with branding and navigation",
   "htmlElement": "<code>&lt;header&gt;</code>",

@@ -1,7 +1,7 @@
 {
   "slug": "section",
   "name": "Section",
-  "order": 1,
+  "order": 6,
   "status": "stable",
   "group": "layout",
   "description": "A thematic grouping of content that forms a distinct part of a page. Typically spans full width and contains one or more content components within a constrained content width.",

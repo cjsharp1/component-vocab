@@ -1,9 +1,9 @@
 {
   "slug": "timeline",
   "name": "Timeline",
-  "order": 13,
+  "order": 21,
   "status": "stable",
-  "group": "content-display",
+  "group": "wayfinding",
   "description": "A chronological sequence of events, milestones, or process steps. Displays items along a time axis with dates, titles, and descriptions.",
   "summary": "Chronological sequence of events/milestones",
   "htmlElement": "<code>&lt;ol&gt;</code> or <code>&lt;div&gt;</code>",

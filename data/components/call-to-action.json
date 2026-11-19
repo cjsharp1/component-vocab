@@ -1,9 +1,9 @@
 {
   "slug": "call-to-action",
   "name": "Call to action",
-  "order": 24,
+  "order": 39,
   "status": "stable",
-  "group": "calls-to-action",
+  "group": "page-patterns",
   "description": "A prominent call-to-action block designed to convert visitors. Contains a compelling headline, supporting text, and one or more buttons urging the user to take action.",
   "summary": "Prominent call-to-action block",
   "htmlElement": "<code>&lt;section&gt;</code>",

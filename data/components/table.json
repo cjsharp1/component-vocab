@@ -1,9 +1,9 @@
 {
   "slug": "table",
   "name": "Table",
-  "order": 18,
+  "order": 13,
   "status": "stable",
-  "group": "text-lists",
+  "group": "content-display",
   "description": "Tabular data presented in rows and columns. For structured data that benefits from alignment and comparison across rows.",
   "summary": "Tabular data display",
   "htmlElement": "<code>&lt;table&gt;</code>",

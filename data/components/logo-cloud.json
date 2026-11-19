@@ -1,9 +1,9 @@
 {
   "slug": "logo-cloud",
   "name": "Logo cloud",
-  "order": 14,
+  "order": 38,
   "status": "stable",
-  "group": "content-display",
+  "group": "page-patterns",
   "description": "A collection of partner, client, or technology logos arranged in a row or grid. Communicates trust and social proof through recognizable brand marks.",
   "summary": "Row/grid of partner/client logos",
   "htmlElement": "<code>&lt;div&gt;</code>",

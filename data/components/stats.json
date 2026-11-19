@@ -1,9 +1,9 @@
 {
   "slug": "stats",
   "name": "Stats",
-  "order": 12,
+  "order": 37,
   "status": "stable",
-  "group": "content-display",
+  "group": "page-patterns",
   "description": "A single key metric or number displayed prominently. Used to highlight impressive numbers, achievements, or key data points.",
   "summary": "Single key metric displayed prominently",
   "htmlElement": "<code>&lt;div&gt;</code>",

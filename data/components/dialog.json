@@ -1,9 +1,9 @@
 {
   "slug": "dialog",
   "name": "Dialog",
-  "order": 27,
+  "order": 23,
   "status": "stable",
-  "group": "forms-feedback",
+  "group": "disclosure-overlays",
   "description": "An overlay dialog that requires user attention or action. Appears above the page content, blocking interaction with the background until dismissed.",
   "summary": "Overlay dialog requiring action",
   "htmlElement": "<code>&lt;dialog&gt;</code> or <code>&lt;div&gt;</code> with role=\"dialog\"",

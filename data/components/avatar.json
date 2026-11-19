@@ -1,9 +1,9 @@
 {
   "slug": "avatar",
   "name": "Avatar",
-  "order": 39,
+  "order": 11,
   "status": "stable",
-  "group": "interactive",
+  "group": "content-display",
   "description": "A small identity image representing a user or entity. Used in comments, chat, attribution lines.",
   "summary": "Small identity image for attribution, comments",
   "htmlElement": "<code>&lt;img&gt;</code> or <code>&lt;span&gt;</code>",

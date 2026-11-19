@@ -1,9 +1,9 @@
 {
   "slug": "progress-bar",
   "name": "Progress bar",
-  "order": 35,
+  "order": 30,
   "status": "stable",
-  "group": "indicators-status",
+  "group": "feedback-status",
   "description": "A visual indicator of task or process completion. Shows how far along a process is.",
   "summary": "Visual indicator of task/process completion",
   "htmlElement": "<code>&lt;progress&gt;</code> or <code>&lt;div&gt;</code> with role=\"progressbar\"",

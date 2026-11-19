@@ -1,9 +1,9 @@
 {
   "slug": "skeleton",
   "name": "Skeleton",
-  "order": 34,
+  "order": 32,
   "status": "stable",
-  "group": "indicators-status",
+  "group": "feedback-status",
   "description": "A placeholder loading state that mimics the shape of content to come. Shows the layout structure before real content loads.",
   "summary": "Placeholder loading state mimicking content shape",
   "htmlElement": "<code>&lt;div&gt;</code> with aria-busy=\"true\"",

@@ -1,6 +1,6 @@
 // Index page: static head (intro, legend) and foot come from the .html
-// fragments beside this file; the filter, grid and comparison table are
-// generated from the data.
+// fragments beside this file; the universal section, filter, grid and
+// comparison table are generated from the data.
 import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -9,21 +9,26 @@ import { indent } from './util.mjs';
 const here = dirname(fileURLToPath(import.meta.url));
 const fragment = name => readFileSync(join(here, name), 'utf8').replace(/\r\n/g, '\n');
 
-export function indexPage({ groups, components, svg }) {
+export const SYMBOL = { same: '●', alias: '◐', different: '○', none: '—' };
+export const groupTitle = g => `${g.letter}. ${g.label}`;
+
+export function indexPage({ groups, components, systems, svg }) {
+  const used = groups.filter(g => components.some(c => c.group === g.slug));
+
   const filter = `      <nav>
         <ul>
-          <li><a href="#" data-filter="all" aria-current="true">All</a></li>
-${groups.map(g => `          <li><a href="#" data-filter="${g.slug}">${g.label}</a></li>`).join('\n')}
+          <li><a href="#" data-filter="all" aria-current="true">All <span class="chip-count">${components.length}</span></a></li>
+${used.map(g => `          <li><a href="#" data-filter="${g.slug}">${g.label} <span class="chip-count">${components.filter(c => c.group === g.slug).length}</span></a></li>`).join('\n')}
         </ul>
       </nav>
 `;
 
-  const grid = groups
+  const grid = used
     .map(g => {
       const items = components.filter(c => c.group === g.slug);
-      return `      <div data-category="${g.slug}">
-        <h3 class="category-heading">${g.label}</h3>
-        <ul class="component-grid">
+      return `      <div data-category="${g.slug}" id="${g.slug}">
+        <h3 class="category-heading">${groupTitle(g)}</h3>
+${g.consensus === false ? `        <p class="group-note">${g.description}</p>\n` : ''}        <ul class="component-grid">
 ${items.map(c => `          <li>
             <a href="./components/${c.slug}.html">
 ${indent(svg(c.thumbnail), 14)}
@@ -37,22 +42,45 @@ ${indent(svg(c.thumbnail), 14)}
     })
     .join('\n');
 
+  const cell = (c, s) => {
+    const v = c.frameworkNames[s] || { match: 'none' };
+    return v.match === 'none'
+      ? `<td class="match-none">—</td>`
+      : `<td class="match-${v.match}"><span class="match-symbol" aria-hidden="true">${SYMBOL[v.match]}</span> ${v.name}</td>`;
+  };
   const rows = components
-    .map(c => {
-      const fw = c.frameworkNames;
-      const cell = s => (fw[s] && fw[s].match !== 'none' ? fw[s].name : '—');
-      return `            <tr>
-              <td><a href="./components/${c.slug}.html">${c.name}</a></td>
-${['Bootstrap', 'MUI', 'Ant Design', 'Apple HIG', 'shadcn/ui'].map(s => `              <td>${cell(s)}</td>`).join('\n')}
-            </tr>`;
-    })
+    .map(c => `            <tr>
+              <td><a href="./components/${c.slug}.html">${c.name}</a>${c.frameworkSource === 'legacy' ? '<sup>*</sup>' : ''}</td>
+${systems.map(s => `              ${cell(c, s)}`).join('\n')}
+            </tr>`)
     .join('\n');
+
+  const comparison = `    <section id="comparison">
+      <h2>Cross-System Comparison</h2>
+      <p>How ${systems.length} design systems name each component, from <code>docs/research/framework-alignment.csv</code>.</p>
+      <ul class="match-key">
+        <li><span class="match-symbol" aria-hidden="true">●</span> Same name</li>
+        <li><span class="match-symbol" aria-hidden="true">◐</span> Known alternative name</li>
+        <li><span class="match-symbol" aria-hidden="true">○</span> Related component under another name</li>
+        <li><span class="match-symbol" aria-hidden="true">—</span> No equivalent</li>
+        <li><sup>*</sup> Not in the CSV: names come from the old page and cover 5 systems only</li>
+      </ul>
+      <div style="overflow-x: auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Component</th>
+${systems.map(s => `              <th>${s}</th>`).join('\n')}
+            </tr>
+          </thead>
+          <tbody>
+`;
 
   const head = fragment('index-head.html').replace('    <section id="components">', fragment('index-universal.html') + '    <section id="components">');
   return `${head}${filter}
 ${grid}    </section>
 
-${fragment('index-comparison-head.html')}${rows}
+${comparison}${rows}
           </tbody>
 ${fragment('index-foot.html')}`;
 }

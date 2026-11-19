@@ -1,9 +1,9 @@
 {
   "slug": "pagination",
   "name": "Pagination",
-  "order": 23,
+  "order": 20,
   "status": "stable",
-  "group": "navigation",
+  "group": "wayfinding",
   "description": "Page-by-page navigation for content split across multiple pages. Provides numbered pages, previous/next, and optionally first/last.",
   "summary": "Page-by-page navigation",
   "htmlElement": "<code>&lt;nav&gt;</code> with aria-label=\"pagination\"",

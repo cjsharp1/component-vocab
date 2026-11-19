@@ -1,9 +1,9 @@
 {
   "slug": "navigation",
   "name": "Navigation",
-  "order": 21,
+  "order": 2,
   "status": "stable",
-  "group": "navigation",
+  "group": "page-structure",
   "description": "Primary navigation menu presenting the main site structure. Contains links to top-level pages organized as a horizontal or vertical list.",
   "summary": "Primary navigation menu",
   "htmlElement": "<code>&lt;nav&gt;</code>",

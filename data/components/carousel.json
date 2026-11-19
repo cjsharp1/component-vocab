@@ -1,9 +1,9 @@
 {
   "slug": "carousel",
   "name": "Carousel",
-  "order": 38,
+  "order": 34,
   "status": "stable",
-  "group": "interactive",
+  "group": "collections",
   "description": "A paginated slideshow cycling through cards, images, or content panels. Shows one or a few items at a time with navigation.",
   "summary": "Paginated slideshow cycling through content",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"region\" aria-roledescription=\"carousel\"",

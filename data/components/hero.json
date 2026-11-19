@@ -1,9 +1,9 @@
 {
   "slug": "hero",
   "name": "Hero",
-  "order": 6,
+  "order": 15,
   "status": "stable",
-  "group": "hero-banners",
+  "group": "content-display",
   "description": "A large introductory area typically placed at the top of a page. Contains a prominent headline, supporting text, and one or more calls to action. Sets the tone and primary message for the page content that follows.",
   "summary": "Large intro area — headline, subtext, call to action",
   "htmlElement": "<code>&lt;section&gt;</code>",

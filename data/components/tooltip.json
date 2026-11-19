@@ -1,9 +1,9 @@
 {
   "slug": "tooltip",
   "name": "Tooltip",
-  "order": 30,
+  "order": 26,
   "status": "stable",
-  "group": "overlays-menus",
+  "group": "disclosure-overlays",
   "description": "A contextual hint that appears on hover or focus near a trigger element. Provides brief explanatory text without cluttering the interface.",
   "summary": "Contextual hint appearing on hover/focus",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"tooltip\"",

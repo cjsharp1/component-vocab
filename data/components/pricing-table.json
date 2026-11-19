@@ -1,9 +1,9 @@
 {
   "slug": "pricing-table",
   "name": "Pricing table",
-  "order": 25,
+  "order": 40,
   "status": "stable",
-  "group": "calls-to-action",
+  "group": "page-patterns",
   "description": "Pricing plans or tiers presented for comparison and selection. Shows plan names, prices, features, and purchase actions side by side.",
   "summary": "Pricing plans/tiers for comparison",
   "htmlElement": "<code>&lt;section&gt;</code>",

@@ -17,15 +17,9 @@ const root = process.cwd();
 const check = process.argv.includes('--check');
 const read = p => readFileSync(join(root, p), 'utf8').replace(/\r\n/g, '\n');
 
-// Fragments known to be broken and scheduled for a later phase. Each entry
-// is reported, not failed. Remove entries as the fixes land.
-const KNOWN_BROKEN_FRAGMENTS = {
-  reason: 'Breadcrumb category anchors have no matching id in index.html (brief 9.1); fixed in Phase 6',
-  test: (file, href) => file.startsWith('components/') && /^\.\.\/index\.html#[a-z-]+$/.test(href) && !/#(components|comparison|intro|legend)$/.test(href),
-};
-
 export function build() {
-  const groups = JSON.parse(read('data/legacy-categories.json'));
+  const groups = JSON.parse(read('data/groups.json'));
+  const systems = JSON.parse(read('data/systems.json'));
   const components = loadComponents(root).map(c => c.data).sort((a, b) => a.order - b.order);
   const svg = path => read(path);
   const out = new Map();
@@ -34,7 +28,7 @@ export function build() {
     if (!group) throw new Error(`${c.slug}: unknown group "${c.group}"`);
     out.set(`components/${c.slug}.html`, componentPage(c, { prev: components[i - 1], next: components[i + 1], group, svg }));
   });
-  out.set('index.html', indexPage({ groups, components, svg }));
+  out.set('index.html', indexPage({ groups, components, systems, svg }));
   const redirects = existsSync(join(root, 'data/redirects.json')) ? JSON.parse(read('data/redirects.json')) : {};
   for (const [from, to] of Object.entries(redirects)) {
     const target = components.find(c => c.slug === to);
@@ -47,7 +41,6 @@ export function build() {
 
 function checkLinks(out) {
   const errors = [];
-  const known = [];
   const ids = new Map();
   const idsOf = file => {
     if (!ids.has(file)) {
@@ -62,13 +55,10 @@ function checkLinks(out) {
       const [path, frag] = href.split('#');
       const target = path ? normalize(join(dirname(file), path)).replace(/\\/g, '/') : file;
       if (path && !out.has(target) && !existsSync(join(root, target))) { errors.push(`${file}: ${attr}="${href}" points to a missing file`); continue; }
-      if (frag && !idsOf(target).has(frag)) {
-        if (KNOWN_BROKEN_FRAGMENTS.test(file, href)) known.push(`${file}: ${href}`);
-        else errors.push(`${file}: ${attr}="${href}" has no matching id in ${target}`);
-      }
+      if (frag && !idsOf(target).has(frag)) errors.push(`${file}: ${attr}="${href}" has no matching id in ${target}`);
     }
   }
-  return { errors, known };
+  return { errors };
 }
 
 const { count, errors: dataErrors } = validate(root);
@@ -78,7 +68,7 @@ if (dataErrors.length) {
   process.exit(1);
 }
 const out = build();
-const { errors: linkErrors, known } = checkLinks(out);
+const { errors: linkErrors } = checkLinks(out);
 const generatedPages = new Set([...out.keys()].filter(f => f.startsWith('components/')));
 const stale = readdirSync(join(root, 'components')).filter(f => f.endsWith('.html')).map(f => `components/${f}`).filter(f => !generatedPages.has(f));
 
@@ -89,7 +79,6 @@ if (check) {
     ...stale.map(f => `${f}: not generated from data (stale page)`),
     ...linkErrors,
   ];
-  if (known.length) console.log(`Known issue, not failing (${known.length}): ${KNOWN_BROKEN_FRAGMENTS.reason}`);
   if (problems.length) {
     console.error(problems.join('\n'));
     console.error(`\nCheck failed: ${problems.length} problem(s)`);

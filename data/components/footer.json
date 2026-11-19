@@ -1,9 +1,9 @@
 {
   "slug": "footer",
   "name": "Footer",
-  "order": 3,
+  "order": 4,
   "status": "stable",
-  "group": "layout",
+  "group": "page-structure",
   "description": "The bottom-level site footer containing secondary navigation, legal information, contact details, and social links. Persists across pages.",
   "summary": "Site footer with links, legal, contact",
   "htmlElement": "<code>&lt;footer&gt;</code>",

@@ -1,0 +1,12 @@
+[
+  { "slug": "page-structure", "letter": "A", "label": "Page structure", "description": "Landmarks and page-level regions." },
+  { "slug": "layout", "letter": "B", "label": "Layout primitives", "description": "Blocks that arrange other blocks." },
+  { "slug": "content-display", "letter": "C", "label": "Content display", "description": "Blocks that present content." },
+  { "slug": "actions", "letter": "D", "label": "Actions and links", "description": "Controls that navigate or act." },
+  { "slug": "wayfinding", "letter": "E", "label": "Wayfinding and sequence", "description": "Moving through pages, steps and time." },
+  { "slug": "disclosure-overlays", "letter": "F", "label": "Disclosure and overlays", "description": "Content that opens, expands or floats." },
+  { "slug": "feedback-status", "letter": "G", "label": "Feedback and status", "description": "Messages, indicators and loading states." },
+  { "slug": "forms", "letter": "H", "label": "Forms", "description": "Collecting input." },
+  { "slug": "collections", "letter": "I", "label": "Collections", "description": "Sets of items presented together." },
+  { "slug": "page-patterns", "letter": "J", "label": "Page patterns", "description": "Standard industry section names. Not framework consensus: no UI framework in the survey ships these.", "consensus": false }
+]

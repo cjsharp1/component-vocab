@@ -1,9 +1,9 @@
 {
   "slug": "toast",
   "name": "Toast",
-  "order": 29,
+  "order": 28,
   "status": "stable",
-  "group": "forms-feedback",
+  "group": "feedback-status",
   "description": "A temporary, non-blocking notification message that appears briefly and then auto-dismisses. For lightweight feedback that doesn't interrupt the user's flow.",
   "summary": "Temporary non-blocking notification",
   "htmlElement": "<code>&lt;div&gt;</code> with role=\"status\"",

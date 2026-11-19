@@ -1,9 +1,9 @@
 {
   "slug": "breadcrumbs",
   "name": "Breadcrumbs",
-  "order": 22,
+  "order": 5,
   "status": "stable",
-  "group": "navigation",
+  "group": "page-structure",
   "description": "A hierarchical trail showing the user's location within the site structure. Provides orientation and quick navigation to parent pages.",
   "summary": "Hierarchical location trail",
   "htmlElement": "<code>&lt;nav&gt;</code> with aria-label=\"breadcrumb\"",

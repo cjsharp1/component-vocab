@@ -23,8 +23,8 @@
   <main>
     <section id="intro">
       <h1>component-vocab</h1>
-      <p>A framework-agnostic website component naming system with 50 components organized into two tiers: <strong>Structural</strong> (HTML-semantic layout primitives) and <strong>Content</strong> (functional UI patterns). Each component is documented with wireframes, configuration options, and cross-system name mappings.</p>
-      <p>Names align with HTML semantics for structural components and draw from established design systems (Bootstrap, Material Design, Ant Design, Apple HIG, shadcn) for content components.</p>
+      <p>A shared vocabulary for website components. Each name follows native HTML first, then the W3C ARIA Authoring Practices, then what most design systems already call the thing.</p>
+      <p>Components are grouped A to J. Groups A to I follow the research consensus list. Group J holds page patterns that are standard industry terms but that no UI framework in the survey ships. Each page shows wireframes, configuration options and the names 12 design systems use.</p>
     </section>
 
     <section id="legend">
@@ -77,34 +77,23 @@
       <h2>Components</h2>
       <nav>
         <ul>
-          <li><a href="#" data-filter="all" aria-current="true">All</a></li>
-          <li><a href="#" data-filter="layout">Layout</a></li>
-          <li><a href="#" data-filter="hero-banners">Hero &amp; Banners</a></li>
-          <li><a href="#" data-filter="content-display">Content Display</a></li>
-          <li><a href="#" data-filter="text-lists">Text &amp; Lists</a></li>
-          <li><a href="#" data-filter="navigation">Navigation</a></li>
-          <li><a href="#" data-filter="calls-to-action">Calls to Action</a></li>
-          <li><a href="#" data-filter="forms-feedback">Forms &amp; Feedback</a></li>
-          <li><a href="#" data-filter="overlays-menus">Overlays &amp; Menus</a></li>
-          <li><a href="#" data-filter="indicators-status">Indicators &amp; Status</a></li>
-          <li><a href="#" data-filter="interactive">Interactive</a></li>
-          <li><a href="#" data-filter="utility">Utility</a></li>
+          <li><a href="#" data-filter="all" aria-current="true">All <span class="chip-count">40</span></a></li>
+          <li><a href="#" data-filter="page-structure">Page structure <span class="chip-count">5</span></a></li>
+          <li><a href="#" data-filter="layout">Layout primitives <span class="chip-count">3</span></a></li>
+          <li><a href="#" data-filter="content-display">Content display <span class="chip-count">9</span></a></li>
+          <li><a href="#" data-filter="actions">Actions and links <span class="chip-count">1</span></a></li>
+          <li><a href="#" data-filter="wayfinding">Wayfinding and sequence <span class="chip-count">3</span></a></li>
+          <li><a href="#" data-filter="disclosure-overlays">Disclosure and overlays <span class="chip-count">5</span></a></li>
+          <li><a href="#" data-filter="feedback-status">Feedback and status <span class="chip-count">6</span></a></li>
+          <li><a href="#" data-filter="forms">Forms <span class="chip-count">1</span></a></li>
+          <li><a href="#" data-filter="collections">Collections <span class="chip-count">1</span></a></li>
+          <li><a href="#" data-filter="page-patterns">Page patterns <span class="chip-count">6</span></a></li>
         </ul>
       </nav>
 
-      <div data-category="layout">
-        <h3 class="category-heading">Layout</h3>
+      <div data-category="page-structure" id="page-structure">
+        <h3 class="category-heading">A. Page structure</h3>
         <ul class="component-grid">
-          <li>
-            <a href="./components/section.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="10" y="10" width="230" height="60" rx="2"/>
-                <rect class="text-line" x="20" y="20" width="100" height="8"/>
-              </svg>
-              <strong>Section</strong>
-              <small>Thematic full-width page block</small>
-            </a>
-          </li>
           <li>
             <a href="./components/header.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
@@ -117,14 +106,15 @@
             </a>
           </li>
           <li>
-            <a href="./components/footer.html">
+            <a href="./components/navigation.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="10" y="50" width="230" height="20" rx="2"/>
-                <rect class="text-line" x="20" y="55" width="40" height="5"/>
-                <rect class="text-line" x="70" y="55" width="40" height="5"/>
+                <rect class="interactive" x="40" y="30" width="40" height="10" rx="2"/>
+                <rect class="interactive" x="90" y="30" width="40" height="10" rx="2"/>
+                <rect class="interactive" x="140" y="30" width="40" height="10" rx="2"/>
+                <rect class="interactive" x="190" y="30" width="40" height="10" rx="2"/>
               </svg>
-              <strong>Footer</strong>
-              <small>Site footer with links, legal, contact</small>
+              <strong>Navigation</strong>
+              <small>Primary navigation menu</small>
             </a>
           </li>
           <li>
@@ -139,6 +129,46 @@
             </a>
           </li>
           <li>
+            <a href="./components/footer.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="10" y="50" width="230" height="20" rx="2"/>
+                <rect class="text-line" x="20" y="55" width="40" height="5"/>
+                <rect class="text-line" x="70" y="55" width="40" height="5"/>
+              </svg>
+              <strong>Footer</strong>
+              <small>Site footer with links, legal, contact</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/breadcrumbs.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="text-line" x="40" y="35" width="30" height="6"/>
+                <text x="75" y="40" font-size="12" fill="currentColor" opacity="0.3">/</text>
+                <rect class="text-line" x="85" y="35" width="30" height="6"/>
+                <text x="120" y="40" font-size="12" fill="currentColor" opacity="0.3">/</text>
+                <rect class="interactive" x="130" y="35" width="30" height="6"/>
+              </svg>
+              <strong>Breadcrumbs</strong>
+              <small>Hierarchical location trail</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-category="layout" id="layout">
+        <h3 class="category-heading">B. Layout primitives</h3>
+        <ul class="component-grid">
+          <li>
+            <a href="./components/section.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="10" y="10" width="230" height="60" rx="2"/>
+                <rect class="text-line" x="20" y="20" width="100" height="8"/>
+              </svg>
+              <strong>Section</strong>
+              <small>Thematic full-width page block</small>
+            </a>
+          </li>
+          <li>
             <a href="./components/grid.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="region" x="10" y="10" width="70" height="60" rx="2"/>
@@ -149,139 +179,20 @@
               <small>Multi-column layout system</small>
             </a>
           </li>
-        </ul>
-      </div>
-
-      <div data-category="hero-banners">
-        <h3 class="category-heading">Hero &amp; Banners</h3>
-        <ul class="component-grid">
           <li>
-            <a href="./components/hero.html">
+            <a href="./components/separator.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="10" y="10" width="230" height="60" rx="2"/>
-                <rect class="text-line" x="60" y="25" width="130" height="10"/>
-                <rect class="text-line" x="80" y="40" width="90" height="6"/>
-                <rect class="interactive" x="100" y="50" width="50" height="12" rx="4"/>
+                <line x1="40" y1="40" x2="210" y2="40" stroke="currentColor" stroke-width="2" opacity="0.3"/>
               </svg>
-              <strong>Hero</strong>
-              <small>Large intro area — headline, subtext, call to action</small>
+              <strong>Separator</strong>
+              <small>Visual separator between content sections</small>
             </a>
           </li>
         </ul>
       </div>
 
-      <div data-category="content-display">
-        <h3 class="category-heading">Content Display</h3>
-        <ul class="component-grid">
-          <li>
-            <a href="./components/card.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="10" width="70" height="60" rx="2"/>
-                <rect class="media-placeholder" x="45" y="15" width="60" height="30"/>
-                <rect class="text-line" x="45" y="50" width="50" height="6"/>
-                <rect class="text-line" x="45" y="58" width="40" height="4"/>
-              </svg>
-              <strong>Card</strong>
-              <small>Preview of content — image, title, excerpt, link</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/feature.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <circle class="interactive" cx="50" cy="30" r="12"/>
-                <rect class="text-line" x="70" y="25" width="60" height="6"/>
-                <rect class="text-line" x="70" y="35" width="100" height="4"/>
-                <rect class="text-line" x="70" y="41" width="100" height="4"/>
-              </svg>
-              <strong>Feature</strong>
-              <small>Single feature/benefit — icon, heading, description</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/image.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="media-placeholder" x="60" y="15" width="130" height="40"/>
-                <rect class="text-line" x="80" y="60" width="90" height="4"/>
-              </svg>
-              <strong>Image</strong>
-              <small>Image/illustration with caption</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/embed.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="15" width="170" height="50" rx="2"/>
-                <text x="125" y="45" text-anchor="middle" font-size="20" fill="currentColor" opacity="0.3">&lt;/&gt;</text>
-              </svg>
-              <strong>Embed</strong>
-              <small>Third-party content embedded inline</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/testimonial.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="20" width="170" height="40" rx="2"/>
-                <text x="55" y="40" font-size="20" fill="currentColor" opacity="0.3">"</text>
-                <rect class="text-line" x="65" y="32" width="120" height="4"/>
-                <rect class="text-line" x="65" y="38" width="100" height="4"/>
-              </svg>
-              <strong>Testimonial</strong>
-              <small>Quote/review attributed to a person</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/stats.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="text-line" x="80" y="25" width="90" height="15"/>
-                <rect class="text-line" x="100" y="45" width="50" height="6"/>
-              </svg>
-              <strong>Stats</strong>
-              <small>Single key metric displayed prominently</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/timeline.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <line x1="40" y1="20" x2="40" y2="60" stroke="currentColor" stroke-width="2" opacity="0.3"/>
-                <circle class="interactive" cx="40" cy="25" r="5"/>
-                <circle class="interactive" cx="40" cy="45" r="5"/>
-                <rect class="text-line" x="55" y="22" width="80" height="5"/>
-                <rect class="text-line" x="55" y="42" width="80" height="5"/>
-              </svg>
-              <strong>Timeline</strong>
-              <small>Chronological sequence of events/milestones</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/logo-cloud.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="media-placeholder" x="20" y="25" width="40" height="30"/>
-                <rect class="media-placeholder" x="70" y="25" width="40" height="30"/>
-                <rect class="media-placeholder" x="120" y="25" width="40" height="30"/>
-                <rect class="media-placeholder" x="170" y="25" width="40" height="30"/>
-              </svg>
-              <strong>Logo cloud</strong>
-              <small>Row/grid of partner/client logos</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/description-list.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="20" width="170" height="40" rx="2"/>
-                <rect class="text-line" x="50" y="30" width="60" height="5"/>
-                <rect class="text-line" x="120" y="30" width="60" height="5"/>
-                <rect class="text-line" x="50" y="42" width="60" height="5"/>
-                <rect class="text-line" x="120" y="42" width="60" height="5"/>
-              </svg>
-              <strong>Description list</strong>
-              <small>Compact key-value summary block</small>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div data-category="text-lists">
-        <h3 class="category-heading">Text &amp; Lists</h3>
+      <div data-category="content-display" id="content-display">
+        <h3 class="category-heading">C. Content display</h3>
         <ul class="component-grid">
           <li>
             <a href="./components/rich-text.html">
@@ -295,6 +206,25 @@
               </svg>
               <strong>Rich Text</strong>
               <small>Long-form rich text content</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/image.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="media-placeholder" x="60" y="15" width="130" height="40"/>
+                <rect class="text-line" x="80" y="60" width="90" height="4"/>
+              </svg>
+              <strong>Image</strong>
+              <small>Image/illustration with caption</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/avatar.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <circle class="media-placeholder" cx="125" cy="40" r="18"/>
+              </svg>
+              <strong>Avatar</strong>
+              <small>Small identity image for attribution, comments</small>
             </a>
           </li>
           <li>
@@ -323,16 +253,76 @@
             </a>
           </li>
           <li>
-            <a href="./components/accordion.html">
+            <a href="./components/card.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="15" width="170" height="15" rx="2"/>
-                <rect class="region" x="40" y="35" width="170" height="15" rx="2"/>
-                <rect class="region" x="40" y="55" width="170" height="10" rx="2"/>
+                <rect class="region" x="40" y="10" width="70" height="60" rx="2"/>
+                <rect class="media-placeholder" x="45" y="15" width="60" height="30"/>
+                <rect class="text-line" x="45" y="50" width="50" height="6"/>
+                <rect class="text-line" x="45" y="58" width="40" height="4"/>
               </svg>
-              <strong>Accordion</strong>
-              <small>Expandable/collapsible content panels</small>
+              <strong>Card</strong>
+              <small>Preview of content — image, title, excerpt, link</small>
             </a>
           </li>
+          <li>
+            <a href="./components/hero.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="10" y="10" width="230" height="60" rx="2"/>
+                <rect class="text-line" x="60" y="25" width="130" height="10"/>
+                <rect class="text-line" x="80" y="40" width="90" height="6"/>
+                <rect class="interactive" x="100" y="50" width="50" height="12" rx="4"/>
+              </svg>
+              <strong>Hero</strong>
+              <small>Large intro area — headline, subtext, call to action</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/description-list.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="40" y="20" width="170" height="40" rx="2"/>
+                <rect class="text-line" x="50" y="30" width="60" height="5"/>
+                <rect class="text-line" x="120" y="30" width="60" height="5"/>
+                <rect class="text-line" x="50" y="42" width="60" height="5"/>
+                <rect class="text-line" x="120" y="42" width="60" height="5"/>
+              </svg>
+              <strong>Description list</strong>
+              <small>Compact key-value summary block</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/embed.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="40" y="15" width="170" height="50" rx="2"/>
+                <text x="125" y="45" text-anchor="middle" font-size="20" fill="currentColor" opacity="0.3">&lt;/&gt;</text>
+              </svg>
+              <strong>Embed</strong>
+              <small>Third-party content embedded inline</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-category="actions" id="actions">
+        <h3 class="category-heading">D. Actions and links</h3>
+        <ul class="component-grid">
+          <li>
+            <a href="./components/menu-button.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="interactive" x="80" y="20" width="90" height="15" rx="2"/>
+                <rect class="region" x="80" y="37" width="90" height="30" rx="2"/>
+                <rect class="text-line" x="88" y="43" width="70" height="5"/>
+                <rect class="text-line" x="88" y="52" width="70" height="5"/>
+              </svg>
+              <strong>Menu button</strong>
+              <small>Menu of actions or links revealed from a trigger</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-category="wayfinding" id="wayfinding">
+        <h3 class="category-heading">E. Wayfinding and sequence</h3>
+        <ul class="component-grid">
           <li>
             <a href="./components/tabs.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
@@ -343,37 +333,6 @@
               </svg>
               <strong>Tabs</strong>
               <small>Switchable tabbed content panels</small>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div data-category="navigation">
-        <h3 class="category-heading">Navigation</h3>
-        <ul class="component-grid">
-          <li>
-            <a href="./components/navigation.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="interactive" x="40" y="30" width="40" height="10" rx="2"/>
-                <rect class="interactive" x="90" y="30" width="40" height="10" rx="2"/>
-                <rect class="interactive" x="140" y="30" width="40" height="10" rx="2"/>
-                <rect class="interactive" x="190" y="30" width="40" height="10" rx="2"/>
-              </svg>
-              <strong>Navigation</strong>
-              <small>Primary navigation menu</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/breadcrumbs.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="text-line" x="40" y="35" width="30" height="6"/>
-                <text x="75" y="40" font-size="12" fill="currentColor" opacity="0.3">/</text>
-                <rect class="text-line" x="85" y="35" width="30" height="6"/>
-                <text x="120" y="40" font-size="12" fill="currentColor" opacity="0.3">/</text>
-                <rect class="interactive" x="130" y="35" width="30" height="6"/>
-              </svg>
-              <strong>Breadcrumbs</strong>
-              <small>Hierarchical location trail</small>
             </a>
           </li>
           <li>
@@ -388,12 +347,236 @@
               <small>Page-by-page navigation</small>
             </a>
           </li>
+          <li>
+            <a href="./components/timeline.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <line x1="40" y1="20" x2="40" y2="60" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                <circle class="interactive" cx="40" cy="25" r="5"/>
+                <circle class="interactive" cx="40" cy="45" r="5"/>
+                <rect class="text-line" x="55" y="22" width="80" height="5"/>
+                <rect class="text-line" x="55" y="42" width="80" height="5"/>
+              </svg>
+              <strong>Timeline</strong>
+              <small>Chronological sequence of events/milestones</small>
+            </a>
+          </li>
         </ul>
       </div>
 
-      <div data-category="calls-to-action">
-        <h3 class="category-heading">Calls to Action</h3>
+      <div data-category="disclosure-overlays" id="disclosure-overlays">
+        <h3 class="category-heading">F. Disclosure and overlays</h3>
         <ul class="component-grid">
+          <li>
+            <a href="./components/accordion.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="40" y="15" width="170" height="15" rx="2"/>
+                <rect class="region" x="40" y="35" width="170" height="15" rx="2"/>
+                <rect class="region" x="40" y="55" width="170" height="10" rx="2"/>
+              </svg>
+              <strong>Accordion</strong>
+              <small>Expandable/collapsible content panels</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/dialog.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="230" height="60" fill="currentColor" opacity="0.1"/>
+                <rect class="region" x="60" y="20" width="130" height="40" rx="2"/>
+                <rect class="interactive" x="160" y="50" width="20" height="8" rx="2"/>
+              </svg>
+              <strong>Dialog</strong>
+              <small>Overlay dialog requiring action</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/drawer.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="230" height="60" fill="currentColor" opacity="0.1"/>
+                <rect class="region" x="160" y="10" width="80" height="60" rx="2"/>
+                <rect class="text-line" x="170" y="25" width="60" height="6"/>
+                <rect class="text-line" x="170" y="35" width="50" height="5"/>
+              </svg>
+              <strong>Drawer</strong>
+              <small>Panel sliding in from a screen edge</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/popover.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="interactive" x="70" y="35" width="40" height="15" rx="2"/>
+                <rect class="region" x="120" y="20" width="80" height="40" rx="2"/>
+                <rect class="text-line" x="128" y="30" width="60" height="5"/>
+                <rect class="text-line" x="128" y="38" width="50" height="4"/>
+              </svg>
+              <strong>Popover</strong>
+              <small>Floating panel of rich content triggered by click</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/tooltip.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <circle class="interactive" cx="80" cy="45" r="8"/>
+                <rect class="region" x="100" y="35" width="60" height="20" rx="2"/>
+                <rect class="text-line" x="108" y="42" width="45" height="5"/>
+              </svg>
+              <strong>Tooltip</strong>
+              <small>Contextual hint appearing on hover/focus</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-category="feedback-status" id="feedback-status">
+        <h3 class="category-heading">G. Feedback and status</h3>
+        <ul class="component-grid">
+          <li>
+            <a href="./components/alert.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="40" y="30" width="170" height="20" rx="2"/>
+                <circle class="interactive" cx="55" cy="40" r="5"/>
+                <rect class="text-line" x="70" y="37" width="130" height="6"/>
+              </svg>
+              <strong>Alert</strong>
+              <small>Inline feedback message</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/toast.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="140" y="15" width="100" height="20" rx="4"/>
+                <rect class="text-line" x="150" y="22" width="70" height="6"/>
+              </svg>
+              <strong>Toast</strong>
+              <small>Temporary non-blocking notification</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/badge.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="interactive" x="80" y="30" width="60" height="20" rx="4"/>
+                <circle class="region" cx="145" cy="35" r="8"/>
+              </svg>
+              <strong>Badge</strong>
+              <small>Small indicator (count, status dot) attached to an element</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/progress-bar.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="40" y="35" width="170" height="10" rx="5"/>
+                <rect class="interactive" x="40" y="35" width="100" height="10" rx="5"/>
+              </svg>
+              <strong>Progress bar</strong>
+              <small>Visual indicator of task/process completion</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/spinner.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <circle class="interactive" cx="125" cy="40" r="15" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="70 30"/>
+              </svg>
+              <strong>Spinner</strong>
+              <small>Generic loading/processing animation</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/skeleton.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="40" y="20" width="170" height="10" rx="2" opacity="0.3"/>
+                <rect class="region" x="40" y="35" width="140" height="10" rx="2" opacity="0.3"/>
+                <rect class="region" x="40" y="50" width="160" height="10" rx="2" opacity="0.3"/>
+              </svg>
+              <strong>Skeleton</strong>
+              <small>Placeholder loading state mimicking content shape</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-category="forms" id="forms">
+        <h3 class="category-heading">H. Forms</h3>
+        <ul class="component-grid">
+          <li>
+            <a href="./components/form.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="50" y="15" width="150" height="12" rx="2"/>
+                <rect class="region" x="50" y="32" width="150" height="12" rx="2"/>
+                <rect class="interactive" x="90" y="50" width="70" height="12" rx="4"/>
+              </svg>
+              <strong>Form</strong>
+              <small>Data collection — contact, signup, search</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-category="collections" id="collections">
+        <h3 class="category-heading">I. Collections</h3>
+        <ul class="component-grid">
+          <li>
+            <a href="./components/carousel.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="50" y="15" width="150" height="50" rx="2"/>
+                <circle class="interactive" cx="30" cy="40" r="8"/>
+                <circle class="interactive" cx="220" cy="40" r="8"/>
+              </svg>
+              <strong>Carousel</strong>
+              <small>Paginated slideshow cycling through content</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-category="page-patterns" id="page-patterns">
+        <h3 class="category-heading">J. Page patterns</h3>
+        <p class="group-note">Standard industry section names. Not framework consensus: no UI framework in the survey ships these.</p>
+        <ul class="component-grid">
+          <li>
+            <a href="./components/feature.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <circle class="interactive" cx="50" cy="30" r="12"/>
+                <rect class="text-line" x="70" y="25" width="60" height="6"/>
+                <rect class="text-line" x="70" y="35" width="100" height="4"/>
+                <rect class="text-line" x="70" y="41" width="100" height="4"/>
+              </svg>
+              <strong>Feature</strong>
+              <small>Single feature/benefit — icon, heading, description</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/testimonial.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="region" x="40" y="20" width="170" height="40" rx="2"/>
+                <text x="55" y="40" font-size="20" fill="currentColor" opacity="0.3">"</text>
+                <rect class="text-line" x="65" y="32" width="120" height="4"/>
+                <rect class="text-line" x="65" y="38" width="100" height="4"/>
+              </svg>
+              <strong>Testimonial</strong>
+              <small>Quote/review attributed to a person</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/stats.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="text-line" x="80" y="25" width="90" height="15"/>
+                <rect class="text-line" x="100" y="45" width="50" height="6"/>
+              </svg>
+              <strong>Stats</strong>
+              <small>Single key metric displayed prominently</small>
+            </a>
+          </li>
+          <li>
+            <a href="./components/logo-cloud.html">
+              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="media-placeholder" x="20" y="25" width="40" height="30"/>
+                <rect class="media-placeholder" x="70" y="25" width="40" height="30"/>
+                <rect class="media-placeholder" x="120" y="25" width="40" height="30"/>
+                <rect class="media-placeholder" x="170" y="25" width="40" height="30"/>
+              </svg>
+              <strong>Logo cloud</strong>
+              <small>Row/grid of partner/client logos</small>
+            </a>
+          </li>
           <li>
             <a href="./components/call-to-action.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
@@ -419,531 +602,637 @@
           </li>
         </ul>
       </div>
-
-      <div data-category="forms-feedback">
-        <h3 class="category-heading">Forms &amp; Feedback</h3>
-        <ul class="component-grid">
-          <li>
-            <a href="./components/form.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="50" y="15" width="150" height="12" rx="2"/>
-                <rect class="region" x="50" y="32" width="150" height="12" rx="2"/>
-                <rect class="interactive" x="90" y="50" width="70" height="12" rx="4"/>
-              </svg>
-              <strong>Form</strong>
-              <small>Data collection — contact, signup, search</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/dialog.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" y="10" width="230" height="60" fill="currentColor" opacity="0.1"/>
-                <rect class="region" x="60" y="20" width="130" height="40" rx="2"/>
-                <rect class="interactive" x="160" y="50" width="20" height="8" rx="2"/>
-              </svg>
-              <strong>Dialog</strong>
-              <small>Overlay dialog requiring action</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/alert.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="30" width="170" height="20" rx="2"/>
-                <circle class="interactive" cx="55" cy="40" r="5"/>
-                <rect class="text-line" x="70" y="37" width="130" height="6"/>
-              </svg>
-              <strong>Alert</strong>
-              <small>Inline feedback message</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/toast.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="140" y="15" width="100" height="20" rx="4"/>
-                <rect class="text-line" x="150" y="22" width="70" height="6"/>
-              </svg>
-              <strong>Toast</strong>
-              <small>Temporary non-blocking notification</small>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div data-category="overlays-menus">
-        <h3 class="category-heading">Overlays &amp; Menus</h3>
-        <ul class="component-grid">
-          <li>
-            <a href="./components/tooltip.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <circle class="interactive" cx="80" cy="45" r="8"/>
-                <rect class="region" x="100" y="35" width="60" height="20" rx="2"/>
-                <rect class="text-line" x="108" y="42" width="45" height="5"/>
-              </svg>
-              <strong>Tooltip</strong>
-              <small>Contextual hint appearing on hover/focus</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/popover.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="interactive" x="70" y="35" width="40" height="15" rx="2"/>
-                <rect class="region" x="120" y="20" width="80" height="40" rx="2"/>
-                <rect class="text-line" x="128" y="30" width="60" height="5"/>
-                <rect class="text-line" x="128" y="38" width="50" height="4"/>
-              </svg>
-              <strong>Popover</strong>
-              <small>Floating panel of rich content triggered by click</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/drawer.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" y="10" width="230" height="60" fill="currentColor" opacity="0.1"/>
-                <rect class="region" x="160" y="10" width="80" height="60" rx="2"/>
-                <rect class="text-line" x="170" y="25" width="60" height="6"/>
-                <rect class="text-line" x="170" y="35" width="50" height="5"/>
-              </svg>
-              <strong>Drawer</strong>
-              <small>Panel sliding in from a screen edge</small>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div data-category="indicators-status">
-        <h3 class="category-heading">Indicators &amp; Status</h3>
-        <ul class="component-grid">
-          <li>
-            <a href="./components/badge.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="interactive" x="80" y="30" width="60" height="20" rx="4"/>
-                <circle class="region" cx="145" cy="35" r="8"/>
-              </svg>
-              <strong>Badge</strong>
-              <small>Small indicator (count, status dot) attached to an element</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/skeleton.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="20" width="170" height="10" rx="2" opacity="0.3"/>
-                <rect class="region" x="40" y="35" width="140" height="10" rx="2" opacity="0.3"/>
-                <rect class="region" x="40" y="50" width="160" height="10" rx="2" opacity="0.3"/>
-              </svg>
-              <strong>Skeleton</strong>
-              <small>Placeholder loading state mimicking content shape</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/progress-bar.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="40" y="35" width="170" height="10" rx="5"/>
-                <rect class="interactive" x="40" y="35" width="100" height="10" rx="5"/>
-              </svg>
-              <strong>Progress bar</strong>
-              <small>Visual indicator of task/process completion</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/spinner.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <circle class="interactive" cx="125" cy="40" r="15" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="70 30"/>
-              </svg>
-              <strong>Spinner</strong>
-              <small>Generic loading/processing animation</small>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div data-category="interactive">
-        <h3 class="category-heading">Interactive</h3>
-        <ul class="component-grid">
-          <li>
-            <a href="./components/menu-button.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="interactive" x="80" y="20" width="90" height="15" rx="2"/>
-                <rect class="region" x="80" y="37" width="90" height="30" rx="2"/>
-                <rect class="text-line" x="88" y="43" width="70" height="5"/>
-                <rect class="text-line" x="88" y="52" width="70" height="5"/>
-              </svg>
-              <strong>Menu button</strong>
-              <small>Menu of actions or links revealed from a trigger</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/carousel.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="region" x="50" y="15" width="150" height="50" rx="2"/>
-                <circle class="interactive" cx="30" cy="40" r="8"/>
-                <circle class="interactive" cx="220" cy="40" r="8"/>
-              </svg>
-              <strong>Carousel</strong>
-              <small>Paginated slideshow cycling through content</small>
-            </a>
-          </li>
-          <li>
-            <a href="./components/avatar.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <circle class="media-placeholder" cx="125" cy="40" r="18"/>
-              </svg>
-              <strong>Avatar</strong>
-              <small>Small identity image for attribution, comments</small>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div data-category="utility">
-        <h3 class="category-heading">Utility</h3>
-        <ul class="component-grid">
-          <li>
-            <a href="./components/separator.html">
-              <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-                <line x1="40" y1="40" x2="210" y2="40" stroke="currentColor" stroke-width="2" opacity="0.3"/>
-              </svg>
-              <strong>Separator</strong>
-              <small>Visual separator between content sections</small>
-            </a>
-          </li>
-        </ul>
-      </div>
     </section>
 
     <section id="comparison">
       <h2>Cross-System Comparison</h2>
+      <p>How 12 design systems name each component, from <code>docs/research/framework-alignment.csv</code>.</p>
+      <ul class="match-key">
+        <li><span class="match-symbol" aria-hidden="true">●</span> Same name</li>
+        <li><span class="match-symbol" aria-hidden="true">◐</span> Known alternative name</li>
+        <li><span class="match-symbol" aria-hidden="true">○</span> Related component under another name</li>
+        <li><span class="match-symbol" aria-hidden="true">—</span> No equivalent</li>
+        <li><sup>*</sup> Not in the CSV: names come from the old page and cover 5 systems only</li>
+      </ul>
       <div style="overflow-x: auto;">
         <table>
           <thead>
             <tr>
               <th>Component</th>
-              <th>Bootstrap</th>
               <th>MUI</th>
+              <th>Bootstrap</th>
               <th>Ant Design</th>
+              <th>Carbon</th>
+              <th>Polaris</th>
+              <th>Atlassian</th>
+              <th>Chakra UI</th>
+              <th>Radix Themes</th>
+              <th>shadcn/ui</th>
+              <th>Fluent UI</th>
+              <th>GOV.UK</th>
               <th>Apple HIG</th>
-              <th>shadcn</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><a href="./components/section.html">Section</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
               <td><a href="./components/header.html">Header</a></td>
-              <td>—</td>
-              <td>App Bar</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/footer.html">Footer</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/sidebar.html">Sidebar</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>Sidebar</td>
-            </tr>
-            <tr>
-              <td><a href="./components/grid.html">Grid</a></td>
-              <td>Grid</td>
-              <td>Grid</td>
-              <td>Grid</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/hero.html">Hero</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/card.html">Card</a></td>
-              <td>Card</td>
-              <td>Card</td>
-              <td>Card</td>
-              <td>—</td>
-              <td>Card</td>
-            </tr>
-            <tr>
-              <td><a href="./components/feature.html">Feature</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/image.html">Image</a></td>
-              <td>Images</td>
-              <td>—</td>
-              <td>Image</td>
-              <td>Image views</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/embed.html">Embed</a></td>
-              <td>Embed</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/testimonial.html">Testimonial</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/stats.html">Stats</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>Statistic</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/timeline.html">Timeline</a></td>
-              <td>—</td>
-              <td>Timeline</td>
-              <td>Timeline</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/logo-cloud.html">Logo cloud</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/description-list.html">Description list</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>Descriptions</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/rich-text.html">Rich Text</a></td>
-              <td>—</td>
-              <td>Typography</td>
-              <td>Typography</td>
-              <td>—</td>
-              <td>Typography</td>
-            </tr>
-            <tr>
-              <td><a href="./components/list.html">List</a></td>
-              <td>List group</td>
-              <td>List</td>
-              <td>List (deprecated)</td>
-              <td>Lists and tables</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/table.html">Table</a></td>
-              <td>Tables</td>
-              <td>Table</td>
-              <td>Table</td>
-              <td>Lists and tables</td>
-              <td>Table</td>
-            </tr>
-            <tr>
-              <td><a href="./components/accordion.html">Accordion</a></td>
-              <td>Accordion</td>
-              <td>Accordion</td>
-              <td>Collapse</td>
-              <td>Disclosure controls</td>
-              <td>Accordion</td>
-            </tr>
-            <tr>
-              <td><a href="./components/tabs.html">Tabs</a></td>
-              <td>Navs & tabs</td>
-              <td>Tabs</td>
-              <td>Tabs</td>
-              <td>Tab views</td>
-              <td>Tabs</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> App Bar</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> UI shell header</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> GOV.UK header</td>
+              <td class="match-none">—</td>
             </tr>
             <tr>
               <td><a href="./components/navigation.html">Navigation</a></td>
-              <td>Navbar</td>
-              <td>—</td>
-              <td>Menu</td>
-              <td>—</td>
-              <td>Navigation Menu</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Navbar</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Menu</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Navigation system</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Navigation Menu</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Nav</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Service navigation</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/sidebar.html">Sidebar</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> UI shell left panel</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Side navigation</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Sidebar</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/footer.html">Footer</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> GOV.UK footer</td>
+              <td class="match-none">—</td>
             </tr>
             <tr>
               <td><a href="./components/breadcrumbs.html">Breadcrumbs</a></td>
-              <td>Breadcrumb</td>
-              <td>Breadcrumbs</td>
-              <td>Breadcrumb</td>
-              <td>—</td>
-              <td>Breadcrumb</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumbs</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumb</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumb</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumb</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumbs</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumb</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumb</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumb</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Breadcrumbs</td>
+              <td class="match-none">—</td>
             </tr>
             <tr>
-              <td><a href="./components/pagination.html">Pagination</a></td>
-              <td>Pagination</td>
-              <td>Pagination</td>
-              <td>Pagination</td>
-              <td>Page controls</td>
-              <td>Pagination</td>
+              <td><a href="./components/section.html">Section</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Section</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Section</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
             </tr>
             <tr>
-              <td><a href="./components/call-to-action.html">Call to action</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/pricing-table.html">Pricing table</a></td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/form.html">Form</a></td>
-              <td>Forms</td>
-              <td>—</td>
-              <td>Form</td>
-              <td>—</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><a href="./components/dialog.html">Dialog</a></td>
-              <td>Modal</td>
-              <td>Dialog</td>
-              <td>Modal</td>
-              <td>Sheets / Alerts</td>
-              <td>Dialog</td>
-            </tr>
-            <tr>
-              <td><a href="./components/alert.html">Alert</a></td>
-              <td>Alerts</td>
-              <td>Alert</td>
-              <td>Alert</td>
-              <td>—</td>
-              <td>Alert</td>
-            </tr>
-            <tr>
-              <td><a href="./components/toast.html">Toast</a></td>
-              <td>Toasts</td>
-              <td>Snackbar</td>
-              <td>Message</td>
-              <td>—</td>
-              <td>Toast</td>
-            </tr>
-            <tr>
-              <td><a href="./components/tooltip.html">Tooltip</a></td>
-              <td>Tooltips</td>
-              <td>Tooltip</td>
-              <td>Tooltip</td>
-              <td>—</td>
-              <td>Tooltip</td>
-            </tr>
-            <tr>
-              <td><a href="./components/popover.html">Popover</a></td>
-              <td>Popovers</td>
-              <td>Popover</td>
-              <td>Popover</td>
-              <td>Popovers</td>
-              <td>Popover</td>
-            </tr>
-            <tr>
-              <td><a href="./components/drawer.html">Drawer</a></td>
-              <td>Offcanvas</td>
-              <td>Drawer</td>
-              <td>Drawer</td>
-              <td>Sheets</td>
-              <td>Sheet</td>
-            </tr>
-            <tr>
-              <td><a href="./components/badge.html">Badge</a></td>
-              <td>Badge</td>
-              <td>Badge</td>
-              <td>Badge</td>
-              <td>—</td>
-              <td>Badge</td>
-            </tr>
-            <tr>
-              <td><a href="./components/skeleton.html">Skeleton</a></td>
-              <td>Placeholders</td>
-              <td>Skeleton</td>
-              <td>Skeleton</td>
-              <td>—</td>
-              <td>Skeleton</td>
-            </tr>
-            <tr>
-              <td><a href="./components/progress-bar.html">Progress bar</a></td>
-              <td>Progress</td>
-              <td>Progress</td>
-              <td>Progress</td>
-              <td>Progress indicators</td>
-              <td>Progress</td>
-            </tr>
-            <tr>
-              <td><a href="./components/spinner.html">Spinner</a></td>
-              <td>Spinners</td>
-              <td>Progress</td>
-              <td>Spin</td>
-              <td>Progress indicators</td>
-              <td>Spinner</td>
-            </tr>
-            <tr>
-              <td><a href="./components/menu-button.html">Menu button</a></td>
-              <td>Dropdowns</td>
-              <td>Menu</td>
-              <td>Dropdown</td>
-              <td>Pull-down buttons</td>
-              <td>Dropdown Menu</td>
-            </tr>
-            <tr>
-              <td><a href="./components/carousel.html">Carousel</a></td>
-              <td>Carousel</td>
-              <td>—</td>
-              <td>Carousel</td>
-              <td>—</td>
-              <td>Carousel</td>
-            </tr>
-            <tr>
-              <td><a href="./components/avatar.html">Avatar</a></td>
-              <td>—</td>
-              <td>Avatar</td>
-              <td>Avatar</td>
-              <td>—</td>
-              <td>Avatar</td>
+              <td><a href="./components/grid.html">Grid</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Grid</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Grid</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Grid</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Grid</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Grid</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Grid</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Grid</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
             </tr>
             <tr>
               <td><a href="./components/separator.html">Separator</a></td>
-              <td>Vertical rule</td>
-              <td>Divider</td>
-              <td>Divider</td>
-              <td>—</td>
-              <td>Separator</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Divider</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Vertical rule</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Divider</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Divider</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Separator</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Separator</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Separator</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Divider</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/rich-text.html">Rich Text</a><sup>*</sup></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Typography</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Typography</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Typography</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/image.html">Image</a></td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Images</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Image</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Image</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Image</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Image</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Image</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Image views</td>
+            </tr>
+            <tr>
+              <td><a href="./components/avatar.html">Avatar</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Avatar</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/list.html">List</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> List</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> List group</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> List (deprecated)</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> List</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Ordered list / Unordered list</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> List</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> List</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Lists and tables</td>
+            </tr>
+            <tr>
+              <td><a href="./components/table.html">Table</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tables</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Data table</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Table</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Lists and tables</td>
+            </tr>
+            <tr>
+              <td><a href="./components/card.html">Card</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Card</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Card</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Card</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Tile</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Card</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Card</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Card</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Card</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/hero.html">Hero</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/description-list.html">Description list</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Descriptions</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/embed.html">Embed</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Embed</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/menu-button.html">Menu button</a></td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Menu</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Dropdowns</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Dropdown</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Menu buttons</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Menu</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Dropdown menu</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Menu</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Dropdown Menu</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Dropdown Menu</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Menu</td>
+              <td class="match-none">—</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Pull-down buttons</td>
+            </tr>
+            <tr>
+              <td><a href="./components/tabs.html">Tabs</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Navs & tabs</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Tablist</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tabs</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Tab views</td>
+            </tr>
+            <tr>
+              <td><a href="./components/pagination.html">Pagination</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Pagination</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Page controls</td>
+            </tr>
+            <tr>
+              <td><a href="./components/timeline.html">Timeline</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Timeline</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Timeline</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Timeline</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/accordion.html">Accordion</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Accordion</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Accordion</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Collapse</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Accordion</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Accordion</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Accordion</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Accordion</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Accordion</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Disclosure controls</td>
+            </tr>
+            <tr>
+              <td><a href="./components/dialog.html">Dialog</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Dialog</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Modal</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Modal</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Modal</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Modal</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Modal dialog</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Dialog</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Dialog</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Dialog</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Dialog</td>
+              <td class="match-none">—</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Sheets / Alerts</td>
+            </tr>
+            <tr>
+              <td><a href="./components/drawer.html">Drawer</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Drawer</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Offcanvas</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Drawer</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Drawer</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Drawer</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Sheet</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Drawer</td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Sheets</td>
+            </tr>
+            <tr>
+              <td><a href="./components/popover.html">Popover</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popovers</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Popup</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popover</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Popovers</td>
+            </tr>
+            <tr>
+              <td><a href="./components/tooltip.html">Tooltip</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltips</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Tooltip</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/alert.html">Alert</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Alert</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Alerts</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Alert</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Notification</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Banner</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Banner</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Alert</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Callout</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Alert</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Message bar</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Notification banner</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/toast.html">Toast</a></td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Snackbar</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Toasts</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Message</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Flag</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Toast</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Toast</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Toast</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/badge.html">Badge</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Tag</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Badge</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Tag</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/progress-bar.html">Progress bar</a></td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Progress</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Progress</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Progress</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Progress bar</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Progress</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Progress bar</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Progress</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Progress</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Progress</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Progress bar</td>
+              <td class="match-none">—</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Progress indicators</td>
+            </tr>
+            <tr>
+              <td><a href="./components/spinner.html">Spinner</a></td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Progress</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Spinners</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Spin</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Loading</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Spinner</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Spinner</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Spinner</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Spinner</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Spinner</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Spinner</td>
+              <td class="match-none">—</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Progress indicators</td>
+            </tr>
+            <tr>
+              <td><a href="./components/skeleton.html">Skeleton</a></td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Skeleton</td>
+              <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Placeholders</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Skeleton</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Skeleton</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Skeleton</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Skeleton</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Skeleton</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Skeleton</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/form.html">Form</a></td>
+              <td class="match-none">—</td>
+              <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Forms</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Form</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Form</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Form</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/carousel.html">Carousel</a></td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Carousel</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Carousel</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Carousel</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Carousel</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Carousel</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/feature.html">Feature</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/testimonial.html">Testimonial</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/stats.html">Stats</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Statistic</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/logo-cloud.html">Logo cloud</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/call-to-action.html">Call to action</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/pricing-table.html">Pricing table</a><sup>*</sup></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
             </tr>
           </tbody>
         </table>
