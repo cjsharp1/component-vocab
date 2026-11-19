@@ -124,5 +124,13 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "",
+  "aria": "Carousel",
+  "researchNote": "Auto-rotation needs a pause control (WCAG 2.2.2)",
+  "frameworkNotes": "",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

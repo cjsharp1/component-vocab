@@ -37,6 +37,12 @@
         <dd>Picture, Figure. In design systems: Images (Bootstrap); Image (Ant Design, Polaris, Atlassian, Chakra UI, Fluent UI); Image views (Apple HIG)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;figure&gt;</code> + <code>&lt;figcaption&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;img&gt;</code>, <code>&lt;picture&gt;</code>, <code>&lt;figure&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>img</dd>
+        <dt>Research note</dt>
+        <dd>Alt text</dd>
         <dt>Category</dt>
         <dd>C. Content display</dd>
       </dl>
@@ -183,6 +189,33 @@
         <li>Caption text should describe or attribute the image, not repeat information already visible.</li>
         <li>For diagrams and charts, caption should help screen reader users understand the content.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a>, <a href="hero.html">Hero</a>, <a href="tabs.html">Tabs</a>, <a href="accordion.html">Accordion</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 7 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bootstrap</td><td>Images</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Image</td><td>Same name</td></tr>
+          <tr><td>Polaris</td><td>Image</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Image</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Image</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Image</td><td>Same name</td></tr>
+          <tr><td>Apple HIG</td><td>Image views</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <nav class="component-nav">

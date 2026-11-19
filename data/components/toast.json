@@ -125,5 +125,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`role=\"status\"`",
+  "aria": "",
+  "researchNote": "Transient overlay. Auto-dismissing ones can fail WCAG 2.2.1 (Timing Adjustable)",
+  "frameworkNotes": "Toast 4, Snackbar 1, other 2, none 5.",
+  "parents": [],
+  "children": []
 }

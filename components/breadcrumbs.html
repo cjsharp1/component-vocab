@@ -37,6 +37,12 @@
         <dd>Breadcrumb, Breadcrumb trail. In design systems: Breadcrumbs (MUI, Atlassian, GOV.UK); Breadcrumb (Bootstrap, Ant Design, Carbon, Chakra UI, shadcn/ui, Fluent UI)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;nav&gt;</code> with aria-label="breadcrumb"</dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;nav aria-label="Breadcrumb"&gt;&lt;ol&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>Breadcrumb</dd>
+        <dt>Research note</dt>
+        <dd><code>aria-current="page"</code> on the last item</dd>
         <dt>Category</dt>
         <dd>A. Page structure</dd>
       </dl>
@@ -193,6 +199,36 @@
         <li>Don't use on single-level sites.</li>
         <li>For very deep hierarchies, consider truncating middle items with an ellipsis.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 9 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Breadcrumbs</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Breadcrumb</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Breadcrumb</td><td>Same name</td></tr>
+          <tr><td>Carbon</td><td>Breadcrumb</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Breadcrumbs</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Breadcrumb</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Breadcrumb</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Breadcrumb</td><td>Same name</td></tr>
+          <tr><td>GOV.UK</td><td>Breadcrumbs</td><td>Same name</td></tr>
+        </tbody>
+      </table>
+      <p>Singular or plural, nobody disagrees.</p>
     </section>
 
     <nav class="component-nav">

@@ -37,6 +37,12 @@
         <dd>In design systems: Grid (MUI, Bootstrap, Ant Design, Polaris, Atlassian, Chakra UI, Radix Themes)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;div&gt;</code> + CSS grid</dd>
+        <dt>ARIA pattern</dt>
+        <dd>none</dd>
+        <dt>Research note</dt>
+        <dd><code>role=grid</code> is reserved for the interactive Data grid</dd>
         <dt>Category</dt>
         <dd>B. Layout primitives</dd>
       </dl>
@@ -225,6 +231,33 @@
         <li>Prefer auto-fit for content-driven layouts where item count varies.</li>
         <li>Grid is a layout utility — it doesn't add visual styling to its children.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 7 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Grid</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Grid</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Grid</td><td>Same name</td></tr>
+          <tr><td>Polaris</td><td>Grid</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Grid</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Grid</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Grid</td><td>Same name</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <nav class="component-nav">

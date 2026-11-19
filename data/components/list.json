@@ -124,5 +124,15 @@
       "match": "alias",
       "name": "Lists and tables"
     }
-  }
+  },
+  "nativeHtml": "`ul`, `ol`, `dl`",
+  "aria": "list",
+  "researchNote": "",
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "tabs",
+    "accordion"
+  ],
+  "children": []
 }

@@ -37,6 +37,12 @@
         <dd>Collapse, Expander, Details, Collapsible, Disclosure. In design systems: Accordion (MUI, Bootstrap, Carbon, Chakra UI, shadcn/ui, Fluent UI, GOV.UK); Collapse (Ant Design); Disclosure controls (Apple HIG)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> or <code>&lt;div&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;details&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>Accordion</dd>
+        <dt>Research note</dt>
+        <dd>A group of related disclosures</dd>
         <dt>Category</dt>
         <dd>F. Disclosure and overlays</dd>
       </dl>
@@ -216,6 +222,38 @@
         <li>Don't nest Accordions.</li>
         <li>Keep panel headers short and descriptive — they should clearly indicate what content is hidden.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+        <dt>Allowed children</dt>
+        <dd><a href="rich-text.html">Rich Text</a>, <a href="image.html">Image</a>, <a href="list.html">List</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 9 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Accordion</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Accordion</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Collapse</td><td>Known alternative name</td></tr>
+          <tr><td>Carbon</td><td>Accordion</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Accordion</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Accordion</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Accordion</td><td>Same name</td></tr>
+          <tr><td>GOV.UK</td><td>Accordion</td><td>Same name</td></tr>
+          <tr><td>Apple HIG</td><td>Disclosure controls</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Accordion 7 of 12.</p>
     </section>
 
     <nav class="component-nav">

@@ -111,5 +111,13 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`aria-busy` on the region",
+  "aria": "",
+  "researchNote": "",
+  "frameworkNotes": "",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

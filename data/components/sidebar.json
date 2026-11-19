@@ -113,5 +113,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<aside>`",
+  "aria": "complementary",
+  "researchNote": "Persistent and in flow. Not an overlay (that's a Drawer)",
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
 }

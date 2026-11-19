@@ -128,5 +128,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<nav>`",
+  "aria": "navigation",
+  "researchNote": "Link lists. Label each one if there's more than one",
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
 }

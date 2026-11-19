@@ -37,6 +37,12 @@
         <dd>Notification, Banner, Callout, Message. In design systems: Alert (MUI, Ant Design, Chakra UI, shadcn/ui); Alerts (Bootstrap); Notification (Carbon); Banner (Polaris, Atlassian); Callout (Radix Themes); Message bar (Fluent UI); Notification banner (GOV.UK)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with role="alert"</dd>
+        <dt>Native HTML</dt>
+        <dd><code>role="alert"</code> or <code>role="status"</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>Alert</dd>
+        <dt>Research note</dt>
+        <dd>In-flow message</dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -287,6 +293,38 @@
         <li>Avoid the word "banner" for this: it is the name of the page header landmark.</li>
         <li>Pull-quotes belong to Quote, not Alert.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 11 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Alert</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Alerts</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Alert</td><td>Same name</td></tr>
+          <tr><td>Carbon</td><td>Notification</td><td>Known alternative name</td></tr>
+          <tr><td>Polaris</td><td>Banner</td><td>Known alternative name</td></tr>
+          <tr><td>Atlassian</td><td>Banner</td><td>Known alternative name</td></tr>
+          <tr><td>Chakra UI</td><td>Alert</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Callout</td><td>Known alternative name</td></tr>
+          <tr><td>shadcn/ui</td><td>Alert</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Message bar</td><td>Known alternative name</td></tr>
+          <tr><td>GOV.UK</td><td>Notification banner</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Alert 6, Banner 2, Notification 2, Callout 1, Message bar 1.</p>
     </section>
 
     <nav class="component-nav">

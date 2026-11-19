@@ -120,5 +120,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<nav aria-label=\"Breadcrumb\"><ol>`",
+  "aria": "Breadcrumb",
+  "researchNote": "`aria-current=\"page\"` on the last item",
+  "frameworkNotes": "Singular or plural, nobody disagrees.",
+  "parents": [],
+  "children": []
 }

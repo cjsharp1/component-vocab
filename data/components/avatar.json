@@ -125,5 +125,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<img>`",
+  "aria": "",
+  "researchNote": "",
+  "frameworkNotes": "8 of 12 ship it, all under the same name.",
+  "parents": [],
+  "children": []
 }

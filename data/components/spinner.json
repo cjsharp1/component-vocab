@@ -126,5 +126,13 @@
       "match": "different",
       "name": "Progress indicators"
     }
-  }
+  },
+  "nativeHtml": "`role=\"status\"`",
+  "aria": "",
+  "researchNote": "",
+  "frameworkNotes": "Spinner 7.",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

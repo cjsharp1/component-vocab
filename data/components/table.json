@@ -140,5 +140,13 @@
       "match": "alias",
       "name": "Lists and tables"
     }
-  }
+  },
+  "nativeHtml": "`<table>`",
+  "aria": "Table",
+  "researchNote": "Static data",
+  "frameworkNotes": "",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

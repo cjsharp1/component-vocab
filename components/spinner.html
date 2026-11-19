@@ -37,6 +37,8 @@
         <dd>Loader, Loading. In design systems: Progress (MUI); Spinners (Bootstrap); Spin (Ant Design); Loading (Carbon); Spinner (Polaris, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI); Progress indicators (Apple HIG)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with role="status"</dd>
+        <dt>Native HTML</dt>
+        <dd><code>role="status"</code></dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -169,6 +171,38 @@
         <li>Provide accessible labeling with <code>role="status"</code> and an <code>aria-label</code> or visually-hidden text.</li>
         <li>Full-page overlays block all interaction. Use sparingly and only for critical operations.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 11 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Progress</td><td>Related component under another name</td></tr>
+          <tr><td>Bootstrap</td><td>Spinners</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Spin</td><td>Related component under another name</td></tr>
+          <tr><td>Carbon</td><td>Loading</td><td>Known alternative name</td></tr>
+          <tr><td>Polaris</td><td>Spinner</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Spinner</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Spinner</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Spinner</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Spinner</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Spinner</td><td>Same name</td></tr>
+          <tr><td>Apple HIG</td><td>Progress indicators</td><td>Related component under another name</td></tr>
+        </tbody>
+      </table>
+      <p>Spinner 7.</p>
     </section>
 
     <nav class="component-nav">

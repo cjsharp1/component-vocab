@@ -37,6 +37,10 @@
         <dd>In design systems: Pagination (MUI, Bootstrap, Ant Design, Carbon, Atlassian, Chakra UI, shadcn/ui, GOV.UK); Page controls (Apple HIG)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;nav&gt;</code> with aria-label="pagination"</dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;nav aria-label="Pagination"&gt;&lt;ul&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd><code>aria-current="page"</code></dd>
         <dt>Category</dt>
         <dd>E. Wayfinding and sequence</dd>
       </dl>
@@ -196,6 +200,35 @@
         <li>Show 5-7 page numbers maximum. Use ellipsis for longer lists.</li>
         <li>Disable Previous on the first page and Next on the last page.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 9 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>Carbon</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>GOV.UK</td><td>Pagination</td><td>Same name</td></tr>
+          <tr><td>Apple HIG</td><td>Page controls</td><td>Related component under another name</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <nav class="component-nav">

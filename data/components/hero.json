@@ -134,5 +134,16 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<header>` or `<div>`",
+  "aria": "",
+  "researchNote": "\"Banner\" is a landmark, so avoid it",
+  "frameworkNotes": "No framework ships a Hero. It is a page-builder term, not a library term.",
+  "parents": [
+    "section"
+  ],
+  "children": [
+    "rich-text",
+    "image"
+  ]
 }

@@ -37,6 +37,12 @@
         <dd>Tray, Flyout, Sheet. In design systems: Drawer (MUI, Ant Design, Atlassian, Chakra UI, Fluent UI); Offcanvas (Bootstrap); Sheet (shadcn/ui); Sheets (Apple HIG)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with appropriate ARIA</dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;dialog&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>Dialog</dd>
+        <dt>Research note</dt>
+        <dd>Edge-anchored overlay</dd>
         <dt>Category</dt>
         <dd>F. Disclosure and overlays</dd>
       </dl>
@@ -211,6 +217,35 @@
         <li>The "Overlay" behavior places the drawer above content. "Push" behavior shifts the main content aside.</li>
         <li>Always provide a way to dismiss: close button, backdrop click, or Escape key.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 8 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Drawer</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Offcanvas</td><td>Related component under another name</td></tr>
+          <tr><td>Ant Design</td><td>Drawer</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Drawer</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Drawer</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Sheet</td><td>Known alternative name</td></tr>
+          <tr><td>Fluent UI</td><td>Drawer</td><td>Same name</td></tr>
+          <tr><td>Apple HIG</td><td>Sheets</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Drawer 5.</p>
     </section>
 
     <nav class="component-nav">

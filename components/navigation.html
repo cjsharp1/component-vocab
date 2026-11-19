@@ -37,6 +37,12 @@
         <dd>Nav, Menu. In design systems: Navbar (Bootstrap); Menu (Ant Design); Navigation system (Atlassian); Navigation Menu (shadcn/ui); Nav (Fluent UI); Service navigation (GOV.UK)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;nav&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;nav&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>navigation</dd>
+        <dt>Research note</dt>
+        <dd>Link lists. Label each one if there's more than one</dd>
         <dt>Category</dt>
         <dd>A. Page structure</dd>
       </dl>
@@ -190,6 +196,32 @@
         <li>For sidebar navigation, combine with <strong>Sidebar</strong>.</li>
         <li>Keep top-level nav items to 5-7 for optimal usability. Use dropdowns for additional options.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 6 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bootstrap</td><td>Navbar</td><td>Known alternative name</td></tr>
+          <tr><td>Ant Design</td><td>Menu</td><td>Known alternative name</td></tr>
+          <tr><td>Atlassian</td><td>Navigation system</td><td>Known alternative name</td></tr>
+          <tr><td>shadcn/ui</td><td>Navigation Menu</td><td>Known alternative name</td></tr>
+          <tr><td>Fluent UI</td><td>Nav</td><td>Known alternative name</td></tr>
+          <tr><td>GOV.UK</td><td>Service navigation</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <nav class="component-nav">

@@ -12,6 +12,7 @@ import { join, dirname, normalize, relative } from 'node:path';
 import { validate, loadComponents } from './validate.mjs';
 import { componentPage, redirectPage } from './templates/component.mjs';
 import { indexPage } from './templates/index.mjs';
+import { derive } from './structure.mjs';
 
 const root = process.cwd();
 const check = process.argv.includes('--check');
@@ -22,11 +23,12 @@ export function build() {
   const systems = JSON.parse(read('data/systems.json'));
   const components = loadComponents(root).map(c => c.data).sort((a, b) => a.order - b.order);
   const svg = path => read(path);
+  const names = new Map(components.map(c => [c.slug, c.name]));
   const out = new Map();
   components.forEach((c, i) => {
     const group = groups.find(g => g.slug === c.group);
     if (!group) throw new Error(`${c.slug}: unknown group "${c.group}"`);
-    out.set(`components/${c.slug}.html`, componentPage(c, { prev: components[i - 1], next: components[i + 1], group, svg }));
+    out.set(`components/${c.slug}.html`, componentPage(c, { prev: components[i - 1], next: components[i + 1], group, svg, names }));
   });
   out.set('index.html', indexPage({ groups, components, systems, svg }));
   const redirects = existsSync(join(root, 'data/redirects.json')) ? JSON.parse(read('data/redirects.json')) : {};
@@ -65,6 +67,17 @@ const { count, errors: dataErrors } = validate(root);
 if (dataErrors.length) {
   console.error(dataErrors.join('\n'));
   console.error(`\nData invalid: ${dataErrors.length} error(s)`);
+  process.exit(1);
+}
+// Parent/child data must match what data/structure.json derives.
+const rules = JSON.parse(read('data/structure.json'));
+const current = loadComponents(root).map(c => c.data);
+const derived = derive(current, rules);
+const structureErrors = current
+  .filter(c => [...derived.parents[c.slug]].sort().join() !== [...c.parents].sort().join() || [...derived.children[c.slug]].sort().join() !== [...c.children].sort().join())
+  .map(c => `data/components/${c.slug}.json: parents/children out of date (run node scripts/structure.mjs)`);
+if (structureErrors.length) {
+  console.error(structureErrors.join('\n'));
   process.exit(1);
 }
 const out = build();

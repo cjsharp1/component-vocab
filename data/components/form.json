@@ -125,5 +125,13 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<form>`",
+  "aria": "form (when named)",
+  "researchNote": "",
+  "frameworkNotes": "",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

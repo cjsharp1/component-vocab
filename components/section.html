@@ -37,6 +37,12 @@
         <dd>In design systems: Section (Polaris, Radix Themes)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;section&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;section&gt;</code> or <code>&lt;div&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>region (only when named)</dd>
+        <dt>Research note</dt>
+        <dd>See weak spot 1</dd>
         <dt>Category</dt>
         <dd>B. Layout primitives</dd>
       </dl>
@@ -182,6 +188,31 @@
         <li>Add an id attribute for anchor link navigation.</li>
         <li>Width is a Section setting (narrow, content, wide, full), not a separate Container block.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+        <dt>Allowed children</dt>
+        <dd><a href="grid.html">Grid</a>, <a href="separator.html">Separator</a>, <a href="rich-text.html">Rich Text</a>, <a href="image.html">Image</a>, <a href="list.html">List</a>, <a href="table.html">Table</a>, <a href="card.html">Card</a>, <a href="hero.html">Hero</a>, <a href="description-list.html">Description list</a>, <a href="embed.html">Embed</a>, <a href="menu-button.html">Menu button</a>, <a href="tabs.html">Tabs</a>, <a href="pagination.html">Pagination</a>, <a href="timeline.html">Timeline</a>, <a href="accordion.html">Accordion</a>, <a href="alert.html">Alert</a>, <a href="progress-bar.html">Progress bar</a>, <a href="spinner.html">Spinner</a>, <a href="skeleton.html">Skeleton</a>, <a href="form.html">Form</a>, <a href="carousel.html">Carousel</a>, <a href="feature.html">Feature</a>, <a href="testimonial.html">Testimonial</a>, <a href="stats.html">Stats</a>, <a href="logo-cloud.html">Logo cloud</a>, <a href="call-to-action.html">Call to action</a>, <a href="pricing-table.html">Pricing table</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 2 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Polaris</td><td>Section</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Section</td><td>Same name</td></tr>
+        </tbody>
+      </table>
+      <p>Radix Themes and Polaris both ship Section.</p>
     </section>
 
     <nav class="component-nav">

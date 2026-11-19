@@ -121,5 +121,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<span>`",
+  "aria": "",
+  "researchNote": "Static status or count",
+  "frameworkNotes": "Badge 9, Tag 2.",
+  "parents": [],
+  "children": []
 }

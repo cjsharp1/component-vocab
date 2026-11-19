@@ -147,5 +147,16 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`p`, `ul`, `ol`...",
+  "aria": "",
+  "researchNote": "\"Rich text editor\" (5) on the index is the editing tool, not this",
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "hero",
+    "tabs",
+    "accordion"
+  ],
+  "children": []
 }

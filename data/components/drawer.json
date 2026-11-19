@@ -134,5 +134,11 @@
       "match": "alias",
       "name": "Sheets"
     }
-  }
+  },
+  "nativeHtml": "`<dialog>`",
+  "aria": "Dialog",
+  "researchNote": "Edge-anchored overlay",
+  "frameworkNotes": "Drawer 5.",
+  "parents": [],
+  "children": []
 }

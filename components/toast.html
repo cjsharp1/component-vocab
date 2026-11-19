@@ -37,6 +37,10 @@
         <dd>Snackbar. In design systems: Snackbar (MUI); Toasts (Bootstrap); Message (Ant Design); Flag (Atlassian); Toast (Chakra UI, shadcn/ui, Fluent UI)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with role="status"</dd>
+        <dt>Native HTML</dt>
+        <dd><code>role="status"</code></dd>
+        <dt>Research note</dt>
+        <dd>Transient overlay. Auto-dismissing ones can fail WCAG 2.2.1 (Timing Adjustable)</dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -177,6 +181,34 @@
         <li>For blocking actions, use a modal <strong>Dialog</strong>.</li>
         <li>Keep messages short — toasts are meant to be glanceable.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 7 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Snackbar</td><td>Known alternative name</td></tr>
+          <tr><td>Bootstrap</td><td>Toasts</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Message</td><td>Related component under another name</td></tr>
+          <tr><td>Atlassian</td><td>Flag</td><td>Related component under another name</td></tr>
+          <tr><td>Chakra UI</td><td>Toast</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Toast</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Toast</td><td>Same name</td></tr>
+        </tbody>
+      </table>
+      <p>Toast 4, Snackbar 1, other 2, none 5.</p>
     </section>
 
     <nav class="component-nav">

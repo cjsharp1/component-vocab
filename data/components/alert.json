@@ -151,5 +151,13 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`role=\"alert\"` or `role=\"status\"`",
+  "aria": "Alert",
+  "researchNote": "In-flow message",
+  "frameworkNotes": "Alert 6, Banner 2, Notification 2, Callout 1, Message bar 1.",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

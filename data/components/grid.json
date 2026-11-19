@@ -120,5 +120,13 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<div>` + CSS grid",
+  "aria": "none",
+  "researchNote": "`role=grid` is reserved for the interactive Data grid",
+  "frameworkNotes": "",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

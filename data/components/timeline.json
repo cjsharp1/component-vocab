@@ -119,5 +119,13 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<ol>` + `<time>`",
+  "aria": "",
+  "researchNote": "Chronological events, not progress",
+  "frameworkNotes": "",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

@@ -37,6 +37,10 @@
         <dd>Content slider. In design systems: Carousel (Bootstrap, Ant Design, Chakra UI, shadcn/ui, Fluent UI)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with role="region" aria-roledescription="carousel"</dd>
+        <dt>ARIA pattern</dt>
+        <dd>Carousel</dd>
+        <dt>Research note</dt>
+        <dd>Auto-rotation needs a pause control (WCAG 2.2.2)</dd>
         <dt>Category</dt>
         <dd>I. Collections</dd>
       </dl>
@@ -203,6 +207,31 @@
         <li>Provide clear navigation: arrows, dots, or swipe gestures on touch devices.</li>
         <li>Ensure keyboard navigation is supported: arrow keys to navigate slides, Tab to focus controls.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 5 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bootstrap</td><td>Carousel</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Carousel</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Carousel</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Carousel</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Carousel</td><td>Same name</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <nav class="component-nav">

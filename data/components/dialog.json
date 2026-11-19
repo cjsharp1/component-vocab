@@ -139,5 +139,11 @@
       "match": "different",
       "name": "Sheets / Alerts"
     }
-  }
+  },
+  "nativeHtml": "`<dialog>`",
+  "aria": "Dialog (Modal)",
+  "researchNote": "Modal is a variant, not a separate thing",
+  "frameworkNotes": "Split evenly: Dialog 5, Modal 5.",
+  "parents": [],
+  "children": []
 }

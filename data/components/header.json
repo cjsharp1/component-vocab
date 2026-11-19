@@ -118,5 +118,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<header>`",
+  "aria": "banner (only when scoped to body)",
+  "researchNote": "Inside main/section/article it is not a landmark",
+  "frameworkNotes": "Libraries treat the site header as page chrome. Only GOV.UK, Carbon and MUI ship one.",
+  "parents": [],
+  "children": []
 }

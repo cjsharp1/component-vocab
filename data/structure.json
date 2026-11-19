@@ -1,0 +1,31 @@
+{
+  "description": "Allowed parent/child rules from research section 3 (allowed parent/child matrix). scripts/structure.mjs derives each component's parents from these rules and its children as the inverse, so the two always agree. Page-level regions (group A) sit in the page template, overlays render in the top layer, and inline items go wherever their host allows; none of those get parents.",
+  "layout": {
+    "section": { "parents": [], "note": "Page > Section. No nested Section." },
+    "grid": { "parents": ["section"], "note": "Never inside a Slot." },
+    "slot": { "parents": ["grid"], "note": "Slot count = Grid preset. No layout blocks inside." }
+  },
+  "contentParents": ["section", "slot"],
+  "special": {
+    "hero": { "parents": ["section"], "note": "Max one per page, first in main." },
+    "accordion": { "parents": ["section", "slot"] },
+    "tabs": { "parents": ["section", "slot"] }
+  },
+  "extraParents": {
+    "heading": ["hero"],
+    "rich-text": ["hero", "accordion", "tabs"],
+    "image": ["hero", "accordion", "tabs"],
+    "list": ["accordion", "tabs"],
+    "button-group": ["hero", "accordion", "tabs"]
+  },
+  "noParents": {
+    "groups": ["page-structure"],
+    "slugs": ["dialog", "alert-dialog", "drawer", "popover", "tooltip", "toggletip", "toast", "link", "icon", "badge", "tag", "chip", "avatar", "button", "toggle-button", "visually-hidden", "label"]
+  },
+  "formControls": {
+    "parents": ["form", "fieldset"],
+    "fieldsetParents": ["form"],
+    "group": "forms",
+    "exclude": ["form", "fieldset"]
+  }
+}

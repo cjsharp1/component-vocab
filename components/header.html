@@ -37,6 +37,12 @@
         <dd>In design systems: App Bar (MUI); UI shell header (Carbon); GOV.UK header (GOV.UK)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;header&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;header&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>banner (only when scoped to body)</dd>
+        <dt>Research note</dt>
+        <dd>Inside main/section/article it is not a landmark</dd>
         <dt>Category</dt>
         <dd>A. Page structure</dd>
       </dl>
@@ -182,6 +188,30 @@
         <li>Use the Navigation component inside Header for the navigation links.</li>
         <li>Sticky headers should have a solid background or backdrop blur.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 3 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>App Bar</td><td>Related component under another name</td></tr>
+          <tr><td>Carbon</td><td>UI shell header</td><td>Related component under another name</td></tr>
+          <tr><td>GOV.UK</td><td>GOV.UK header</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Libraries treat the site header as page chrome. Only GOV.UK, Carbon and MUI ship one.</p>
     </section>
 
     <nav class="component-nav">

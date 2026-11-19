@@ -37,6 +37,10 @@
         <dd>Tabbed interface. In design systems: Tabs (MUI, Ant Design, Carbon, Atlassian, Chakra UI, Radix Themes, shadcn/ui, GOV.UK); Navs & tabs (Bootstrap); Tablist (Fluent UI); Tab views (Apple HIG)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with role="tablist"</dd>
+        <dt>Native HTML</dt>
+        <dd>none</dd>
+        <dt>ARIA pattern</dt>
+        <dd>Tabs</dd>
         <dt>Category</dt>
         <dd>E. Wayfinding and sequence</dd>
       </dl>
@@ -186,6 +190,40 @@
         <li>Keep tab count under 7. If you need more, consider a different pattern (Menu button, Sidebar navigation).</li>
         <li>Always show which tab is currently active with a clear visual indicator.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+        <dt>Allowed children</dt>
+        <dd><a href="rich-text.html">Rich Text</a>, <a href="image.html">Image</a>, <a href="list.html">List</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 11 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Navs & tabs</td><td>Known alternative name</td></tr>
+          <tr><td>Ant Design</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>Carbon</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Tablist</td><td>Known alternative name</td></tr>
+          <tr><td>GOV.UK</td><td>Tabs</td><td>Same name</td></tr>
+          <tr><td>Apple HIG</td><td>Tab views</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Tabs 8 of 12.</p>
     </section>
 
     <nav class="component-nav">

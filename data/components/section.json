@@ -112,5 +112,39 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<section>` or `<div>`",
+  "aria": "region (only when named)",
+  "researchNote": "See weak spot 1",
+  "frameworkNotes": "Radix Themes and Polaris both ship Section.",
+  "parents": [],
+  "children": [
+    "grid",
+    "separator",
+    "rich-text",
+    "image",
+    "list",
+    "table",
+    "card",
+    "hero",
+    "description-list",
+    "embed",
+    "menu-button",
+    "tabs",
+    "pagination",
+    "timeline",
+    "accordion",
+    "alert",
+    "progress-bar",
+    "spinner",
+    "skeleton",
+    "form",
+    "carousel",
+    "feature",
+    "testimonial",
+    "stats",
+    "logo-cloud",
+    "call-to-action",
+    "pricing-table"
+  ]
 }

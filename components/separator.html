@@ -37,6 +37,12 @@
         <dd>Divider, Horizontal rule, Vertical rule. In design systems: Divider (MUI, Ant Design, Polaris, Fluent UI); Vertical rule (Bootstrap); Separator (Chakra UI, Radix Themes, shadcn/ui)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;hr&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;hr&gt;</code></dd>
+        <dt>ARIA pattern</dt>
+        <dd>separator</dd>
+        <dt>Research note</dt>
+        <dd>Decorative lines belong in CSS</dd>
         <dt>Category</dt>
         <dd>B. Layout primitives</dd>
       </dl>
@@ -223,6 +229,35 @@
         <li>The "None" style provides spacing without a visible line, useful when a subtle break is needed.</li>
         <li>Ensure sufficient color contrast for the line in both light and dark themes.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 8 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Divider</td><td>Known alternative name</td></tr>
+          <tr><td>Bootstrap</td><td>Vertical rule</td><td>Known alternative name</td></tr>
+          <tr><td>Ant Design</td><td>Divider</td><td>Known alternative name</td></tr>
+          <tr><td>Polaris</td><td>Divider</td><td>Known alternative name</td></tr>
+          <tr><td>Chakra UI</td><td>Separator</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Separator</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Separator</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Divider</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Divider 4, Separator 3, Vertical rule 1.</p>
     </section>
 
     <nav class="component-nav">

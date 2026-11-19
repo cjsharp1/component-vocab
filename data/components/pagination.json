@@ -125,5 +125,13 @@
       "match": "different",
       "name": "Page controls"
     }
-  }
+  },
+  "nativeHtml": "`<nav aria-label=\"Pagination\"><ul>`",
+  "aria": "",
+  "researchNote": "`aria-current=\"page\"`",
+  "frameworkNotes": "",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

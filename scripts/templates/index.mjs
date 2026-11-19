@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { indent } from './util.mjs';
+import { codeText } from './component.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const fragment = name => readFileSync(join(here, name), 'utf8').replace(/\r\n/g, '\n');
@@ -29,11 +30,11 @@ ${used.map(g => `          <li><a href="#" data-filter="${g.slug}">${g.label} <s
       return `      <div data-category="${g.slug}" id="${g.slug}">
         <h3 class="category-heading">${groupTitle(g)}</h3>
 ${g.consensus === false ? `        <p class="group-note">${g.description}</p>\n` : ''}        <ul class="component-grid">
-${items.map(c => `          <li>
+${items.map(c => `          <li${c.status === 'draft' ? ' class="is-draft"' : ''}>
             <a href="./components/${c.slug}.html">
-${indent(svg(c.thumbnail), 14)}
+${c.thumbnail ? indent(svg(c.thumbnail), 14) : '              <span class="thumb-placeholder" aria-hidden="true">Draft</span>'}
               <strong>${c.name}</strong>
-              <small>${c.summary}</small>
+              <small>${c.status === 'draft' ? codeText(c.summary) : c.summary}</small>
             </a>
           </li>`).join('\n')}
         </ul>

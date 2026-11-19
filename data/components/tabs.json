@@ -124,5 +124,17 @@
       "match": "alias",
       "name": "Tab views"
     }
-  }
+  },
+  "nativeHtml": "none",
+  "aria": "Tabs",
+  "researchNote": "",
+  "frameworkNotes": "Tabs 8 of 12.",
+  "parents": [
+    "section"
+  ],
+  "children": [
+    "rich-text",
+    "image",
+    "list"
+  ]
 }

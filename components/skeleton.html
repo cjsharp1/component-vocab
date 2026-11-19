@@ -37,6 +37,8 @@
         <dd>Skeleton loader. In design systems: Skeleton (MUI, Ant Design, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI); Placeholders (Bootstrap)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with aria-busy="true"</dd>
+        <dt>Native HTML</dt>
+        <dd><code>aria-busy</code> on the region</dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -170,6 +172,34 @@
         <li>Consider a pulse or wave animation to indicate activity, but ensure it is not distracting.</li>
         <li>Use <code>aria-busy="true"</code> and provide an accessible label like "Loading content" for screen readers.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 8 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Skeleton</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Placeholders</td><td>Related component under another name</td></tr>
+          <tr><td>Ant Design</td><td>Skeleton</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Skeleton</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Skeleton</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Skeleton</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Skeleton</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Skeleton</td><td>Same name</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <nav class="component-nav">

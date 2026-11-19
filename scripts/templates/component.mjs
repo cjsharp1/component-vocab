@@ -117,10 +117,72 @@ export function redirectPage(to) {
 `;
 }
 
-export function componentPage(c, { prev, next, group, svg }) {
+// Research cells use backticks for code; escape the rest.
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+export const codeText = s => esc(s).replace(/`([^`]+)`/g, '<code>$1</code>');
+
+const MATCH_LABEL = { same: 'Same name', alias: 'Known alternative name', different: 'Related component under another name' };
+
+function frameworkSection(c) {
+  const rows = Object.entries(c.frameworkNames).filter(([, v]) => v.match !== 'none');
+  const source = c.frameworkSource === 'legacy'
+    ? 'Not in <code>docs/research/framework-alignment.csv</code>; these names come from the old page and cover 5 systems.'
+    : c.frameworkSource === 'none'
+      ? 'Not in <code>docs/research/framework-alignment.csv</code>.'
+      : `From <code>docs/research/framework-alignment.csv</code>: ${rows.length} of ${Object.keys(c.frameworkNames).length} systems ship it.`;
+  return `    <section>
+      <h2>Design System Names</h2>
+      <p>${source}</p>
+${rows.length ? `      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+${rows.map(([s, v]) => `          <tr><td>${s}</td><td>${v.name}</td><td>${MATCH_LABEL[v.match]}</td></tr>`).join('\n')}
+        </tbody>
+      </table>
+` : ''}${c.frameworkNotes ? `      <p>${esc(c.frameworkNotes)}</p>\n` : ''}    </section>
+`;
+}
+
+function structureSection(c, names) {
+  const list = slugs => slugs.map(s => `<a href="${s}.html">${names.get(s)}</a>`).join(', ');
+  return `    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>${c.parents.length ? list(c.parents) : 'None: placed by the page template, rendered in the top layer, or used inline inside another component'}</dd>
+${c.children.length ? `        <dt>Allowed children</dt>
+        <dd>${list(c.children)}</dd>
+` : ''}      </dl>
+    </section>
+`;
+}
+
+export function componentPage(c, { prev, next, group, svg, names }) {
   // One section order for every page: collections follow Layout Variations.
+  // Sections without data are left out (draft pages have none of them).
+  const has = {
+    Elements: c.elements.length > 0,
+    'Default Layout': Boolean(c.wireframe),
+    'Configuration Options': c.configOptions.length > 0,
+    'Layout Variations': c.variants.length > 0,
+    'Usage Notes': c.usageNotes.length > 0,
+  };
   const order = ['Elements', 'Default Layout', 'Configuration Options', 'Layout Variations', ...c.collections.map((_, n) => n), 'Usage Notes'];
-  const body = order.map(s => (typeof s === 'number' ? sections.collection(c, svg, s) : sections[s](c, svg))).join('\n');
+  const body = [
+    ...order.filter(s => typeof s === 'number' || has[s]).map(s => (typeof s === 'number' ? sections.collection(c, svg, s) : sections[s](c, svg))),
+    structureSection(c, names),
+    frameworkSection(c),
+  ].join('\n');
+  const facts = [
+    ['Also known as', alsoKnownAs(c)],
+    c.htmlElement && ['Semantic element', c.htmlElement],
+    c.nativeHtml && ['Native HTML', codeText(c.nativeHtml)],
+    c.aria && ['ARIA pattern', codeText(c.aria)],
+    c.researchNote && c.status !== 'draft' && ['Research note', codeText(c.researchNote)],
+    ['Category', `${group.letter}. ${group.label}`],
+  ].filter(Boolean);
   const link = (target, label, dir) =>
     target
       ? `<a href="${target.slug}.html">${dir === 'prev' ? `&larr; ${target.name}` : `${target.name} &rarr;`}</a>`
@@ -158,15 +220,11 @@ export function componentPage(c, { prev, next, group, svg }) {
 
     <section>
       <h1>${c.name}</h1>
-      <p>${c.description}</p>
-
+${c.status === 'draft' ? `      <p class="draft-badge"><strong>Draft</strong> No wireframe or usage guidance yet. This page lists only what the research and the framework survey record.</p>
+` : ''}${c.description ? `      <p>${c.status === 'draft' ? codeText(c.description) : c.description}</p>
+` : ''}
       <dl>
-        <dt>Also known as</dt>
-        <dd>${alsoKnownAs(c)}</dd>
-        <dt>Semantic element</dt>
-        <dd>${c.htmlElement}</dd>
-        <dt>Category</dt>
-        <dd>${group.letter}. ${group.label}</dd>
+${facts.map(([dt, dd]) => `        <dt>${dt}</dt>\n        <dd>${dd}</dd>`).join('\n')}
       </dl>
     </section>
 

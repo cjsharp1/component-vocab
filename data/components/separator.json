@@ -138,5 +138,13 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<hr>`",
+  "aria": "separator",
+  "researchNote": "Decorative lines belong in CSS",
+  "frameworkNotes": "Divider 4, Separator 3, Vertical rule 1.",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

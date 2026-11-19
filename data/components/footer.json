@@ -111,5 +111,11 @@
     "Apple HIG": {
       "match": "none"
     }
-  }
+  },
+  "nativeHtml": "`<footer>`",
+  "aria": "contentinfo (body-scoped)",
+  "researchNote": "",
+  "frameworkNotes": "Only GOV.UK ships a footer component.",
+  "parents": [],
+  "children": []
 }

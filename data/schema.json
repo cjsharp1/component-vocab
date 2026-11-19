@@ -15,8 +15,6 @@
     "summary",
     "htmlElement",
     "elements",
-    "wireframe",
-    "thumbnail",
     "configOptions",
     "variants",
     "collections",
@@ -24,7 +22,13 @@
     "related",
     "aliases",
     "frameworkSource",
-    "frameworkNames"
+    "frameworkNames",
+    "nativeHtml",
+    "aria",
+    "researchNote",
+    "frameworkNotes",
+    "parents",
+    "children"
   ],
   "properties": {
     "slug": {
@@ -52,7 +56,8 @@
     },
     "description": {
       "type": "string",
-      "minLength": 1
+      "minLength": 0,
+      "description": "Required (non-empty) for stable components; drafts carry the research note or nothing."
     },
     "summary": {
       "type": "string",
@@ -211,7 +216,8 @@
     "frameworkSource": {
       "enum": [
         "csv",
-        "legacy"
+        "legacy",
+        "none"
       ],
       "description": "csv: docs/research/framework-alignment.csv. legacy: the old page's 5-system row (component not in the CSV)."
     },
@@ -239,6 +245,38 @@
           }
         }
       }
+    },
+    "nativeHtml": {
+      "type": "string",
+      "description": "Native HTML from research section 4 (backticks mark code)."
+    },
+    "aria": {
+      "type": "string",
+      "description": "APG pattern or ARIA role from research section 4."
+    },
+    "researchNote": {
+      "type": "string",
+      "description": "Note column from research section 4."
+    },
+    "frameworkNotes": {
+      "type": "string",
+      "description": "Notes column from the CSV."
+    },
+    "parents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "description": "Derived by scripts/structure.mjs from data/structure.json."
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "description": "Inverse of parents (derived)."
     }
   }
 }

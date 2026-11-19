@@ -139,5 +139,13 @@
       "match": "different",
       "name": "Pull-down buttons"
     }
-  }
+  },
+  "nativeHtml": "`<button aria-haspopup>`",
+  "aria": "Menu Button",
+  "researchNote": "Opens an action menu",
+  "frameworkNotes": "Menu 4, Dropdown 5. 'Menu button' is Carbon only.",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

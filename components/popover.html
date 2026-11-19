@@ -37,6 +37,10 @@
         <dd>In design systems: Popover (MUI, Ant Design, Carbon, Polaris, Chakra UI, Radix Themes, shadcn/ui, Fluent UI); Popovers (Bootstrap, Apple HIG); Popup (Atlassian)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with appropriate ARIA</dd>
+        <dt>Native HTML</dt>
+        <dd><code>popover</code> attribute</dd>
+        <dt>Research note</dt>
+        <dd>Interactive and click-opened</dd>
         <dt>Category</dt>
         <dd>F. Disclosure and overlays</dd>
       </dl>
@@ -229,6 +233,38 @@
         <li>Dismiss on outside click or Escape key. Optionally provide a close button for clarity.</li>
         <li>Position automatically to stay in viewport, or allow manual positioning.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 11 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Popovers</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>Carbon</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>Polaris</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Popup</td><td>Related component under another name</td></tr>
+          <tr><td>Chakra UI</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Popover</td><td>Same name</td></tr>
+          <tr><td>Apple HIG</td><td>Popovers</td><td>Same name</td></tr>
+        </tbody>
+      </table>
+      <p>Popover 10 of 12.</p>
     </section>
 
     <nav class="component-nav">

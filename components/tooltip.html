@@ -37,6 +37,10 @@
         <dd>Toggletip. In design systems: Tooltip (MUI, Ant Design, Carbon, Polaris, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI); Tooltips (Bootstrap)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;div&gt;</code> with role="tooltip"</dd>
+        <dt>ARIA pattern</dt>
+        <dd>Tooltip</dd>
+        <dt>Research note</dt>
+        <dd>Non-interactive, hover/focus</dd>
         <dt>Category</dt>
         <dd>F. Disclosure and overlays</dd>
       </dl>
@@ -190,6 +194,37 @@
         <li>Tooltips should appear on hover or focus, not on click. For click-triggered content, use Popover or Menu button.</li>
         <li>Ensure the trigger element is keyboard-accessible and the tooltip is announced by screen readers.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 10 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Tooltips</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>Carbon</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>Polaris</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Tooltip</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Tooltip</td><td>Same name</td></tr>
+        </tbody>
+      </table>
+      <p>Tooltip 10 of 12.</p>
     </section>
 
     <nav class="component-nav">

@@ -127,5 +127,13 @@
       "match": "different",
       "name": "Progress indicators"
     }
-  }
+  },
+  "nativeHtml": "`<progress>`",
+  "aria": "",
+  "researchNote": "Task completion",
+  "frameworkNotes": "Progress 7, Progress bar 3.",
+  "parents": [
+    "section"
+  ],
+  "children": []
 }

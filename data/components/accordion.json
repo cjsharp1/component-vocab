@@ -132,5 +132,17 @@
       "match": "alias",
       "name": "Disclosure controls"
     }
-  }
+  },
+  "nativeHtml": "`<details>`",
+  "aria": "Accordion",
+  "researchNote": "A group of related disclosures",
+  "frameworkNotes": "Accordion 7 of 12.",
+  "parents": [
+    "section"
+  ],
+  "children": [
+    "rich-text",
+    "image",
+    "list"
+  ]
 }

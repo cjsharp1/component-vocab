@@ -66,6 +66,26 @@ export function validate(root = process.cwd()) {
       aliasOwner.set(k, data.name);
     }
   }
+  // Stable pages need content; drafts must not pretend to have it.
+  const bySlug = new Map(components.map(c => [c.data.slug, c.data]));
+  for (const { data } of components) {
+    if (data.status === 'stable') {
+      if (!data.description) errors.push(`${data.slug}.json: stable component needs a description`);
+      if (!data.wireframe || !data.thumbnail) errors.push(`${data.slug}.json: stable component needs a wireframe and thumbnail`);
+    }
+    if (data.status === 'draft' && (data.wireframe || data.thumbnail || data.variants?.length || data.collections?.length)) {
+      errors.push(`${data.slug}.json: draft components carry no wireframes`);
+    }
+    // Parent/child data must be symmetric and point at real components.
+    for (const p of data.parents || []) {
+      if (!bySlug.has(p)) errors.push(`${data.slug}.json: parent "${p}" is not a component`);
+      else if (!(bySlug.get(p).children || []).includes(data.slug)) errors.push(`${data.slug}.json: lists ${p} as a parent, but ${p} does not list it as a child`);
+    }
+    for (const ch of data.children || []) {
+      if (!bySlug.has(ch)) errors.push(`${data.slug}.json: child "${ch}" is not a component`);
+      else if (!(bySlug.get(ch).parents || []).includes(data.slug)) errors.push(`${data.slug}.json: lists ${ch} as a child, but ${ch} does not list it as a parent`);
+    }
+  }
   const orders = components.map(c => c.data.order).sort((a, b) => a - b);
   orders.forEach((o, i) => { if (o !== i + 1) errors.push(`order values are not 1..${orders.length} without gaps (found ${o} at position ${i + 1})`); });
   return { count: components.length, errors: [...new Set(errors)] };

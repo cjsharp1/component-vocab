@@ -37,6 +37,10 @@
         <dd>Tag, Label, Chip. In design systems: Badge (MUI, Bootstrap, Ant Design, Polaris, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI); Tag (Carbon, GOV.UK)</dd>
         <dt>Semantic element</dt>
         <dd><code>&lt;span&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;span&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>Static status or count</dd>
         <dt>Category</dt>
         <dd>G. Feedback and status</dd>
       </dl>
@@ -174,6 +178,38 @@
         <li>Ensure color choices meet accessibility contrast requirements against both the badge background and the page/anchor element.</li>
         <li>A dot badge is useful when you want to indicate presence or activity without a specific count.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd>None: placed by the page template, rendered in the top layer, or used inline inside another component</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 11 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MUI</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>Bootstrap</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>Ant Design</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>Carbon</td><td>Tag</td><td>Known alternative name</td></tr>
+          <tr><td>Polaris</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>Atlassian</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>Fluent UI</td><td>Badge</td><td>Same name</td></tr>
+          <tr><td>GOV.UK</td><td>Tag</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Badge 9, Tag 2.</p>
     </section>
 
     <nav class="component-nav">
