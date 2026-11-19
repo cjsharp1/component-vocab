@@ -1,7 +1,9 @@
 # component-vocab — Design Spec
 
 **Date:** 2026-07-08
-**Status:** Draft
+**Status:** Historical (superseded 2026-11-19)
+
+> **Historical document.** This is the original 50-component design. The vocabulary was reworked from `docs/research/` (see `docs/reconciliation.md` and `README.md`): names, groups and the comparison table changed, and pages are now generated from `data/`. Kept for the record; do not use it as the current spec.
 
 ---
 
@@ -299,18 +301,16 @@ Only shows systems where a match exists — no "—" entries on individual pages
 ├── index.html                  # Overview: component grid + master comparison table
 ├── components/
 │   ├── container.html
-│   ├── section.html
-│   ├── header.html
 │   ├── ...                     # One page per component (50 files)
 │   └── divider.html
 ├── css/
-│   ├── pico.min.css            # Lightweight classless CSS framework
-│   └── wireframes.css          # Wireframe rendering + hover label styles
-├── js/
-│   └── main.js                 # Hover labels, filtering
-└── assets/
-    └── (empty — wireframes are inline SVG)
+│   ├── pico.classless.min.css  # Pico CSS v2, classless build
+│   └── site.css                # Wireframe rendering, hover labels, layout
+└── js/
+    └── main.js                 # Hover labels, filtering
 ```
+
+*Corrected 2026-11-19 to match what was built (the original listed `pico.min.css`, `wireframes.css` and an `assets/` folder). Superseded by the generated structure described in `README.md`.*
 
 ### Index Page (`index.html`)
 

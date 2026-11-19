@@ -1,5 +1,7 @@
 # component-vocab — Implementation Plan
 
+> **Historical document.** All five tasks were completed on 2026-07-08 (see `.superpowers/sdd/progress.md`); checkboxes are ticked to match. The site has since been reworked: pages are generated from `data/` by `scripts/build.mjs` (see `README.md`).
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a standalone static documentation site with 50 website component definitions, schematic wireframes, configuration options, and cross-system name mappings.
@@ -29,7 +31,7 @@ C:\Dev\Sandbox\component-vocab\
 │   ├── pico.classless.min.css      # Pico CSS classless v2 (downloaded locally)
 │   └── site.css                    # Custom styles: wireframe rendering, hover labels, grid overrides, nav
 ├── js/
-│   └── main.js                     # Hover label toggle, category filtering, nav active state
+│   └── main.js                     # Hover label toggle, category filtering
 ├── components/
 │   ├── container.html
 │   ├── section.html
@@ -45,7 +47,7 @@ C:\Dev\Sandbox\component-vocab\
 | `index.html` | Site entry point. Component grid grouped by category. Master comparison table. Links to all component pages. |
 | `css/pico.classless.min.css` | Base styling. Semantic HTML gets typography, forms, tables, landmarks styled automatically. |
 | `css/site.css` | Custom properties (colors for wireframe elements), wireframe SVG styles, hover label positioning, responsive grid for component cards, nav overrides, layout-variation grid. |
-| `js/main.js` | Show/hide hover labels on SVG elements (touch fallback), category filter on index page, highlight active nav item. |
+| `js/main.js` | Show/hide hover labels on SVG elements (touch fallback), category filter on index page. (Active-nav highlighting was planned but dropped: the site has no multi-item nav to highlight.) |
 | `components/*.html` | One per component. Follows a consistent template: name, description, also-known-as, semantic output, elements list, default wireframe SVG, config table, variation wireframes, collection layout (if applicable), usage notes. |
 
 ---
@@ -63,7 +65,7 @@ C:\Dev\Sandbox\component-vocab\
 - Consumes: nothing (first task)
 - Produces: Base HTML template structure, CSS custom properties, JS hover-label utility function `initHoverLabels()`, component page template pattern
 
-- [ ] **Step 1: Download Pico CSS classless**
+- [x] **Step 1: Download Pico CSS classless**
 
 ```bash
 mkdir -p css js components
@@ -72,7 +74,7 @@ curl -o css/pico.classless.min.css "https://cdn.jsdelivr.net/npm/@picocss/pico@2
 
 Verify: file exists and is ~40-55KB.
 
-- [ ] **Step 2: Create `css/site.css` with custom properties and wireframe styles**
+- [x] **Step 2: Create `css/site.css` with custom properties and wireframe styles**
 
 ```css
 /* === Custom Properties === */
@@ -247,7 +249,7 @@ body > header nav {
 }
 ```
 
-- [ ] **Step 3: Create `js/main.js` with hover label utility and category filter**
+- [x] **Step 3: Create `js/main.js` with hover label utility and category filter**
 
 ```javascript
 /**
@@ -300,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-- [ ] **Step 4: Create `index.html` with base structure**
+- [x] **Step 4: Create `index.html` with base structure**
 
 ```html
 <!DOCTYPE html>
@@ -369,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </html>
 ```
 
-- [ ] **Step 5: Verify the page opens from file system**
+- [x] **Step 5: Verify the page opens from file system**
 
 Open `index.html` directly in a browser (double-click or `file://` URL). Verify:
 - Pico CSS styles are applied (typography, spacing, nav styling)
@@ -377,7 +379,7 @@ Open `index.html` directly in a browser (double-click or `file://` URL). Verify:
 - JS loads without errors (check console)
 - Category filter buttons respond to clicks (even though grid is empty)
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git init
@@ -397,7 +399,7 @@ git commit -m "feat: scaffold project with Pico CSS, site styles, and JS utiliti
 - Consumes: CSS from `css/site.css` (wireframe classes, hover labels, variation grid, component-nav)
 - Produces: Established page template pattern that all other component pages will follow
 
-- [ ] **Step 1: Create the component page template**
+- [x] **Step 1: Create the component page template**
 
 Create `components/_template.html`:
 
@@ -541,7 +543,7 @@ Create `components/_template.html`:
 </html>
 ```
 
-- [ ] **Step 2: Create `components/hero.html` — the first real component page**
+- [x] **Step 2: Create `components/hero.html` — the first real component page**
 
 ```html
 <!DOCTYPE html>
@@ -765,7 +767,7 @@ Create `components/_template.html`:
 </html>
 ```
 
-- [ ] **Step 3: Verify the Hero page**
+- [x] **Step 3: Verify the Hero page**
 
 Open `components/hero.html` in a browser. Verify:
 - Pico CSS styles apply (relative path `../css/` works)
@@ -775,7 +777,7 @@ Open `components/hero.html` in a browser. Verify:
 - Breadcrumb links work (back to index)
 - Previous/Next links are present
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add components/
@@ -836,7 +838,7 @@ badge, skeleton, progress, spinner
 **Batch 10: Interactive + Utility (4)**
 dropdown, carousel, avatar, divider
 
-- [ ] **Step 1: Build each batch of component pages**
+- [x] **Step 1: Build each batch of component pages**
 
 For each component page, follow this checklist:
 - Copy the template structure from `_template.html`
@@ -857,7 +859,7 @@ git add components/container.html components/section.html components/header.html
 git commit -m "feat: add structural component pages (Container, Section, Header, Footer, Aside, Article, Grid)"
 ```
 
-- [ ] **Step 2: Verify wireframe consistency across pages**
+- [x] **Step 2: Verify wireframe consistency across pages**
 
 Spot-check 5-6 pages from different categories:
 - SVG viewBox dimensions are consistent within categories
@@ -866,7 +868,7 @@ Spot-check 5-6 pages from different categories:
 - All breadcrumb and prev/next links work
 - No broken relative paths
 
-- [ ] **Step 3: Final commit for remaining batches**
+- [x] **Step 3: Final commit for remaining batches**
 
 ```bash
 git add components/
@@ -884,7 +886,7 @@ git commit -m "feat: complete all 50 component detail pages"
 - Consumes: All 50 component pages in `components/` (for linking), category filter JS from `main.js`
 - Produces: Complete index page with navigable grid and full 50-row comparison table
 
-- [ ] **Step 1: Add component grid to index.html**
+- [x] **Step 1: Add component grid to index.html**
 
 Replace the `<!-- Component cards will be added in Task 3 -->` comment with the full component grid. Each category gets a `data-category` wrapper and each component gets a card with a thumbnail wireframe:
 
@@ -930,7 +932,7 @@ Replace the `<!-- Component cards will be added in Task 3 -->` comment with the 
 
 Each of the 12 categories gets its own `data-category` div. All 50 components get a card.
 
-- [ ] **Step 2: Add the full comparison table**
+- [x] **Step 2: Add the full comparison table**
 
 Replace `<!-- Comparison table will be added in Task 4 -->` with the complete 50-row table:
 
@@ -960,7 +962,7 @@ Replace `<!-- Comparison table will be added in Task 4 -->` with the complete 50
 
 All 50 components must have a row. Use "—" where no equivalent exists. Reference the spec's comparison section for mappings.
 
-- [ ] **Step 3: Verify index page**
+- [x] **Step 3: Verify index page**
 
 Open `index.html` in browser. Verify:
 - All 50 component cards render in the grid
@@ -970,7 +972,7 @@ Open `index.html` in browser. Verify:
 - Comparison table scrolls horizontally on mobile
 - Table links navigate to component pages
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add index.html
@@ -991,7 +993,7 @@ git commit -m "feat: complete index page with component grid and comparison tabl
 - Consumes: All files from Tasks 1-4
 - Produces: Final polished, cross-linked documentation site
 
-- [ ] **Step 1: Add wireframe legend to index page**
+- [x] **Step 1: Add wireframe legend to index page**
 
 After the intro section, before the component grid, add:
 
@@ -1026,7 +1028,7 @@ After the intro section, before the component grid, add:
 </section>
 ```
 
-- [ ] **Step 2: Add responsive tweaks to site.css**
+- [x] **Step 2: Add responsive tweaks to site.css**
 
 Append to `css/site.css`:
 
@@ -1060,7 +1062,7 @@ Append to `css/site.css`:
 }
 ```
 
-- [ ] **Step 3: Add smooth scroll to main.js**
+- [x] **Step 3: Add smooth scroll to main.js**
 
 Append to `js/main.js`:
 
@@ -1087,7 +1089,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 Note: merge this with the existing DOMContentLoaded listener — don't create a duplicate.
 
-- [ ] **Step 4: Verify all prev/next links across component pages**
+- [x] **Step 4: Verify all prev/next links across component pages**
 
 Manually check or script-verify that:
 - Every component page's prev/next links point to valid `.html` files
@@ -1095,7 +1097,7 @@ Manually check or script-verify that:
 - The last component (Divider) has no "next" link (or links to index)
 - Breadcrumb category anchors match the `data-category` values on the index page
 
-- [ ] **Step 5: Final browser test**
+- [x] **Step 5: Final browser test**
 
 Open from filesystem. Walk through:
 - Index page loads, grid shows all 50 components
@@ -1107,7 +1109,7 @@ Open from filesystem. Walk through:
 - Responsive layout works at mobile widths (resize browser)
 - Print preview shows labels visible, nav hidden
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add css/site.css js/main.js index.html

@@ -1,0 +1,88 @@
+# component-vocab
+
+A shared vocabulary for website components: one list of names that matches what most design systems already call things, doesn't contradict native HTML, and holds up for accessibility. Each component has a page with an HTML outline, its native element and ARIA pattern, where it may be placed, wireframes (for stable components), configuration options, and the names 12 design systems use for it.
+
+Open `index.html` in a browser. Pages work from `file://` and from any static host; there is no build step for visitors.
+
+## What's in it
+
+- **84 components** in groups A to J. Groups A to I follow the research consensus list (`docs/research/component-vocabulary-and-page-structure.md` §4). Group J holds page patterns (Feature, Testimonial, Stats, Logo cloud, Call to action, Pricing table): standard industry terms that no surveyed UI framework ships.
+- **40 stable** components with wireframes and usage guidance, and **44 drafts** that list only what the research and the framework survey record. Drafts carry a visible Draft badge and no wireframe.
+- A **comparison table** across MUI, Bootstrap, Ant Design, Carbon, Polaris, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI, GOV.UK and Apple HIG, from `docs/research/framework-alignment.csv`.
+- **Redirect pages** at every old slug that was renamed or folded (`data/redirects.json`), so old links keep working.
+
+## Naming rules
+
+From the research doc (§1). When the three sources disagree: native HTML first, then the W3C ARIA Authoring Practices, then design-system consensus.
+
+| # | Rule | Example |
+|---|---|---|
+| R1 | Name the thing, not its look or behavior | Dialog, not Popup |
+| R2 | When consensus is split, prefer the native/APG name; with no native/APG name, prefer consensus | Dialog over Modal |
+| R3 | One name, one behavior. If a word means two things, split it or retire it | Stepper, Grid, Menu, Banner |
+| R4 | Words native HTML/ARIA already claim stay reserved for them | Banner, Label, Menu, Slider |
+| R5 | Name the semantic unit, not a part | Radio group, not Radio button |
+| R6 | Variants are modifiers, not new nouns | Dialog + modal |
+| R7 | Coin a new name only if it passes the gap test (research §6) | |
+
+## How the site is built
+
+The pages are generated from data and the generated HTML is committed.
+
+```
+data/
+  components/<slug>.json   one file per component (the source of truth)
+  schema.json              JSON Schema for those files
+  groups.json              groups A to J
+  systems.json             the 12 design systems, in column order
+  structure.json           allowed parent/child rules (research §3)
+  redirects.json           old slug -> new slug
+wireframes/<slug>/*.svg    wireframes, inlined into pages at build time
+scripts/
+  build.mjs                writes components/*.html and index.html; --check verifies
+  validate.mjs             schema and cross-file checks
+  structure.mjs            derives parents/children from structure.json
+  templates/               page templates and static index fragments
+  legacy/                  one-off migration scripts, kept for the record
+components/, index.html    generated output (don't edit by hand)
+css/, js/                  site styles and behavior
+```
+
+**No dependencies.** The scripts need Node 18 or newer and nothing else: no `package.json`, no install. This relaxes the original "no build tools" rule to "no dependencies" (decision D2 in `docs/reconciliation.md`).
+
+### Commands
+
+Run from the repo root:
+
+```sh
+node scripts/validate.mjs        # check data/components against the schema and cross-file rules
+node scripts/structure.mjs       # recompute parents/children after adding or regrouping a component
+node scripts/build.mjs           # regenerate components/*.html and index.html
+node scripts/build.mjs --check   # fail if output is stale, data is invalid, or a link/#fragment is broken
+```
+
+`--check` also fails on duplicate names or aliases, an alias that is another component's name, asymmetric parent/child data, and pages in `components/` that the data doesn't produce.
+
+## Adding a component
+
+1. Pick the name with the rules above. Check `data/components/` and the aliases in them for collisions.
+2. Copy a similar file in `data/components/` to `<slug>.json` (lowercase, hyphenated) and edit it. A new entry can start as `"status": "draft"` with no wireframe.
+3. For a stable component, add `wireframes/<slug>/default.svg`, `thumbnail.svg` and any `variation-N.svg`, and point to them from the JSON. Use the wireframe classes in `css/site.css` (`region`, `media-placeholder`, `interactive`, `optional`, `text-line`). For a hover label, follow each `hover-target` rect immediately with its `label-group`.
+4. Set `group` to a slug from `data/groups.json`.
+5. Run `node scripts/structure.mjs`, then `node scripts/build.mjs`, then `node scripts/build.mjs --check`.
+
+To rename or retire a page, change or delete its JSON and add `"old-slug": "new-slug"` to `data/redirects.json`.
+
+## Documents
+
+- `docs/research/`: the research inputs (consensus list, naming collisions, gap vocabulary, framework survey).
+- `docs/reconciliation.md`: how the original 50 pages mapped to the research list, plus the signed-off decisions.
+- `docs/migration-log.md`: what the migration scripts changed, including every legacy-vs-CSV disagreement.
+- `component-vocab-brief.md`: a survey of the repository for planning changes.
+- `docs/superpowers/`: the original 2026-07-08 spec and plan (historical).
+
+## Not yet done
+
+- The 30-name gap vocabulary (research §6) is deferred; none of the current pages needed a coined name.
+- Drafts need wireframes and usage guidance before they can become stable.
+- Twelve SVG `rx` values in older wireframes use a four-value form browsers ignore (Card, Alert, Dialog wireframes); corners render square.
