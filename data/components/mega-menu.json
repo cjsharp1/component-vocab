@@ -1,0 +1,65 @@
+{
+  "slug": "mega-menu",
+  "name": "Mega menu",
+  "order": 43,
+  "status": "draft",
+  "group": "wayfinding",
+  "description": "A Navigation variant, not a Menu",
+  "summary": "A Navigation variant, not a Menu",
+  "htmlElement": "",
+  "nativeHtml": "`<nav>` + disclosure buttons",
+  "aria": "disclosure-navigation example",
+  "researchNote": "A Navigation variant, not a Menu",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "none",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

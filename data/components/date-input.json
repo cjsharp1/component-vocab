@@ -1,7 +1,7 @@
 {
   "slug": "date-input",
   "name": "Date input",
-  "order": 70,
+  "order": 73,
   "status": "draft",
   "group": "forms",
   "description": "Typed",

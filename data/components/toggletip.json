@@ -1,7 +1,7 @@
 {
   "slug": "toggletip",
   "name": "Toggletip",
-  "order": 48,
+  "order": 51,
   "status": "draft",
   "group": "disclosure-overlays",
   "description": "A tooltip opened by click. Keeping the name because it behaves differently for assistive tech",

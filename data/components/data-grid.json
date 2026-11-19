@@ -1,0 +1,65 @@
+{
+  "slug": "data-grid",
+  "name": "Data grid",
+  "order": 78,
+  "status": "draft",
+  "group": "collections",
+  "description": "Interactive and keyboard-navigable. The name avoids the layout Grid",
+  "summary": "Interactive and keyboard-navigable. The name avoids the layout Grid",
+  "htmlElement": "",
+  "nativeHtml": "`<table>` + roles",
+  "aria": "Grid, Treegrid",
+  "researchNote": "Interactive and keyboard-navigable. The name avoids the layout Grid",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "none",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

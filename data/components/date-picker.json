@@ -1,7 +1,7 @@
 {
   "slug": "date-picker",
   "name": "Date picker",
-  "order": 71,
+  "order": 74,
   "status": "draft",
   "group": "forms",
   "description": "Calendar popup",

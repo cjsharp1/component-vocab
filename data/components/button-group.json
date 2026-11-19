@@ -1,7 +1,7 @@
 {
   "slug": "button-group",
   "name": "Button group",
-  "order": 31,
+  "order": 32,
   "status": "draft",
   "group": "actions",
   "description": "A CTA pair is not a toolbar",

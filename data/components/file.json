@@ -1,0 +1,68 @@
+{
+  "slug": "file",
+  "name": "File",
+  "order": 27,
+  "status": "draft",
+  "group": "content-display",
+  "description": "Ambiguous in code (File API). \"File link\" is a reasonable alternative",
+  "summary": "Ambiguous in code (File API). \"File link\" is a reasonable alternative",
+  "htmlElement": "",
+  "nativeHtml": "`<a download>`",
+  "aria": "",
+  "researchNote": "Ambiguous in code (File API). \"File link\" is a reasonable alternative",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Attachment",
+    "Download"
+  ],
+  "frameworkSource": "none",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

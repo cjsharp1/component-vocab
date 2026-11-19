@@ -1,7 +1,7 @@
 {
   "slug": "spinner",
   "name": "Spinner",
-  "order": 56,
+  "order": 59,
   "status": "stable",
   "group": "feedback-status",
   "description": "A generic loading or processing animation indicating that work is in progress. Used when duration is unknown.",

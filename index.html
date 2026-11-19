@@ -77,16 +77,16 @@
       <h2>Components</h2>
       <nav>
         <ul>
-          <li><a href="#" data-filter="all" aria-current="true">All <span class="chip-count">80</span></a></li>
+          <li><a href="#" data-filter="all" aria-current="true">All <span class="chip-count">84</span></a></li>
           <li><a href="#" data-filter="page-structure">Page structure <span class="chip-count">8</span></a></li>
           <li><a href="#" data-filter="layout">Layout primitives <span class="chip-count">6</span></a></li>
-          <li><a href="#" data-filter="content-display">Content display <span class="chip-count">14</span></a></li>
+          <li><a href="#" data-filter="content-display">Content display <span class="chip-count">15</span></a></li>
           <li><a href="#" data-filter="actions">Actions and links <span class="chip-count">7</span></a></li>
-          <li><a href="#" data-filter="wayfinding">Wayfinding and sequence <span class="chip-count">5</span></a></li>
+          <li><a href="#" data-filter="wayfinding">Wayfinding and sequence <span class="chip-count">7</span></a></li>
           <li><a href="#" data-filter="disclosure-overlays">Disclosure and overlays <span class="chip-count">8</span></a></li>
           <li><a href="#" data-filter="feedback-status">Feedback and status <span class="chip-count">10</span></a></li>
           <li><a href="#" data-filter="forms">Forms <span class="chip-count">15</span></a></li>
-          <li><a href="#" data-filter="collections">Collections <span class="chip-count">1</span></a></li>
+          <li><a href="#" data-filter="collections">Collections <span class="chip-count">2</span></a></li>
           <li><a href="#" data-filter="page-patterns">Page patterns <span class="chip-count">6</span></a></li>
         </ul>
       </nav>
@@ -353,6 +353,13 @@
               <small>Draft entry</small>
             </a>
           </li>
+          <li class="is-draft">
+            <a href="./components/file.html">
+              <span class="thumb-placeholder" aria-hidden="true">Draft</span>
+              <strong>File</strong>
+              <small>Ambiguous in code (File API). "File link" is a reasonable alternative</small>
+            </a>
+          </li>
           <li>
             <a href="./components/description-list.html">
               <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
@@ -491,6 +498,20 @@
               <span class="thumb-placeholder" aria-hidden="true">Draft</span>
               <strong>Tree view</strong>
               <small>Draft entry</small>
+            </a>
+          </li>
+          <li class="is-draft">
+            <a href="./components/feed.html">
+              <span class="thumb-placeholder" aria-hidden="true">Draft</span>
+              <strong>Feed</strong>
+              <small>Auto-loading list of articles</small>
+            </a>
+          </li>
+          <li class="is-draft">
+            <a href="./components/mega-menu.html">
+              <span class="thumb-placeholder" aria-hidden="true">Draft</span>
+              <strong>Mega menu</strong>
+              <small>A Navigation variant, not a Menu</small>
             </a>
           </li>
         </ul>
@@ -802,6 +823,13 @@
               </svg>
               <strong>Carousel</strong>
               <small>Paginated slideshow cycling through content</small>
+            </a>
+          </li>
+          <li class="is-draft">
+            <a href="./components/data-grid.html">
+              <span class="thumb-placeholder" aria-hidden="true">Draft</span>
+              <strong>Data grid</strong>
+              <small>Interactive and keyboard-navigable. The name avoids the layout Grid</small>
             </a>
           </li>
         </ul>
@@ -1305,6 +1333,21 @@
               <td class="match-none">—</td>
             </tr>
             <tr>
+              <td><a href="./components/file.html">File</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
               <td><a href="./components/description-list.html">Description list</a><sup>*</sup></td>
               <td class="match-none">—</td>
               <td class="match-none">—</td>
@@ -1513,6 +1556,36 @@
               <td class="match-alias"><span class="match-symbol" aria-hidden="true">◐</span> Tree</td>
               <td class="match-none">—</td>
               <td class="match-different"><span class="match-symbol" aria-hidden="true">○</span> Outline views</td>
+            </tr>
+            <tr>
+              <td><a href="./components/feed.html">Feed</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/mega-menu.html">Mega menu</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
             </tr>
             <tr>
               <td><a href="./components/accordion.html">Accordion</a></td>
@@ -2021,6 +2094,21 @@
               <td class="match-none">—</td>
               <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Carousel</td>
               <td class="match-same"><span class="match-symbol" aria-hidden="true">●</span> Carousel</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+            </tr>
+            <tr>
+              <td><a href="./components/data-grid.html">Data grid</a></td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
+              <td class="match-none">—</td>
               <td class="match-none">—</td>
               <td class="match-none">—</td>
             </tr>
