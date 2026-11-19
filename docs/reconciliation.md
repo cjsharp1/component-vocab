@@ -1,6 +1,6 @@
 # Reconciliation
 
-**Phase 1 of `docs/plan/vocab-rework-plan.md`. Status: proposal, waiting for sign-off.** Phases 2 to 8 don't start until the answer columns in §4 and §5 are filled in.
+**Phase 1 of `docs/plan/vocab-rework-plan.md`. Status: signed off 2026-11-19.** The user accepted every recommendation in §4 and §5, including corrections C1 to C8.
 
 Inputs: `docs/research/component-vocabulary-and-page-structure.md` (the research doc; §-numbers below refer to it unless marked "plan") and `docs/research/framework-alignment.csv` (69 components × 12 design systems). The 50 existing pages are those in `index.html` on `research-inputs`.
 
