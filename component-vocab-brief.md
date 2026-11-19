@@ -11,8 +11,8 @@ Read-only survey of `C:\Dev\Sandbox\component-vocab`, 2026-11-19, written for th
 **Changes since the first survey**
 - The project name changed from "Component Naming System" to `component-vocab` in all 51 HTML files and the headings of both docs.
 - The plan's old path `C:\Dev\Personal\ComponentNames\` now reads `C:\Dev\Sandbox\component-vocab\`.
-- The remote `origin` = `https://github.com/cjsharp1/component-vocab.git` was added locally. It has no refs, so nothing has been pushed.
-- None of this is committed.
+- The remote `origin` = `https://github.com/cjsharp1/component-vocab.git` was added, the local branch was renamed `master` → `main`, and everything was committed and pushed (see §10).
+- A `.gitignore` now excludes `.playwright-mcp/` and `.claude/settings.local.json`.
 
 ---
 
@@ -40,11 +40,12 @@ The spec excludes Buttons/Toggles/Inputs, Date and Color Picker, Upload, Stepper
 
 ```
 .
-├── .claude/settings.local.json
-├── .playwright-mcp/                      (untracked)
+├── .claude/settings.local.json          (git-ignored)
+├── .gitignore
+├── .playwright-mcp/                      (git-ignored)
 │   ├── console-2026-07-08T15-26-15-871Z.log
 │   └── page-2026-07-08T15-26-17-872Z.yml
-├── .superpowers/sdd/progress.md          (modified, uncommitted)
+├── .superpowers/sdd/progress.md
 ├── components/                           (51 files)
 │   ├── _template.html
 │   └── accordion.html … tooltip.html     (50 component pages)
@@ -670,21 +671,20 @@ The plan's header also says: "REQUIRED SUB-SKILL: Use superpowers:subagent-drive
 ### Housekeeping
 
 14. No README.
-15. `.playwright-mcp/` is untracked scratch output.
-16. The completed progress ledger, the rename and this brief are all uncommitted.
-17. Local branch is `master`; the expected main branch is `main`. The new remote is empty, so the branch name can still be chosen before the first push.
+15. `.playwright-mcp/` is scratch output, now git-ignored.
+16. *(Resolved)* The progress ledger, the rename and this brief are committed and pushed.
+17. *(Resolved)* The local branch was renamed from `master` to `main` before the first push.
 18. No TODO/FIXME markers, and no leftover `{{…}}` tokens outside `_template.html`.
 
 ## 10. Git state
 
-- **Branch:** `master` (only local branch).
-- **Remote:** `origin` → `https://github.com/cjsharp1/component-vocab.git`, added 2026-11-19. `git ls-remote` returns no refs, so nothing has been pushed.
-- **Working tree is not clean:**
-  - 55 tracked files are modified: the rename across 51 HTML files and 2 docs, plus `.superpowers/sdd/progress.md`.
-  - Untracked: `.playwright-mcp/` and this brief.
-  - Nothing is committed.
+- **Branch:** `main` (renamed from `master` on 2026-11-19; tracks `origin/main`).
+- **Remote:** `origin` → `https://github.com/cjsharp1/component-vocab.git`, added 2026-11-19. `main` is pushed and was the first branch on the remote.
+- **Working tree:** clean apart from the commit that updates this section. The two newest commits are:
+  - `docs: add repository brief for change planning` (this file and `.gitignore`)
+  - `chore: rename project to component-vocab` (51 HTML files, both docs, the progress ledger)
 
-**Last 10 commits:**
+**The 10 commits before the rename:**
 
 | Commit | Subject |
 |---|---|
