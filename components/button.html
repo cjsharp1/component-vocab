@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button type="button"&gt;Save&lt;/button&gt;
@@ -146,6 +146,7 @@
             </svg>
           </div>
           <figcaption>Emphasis — primary, secondary, tertiary</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -161,6 +162,18 @@
             </svg>
           </div>
           <figcaption>Icon — leading, icon only, round</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;!-- leading icon --&gt;
+&lt;button type="button"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Save
+&lt;/button&gt;
+
+&lt;!-- icon only (square or round): needs an accessible name --&gt;
+&lt;button type="button" aria-label="Save"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -174,6 +187,7 @@
             </svg>
           </div>
           <figcaption>Full width — inside a narrow container</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -187,6 +201,17 @@
             </svg>
           </div>
           <figcaption>States — default, disabled, loading</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button type="button"&gt;Save&lt;/button&gt;
+
+&lt;button type="button" disabled&gt;Save&lt;/button&gt;
+
+&lt;!-- loading: stays focusable, name says what's happening --&gt;
+&lt;button type="button" aria-disabled="true" aria-label="Saving…"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

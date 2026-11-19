@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;div class="tabs"&gt;
@@ -151,6 +151,7 @@
             </svg>
           </div>
           <figcaption>Line — underline indicator</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -164,6 +165,7 @@
             </svg>
           </div>
           <figcaption>Pill — rounded button tabs</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -178,6 +180,7 @@
             </svg>
           </div>
           <figcaption>Boxed — segmented control style</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -191,6 +194,18 @@
             </svg>
           </div>
           <figcaption>Left position — vertical tab list</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="tabs"&gt;
+  &lt;div role="tablist" aria-label="Account" aria-orientation="vertical"&gt;
+    &lt;button role="tab" aria-selected="true" aria-controls="p1" id="t1"&gt;Profile&lt;/button&gt;
+    &lt;button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1"&gt;Billing&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div role="tabpanel" id="p1" aria-labelledby="t1"&gt;…&lt;/div&gt;
+  &lt;div role="tabpanel" id="p2" aria-labelledby="t2" hidden&gt;…&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- arrow keys become Up/Down --&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

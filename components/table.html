@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;table&gt;
@@ -167,6 +167,7 @@
             </svg>
           </div>
           <figcaption>Default — clean rows</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -182,6 +183,7 @@
             </svg>
           </div>
           <figcaption>Striped — alternating row backgrounds</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -201,6 +203,7 @@
             </svg>
           </div>
           <figcaption>Bordered — all cells outlined</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -218,6 +221,19 @@
             </svg>
           </div>
           <figcaption>Stack (mobile) — vertical card layout</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;table&gt;
+  &lt;caption&gt;Plans&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th scope="col"&gt;Plan&lt;/th&gt;&lt;th scope="col"&gt;Price&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;th scope="row"&gt;Basic&lt;/th&gt;&lt;td data-label="Price"&gt;$10&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- data-label supplies the header text CSS shows beside each stacked cell --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -279,6 +295,27 @@
             </svg>
           </div>
           <figcaption>Comparison (formerly Comparison)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;table&gt;
+  &lt;caption&gt;Compare plans&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;th scope="col"&gt;Basic&lt;/th&gt;
+      &lt;th scope="col"&gt;Pro &lt;span&gt;Recommended&lt;/span&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;Custom domain&lt;/th&gt;
+      &lt;td&gt;&lt;span aria-hidden="true"&gt;—&lt;/span&gt;&lt;span class="visually-hidden"&gt;Not included&lt;/span&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;span aria-hidden="true"&gt;✓&lt;/span&gt;&lt;span class="visually-hidden"&gt;Included&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    …
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

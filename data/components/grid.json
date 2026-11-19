@@ -45,23 +45,28 @@
   "variants": [
     {
       "caption": "2 columns",
-      "wireframe": "wireframes/grid/variation-1.svg"
+      "wireframe": "wireframes/grid/variation-1.svg",
+      "htmlOutline": "<div class=\"grid\" data-preset=\"1:1\">\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n</div>"
     },
     {
       "caption": "3 columns",
-      "wireframe": "wireframes/grid/variation-2.svg"
+      "wireframe": "wireframes/grid/variation-2.svg",
+      "htmlOutline": "<div class=\"grid\" data-preset=\"1:1:1\">\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n</div>"
     },
     {
       "caption": "4 columns",
-      "wireframe": "wireframes/grid/variation-3.svg"
+      "wireframe": "wireframes/grid/variation-3.svg",
+      "htmlOutline": "<div class=\"grid\" data-preset=\"1:1:1:1\">\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n</div>"
     },
     {
       "caption": "Auto-fit — fills available space",
-      "wireframe": "wireframes/grid/variation-4.svg"
+      "wireframe": "wireframes/grid/variation-4.svg",
+      "htmlOutline": "<!-- as many columns as fit; item count can vary -->\n<div class=\"grid\" data-preset=\"auto-fit\">\n  <div class=\"slot\"><!-- content blocks --></div>\n  <div class=\"slot\"><!-- content blocks --></div>\n  …\n</div>"
     },
     {
       "caption": "Asymmetric (formerly Mosaic)",
-      "wireframe": "wireframes/grid/from-mosaic.svg"
+      "wireframe": "wireframes/grid/from-mosaic.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

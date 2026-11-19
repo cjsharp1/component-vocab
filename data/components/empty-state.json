@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Full area — illustration, text and action",
-      "wireframe": "wireframes/empty-state/variation-1.svg"
+      "wireframe": "wireframes/empty-state/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Compact — inside a Table",
-      "wireframe": "wireframes/empty-state/variation-2.svg"
+      "wireframe": "wireframes/empty-state/variation-2.svg",
+      "htmlOutline": "<table>\n  <thead>…</thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">\n        <p><strong>No projects yet</strong></p>\n        <p>Projects you create appear here.</p>\n        <button>Create a project</button>\n      </td>\n    </tr>\n  </tbody>\n</table>"
     },
     {
       "caption": "Start aligned — icon beside the text",
-      "wireframe": "wireframes/empty-state/variation-3.svg"
+      "wireframe": "wireframes/empty-state/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Two actions — primary and secondary",
-      "wireframe": "wireframes/empty-state/variation-4.svg"
+      "wireframe": "wireframes/empty-state/variation-4.svg",
+      "htmlOutline": "<div class=\"empty-state\">\n  <svg aria-hidden=\"true\">…</svg>\n  <h2>No projects yet</h2>\n  <p>Projects you create appear here.</p>\n  <button>Create a project</button>\n  <button>Import projects</button>\n</div>"
     }
   ],
   "collections": [],

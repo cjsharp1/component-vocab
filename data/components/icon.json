@@ -62,15 +62,18 @@
   "variants": [
     {
       "caption": "Size — small, medium, large",
-      "wireframe": "wireframes/icon/variation-1.svg"
+      "wireframe": "wireframes/icon/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Position — before text, after text, alone",
-      "wireframe": "wireframes/icon/variation-2.svg"
+      "wireframe": "wireframes/icon/variation-2.svg",
+      "htmlOutline": "<!-- before / after text: decorative -->\n<button><svg aria-hidden=\"true\" focusable=\"false\">…</svg> Save</button>\n<a href=\"…\">Next <svg aria-hidden=\"true\" focusable=\"false\">…</svg></a>\n\n<!-- alone: the control needs its own name -->\n<button aria-label=\"Settings\"><svg aria-hidden=\"true\" focusable=\"false\">…</svg></button>"
     },
     {
       "caption": "Background shape — circle and rounded square",
-      "wireframe": "wireframes/icon/variation-3.svg"
+      "wireframe": "wireframes/icon/variation-3.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

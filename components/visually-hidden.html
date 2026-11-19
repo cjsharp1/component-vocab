@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button&gt;
@@ -139,6 +139,7 @@
             </svg>
           </div>
           <figcaption>Control name — text inside an icon-only button</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -152,6 +153,10 @@
             </svg>
           </div>
           <figcaption>Link context — "Read more" plus hidden detail</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;a href="/news/spring-update"&gt;Read more&lt;span class="visually-hidden"&gt; about the spring update&lt;/span&gt;&lt;/a&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -167,6 +172,13 @@
             </svg>
           </div>
           <figcaption>Hidden heading — names a section for screen readers</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;section aria-labelledby="related-title"&gt;
+  &lt;h2 id="related-title" class="visually-hidden"&gt;Related articles&lt;/h2&gt;
+  …
+&lt;/section&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -180,6 +192,11 @@
             </svg>
           </div>
           <figcaption>Reveal on focus — hidden, then shown while focused</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;a href="#main" class="visually-hidden-focusable"&gt;Skip to main content&lt;/a&gt;
+&lt;!-- hidden until it receives keyboard focus, then shown --&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

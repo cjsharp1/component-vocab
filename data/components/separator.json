@@ -45,35 +45,43 @@
   "variants": [
     {
       "caption": "Style: Solid",
-      "wireframe": "wireframes/separator/variation-1.svg"
+      "wireframe": "wireframes/separator/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Style: Dashed",
-      "wireframe": "wireframes/separator/variation-2.svg"
+      "wireframe": "wireframes/separator/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Style: Dotted",
-      "wireframe": "wireframes/separator/variation-3.svg"
+      "wireframe": "wireframes/separator/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Width: Short centered",
-      "wireframe": "wireframes/separator/variation-4.svg"
+      "wireframe": "wireframes/separator/variation-4.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Orientation: Vertical",
-      "wireframe": "wireframes/separator/variation-5.svg"
+      "wireframe": "wireframes/separator/variation-5.svg",
+      "htmlOutline": "<nav>\n  <a href=\"…\">Docs</a>\n  <span role=\"separator\" aria-orientation=\"vertical\"></span>\n  <a href=\"…\">Blog</a>\n</nav>\n<!-- hr is horizontal only; use role=\"separator\" or aria-hidden if purely decorative -->"
     },
     {
       "caption": "Spacing: Compact",
-      "wireframe": "wireframes/separator/variation-6.svg"
+      "wireframe": "wireframes/separator/variation-6.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Spacing: Spacious",
-      "wireframe": "wireframes/separator/variation-7.svg"
+      "wireframe": "wireframes/separator/variation-7.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Style: None (spacing only)",
-      "wireframe": "wireframes/separator/variation-8.svg"
+      "wireframe": "wireframes/separator/variation-8.svg",
+      "htmlOutline": "<p>…end of one topic.</p>\n<!-- no hr: margin alone separates the topics -->\n<p>Start of the next topic…</p>"
     }
   ],
   "collections": [],

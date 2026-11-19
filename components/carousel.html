@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;section aria-roledescription="carousel" aria-label="Featured"&gt;
@@ -159,6 +159,7 @@
             </svg>
           </div>
           <figcaption>Items visible: 1</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -175,6 +176,7 @@
             </svg>
           </div>
           <figcaption>Items visible: 2</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -192,6 +194,7 @@
             </svg>
           </div>
           <figcaption>Items visible: 3</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -208,6 +211,17 @@
             </svg>
           </div>
           <figcaption>Navigation: Arrows only</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;section aria-roledescription="carousel" aria-label="Featured"&gt;
+  &lt;!-- no auto-rotation, so no pause button; slide changes are announced --&gt;
+  &lt;div aria-live="polite"&gt;
+    &lt;div role="group" aria-roledescription="slide" aria-label="1 of 4"&gt;…&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button aria-label="Previous slide"&gt;‹&lt;/button&gt;
+  &lt;button aria-label="Next slide"&gt;›&lt;/button&gt;
+&lt;/section&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

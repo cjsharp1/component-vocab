@@ -49,19 +49,23 @@
   "variants": [
     {
       "caption": "Line — underline indicator",
-      "wireframe": "wireframes/tabs/variation-1.svg"
+      "wireframe": "wireframes/tabs/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Pill — rounded button tabs",
-      "wireframe": "wireframes/tabs/variation-2.svg"
+      "wireframe": "wireframes/tabs/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Boxed — segmented control style",
-      "wireframe": "wireframes/tabs/variation-3.svg"
+      "wireframe": "wireframes/tabs/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Left position — vertical tab list",
-      "wireframe": "wireframes/tabs/variation-4.svg"
+      "wireframe": "wireframes/tabs/variation-4.svg",
+      "htmlOutline": "<div class=\"tabs\">\n  <div role=\"tablist\" aria-label=\"Account\" aria-orientation=\"vertical\">\n    <button role=\"tab\" aria-selected=\"true\" aria-controls=\"p1\" id=\"t1\">Profile</button>\n    <button role=\"tab\" aria-selected=\"false\" aria-controls=\"p2\" id=\"t2\" tabindex=\"-1\">Billing</button>\n  </div>\n  <div role=\"tabpanel\" id=\"p1\" aria-labelledby=\"t1\">…</div>\n  <div role=\"tabpanel\" id=\"p2\" aria-labelledby=\"t2\" hidden>…</div>\n</div>\n<!-- arrow keys become Up/Down -->"
     }
   ],
   "collections": [],

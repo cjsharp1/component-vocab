@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;div class="grid" data-preset="2:1"&gt;
@@ -148,6 +148,13 @@
             </svg>
           </div>
           <figcaption>2 columns</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="grid" data-preset="1:1"&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -162,6 +169,14 @@
             </svg>
           </div>
           <figcaption>3 columns</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="grid" data-preset="1:1:1"&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -178,6 +193,15 @@
             </svg>
           </div>
           <figcaption>4 columns</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="grid" data-preset="1:1:1:1"&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -194,6 +218,15 @@
             </svg>
           </div>
           <figcaption>Auto-fit — fills available space</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;!-- as many columns as fit; item count can vary --&gt;
+&lt;div class="grid" data-preset="auto-fit"&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  &lt;div class="slot"&gt;&lt;!-- content blocks --&gt;&lt;/div&gt;
+  …
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -229,6 +262,7 @@
             </svg>
           </div>
           <figcaption>Asymmetric (formerly Mosaic)</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

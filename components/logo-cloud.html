@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;section aria-labelledby="lc-title"&gt;
@@ -145,6 +145,7 @@
             </svg>
           </div>
           <figcaption>Single row</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -172,6 +173,7 @@
             </svg>
           </div>
           <figcaption>Grid (2 rows)</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -186,6 +188,7 @@
             </svg>
           </div>
           <figcaption>Grayscale treatment</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -199,6 +202,7 @@
             </svg>
           </div>
           <figcaption>Spacious — fewer, larger</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -242,6 +246,22 @@
             </svg>
           </div>
           <figcaption>Scrolling (formerly Marquee)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;section aria-labelledby="lc-title"&gt;
+  &lt;h2 id="lc-title"&gt;Trusted by&lt;/h2&gt;
+  &lt;button aria-pressed="false"&gt;Pause&lt;/button&gt;
+  &lt;ul class="logo-cloud"&gt;
+    &lt;li&gt;&lt;img src="acme.svg" alt="Acme"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="globex.svg" alt="Globex"&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;!-- duplicate set for a seamless loop, hidden from assistive tech --&gt;
+  &lt;ul class="logo-cloud" aria-hidden="true"&gt;
+    &lt;li&gt;&lt;img src="acme.svg" alt=""&gt;&lt;/li&gt;
+    …
+  &lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="msg"&gt;Message&lt;/label&gt;
@@ -147,6 +147,14 @@
             </svg>
           </div>
           <figcaption>Rows — short and tall</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="note"&gt;Note&lt;/label&gt;
+&lt;textarea id="note" name="note" rows="2"&gt;&lt;/textarea&gt;
+
+&lt;label for="msg"&gt;Message&lt;/label&gt;
+&lt;textarea id="msg" name="msg" rows="8"&gt;&lt;/textarea&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -160,6 +168,12 @@
             </svg>
           </div>
           <figcaption>Character count — characters left below the field</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="msg"&gt;Message&lt;/label&gt;
+&lt;textarea id="msg" name="msg" rows="4" maxlength="500" aria-describedby="msg-count"&gt;&lt;/textarea&gt;
+&lt;p id="msg-count" aria-live="polite"&gt;500 characters left&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -172,6 +186,12 @@
             </svg>
           </div>
           <figcaption>Error — message above the field</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="msg"&gt;Message&lt;/label&gt;
+&lt;p id="msg-error"&gt;Enter a message&lt;/p&gt;
+&lt;textarea id="msg" name="msg" rows="4" aria-invalid="true" aria-describedby="msg-error"&gt;&lt;/textarea&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

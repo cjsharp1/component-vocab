@@ -72,15 +72,18 @@
   "variants": [
     {
       "caption": "Row selection — checkbox column",
-      "wireframe": "wireframes/data-grid/variation-1.svg"
+      "wireframe": "wireframes/data-grid/variation-1.svg",
+      "htmlOutline": "<table role=\"grid\" aria-label=\"Orders\" aria-multiselectable=\"true\">\n  <thead>\n    <tr><th role=\"columnheader\"><input type=\"checkbox\" aria-label=\"Select all rows\"></th><th role=\"columnheader\">Date</th>…</tr>\n  </thead>\n  <tbody>\n    <tr aria-selected=\"true\">\n      <td role=\"gridcell\"><input type=\"checkbox\" checked aria-label=\"Select row\"></td>\n      <td role=\"gridcell\" tabindex=\"0\">2024-03-01</td>…\n    </tr>\n  </tbody>\n</table>"
     },
     {
       "caption": "Compact — shorter rows",
-      "wireframe": "wireframes/data-grid/variation-2.svg"
+      "wireframe": "wireframes/data-grid/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Treegrid — rows that expand to show child rows",
-      "wireframe": "wireframes/data-grid/variation-3.svg"
+      "wireframe": "wireframes/data-grid/variation-3.svg",
+      "htmlOutline": "<table role=\"treegrid\" aria-label=\"Orders\">\n  …\n  <tbody>\n    <tr aria-level=\"1\" aria-expanded=\"true\"><td role=\"gridcell\" tabindex=\"0\">March</td><td role=\"gridcell\">$120</td></tr>\n    <tr aria-level=\"2\"><td role=\"gridcell\" tabindex=\"-1\">2024-03-01</td><td role=\"gridcell\">$40</td></tr>\n    <tr aria-level=\"1\" aria-expanded=\"false\"><td role=\"gridcell\" tabindex=\"-1\">April</td><td role=\"gridcell\">$90</td></tr>\n  </tbody>\n</table>"
     }
   ],
   "collections": [],

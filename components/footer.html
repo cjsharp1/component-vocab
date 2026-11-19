@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;footer&gt;
@@ -170,6 +170,12 @@
             </svg>
           </div>
           <figcaption>Minimal — copyright only</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;footer&gt;
+  &lt;p&gt;&lt;small&gt;© Company&lt;/small&gt;&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -193,6 +199,23 @@
             </svg>
           </div>
           <figcaption>Multi-column — nav columns + copyright</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;footer&gt;
+  &lt;nav aria-label="Footer"&gt;
+    &lt;section aria-labelledby="f-product"&gt;
+      &lt;h2 id="f-product"&gt;Product&lt;/h2&gt;
+      &lt;ul&gt;…&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section aria-labelledby="f-company"&gt;
+      &lt;h2 id="f-company"&gt;Company&lt;/h2&gt;
+      &lt;ul&gt;…&lt;/ul&gt;
+    &lt;/section&gt;
+    …
+  &lt;/nav&gt;
+  &lt;p&gt;&lt;small&gt;© Company&lt;/small&gt;&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -213,6 +236,19 @@
             </svg>
           </div>
           <figcaption>Stacked — centered, single column</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;footer&gt;
+  &lt;nav aria-label="Footer"&gt;
+    &lt;ul&gt;…&lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="…" aria-label="Mastodon"&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+    …
+  &lt;/ul&gt;
+  &lt;p&gt;&lt;small&gt;© Company&lt;/small&gt;&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

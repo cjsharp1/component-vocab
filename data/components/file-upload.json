@@ -72,19 +72,23 @@
   "variants": [
     {
       "caption": "Plain — native button and file name",
-      "wireframe": "wireframes/file-upload/variation-1.svg"
+      "wireframe": "wireframes/file-upload/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Drop zone — dashed area with a button inside",
-      "wireframe": "wireframes/file-upload/variation-2.svg"
+      "wireframe": "wireframes/file-upload/variation-2.svg",
+      "htmlOutline": "<div class=\"drop-zone\">\n  <p>Drag a file here, or</p>\n  <label for=\"cv\">Choose file</label>\n  <input id=\"cv\" type=\"file\" name=\"cv\" accept=\".pdf,.docx\">\n</div>\n<!-- drop zone is a pointer shortcut; the input still works by keyboard -->"
     },
     {
       "caption": "File list — progress and remove buttons",
-      "wireframe": "wireframes/file-upload/variation-3.svg"
+      "wireframe": "wireframes/file-upload/variation-3.svg",
+      "htmlOutline": "<label for=\"cv\">Upload your CV</label>\n<input id=\"cv\" type=\"file\" name=\"cv\" multiple>\n<ul aria-label=\"Uploads\">\n  <li>\n    cv.pdf\n    <progress max=\"100\" value=\"60\" aria-label=\"Uploading cv.pdf\">60%</progress>\n    <button type=\"button\" aria-label=\"Remove cv.pdf\">×</button>\n  </li>\n  …\n</ul>"
     },
     {
       "caption": "Previews — image thumbnails with an add tile",
-      "wireframe": "wireframes/file-upload/variation-4.svg"
+      "wireframe": "wireframes/file-upload/variation-4.svg",
+      "htmlOutline": "<ul aria-label=\"Photos\">\n  <li>\n    <img src=\"beach.jpg\" alt=\"beach.jpg\">\n    <button type=\"button\" aria-label=\"Remove beach.jpg\">×</button>\n  </li>\n  …\n  <li>\n    <label for=\"photos\">Add photos</label>\n    <input id=\"photos\" type=\"file\" accept=\"image/*\" multiple>\n  </li>\n</ul>"
     }
   ],
   "collections": [],

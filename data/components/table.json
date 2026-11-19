@@ -60,23 +60,28 @@
   "variants": [
     {
       "caption": "Default — clean rows",
-      "wireframe": "wireframes/table/variation-1.svg"
+      "wireframe": "wireframes/table/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Striped — alternating row backgrounds",
-      "wireframe": "wireframes/table/variation-2.svg"
+      "wireframe": "wireframes/table/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Bordered — all cells outlined",
-      "wireframe": "wireframes/table/variation-3.svg"
+      "wireframe": "wireframes/table/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Stack (mobile) — vertical card layout",
-      "wireframe": "wireframes/table/variation-4.svg"
+      "wireframe": "wireframes/table/variation-4.svg",
+      "htmlOutline": "<table>\n  <caption>Plans</caption>\n  <thead>\n    <tr><th scope=\"col\">Plan</th><th scope=\"col\">Price</th></tr>\n  </thead>\n  <tbody>\n    <tr><th scope=\"row\">Basic</th><td data-label=\"Price\">$10</td></tr>\n  </tbody>\n</table>\n<!-- data-label supplies the header text CSS shows beside each stacked cell -->"
     },
     {
       "caption": "Comparison (formerly Comparison)",
-      "wireframe": "wireframes/table/from-comparison.svg"
+      "wireframe": "wireframes/table/from-comparison.svg",
+      "htmlOutline": "<table>\n  <caption>Compare plans</caption>\n  <thead>\n    <tr>\n      <td></td>\n      <th scope=\"col\">Basic</th>\n      <th scope=\"col\">Pro <span>Recommended</span></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">Custom domain</th>\n      <td><span aria-hidden=\"true\">—</span><span class=\"visually-hidden\">Not included</span></td>\n      <td><span aria-hidden=\"true\">✓</span><span class=\"visually-hidden\">Included</span></td>\n    </tr>\n    …\n  </tbody>\n</table>"
     }
   ],
   "collections": [],

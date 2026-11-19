@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="checkin"&gt;Check-in&lt;/label&gt;
@@ -200,6 +200,26 @@
             </svg>
           </div>
           <figcaption>Range — start and end days with the span between</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset&gt;
+  &lt;legend&gt;Stay&lt;/legend&gt;
+  &lt;label for="checkin"&gt;Check-in&lt;/label&gt;
+  &lt;input id="checkin" aria-haspopup="dialog"&gt;
+  &lt;label for="checkout"&gt;Check-out&lt;/label&gt;
+  &lt;input id="checkout" aria-haspopup="dialog"&gt;
+&lt;/fieldset&gt;
+&lt;dialog aria-label="Choose dates"&gt;
+  &lt;table role="grid"&gt;
+    …
+    &lt;td role="gridcell" aria-selected="true"&gt;12&lt;/td&gt;
+    &lt;td role="gridcell"&gt;13&lt;/td&gt;
+    …
+    &lt;td role="gridcell" aria-selected="true"&gt;16&lt;/td&gt;
+    …
+  &lt;/table&gt;
+&lt;/dialog&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -240,6 +260,13 @@
             </svg>
           </div>
           <figcaption>Inline — calendar always visible, no popup</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="checkin"&gt;Check-in&lt;/label&gt;
+&lt;input id="checkin"&gt;
+&lt;table role="grid" aria-label="Choose a date"&gt;…calendar…&lt;/table&gt;
+&lt;!-- no dialog or aria-haspopup: the grid is always on the page --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -294,6 +321,15 @@
             </svg>
           </div>
           <figcaption>Two months — side by side</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="checkin"&gt;Check-in&lt;/label&gt;
+&lt;input id="checkin" aria-haspopup="dialog"&gt;
+&lt;dialog aria-label="Choose a date"&gt;
+  &lt;table role="grid" aria-labelledby="m1"&gt;&lt;caption id="m1"&gt;June 2026&lt;/caption&gt;…&lt;/table&gt;
+  &lt;table role="grid" aria-labelledby="m2"&gt;&lt;caption id="m2"&gt;July 2026&lt;/caption&gt;…&lt;/table&gt;
+&lt;/dialog&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

@@ -66,15 +66,18 @@
   "variants": [
     {
       "caption": "Plain — field only, no step buttons",
-      "wireframe": "wireframes/number-input/variation-1.svg"
+      "wireframe": "wireframes/number-input/variation-1.svg",
+      "htmlOutline": "<label for=\"qty\">Quantity</label>\n<input id=\"qty\" type=\"text\" inputmode=\"numeric\" pattern=\"[0-9]*\" value=\"1\">\n<!-- a text field with a numeric keyboard, without the browser's spin buttons -->"
     },
     {
       "caption": "Stacked — small up and down buttons at the end",
-      "wireframe": "wireframes/number-input/variation-2.svg"
+      "wireframe": "wireframes/number-input/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Unit — suffix inside the field",
-      "wireframe": "wireframes/number-input/variation-3.svg"
+      "wireframe": "wireframes/number-input/variation-3.svg",
+      "htmlOutline": "<label for=\"weight\">Weight</label>\n<input id=\"weight\" type=\"number\" min=\"0\" step=\"0.1\" aria-describedby=\"weight-unit\">\n<span id=\"weight-unit\">kg</span>"
     }
   ],
   "collections": [],

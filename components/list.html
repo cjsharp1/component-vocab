@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;ul&gt;
@@ -153,6 +153,7 @@
             </svg>
           </div>
           <figcaption>Bulleted — simple bullet points</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -170,6 +171,13 @@
             </svg>
           </div>
           <figcaption>Checklist — checkmark icons</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul&gt;
+  &lt;li&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Item&lt;/li&gt;
+  &lt;li&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -187,6 +195,7 @@
             </svg>
           </div>
           <figcaption>Boxed — bordered items</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -205,6 +214,14 @@
             </svg>
           </div>
           <figcaption>Icon-led with dividers — icons and separators</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul&gt;
+  &lt;li&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Item&lt;/li&gt;
+  &lt;li&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- dividers are borders, not &lt;hr&gt; --&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

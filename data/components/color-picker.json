@@ -66,15 +66,18 @@
   "variants": [
     {
       "caption": "Swatch and value field — compact row",
-      "wireframe": "wireframes/color-picker/variation-1.svg"
+      "wireframe": "wireframes/color-picker/variation-1.svg",
+      "htmlOutline": "<label for=\"brand\">Brand color</label>\n<input id=\"brand\" type=\"color\" value=\"#2350d1\">\n<input aria-label=\"Brand color hex value\" value=\"#2350d1\" size=\"7\">"
     },
     {
       "caption": "Inline panel — color area, hue slider and value",
-      "wireframe": "wireframes/color-picker/variation-2.svg"
+      "wireframe": "wireframes/color-picker/variation-2.svg",
+      "htmlOutline": "<div role=\"group\" aria-labelledby=\"brand-label\">\n  <span id=\"brand-label\">Brand color</span>\n  <!-- 2-D area: arrow keys change saturation and brightness -->\n  <div role=\"slider\" tabindex=\"0\" aria-label=\"Saturation and brightness\"\n       aria-valuenow=\"83\" aria-valuetext=\"Saturation 83%, brightness 82%\"></div>\n  <input type=\"range\" aria-label=\"Hue\" min=\"0\" max=\"360\" value=\"225\">\n  <input aria-label=\"Hex value\" value=\"#2350d1\" size=\"7\">\n</div>"
     },
     {
       "caption": "Presets — row of swatches with an add button",
-      "wireframe": "wireframes/color-picker/variation-3.svg"
+      "wireframe": "wireframes/color-picker/variation-3.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Brand color</legend>\n  <input type=\"radio\" name=\"brand\" value=\"#2350d1\" aria-label=\"Blue\" checked>\n  <input type=\"radio\" name=\"brand\" value=\"#1a7f37\" aria-label=\"Green\">\n  …\n  <button type=\"button\" aria-label=\"Add color\">\n    <svg aria-hidden=\"true\">…</svg>\n  </button>\n</fieldset>"
     }
   ],
   "collections": [],

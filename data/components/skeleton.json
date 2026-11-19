@@ -39,19 +39,23 @@
   "variants": [
     {
       "caption": "Shape: Text lines",
-      "wireframe": "wireframes/skeleton/variation-1.svg"
+      "wireframe": "wireframes/skeleton/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Shape: Circle (avatars)",
-      "wireframe": "wireframes/skeleton/variation-2.svg"
+      "wireframe": "wireframes/skeleton/variation-2.svg",
+      "htmlOutline": "<section aria-busy=\"true\" aria-label=\"Loading people\">\n  <div class=\"skeleton skeleton-circle\"></div>\n  <div class=\"skeleton skeleton-line\"></div>\n</section>"
     },
     {
       "caption": "Shape: Card-shaped",
-      "wireframe": "wireframes/skeleton/variation-3.svg"
+      "wireframe": "wireframes/skeleton/variation-3.svg",
+      "htmlOutline": "<section aria-busy=\"true\" aria-label=\"Loading results\">\n  <div class=\"skeleton skeleton-card\">\n    <div class=\"skeleton skeleton-media\"></div>\n    <div class=\"skeleton skeleton-title\"></div>\n    <div class=\"skeleton skeleton-line\"></div>\n  </div>\n</section>"
     },
     {
       "caption": "Density: Simplified",
-      "wireframe": "wireframes/skeleton/variation-4.svg"
+      "wireframe": "wireframes/skeleton/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

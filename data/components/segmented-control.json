@@ -62,19 +62,23 @@
   "variants": [
     {
       "caption": "Text — three labeled segments",
-      "wireframe": "wireframes/segmented-control/variation-1.svg"
+      "wireframe": "wireframes/segmented-control/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Icon only — view switcher",
-      "wireframe": "wireframes/segmented-control/variation-2.svg"
+      "wireframe": "wireframes/segmented-control/variation-2.svg",
+      "htmlOutline": "<fieldset class=\"segmented\">\n  <legend>View</legend>\n  <label><input type=\"radio\" name=\"view\" checked aria-label=\"List\"> <svg aria-hidden=\"true\">…</svg></label>\n  <label><input type=\"radio\" name=\"view\" aria-label=\"Grid\"> <svg aria-hidden=\"true\">…</svg></label>\n</fieldset>"
     },
     {
       "caption": "Full width — equal segments across the container",
-      "wireframe": "wireframes/segmented-control/variation-3.svg"
+      "wireframe": "wireframes/segmented-control/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Visible label — legend above the segments",
-      "wireframe": "wireframes/segmented-control/variation-4.svg"
+      "wireframe": "wireframes/segmented-control/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button aria-expanded="false" aria-controls="tt-info"&gt;More info&lt;/button&gt;
@@ -134,6 +134,7 @@
             </svg>
           </div>
           <figcaption>Bottom — bubble below the trigger</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -149,6 +150,7 @@
             </svg>
           </div>
           <figcaption>End — bubble beside the trigger</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -164,6 +166,13 @@
             </svg>
           </div>
           <figcaption>Icon with text — visible trigger label</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button aria-expanded="false" aria-controls="tt-info"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; More info
+&lt;/button&gt;
+&lt;div id="tt-info" role="status" hidden&gt;Short explanation.&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -181,6 +190,7 @@
             </svg>
           </div>
           <figcaption>Max width — longer text wraps</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

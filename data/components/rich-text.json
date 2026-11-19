@@ -69,23 +69,28 @@
   "variants": [
     {
       "caption": "Narrow — optimal reading line length",
-      "wireframe": "wireframes/rich-text/variation-1.svg"
+      "wireframe": "wireframes/rich-text/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Wide — more content per line",
-      "wireframe": "wireframes/rich-text/variation-2.svg"
+      "wireframe": "wireframes/rich-text/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Drop cap — decorative first letter",
-      "wireframe": "wireframes/rich-text/variation-3.svg"
+      "wireframe": "wireframes/rich-text/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Lead text — emphasized first paragraph",
-      "wireframe": "wireframes/rich-text/variation-4.svg"
+      "wireframe": "wireframes/rich-text/variation-4.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Article page (formerly Article)",
-      "wireframe": "wireframes/rich-text/from-article.svg"
+      "wireframe": "wireframes/rich-text/from-article.svg",
+      "htmlOutline": "<article>\n  <img src=\"cover.jpg\" alt=\"…\">\n  <h1>…</h1>\n  <p>By <a href=\"…\">Ana Ruiz</a> · <time datetime=\"2026-03-04\">4 March 2026</time></p>\n  <div class=\"rich-text\">\n    <p>…</p>\n    …\n  </div>\n</article>"
     }
   ],
   "collections": [],

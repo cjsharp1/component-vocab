@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="name"&gt;Full name&lt;/label&gt;
@@ -130,6 +130,7 @@
             </svg>
           </div>
           <figcaption>Beside — label to the start of the field</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -141,6 +142,12 @@
             </svg>
           </div>
           <figcaption>Hint — guidance under the label</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="name"&gt;Full name&lt;/label&gt;
+&lt;p id="name-hint"&gt;As it appears on your ID&lt;/p&gt;
+&lt;input id="name" name="name" aria-describedby="name-hint"&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -153,6 +160,11 @@
             </svg>
           </div>
           <figcaption>Wraps the control — label after each checkbox</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label&gt;&lt;input type="checkbox" name="news"&gt; Product news&lt;/label&gt;
+&lt;label&gt;&lt;input type="checkbox" name="tips"&gt; Tips and guides&lt;/label&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

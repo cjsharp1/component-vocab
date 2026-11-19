@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;img class="avatar" src="ana.jpg" alt="Ana Ruiz"&gt;
@@ -133,6 +133,7 @@
             </svg>
           </div>
           <figcaption>Sizes: XS, S, M, L</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -146,6 +147,15 @@
             </svg>
           </div>
           <figcaption>Group: Stack overlapping</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;!-- overlap is styling; the group is a list --&gt;
+&lt;ul class="avatar-group" aria-label="Project members"&gt;
+  &lt;li&gt;&lt;img class="avatar" src="ana.jpg" alt="Ana Ruiz"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img class="avatar" src="ben.jpg" alt="Ben Cole"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class="avatar" role="img" aria-label="Chen Li"&gt;CL&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -159,6 +169,14 @@
             </svg>
           </div>
           <figcaption>Group: Row</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul class="avatar-group" aria-label="Project members"&gt;
+  &lt;li&gt;&lt;img class="avatar" src="ana.jpg" alt="Ana Ruiz"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img class="avatar" src="ben.jpg" alt="Ben Cole"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class="avatar" role="img" aria-label="Chen Li"&gt;CL&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -173,6 +191,14 @@
             </svg>
           </div>
           <figcaption>With status indicator</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;span class="avatar"&gt;
+  &lt;img src="ana.jpg" alt="Ana Ruiz"&gt;
+  &lt;!-- status needs text, not just a colored dot --&gt;
+  &lt;span class="status" role="img" aria-label="Online"&gt;&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

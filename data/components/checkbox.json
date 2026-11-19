@@ -66,19 +66,23 @@
   "variants": [
     {
       "caption": "Group stacked — options in a column under a legend",
-      "wireframe": "wireframes/checkbox/variation-1.svg"
+      "wireframe": "wireframes/checkbox/variation-1.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Notifications</legend>\n  <label><input type=\"checkbox\" name=\"notify\" value=\"email\" checked> Email</label>\n  <label><input type=\"checkbox\" name=\"notify\" value=\"sms\"> SMS</label>\n  <label><input type=\"checkbox\" name=\"notify\" value=\"push\" checked> Push</label>\n</fieldset>"
     },
     {
       "caption": "Group inline — short options in a row",
-      "wireframe": "wireframes/checkbox/variation-2.svg"
+      "wireframe": "wireframes/checkbox/variation-2.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Days</legend>\n  <label><input type=\"checkbox\" name=\"days\" value=\"mon\" checked> Mon</label>\n  <label><input type=\"checkbox\" name=\"days\" value=\"tue\"> Tue</label>\n  <label><input type=\"checkbox\" name=\"days\" value=\"wed\"> Wed</label>\n</fieldset>\n<!-- same structure as stacked; only the layout changes -->"
     },
     {
       "caption": "With hints — a line of detail under each label",
-      "wireframe": "wireframes/checkbox/variation-3.svg"
+      "wireframe": "wireframes/checkbox/variation-3.svg",
+      "htmlOutline": "<input type=\"checkbox\" id=\"n-email\" name=\"notify\" value=\"email\" aria-describedby=\"n-email-hint\">\n<label for=\"n-email\">Email updates</label>\n<p id=\"n-email-hint\">A daily summary to your inbox.</p>\n…"
     },
     {
       "caption": "Size — small, medium, large",
-      "wireframe": "wireframes/checkbox/variation-4.svg"
+      "wireframe": "wireframes/checkbox/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

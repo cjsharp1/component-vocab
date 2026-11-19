@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="vol"&gt;Volume&lt;/label&gt;
@@ -148,6 +148,16 @@
             </svg>
           </div>
           <figcaption>Range — two thumbs for a minimum and maximum</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset&gt;
+  &lt;legend&gt;Price&lt;/legend&gt;
+  &lt;label for="min"&gt;Minimum&lt;/label&gt;
+  &lt;input id="min" type="range" min="0" max="100" value="20"&gt;
+  &lt;label for="max"&gt;Maximum&lt;/label&gt;
+  &lt;input id="max" type="range" min="0" max="100" value="80"&gt;
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -162,6 +172,13 @@
             </svg>
           </div>
           <figcaption>With number field — exact value beside the track</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="vol"&gt;Volume&lt;/label&gt;
+&lt;input id="vol" type="range" min="0" max="10" value="5"&gt;
+&lt;input type="number" min="0" max="10" value="5" aria-label="Volume"&gt;
+&lt;!-- keep both in sync --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -184,6 +201,17 @@
             </svg>
           </div>
           <figcaption>Labeled steps — tick marks under the track</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="vol"&gt;Volume&lt;/label&gt;
+&lt;input id="vol" type="range" min="0" max="100" step="25" value="50" list="vol-steps"&gt;
+&lt;datalist id="vol-steps"&gt;
+  &lt;option value="0" label="0"&gt;&lt;/option&gt;
+  &lt;option value="25" label="25"&gt;&lt;/option&gt;
+  …
+  &lt;option value="100" label="100"&gt;&lt;/option&gt;
+&lt;/datalist&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -198,6 +226,7 @@
             </svg>
           </div>
           <figcaption>Vertical — track runs bottom to top</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

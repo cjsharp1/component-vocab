@@ -55,19 +55,23 @@
   "variants": [
     {
       "caption": "Position: Top",
-      "wireframe": "wireframes/tooltip/variation-1.svg"
+      "wireframe": "wireframes/tooltip/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Position: Bottom",
-      "wireframe": "wireframes/tooltip/variation-2.svg"
+      "wireframe": "wireframes/tooltip/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Position: Left",
-      "wireframe": "wireframes/tooltip/variation-3.svg"
+      "wireframe": "wireframes/tooltip/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Position: Right",
-      "wireframe": "wireframes/tooltip/variation-4.svg"
+      "wireframe": "wireframes/tooltip/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

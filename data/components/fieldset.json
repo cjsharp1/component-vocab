@@ -72,19 +72,23 @@
   "variants": [
     {
       "caption": "No border — legend styled as a heading",
-      "wireframe": "wireframes/fieldset/variation-1.svg"
+      "wireframe": "wireframes/fieldset/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Inline row — day, month and year fields",
-      "wireframe": "wireframes/fieldset/variation-2.svg"
+      "wireframe": "wireframes/fieldset/variation-2.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Date of birth</legend>\n  <label for=\"dob-day\">Day</label>\n  <input id=\"dob-day\" name=\"dob-day\" inputmode=\"numeric\" autocomplete=\"bday-day\">\n  <label for=\"dob-month\">Month</label>\n  <input id=\"dob-month\" name=\"dob-month\" inputmode=\"numeric\" autocomplete=\"bday-month\">\n  <label for=\"dob-year\">Year</label>\n  <input id=\"dob-year\" name=\"dob-year\" inputmode=\"numeric\" autocomplete=\"bday-year\">\n</fieldset>"
     },
     {
       "caption": "Hint — guidance above a set of radio buttons",
-      "wireframe": "wireframes/fieldset/variation-3.svg"
+      "wireframe": "wireframes/fieldset/variation-3.svg",
+      "htmlOutline": "<fieldset aria-describedby=\"contact-hint\">\n  <legend>How should we contact you?</legend>\n  <p id=\"contact-hint\">Choose one.</p>\n  <input type=\"radio\" id=\"contact-email\" name=\"contact\" value=\"email\">\n  <label for=\"contact-email\">Email</label>\n  …\n</fieldset>"
     },
     {
       "caption": "Error — message under the legend",
-      "wireframe": "wireframes/fieldset/variation-4.svg"
+      "wireframe": "wireframes/fieldset/variation-4.svg",
+      "htmlOutline": "<fieldset aria-describedby=\"address-error\">\n  <legend>Shipping address</legend>\n  <p id=\"address-error\">Enter your street.</p>\n  <label for=\"street\">Street</label>\n  <input id=\"street\" name=\"street\" aria-invalid=\"true\">\n  …\n</fieldset>"
     }
   ],
   "collections": [],

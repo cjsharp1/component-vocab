@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="city"&gt;City&lt;/label&gt;
@@ -147,6 +147,7 @@
             </svg>
           </div>
           <figcaption>Width — fixed for short values, full for long ones</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -161,6 +162,16 @@
             </svg>
           </div>
           <figcaption>Prefix and suffix — currency sign and unit</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="price"&gt;Price per kg, in dollars&lt;/label&gt;
+&lt;div class="input-group"&gt;
+  &lt;span aria-hidden="true"&gt;$&lt;/span&gt;
+  &lt;input id="price" type="text" name="price" inputmode="decimal"&gt;
+  &lt;span aria-hidden="true"&gt;per kg&lt;/span&gt;
+&lt;/div&gt;
+&lt;!-- the label carries the meaning; the visual affixes are hidden --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -173,6 +184,12 @@
             </svg>
           </div>
           <figcaption>Error — message above the field</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="city"&gt;City&lt;/label&gt;
+&lt;p id="city-error"&gt;Enter a city.&lt;/p&gt;
+&lt;input id="city" type="text" name="city" autocomplete="address-level2" aria-invalid="true" aria-describedby="city-error"&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -184,6 +201,7 @@
             </svg>
           </div>
           <figcaption>Size — small, medium and large</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

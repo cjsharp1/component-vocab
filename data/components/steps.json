@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Labels below — markers in a row",
-      "wireframe": "wireframes/steps/variation-1.svg"
+      "wireframe": "wireframes/steps/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Vertical — stacked steps with descriptions",
-      "wireframe": "wireframes/steps/variation-2.svg"
+      "wireframe": "wireframes/steps/variation-2.svg",
+      "htmlOutline": "<ol class=\"steps\">\n  <li>\n    Account\n    <p>Name and email</p>\n  </li>\n  <li aria-current=\"step\">\n    Shipping\n    <p>Where to send it</p>\n  </li>\n  …\n</ol>"
     },
     {
       "caption": "Labels beside — compact horizontal row",
-      "wireframe": "wireframes/steps/variation-3.svg"
+      "wireframe": "wireframes/steps/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Count only — current step name and \"Step 2 of 4\"",
-      "wireframe": "wireframes/steps/variation-4.svg"
+      "wireframe": "wireframes/steps/variation-4.svg",
+      "htmlOutline": "<div class=\"steps\">\n  <h2>Shipping</h2>\n  <p>Step 2 of 3</p>\n</div>\n<!-- no list: only the current step is shown -->"
     }
   ],
   "collections": [],

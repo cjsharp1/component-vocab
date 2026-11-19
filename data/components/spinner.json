@@ -50,19 +50,23 @@
   "variants": [
     {
       "caption": "Size: Small (circular)",
-      "wireframe": "wireframes/spinner/variation-1.svg"
+      "wireframe": "wireframes/spinner/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Size: Large (circular)",
-      "wireframe": "wireframes/spinner/variation-2.svg"
+      "wireframe": "wireframes/spinner/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Style: Dots",
-      "wireframe": "wireframes/spinner/variation-3.svg"
+      "wireframe": "wireframes/spinner/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Style: Bars",
-      "wireframe": "wireframes/spinner/variation-4.svg"
+      "wireframe": "wireframes/spinner/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

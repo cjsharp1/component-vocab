@@ -72,15 +72,18 @@
   "variants": [
     {
       "caption": "Portrait — 9:16",
-      "wireframe": "wireframes/video/variation-1.svg"
+      "wireframe": "wireframes/video/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Full bleed — edge to edge between text",
-      "wireframe": "wireframes/video/variation-2.svg"
+      "wireframe": "wireframes/video/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "With caption — text and transcript link below",
-      "wireframe": "wireframes/video/variation-3.svg"
+      "wireframe": "wireframes/video/variation-3.svg",
+      "htmlOutline": "<figure>\n  <video controls>\n    <source src=\"intro.mp4\" type=\"video/mp4\">\n    <track kind=\"captions\" src=\"intro.vtt\" srclang=\"en\" label=\"English\">\n  </video>\n  <figcaption>\n    Caption text. <a href=\"/intro-transcript\">Read the transcript</a>\n  </figcaption>\n</figure>"
     }
   ],
   "collections": [],

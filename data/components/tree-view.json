@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Indent guides — lines show nesting",
-      "wireframe": "wireframes/tree-view/variation-1.svg"
+      "wireframe": "wireframes/tree-view/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Icons — folder and file icons",
-      "wireframe": "wireframes/tree-view/variation-2.svg"
+      "wireframe": "wireframes/tree-view/variation-2.svg",
+      "htmlOutline": "<ul role=\"tree\" aria-label=\"Files\">\n  <li role=\"treeitem\" aria-expanded=\"true\">\n    <svg aria-hidden=\"true\">…</svg> src\n    <ul role=\"group\">\n      <li role=\"treeitem\"><svg aria-hidden=\"true\">…</svg> index.js</li>\n    </ul>\n  </li>\n</ul>"
     },
     {
       "caption": "Multiple selection — checkboxes on each item",
-      "wireframe": "wireframes/tree-view/variation-3.svg"
+      "wireframe": "wireframes/tree-view/variation-3.svg",
+      "htmlOutline": "<ul role=\"tree\" aria-label=\"Files\" aria-multiselectable=\"true\">\n  <li role=\"treeitem\" aria-expanded=\"true\" aria-checked=\"mixed\">src\n    <ul role=\"group\">\n      <li role=\"treeitem\" aria-checked=\"true\">index.js</li>\n      <li role=\"treeitem\" aria-checked=\"false\">util.js</li>\n    </ul>\n  </li>\n</ul>\n<!-- the checkboxes are drawn; state lives in aria-checked, not nested inputs -->"
     },
     {
       "caption": "Compact — tighter rows",
-      "wireframe": "wireframes/tree-view/variation-4.svg"
+      "wireframe": "wireframes/tree-view/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

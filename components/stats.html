@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;dl class="stats"&gt;
@@ -148,6 +148,17 @@
             </svg>
           </div>
           <figcaption>Medium — with icon</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;dl class="stats"&gt;
+  &lt;div&gt;
+    &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+    &lt;dt&gt;Active users&lt;/dt&gt;
+    &lt;dd&gt;12,000&lt;/dd&gt;
+  &lt;/div&gt;
+  …
+&lt;/dl&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -158,6 +169,7 @@
             </svg>
           </div>
           <figcaption>Large (hero-sized)</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -169,6 +181,17 @@
             </svg>
           </div>
           <figcaption>Small — with trend</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;dl class="stats"&gt;
+  &lt;div&gt;
+    &lt;dt&gt;Active users&lt;/dt&gt;
+    &lt;dd&gt;12,000&lt;/dd&gt;
+    &lt;dd&gt;&lt;span aria-hidden="true"&gt;↑&lt;/span&gt; 8% &lt;span class="visually-hidden"&gt;increase&lt;/span&gt;&lt;/dd&gt;
+  &lt;/div&gt;
+  …
+&lt;/dl&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -187,6 +210,7 @@
             </svg>
           </div>
           <figcaption>Grid (2x2)</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

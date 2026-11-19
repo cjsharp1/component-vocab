@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;div role="feed" aria-busy="false"&gt;
@@ -144,6 +144,16 @@
             </svg>
           </div>
           <figcaption>With image — thumbnail beside each article</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div role="feed" aria-busy="false"&gt;
+  &lt;article aria-posinset="1" aria-setsize="-1"&gt;
+    &lt;img src="…" alt=""&gt;
+    …
+  &lt;/article&gt;
+  &lt;article aria-posinset="2" aria-setsize="-1"&gt;…&lt;/article&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -158,6 +168,7 @@
             </svg>
           </div>
           <figcaption>Cards — each article in a box</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -172,6 +183,14 @@
             </svg>
           </div>
           <figcaption>Load more — button instead of loading on scroll</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div role="feed" aria-busy="false"&gt;
+  &lt;article aria-posinset="1" aria-setsize="-1"&gt;…&lt;/article&gt;
+  &lt;article aria-posinset="2" aria-setsize="-1"&gt;…&lt;/article&gt;
+&lt;/div&gt;
+&lt;button type="button"&gt;Load more&lt;/button&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -185,6 +204,16 @@
             </svg>
           </div>
           <figcaption>Automatic — placeholders while the next batch loads</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;!-- aria-busy="true" while the next batch loads --&gt;
+&lt;div role="feed" aria-busy="true"&gt;
+  &lt;article aria-posinset="1" aria-setsize="-1"&gt;…&lt;/article&gt;
+  &lt;article aria-posinset="2" aria-setsize="-1"&gt;…&lt;/article&gt;
+&lt;/div&gt;
+&lt;!-- placeholders, removed when the articles arrive --&gt;
+&lt;div aria-hidden="true"&gt;…&lt;/div&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

@@ -44,23 +44,28 @@
   "variants": [
     {
       "caption": "Single row",
-      "wireframe": "wireframes/logo-cloud/variation-1.svg"
+      "wireframe": "wireframes/logo-cloud/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Grid (2 rows)",
-      "wireframe": "wireframes/logo-cloud/variation-2.svg"
+      "wireframe": "wireframes/logo-cloud/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Grayscale treatment",
-      "wireframe": "wireframes/logo-cloud/variation-3.svg"
+      "wireframe": "wireframes/logo-cloud/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Spacious — fewer, larger",
-      "wireframe": "wireframes/logo-cloud/variation-4.svg"
+      "wireframe": "wireframes/logo-cloud/variation-4.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Scrolling (formerly Marquee)",
-      "wireframe": "wireframes/logo-cloud/from-marquee.svg"
+      "wireframe": "wireframes/logo-cloud/from-marquee.svg",
+      "htmlOutline": "<section aria-labelledby=\"lc-title\">\n  <h2 id=\"lc-title\">Trusted by</h2>\n  <button aria-pressed=\"false\">Pause</button>\n  <ul class=\"logo-cloud\">\n    <li><img src=\"acme.svg\" alt=\"Acme\"></li>\n    <li><img src=\"globex.svg\" alt=\"Globex\"></li>\n  </ul>\n  <!-- duplicate set for a seamless loop, hidden from assistive tech -->\n  <ul class=\"logo-cloud\" aria-hidden=\"true\">\n    <li><img src=\"acme.svg\" alt=\"\"></li>\n    …\n  </ul>\n</section>"
     }
   ],
   "collections": [],

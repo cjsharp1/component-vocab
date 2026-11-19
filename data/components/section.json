@@ -49,15 +49,18 @@
   "variants": [
     {
       "caption": "Compact — reduced padding",
-      "wireframe": "wireframes/section/variation-1.svg"
+      "wireframe": "wireframes/section/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Spacious — increased padding",
-      "wireframe": "wireframes/section/variation-2.svg"
+      "wireframe": "wireframes/section/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Contained width (formerly Container)",
-      "wireframe": "wireframes/section/from-container.svg"
+      "wireframe": "wireframes/section/from-container.svg",
+      "htmlOutline": "<section aria-labelledby=\"pricing-title\">\n  <div class=\"container\">\n    <h2 id=\"pricing-title\">Pricing</h2>\n    …\n  </div>\n</section>\n<!-- the inner wrapper caps the content width; the section stays full width -->"
     }
   ],
   "collections": [],

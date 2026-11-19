@@ -59,19 +59,23 @@
   "variants": [
     {
       "caption": "Vertical labels — default",
-      "wireframe": "wireframes/form/variation-1.svg"
+      "wireframe": "wireframes/form/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Horizontal labels — side by side",
-      "wireframe": "wireframes/form/variation-2.svg"
+      "wireframe": "wireframes/form/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Two-column — side-by-side fields",
-      "wireframe": "wireframes/form/variation-3.svg"
+      "wireframe": "wireframes/form/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Inline — compact single row",
-      "wireframe": "wireframes/form/variation-4.svg"
+      "wireframe": "wireframes/form/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

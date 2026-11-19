@@ -62,15 +62,18 @@
   "variants": [
     {
       "caption": "Vertical alignment — top, center, bottom",
-      "wireframe": "wireframes/slot/variation-1.svg"
+      "wireframe": "wireframes/slot/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Padding — inner space in one slot",
-      "wireframe": "wireframes/slot/variation-2.svg"
+      "wireframe": "wireframes/slot/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Stacked order — second slot first on narrow screens",
-      "wireframe": "wireframes/slot/variation-3.svg"
+      "wireframe": "wireframes/slot/variation-3.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

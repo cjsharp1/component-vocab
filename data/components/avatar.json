@@ -55,19 +55,23 @@
   "variants": [
     {
       "caption": "Sizes: XS, S, M, L",
-      "wireframe": "wireframes/avatar/variation-1.svg"
+      "wireframe": "wireframes/avatar/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Group: Stack overlapping",
-      "wireframe": "wireframes/avatar/variation-2.svg"
+      "wireframe": "wireframes/avatar/variation-2.svg",
+      "htmlOutline": "<!-- overlap is styling; the group is a list -->\n<ul class=\"avatar-group\" aria-label=\"Project members\">\n  <li><img class=\"avatar\" src=\"ana.jpg\" alt=\"Ana Ruiz\"></li>\n  <li><img class=\"avatar\" src=\"ben.jpg\" alt=\"Ben Cole\"></li>\n  <li><span class=\"avatar\" role=\"img\" aria-label=\"Chen Li\">CL</span></li>\n</ul>"
     },
     {
       "caption": "Group: Row",
-      "wireframe": "wireframes/avatar/variation-3.svg"
+      "wireframe": "wireframes/avatar/variation-3.svg",
+      "htmlOutline": "<ul class=\"avatar-group\" aria-label=\"Project members\">\n  <li><img class=\"avatar\" src=\"ana.jpg\" alt=\"Ana Ruiz\"></li>\n  <li><img class=\"avatar\" src=\"ben.jpg\" alt=\"Ben Cole\"></li>\n  <li><span class=\"avatar\" role=\"img\" aria-label=\"Chen Li\">CL</span></li>\n</ul>"
     },
     {
       "caption": "With status indicator",
-      "wireframe": "wireframes/avatar/variation-4.svg"
+      "wireframe": "wireframes/avatar/variation-4.svg",
+      "htmlOutline": "<span class=\"avatar\">\n  <img src=\"ana.jpg\" alt=\"Ana Ruiz\">\n  <!-- status needs text, not just a colored dot -->\n  <span class=\"status\" role=\"img\" aria-label=\"Online\"></span>\n</span>"
     }
   ],
   "collections": [],

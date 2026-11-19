@@ -72,19 +72,23 @@
   "variants": [
     {
       "caption": "Range — two thumbs for a minimum and maximum",
-      "wireframe": "wireframes/slider/variation-1.svg"
+      "wireframe": "wireframes/slider/variation-1.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Price</legend>\n  <label for=\"min\">Minimum</label>\n  <input id=\"min\" type=\"range\" min=\"0\" max=\"100\" value=\"20\">\n  <label for=\"max\">Maximum</label>\n  <input id=\"max\" type=\"range\" min=\"0\" max=\"100\" value=\"80\">\n</fieldset>"
     },
     {
       "caption": "With number field — exact value beside the track",
-      "wireframe": "wireframes/slider/variation-2.svg"
+      "wireframe": "wireframes/slider/variation-2.svg",
+      "htmlOutline": "<label for=\"vol\">Volume</label>\n<input id=\"vol\" type=\"range\" min=\"0\" max=\"10\" value=\"5\">\n<input type=\"number\" min=\"0\" max=\"10\" value=\"5\" aria-label=\"Volume\">\n<!-- keep both in sync -->"
     },
     {
       "caption": "Labeled steps — tick marks under the track",
-      "wireframe": "wireframes/slider/variation-3.svg"
+      "wireframe": "wireframes/slider/variation-3.svg",
+      "htmlOutline": "<label for=\"vol\">Volume</label>\n<input id=\"vol\" type=\"range\" min=\"0\" max=\"100\" step=\"25\" value=\"50\" list=\"vol-steps\">\n<datalist id=\"vol-steps\">\n  <option value=\"0\" label=\"0\"></option>\n  <option value=\"25\" label=\"25\"></option>\n  …\n  <option value=\"100\" label=\"100\"></option>\n</datalist>"
     },
     {
       "caption": "Vertical — track runs bottom to top",
-      "wireframe": "wireframes/slider/variation-4.svg"
+      "wireframe": "wireframes/slider/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

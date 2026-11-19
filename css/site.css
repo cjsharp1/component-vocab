@@ -439,6 +439,12 @@ table .affects-layout::before {
   text-align: left;
 }
 
+/* Per-variation HTML outline (or a note that it matches the default) */
+.variation-grid .variant-outline { margin: 0.4rem 0 0; font-size: 0.78rem; color: var(--ink-3); }
+.variation-grid details.variant-outline summary { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); cursor: pointer; }
+.variation-grid details.variant-outline[open] summary { margin-bottom: 0.4rem; }
+.variation-grid .variant-outline .html-outline { padding: 0.7rem 0.8rem; font-size: 0.74rem; }
+
 /* === Usage notes === */
 main > section > ul { padding-left: 1.1rem; }
 main > section > ul li { margin-bottom: 0.4rem; }

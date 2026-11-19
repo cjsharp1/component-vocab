@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;ul class="card-list"&gt;
@@ -167,6 +167,7 @@
             </svg>
           </div>
           <figcaption>Vertical — image on top</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -181,6 +182,7 @@
             </svg>
           </div>
           <figcaption>Horizontal — image on left</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -196,6 +198,18 @@
             </svg>
           </div>
           <figcaption>No image — text only</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul class="card-list"&gt;
+  &lt;li&gt;
+    &lt;article class="card"&gt;
+      &lt;!-- no img --&gt;
+      &lt;h3&gt;&lt;a href="/post"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;Excerpt…&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -216,6 +230,7 @@
             </svg>
           </div>
           <figcaption>List — horizontal, stacked</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -263,6 +278,15 @@
             </svg>
           </div>
           <figcaption>Horizontal media (formerly Media)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;article class="card"&gt;
+  &lt;video controls src="…"&gt;&lt;/video&gt;
+  &lt;h3&gt;Heading&lt;/h3&gt;
+  &lt;p&gt;Text…&lt;/p&gt;
+  &lt;a href="/watch"&gt;Watch now&lt;/a&gt;
+&lt;/article&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -319,6 +343,19 @@
             </svg>
           </div>
           <figcaption>Person (formerly Profile)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;article class="card"&gt;
+  &lt;img src="ana.jpg" alt=""&gt;
+  &lt;h3&gt;Ana Ruiz&lt;/h3&gt;
+  &lt;p&gt;Product designer&lt;/p&gt;
+  &lt;p&gt;Bio…&lt;/p&gt;
+  &lt;ul aria-label="Ana Ruiz on social media"&gt;
+    &lt;li&gt;&lt;a href="…"&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="…"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/article&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -375,6 +412,16 @@
             </svg>
           </div>
           <figcaption>Large feature (formerly Showcase)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;article class="card"&gt;
+  &lt;img src="…" alt=""&gt;
+  &lt;h2&gt;Title&lt;/h2&gt;
+  &lt;p&gt;&lt;time datetime="2024-03-01"&gt;1 March 2024&lt;/time&gt; · 5 min read&lt;/p&gt;
+  &lt;p&gt;Description…&lt;/p&gt;
+  &lt;a href="/post"&gt;Read the story&lt;/a&gt;
+&lt;/article&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

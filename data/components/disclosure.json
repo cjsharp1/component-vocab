@@ -56,19 +56,23 @@
   "variants": [
     {
       "caption": "Closed — summary between paragraphs",
-      "wireframe": "wireframes/disclosure/variation-1.svg"
+      "wireframe": "wireframes/disclosure/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Open — content below the summary",
-      "wireframe": "wireframes/disclosure/variation-2.svg"
+      "wireframe": "wireframes/disclosure/variation-2.svg",
+      "htmlOutline": "<details open>\n  <summary>Show details</summary>\n  <p>Hidden content…</p>\n</details>"
     },
     {
       "caption": "Boxed — bordered, icon after",
-      "wireframe": "wireframes/disclosure/variation-3.svg"
+      "wireframe": "wireframes/disclosure/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Small — help text under a form field",
-      "wireframe": "wireframes/disclosure/variation-4.svg"
+      "wireframe": "wireframes/disclosure/variation-4.svg",
+      "htmlOutline": "<label for=\"pw\">Password</label>\n<input id=\"pw\" type=\"password\" name=\"password\">\n<details>\n  <summary>Password rules</summary>\n  <p>At least 12 characters…</p>\n</details>"
     }
   ],
   "collections": [],

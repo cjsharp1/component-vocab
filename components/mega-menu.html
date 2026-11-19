@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;nav aria-label="Main"&gt;
@@ -189,6 +189,26 @@
             </svg>
           </div>
           <figcaption>Columns — three link groups</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav aria-label="Main"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;button aria-expanded="true" aria-controls="products"&gt;Products&lt;/button&gt;
+      &lt;div id="products"&gt;
+        &lt;h2&gt;Build&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="…"&gt;…&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h2&gt;Run&lt;/h2&gt;
+        &lt;ul&gt;…&lt;/ul&gt;
+        &lt;h2&gt;Learn&lt;/h2&gt;
+        &lt;ul&gt;…&lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -213,6 +233,26 @@
             </svg>
           </div>
           <figcaption>Featured — link groups plus a promoted page</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav aria-label="Main"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;button aria-expanded="true" aria-controls="products"&gt;Products&lt;/button&gt;
+      &lt;div id="products"&gt;
+        &lt;h2&gt;Build&lt;/h2&gt;
+        &lt;ul&gt;…&lt;/ul&gt;
+        &lt;h2&gt;Run&lt;/h2&gt;
+        &lt;ul&gt;…&lt;/ul&gt;
+        &lt;a href="/new"&gt;
+          &lt;img src="promo.jpg" alt=""&gt;
+          What's new
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -231,6 +271,7 @@
             </svg>
           </div>
           <figcaption>Under the item — narrow panel below its button</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -251,6 +292,24 @@
             </svg>
           </div>
           <figcaption>Small screen — stacked disclosures, one open</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav aria-label="Main"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;button aria-expanded="false" aria-controls="products"&gt;Products&lt;/button&gt;
+      &lt;div id="products" hidden&gt;…&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;button aria-expanded="true" aria-controls="solutions"&gt;Solutions&lt;/button&gt;
+      &lt;ul id="solutions"&gt;
+        &lt;li&gt;&lt;a href="…"&gt;…&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    …
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

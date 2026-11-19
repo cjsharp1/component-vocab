@@ -43,19 +43,23 @@
   "variants": [
     {
       "caption": "Slash — simple forward slash",
-      "wireframe": "wireframes/breadcrumbs/variation-1.svg"
+      "wireframe": "wireframes/breadcrumbs/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Chevron — right-pointing arrow",
-      "wireframe": "wireframes/breadcrumbs/variation-2.svg"
+      "wireframe": "wireframes/breadcrumbs/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Arrow — styled arrow character",
-      "wireframe": "wireframes/breadcrumbs/variation-3.svg"
+      "wireframe": "wireframes/breadcrumbs/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Truncated — ellipsis for long paths",
-      "wireframe": "wireframes/breadcrumbs/variation-4.svg"
+      "wireframe": "wireframes/breadcrumbs/variation-4.svg",
+      "htmlOutline": "<nav aria-label=\"Breadcrumb\">\n  <ol>\n    <li><a href=\"/\">Home</a></li>\n    <li><button aria-label=\"Show hidden levels\" aria-expanded=\"false\">…</button></li>\n    <li><a href=\"/guides\">Guides</a></li>\n    <li><a href=\"/guides/setup\" aria-current=\"page\">Setup</a></li>\n  </ol>\n</nav>"
     }
   ],
   "collections": [],

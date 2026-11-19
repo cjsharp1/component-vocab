@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;ul class="feature-list"&gt;
@@ -140,6 +140,7 @@
             </svg>
           </div>
           <figcaption>Top (centered) icon</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -154,6 +155,7 @@
             </svg>
           </div>
           <figcaption>Left (inline) icon</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -165,6 +167,15 @@
             </svg>
           </div>
           <figcaption>Minimal — icon + heading only</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul class="feature-list"&gt;
+  &lt;li class="feature"&gt;
+    &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+    &lt;h3&gt;Fast setup&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -184,6 +195,7 @@
             </svg>
           </div>
           <figcaption>Grid (2x2) — compact spacing</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

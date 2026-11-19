@@ -60,19 +60,23 @@
   "variants": [
     {
       "caption": "Trigger: Icon (position below)",
-      "wireframe": "wireframes/menu-button/variation-1.svg"
+      "wireframe": "wireframes/menu-button/variation-1.svg",
+      "htmlOutline": "<button aria-haspopup=\"menu\" aria-expanded=\"false\" aria-controls=\"actions\" aria-label=\"Actions\">\n  <svg aria-hidden=\"true\">…</svg>\n</button>\n<ul id=\"actions\" role=\"menu\" hidden>\n  <li role=\"menuitem\">Rename</li>\n  <li role=\"menuitem\">Delete</li>\n</ul>"
     },
     {
       "caption": "Position: Above",
-      "wireframe": "wireframes/menu-button/variation-2.svg"
+      "wireframe": "wireframes/menu-button/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Dividers: Between groups",
-      "wireframe": "wireframes/menu-button/variation-3.svg"
+      "wireframe": "wireframes/menu-button/variation-3.svg",
+      "htmlOutline": "<button aria-haspopup=\"menu\" aria-expanded=\"false\" aria-controls=\"actions\">Actions</button>\n<ul id=\"actions\" role=\"menu\" hidden>\n  <li role=\"menuitem\">Rename</li>\n  <li role=\"menuitem\">Duplicate</li>\n  <li role=\"separator\"></li>\n  <li role=\"menuitem\">Delete</li>\n</ul>"
     },
     {
       "caption": "Icons: Shown",
-      "wireframe": "wireframes/menu-button/variation-4.svg"
+      "wireframe": "wireframes/menu-button/variation-4.svg",
+      "htmlOutline": "<button aria-haspopup=\"menu\" aria-expanded=\"false\" aria-controls=\"actions\">Actions</button>\n<ul id=\"actions\" role=\"menu\" hidden>\n  <li role=\"menuitem\"><svg aria-hidden=\"true\">…</svg> Rename</li>\n  <li role=\"menuitem\"><svg aria-hidden=\"true\">…</svg> Delete</li>\n</ul>"
     }
   ],
   "collections": [],

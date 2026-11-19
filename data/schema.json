@@ -146,6 +146,18 @@
           "wireframe": {
             "type": "string",
             "pattern": "^wireframes/.+\\.svg$"
+          },
+          "htmlOutline": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Skeleton for this variation, when its markup differs from the component's htmlOutline. Give this or sameMarkup, not both."
+          },
+          "sameMarkup": {
+            "type": "boolean",
+            "enum": [
+              true
+            ],
+            "description": "true when this variation only changes styling and uses the component's htmlOutline as is."
           }
         }
       }

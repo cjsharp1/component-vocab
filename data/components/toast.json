@@ -54,19 +54,23 @@
   "variants": [
     {
       "caption": "Top-right — default position",
-      "wireframe": "wireframes/toast/variation-1.svg"
+      "wireframe": "wireframes/toast/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Top-center — centered at top",
-      "wireframe": "wireframes/toast/variation-2.svg"
+      "wireframe": "wireframes/toast/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Bottom-right — bottom corner",
-      "wireframe": "wireframes/toast/variation-3.svg"
+      "wireframe": "wireframes/toast/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Stacked — multiple toasts",
-      "wireframe": "wireframes/toast/variation-4.svg"
+      "wireframe": "wireframes/toast/variation-4.svg",
+      "htmlOutline": "<div class=\"toast-region\" role=\"status\" aria-live=\"polite\">\n  <div class=\"toast\">Message sent.</div>\n  <div class=\"toast\">File uploaded.</div>\n  <div class=\"toast\">Settings saved.</div>\n</div>\n<!-- one live region holds every toast; newest is announced as it is added -->"
     }
   ],
   "collections": [],

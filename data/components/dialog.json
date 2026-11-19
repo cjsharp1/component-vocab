@@ -59,19 +59,23 @@
   "variants": [
     {
       "caption": "Small — compact dialog",
-      "wireframe": "wireframes/dialog/variation-1.svg"
+      "wireframe": "wireframes/dialog/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Large — more content space",
-      "wireframe": "wireframes/dialog/variation-2.svg"
+      "wireframe": "wireframes/dialog/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Top position — aligned to top",
-      "wireframe": "wireframes/dialog/variation-3.svg"
+      "wireframe": "wireframes/dialog/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Bottom sheet — mobile-friendly",
-      "wireframe": "wireframes/dialog/variation-4.svg"
+      "wireframe": "wireframes/dialog/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

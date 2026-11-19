@@ -55,19 +55,23 @@
   "variants": [
     {
       "caption": "Medium — with caption below",
-      "wireframe": "wireframes/image/variation-1.svg"
+      "wireframe": "wireframes/image/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Full-width",
-      "wireframe": "wireframes/image/variation-2.svg"
+      "wireframe": "wireframes/image/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Overlay caption",
-      "wireframe": "wireframes/image/variation-3.svg"
+      "wireframe": "wireframes/image/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Small (inline) — floated in text",
-      "wireframe": "wireframes/image/variation-4.svg"
+      "wireframe": "wireframes/image/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [

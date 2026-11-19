@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;figure class="testimonial"&gt;
@@ -165,6 +165,7 @@
             </svg>
           </div>
           <figcaption>Standard — with photo</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -179,6 +180,16 @@
             </svg>
           </div>
           <figcaption>Large quote — featured</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;!-- featured: no photo --&gt;
+&lt;figure class="testimonial"&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;It saved us hours every week.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption&gt;Ana Ruiz, Head of Ops&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -193,6 +204,18 @@
             </svg>
           </div>
           <figcaption>No quote marks, with rating</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;figure class="testimonial"&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;It saved us hours every week.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption&gt;
+    Ana Ruiz, Head of Ops
+    &lt;p role="img" aria-label="Rated 5 out of 5"&gt;★★★★★&lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -208,6 +231,7 @@
             </svg>
           </div>
           <figcaption>Horizontal — photo on left</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;!-- decorative --&gt;
@@ -143,6 +143,7 @@
             </svg>
           </div>
           <figcaption>Size — small, medium, large</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -156,6 +157,15 @@
             </svg>
           </div>
           <figcaption>Position — before text, after text, alone</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;!-- before / after text: decorative --&gt;
+&lt;button&gt;&lt;svg aria-hidden="true" focusable="false"&gt;…&lt;/svg&gt; Save&lt;/button&gt;
+&lt;a href="…"&gt;Next &lt;svg aria-hidden="true" focusable="false"&gt;…&lt;/svg&gt;&lt;/a&gt;
+
+&lt;!-- alone: the control needs its own name --&gt;
+&lt;button aria-label="Settings"&gt;&lt;svg aria-hidden="true" focusable="false"&gt;…&lt;/svg&gt;&lt;/button&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -168,6 +178,7 @@
             </svg>
           </div>
           <figcaption>Background shape — circle and rounded square</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

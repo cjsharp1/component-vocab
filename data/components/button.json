@@ -62,19 +62,23 @@
   "variants": [
     {
       "caption": "Emphasis — primary, secondary, tertiary",
-      "wireframe": "wireframes/button/variation-1.svg"
+      "wireframe": "wireframes/button/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Icon — leading, icon only, round",
-      "wireframe": "wireframes/button/variation-2.svg"
+      "wireframe": "wireframes/button/variation-2.svg",
+      "htmlOutline": "<!-- leading icon -->\n<button type=\"button\">\n  <svg aria-hidden=\"true\">…</svg> Save\n</button>\n\n<!-- icon only (square or round): needs an accessible name -->\n<button type=\"button\" aria-label=\"Save\">\n  <svg aria-hidden=\"true\">…</svg>\n</button>"
     },
     {
       "caption": "Full width — inside a narrow container",
-      "wireframe": "wireframes/button/variation-3.svg"
+      "wireframe": "wireframes/button/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "States — default, disabled, loading",
-      "wireframe": "wireframes/button/variation-4.svg"
+      "wireframe": "wireframes/button/variation-4.svg",
+      "htmlOutline": "<button type=\"button\">Save</button>\n\n<button type=\"button\" disabled>Save</button>\n\n<!-- loading: stays focusable, name says what's happening -->\n<button type=\"button\" aria-disabled=\"true\" aria-label=\"Saving…\">\n  <svg aria-hidden=\"true\">…</svg>\n</button>"
     }
   ],
   "collections": [],

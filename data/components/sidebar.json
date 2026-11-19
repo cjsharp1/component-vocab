@@ -44,19 +44,23 @@
   "variants": [
     {
       "caption": "Left — sidebar on left",
-      "wireframe": "wireframes/sidebar/variation-1.svg"
+      "wireframe": "wireframes/sidebar/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Right — sidebar on right",
-      "wireframe": "wireframes/sidebar/variation-2.svg"
+      "wireframe": "wireframes/sidebar/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Narrow — 200px sidebar",
-      "wireframe": "wireframes/sidebar/variation-3.svg"
+      "wireframe": "wireframes/sidebar/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Wide — 360px sidebar",
-      "wireframe": "wireframes/sidebar/variation-4.svg"
+      "wireframe": "wireframes/sidebar/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

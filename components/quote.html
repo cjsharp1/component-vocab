@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;figure&gt;
@@ -138,6 +138,7 @@
             </svg>
           </div>
           <figcaption>Block quote — indented with a rule at the start</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -159,6 +160,15 @@
             </svg>
           </div>
           <figcaption>Pull quote — large text beside the body</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;p&gt;Body text…&lt;/p&gt;
+&lt;!-- repeats a line from the article, so it is hidden from screen readers --&gt;
+&lt;aside class="pull-quote" aria-hidden="true"&gt;
+  &lt;p&gt;A line from the article.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;Body text…&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -171,6 +181,7 @@
             </svg>
           </div>
           <figcaption>Centered — large text with a quote mark</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

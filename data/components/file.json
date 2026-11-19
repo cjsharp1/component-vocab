@@ -61,19 +61,23 @@
   "variants": [
     {
       "caption": "Inline — link inside a sentence",
-      "wireframe": "wireframes/file/variation-1.svg"
+      "wireframe": "wireframes/file/variation-1.svg",
+      "htmlOutline": "<p>\n  Read the <a href=\"/files/report.pdf\" download>annual report <span>(PDF, 2.4 MB)</span></a>\n  before the meeting.\n</p>"
     },
     {
       "caption": "Block — icon, name and details",
-      "wireframe": "wireframes/file/variation-2.svg"
+      "wireframe": "wireframes/file/variation-2.svg",
+      "htmlOutline": "<a href=\"/files/report.pdf\" download>\n  <svg aria-hidden=\"true\">…</svg>\n  Annual report <span>(PDF, 2.4 MB)</span>\n</a>"
     },
     {
       "caption": "Thumbnail — first-page preview beside the details",
-      "wireframe": "wireframes/file/variation-3.svg"
+      "wireframe": "wireframes/file/variation-3.svg",
+      "htmlOutline": "<a href=\"/files/report.pdf\" download>\n  <img src=\"report-page-1.png\" alt=\"\">\n  Annual report <span>(PDF, 2.4 MB, 32 pages)</span>\n</a>\n<!-- the preview is decorative; the link text names the file -->"
     },
     {
       "caption": "List — several files stacked",
-      "wireframe": "wireframes/file/variation-4.svg"
+      "wireframe": "wireframes/file/variation-4.svg",
+      "htmlOutline": "<ul>\n  <li>\n    <a href=\"/files/report.pdf\" download>\n      <svg aria-hidden=\"true\">…</svg>\n      Annual report <span>(PDF, 2.4 MB)</span>\n    </a>\n  </li>\n  <li>\n    <a href=\"/files/accounts.xlsx\" download>\n      <svg aria-hidden=\"true\">…</svg>\n      Accounts <span>(Excel, 180 KB)</span>\n    </a>\n  </li>\n</ul>"
     }
   ],
   "collections": [],

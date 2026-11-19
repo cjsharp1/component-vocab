@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Label before — settings list, off and on",
-      "wireframe": "wireframes/switch/variation-1.svg"
+      "wireframe": "wireframes/switch/variation-1.svg",
+      "htmlOutline": "<ul>\n  <li>\n    <label>\n      Email notifications\n      <input type=\"checkbox\" role=\"switch\">\n    </label>\n  </li>\n  <li>\n    <label>\n      Push notifications\n      <input type=\"checkbox\" role=\"switch\" checked>\n    </label>\n  </li>\n</ul>"
     },
     {
       "caption": "Label after — switch first, then label",
-      "wireframe": "wireframes/switch/variation-2.svg"
+      "wireframe": "wireframes/switch/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Description — hint text under the label",
-      "wireframe": "wireframes/switch/variation-3.svg"
+      "wireframe": "wireframes/switch/variation-3.svg",
+      "htmlOutline": "<label>\n  <input type=\"checkbox\" role=\"switch\" checked aria-describedby=\"email-hint\">\n  Email notifications\n</label>\n<p id=\"email-hint\">A weekly summary of activity.</p>"
     },
     {
       "caption": "State text — On or Off beside the track",
-      "wireframe": "wireframes/switch/variation-4.svg"
+      "wireframe": "wireframes/switch/variation-4.svg",
+      "htmlOutline": "<label>\n  <input type=\"checkbox\" role=\"switch\" checked>\n  Email notifications\n</label>\n<!-- the switch already announces its state -->\n<span aria-hidden=\"true\">On</span>"
     }
   ],
   "collections": [],

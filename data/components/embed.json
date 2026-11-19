@@ -49,19 +49,23 @@
   "variants": [
     {
       "caption": "16:9 — YouTube, Vimeo",
-      "wireframe": "wireframes/embed/variation-1.svg"
+      "wireframe": "wireframes/embed/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "4:3 — maps, older content",
-      "wireframe": "wireframes/embed/variation-2.svg"
+      "wireframe": "wireframes/embed/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "1:1 — social posts",
-      "wireframe": "wireframes/embed/variation-3.svg"
+      "wireframe": "wireframes/embed/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Full-width — with caption",
-      "wireframe": "wireframes/embed/variation-4.svg"
+      "wireframe": "wireframes/embed/variation-4.svg",
+      "htmlOutline": "<figure>\n  <iframe\n    src=\"https://example.com/embed/123\"\n    title=\"Describe the embedded content\"\n    loading=\"lazy\"\n    sandbox=\"allow-scripts allow-same-origin\">\n  </iframe>\n  <figcaption>Caption for the embedded content</figcaption>\n</figure>"
     }
   ],
   "collections": [],

@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;p&gt;…end of one topic.&lt;/p&gt;
@@ -132,6 +132,7 @@
             </svg>
           </div>
           <figcaption>Style: Solid</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -145,6 +146,7 @@
             </svg>
           </div>
           <figcaption>Style: Dashed</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -158,6 +160,7 @@
             </svg>
           </div>
           <figcaption>Style: Dotted</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -171,6 +174,7 @@
             </svg>
           </div>
           <figcaption>Width: Short centered</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -186,6 +190,15 @@
             </svg>
           </div>
           <figcaption>Orientation: Vertical</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav&gt;
+  &lt;a href="…"&gt;Docs&lt;/a&gt;
+  &lt;span role="separator" aria-orientation="vertical"&gt;&lt;/span&gt;
+  &lt;a href="…"&gt;Blog&lt;/a&gt;
+&lt;/nav&gt;
+&lt;!-- hr is horizontal only; use role="separator" or aria-hidden if purely decorative --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -199,6 +212,7 @@
             </svg>
           </div>
           <figcaption>Spacing: Compact</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -212,6 +226,7 @@
             </svg>
           </div>
           <figcaption>Spacing: Spacious</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -225,6 +240,12 @@
             </svg>
           </div>
           <figcaption>Style: None (spacing only)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;p&gt;…end of one topic.&lt;/p&gt;
+&lt;!-- no hr: margin alone separates the topics --&gt;
+&lt;p&gt;Start of the next topic…&lt;/p&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

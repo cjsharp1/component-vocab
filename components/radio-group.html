@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;fieldset&gt;
@@ -153,6 +153,7 @@
             </svg>
           </div>
           <figcaption>Horizontal — short options in a row</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -172,6 +173,16 @@
             </svg>
           </div>
           <figcaption>With hints — a line of detail under each option</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset&gt;
+  &lt;legend&gt;Delivery&lt;/legend&gt;
+  &lt;label&gt;&lt;input type="radio" name="delivery" value="std" aria-describedby="std-hint" checked&gt; Standard&lt;/label&gt;
+  &lt;p id="std-hint"&gt;3 to 5 working days&lt;/p&gt;
+  &lt;label&gt;&lt;input type="radio" name="delivery" value="exp" aria-describedby="exp-hint"&gt; Express&lt;/label&gt;
+  &lt;p id="exp-hint"&gt;Next working day&lt;/p&gt;
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -190,6 +201,7 @@
             </svg>
           </div>
           <figcaption>Tiles — each option in a bordered box</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

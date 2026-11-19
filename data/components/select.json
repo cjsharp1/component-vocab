@@ -72,19 +72,23 @@
   "variants": [
     {
       "caption": "Label beside — label and field on one row",
-      "wireframe": "wireframes/select/variation-1.svg"
+      "wireframe": "wireframes/select/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Full width — fills a narrow container",
-      "wireframe": "wireframes/select/variation-2.svg"
+      "wireframe": "wireframes/select/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Multiple — list box with several options selected",
-      "wireframe": "wireframes/select/variation-3.svg"
+      "wireframe": "wireframes/select/variation-3.svg",
+      "htmlOutline": "<label for=\"countries\">Countries</label>\n<select id=\"countries\" name=\"countries\" multiple size=\"4\">\n  <option selected>France</option>\n  <option>Japan</option>\n  <option selected>Kenya</option>\n  <option>Peru</option>\n</select>"
     },
     {
       "caption": "Size — small, medium, large",
-      "wireframe": "wireframes/select/variation-4.svg"
+      "wireframe": "wireframes/select/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

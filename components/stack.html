@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;div class="stack" style="--gap: 1rem"&gt;
@@ -140,6 +140,7 @@
             </svg>
           </div>
           <figcaption>Gap — small and large</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -152,6 +153,7 @@
             </svg>
           </div>
           <figcaption>Centered — children aligned to the center</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -168,6 +170,7 @@
             </svg>
           </div>
           <figcaption>Separators — a line between children</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -182,6 +185,17 @@
             </svg>
           </div>
           <figcaption>Nested — a tight stack inside a loose one</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="stack" style="--gap: 2rem"&gt;
+  &lt;div class="stack" style="--gap: 0.25rem"&gt;
+    &lt;h2&gt;…&lt;/h2&gt;
+    &lt;p&gt;…&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;img src="…" alt="…"&gt;
+  &lt;a href="…"&gt;…&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

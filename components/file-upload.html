@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="cv"&gt;Upload your CV&lt;/label&gt;
@@ -150,6 +150,7 @@
             </svg>
           </div>
           <figcaption>Plain — native button and file name</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -163,6 +164,15 @@
             </svg>
           </div>
           <figcaption>Drop zone — dashed area with a button inside</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="drop-zone"&gt;
+  &lt;p&gt;Drag a file here, or&lt;/p&gt;
+  &lt;label for="cv"&gt;Choose file&lt;/label&gt;
+  &lt;input id="cv" type="file" name="cv" accept=".pdf,.docx"&gt;
+&lt;/div&gt;
+&lt;!-- drop zone is a pointer shortcut; the input still works by keyboard --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -184,6 +194,19 @@
             </svg>
           </div>
           <figcaption>File list — progress and remove buttons</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="cv"&gt;Upload your CV&lt;/label&gt;
+&lt;input id="cv" type="file" name="cv" multiple&gt;
+&lt;ul aria-label="Uploads"&gt;
+  &lt;li&gt;
+    cv.pdf
+    &lt;progress max="100" value="60" aria-label="Uploading cv.pdf"&gt;60%&lt;/progress&gt;
+    &lt;button type="button" aria-label="Remove cv.pdf"&gt;×&lt;/button&gt;
+  &lt;/li&gt;
+  …
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -197,6 +220,20 @@
             </svg>
           </div>
           <figcaption>Previews — image thumbnails with an add tile</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul aria-label="Photos"&gt;
+  &lt;li&gt;
+    &lt;img src="beach.jpg" alt="beach.jpg"&gt;
+    &lt;button type="button" aria-label="Remove beach.jpg"&gt;×&lt;/button&gt;
+  &lt;/li&gt;
+  …
+  &lt;li&gt;
+    &lt;label for="photos"&gt;Add photos&lt;/label&gt;
+    &lt;input id="photos" type="file" accept="image/*" multiple&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

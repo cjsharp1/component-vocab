@@ -54,19 +54,23 @@
   "variants": [
     {
       "caption": "Horizontal — default top nav",
-      "wireframe": "wireframes/navigation/variation-1.svg"
+      "wireframe": "wireframes/navigation/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Vertical — sidebar navigation",
-      "wireframe": "wireframes/navigation/variation-2.svg"
+      "wireframe": "wireframes/navigation/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Pills — rounded button style",
-      "wireframe": "wireframes/navigation/variation-3.svg"
+      "wireframe": "wireframes/navigation/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "With dropdown — nested submenu",
-      "wireframe": "wireframes/navigation/variation-4.svg"
+      "wireframe": "wireframes/navigation/variation-4.svg",
+      "htmlOutline": "<nav aria-label=\"Main\">\n  <ul>\n    <li>\n      <button type=\"button\" aria-expanded=\"false\" aria-controls=\"products-menu\">Products</button>\n      <ul id=\"products-menu\" hidden>\n        <li><a href=\"/products/apps\">Apps</a></li>\n        …\n      </ul>\n    </li>\n    <li><a href=\"/about\" aria-current=\"page\">About</a></li>\n  </ul>\n</nav>"
     }
   ],
   "collections": [],

@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;div class="toast-region" role="status" aria-live="polite"&gt;
@@ -141,6 +141,7 @@
             </svg>
           </div>
           <figcaption>Top-right — default position</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -153,6 +154,7 @@
             </svg>
           </div>
           <figcaption>Top-center — centered at top</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -165,6 +167,7 @@
             </svg>
           </div>
           <figcaption>Bottom-right — bottom corner</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -180,6 +183,15 @@
             </svg>
           </div>
           <figcaption>Stacked — multiple toasts</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="toast-region" role="status" aria-live="polite"&gt;
+  &lt;div class="toast"&gt;Message sent.&lt;/div&gt;
+  &lt;div class="toast"&gt;File uploaded.&lt;/div&gt;
+  &lt;div class="toast"&gt;Settings saved.&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- one live region holds every toast; newest is announced as it is added --&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

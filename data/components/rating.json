@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Value and count — text after the stars",
-      "wireframe": "wireframes/rating/variation-1.svg"
+      "wireframe": "wireframes/rating/variation-1.svg",
+      "htmlOutline": "<p class=\"rating\">\n  <span aria-hidden=\"true\">★★★★☆</span>\n  <span class=\"visually-hidden\">4 out of 5 stars</span>\n  4.0 <span>(128 reviews)</span>\n</p>"
     },
     {
       "caption": "Single star — one star with the value",
-      "wireframe": "wireframes/rating/variation-2.svg"
+      "wireframe": "wireframes/rating/variation-2.svg",
+      "htmlOutline": "<p class=\"rating\">\n  <span aria-hidden=\"true\">★</span>\n  4.0 <span class=\"visually-hidden\">out of 5 stars</span>\n</p>"
     },
     {
       "caption": "Input — legend above selectable stars",
-      "wireframe": "wireframes/rating/variation-3.svg"
+      "wireframe": "wireframes/rating/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Size — small and large",
-      "wireframe": "wireframes/rating/variation-4.svg"
+      "wireframe": "wireframes/rating/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

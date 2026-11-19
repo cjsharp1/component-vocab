@@ -61,15 +61,18 @@
   "variants": [
     {
       "caption": "Inline label — label, bar and value on one row",
-      "wireframe": "wireframes/meter/variation-1.svg"
+      "wireframe": "wireframes/meter/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Segmented — discrete steps, as in password strength",
-      "wireframe": "wireframes/meter/variation-2.svg"
+      "wireframe": "wireframes/meter/variation-2.svg",
+      "htmlOutline": "<label for=\"strength\">Password strength</label>\n<meter id=\"strength\" min=\"0\" max=\"5\" low=\"2\" high=\"4\" optimum=\"5\" value=\"3\">3 of 5</meter>\n<span>Good</span>\n<!-- a whole-number max gives one segment per step; segments are drawn -->"
     },
     {
       "caption": "Vertical — upright bar",
-      "wireframe": "wireframes/meter/variation-3.svg"
+      "wireframe": "wireframes/meter/variation-3.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

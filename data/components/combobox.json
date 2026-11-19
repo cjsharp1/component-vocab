@@ -72,15 +72,18 @@
   "variants": [
     {
       "caption": "Multiple — chosen values shown as Chips",
-      "wireframe": "wireframes/combobox/variation-1.svg"
+      "wireframe": "wireframes/combobox/variation-1.svg",
+      "htmlOutline": "<label for=\"cb\">Fruits</label>\n<ul aria-label=\"Selected fruits\">\n  <li>Apple <button type=\"button\" aria-label=\"Remove Apple\">×</button></li>\n  …\n</ul>\n<input id=\"cb\" role=\"combobox\" aria-expanded=\"false\" aria-controls=\"cb-list\" aria-autocomplete=\"list\">\n<ul id=\"cb-list\" role=\"listbox\" aria-multiselectable=\"true\" hidden>\n  <li role=\"option\" aria-selected=\"true\">Apple</li>\n  <li role=\"option\" aria-selected=\"false\">Pear</li>\n</ul>"
     },
     {
       "caption": "No toggle button — list opens on typing",
-      "wireframe": "wireframes/combobox/variation-2.svg"
+      "wireframe": "wireframes/combobox/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Rich options — icon and description per option",
-      "wireframe": "wireframes/combobox/variation-3.svg"
+      "wireframe": "wireframes/combobox/variation-3.svg",
+      "htmlOutline": "<label for=\"cb\">Fruit</label>\n<input id=\"cb\" role=\"combobox\" aria-expanded=\"false\" aria-controls=\"cb-list\" aria-autocomplete=\"list\">\n<ul id=\"cb-list\" role=\"listbox\" hidden>\n  <li role=\"option\" aria-describedby=\"apple-desc\">\n    <svg aria-hidden=\"true\">…</svg>\n    Apple\n    <span id=\"apple-desc\">Crisp and sweet</span>\n  </li>\n</ul>"
     }
   ],
   "collections": [],

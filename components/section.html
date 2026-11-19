@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;!-- with a heading: a labelled region --&gt;
@@ -143,6 +143,7 @@
             </svg>
           </div>
           <figcaption>Compact — reduced padding</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -156,6 +157,7 @@
             </svg>
           </div>
           <figcaption>Spacious — increased padding</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -189,6 +191,16 @@
             </svg>
           </div>
           <figcaption>Contained width (formerly Container)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;section aria-labelledby="pricing-title"&gt;
+  &lt;div class="container"&gt;
+    &lt;h2 id="pricing-title"&gt;Pricing&lt;/h2&gt;
+    …
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- the inner wrapper caps the content width; the section stays full width --&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

@@ -49,19 +49,23 @@
   "variants": [
     {
       "caption": "Top (centered) icon",
-      "wireframe": "wireframes/feature/variation-1.svg"
+      "wireframe": "wireframes/feature/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Left (inline) icon",
-      "wireframe": "wireframes/feature/variation-2.svg"
+      "wireframe": "wireframes/feature/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Minimal — icon + heading only",
-      "wireframe": "wireframes/feature/variation-3.svg"
+      "wireframe": "wireframes/feature/variation-3.svg",
+      "htmlOutline": "<ul class=\"feature-list\">\n  <li class=\"feature\">\n    <svg aria-hidden=\"true\">…</svg>\n    <h3>Fast setup</h3>\n  </li>\n</ul>"
     },
     {
       "caption": "Grid (2x2) — compact spacing",
-      "wireframe": "wireframes/feature/variation-4.svg"
+      "wireframe": "wireframes/feature/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [

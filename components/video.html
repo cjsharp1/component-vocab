@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;video controls&gt;
@@ -143,6 +143,7 @@
             </svg>
           </div>
           <figcaption>Portrait — 9:16</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -155,6 +156,7 @@
             </svg>
           </div>
           <figcaption>Full bleed — edge to edge between text</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -167,6 +169,18 @@
             </svg>
           </div>
           <figcaption>With caption — text and transcript link below</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;figure&gt;
+  &lt;video controls&gt;
+    &lt;source src="intro.mp4" type="video/mp4"&gt;
+    &lt;track kind="captions" src="intro.vtt" srclang="en" label="English"&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;
+    Caption text. &lt;a href="/intro-transcript"&gt;Read the transcript&lt;/a&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

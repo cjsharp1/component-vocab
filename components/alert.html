@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;div role="status" class="alert"&gt;
@@ -151,6 +151,7 @@
             </svg>
           </div>
           <figcaption>Success — positive feedback</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -163,6 +164,7 @@
             </svg>
           </div>
           <figcaption>Error — critical message</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -175,6 +177,7 @@
             </svg>
           </div>
           <figcaption>Outlined — lighter style</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -191,6 +194,14 @@
             </svg>
           </div>
           <figcaption>Dismissible — with close button</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="alert"&gt;
+  &lt;div role="status"&gt;Your changes were saved.&lt;/div&gt;
+  &lt;button type="button" aria-label="Dismiss"&gt;×&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- the button sits outside the live region so it isn't announced --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -239,6 +250,15 @@
             </svg>
           </div>
           <figcaption>Announcement (formerly Banner)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;section class="alert" aria-label="Announcement"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+  &lt;p&gt;New pricing starts 1 May. &lt;a href="/pricing"&gt;See what's changing&lt;/a&gt;&lt;/p&gt;
+  &lt;button type="button" aria-label="Dismiss announcement"&gt;×&lt;/button&gt;
+&lt;/section&gt;
+&lt;!-- present on page load: a labelled region, not a live role --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -288,6 +308,15 @@
             </svg>
           </div>
           <figcaption>Note (formerly Callout)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="alert"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+  &lt;strong&gt;Note&lt;/strong&gt;
+  &lt;p&gt;Prices exclude tax.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- part of the page content, so no live role --&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

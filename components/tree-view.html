@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;ul role="tree" aria-label="Files"&gt;
@@ -156,6 +156,7 @@
             </svg>
           </div>
           <figcaption>Indent guides — lines show nesting</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -174,6 +175,17 @@
             </svg>
           </div>
           <figcaption>Icons — folder and file icons</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul role="tree" aria-label="Files"&gt;
+  &lt;li role="treeitem" aria-expanded="true"&gt;
+    &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; src
+    &lt;ul role="group"&gt;
+      &lt;li role="treeitem"&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; index.js&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -192,6 +204,18 @@
             </svg>
           </div>
           <figcaption>Multiple selection — checkboxes on each item</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul role="tree" aria-label="Files" aria-multiselectable="true"&gt;
+  &lt;li role="treeitem" aria-expanded="true" aria-checked="mixed"&gt;src
+    &lt;ul role="group"&gt;
+      &lt;li role="treeitem" aria-checked="true"&gt;index.js&lt;/li&gt;
+      &lt;li role="treeitem" aria-checked="false"&gt;util.js&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- the checkboxes are drawn; state lives in aria-checked, not nested inputs --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -209,6 +233,7 @@
             </svg>
           </div>
           <figcaption>Compact — tighter rows</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

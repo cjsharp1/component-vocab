@@ -65,19 +65,23 @@
   "variants": [
     {
       "caption": "Size: Small",
-      "wireframe": "wireframes/popover/variation-1.svg"
+      "wireframe": "wireframes/popover/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Size: Medium",
-      "wireframe": "wireframes/popover/variation-2.svg"
+      "wireframe": "wireframes/popover/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Size: Large",
-      "wireframe": "wireframes/popover/variation-3.svg"
+      "wireframe": "wireframes/popover/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Arrow: Hidden",
-      "wireframe": "wireframes/popover/variation-4.svg"
+      "wireframe": "wireframes/popover/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

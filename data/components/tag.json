@@ -62,19 +62,23 @@
   "variants": [
     {
       "caption": "Sizes — small and medium",
-      "wireframe": "wireframes/tag/variation-1.svg"
+      "wireframe": "wireframes/tag/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Icon — leading icon and color dot",
-      "wireframe": "wireframes/tag/variation-2.svg"
+      "wireframe": "wireframes/tag/variation-2.svg",
+      "htmlOutline": "<ul class=\"tags\">\n  <li><a class=\"tag\" href=\"/tags/design\"><svg aria-hidden=\"true\">…</svg> Design</a></li>\n  <li><span class=\"tag\"><span class=\"dot\" aria-hidden=\"true\"></span> Draft</span></li>\n</ul>\n<!-- the dot repeats the text; it can't carry meaning on its own -->"
     },
     {
       "caption": "Wrap — tags flow onto more lines",
-      "wireframe": "wireframes/tag/variation-3.svg"
+      "wireframe": "wireframes/tag/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Single row — extra tags collapsed into \"+3\"",
-      "wireframe": "wireframes/tag/variation-4.svg"
+      "wireframe": "wireframes/tag/variation-4.svg",
+      "htmlOutline": "<ul class=\"tags\">\n  <li><a class=\"tag\" href=\"/tags/design\">Design</a></li>\n  …\n  <li><button aria-expanded=\"false\" aria-label=\"Show 3 more tags\">+3</button></li>\n</ul>"
     }
   ],
   "collections": [],

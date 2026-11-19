@@ -66,19 +66,23 @@
   "variants": [
     {
       "caption": "Confirm — cancel and confirm actions",
-      "wireframe": "wireframes/alert-dialog/variation-1.svg"
+      "wireframe": "wireframes/alert-dialog/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Acknowledge — a single action",
-      "wireframe": "wireframes/alert-dialog/variation-2.svg"
+      "wireframe": "wireframes/alert-dialog/variation-2.svg",
+      "htmlOutline": "<dialog role=\"alertdialog\" aria-labelledby=\"a-title\" aria-describedby=\"a-desc\">\n  <h2 id=\"a-title\">Upload failed</h2>\n  <p id=\"a-desc\">The file is larger than 10 MB.</p>\n  <button>OK</button>\n</dialog>"
     },
     {
       "caption": "Icon — warning icon beside the title",
-      "wireframe": "wireframes/alert-dialog/variation-3.svg"
+      "wireframe": "wireframes/alert-dialog/variation-3.svg",
+      "htmlOutline": "<dialog role=\"alertdialog\" aria-labelledby=\"a-title\" aria-describedby=\"a-desc\">\n  <h2 id=\"a-title\">\n    <svg aria-hidden=\"true\">…</svg>\n    Delete file?\n  </h2>\n  <p id=\"a-desc\">This can't be undone.</p>\n  <button>Cancel</button>\n  <button>Delete</button>\n</dialog>"
     },
     {
       "caption": "Stacked actions — full-width buttons",
-      "wireframe": "wireframes/alert-dialog/variation-4.svg"
+      "wireframe": "wireframes/alert-dialog/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

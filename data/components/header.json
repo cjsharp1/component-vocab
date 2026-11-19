@@ -54,19 +54,23 @@
   "variants": [
     {
       "caption": "Static — scrolls with page",
-      "wireframe": "wireframes/header/variation-1.svg"
+      "wireframe": "wireframes/header/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Sticky — stays at top on scroll",
-      "wireframe": "wireframes/header/variation-2.svg"
+      "wireframe": "wireframes/header/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Centered — logo and nav centered",
-      "wireframe": "wireframes/header/variation-3.svg"
+      "wireframe": "wireframes/header/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Three-part — logo left, nav center, actions right",
-      "wireframe": "wireframes/header/variation-4.svg"
+      "wireframe": "wireframes/header/variation-4.svg",
+      "htmlOutline": "<header>\n  <a href=\"/\">Site name or logo</a>\n  <nav aria-label=\"Main\">…</nav>\n  <div class=\"actions\">\n    <a href=\"/signin\">Sign in</a>\n  </div>\n</header>"
     }
   ],
   "collections": [],

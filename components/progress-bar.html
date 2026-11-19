@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="upload"&gt;Uploading&lt;/label&gt;
@@ -132,6 +132,7 @@
             </svg>
           </div>
           <figcaption>Style: Linear bar</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -145,6 +146,15 @@
             </svg>
           </div>
           <figcaption>Style: Circular ring</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;span id="upload-label"&gt;Uploading&lt;/span&gt;
+&lt;div role="progressbar" aria-labelledby="upload-label" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+  &lt;span aria-hidden="true"&gt;60%&lt;/span&gt;
+&lt;/div&gt;
+&lt;!-- native &lt;progress&gt; can't draw a ring, so ARIA carries the value --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -162,6 +172,11 @@
             </svg>
           </div>
           <figcaption>Style: Steps</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="setup"&gt;Setup&lt;/label&gt;
+&lt;progress id="setup" max="4" value="2" aria-valuetext="Step 2 of 4"&gt;Step 2 of 4&lt;/progress&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -175,6 +190,7 @@
             </svg>
           </div>
           <figcaption>Size: Small</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

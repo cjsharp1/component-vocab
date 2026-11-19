@@ -70,19 +70,23 @@
   "variants": [
     {
       "caption": "3 columns — standard layout",
-      "wireframe": "wireframes/pricing-table/variation-1.svg"
+      "wireframe": "wireframes/pricing-table/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Highlighted — featured plan emphasized",
-      "wireframe": "wireframes/pricing-table/variation-2.svg"
+      "wireframe": "wireframes/pricing-table/variation-2.svg",
+      "htmlOutline": "<ul class=\"pricing\">\n  …\n  <li>\n    <article>\n      <p>Most popular</p>\n      <h3>Pro</h3>\n      …\n    </article>\n  </li>\n  …\n</ul>"
     },
     {
       "caption": "With toggle — monthly/annual switch",
-      "wireframe": "wireframes/pricing-table/variation-3.svg"
+      "wireframe": "wireframes/pricing-table/variation-3.svg",
+      "htmlOutline": "<section aria-labelledby=\"plans\">\n  <h2 id=\"plans\">Plans</h2>\n  <fieldset>\n    <legend>Billing period</legend>\n    <label><input type=\"radio\" name=\"period\" value=\"monthly\" checked> Monthly</label>\n    <label><input type=\"radio\" name=\"period\" value=\"annual\"> Annual</label>\n  </fieldset>\n  <ul class=\"pricing\">…</ul>\n</section>"
     },
     {
       "caption": "Table style — grid comparison",
-      "wireframe": "wireframes/pricing-table/variation-4.svg"
+      "wireframe": "wireframes/pricing-table/variation-4.svg",
+      "htmlOutline": "<table>\n  <caption>Plans</caption>\n  <thead>\n    <tr><td></td><th scope=\"col\">Free</th><th scope=\"col\">Pro</th></tr>\n  </thead>\n  <tbody>\n    <tr><th scope=\"row\">Price</th><td>$0</td><td>$20 per month</td></tr>\n    <tr><th scope=\"row\">Feature</th><td>No</td><td>Yes</td></tr>\n  </tbody>\n</table>"
     }
   ],
   "collections": [],

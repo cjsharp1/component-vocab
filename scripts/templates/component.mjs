@@ -65,6 +65,12 @@ ${c.variants.map(v => `        <figure>
 ${indent(svg(v.wireframe), 12)}
           </div>
           <figcaption>${v.caption}</figcaption>
+${v.htmlOutline
+    ? `          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>${esc(v.htmlOutline)}</code></pre>
+          </details>`
+    : `          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>`}
         </figure>`).join('\n\n')}
       </div>
     </section>
@@ -170,7 +176,7 @@ export function componentPage(c, { prev, next, group, svg, names }) {
     'Usage Notes': c.usageNotes.length > 0,
   };
   const order = ['Elements', 'Default Layout', 'Configuration Options', 'Layout Variations', ...c.collections.map((_, n) => n), 'Usage Notes'];
-  const outline = `    <section>
+  const outline = `    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>${esc(c.htmlOutline)}</code></pre>

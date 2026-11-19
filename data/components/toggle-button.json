@@ -56,19 +56,23 @@
   "variants": [
     {
       "caption": "Text — not pressed and pressed",
-      "wireframe": "wireframes/toggle-button/variation-1.svg"
+      "wireframe": "wireframes/toggle-button/variation-1.svg",
+      "htmlOutline": "<button type=\"button\" aria-pressed=\"false\">Bold</button>\n<button type=\"button\" aria-pressed=\"true\">Bold</button>"
     },
     {
       "caption": "Icon only — not pressed and pressed",
-      "wireframe": "wireframes/toggle-button/variation-2.svg"
+      "wireframe": "wireframes/toggle-button/variation-2.svg",
+      "htmlOutline": "<button type=\"button\" aria-pressed=\"false\" aria-label=\"Bold\">\n  <svg aria-hidden=\"true\">…</svg>\n</button>\n<button type=\"button\" aria-pressed=\"true\" aria-label=\"Bold\">\n  <svg aria-hidden=\"true\">…</svg>\n</button>"
     },
     {
       "caption": "Icon and text — pressed",
-      "wireframe": "wireframes/toggle-button/variation-3.svg"
+      "wireframe": "wireframes/toggle-button/variation-3.svg",
+      "htmlOutline": "<button type=\"button\" aria-pressed=\"true\">\n  <svg aria-hidden=\"true\">…</svg> Bold\n</button>"
     },
     {
       "caption": "Group — independent toggles side by side",
-      "wireframe": "wireframes/toggle-button/variation-4.svg"
+      "wireframe": "wireframes/toggle-button/variation-4.svg",
+      "htmlOutline": "<div role=\"group\" aria-label=\"Text style\">\n  <button type=\"button\" aria-pressed=\"true\">Bold</button>\n  <button type=\"button\" aria-pressed=\"false\">Italic</button>\n  <button type=\"button\" aria-pressed=\"false\">Underline</button>\n</div>"
     }
   ],
   "collections": [],

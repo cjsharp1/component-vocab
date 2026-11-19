@@ -54,19 +54,23 @@
   "variants": [
     {
       "caption": "Vertical — left-aligned",
-      "wireframe": "wireframes/timeline/variation-1.svg"
+      "wireframe": "wireframes/timeline/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Alternating (zigzag)",
-      "wireframe": "wireframes/timeline/variation-2.svg"
+      "wireframe": "wireframes/timeline/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Horizontal",
-      "wireframe": "wireframes/timeline/variation-3.svg"
+      "wireframe": "wireframes/timeline/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Dotted connector line",
-      "wireframe": "wireframes/timeline/variation-4.svg"
+      "wireframe": "wireframes/timeline/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

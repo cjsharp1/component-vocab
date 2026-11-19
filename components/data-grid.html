@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;table role="grid" aria-label="Orders"&gt;
@@ -177,6 +177,20 @@
             </svg>
           </div>
           <figcaption>Row selection — checkbox column</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;table role="grid" aria-label="Orders" aria-multiselectable="true"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th role="columnheader"&gt;&lt;input type="checkbox" aria-label="Select all rows"&gt;&lt;/th&gt;&lt;th role="columnheader"&gt;Date&lt;/th&gt;…&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr aria-selected="true"&gt;
+      &lt;td role="gridcell"&gt;&lt;input type="checkbox" checked aria-label="Select row"&gt;&lt;/td&gt;
+      &lt;td role="gridcell" tabindex="0"&gt;2024-03-01&lt;/td&gt;…
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -208,6 +222,7 @@
             </svg>
           </div>
           <figcaption>Compact — shorter rows</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -228,6 +243,17 @@
             </svg>
           </div>
           <figcaption>Treegrid — rows that expand to show child rows</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;table role="treegrid" aria-label="Orders"&gt;
+  …
+  &lt;tbody&gt;
+    &lt;tr aria-level="1" aria-expanded="true"&gt;&lt;td role="gridcell" tabindex="0"&gt;March&lt;/td&gt;&lt;td role="gridcell"&gt;$120&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr aria-level="2"&gt;&lt;td role="gridcell" tabindex="-1"&gt;2024-03-01&lt;/td&gt;&lt;td role="gridcell"&gt;$40&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr aria-level="1" aria-expanded="false"&gt;&lt;td role="gridcell" tabindex="-1"&gt;April&lt;/td&gt;&lt;td role="gridcell"&gt;$90&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

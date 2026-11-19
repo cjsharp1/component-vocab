@@ -44,19 +44,23 @@
   "variants": [
     {
       "caption": "Type: Count (top-right)",
-      "wireframe": "wireframes/badge/variation-1.svg"
+      "wireframe": "wireframes/badge/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Type: Dot",
-      "wireframe": "wireframes/badge/variation-2.svg"
+      "wireframe": "wireframes/badge/variation-2.svg",
+      "htmlOutline": "<a href=\"/inbox\">Inbox <span class=\"badge\"><span class=\"visually-hidden\">New messages</span></span></a>\n<!-- the dot has no visible text, so hidden text carries its meaning -->"
     },
     {
       "caption": "Position: Top-left",
-      "wireframe": "wireframes/badge/variation-3.svg"
+      "wireframe": "wireframes/badge/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Position: Inline (text label)",
-      "wireframe": "wireframes/badge/variation-4.svg"
+      "wireframe": "wireframes/badge/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

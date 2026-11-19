@@ -72,19 +72,23 @@
   "variants": [
     {
       "caption": "Width — fixed for short values, full for long ones",
-      "wireframe": "wireframes/text-input/variation-1.svg"
+      "wireframe": "wireframes/text-input/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Prefix and suffix — currency sign and unit",
-      "wireframe": "wireframes/text-input/variation-2.svg"
+      "wireframe": "wireframes/text-input/variation-2.svg",
+      "htmlOutline": "<label for=\"price\">Price per kg, in dollars</label>\n<div class=\"input-group\">\n  <span aria-hidden=\"true\">$</span>\n  <input id=\"price\" type=\"text\" name=\"price\" inputmode=\"decimal\">\n  <span aria-hidden=\"true\">per kg</span>\n</div>\n<!-- the label carries the meaning; the visual affixes are hidden -->"
     },
     {
       "caption": "Error — message above the field",
-      "wireframe": "wireframes/text-input/variation-3.svg"
+      "wireframe": "wireframes/text-input/variation-3.svg",
+      "htmlOutline": "<label for=\"city\">City</label>\n<p id=\"city-error\">Enter a city.</p>\n<input id=\"city\" type=\"text\" name=\"city\" autocomplete=\"address-level2\" aria-invalid=\"true\" aria-describedby=\"city-error\">"
     },
     {
       "caption": "Size — small, medium and large",
-      "wireframe": "wireframes/text-input/variation-4.svg"
+      "wireframe": "wireframes/text-input/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

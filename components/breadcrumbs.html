@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;nav aria-label="Breadcrumb"&gt;
@@ -155,6 +155,7 @@
             </svg>
           </div>
           <figcaption>Slash — simple forward slash</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -169,6 +170,7 @@
             </svg>
           </div>
           <figcaption>Chevron — right-pointing arrow</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -183,6 +185,7 @@
             </svg>
           </div>
           <figcaption>Arrow — styled arrow character</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -199,6 +202,17 @@
             </svg>
           </div>
           <figcaption>Truncated — ellipsis for long paths</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav aria-label="Breadcrumb"&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button aria-label="Show hidden levels" aria-expanded="false"&gt;…&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/guides"&gt;Guides&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/guides/setup" aria-current="page"&gt;Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

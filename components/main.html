@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;body&gt;
@@ -154,6 +154,7 @@
             </svg>
           </div>
           <figcaption>Full width — between Header and Footer</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -174,6 +175,20 @@
             </svg>
           </div>
           <figcaption>Sidebar — main beside a Sidebar</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;body&gt;
+  &lt;a href="#main"&gt;Skip to content&lt;/a&gt;
+  &lt;header&gt;…&lt;/header&gt;
+  &lt;div class="layout"&gt;
+    &lt;aside aria-label="Section"&gt;…&lt;/aside&gt;
+    &lt;main id="main"&gt;
+      &lt;!-- page content --&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+  &lt;footer&gt;…&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -189,6 +204,7 @@
             </svg>
           </div>
           <figcaption>Constrained — centered with a maximum width</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

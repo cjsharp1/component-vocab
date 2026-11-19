@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;ul class="tags"&gt;
@@ -145,6 +145,7 @@
             </svg>
           </div>
           <figcaption>Sizes — small and medium</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -159,6 +160,14 @@
             </svg>
           </div>
           <figcaption>Icon — leading icon and color dot</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul class="tags"&gt;
+  &lt;li&gt;&lt;a class="tag" href="/tags/design"&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Design&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class="tag"&gt;&lt;span class="dot" aria-hidden="true"&gt;&lt;/span&gt; Draft&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- the dot repeats the text; it can't carry meaning on its own --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -176,6 +185,7 @@
             </svg>
           </div>
           <figcaption>Wrap — tags flow onto more lines</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -192,6 +202,14 @@
             </svg>
           </div>
           <figcaption>Single row — extra tags collapsed into "+3"</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul class="tags"&gt;
+  &lt;li&gt;&lt;a class="tag" href="/tags/design"&gt;Design&lt;/a&gt;&lt;/li&gt;
+  …
+  &lt;li&gt;&lt;button aria-expanded="false" aria-label="Show 3 more tags"&gt;+3&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

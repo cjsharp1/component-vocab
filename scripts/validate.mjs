@@ -73,6 +73,10 @@ export function validate(root = process.cwd()) {
       if (!data.description) errors.push(`${data.slug}.json: stable component needs a description`);
       if (!data.wireframe || !data.thumbnail) errors.push(`${data.slug}.json: stable component needs a wireframe and thumbnail`);
     }
+    (data.variants || []).forEach((v, i) => {
+      if (('htmlOutline' in v) === ('sameMarkup' in v)) errors.push(`${data.slug}.json: variants[${i}] ("${v.caption}") needs exactly one of htmlOutline or sameMarkup`);
+      else if (v.htmlOutline && v.htmlOutline.trim() === data.htmlOutline?.trim()) errors.push(`${data.slug}.json: variants[${i}] htmlOutline repeats the default; use sameMarkup`);
+    });
     if (data.status === 'draft' && (data.wireframe || data.thumbnail || data.variants?.length || data.collections?.length)) {
       errors.push(`${data.slug}.json: draft components carry no wireframes`);
     }

@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Full width — visible label above the field",
-      "wireframe": "wireframes/search/variation-1.svg"
+      "wireframe": "wireframes/search/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Icon only — submit button with an icon",
-      "wireframe": "wireframes/search/variation-2.svg"
+      "wireframe": "wireframes/search/variation-2.svg",
+      "htmlOutline": "<search>\n  <form action=\"/search\">\n    <input type=\"search\" name=\"q\" aria-label=\"Search\">\n    <button aria-label=\"Search\">\n      <svg aria-hidden=\"true\">…</svg>\n    </button>\n  </form>\n</search>"
     },
     {
       "caption": "Compact — inside the Header",
-      "wireframe": "wireframes/search/variation-3.svg"
+      "wireframe": "wireframes/search/variation-3.svg",
+      "htmlOutline": "<header>\n  …\n  <search>\n    <form action=\"/search\">\n      <input type=\"search\" name=\"q\" aria-label=\"Search site\">\n      <button aria-label=\"Search\"><svg aria-hidden=\"true\">…</svg></button>\n    </form>\n  </search>\n</header>"
     },
     {
       "caption": "Collapsed — a button reveals the field",
-      "wireframe": "wireframes/search/variation-4.svg"
+      "wireframe": "wireframes/search/variation-4.svg",
+      "htmlOutline": "<button aria-expanded=\"false\" aria-controls=\"site-search\" aria-label=\"Search\">\n  <svg aria-hidden=\"true\">…</svg>\n</button>\n<search id=\"site-search\" hidden>\n  <form action=\"/search\">\n    <input type=\"search\" name=\"q\" aria-label=\"Search site\">\n    <button aria-label=\"Search\"><svg aria-hidden=\"true\">…</svg></button>\n  </form>\n</search>"
     }
   ],
   "collections": [],

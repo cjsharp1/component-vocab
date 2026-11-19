@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Columns — three link groups",
-      "wireframe": "wireframes/mega-menu/variation-1.svg"
+      "wireframe": "wireframes/mega-menu/variation-1.svg",
+      "htmlOutline": "<nav aria-label=\"Main\">\n  <ul>\n    <li>\n      <button aria-expanded=\"true\" aria-controls=\"products\">Products</button>\n      <div id=\"products\">\n        <h2>Build</h2>\n        <ul>\n          <li><a href=\"…\">…</a></li>\n        </ul>\n        <h2>Run</h2>\n        <ul>…</ul>\n        <h2>Learn</h2>\n        <ul>…</ul>\n      </div>\n    </li>\n  </ul>\n</nav>"
     },
     {
       "caption": "Featured — link groups plus a promoted page",
-      "wireframe": "wireframes/mega-menu/variation-2.svg"
+      "wireframe": "wireframes/mega-menu/variation-2.svg",
+      "htmlOutline": "<nav aria-label=\"Main\">\n  <ul>\n    <li>\n      <button aria-expanded=\"true\" aria-controls=\"products\">Products</button>\n      <div id=\"products\">\n        <h2>Build</h2>\n        <ul>…</ul>\n        <h2>Run</h2>\n        <ul>…</ul>\n        <a href=\"/new\">\n          <img src=\"promo.jpg\" alt=\"\">\n          What's new\n        </a>\n      </div>\n    </li>\n  </ul>\n</nav>"
     },
     {
       "caption": "Under the item — narrow panel below its button",
-      "wireframe": "wireframes/mega-menu/variation-3.svg"
+      "wireframe": "wireframes/mega-menu/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Small screen — stacked disclosures, one open",
-      "wireframe": "wireframes/mega-menu/variation-4.svg"
+      "wireframe": "wireframes/mega-menu/variation-4.svg",
+      "htmlOutline": "<nav aria-label=\"Main\">\n  <ul>\n    <li>\n      <button aria-expanded=\"false\" aria-controls=\"products\">Products</button>\n      <div id=\"products\" hidden>…</div>\n    </li>\n    <li>\n      <button aria-expanded=\"true\" aria-controls=\"solutions\">Solutions</button>\n      <ul id=\"solutions\">\n        <li><a href=\"…\">…</a></li>\n      </ul>\n    </li>\n    …\n  </ul>\n</nav>"
     }
   ],
   "collections": [],

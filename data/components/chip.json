@@ -67,19 +67,23 @@
   "variants": [
     {
       "caption": "Filter — one selected, two not",
-      "wireframe": "wireframes/chip/variation-1.svg"
+      "wireframe": "wireframes/chip/variation-1.svg",
+      "htmlOutline": "<div role=\"group\" aria-label=\"Filters\">\n  <button class=\"chip\" aria-pressed=\"true\">Remote</button>\n  <button class=\"chip\" aria-pressed=\"false\">Full time</button>\n  <button class=\"chip\" aria-pressed=\"false\">Senior</button>\n</div>"
     },
     {
       "caption": "Input — removable values inside a field",
-      "wireframe": "wireframes/chip/variation-2.svg"
+      "wireframe": "wireframes/chip/variation-2.svg",
+      "htmlOutline": "<label for=\"cities\">Cities</label>\n<div class=\"chip-field\">\n  <ul aria-label=\"Selected cities\">\n    <li>Paris <button aria-label=\"Remove Paris\">×</button></li>\n    <li>Lima <button aria-label=\"Remove Lima\">×</button></li>\n  </ul>\n  <input id=\"cities\" type=\"text\">\n</div>"
     },
     {
       "caption": "Leading — icon and Avatar",
-      "wireframe": "wireframes/chip/variation-3.svg"
+      "wireframe": "wireframes/chip/variation-3.svg",
+      "htmlOutline": "<button class=\"chip\" aria-pressed=\"true\">\n  <svg aria-hidden=\"true\">…</svg> Remote\n</button>\n\n<span class=\"chip\">\n  <img src=\"ana.jpg\" alt=\"\"> Ana Ruiz\n  <button aria-label=\"Remove Ana Ruiz\">×</button>\n</span>"
     },
     {
       "caption": "Size — small and medium",
-      "wireframe": "wireframes/chip/variation-4.svg"
+      "wireframe": "wireframes/chip/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

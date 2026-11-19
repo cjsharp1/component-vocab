@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;iframe
@@ -124,6 +124,7 @@
             </svg>
           </div>
           <figcaption>16:9 — YouTube, Vimeo</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -134,6 +135,7 @@
             </svg>
           </div>
           <figcaption>4:3 — maps, older content</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -144,6 +146,7 @@
             </svg>
           </div>
           <figcaption>1:1 — social posts</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -155,6 +158,18 @@
             </svg>
           </div>
           <figcaption>Full-width — with caption</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;figure&gt;
+  &lt;iframe
+    src="https://example.com/embed/123"
+    title="Describe the embedded content"
+    loading="lazy"
+    sandbox="allow-scripts allow-same-origin"&gt;
+  &lt;/iframe&gt;
+  &lt;figcaption&gt;Caption for the embedded content&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

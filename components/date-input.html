@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="dob"&gt;Date of birth&lt;/label&gt;
@@ -153,6 +153,7 @@
             </svg>
           </div>
           <figcaption>Native field — browser date control</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -166,6 +167,16 @@
             </svg>
           </div>
           <figcaption>Month and year — two fields, such as a card expiry date</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset&gt;
+  &lt;legend&gt;Expiry date&lt;/legend&gt;
+  &lt;label for="exp-month"&gt;Month&lt;/label&gt;
+  &lt;input id="exp-month" name="exp-month" inputmode="numeric" autocomplete="cc-exp-month" size="2"&gt;
+  &lt;label for="exp-year"&gt;Year&lt;/label&gt;
+  &lt;input id="exp-year" name="exp-year" inputmode="numeric" autocomplete="cc-exp-year" size="4"&gt;
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -183,6 +194,19 @@
             </svg>
           </div>
           <figcaption>Error — message above the fields</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset aria-describedby="dob-error"&gt;
+  &lt;legend&gt;Date of birth&lt;/legend&gt;
+  &lt;p id="dob-error"&gt;Date of birth must include a year&lt;/p&gt;
+  &lt;label for="dob-day"&gt;Day&lt;/label&gt;
+  &lt;input id="dob-day" name="dob-day" inputmode="numeric" value="14"&gt;
+  &lt;label for="dob-month"&gt;Month&lt;/label&gt;
+  &lt;input id="dob-month" name="dob-month" inputmode="numeric" value="3"&gt;
+  &lt;label for="dob-year"&gt;Year&lt;/label&gt;
+  &lt;input id="dob-year" name="dob-year" inputmode="numeric" aria-invalid="true"&gt;
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

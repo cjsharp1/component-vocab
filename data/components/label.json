@@ -67,15 +67,18 @@
   "variants": [
     {
       "caption": "Beside — label to the start of the field",
-      "wireframe": "wireframes/label/variation-1.svg"
+      "wireframe": "wireframes/label/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Hint — guidance under the label",
-      "wireframe": "wireframes/label/variation-2.svg"
+      "wireframe": "wireframes/label/variation-2.svg",
+      "htmlOutline": "<label for=\"name\">Full name</label>\n<p id=\"name-hint\">As it appears on your ID</p>\n<input id=\"name\" name=\"name\" aria-describedby=\"name-hint\">"
     },
     {
       "caption": "Wraps the control — label after each checkbox",
-      "wireframe": "wireframes/label/variation-3.svg"
+      "wireframe": "wireframes/label/variation-3.svg",
+      "htmlOutline": "<label><input type=\"checkbox\" name=\"news\"> Product news</label>\n<label><input type=\"checkbox\" name=\"tips\"> Tips and guides</label>"
     }
   ],
   "collections": [],

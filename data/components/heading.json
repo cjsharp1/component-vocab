@@ -62,15 +62,18 @@
   "variants": [
     {
       "caption": "Size — same level, three sizes",
-      "wireframe": "wireframes/heading/variation-1.svg"
+      "wireframe": "wireframes/heading/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Centered — heading and intro text",
-      "wireframe": "wireframes/heading/variation-2.svg"
+      "wireframe": "wireframes/heading/variation-2.svg",
+      "htmlOutline": "<h2>Section title</h2>\n<p>Intro text…</p>"
     },
     {
       "caption": "Eyebrow — small line above the heading",
-      "wireframe": "wireframes/heading/variation-3.svg"
+      "wireframe": "wireframes/heading/variation-3.svg",
+      "htmlOutline": "<hgroup>\n  <p>Eyebrow</p>\n  <h2>Section title</h2>\n</hgroup>"
     }
   ],
   "collections": [],

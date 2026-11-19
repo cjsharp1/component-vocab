@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;dialog role="alertdialog" aria-labelledby="a-title" aria-describedby="a-desc"&gt;
@@ -158,6 +158,7 @@
             </svg>
           </div>
           <figcaption>Confirm — cancel and confirm actions</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -171,6 +172,14 @@
             </svg>
           </div>
           <figcaption>Acknowledge — a single action</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;dialog role="alertdialog" aria-labelledby="a-title" aria-describedby="a-desc"&gt;
+  &lt;h2 id="a-title"&gt;Upload failed&lt;/h2&gt;
+  &lt;p id="a-desc"&gt;The file is larger than 10 MB.&lt;/p&gt;
+  &lt;button&gt;OK&lt;/button&gt;
+&lt;/dialog&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -188,6 +197,18 @@
             </svg>
           </div>
           <figcaption>Icon — warning icon beside the title</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;dialog role="alertdialog" aria-labelledby="a-title" aria-describedby="a-desc"&gt;
+  &lt;h2 id="a-title"&gt;
+    &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+    Delete file?
+  &lt;/h2&gt;
+  &lt;p id="a-desc"&gt;This can't be undone.&lt;/p&gt;
+  &lt;button&gt;Cancel&lt;/button&gt;
+  &lt;button&gt;Delete&lt;/button&gt;
+&lt;/dialog&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -203,6 +224,7 @@
             </svg>
           </div>
           <figcaption>Stacked actions — full-width buttons</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

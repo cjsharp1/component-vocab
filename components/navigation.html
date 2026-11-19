@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;nav aria-label="Main"&gt;
@@ -151,6 +151,7 @@
             </svg>
           </div>
           <figcaption>Horizontal — default top nav</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -164,6 +165,7 @@
             </svg>
           </div>
           <figcaption>Vertical — sidebar navigation</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -177,6 +179,7 @@
             </svg>
           </div>
           <figcaption>Pills — rounded button style</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -195,6 +198,21 @@
             </svg>
           </div>
           <figcaption>With dropdown — nested submenu</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav aria-label="Main"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;button type="button" aria-expanded="false" aria-controls="products-menu"&gt;Products&lt;/button&gt;
+      &lt;ul id="products-menu" hidden&gt;
+        &lt;li&gt;&lt;a href="/products/apps"&gt;Apps&lt;/a&gt;&lt;/li&gt;
+        …
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="/about" aria-current="page"&gt;About&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

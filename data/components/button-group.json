@@ -62,19 +62,23 @@
   "variants": [
     {
       "caption": "Horizontal — primary then secondary",
-      "wireframe": "wireframes/button-group/variation-1.svg"
+      "wireframe": "wireframes/button-group/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Stacked — full width on a narrow screen",
-      "wireframe": "wireframes/button-group/variation-2.svg"
+      "wireframe": "wireframes/button-group/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Centered — under centered content",
-      "wireframe": "wireframes/button-group/variation-3.svg"
+      "wireframe": "wireframes/button-group/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Attached — buttons share edges",
-      "wireframe": "wireframes/button-group/variation-4.svg"
+      "wireframe": "wireframes/button-group/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

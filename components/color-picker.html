@@ -44,7 +44,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="brand"&gt;Brand color&lt;/label&gt;
@@ -150,6 +150,12 @@
             </svg>
           </div>
           <figcaption>Swatch and value field — compact row</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="brand"&gt;Brand color&lt;/label&gt;
+&lt;input id="brand" type="color" value="#2350d1"&gt;
+&lt;input aria-label="Brand color hex value" value="#2350d1" size="7"&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -165,6 +171,17 @@
             </svg>
           </div>
           <figcaption>Inline panel — color area, hue slider and value</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div role="group" aria-labelledby="brand-label"&gt;
+  &lt;span id="brand-label"&gt;Brand color&lt;/span&gt;
+  &lt;!-- 2-D area: arrow keys change saturation and brightness --&gt;
+  &lt;div role="slider" tabindex="0" aria-label="Saturation and brightness"
+       aria-valuenow="83" aria-valuetext="Saturation 83%, brightness 82%"&gt;&lt;/div&gt;
+  &lt;input type="range" aria-label="Hue" min="0" max="360" value="225"&gt;
+  &lt;input aria-label="Hex value" value="#2350d1" size="7"&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -181,6 +198,18 @@
             </svg>
           </div>
           <figcaption>Presets — row of swatches with an add button</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset&gt;
+  &lt;legend&gt;Brand color&lt;/legend&gt;
+  &lt;input type="radio" name="brand" value="#2350d1" aria-label="Blue" checked&gt;
+  &lt;input type="radio" name="brand" value="#1a7f37" aria-label="Green"&gt;
+  …
+  &lt;button type="button" aria-label="Add color"&gt;
+    &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

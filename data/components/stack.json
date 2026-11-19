@@ -56,19 +56,23 @@
   "variants": [
     {
       "caption": "Gap — small and large",
-      "wireframe": "wireframes/stack/variation-1.svg"
+      "wireframe": "wireframes/stack/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Centered — children aligned to the center",
-      "wireframe": "wireframes/stack/variation-2.svg"
+      "wireframe": "wireframes/stack/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Separators — a line between children",
-      "wireframe": "wireframes/stack/variation-3.svg"
+      "wireframe": "wireframes/stack/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Nested — a tight stack inside a loose one",
-      "wireframe": "wireframes/stack/variation-4.svg"
+      "wireframe": "wireframes/stack/variation-4.svg",
+      "htmlOutline": "<div class=\"stack\" style=\"--gap: 2rem\">\n  <div class=\"stack\" style=\"--gap: 0.25rem\">\n    <h2>…</h2>\n    <p>…</p>\n  </div>\n  <img src=\"…\" alt=\"…\">\n  <a href=\"…\">…</a>\n</div>"
     }
   ],
   "collections": [],

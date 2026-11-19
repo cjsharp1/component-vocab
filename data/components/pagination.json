@@ -54,19 +54,23 @@
   "variants": [
     {
       "caption": "Numbered — page numbers with arrows",
-      "wireframe": "wireframes/pagination/variation-1.svg"
+      "wireframe": "wireframes/pagination/variation-1.svg",
+      "htmlOutline": "<nav aria-label=\"Pagination\">\n  <ul>\n    <li><a href=\"?page=1\" aria-label=\"Previous page\"><svg aria-hidden=\"true\">…</svg></a></li>\n    <li><a href=\"?page=1\">1</a></li>\n    <li><a href=\"?page=2\" aria-current=\"page\">2</a></li>\n    <li><a href=\"?page=3\">3</a></li>\n    <li aria-hidden=\"true\">…</li>\n    <li><a href=\"?page=3\" aria-label=\"Next page\"><svg aria-hidden=\"true\">…</svg></a></li>\n  </ul>\n</nav>"
     },
     {
       "caption": "Simple — previous and next only",
-      "wireframe": "wireframes/pagination/variation-2.svg"
+      "wireframe": "wireframes/pagination/variation-2.svg",
+      "htmlOutline": "<nav aria-label=\"Pagination\">\n  <ul>\n    <li><a href=\"?page=1\">Previous</a></li>\n    <li><a href=\"?page=3\">Next</a></li>\n  </ul>\n</nav>"
     },
     {
       "caption": "Load more — single button style",
-      "wireframe": "wireframes/pagination/variation-3.svg"
+      "wireframe": "wireframes/pagination/variation-3.svg",
+      "htmlOutline": "<ul id=\"results\">…</ul>\n<button aria-controls=\"results\">Load more</button>\n<p role=\"status\"><!-- e.g. \"20 more results loaded\" --></p>"
     },
     {
       "caption": "Compact — smaller buttons",
-      "wireframe": "wireframes/pagination/variation-4.svg"
+      "wireframe": "wireframes/pagination/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

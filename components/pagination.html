@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;nav aria-label="Pagination"&gt;
@@ -161,6 +161,19 @@
             </svg>
           </div>
           <figcaption>Numbered — page numbers with arrows</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav aria-label="Pagination"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="?page=1" aria-label="Previous page"&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="?page=1"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="?page=2" aria-current="page"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="?page=3"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li aria-hidden="true"&gt;…&lt;/li&gt;
+    &lt;li&gt;&lt;a href="?page=3" aria-label="Next page"&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -174,6 +187,15 @@
             </svg>
           </div>
           <figcaption>Simple — previous and next only</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;nav aria-label="Pagination"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="?page=1"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="?page=3"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -185,6 +207,12 @@
             </svg>
           </div>
           <figcaption>Load more — single button style</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul id="results"&gt;…&lt;/ul&gt;
+&lt;button aria-controls="results"&gt;Load more&lt;/button&gt;
+&lt;p role="status"&gt;&lt;!-- e.g. "20 more results loaded" --&gt;&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -201,6 +229,7 @@
             </svg>
           </div>
           <figcaption>Compact — smaller buttons</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

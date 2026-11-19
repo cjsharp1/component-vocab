@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;fieldset&gt;
@@ -148,6 +148,7 @@
             </svg>
           </div>
           <figcaption>No border — legend styled as a heading</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -164,6 +165,18 @@
             </svg>
           </div>
           <figcaption>Inline row — day, month and year fields</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset&gt;
+  &lt;legend&gt;Date of birth&lt;/legend&gt;
+  &lt;label for="dob-day"&gt;Day&lt;/label&gt;
+  &lt;input id="dob-day" name="dob-day" inputmode="numeric" autocomplete="bday-day"&gt;
+  &lt;label for="dob-month"&gt;Month&lt;/label&gt;
+  &lt;input id="dob-month" name="dob-month" inputmode="numeric" autocomplete="bday-month"&gt;
+  &lt;label for="dob-year"&gt;Year&lt;/label&gt;
+  &lt;input id="dob-year" name="dob-year" inputmode="numeric" autocomplete="bday-year"&gt;
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -181,6 +194,16 @@
             </svg>
           </div>
           <figcaption>Hint — guidance above a set of radio buttons</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset aria-describedby="contact-hint"&gt;
+  &lt;legend&gt;How should we contact you?&lt;/legend&gt;
+  &lt;p id="contact-hint"&gt;Choose one.&lt;/p&gt;
+  &lt;input type="radio" id="contact-email" name="contact" value="email"&gt;
+  &lt;label for="contact-email"&gt;Email&lt;/label&gt;
+  …
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -199,6 +222,16 @@
             </svg>
           </div>
           <figcaption>Error — message under the legend</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;fieldset aria-describedby="address-error"&gt;
+  &lt;legend&gt;Shipping address&lt;/legend&gt;
+  &lt;p id="address-error"&gt;Enter your street.&lt;/p&gt;
+  &lt;label for="street"&gt;Street&lt;/label&gt;
+  &lt;input id="street" name="street" aria-invalid="true"&gt;
+  …
+&lt;/fieldset&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

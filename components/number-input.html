@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="qty"&gt;Quantity&lt;/label&gt;
@@ -150,6 +150,12 @@
             </svg>
           </div>
           <figcaption>Plain — field only, no step buttons</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="qty"&gt;Quantity&lt;/label&gt;
+&lt;input id="qty" type="text" inputmode="numeric" pattern="[0-9]*" value="1"&gt;
+&lt;!-- a text field with a numeric keyboard, without the browser's spin buttons --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -165,6 +171,7 @@
             </svg>
           </div>
           <figcaption>Stacked — small up and down buttons at the end</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -177,6 +184,12 @@
             </svg>
           </div>
           <figcaption>Unit — suffix inside the field</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="weight"&gt;Weight&lt;/label&gt;
+&lt;input id="weight" type="number" min="0" step="0.1" aria-describedby="weight-unit"&gt;
+&lt;span id="weight-unit"&gt;kg&lt;/span&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

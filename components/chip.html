@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button class="chip" aria-pressed="true"&gt;Remote&lt;/button&gt;
@@ -151,6 +151,14 @@
             </svg>
           </div>
           <figcaption>Filter — one selected, two not</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div role="group" aria-label="Filters"&gt;
+  &lt;button class="chip" aria-pressed="true"&gt;Remote&lt;/button&gt;
+  &lt;button class="chip" aria-pressed="false"&gt;Full time&lt;/button&gt;
+  &lt;button class="chip" aria-pressed="false"&gt;Senior&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -167,6 +175,17 @@
             </svg>
           </div>
           <figcaption>Input — removable values inside a field</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="cities"&gt;Cities&lt;/label&gt;
+&lt;div class="chip-field"&gt;
+  &lt;ul aria-label="Selected cities"&gt;
+    &lt;li&gt;Paris &lt;button aria-label="Remove Paris"&gt;×&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;Lima &lt;button aria-label="Remove Lima"&gt;×&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;input id="cities" type="text"&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -181,6 +200,17 @@
             </svg>
           </div>
           <figcaption>Leading — icon and Avatar</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button class="chip" aria-pressed="true"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Remote
+&lt;/button&gt;
+
+&lt;span class="chip"&gt;
+  &lt;img src="ana.jpg" alt=""&gt; Ana Ruiz
+  &lt;button aria-label="Remove Ana Ruiz"&gt;×&lt;/button&gt;
+&lt;/span&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -193,6 +223,7 @@
             </svg>
           </div>
           <figcaption>Size — small and medium</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

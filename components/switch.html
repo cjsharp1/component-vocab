@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label&gt;
@@ -146,6 +146,23 @@
             </svg>
           </div>
           <figcaption>Label before — settings list, off and on</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;label&gt;
+      Email notifications
+      &lt;input type="checkbox" role="switch"&gt;
+    &lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;label&gt;
+      Push notifications
+      &lt;input type="checkbox" role="switch" checked&gt;
+    &lt;/label&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -157,6 +174,7 @@
             </svg>
           </div>
           <figcaption>Label after — switch first, then label</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -169,6 +187,14 @@
             </svg>
           </div>
           <figcaption>Description — hint text under the label</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label&gt;
+  &lt;input type="checkbox" role="switch" checked aria-describedby="email-hint"&gt;
+  Email notifications
+&lt;/label&gt;
+&lt;p id="email-hint"&gt;A weekly summary of activity.&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -181,6 +207,15 @@
             </svg>
           </div>
           <figcaption>State text — On or Off beside the track</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label&gt;
+  &lt;input type="checkbox" role="switch" checked&gt;
+  Email notifications
+&lt;/label&gt;
+&lt;!-- the switch already announces its state --&gt;
+&lt;span aria-hidden="true"&gt;On&lt;/span&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

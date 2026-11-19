@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;header class="hero"&gt;
@@ -148,6 +148,7 @@
             </svg>
           </div>
           <figcaption>Centered — minimal content</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -164,6 +165,19 @@
             </svg>
           </div>
           <figcaption>Split Left — content left, image right</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;header class="hero"&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Page headline&lt;/h1&gt;
+    &lt;p&gt;Supporting text.&lt;/p&gt;
+    &lt;div class="button-group"&gt;
+      &lt;a href="/start"&gt;Get started&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;img src="hero.jpg" alt=""&gt;
+&lt;/header&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -180,6 +194,20 @@
             </svg>
           </div>
           <figcaption>Split Right — image left, content right</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;header class="hero"&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Page headline&lt;/h1&gt;
+    &lt;p&gt;Supporting text.&lt;/p&gt;
+    &lt;div class="button-group"&gt;
+      &lt;a href="/start"&gt;Get started&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;img src="hero.jpg" alt=""&gt;
+&lt;/header&gt;
+&lt;!-- CSS moves the image to the left; the headline stays first in source order --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -193,6 +221,18 @@
             </svg>
           </div>
           <figcaption>Background Image — with dark overlay</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;header class="hero"&gt;
+  &lt;img src="hero.jpg" alt=""&gt;
+  &lt;!-- decorative image behind the text; a dark overlay keeps the text readable --&gt;
+  &lt;h1&gt;Page headline&lt;/h1&gt;
+  &lt;p&gt;Supporting text.&lt;/p&gt;
+  &lt;div class="button-group"&gt;
+    &lt;a href="/start"&gt;Get started&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

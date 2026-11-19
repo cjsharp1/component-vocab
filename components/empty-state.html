@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;div class="empty-state"&gt;
@@ -136,6 +136,7 @@
             </svg>
           </div>
           <figcaption>Full area — illustration, text and action</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -152,6 +153,21 @@
             </svg>
           </div>
           <figcaption>Compact — inside a Table</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;table&gt;
+  &lt;thead&gt;…&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3"&gt;
+        &lt;p&gt;&lt;strong&gt;No projects yet&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Projects you create appear here.&lt;/p&gt;
+        &lt;button&gt;Create a project&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -164,6 +180,7 @@
             </svg>
           </div>
           <figcaption>Start aligned — icon beside the text</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -177,6 +194,16 @@
             </svg>
           </div>
           <figcaption>Two actions — primary and secondary</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="empty-state"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+  &lt;h2&gt;No projects yet&lt;/h2&gt;
+  &lt;p&gt;Projects you create appear here.&lt;/p&gt;
+  &lt;button&gt;Create a project&lt;/button&gt;
+  &lt;button&gt;Import projects&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

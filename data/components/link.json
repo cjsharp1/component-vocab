@@ -56,19 +56,23 @@
   "variants": [
     {
       "caption": "Inline — underlined within a paragraph",
-      "wireframe": "wireframes/link/variation-1.svg"
+      "wireframe": "wireframes/link/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Standalone — with a trailing arrow",
-      "wireframe": "wireframes/link/variation-2.svg"
+      "wireframe": "wireframes/link/variation-2.svg",
+      "htmlOutline": "<a href=\"/pricing\">\n  See pricing\n  <svg aria-hidden=\"true\">…</svg>\n</a>"
     },
     {
       "caption": "External — with an external-link icon",
-      "wireframe": "wireframes/link/variation-3.svg"
+      "wireframe": "wireframes/link/variation-3.svg",
+      "htmlOutline": "<a href=\"https://example.com/docs\">\n  Partner docs\n  <svg aria-hidden=\"true\">…</svg>\n  <span class=\"visually-hidden\">(external site)</span>\n</a>"
     },
     {
       "caption": "Button-styled — still a link",
-      "wireframe": "wireframes/link/variation-4.svg"
+      "wireframe": "wireframes/link/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button type="button" aria-pressed="false"&gt;Bold&lt;/button&gt;</code></pre>
@@ -137,6 +137,11 @@
             </svg>
           </div>
           <figcaption>Text — not pressed and pressed</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button type="button" aria-pressed="false"&gt;Bold&lt;/button&gt;
+&lt;button type="button" aria-pressed="true"&gt;Bold&lt;/button&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -149,6 +154,15 @@
             </svg>
           </div>
           <figcaption>Icon only — not pressed and pressed</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button type="button" aria-pressed="false" aria-label="Bold"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+&lt;/button&gt;
+&lt;button type="button" aria-pressed="true" aria-label="Bold"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -160,6 +174,12 @@
             </svg>
           </div>
           <figcaption>Icon and text — pressed</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button type="button" aria-pressed="true"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Bold
+&lt;/button&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -177,6 +197,14 @@
             </svg>
           </div>
           <figcaption>Group — independent toggles side by side</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div role="group" aria-label="Text style"&gt;
+  &lt;button type="button" aria-pressed="true"&gt;Bold&lt;/button&gt;
+  &lt;button type="button" aria-pressed="false"&gt;Italic&lt;/button&gt;
+  &lt;button type="button" aria-pressed="false"&gt;Underline&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

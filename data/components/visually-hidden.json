@@ -50,19 +50,23 @@
   "variants": [
     {
       "caption": "Control name — text inside an icon-only button",
-      "wireframe": "wireframes/visually-hidden/variation-1.svg"
+      "wireframe": "wireframes/visually-hidden/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Link context — \"Read more\" plus hidden detail",
-      "wireframe": "wireframes/visually-hidden/variation-2.svg"
+      "wireframe": "wireframes/visually-hidden/variation-2.svg",
+      "htmlOutline": "<a href=\"/news/spring-update\">Read more<span class=\"visually-hidden\"> about the spring update</span></a>"
     },
     {
       "caption": "Hidden heading — names a section for screen readers",
-      "wireframe": "wireframes/visually-hidden/variation-3.svg"
+      "wireframe": "wireframes/visually-hidden/variation-3.svg",
+      "htmlOutline": "<section aria-labelledby=\"related-title\">\n  <h2 id=\"related-title\" class=\"visually-hidden\">Related articles</h2>\n  …\n</section>"
     },
     {
       "caption": "Reveal on focus — hidden, then shown while focused",
-      "wireframe": "wireframes/visually-hidden/variation-4.svg"
+      "wireframe": "wireframes/visually-hidden/variation-4.svg",
+      "htmlOutline": "<a href=\"#main\" class=\"visually-hidden-focusable\">Skip to main content</a>\n<!-- hidden until it receives keyboard focus, then shown -->"
     }
   ],
   "collections": [],

@@ -56,15 +56,18 @@
   "variants": [
     {
       "caption": "Focus only — appears over the Header when focused",
-      "wireframe": "wireframes/skip-link/variation-1.svg"
+      "wireframe": "wireframes/skip-link/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Always visible — a bar above the Header",
-      "wireframe": "wireframes/skip-link/variation-2.svg"
+      "wireframe": "wireframes/skip-link/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Two links — content and a second target",
-      "wireframe": "wireframes/skip-link/variation-3.svg"
+      "wireframe": "wireframes/skip-link/variation-3.svg",
+      "htmlOutline": "<a class=\"skip-link\" href=\"#main\">Skip to content</a>\n<a class=\"skip-link\" href=\"#search\">Skip to search</a>\n…\n<search id=\"search\">…</search>\n<main id=\"main\">…</main>"
     }
   ],
   "collections": [],

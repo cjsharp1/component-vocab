@@ -54,19 +54,23 @@
   "variants": [
     {
       "caption": "Bulleted — simple bullet points",
-      "wireframe": "wireframes/list/variation-1.svg"
+      "wireframe": "wireframes/list/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Checklist — checkmark icons",
-      "wireframe": "wireframes/list/variation-2.svg"
+      "wireframe": "wireframes/list/variation-2.svg",
+      "htmlOutline": "<ul>\n  <li><svg aria-hidden=\"true\">…</svg> Item</li>\n  <li><svg aria-hidden=\"true\">…</svg> Item</li>\n</ul>"
     },
     {
       "caption": "Boxed — bordered items",
-      "wireframe": "wireframes/list/variation-3.svg"
+      "wireframe": "wireframes/list/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Icon-led with dividers — icons and separators",
-      "wireframe": "wireframes/list/variation-4.svg"
+      "wireframe": "wireframes/list/variation-4.svg",
+      "htmlOutline": "<ul>\n  <li><svg aria-hidden=\"true\">…</svg> Item</li>\n  <li><svg aria-hidden=\"true\">…</svg> Item</li>\n</ul>\n<!-- dividers are borders, not <hr> -->"
     }
   ],
   "collections": [],

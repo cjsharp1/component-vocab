@@ -56,15 +56,18 @@
   "variants": [
     {
       "caption": "Full width — between Header and Footer",
-      "wireframe": "wireframes/main/variation-1.svg"
+      "wireframe": "wireframes/main/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Sidebar — main beside a Sidebar",
-      "wireframe": "wireframes/main/variation-2.svg"
+      "wireframe": "wireframes/main/variation-2.svg",
+      "htmlOutline": "<body>\n  <a href=\"#main\">Skip to content</a>\n  <header>…</header>\n  <div class=\"layout\">\n    <aside aria-label=\"Section\">…</aside>\n    <main id=\"main\">\n      <!-- page content -->\n    </main>\n  </div>\n  <footer>…</footer>\n</body>"
     },
     {
       "caption": "Constrained — centered with a maximum width",
-      "wireframe": "wireframes/main/variation-3.svg"
+      "wireframe": "wireframes/main/variation-3.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

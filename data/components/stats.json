@@ -54,19 +54,23 @@
   "variants": [
     {
       "caption": "Medium — with icon",
-      "wireframe": "wireframes/stats/variation-1.svg"
+      "wireframe": "wireframes/stats/variation-1.svg",
+      "htmlOutline": "<dl class=\"stats\">\n  <div>\n    <svg aria-hidden=\"true\">…</svg>\n    <dt>Active users</dt>\n    <dd>12,000</dd>\n  </div>\n  …\n</dl>"
     },
     {
       "caption": "Large (hero-sized)",
-      "wireframe": "wireframes/stats/variation-2.svg"
+      "wireframe": "wireframes/stats/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Small — with trend",
-      "wireframe": "wireframes/stats/variation-3.svg"
+      "wireframe": "wireframes/stats/variation-3.svg",
+      "htmlOutline": "<dl class=\"stats\">\n  <div>\n    <dt>Active users</dt>\n    <dd>12,000</dd>\n    <dd><span aria-hidden=\"true\">↑</span> 8% <span class=\"visually-hidden\">increase</span></dd>\n  </div>\n  …\n</dl>"
     },
     {
       "caption": "Grid (2x2)",
-      "wireframe": "wireframes/stats/variation-4.svg"
+      "wireframe": "wireframes/stats/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [

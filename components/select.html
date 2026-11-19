@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="country"&gt;Country&lt;/label&gt;
@@ -140,6 +140,7 @@
             </svg>
           </div>
           <figcaption>Label beside — label and field on one row</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -155,6 +156,7 @@
             </svg>
           </div>
           <figcaption>Full width — fills a narrow container</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -169,6 +171,16 @@
             </svg>
           </div>
           <figcaption>Multiple — list box with several options selected</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="countries"&gt;Countries&lt;/label&gt;
+&lt;select id="countries" name="countries" multiple size="4"&gt;
+  &lt;option selected&gt;France&lt;/option&gt;
+  &lt;option&gt;Japan&lt;/option&gt;
+  &lt;option selected&gt;Kenya&lt;/option&gt;
+  &lt;option&gt;Peru&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -183,6 +195,7 @@
             </svg>
           </div>
           <figcaption>Size — small, medium, large</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

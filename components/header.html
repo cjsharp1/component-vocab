@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;header&gt;
@@ -147,6 +147,7 @@
             </svg>
           </div>
           <figcaption>Static — scrolls with page</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -160,6 +161,7 @@
             </svg>
           </div>
           <figcaption>Sticky — stays at top on scroll</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -173,6 +175,7 @@
             </svg>
           </div>
           <figcaption>Centered — logo and nav centered</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -187,6 +190,16 @@
             </svg>
           </div>
           <figcaption>Three-part — logo left, nav center, actions right</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;header&gt;
+  &lt;a href="/"&gt;Site name or logo&lt;/a&gt;
+  &lt;nav aria-label="Main"&gt;…&lt;/nav&gt;
+  &lt;div class="actions"&gt;
+    &lt;a href="/signin"&gt;Sign in&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;h2&gt;Section title&lt;/h2&gt;
@@ -142,6 +142,7 @@
             </svg>
           </div>
           <figcaption>Size — same level, three sizes</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -153,6 +154,11 @@
             </svg>
           </div>
           <figcaption>Centered — heading and intro text</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;h2&gt;Section title&lt;/h2&gt;
+&lt;p&gt;Intro text…&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -166,6 +172,13 @@
             </svg>
           </div>
           <figcaption>Eyebrow — small line above the heading</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;hgroup&gt;
+  &lt;p&gt;Eyebrow&lt;/p&gt;
+  &lt;h2&gt;Section title&lt;/h2&gt;
+&lt;/hgroup&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

@@ -53,15 +53,18 @@
   "variants": [
     {
       "caption": "Minimal — copyright only",
-      "wireframe": "wireframes/footer/variation-1.svg"
+      "wireframe": "wireframes/footer/variation-1.svg",
+      "htmlOutline": "<footer>\n  <p><small>© Company</small></p>\n</footer>"
     },
     {
       "caption": "Multi-column — nav columns + copyright",
-      "wireframe": "wireframes/footer/variation-2.svg"
+      "wireframe": "wireframes/footer/variation-2.svg",
+      "htmlOutline": "<footer>\n  <nav aria-label=\"Footer\">\n    <section aria-labelledby=\"f-product\">\n      <h2 id=\"f-product\">Product</h2>\n      <ul>…</ul>\n    </section>\n    <section aria-labelledby=\"f-company\">\n      <h2 id=\"f-company\">Company</h2>\n      <ul>…</ul>\n    </section>\n    …\n  </nav>\n  <p><small>© Company</small></p>\n</footer>"
     },
     {
       "caption": "Stacked — centered, single column",
-      "wireframe": "wireframes/footer/variation-3.svg"
+      "wireframe": "wireframes/footer/variation-3.svg",
+      "htmlOutline": "<footer>\n  <nav aria-label=\"Footer\">\n    <ul>…</ul>\n  </nav>\n  <ul>\n    <li><a href=\"…\" aria-label=\"Mastodon\"><svg aria-hidden=\"true\">…</svg></a></li>\n    …\n  </ul>\n  <p><small>© Company</small></p>\n</footer>"
     }
   ],
   "collections": [],

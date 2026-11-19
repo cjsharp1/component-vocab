@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;details&gt;
@@ -138,6 +138,7 @@
             </svg>
           </div>
           <figcaption>Closed — summary between paragraphs</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -152,6 +153,13 @@
             </svg>
           </div>
           <figcaption>Open — content below the summary</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;details open&gt;
+  &lt;summary&gt;Show details&lt;/summary&gt;
+  &lt;p&gt;Hidden content…&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -166,6 +174,7 @@
             </svg>
           </div>
           <figcaption>Boxed — bordered, icon after</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -178,6 +187,15 @@
             </svg>
           </div>
           <figcaption>Small — help text under a form field</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="pw"&gt;Password&lt;/label&gt;
+&lt;input id="pw" type="password" name="password"&gt;
+&lt;details&gt;
+  &lt;summary&gt;Password rules&lt;/summary&gt;
+  &lt;p&gt;At least 12 characters…&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

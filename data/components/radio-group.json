@@ -67,15 +67,18 @@
   "variants": [
     {
       "caption": "Horizontal — short options in a row",
-      "wireframe": "wireframes/radio-group/variation-1.svg"
+      "wireframe": "wireframes/radio-group/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "With hints — a line of detail under each option",
-      "wireframe": "wireframes/radio-group/variation-2.svg"
+      "wireframe": "wireframes/radio-group/variation-2.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Delivery</legend>\n  <label><input type=\"radio\" name=\"delivery\" value=\"std\" aria-describedby=\"std-hint\" checked> Standard</label>\n  <p id=\"std-hint\">3 to 5 working days</p>\n  <label><input type=\"radio\" name=\"delivery\" value=\"exp\" aria-describedby=\"exp-hint\"> Express</label>\n  <p id=\"exp-hint\">Next working day</p>\n</fieldset>"
     },
     {
       "caption": "Tiles — each option in a bordered box",
-      "wireframe": "wireframes/radio-group/variation-3.svg"
+      "wireframe": "wireframes/radio-group/variation-3.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

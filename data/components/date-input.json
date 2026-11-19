@@ -61,15 +61,18 @@
   "variants": [
     {
       "caption": "Native field — browser date control",
-      "wireframe": "wireframes/date-input/variation-1.svg"
+      "wireframe": "wireframes/date-input/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Month and year — two fields, such as a card expiry date",
-      "wireframe": "wireframes/date-input/variation-2.svg"
+      "wireframe": "wireframes/date-input/variation-2.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Expiry date</legend>\n  <label for=\"exp-month\">Month</label>\n  <input id=\"exp-month\" name=\"exp-month\" inputmode=\"numeric\" autocomplete=\"cc-exp-month\" size=\"2\">\n  <label for=\"exp-year\">Year</label>\n  <input id=\"exp-year\" name=\"exp-year\" inputmode=\"numeric\" autocomplete=\"cc-exp-year\" size=\"4\">\n</fieldset>"
     },
     {
       "caption": "Error — message above the fields",
-      "wireframe": "wireframes/date-input/variation-3.svg"
+      "wireframe": "wireframes/date-input/variation-3.svg",
+      "htmlOutline": "<fieldset aria-describedby=\"dob-error\">\n  <legend>Date of birth</legend>\n  <p id=\"dob-error\">Date of birth must include a year</p>\n  <label for=\"dob-day\">Day</label>\n  <input id=\"dob-day\" name=\"dob-day\" inputmode=\"numeric\" value=\"14\">\n  <label for=\"dob-month\">Month</label>\n  <input id=\"dob-month\" name=\"dob-month\" inputmode=\"numeric\" value=\"3\">\n  <label for=\"dob-year\">Year</label>\n  <input id=\"dob-year\" name=\"dob-year\" inputmode=\"numeric\" aria-invalid=\"true\">\n</fieldset>"
     }
   ],
   "collections": [],

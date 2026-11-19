@@ -59,19 +59,23 @@
   "variants": [
     {
       "caption": "Standard — with photo",
-      "wireframe": "wireframes/testimonial/variation-1.svg"
+      "wireframe": "wireframes/testimonial/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Large quote — featured",
-      "wireframe": "wireframes/testimonial/variation-2.svg"
+      "wireframe": "wireframes/testimonial/variation-2.svg",
+      "htmlOutline": "<!-- featured: no photo -->\n<figure class=\"testimonial\">\n  <blockquote>\n    <p>It saved us hours every week.</p>\n  </blockquote>\n  <figcaption>Ana Ruiz, Head of Ops</figcaption>\n</figure>"
     },
     {
       "caption": "No quote marks, with rating",
-      "wireframe": "wireframes/testimonial/variation-3.svg"
+      "wireframe": "wireframes/testimonial/variation-3.svg",
+      "htmlOutline": "<figure class=\"testimonial\">\n  <blockquote>\n    <p>It saved us hours every week.</p>\n  </blockquote>\n  <figcaption>\n    Ana Ruiz, Head of Ops\n    <p role=\"img\" aria-label=\"Rated 5 out of 5\">★★★★★</p>\n  </figcaption>\n</figure>"
     },
     {
       "caption": "Horizontal — photo on left",
-      "wireframe": "wireframes/testimonial/variation-4.svg"
+      "wireframe": "wireframes/testimonial/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [

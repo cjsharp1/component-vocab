@@ -60,19 +60,23 @@
   "variants": [
     {
       "caption": "Edge: Right",
-      "wireframe": "wireframes/drawer/variation-1.svg"
+      "wireframe": "wireframes/drawer/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Edge: Bottom",
-      "wireframe": "wireframes/drawer/variation-2.svg"
+      "wireframe": "wireframes/drawer/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Size: Narrow",
-      "wireframe": "wireframes/drawer/variation-3.svg"
+      "wireframe": "wireframes/drawer/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Size: Wide",
-      "wireframe": "wireframes/drawer/variation-4.svg"
+      "wireframe": "wireframes/drawer/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

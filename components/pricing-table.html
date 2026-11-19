@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;section aria-labelledby="plans"&gt;
@@ -163,6 +163,7 @@
             </svg>
           </div>
           <figcaption>3 columns — standard layout</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -175,6 +176,20 @@
             </svg>
           </div>
           <figcaption>Highlighted — featured plan emphasized</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul class="pricing"&gt;
+  …
+  &lt;li&gt;
+    &lt;article&gt;
+      &lt;p&gt;Most popular&lt;/p&gt;
+      &lt;h3&gt;Pro&lt;/h3&gt;
+      …
+    &lt;/article&gt;
+  &lt;/li&gt;
+  …
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -189,6 +204,18 @@
             </svg>
           </div>
           <figcaption>With toggle — monthly/annual switch</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;section aria-labelledby="plans"&gt;
+  &lt;h2 id="plans"&gt;Plans&lt;/h2&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Billing period&lt;/legend&gt;
+    &lt;label&gt;&lt;input type="radio" name="period" value="monthly" checked&gt; Monthly&lt;/label&gt;
+    &lt;label&gt;&lt;input type="radio" name="period" value="annual"&gt; Annual&lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;ul class="pricing"&gt;…&lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -205,6 +232,19 @@
             </svg>
           </div>
           <figcaption>Table style — grid comparison</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;table&gt;
+  &lt;caption&gt;Plans&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;th scope="col"&gt;Free&lt;/th&gt;&lt;th scope="col"&gt;Pro&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;th scope="row"&gt;Price&lt;/th&gt;&lt;td&gt;$0&lt;/td&gt;&lt;td&gt;$20 per month&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th scope="row"&gt;Feature&lt;/th&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

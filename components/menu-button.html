@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;button aria-haspopup="menu" aria-expanded="false" aria-controls="actions"&gt;Actions&lt;/button&gt;
@@ -171,6 +171,16 @@
             </svg>
           </div>
           <figcaption>Trigger: Icon (position below)</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button aria-haspopup="menu" aria-expanded="false" aria-controls="actions" aria-label="Actions"&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+&lt;/button&gt;
+&lt;ul id="actions" role="menu" hidden&gt;
+  &lt;li role="menuitem"&gt;Rename&lt;/li&gt;
+  &lt;li role="menuitem"&gt;Delete&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -189,6 +199,7 @@
             </svg>
           </div>
           <figcaption>Position: Above</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -207,6 +218,16 @@
             </svg>
           </div>
           <figcaption>Dividers: Between groups</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button aria-haspopup="menu" aria-expanded="false" aria-controls="actions"&gt;Actions&lt;/button&gt;
+&lt;ul id="actions" role="menu" hidden&gt;
+  &lt;li role="menuitem"&gt;Rename&lt;/li&gt;
+  &lt;li role="menuitem"&gt;Duplicate&lt;/li&gt;
+  &lt;li role="separator"&gt;&lt;/li&gt;
+  &lt;li role="menuitem"&gt;Delete&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -228,6 +249,14 @@
             </svg>
           </div>
           <figcaption>Icons: Shown</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;button aria-haspopup="menu" aria-expanded="false" aria-controls="actions"&gt;Actions&lt;/button&gt;
+&lt;ul id="actions" role="menu" hidden&gt;
+  &lt;li role="menuitem"&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Rename&lt;/li&gt;
+  &lt;li role="menuitem"&gt;&lt;svg aria-hidden="true"&gt;…&lt;/svg&gt; Delete&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

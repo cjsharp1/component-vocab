@@ -72,15 +72,18 @@
   "variants": [
     {
       "caption": "Range — start and end days with the span between",
-      "wireframe": "wireframes/date-picker/variation-1.svg"
+      "wireframe": "wireframes/date-picker/variation-1.svg",
+      "htmlOutline": "<fieldset>\n  <legend>Stay</legend>\n  <label for=\"checkin\">Check-in</label>\n  <input id=\"checkin\" aria-haspopup=\"dialog\">\n  <label for=\"checkout\">Check-out</label>\n  <input id=\"checkout\" aria-haspopup=\"dialog\">\n</fieldset>\n<dialog aria-label=\"Choose dates\">\n  <table role=\"grid\">\n    …\n    <td role=\"gridcell\" aria-selected=\"true\">12</td>\n    <td role=\"gridcell\">13</td>\n    …\n    <td role=\"gridcell\" aria-selected=\"true\">16</td>\n    …\n  </table>\n</dialog>"
     },
     {
       "caption": "Inline — calendar always visible, no popup",
-      "wireframe": "wireframes/date-picker/variation-2.svg"
+      "wireframe": "wireframes/date-picker/variation-2.svg",
+      "htmlOutline": "<label for=\"checkin\">Check-in</label>\n<input id=\"checkin\">\n<table role=\"grid\" aria-label=\"Choose a date\">…calendar…</table>\n<!-- no dialog or aria-haspopup: the grid is always on the page -->"
     },
     {
       "caption": "Two months — side by side",
-      "wireframe": "wireframes/date-picker/variation-3.svg"
+      "wireframe": "wireframes/date-picker/variation-3.svg",
+      "htmlOutline": "<label for=\"checkin\">Check-in</label>\n<input id=\"checkin\" aria-haspopup=\"dialog\">\n<dialog aria-label=\"Choose a date\">\n  <table role=\"grid\" aria-labelledby=\"m1\"><caption id=\"m1\">June 2026</caption>…</table>\n  <table role=\"grid\" aria-labelledby=\"m2\"><caption id=\"m2\">July 2026</caption>…</table>\n</dialog>"
     }
   ],
   "collections": [],

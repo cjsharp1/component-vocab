@@ -49,19 +49,23 @@
   "variants": [
     {
       "caption": "Vertical list — divided rows",
-      "wireframe": "wireframes/description-list/variation-1.svg"
+      "wireframe": "wireframes/description-list/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Horizontal row — inline",
-      "wireframe": "wireframes/description-list/variation-2.svg"
+      "wireframe": "wireframes/description-list/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Grid (2-col)",
-      "wireframe": "wireframes/description-list/variation-3.svg"
+      "wireframe": "wireframes/description-list/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Boxed — with border",
-      "wireframe": "wireframes/description-list/variation-4.svg"
+      "wireframe": "wireframes/description-list/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

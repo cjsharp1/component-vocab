@@ -70,19 +70,23 @@
   "variants": [
     {
       "caption": "Centered — minimal content",
-      "wireframe": "wireframes/hero/variation-1.svg"
+      "wireframe": "wireframes/hero/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Split Left — content left, image right",
-      "wireframe": "wireframes/hero/variation-2.svg"
+      "wireframe": "wireframes/hero/variation-2.svg",
+      "htmlOutline": "<header class=\"hero\">\n  <div>\n    <h1>Page headline</h1>\n    <p>Supporting text.</p>\n    <div class=\"button-group\">\n      <a href=\"/start\">Get started</a>\n    </div>\n  </div>\n  <img src=\"hero.jpg\" alt=\"\">\n</header>"
     },
     {
       "caption": "Split Right — image left, content right",
-      "wireframe": "wireframes/hero/variation-3.svg"
+      "wireframe": "wireframes/hero/variation-3.svg",
+      "htmlOutline": "<header class=\"hero\">\n  <div>\n    <h1>Page headline</h1>\n    <p>Supporting text.</p>\n    <div class=\"button-group\">\n      <a href=\"/start\">Get started</a>\n    </div>\n  </div>\n  <img src=\"hero.jpg\" alt=\"\">\n</header>\n<!-- CSS moves the image to the left; the headline stays first in source order -->"
     },
     {
       "caption": "Background Image — with dark overlay",
-      "wireframe": "wireframes/hero/variation-4.svg"
+      "wireframe": "wireframes/hero/variation-4.svg",
+      "htmlOutline": "<header class=\"hero\">\n  <img src=\"hero.jpg\" alt=\"\">\n  <!-- decorative image behind the text; a dark overlay keeps the text readable -->\n  <h1>Page headline</h1>\n  <p>Supporting text.</p>\n  <div class=\"button-group\">\n    <a href=\"/start\">Get started</a>\n  </div>\n</header>"
     }
   ],
   "collections": [],

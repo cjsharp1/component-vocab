@@ -48,7 +48,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;label for="disk"&gt;Disk usage&lt;/label&gt;
@@ -140,6 +140,7 @@
             </svg>
           </div>
           <figcaption>Inline label — label, bar and value on one row</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -155,6 +156,13 @@
             </svg>
           </div>
           <figcaption>Segmented — discrete steps, as in password strength</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;label for="strength"&gt;Password strength&lt;/label&gt;
+&lt;meter id="strength" min="0" max="5" low="2" high="4" optimum="5" value="3"&gt;3 of 5&lt;/meter&gt;
+&lt;span&gt;Good&lt;/span&gt;
+&lt;!-- a whole-number max gives one segment per step; segments are drawn --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -167,6 +175,7 @@
             </svg>
           </div>
           <figcaption>Vertical — upright bar</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

@@ -56,19 +56,23 @@
   "variants": [
     {
       "caption": "Bottom — bubble below the trigger",
-      "wireframe": "wireframes/toggletip/variation-1.svg"
+      "wireframe": "wireframes/toggletip/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "End — bubble beside the trigger",
-      "wireframe": "wireframes/toggletip/variation-2.svg"
+      "wireframe": "wireframes/toggletip/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Icon with text — visible trigger label",
-      "wireframe": "wireframes/toggletip/variation-3.svg"
+      "wireframe": "wireframes/toggletip/variation-3.svg",
+      "htmlOutline": "<button aria-expanded=\"false\" aria-controls=\"tt-info\">\n  <svg aria-hidden=\"true\">…</svg> More info\n</button>\n<div id=\"tt-info\" role=\"status\" hidden>Short explanation.</div>"
     },
     {
       "caption": "Max width — longer text wraps",
-      "wireframe": "wireframes/toggletip/variation-4.svg"
+      "wireframe": "wireframes/toggletip/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

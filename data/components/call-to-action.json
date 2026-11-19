@@ -59,19 +59,23 @@
   "variants": [
     {
       "caption": "Centered — default layout",
-      "wireframe": "wireframes/call-to-action/variation-1.svg"
+      "wireframe": "wireframes/call-to-action/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Left-aligned — content left",
-      "wireframe": "wireframes/call-to-action/variation-2.svg"
+      "wireframe": "wireframes/call-to-action/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Split — content left, image right",
-      "wireframe": "wireframes/call-to-action/variation-3.svg"
+      "wireframe": "wireframes/call-to-action/variation-3.svg",
+      "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <div>\n    <h2 id=\"cta-title\">Ready to start?</h2>\n    <p>Short supporting line.</p>\n    <div class=\"button-group\">\n      <a href=\"/signup\">Sign up</a>\n    </div>\n  </div>\n  <img src=\"…\" alt=\"\">\n</section>"
     },
     {
       "caption": "Background image — with overlay",
-      "wireframe": "wireframes/call-to-action/variation-4.svg"
+      "wireframe": "wireframes/call-to-action/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

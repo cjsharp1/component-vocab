@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;ol class="steps"&gt;
@@ -162,6 +162,7 @@
             </svg>
           </div>
           <figcaption>Labels below — markers in a row</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -181,6 +182,20 @@
             </svg>
           </div>
           <figcaption>Vertical — stacked steps with descriptions</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ol class="steps"&gt;
+  &lt;li&gt;
+    Account
+    &lt;p&gt;Name and email&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li aria-current="step"&gt;
+    Shipping
+    &lt;p&gt;Where to send it&lt;/p&gt;
+  &lt;/li&gt;
+  …
+&lt;/ol&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -197,6 +212,7 @@
             </svg>
           </div>
           <figcaption>Labels beside — compact horizontal row</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -207,6 +223,14 @@
             </svg>
           </div>
           <figcaption>Count only — current step name and "Step 2 of 4"</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="steps"&gt;
+  &lt;h2&gt;Shipping&lt;/h2&gt;
+  &lt;p&gt;Step 2 of 3&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- no list: only the current step is shown --&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

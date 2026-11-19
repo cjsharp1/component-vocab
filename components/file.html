@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;a href="/files/report.pdf" download&gt;
@@ -141,6 +141,13 @@
             </svg>
           </div>
           <figcaption>Inline — link inside a sentence</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;p&gt;
+  Read the &lt;a href="/files/report.pdf" download&gt;annual report &lt;span&gt;(PDF, 2.4 MB)&lt;/span&gt;&lt;/a&gt;
+  before the meeting.
+&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -153,6 +160,13 @@
             </svg>
           </div>
           <figcaption>Block — icon, name and details</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;a href="/files/report.pdf" download&gt;
+  &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+  Annual report &lt;span&gt;(PDF, 2.4 MB)&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -167,6 +181,14 @@
             </svg>
           </div>
           <figcaption>Thumbnail — first-page preview beside the details</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;a href="/files/report.pdf" download&gt;
+  &lt;img src="report-page-1.png" alt=""&gt;
+  Annual report &lt;span&gt;(PDF, 2.4 MB, 32 pages)&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- the preview is decorative; the link text names the file --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -184,6 +206,23 @@
             </svg>
           </div>
           <figcaption>List — several files stacked</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href="/files/report.pdf" download&gt;
+      &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+      Annual report &lt;span&gt;(PDF, 2.4 MB)&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/files/accounts.xlsx" download&gt;
+      &lt;svg aria-hidden="true"&gt;…&lt;/svg&gt;
+      Accounts &lt;span&gt;(Excel, 180 KB)&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </details>
         </figure>
       </div>
     </section>

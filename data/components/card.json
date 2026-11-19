@@ -65,31 +65,38 @@
   "variants": [
     {
       "caption": "Vertical — image on top",
-      "wireframe": "wireframes/card/variation-1.svg"
+      "wireframe": "wireframes/card/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Horizontal — image on left",
-      "wireframe": "wireframes/card/variation-2.svg"
+      "wireframe": "wireframes/card/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "No image — text only",
-      "wireframe": "wireframes/card/variation-3.svg"
+      "wireframe": "wireframes/card/variation-3.svg",
+      "htmlOutline": "<ul class=\"card-list\">\n  <li>\n    <article class=\"card\">\n      <!-- no img -->\n      <h3><a href=\"/post\">Title</a></h3>\n      <p>Excerpt…</p>\n    </article>\n  </li>\n</ul>"
     },
     {
       "caption": "List — horizontal, stacked",
-      "wireframe": "wireframes/card/variation-4.svg"
+      "wireframe": "wireframes/card/variation-4.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Horizontal media (formerly Media)",
-      "wireframe": "wireframes/card/from-media.svg"
+      "wireframe": "wireframes/card/from-media.svg",
+      "htmlOutline": "<article class=\"card\">\n  <video controls src=\"…\"></video>\n  <h3>Heading</h3>\n  <p>Text…</p>\n  <a href=\"/watch\">Watch now</a>\n</article>"
     },
     {
       "caption": "Person (formerly Profile)",
-      "wireframe": "wireframes/card/from-profile.svg"
+      "wireframe": "wireframes/card/from-profile.svg",
+      "htmlOutline": "<article class=\"card\">\n  <img src=\"ana.jpg\" alt=\"\">\n  <h3>Ana Ruiz</h3>\n  <p>Product designer</p>\n  <p>Bio…</p>\n  <ul aria-label=\"Ana Ruiz on social media\">\n    <li><a href=\"…\">Mastodon</a></li>\n    <li><a href=\"…\">GitHub</a></li>\n  </ul>\n</article>"
     },
     {
       "caption": "Large feature (formerly Showcase)",
-      "wireframe": "wireframes/card/from-showcase.svg"
+      "wireframe": "wireframes/card/from-showcase.svg",
+      "htmlOutline": "<article class=\"card\">\n  <img src=\"…\" alt=\"\">\n  <h2>Title</h2>\n  <p><time datetime=\"2024-03-01\">1 March 2024</time> · 5 min read</p>\n  <p>Description…</p>\n  <a href=\"/post\">Read the story</a>\n</article>"
     }
   ],
   "collections": [

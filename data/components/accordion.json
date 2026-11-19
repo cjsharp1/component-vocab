@@ -55,19 +55,23 @@
   "variants": [
     {
       "caption": "Divided — gaps between panels",
-      "wireframe": "wireframes/accordion/variation-1.svg"
+      "wireframe": "wireframes/accordion/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Boxed — all panels in one bordered container",
-      "wireframe": "wireframes/accordion/variation-2.svg"
+      "wireframe": "wireframes/accordion/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Plus-minus icon — circular toggle buttons",
-      "wireframe": "wireframes/accordion/variation-3.svg"
+      "wireframe": "wireframes/accordion/variation-3.svg",
+      "htmlOutline": "<div class=\"accordion\">\n  <details name=\"faq\">\n    <summary>\n      Question one\n      <svg aria-hidden=\"true\">…</svg>\n    </summary>\n    <p>Answer…</p>\n  </details>\n  …\n</div>\n<!-- the summary is the toggle; the plus-minus icon is decorative, not a nested button -->"
     },
     {
       "caption": "Flush — minimal styling with dividers only",
-      "wireframe": "wireframes/accordion/variation-4.svg"
+      "wireframe": "wireframes/accordion/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

@@ -66,15 +66,18 @@
   "variants": [
     {
       "caption": "Rows — short and tall",
-      "wireframe": "wireframes/textarea/variation-1.svg"
+      "wireframe": "wireframes/textarea/variation-1.svg",
+      "htmlOutline": "<label for=\"note\">Note</label>\n<textarea id=\"note\" name=\"note\" rows=\"2\"></textarea>\n\n<label for=\"msg\">Message</label>\n<textarea id=\"msg\" name=\"msg\" rows=\"8\"></textarea>"
     },
     {
       "caption": "Character count — characters left below the field",
-      "wireframe": "wireframes/textarea/variation-2.svg"
+      "wireframe": "wireframes/textarea/variation-2.svg",
+      "htmlOutline": "<label for=\"msg\">Message</label>\n<textarea id=\"msg\" name=\"msg\" rows=\"4\" maxlength=\"500\" aria-describedby=\"msg-count\"></textarea>\n<p id=\"msg-count\" aria-live=\"polite\">500 characters left</p>"
     },
     {
       "caption": "Error — message above the field",
-      "wireframe": "wireframes/textarea/variation-3.svg"
+      "wireframe": "wireframes/textarea/variation-3.svg",
+      "htmlOutline": "<label for=\"msg\">Message</label>\n<p id=\"msg-error\">Enter a message</p>\n<textarea id=\"msg\" name=\"msg\" rows=\"4\" aria-invalid=\"true\" aria-describedby=\"msg-error\"></textarea>"
     }
   ],
   "collections": [],

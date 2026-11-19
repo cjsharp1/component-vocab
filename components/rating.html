@@ -42,7 +42,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;!-- display --&gt;
@@ -151,6 +151,14 @@
             </svg>
           </div>
           <figcaption>Value and count — text after the stars</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;p class="rating"&gt;
+  &lt;span aria-hidden="true"&gt;★★★★☆&lt;/span&gt;
+  &lt;span class="visually-hidden"&gt;4 out of 5 stars&lt;/span&gt;
+  4.0 &lt;span&gt;(128 reviews)&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -162,6 +170,13 @@
             </svg>
           </div>
           <figcaption>Single star — one star with the value</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;p class="rating"&gt;
+  &lt;span aria-hidden="true"&gt;★&lt;/span&gt;
+  4.0 &lt;span class="visually-hidden"&gt;out of 5 stars&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -177,6 +192,7 @@
             </svg>
           </div>
           <figcaption>Input — legend above selectable stars</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -195,6 +211,7 @@
             </svg>
           </div>
           <figcaption>Size — small and large</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

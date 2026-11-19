@@ -55,19 +55,23 @@
   "variants": [
     {
       "caption": "Items visible: 1",
-      "wireframe": "wireframes/carousel/variation-1.svg"
+      "wireframe": "wireframes/carousel/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Items visible: 2",
-      "wireframe": "wireframes/carousel/variation-2.svg"
+      "wireframe": "wireframes/carousel/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Items visible: 3",
-      "wireframe": "wireframes/carousel/variation-3.svg"
+      "wireframe": "wireframes/carousel/variation-3.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Navigation: Arrows only",
-      "wireframe": "wireframes/carousel/variation-4.svg"
+      "wireframe": "wireframes/carousel/variation-4.svg",
+      "htmlOutline": "<section aria-roledescription=\"carousel\" aria-label=\"Featured\">\n  <!-- no auto-rotation, so no pause button; slide changes are announced -->\n  <div aria-live=\"polite\">\n    <div role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 4\">…</div>\n  </div>\n  <button aria-label=\"Previous slide\">‹</button>\n  <button aria-label=\"Next slide\">›</button>\n</section>"
     }
   ],
   "collections": [],

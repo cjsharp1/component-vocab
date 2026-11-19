@@ -61,19 +61,23 @@
   "variants": [
     {
       "caption": "With image — thumbnail beside each article",
-      "wireframe": "wireframes/feed/variation-1.svg"
+      "wireframe": "wireframes/feed/variation-1.svg",
+      "htmlOutline": "<div role=\"feed\" aria-busy=\"false\">\n  <article aria-posinset=\"1\" aria-setsize=\"-1\">\n    <img src=\"…\" alt=\"\">\n    …\n  </article>\n  <article aria-posinset=\"2\" aria-setsize=\"-1\">…</article>\n</div>"
     },
     {
       "caption": "Cards — each article in a box",
-      "wireframe": "wireframes/feed/variation-2.svg"
+      "wireframe": "wireframes/feed/variation-2.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Load more — button instead of loading on scroll",
-      "wireframe": "wireframes/feed/variation-3.svg"
+      "wireframe": "wireframes/feed/variation-3.svg",
+      "htmlOutline": "<div role=\"feed\" aria-busy=\"false\">\n  <article aria-posinset=\"1\" aria-setsize=\"-1\">…</article>\n  <article aria-posinset=\"2\" aria-setsize=\"-1\">…</article>\n</div>\n<button type=\"button\">Load more</button>"
     },
     {
       "caption": "Automatic — placeholders while the next batch loads",
-      "wireframe": "wireframes/feed/variation-4.svg"
+      "wireframe": "wireframes/feed/variation-4.svg",
+      "htmlOutline": "<!-- aria-busy=\"true\" while the next batch loads -->\n<div role=\"feed\" aria-busy=\"true\">\n  <article aria-posinset=\"1\" aria-setsize=\"-1\">…</article>\n  <article aria-posinset=\"2\" aria-setsize=\"-1\">…</article>\n</div>\n<!-- placeholders, removed when the articles arrive -->\n<div aria-hidden=\"true\">…</div>"
     }
   ],
   "collections": [],

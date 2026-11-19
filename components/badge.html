@@ -46,7 +46,7 @@
       </dl>
     </section>
 
-    <section>
+    <section id="html-outline">
       <h2>HTML Outline</h2>
       <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
       <pre class="html-outline"><code>&lt;span class="badge"&gt;New&lt;/span&gt;
@@ -133,6 +133,7 @@
             </svg>
           </div>
           <figcaption>Type: Count (top-right)</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -146,6 +147,11 @@
             </svg>
           </div>
           <figcaption>Type: Dot</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;a href="/inbox"&gt;Inbox &lt;span class="badge"&gt;&lt;span class="visually-hidden"&gt;New messages&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;!-- the dot has no visible text, so hidden text carries its meaning --&gt;</code></pre>
+          </details>
         </figure>
 
         <figure>
@@ -160,6 +166,7 @@
             </svg>
           </div>
           <figcaption>Position: Top-left</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
 
         <figure>
@@ -174,6 +181,7 @@
             </svg>
           </div>
           <figcaption>Position: Inline (text label)</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
         </figure>
       </div>
     </section>

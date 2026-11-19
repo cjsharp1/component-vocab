@@ -56,15 +56,18 @@
   "variants": [
     {
       "caption": "Block quote — indented with a rule at the start",
-      "wireframe": "wireframes/quote/variation-1.svg"
+      "wireframe": "wireframes/quote/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Pull quote — large text beside the body",
-      "wireframe": "wireframes/quote/variation-2.svg"
+      "wireframe": "wireframes/quote/variation-2.svg",
+      "htmlOutline": "<p>Body text…</p>\n<!-- repeats a line from the article, so it is hidden from screen readers -->\n<aside class=\"pull-quote\" aria-hidden=\"true\">\n  <p>A line from the article.</p>\n</aside>\n<p>Body text…</p>"
     },
     {
       "caption": "Centered — large text with a quote mark",
-      "wireframe": "wireframes/quote/variation-3.svg"
+      "wireframe": "wireframes/quote/variation-3.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],

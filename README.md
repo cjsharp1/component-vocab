@@ -69,8 +69,9 @@ node scripts/build.mjs --check   # fail if output is stale, data is invalid, or 
 1. Pick the name with the rules above. Check `data/components/` and the aliases in them for collisions.
 2. Copy a similar file in `data/components/` to `<slug>.json` (lowercase, hyphenated) and edit it. A new entry can start as `"status": "draft"` with no wireframe.
 3. For a stable component, describe its wireframes in `wireframes/<slug>/spec.json` and run `node scripts/wireframe.mjs <slug>`. That writes `default.svg`, `thumbnail.svg` and `variation-N.svg` with hover labels placed inside the frame (the spec format is in the script's header comment; `wireframes/button/spec.json` is an example). Point to the files from the JSON. Older components have hand-drawn SVGs that use the same classes (`region`, `media-placeholder`, `interactive`, `optional`, `text-line`), with each `hover-target` rect followed immediately by its `label-group`.
-4. Set `group` to a slug from `data/groups.json`.
-5. Run `node scripts/structure.mjs`, then `node scripts/build.mjs`, then `node scripts/build.mjs --check`.
+4. Give each entry in `variants` either its own `htmlOutline` (when the variation changes elements, attributes, ARIA or structure) or `"sameMarkup": true` (when only the styling changes). `--check` fails if a variation has neither or both.
+5. Set `group` to a slug from `data/groups.json`.
+6. Run `node scripts/structure.mjs`, then `node scripts/build.mjs`, then `node scripts/build.mjs --check`.
 
 To rename or retire a page, change or delete its JSON and add `"old-slug": "new-slug"` to `data/redirects.json`.
 

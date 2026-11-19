@@ -49,19 +49,23 @@
   "variants": [
     {
       "caption": "Style: Linear bar",
-      "wireframe": "wireframes/progress-bar/variation-1.svg"
+      "wireframe": "wireframes/progress-bar/variation-1.svg",
+      "sameMarkup": true
     },
     {
       "caption": "Style: Circular ring",
-      "wireframe": "wireframes/progress-bar/variation-2.svg"
+      "wireframe": "wireframes/progress-bar/variation-2.svg",
+      "htmlOutline": "<span id=\"upload-label\">Uploading</span>\n<div role=\"progressbar\" aria-labelledby=\"upload-label\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-valuenow=\"60\">\n  <svg aria-hidden=\"true\">…</svg>\n  <span aria-hidden=\"true\">60%</span>\n</div>\n<!-- native <progress> can't draw a ring, so ARIA carries the value -->"
     },
     {
       "caption": "Style: Steps",
-      "wireframe": "wireframes/progress-bar/variation-3.svg"
+      "wireframe": "wireframes/progress-bar/variation-3.svg",
+      "htmlOutline": "<label for=\"setup\">Setup</label>\n<progress id=\"setup\" max=\"4\" value=\"2\" aria-valuetext=\"Step 2 of 4\">Step 2 of 4</progress>"
     },
     {
       "caption": "Size: Small",
-      "wireframe": "wireframes/progress-bar/variation-4.svg"
+      "wireframe": "wireframes/progress-bar/variation-4.svg",
+      "sameMarkup": true
     }
   ],
   "collections": [],
