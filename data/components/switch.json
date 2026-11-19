@@ -1,7 +1,7 @@
 {
   "slug": "switch",
   "name": "Switch",
-  "order": 30,
+  "order": 34,
   "status": "draft",
   "group": "actions",
   "description": "Takes effect immediately",

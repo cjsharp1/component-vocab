@@ -1,7 +1,7 @@
 {
   "slug": "textarea",
   "name": "Textarea",
-  "order": 53,
+  "order": 63,
   "status": "draft",
   "group": "forms",
   "description": "",
@@ -69,7 +69,8 @@
   },
   "frameworkNotes": "",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

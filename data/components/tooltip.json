@@ -1,7 +1,7 @@
 {
   "slug": "tooltip",
   "name": "Tooltip",
-  "order": 42,
+  "order": 47,
   "status": "stable",
   "group": "disclosure-overlays",
   "description": "A contextual hint that appears on hover or focus near a trigger element. Provides brief explanatory text without cluttering the interface.",
@@ -78,9 +78,7 @@
     "Ensure the trigger element is keyboard-accessible and the tooltip is announced by screen readers."
   ],
   "related": [],
-  "aliases": [
-    "Toggletip"
-  ],
+  "aliases": [],
   "frameworkSource": "csv",
   "frameworkNames": {
     "MUI": {

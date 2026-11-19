@@ -1,0 +1,66 @@
+{
+  "slug": "label",
+  "name": "Label",
+  "order": 61,
+  "status": "draft",
+  "group": "forms",
+  "description": "The word \"label\" is reserved for this",
+  "summary": "The word \"label\" is reserved for this",
+  "htmlElement": "",
+  "nativeHtml": "`<label>`",
+  "aria": "",
+  "researchNote": "The word \"label\" is reserved for this",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Form label"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Label"
+    },
+    "Fluent UI": {
+      "match": "same",
+      "name": "Label"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

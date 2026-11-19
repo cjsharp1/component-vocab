@@ -1,0 +1,64 @@
+{
+  "slug": "chip",
+  "name": "Chip",
+  "order": 53,
+  "status": "draft",
+  "group": "feedback-status",
+  "description": "Interactive: removable or selectable",
+  "summary": "Interactive: removable or selectable",
+  "htmlElement": "",
+  "nativeHtml": "`<button>`",
+  "aria": "",
+  "researchNote": "Interactive: removable or selectable",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Chip"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "same",
+      "name": "Chip"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

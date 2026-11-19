@@ -1,7 +1,7 @@
 {
   "slug": "badge",
   "name": "Badge",
-  "order": 45,
+  "order": 51,
   "status": "stable",
   "group": "feedback-status",
   "description": "A small indicator attached to another element — showing a count, status, or \"new\" marker. Draws attention to changes or unread items.",

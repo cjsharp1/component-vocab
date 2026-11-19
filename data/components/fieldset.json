@@ -1,0 +1,79 @@
+{
+  "slug": "fieldset",
+  "name": "Fieldset",
+  "order": 60,
+  "status": "draft",
+  "group": "forms",
+  "description": "",
+  "summary": "Draft entry",
+  "htmlElement": "",
+  "nativeHtml": "`<fieldset><legend>`",
+  "aria": "group",
+  "researchNote": "",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Fieldset"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Fieldset"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "form"
+  ],
+  "children": [
+    "text-input",
+    "textarea",
+    "select",
+    "combobox",
+    "checkbox",
+    "radio-group",
+    "slider",
+    "number-input",
+    "date-input",
+    "date-picker",
+    "file-upload",
+    "color-picker"
+  ]
+}

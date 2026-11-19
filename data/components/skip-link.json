@@ -1,0 +1,64 @@
+{
+  "slug": "skip-link",
+  "name": "Skip link",
+  "order": 7,
+  "status": "draft",
+  "group": "page-structure",
+  "description": "First focusable element",
+  "summary": "First focusable element",
+  "htmlElement": "",
+  "nativeHtml": "`<a href=\"#main\">`",
+  "aria": "",
+  "researchNote": "First focusable element",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "alias",
+      "name": "Skip Nav"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "same",
+      "name": "Skip link"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

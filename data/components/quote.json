@@ -1,0 +1,70 @@
+{
+  "slug": "quote",
+  "name": "Quote",
+  "order": 21,
+  "status": "draft",
+  "group": "content-display",
+  "description": "A pull quote repeats text already on the page, so hide the duplicate from screen readers",
+  "summary": "A pull quote repeats text already on the page, so hide the duplicate from screen readers",
+  "htmlElement": "",
+  "nativeHtml": "`<blockquote>`",
+  "aria": "",
+  "researchNote": "A pull quote repeats text already on the page, so hide the duplicate from screen readers",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Block quote",
+    "Pull quote"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "alias",
+      "name": "Blockquote"
+    },
+    "Radix Themes": {
+      "match": "alias",
+      "name": "Blockquote"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

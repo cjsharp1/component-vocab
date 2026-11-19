@@ -1,7 +1,7 @@
 {
   "slug": "number-input",
   "name": "Number input",
-  "order": 52,
+  "order": 69,
   "status": "draft",
   "group": "forms",
   "description": "The +/- control",
@@ -68,7 +68,8 @@
   },
   "frameworkNotes": "",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

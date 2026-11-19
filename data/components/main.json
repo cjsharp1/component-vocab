@@ -1,0 +1,62 @@
+{
+  "slug": "main",
+  "name": "Main",
+  "order": 3,
+  "status": "draft",
+  "group": "page-structure",
+  "description": "One per page",
+  "summary": "One per page",
+  "htmlElement": "",
+  "nativeHtml": "`<main>`",
+  "aria": "main",
+  "researchNote": "One per page",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "none",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

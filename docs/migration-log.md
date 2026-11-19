@@ -124,3 +124,4 @@ Usage notes, descriptions and element names that pointed at a retired or renamed
 - Badge no longer lists "Tag", "Label" or "Chip", and Tag no longer lists "Label": Tag, Label and Chip are their own components, and research R4 reserves "Label" for `<label>`.
 - "Stepper" stays an alias of Steps only; research §5 splits it into Steps (process) and Number input (quantity).
 - Logo cloud dropped the alias "Logo Cloud" (same as its name).
+- Tooltip no longer lists "Toggletip": research §5 keeps Toggletip separate because it behaves differently for assistive tech.

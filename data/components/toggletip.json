@@ -1,0 +1,64 @@
+{
+  "slug": "toggletip",
+  "name": "Toggletip",
+  "order": 48,
+  "status": "draft",
+  "group": "disclosure-overlays",
+  "description": "A tooltip opened by click. Keeping the name because it behaves differently for assistive tech",
+  "summary": "A tooltip opened by click. Keeping the name because it behaves differently for assistive tech",
+  "htmlElement": "",
+  "nativeHtml": "",
+  "aria": "",
+  "researchNote": "A tooltip opened by click. Keeping the name because it behaves differently for assistive tech",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "same",
+      "name": "Toggletip"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "alias",
+      "name": "Toggle Tip"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [],
+  "children": []
+}

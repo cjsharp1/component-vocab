@@ -1,7 +1,7 @@
 {
   "slug": "checkbox",
   "name": "Checkbox",
-  "order": 56,
+  "order": 66,
   "status": "draft",
   "group": "forms",
   "description": "",
@@ -69,7 +69,8 @@
   },
   "frameworkNotes": "",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

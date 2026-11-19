@@ -1,7 +1,7 @@
 {
   "slug": "date-input",
   "name": "Date input",
-  "order": 60,
+  "order": 70,
   "status": "draft",
   "group": "forms",
   "description": "Typed",
@@ -61,7 +61,8 @@
   },
   "frameworkNotes": "",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

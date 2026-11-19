@@ -1,0 +1,64 @@
+{
+  "slug": "toggle-button",
+  "name": "Toggle button",
+  "order": 35,
+  "status": "draft",
+  "group": "actions",
+  "description": "A pressed-state button, not a setting",
+  "summary": "A pressed-state button, not a setting",
+  "htmlElement": "",
+  "nativeHtml": "`<button aria-pressed>`",
+  "aria": "",
+  "researchNote": "A pressed-state button, not a setting",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "same",
+      "name": "Toggle Button"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Toggle"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "'Toggle' means a switch in Carbon and Atlassian, and a pressed button in shadcn/ui.",
+  "parents": [],
+  "children": []
+}

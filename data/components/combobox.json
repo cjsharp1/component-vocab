@@ -1,7 +1,7 @@
 {
   "slug": "combobox",
   "name": "Combobox",
-  "order": 55,
+  "order": 65,
   "status": "draft",
   "group": "forms",
   "description": "Input plus suggestion popup",
@@ -67,7 +67,8 @@
   },
   "frameworkNotes": "",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

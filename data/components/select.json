@@ -1,7 +1,7 @@
 {
   "slug": "select",
   "name": "Select",
-  "order": 47,
+  "order": 64,
   "status": "draft",
   "group": "forms",
   "description": "Choose a value",
@@ -73,7 +73,8 @@
   },
   "frameworkNotes": "Select 9 of 12.",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

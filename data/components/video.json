@@ -1,0 +1,67 @@
+{
+  "slug": "video",
+  "name": "Video",
+  "order": 18,
+  "status": "draft",
+  "group": "content-display",
+  "description": "Captions",
+  "summary": "Captions",
+  "htmlElement": "",
+  "nativeHtml": "`<video>`",
+  "aria": "",
+  "researchNote": "Captions",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [
+    "Video player"
+  ],
+  "frameworkSource": "none",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}

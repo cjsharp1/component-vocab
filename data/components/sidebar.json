@@ -1,7 +1,7 @@
 {
   "slug": "sidebar",
   "name": "Sidebar",
-  "order": 3,
+  "order": 4,
   "status": "stable",
   "group": "page-structure",
   "description": "Complementary content that is tangentially related to the main content. Used for sidebars, related links, advertising, or supplementary information.",

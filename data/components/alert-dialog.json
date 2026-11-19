@@ -1,7 +1,7 @@
 {
   "slug": "alert-dialog",
   "name": "Alert dialog",
-  "order": 39,
+  "order": 44,
   "status": "draft",
   "group": "disclosure-overlays",
   "description": "Demands a response",

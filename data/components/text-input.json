@@ -1,7 +1,7 @@
 {
   "slug": "text-input",
   "name": "Text input",
-  "order": 52,
+  "order": 62,
   "status": "draft",
   "group": "forms",
   "description": "",
@@ -70,7 +70,8 @@
   },
   "frameworkNotes": "Text field 5, Input 4, Text input 2, Form control 1. The canonical name loses this one.",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

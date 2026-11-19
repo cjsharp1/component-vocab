@@ -1,7 +1,7 @@
 {
   "slug": "drawer",
   "name": "Drawer",
-  "order": 40,
+  "order": 45,
   "status": "stable",
   "group": "disclosure-overlays",
   "description": "A panel that slides in from a screen edge, either overlaying content or pushing it aside. Used for navigation, filters, detail panels, or forms.",

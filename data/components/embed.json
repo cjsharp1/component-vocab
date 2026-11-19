@@ -1,7 +1,7 @@
 {
   "slug": "embed",
   "name": "Embed",
-  "order": 21,
+  "order": 28,
   "status": "stable",
   "group": "content-display",
   "description": "Third-party content embedded inline within the page. Videos, maps, social media posts, or interactive widgets from external services.",

@@ -1,7 +1,7 @@
 {
   "slug": "color-picker",
   "name": "Color picker",
-  "order": 63,
+  "order": 73,
   "status": "draft",
   "group": "forms",
   "description": "",
@@ -62,7 +62,8 @@
   },
   "frameworkNotes": "",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

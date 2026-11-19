@@ -1,7 +1,7 @@
 {
   "slug": "date-picker",
   "name": "Date picker",
-  "order": 61,
+  "order": 71,
   "status": "draft",
   "group": "forms",
   "description": "Calendar popup",
@@ -68,7 +68,8 @@
   },
   "frameworkNotes": "",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

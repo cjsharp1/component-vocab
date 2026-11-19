@@ -1,7 +1,7 @@
 {
   "slug": "radio-group",
   "name": "Radio group",
-  "order": 50,
+  "order": 67,
   "status": "draft",
   "group": "forms",
   "description": "The group is the unit",
@@ -72,7 +72,8 @@
   },
   "frameworkNotes": "Radio group 4, plain Radio (any form) 6.",
   "parents": [
-    "form"
+    "form",
+    "fieldset"
   ],
   "children": []
 }

@@ -1,0 +1,66 @@
+{
+  "slug": "meter",
+  "name": "Meter",
+  "order": 55,
+  "status": "draft",
+  "group": "feedback-status",
+  "description": "A value within a known range",
+  "summary": "A value within a known range",
+  "htmlElement": "",
+  "nativeHtml": "`<meter>`",
+  "aria": "Meter",
+  "researchNote": "A value within a known range",
+  "elements": [],
+  "configOptions": [],
+  "variants": [],
+  "collections": [],
+  "usageNotes": [],
+  "related": [],
+  "aliases": [],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "none"
+    },
+    "Radix Themes": {
+      "match": "none"
+    },
+    "shadcn/ui": {
+      "match": "none"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "different",
+      "name": "Gauges"
+    }
+  },
+  "frameworkNotes": "Only Apple ships a separate meter-type component.",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": []
+}
