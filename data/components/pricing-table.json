@@ -69,22 +69,22 @@
   ],
   "variants": [
     {
-      "caption": "3 columns — standard layout",
+      "caption": "3 columns \u2014 standard layout",
       "wireframe": "wireframes/pricing-table/variation-1.svg",
       "sameMarkup": true
     },
     {
-      "caption": "Highlighted — featured plan emphasized",
+      "caption": "Highlighted \u2014 featured plan emphasized",
       "wireframe": "wireframes/pricing-table/variation-2.svg",
-      "htmlOutline": "<ul class=\"pricing\">\n  …\n  <li>\n    <article>\n      <p>Most popular</p>\n      <h3>Pro</h3>\n      …\n    </article>\n  </li>\n  …\n</ul>"
+      "htmlOutline": "<ul class=\"pricing\">\n  \u2026\n  <li>\n    <article>\n      <p>Most popular</p>\n      <h3>Pro</h3>\n      \u2026\n    </article>\n  </li>\n  \u2026\n</ul>"
     },
     {
-      "caption": "With toggle — monthly/annual switch",
+      "caption": "With toggle \u2014 monthly/annual switch",
       "wireframe": "wireframes/pricing-table/variation-3.svg",
-      "htmlOutline": "<section aria-labelledby=\"plans\">\n  <h2 id=\"plans\">Plans</h2>\n  <fieldset>\n    <legend>Billing period</legend>\n    <label><input type=\"radio\" name=\"period\" value=\"monthly\" checked> Monthly</label>\n    <label><input type=\"radio\" name=\"period\" value=\"annual\"> Annual</label>\n  </fieldset>\n  <ul class=\"pricing\">…</ul>\n</section>"
+      "htmlOutline": "<section aria-labelledby=\"plans\">\n  <h2 id=\"plans\">Plans</h2>\n  <fieldset>\n    <legend>Billing period</legend>\n    <label><input type=\"radio\" name=\"period\" value=\"monthly\" checked> Monthly</label>\n    <label><input type=\"radio\" name=\"period\" value=\"annual\"> Annual</label>\n  </fieldset>\n  <ul class=\"pricing\">\u2026</ul>\n</section>"
     },
     {
-      "caption": "Table style — grid comparison",
+      "caption": "Table style \u2014 grid comparison",
       "wireframe": "wireframes/pricing-table/variation-4.svg",
       "htmlOutline": "<table>\n  <caption>Plans</caption>\n  <thead>\n    <tr><td></td><th scope=\"col\">Free</th><th scope=\"col\">Pro</th></tr>\n  </thead>\n  <tbody>\n    <tr><th scope=\"row\">Price</th><td>$0</td><td>$20 per month</td></tr>\n    <tr><th scope=\"row\">Feature</th><td>No</td><td>Yes</td></tr>\n  </tbody>\n</table>"
     }
@@ -94,7 +94,7 @@
     "Use for subscription/plan comparison.",
     "For general feature comparison (not pricing), use the comparison variant of <strong>Table</strong>.",
     "Highlight the recommended plan to guide user choice.",
-    "Keep feature lists consistent across plans — show what's included and what's not."
+    "Keep feature lists consistent across plans \u2014 show what's included and what's not."
   ],
   "formerNames": [
     "Pricing"
@@ -150,5 +150,19 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<section aria-labelledby=\"plans\">\n  <h2 id=\"plans\">Plans</h2>\n  <ul class=\"pricing\">\n    <li>\n      <article>\n        <h3>Pro</h3>\n        <p><data value=\"20\">$20</data> per month</p>\n        <ul><li>Feature</li></ul>\n        <a href=\"/signup?plan=pro\">Choose Pro</a>\n      </article>\n    </li>\n  </ul>\n</section>"
+  "htmlOutline": "<section aria-labelledby=\"plans\">\n  <h2 id=\"plans\">Plans</h2>\n  <ul class=\"pricing\">\n    <li>\n      <article>\n        <h3>Pro</h3>\n        <p><data value=\"20\">$20</data> per month</p>\n        <ul><li>Feature</li></ul>\n        <a href=\"/signup?plan=pro\">Choose Pro</a>\n      </article>\n    </li>\n  </ul>\n</section>",
+  "industrySources": [
+    {
+      "label": "Preline Pricing Tables",
+      "url": "https://preline.co/blocks/marketing/pricing-tables/"
+    },
+    {
+      "label": "Flowbite Pricing Tables",
+      "url": "https://flowbite.com/blocks/marketing/pricing/"
+    },
+    {
+      "label": "HyperUI Pricing",
+      "url": "https://hyperui.dev/components/marketing/pricing/"
+    }
+  ]
 }

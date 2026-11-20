@@ -188,12 +188,18 @@ export function componentPage(c, { prev, next, group, svg, names }) {
     structureSection(c, names),
     frameworkSection(c),
   ].join('\n');
+  const industrySources = (c.industrySources || []).length
+    ? (c.industrySources || [])
+        .map(s => `<a href="${esc(s.url)}">${esc(s.label)}</a>`)
+        .join('; ')
+    : '';
   const facts = [
     ['Also known as', alsoKnownAs(c)],
     c.htmlElement && ['Semantic element', c.htmlElement],
     c.nativeHtml && ['Native HTML', codeText(c.nativeHtml)],
     c.aria && ['ARIA pattern', codeText(c.aria)],
     c.researchNote && c.status !== 'draft' && ['Research note', codeText(c.researchNote)],
+    industrySources && ['Industry sources', industrySources],
     ['Category', `${group.letter}. ${group.label}`],
   ].filter(Boolean);
   const link = (target, label, dir) =>

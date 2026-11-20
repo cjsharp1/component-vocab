@@ -264,6 +264,28 @@
       "type": "string",
       "description": "Note column from research section 4."
     },
+    "industrySources": {
+      "type": "array",
+      "description": "Independent sources that use this name for the same page pattern (group J). At least two for names that rest on industry usage rather than the framework survey.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "url"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
     "frameworkNotes": {
       "type": "string",
       "description": "Notes column from the CSV."
