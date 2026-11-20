@@ -10,7 +10,7 @@ import { codeText } from './component.mjs';
 const here = dirname(fileURLToPath(import.meta.url));
 const fragment = name => readFileSync(join(here, name), 'utf8').replace(/\r\n/g, '\n');
 
-export const SYMBOL = { same: '●', alias: '◐', different: '○', none: '—' };
+export const SYMBOL = { same: '●', alias: '◐', different: '○', none: '—', unchecked: '?' };
 export const groupTitle = g => `${g.letter}. ${g.label}`;
 
 export function indexPage({ groups, components, systems, svg }) {
@@ -44,27 +44,29 @@ ${c.thumbnail ? indent(svg(c.thumbnail), 14) : '              <span class="thumb
     .join('\n');
 
   const cell = (c, s) => {
-    const v = c.frameworkNames[s] || { match: 'none' };
-    return v.match === 'none'
-      ? `<td class="match-none">—</td>`
-      : `<td class="match-${v.match}"><span class="match-symbol" aria-hidden="true">${SYMBOL[v.match]}</span> ${v.name}</td>`;
+    const v = c.frameworkNames[s] || { match: c.frameworkSource === 'csv' ? 'none' : 'unchecked' };
+    if (v.match === 'none') return `<td class="match-none">—</td>`;
+    if (v.match === 'unchecked') return `<td class="match-unchecked">?</td>`;
+    return `<td class="match-${v.match}"><span class="match-symbol" aria-hidden="true">${SYMBOL[v.match]}</span> ${v.name}</td>`;
   };
   const rows = components
     .map(c => `            <tr>
-              <td><a href="./components/${c.slug}.html">${c.name}</a>${c.frameworkSource === 'legacy' ? '<sup>*</sup>' : ''}</td>
+              <td><a href="./components/${c.slug}.html">${c.name}</a>${c.frameworkSource === 'legacy' ? '<sup>*</sup>' : ''}${c.frameworkSource === 'none' ? '<sup>?</sup>' : ''}</td>
 ${systems.map(s => `              ${cell(c, s)}`).join('\n')}
             </tr>`)
     .join('\n');
 
   const comparison = `    <section id="comparison">
       <h2>Cross-System Comparison</h2>
-      <p>How ${systems.length} design systems name each component, from <code>docs/research/framework-alignment.csv</code>. See <a href="https://github.com/cjsharp1/component-vocab/blob/main/docs/research/framework-survey.md">how the survey was done</a> for the index URLs, survey date, and what "—" means.</p>
+      <p>How ${systems.length} design systems name each component, from <code>docs/research/framework-alignment.csv</code>. See <a href="https://github.com/cjsharp1/component-vocab/blob/main/docs/research/framework-survey.md">how the survey was done</a> for the index URLs, survey date, and what "—" and "?" mean.</p>
       <ul class="match-key">
         <li><span class="match-symbol" aria-hidden="true">●</span> Same name</li>
         <li><span class="match-symbol" aria-hidden="true">◐</span> Known alternative name</li>
         <li><span class="match-symbol" aria-hidden="true">○</span> Related component under another name</li>
         <li><span class="match-symbol" aria-hidden="true">—</span> No equivalent on that system's index when surveyed</li>
-        <li><sup>*</sup> Not in the CSV: names come from the old page and cover 5 systems only</li>
+        <li><span class="match-symbol" aria-hidden="true">?</span> Not surveyed for that system</li>
+        <li><sup>*</sup> Not in the CSV: names come from the old page and cover 5 systems only (other columns are "?")</li>
+        <li><sup>?</sup> Not in the CSV: this component was never checked against the indexes</li>
       </ul>
       <div class="table-scroll-controls" hidden>
         <button type="button" data-scroll="-1" aria-controls="comparison-table">&larr; Previous systems</button>

@@ -58,22 +58,22 @@
   ],
   "variants": [
     {
-      "caption": "Standard \u2014 with photo",
+      "caption": "Standard — with photo",
       "wireframe": "wireframes/testimonial/variation-1.svg",
       "sameMarkup": true
     },
     {
-      "caption": "Large quote \u2014 featured",
+      "caption": "Large quote — featured",
       "wireframe": "wireframes/testimonial/variation-2.svg",
       "htmlOutline": "<!-- featured: no photo -->\n<figure class=\"testimonial\">\n  <blockquote>\n    <p>It saved us hours every week.</p>\n  </blockquote>\n  <figcaption>Ana Ruiz, Head of Ops</figcaption>\n</figure>"
     },
     {
       "caption": "No quote marks, with rating",
       "wireframe": "wireframes/testimonial/variation-3.svg",
-      "htmlOutline": "<figure class=\"testimonial\">\n  <blockquote>\n    <p>It saved us hours every week.</p>\n  </blockquote>\n  <figcaption>\n    Ana Ruiz, Head of Ops\n    <p role=\"img\" aria-label=\"Rated 5 out of 5\">\u2605\u2605\u2605\u2605\u2605</p>\n  </figcaption>\n</figure>"
+      "htmlOutline": "<figure class=\"testimonial\">\n  <blockquote>\n    <p>It saved us hours every week.</p>\n  </blockquote>\n  <figcaption>\n    Ana Ruiz, Head of Ops\n    <p role=\"img\" aria-label=\"Rated 5 out of 5\">★★★★★</p>\n  </figcaption>\n</figure>"
     },
     {
-      "caption": "Horizontal \u2014 photo on left",
+      "caption": "Horizontal — photo on left",
       "wireframe": "wireframes/testimonial/variation-4.svg",
       "sameMarkup": true
     }
@@ -82,13 +82,13 @@
     {
       "title": "Testimonial List Layout",
       "wireframe": "wireframes/testimonial/collection.svg",
-      "caption": "Testimonial List \u2014 3-column row layout"
+      "caption": "Testimonial List — 3-column row layout"
     }
   ],
   "usageNotes": [
     "Use for customer quotes and reviews. For general blockquotes within body text, use Quote. For pull-quotes, use Quote.",
     "Always wrap testimonial content in <code>&lt;blockquote&gt;</code> for semantic HTML.",
-    "Keep quotes concise \u2014 aim for 2-4 sentences. Long testimonials lose impact.",
+    "Keep quotes concise — aim for 2-4 sentences. Long testimonials lose impact.",
     "Include attribution context (role/company) to add credibility to the quote."
   ],
   "aliases": [],
@@ -104,28 +104,28 @@
       "match": "none"
     },
     "Carbon": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Polaris": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Atlassian": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Chakra UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Radix Themes": {
-      "match": "none"
+      "match": "unchecked"
     },
     "shadcn/ui": {
       "match": "none"
     },
     "Fluent UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "GOV.UK": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Apple HIG": {
       "match": "none"
@@ -140,7 +140,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<figure class=\"testimonial\">\n  <blockquote>\n    <p>It saved us hours every week.</p>\n  </blockquote>\n  <figcaption>\n    <img src=\"\u2026\" alt=\"\"> Ana Ruiz, Head of Ops\n  </figcaption>\n</figure>",
+  "htmlOutline": "<figure class=\"testimonial\">\n  <blockquote>\n    <p>It saved us hours every week.</p>\n  </blockquote>\n  <figcaption>\n    <img src=\"…\" alt=\"\"> Ana Ruiz, Head of Ops\n  </figcaption>\n</figure>",
   "industrySources": [
     {
       "label": "Preline Testimonials",

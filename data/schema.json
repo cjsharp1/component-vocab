@@ -225,11 +225,11 @@
         "legacy",
         "none"
       ],
-      "description": "csv: docs/research/framework-alignment.csv. legacy: the old page's 5-system row (component not in the CSV)."
+      "description": "csv: docs/research/framework-alignment.csv. legacy: the old page's 5-system row (Bootstrap, MUI, Ant Design, Apple HIG, shadcn/ui; component not in the CSV). none: never checked against the indexes."
     },
     "frameworkNames": {
       "type": "object",
-      "description": "Per design system. match: same (CSV ●), alias (◐, a known alternative name), different (○, a related component under another name), none (—). The symbol meanings are inferred from the CSV; the research doc does not define them.",
+      "description": "Per design system. match: same (CSV ●), alias (◐, a known alternative name), different (○, a related component under another name), none (—, checked and not found), unchecked (?, never checked). The symbol meanings are inferred from the CSV; the research doc does not define them.",
       "additionalProperties": {
         "type": "object",
         "additionalProperties": false,
@@ -242,7 +242,8 @@
               "same",
               "alias",
               "different",
-              "none"
+              "none",
+              "unchecked"
             ]
           },
           "name": {

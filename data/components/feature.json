@@ -5,7 +5,7 @@
   "status": "stable",
   "group": "page-patterns",
   "description": "A single feature or benefit highlight. Presents an icon, heading, and short description to explain a capability or value proposition. Read in place, not a link to elsewhere.",
-  "summary": "Single feature/benefit \u2014 icon, heading, description",
+  "summary": "Single feature/benefit — icon, heading, description",
   "htmlElement": "<code>&lt;div&gt;</code>",
   "elements": [
     {
@@ -58,12 +58,12 @@
       "sameMarkup": true
     },
     {
-      "caption": "Minimal \u2014 icon + heading only",
+      "caption": "Minimal — icon + heading only",
       "wireframe": "wireframes/feature/variation-3.svg",
-      "htmlOutline": "<ul class=\"feature-list\">\n  <li class=\"feature\">\n    <svg aria-hidden=\"true\">\u2026</svg>\n    <h3>Fast setup</h3>\n  </li>\n</ul>"
+      "htmlOutline": "<ul class=\"feature-list\">\n  <li class=\"feature\">\n    <svg aria-hidden=\"true\">…</svg>\n    <h3>Fast setup</h3>\n  </li>\n</ul>"
     },
     {
-      "caption": "Grid (2x2) \u2014 compact spacing",
+      "caption": "Grid (2x2) — compact spacing",
       "wireframe": "wireframes/feature/variation-4.svg",
       "sameMarkup": true
     }
@@ -72,13 +72,13 @@
     {
       "title": "Feature List Layout",
       "wireframe": "wireframes/feature/collection.svg",
-      "caption": "Feature List \u2014 3-column row layout"
+      "caption": "Feature List — 3-column row layout"
     }
   ],
   "usageNotes": [
     "Use Feature for explaining capabilities/benefits. For content previews that link somewhere, use Card. For statistics, use Stats.",
     "Icons should be consistent in size and style across all features in a collection.",
-    "Keep descriptions concise \u2014 1-3 sentences. Features are meant to be scannable.",
+    "Keep descriptions concise — 1-3 sentences. Features are meant to be scannable.",
     "Common use case: landing page \"Why choose us\" sections with 3-4 features in a row."
   ],
   "aliases": [],
@@ -94,28 +94,28 @@
       "match": "none"
     },
     "Carbon": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Polaris": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Atlassian": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Chakra UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Radix Themes": {
-      "match": "none"
+      "match": "unchecked"
     },
     "shadcn/ui": {
       "match": "none"
     },
     "Fluent UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "GOV.UK": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Apple HIG": {
       "match": "none"
@@ -130,7 +130,7 @@
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<ul class=\"feature-list\">\n  <li class=\"feature\">\n    <svg aria-hidden=\"true\">\u2026</svg>\n    <h3>Fast setup</h3>\n    <p>Short benefit description.</p>\n  </li>\n</ul>",
+  "htmlOutline": "<ul class=\"feature-list\">\n  <li class=\"feature\">\n    <svg aria-hidden=\"true\">…</svg>\n    <h3>Fast setup</h3>\n    <p>Short benefit description.</p>\n  </li>\n</ul>",
   "industrySources": [
     {
       "label": "Preline Feature Sections",

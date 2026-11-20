@@ -687,7 +687,8 @@ body > footer p { margin: 0; max-width: none; }
 .match-symbol { font-family: var(--font-mono); color: var(--accent); }
 #comparison table { min-width: 1400px; font-size: 0.85rem; }
 #comparison td, #comparison th { white-space: nowrap; }
-#comparison td.match-none { color: var(--ink-3); }
+#comparison td.match-none,
+#comparison td.match-unchecked { color: var(--ink-3); }
 #comparison td.match-different .match-symbol { color: var(--ink-3); }
 #comparison sup { color: var(--accent); }
 

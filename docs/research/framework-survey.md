@@ -34,9 +34,12 @@ In the CSV and on the site:
 | ● | Same name (or an obvious same-name listing) |
 | ◐ | Known alternative name for the same idea |
 | ○ | Related component under another name |
-| — | No equivalent listed on that system's index |
+| — | No equivalent listed on that system's index when surveyed |
+| ? | Not surveyed for that system (or for that component at all) |
 
 "—" means the name was not found on the index at survey time. It does **not** prove the product lacks the pattern (for example under a different product name, or only in a package that the index omits).
+
+"?" means the cell was never checked. Components with `frameworkSource: "none"` show "?" in every column. Components with `frameworkSource: "legacy"` keep results for the five systems from the old hand-written pages (Bootstrap, MUI, Ant Design, Apple HIG, shadcn/ui) and show "?" for the other seven.
 
 ## Apple HIG
 

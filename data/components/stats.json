@@ -53,9 +53,9 @@
   ],
   "variants": [
     {
-      "caption": "Medium \u2014 with icon",
+      "caption": "Medium — with icon",
       "wireframe": "wireframes/stats/variation-1.svg",
-      "htmlOutline": "<dl class=\"stats\">\n  <div>\n    <svg aria-hidden=\"true\">\u2026</svg>\n    <dt>Active users</dt>\n    <dd>12,000</dd>\n  </div>\n  \u2026\n</dl>"
+      "htmlOutline": "<dl class=\"stats\">\n  <div>\n    <svg aria-hidden=\"true\">…</svg>\n    <dt>Active users</dt>\n    <dd>12,000</dd>\n  </div>\n  …\n</dl>"
     },
     {
       "caption": "Large (hero-sized)",
@@ -63,9 +63,9 @@
       "sameMarkup": true
     },
     {
-      "caption": "Small \u2014 with trend",
+      "caption": "Small — with trend",
       "wireframe": "wireframes/stats/variation-3.svg",
-      "htmlOutline": "<dl class=\"stats\">\n  <div>\n    <dt>Active users</dt>\n    <dd>12,000</dd>\n    <dd><span aria-hidden=\"true\">\u2191</span> 8% <span class=\"visually-hidden\">increase</span></dd>\n  </div>\n  \u2026\n</dl>"
+      "htmlOutline": "<dl class=\"stats\">\n  <div>\n    <dt>Active users</dt>\n    <dd>12,000</dd>\n    <dd><span aria-hidden=\"true\">↑</span> 8% <span class=\"visually-hidden\">increase</span></dd>\n  </div>\n  …\n</dl>"
     },
     {
       "caption": "Grid (2x2)",
@@ -77,14 +77,14 @@
     {
       "title": "Stats Layout",
       "wireframe": "wireframes/stats/collection.svg",
-      "caption": "Stats \u2014 4 stats in a horizontal row"
+      "caption": "Stats — 4 stats in a horizontal row"
     }
   ],
   "usageNotes": [
     "Use for key metrics that need emphasis. Group in Stats (collection) for impact. For detailed data, use Table.",
-    "Keep labels short and descriptive \u2014 1-3 words.",
+    "Keep labels short and descriptive — 1-3 words.",
     "Format large numbers for readability (e.g., 1.5M instead of 1,500,000).",
-    "Trend indicators should be meaningful \u2014 show percentage change and time period."
+    "Trend indicators should be meaningful — show percentage change and time period."
   ],
   "formerNames": [
     "Stat"
@@ -105,28 +105,28 @@
       "name": "Statistic"
     },
     "Carbon": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Polaris": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Atlassian": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Chakra UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Radix Themes": {
-      "match": "none"
+      "match": "unchecked"
     },
     "shadcn/ui": {
       "match": "none"
     },
     "Fluent UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "GOV.UK": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Apple HIG": {
       "match": "none"

@@ -90,6 +90,34 @@ export function validate(root = process.cwd()) {
       else if (!(bySlug.get(ch).parents || []).includes(data.slug)) errors.push(`${data.slug}.json: lists ${ch} as a child, but ${ch} does not list it as a parent`);
     }
   }
+  // Survey cells: "none" means checked-and-absent; "unchecked" means never checked.
+  // frameworkSource "none" must not claim a checked absence. Legacy pages only
+  // surveyed Bootstrap, MUI, Ant Design, Apple HIG and shadcn/ui.
+  const legacySystems = new Set(['Bootstrap', 'MUI', 'Ant Design', 'Apple HIG', 'shadcn/ui']);
+  for (const { data } of components) {
+    const names = data.frameworkNames || {};
+    for (const [system, v] of Object.entries(names)) {
+      const hasName = Object.prototype.hasOwnProperty.call(v, 'name');
+      if (v.match === 'none' || v.match === 'unchecked') {
+        if (hasName) errors.push(`${data.slug}.json: frameworkNames["${system}"] with match "${v.match}" must not include a name`);
+      } else if (!hasName) {
+        errors.push(`${data.slug}.json: frameworkNames["${system}"] with match "${v.match}" needs a name`);
+      }
+    }
+    if (data.frameworkSource === 'none') {
+      for (const [system, v] of Object.entries(names)) {
+        if (v.match === 'none') errors.push(`${data.slug}.json: frameworkSource "none" cannot use match "none" for "${system}" (use "unchecked")`);
+        else if (v.match !== 'unchecked') errors.push(`${data.slug}.json: frameworkSource "none" must use match "unchecked" for every system (got "${v.match}" for "${system}")`);
+      }
+    }
+    if (data.frameworkSource === 'legacy') {
+      for (const [system, v] of Object.entries(names)) {
+        if (!legacySystems.has(system) && v.match === 'none') {
+          errors.push(`${data.slug}.json: legacy survey did not cover "${system}"; use match "unchecked" instead of "none"`);
+        }
+      }
+    }
+  }
   const orders = components.map(c => c.data.order).sort((a, b) => a - b);
   orders.forEach((o, i) => { if (o !== i + 1) errors.push(`order values are not 1..${orders.length} without gaps (found ${o} at position ${i + 1})`); });
   return { count: components.length, errors: [...new Set(errors)] };

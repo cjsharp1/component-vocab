@@ -80,7 +80,7 @@ To rename or retire a page, change or delete its JSON and add `"old-slug": "new-
 ## Documents
 
 - `docs/research/`: the research inputs (consensus list, naming collisions, gap vocabulary, framework survey).
-- `docs/research/framework-survey.md`: when the 12 indexes were read, which URLs, what "—" means, and why Apple HIG mappings are approximate.
+- `docs/research/framework-survey.md`: when the 12 indexes were read, which URLs, what "—" and "?" mean, and why Apple HIG mappings are approximate.
 - `docs/scope.md`: names that appear in several frameworks but aren't in the list, and why.
 - `docs/reconciliation.md`: how the original 50 pages mapped to the research list, plus the signed-off decisions.
 - `docs/migration-log.md`: how the data was migrated from the original 50 hand-written pages, including every legacy-vs-CSV disagreement and what was dropped.
