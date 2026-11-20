@@ -23,7 +23,10 @@
 //                                                                          small icon glyph; x/y/w/h is its hover box
 //   { "type": "line", "x", "y", "w", "weight"?: 1|2, "label"?, "at"? }      text placeholder
 //   { "type": "lines", "x", "y", "w", "count", "gap"?: 15, "label"? }       stacked text lines (last one shorter)
-//   { "type": "text", "x", "y", "value", "size"?: 12, "anchor"?: "start"|"middle"|"end" }
+//   { "type": "text", "x", "y", "value", "size"?: 12, "anchor"?: "start"|"middle"|"end",
+//     "fill"?: "#fff", "weight"?: "bold" }
+//                                                                          fill="#fff" for text on a filled shape
+//                                                                          (css honors that attribute)
 // "at": "above" (default) or "below" places the label. "filled" draws an
 // interactive-colored solid shape (a selected state).
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -37,7 +40,13 @@ function bbox(s) {
     case 'circle': return { x: s.cx - s.r, y: s.cy - s.r, w: 2 * s.r, h: 2 * s.r };
     case 'line': return { x: s.x, y: s.y - 6, w: s.w, h: 12 };
     case 'lines': return { x: s.x, y: s.y - 6, w: s.w, h: (s.count - 1) * (s.gap ?? 15) + 12 };
-    case 'text': return { x: s.x - 10, y: s.y - 12, w: 20, h: 16 };
+    case 'text': {
+      const size = s.size ?? 12;
+      const w = Math.max(20, (s.value?.length ?? 1) * size * 0.55);
+      const anchor = s.anchor ?? 'middle';
+      const x = anchor === 'start' ? s.x : anchor === 'end' ? s.x - w : s.x - w / 2;
+      return { x, y: s.y - size, w, h: size * 1.2 };
+    }
     default: return { x: s.x, y: s.y, w: s.w, h: s.h };
   }
 }
@@ -79,7 +88,10 @@ function shapeSvg(s, thumb) {
       return Array.from({ length: s.count }, (_, i) => shapeSvg({ type: 'line', x: s.x, y: s.y + i * gap, w: i === s.count - 1 && s.count > 1 ? r(s.w * 0.7) : s.w }, thumb)).join('\n');
     }
     case 'text':
-      return `<text ${attrs({ x: s.x, y: s.y, 'font-size': s.size ?? 12, 'text-anchor': s.anchor ?? 'middle' })}>${s.value}</text>`;
+      return `<text ${attrs({
+        x: s.x, y: s.y, 'font-size': s.size ?? 12, 'text-anchor': s.anchor ?? 'middle',
+        fill: s.fill, 'font-weight': s.weight,
+      })}>${s.value}</text>`;
     default:
       throw new Error(`unknown shape type ${s.type}`);
   }

@@ -1,5 +1,5 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <circle class="region" cx="120" cy="100" r="8" />
-  <circle class="region" cx="200" cy="100" r="14" />
-  <circle class="region" cx="290" cy="100" r="22" />
+  <path class="interactive" d="M82 90a7 7 0 1 1-0.01 0 M87 101L94 108" stroke-linecap="round" stroke-linejoin="round" />
+  <path class="interactive" d="M178 86a12 12 0 1 1-0.01 0 M187 106L198 117" stroke-linecap="round" stroke-linejoin="round" />
+  <path class="interactive" d="M276 78a18 18 0 1 1-0.01 0 M290 108L306 124" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

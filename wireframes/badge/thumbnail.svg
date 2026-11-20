@@ -1,4 +1,6 @@
 <svg viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
-  <rect class="interactive" x="80" y="30" width="60" height="20" rx="4"/>
-  <circle class="region" cx="145" cy="35" r="8"/>
+  <rect class="interactive" x="80" y="18" width="70" height="44" rx="4" />
+  <path class="interactive" d="M112 34a9 9 0 1 1-0.01 0 M118 48L128 58" stroke-linecap="round" stroke-linejoin="round" />
+  <circle class="interactive" cx="150" cy="24" r="9" style="fill: var(--wireframe-interactive)" />
+  <text x="150" y="28" font-size="11" text-anchor="middle" fill="#fff" font-weight="bold">3</text>
 </svg>

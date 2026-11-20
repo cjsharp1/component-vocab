@@ -6,8 +6,8 @@
     <text class="label-text" x="215" y="112" text-anchor="middle">Selected</text>
   </g>
   <rect class="interactive" x="150" y="132" width="130" height="36" rx="18" style="fill: var(--wireframe-interactive); fill-opacity: 0.85" />
-  <text x="172" y="155" font-size="14" text-anchor="middle">✓</text>
-  <line class="text-line" x1="188" y1="150" x2="258" y2="150" />
+  <text x="178" y="156" font-size="16" text-anchor="middle" fill="#fff">✓</text>
+  <line class="text-line" x1="194" y1="150" x2="258" y2="150" />
   <rect class="hover-target" x="310" y="132" width="110" height="36" fill="none" stroke="none" style="cursor:pointer" />
   <g class="label-group">
     <line class="label-line" x1="365" y1="170" x2="365" y2="182" />
