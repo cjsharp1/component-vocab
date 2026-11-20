@@ -58,22 +58,22 @@
   ],
   "variants": [
     {
-      "caption": "Centered \u2014 default layout",
+      "caption": "Centered — default layout",
       "wireframe": "wireframes/call-to-action/variation-1.svg",
       "sameMarkup": true
     },
     {
-      "caption": "Left-aligned \u2014 content left",
+      "caption": "Left-aligned — content left",
       "wireframe": "wireframes/call-to-action/variation-2.svg",
       "sameMarkup": true
     },
     {
-      "caption": "Split \u2014 content left, image right",
+      "caption": "Split — content left, image right",
       "wireframe": "wireframes/call-to-action/variation-3.svg",
-      "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <div>\n    <h2 id=\"cta-title\">Ready to start?</h2>\n    <p>Short supporting line.</p>\n    <div class=\"button-group\">\n      <a href=\"/signup\">Sign up</a>\n    </div>\n  </div>\n  <img src=\"\u2026\" alt=\"\">\n</section>"
+      "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <div>\n    <h2 id=\"cta-title\">Ready to start?</h2>\n    <p>Short supporting line.</p>\n    <div class=\"button-group\">\n      <a href=\"/signup\">Sign up</a>\n    </div>\n  </div>\n  <img src=\"…\" alt=\"\">\n</section>"
     },
     {
-      "caption": "Background image \u2014 with overlay",
+      "caption": "Background image — with overlay",
       "wireframe": "wireframes/call-to-action/variation-4.svg",
       "sameMarkup": true
     }
@@ -103,28 +103,28 @@
       "match": "none"
     },
     "Carbon": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Polaris": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Atlassian": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Chakra UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Radix Themes": {
-      "match": "none"
+      "match": "unchecked"
     },
     "shadcn/ui": {
       "match": "none"
     },
     "Fluent UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "GOV.UK": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Apple HIG": {
       "match": "none"

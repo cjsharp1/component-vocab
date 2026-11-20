@@ -126,29 +126,29 @@
       "name": "Typography"
     },
     "Carbon": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Polaris": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Atlassian": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Chakra UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Radix Themes": {
-      "match": "none"
+      "match": "unchecked"
     },
     "shadcn/ui": {
       "match": "alias",
       "name": "Typography"
     },
     "Fluent UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "GOV.UK": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Apple HIG": {
       "match": "none"

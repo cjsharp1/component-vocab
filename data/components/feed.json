@@ -91,40 +91,40 @@
   "frameworkSource": "none",
   "frameworkNames": {
     "MUI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Bootstrap": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Ant Design": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Carbon": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Polaris": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Atlassian": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Chakra UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Radix Themes": {
-      "match": "none"
+      "match": "unchecked"
     },
     "shadcn/ui": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Fluent UI": {
-      "match": "none"
+      "match": "unchecked"
     },
     "GOV.UK": {
-      "match": "none"
+      "match": "unchecked"
     },
     "Apple HIG": {
-      "match": "none"
+      "match": "unchecked"
     }
   },
   "frameworkNotes": "",

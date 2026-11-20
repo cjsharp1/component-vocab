@@ -90,7 +90,7 @@ ${c.usageNotes.map(n => `        <li>${n}</li>`).join('\n')}
 export function alsoKnownAs(c) {
   const byName = new Map();
   for (const [system, v] of Object.entries(c.frameworkNames || {})) {
-    if (v.match === 'none') continue;
+    if (v.match === 'none' || v.match === 'unchecked') continue;
     if (!byName.has(v.name)) byName.set(v.name, []);
     byName.get(v.name).push(system);
   }
@@ -98,7 +98,9 @@ export function alsoKnownAs(c) {
   const parts = [];
   if (c.aliases?.length) parts.push(c.aliases.join(', '));
   if (systems.length) parts.push(`In design systems: ${systems.join('; ')}`);
-  return parts.length ? parts.join('. ') : 'No equivalent in the surveyed design systems';
+  if (parts.length) return parts.join('. ');
+  if (c.frameworkSource === 'none') return 'Not yet surveyed against the design systems';
+  return 'No equivalent in the surveyed design systems';
 }
 
 // Small page left at a retired or renamed slug so old links keep working.
@@ -130,11 +132,12 @@ export const codeText = s => esc(s).replace(/`([^`]+)`/g, '<code>$1</code>');
 const MATCH_LABEL = { same: 'Same name', alias: 'Known alternative name', different: 'Related component under another name' };
 
 function frameworkSection(c) {
-  const rows = Object.entries(c.frameworkNames).filter(([, v]) => v.match !== 'none');
+  const rows = Object.entries(c.frameworkNames).filter(([, v]) => v.match !== 'none' && v.match !== 'unchecked');
+  const unchecked = Object.entries(c.frameworkNames).filter(([, v]) => v.match === 'unchecked').map(([s]) => s);
   const source = c.frameworkSource === 'legacy'
-    ? 'Not in <code>docs/research/framework-alignment.csv</code>; these names come from the old page and cover 5 systems.'
+    ? `Not in <code>docs/research/framework-alignment.csv</code>; these names come from the old page and cover 5 systems (Bootstrap, MUI, Ant Design, Apple HIG, shadcn/ui). Columns for other systems are marked "?" (not surveyed).`
     : c.frameworkSource === 'none'
-      ? 'Not in <code>docs/research/framework-alignment.csv</code>.'
+      ? 'Not in <code>docs/research/framework-alignment.csv</code>; this component was never checked against the 12 indexes (shown as "?" in the comparison table).'
       : `From <code>docs/research/framework-alignment.csv</code>: ${rows.length} of ${Object.keys(c.frameworkNames).length} systems ship it.`;
   return `    <section>
       <h2>Design System Names</h2>
@@ -147,6 +150,7 @@ ${rows.length ? `      <table>
 ${rows.map(([s, v]) => `          <tr><td>${s}</td><td>${v.name}</td><td>${MATCH_LABEL[v.match]}</td></tr>`).join('\n')}
         </tbody>
       </table>
+` : ''}${unchecked.length && c.frameworkSource === 'legacy' ? `      <p>Not surveyed: ${unchecked.join(', ')}.</p>
 ` : ''}${c.frameworkNotes ? `      <p>${esc(c.frameworkNotes)}</p>\n` : ''}    </section>
 `;
 }
