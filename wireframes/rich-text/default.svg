@@ -35,12 +35,12 @@
     <rect class="label-bg" x="772" y="255" width="28" height="20" />
     <text class="label-text" x="786" y="269" text-anchor="middle">List</text>
   </g>
-  <circle cx="110" cy="238" r="3" fill="#666" />
+  <circle class="inverse" cx="110" cy="238" r="3" />
   <line class="text-line" x1="130" y1="235" x2="580" y2="235" />
-  <circle cx="110" cy="258" r="3" fill="#666" />
+  <circle class="inverse" cx="110" cy="258" r="3" />
   <line class="text-line" x1="130" y1="255" x2="600" y2="255" />
-  <circle cx="110" cy="278" r="3" fill="#666" />
+  <circle class="inverse" cx="110" cy="278" r="3" />
   <line class="text-line" x1="130" y1="275" x2="560" y2="275" />
-  <circle cx="110" cy="298" r="3" fill="#666" />
+  <circle class="inverse" cx="110" cy="298" r="3" />
   <line class="text-line" x1="130" y1="295" x2="590" y2="295" />
 </svg>

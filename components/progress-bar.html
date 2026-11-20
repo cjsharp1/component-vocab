@@ -88,7 +88,7 @@
           <line class="text-line" x1="110" y1="135" x2="185" y2="135" />
 
           <!-- Progress bar container -->
-          <rect x="100" y="170" width="600" height="30" rx="15" fill="#e0e0e0" stroke="#999" stroke-width="1" />
+          <rect class="track" x="100" y="170" width="600" height="30" rx="15" stroke-width="1" />
 
           <!-- Bar/indicator (filled portion) -->
           <rect class="hover-target" x="100" y="170" width="360" height="30" fill="none" stroke="none" style="cursor:pointer" />
@@ -97,7 +97,7 @@
             <rect class="label-bg" x="206" y="227" width="148" height="20" />
             <text class="label-text" x="280" y="241" text-anchor="middle">Bar/indicator</text>
           </g>
-          <rect x="100" y="170" width="360" height="30" rx="15" fill="#4a90d9" />
+          <rect class="filled" x="100" y="170" width="360" height="30" rx="15" />
         </svg>
       </div>
     </section>
@@ -126,9 +126,9 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Linear bar -->
-              <rect x="50" y="85" width="300" height="20" rx="10" fill="#e0e0e0" />
-              <rect x="50" y="85" width="180" height="20" rx="10" fill="#4a90d9" />
-              <text x="200" y="145" text-anchor="middle" font-size="14" fill="#666">60%</text>
+              <rect class="track" x="50" y="85" width="300" height="20" rx="10" />
+              <rect class="filled" x="50" y="85" width="180" height="20" rx="10" />
+              <text x="200" y="145" text-anchor="middle" font-size="14">60%</text>
             </svg>
           </div>
           <figcaption>Style: Linear bar</figcaption>
@@ -140,9 +140,9 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Circular ring -->
-              <circle cx="200" cy="100" r="50" fill="none" stroke="#e0e0e0" stroke-width="10" />
-              <circle cx="200" cy="100" r="50" fill="none" stroke="#4a90d9" stroke-width="10" stroke-dasharray="188 314" stroke-dashoffset="78.5" transform="rotate(-90 200 100)" />
-              <text x="200" y="108" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">60%</text>
+              <circle cx="200" cy="100" r="50" fill="none" stroke="var(--wireframe-border)" stroke-width="10" />
+              <circle class="interactive" cx="200" cy="100" r="50" fill="none" stroke-width="10" stroke-dasharray="188 314" stroke-dashoffset="78.5" transform="rotate(-90 200 100)" />
+              <text x="200" y="108" text-anchor="middle" font-size="18" font-weight="bold">60%</text>
             </svg>
           </div>
           <figcaption>Style: Circular ring</figcaption>
@@ -162,13 +162,13 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Steps -->
-              <circle cx="80" cy="100" r="15" fill="#4a90d9" stroke="none" />
-              <line x1="95" y1="100" x2="145" y2="100" stroke="#4a90d9" stroke-width="3" />
-              <circle cx="160" cy="100" r="15" fill="#4a90d9" stroke="none" />
-              <line x1="175" y1="100" x2="225" y2="100" stroke="#e0e0e0" stroke-width="3" />
-              <circle cx="240" cy="100" r="15" fill="none" stroke="#e0e0e0" stroke-width="3" />
-              <line x1="255" y1="100" x2="305" y2="100" stroke="#e0e0e0" stroke-width="3" />
-              <circle cx="320" cy="100" r="15" fill="none" stroke="#e0e0e0" stroke-width="3" />
+              <circle class="filled" cx="80" cy="100" r="15" stroke="none" />
+              <line class="interactive" x1="95" y1="100" x2="145" y2="100" stroke-width="3" />
+              <circle class="filled" cx="160" cy="100" r="15" stroke="none" />
+              <line x1="175" y1="100" x2="225" y2="100" stroke="var(--wireframe-border)" stroke-width="3" />
+              <circle cx="240" cy="100" r="15" fill="none" stroke="var(--wireframe-border)" stroke-width="3" />
+              <line x1="255" y1="100" x2="305" y2="100" stroke="var(--wireframe-border)" stroke-width="3" />
+              <circle cx="320" cy="100" r="15" fill="none" stroke="var(--wireframe-border)" stroke-width="3" />
             </svg>
           </div>
           <figcaption>Style: Steps</figcaption>
@@ -184,9 +184,9 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Small progress -->
-              <rect x="80" y="90" width="240" height="12" rx="6" fill="#e0e0e0" />
-              <rect x="80" y="90" width="120" height="12" rx="6" fill="#4a90d9" />
-              <text x="200" y="130" text-anchor="middle" font-size="12" fill="#666">50%</text>
+              <rect class="track" x="80" y="90" width="240" height="12" rx="6" />
+              <rect class="filled" x="80" y="90" width="120" height="12" rx="6" />
+              <text x="200" y="130" text-anchor="middle" font-size="12">50%</text>
             </svg>
           </div>
           <figcaption>Size: Small</figcaption>

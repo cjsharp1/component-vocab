@@ -1,8 +1,8 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="0" y="0" width="400" height="200" />
-  <line class="text-line" x1="30" y1="95" x2="80" y2="95" style="stroke:#0066cc" />
-  <path d="M 90 90 L 100 95 L 90 100" stroke="#666" stroke-width="1.5" fill="none" />
-  <line class="text-line" x1="110" y1="95" x2="180" y2="95" style="stroke:#0066cc" />
-  <path d="M 190 90 L 200 95 L 190 100" stroke="#666" stroke-width="1.5" fill="none" />
+  <line class="text-line" x1="30" y1="95" x2="80" y2="95" style="stroke: var(--wireframe-interactive)" />
+  <path class="interactive" d="M 90 90 L 100 95 L 90 100" stroke-width="1.5" fill="none" />
+  <line class="text-line" x1="110" y1="95" x2="180" y2="95" style="stroke: var(--wireframe-interactive)" />
+  <path class="interactive" d="M 190 90 L 200 95 L 190 100" stroke-width="1.5" fill="none" />
   <line class="text-line" x1="210" y1="95" x2="300" y2="95" />
 </svg>

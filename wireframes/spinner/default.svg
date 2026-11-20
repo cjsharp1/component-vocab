@@ -9,8 +9,8 @@
     <rect class="label-bg" x="342" y="79" width="116" height="20" />
     <text class="label-text" x="400" y="93" text-anchor="middle">Animation</text>
   </g>
-  <circle cx="400" cy="180" r="50" fill="none" stroke="#e0e0e0" stroke-width="6" />
-  <circle cx="400" cy="180" r="50" fill="none" stroke="#4a90d9" stroke-width="6" stroke-dasharray="157 314" stroke-linecap="round" />
+  <circle cx="400" cy="180" r="50" fill="none" stroke="var(--wireframe-border)" stroke-width="6" />
+  <circle class="interactive" cx="400" cy="180" r="50" fill="none" stroke-width="6" stroke-dasharray="157 314" stroke-linecap="round" />
 
   <!-- Label (optional) -->
   <rect class="hover-target" x="330" y="255" width="140" height="25" fill="none" stroke="none" style="cursor:pointer" />

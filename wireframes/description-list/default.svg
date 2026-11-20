@@ -36,8 +36,8 @@
   <line class="text-line" x1="450" y1="245" x2="550" y2="245" />
 
   <!-- Labels for key and value -->
-  <text x="300" y="80" text-anchor="middle" font-size="11" fill="#999">Key (label)</text>
-  <text x="500" y="80" text-anchor="middle" font-size="11" fill="#999">Value</text>
+  <text x="300" y="80" text-anchor="middle" font-size="11">Key (label)</text>
+  <text x="500" y="80" text-anchor="middle" font-size="11">Value</text>
 
   <!-- Icon per row label -->
   <rect class="hover-target" x="210" y="100" width="20" height="20" fill="none" stroke="none" style="cursor:pointer" />

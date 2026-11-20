@@ -84,8 +84,8 @@
             <rect class="label-bg" x="342" y="79" width="116" height="20" />
             <text class="label-text" x="400" y="93" text-anchor="middle">Animation</text>
           </g>
-          <circle cx="400" cy="180" r="50" fill="none" stroke="#e0e0e0" stroke-width="6" />
-          <circle cx="400" cy="180" r="50" fill="none" stroke="#4a90d9" stroke-width="6" stroke-dasharray="157 314" stroke-linecap="round" />
+          <circle cx="400" cy="180" r="50" fill="none" stroke="var(--wireframe-border)" stroke-width="6" />
+          <circle class="interactive" cx="400" cy="180" r="50" fill="none" stroke-width="6" stroke-dasharray="157 314" stroke-linecap="round" />
 
           <!-- Label (optional) -->
           <rect class="hover-target" x="330" y="255" width="140" height="25" fill="none" stroke="none" style="cursor:pointer" />
@@ -124,8 +124,8 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Small circular spinner -->
-              <circle cx="200" cy="100" r="20" fill="none" stroke="#e0e0e0" stroke-width="3" />
-              <circle cx="200" cy="100" r="20" fill="none" stroke="#4a90d9" stroke-width="3" stroke-dasharray="62 126" />
+              <circle cx="200" cy="100" r="20" fill="none" stroke="var(--wireframe-border)" stroke-width="3" />
+              <circle class="interactive" cx="200" cy="100" r="20" fill="none" stroke-width="3" stroke-dasharray="62 126" />
             </svg>
           </div>
           <figcaption>Size: Small (circular)</figcaption>
@@ -137,8 +137,8 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Large circular spinner -->
-              <circle cx="200" cy="100" r="60" fill="none" stroke="#e0e0e0" stroke-width="8" />
-              <circle cx="200" cy="100" r="60" fill="none" stroke="#4a90d9" stroke-width="8" stroke-dasharray="188 377" />
+              <circle cx="200" cy="100" r="60" fill="none" stroke="var(--wireframe-border)" stroke-width="8" />
+              <circle class="interactive" cx="200" cy="100" r="60" fill="none" stroke-width="8" stroke-dasharray="188 377" />
             </svg>
           </div>
           <figcaption>Size: Large (circular)</figcaption>
@@ -150,9 +150,9 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Dots spinner -->
-              <circle cx="150" cy="100" r="12" fill="#4a90d9" opacity="1.0" />
-              <circle cx="200" cy="100" r="12" fill="#4a90d9" opacity="0.6" />
-              <circle cx="250" cy="100" r="12" fill="#4a90d9" opacity="0.3" />
+              <circle class="filled" cx="150" cy="100" r="12" opacity="1.0" />
+              <circle class="filled" cx="200" cy="100" r="12" opacity="0.6" />
+              <circle class="filled" cx="250" cy="100" r="12" opacity="0.3" />
             </svg>
           </div>
           <figcaption>Style: Dots</figcaption>
@@ -164,10 +164,10 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Bars spinner -->
-              <rect x="165" y="70" width="8" height="60" rx="4" fill="#4a90d9" opacity="0.3" />
-              <rect x="185" y="60" width="8" height="80" rx="4" fill="#4a90d9" opacity="0.6" />
-              <rect x="205" y="50" width="8" height="100" rx="4" fill="#4a90d9" opacity="1.0" />
-              <rect x="225" y="60" width="8" height="80" rx="4" fill="#4a90d9" opacity="0.6" />
+              <rect class="filled" x="165" y="70" width="8" height="60" rx="4" opacity="0.3" />
+              <rect class="filled" x="185" y="60" width="8" height="80" rx="4" opacity="0.6" />
+              <rect class="filled" x="205" y="50" width="8" height="100" rx="4" opacity="1.0" />
+              <rect class="filled" x="225" y="60" width="8" height="80" rx="4" opacity="0.6" />
             </svg>
           </div>
           <figcaption>Style: Bars</figcaption>

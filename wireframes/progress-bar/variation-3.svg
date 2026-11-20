@@ -1,11 +1,11 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="0" y="0" width="400" height="200" />
   <!-- Steps -->
-  <circle cx="80" cy="100" r="15" fill="#4a90d9" stroke="none" />
-  <line x1="95" y1="100" x2="145" y2="100" stroke="#4a90d9" stroke-width="3" />
-  <circle cx="160" cy="100" r="15" fill="#4a90d9" stroke="none" />
-  <line x1="175" y1="100" x2="225" y2="100" stroke="#e0e0e0" stroke-width="3" />
-  <circle cx="240" cy="100" r="15" fill="none" stroke="#e0e0e0" stroke-width="3" />
-  <line x1="255" y1="100" x2="305" y2="100" stroke="#e0e0e0" stroke-width="3" />
-  <circle cx="320" cy="100" r="15" fill="none" stroke="#e0e0e0" stroke-width="3" />
+  <circle class="filled" cx="80" cy="100" r="15" stroke="none" />
+  <line class="interactive" x1="95" y1="100" x2="145" y2="100" stroke-width="3" />
+  <circle class="filled" cx="160" cy="100" r="15" stroke="none" />
+  <line x1="175" y1="100" x2="225" y2="100" stroke="var(--wireframe-border)" stroke-width="3" />
+  <circle cx="240" cy="100" r="15" fill="none" stroke="var(--wireframe-border)" stroke-width="3" />
+  <line x1="255" y1="100" x2="305" y2="100" stroke="var(--wireframe-border)" stroke-width="3" />
+  <circle cx="320" cy="100" r="15" fill="none" stroke="var(--wireframe-border)" stroke-width="3" />
 </svg>

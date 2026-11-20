@@ -85,7 +85,7 @@
           <rect class="region" x="0" y="0" width="800" height="350" />
 
           <!-- Carousel container -->
-          <rect x="100" y="50" width="600" height="250" rx="8" fill="none" stroke="#999" stroke-width="2" />
+          <rect x="100" y="50" width="600" height="250" rx="8" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
 
           <!-- Slide/item (visible) -->
           <rect class="hover-target" x="130" y="70" width="540" height="180" fill="none" stroke="none" style="cursor:pointer" />
@@ -106,10 +106,10 @@
             <text class="label-text" x="125" y="113" text-anchor="middle">Navigation arrows</text>
           </g>
           <circle class="optional" cx="125" cy="165" r="20" />
-          <path d="M 131 165 L 121 160 L 121 170 Z" fill="#999" />
+          <path class="inverse" d="M 131 165 L 121 160 L 121 170 Z" />
 
           <circle class="optional" cx="675" cy="165" r="20" />
-          <path d="M 669 165 L 679 160 L 679 170 Z" fill="#999" />
+          <path class="inverse" d="M 669 165 L 679 160 L 679 170 Z" />
 
           <!-- Dot indicators (optional) -->
           <rect class="hover-target" x="340" y="270" width="120" height="20" fill="none" stroke="none" style="cursor:pointer" />
@@ -118,10 +118,10 @@
             <rect class="label-bg" x="328" y="317" width="144" height="20" />
             <text class="label-text" x="400" y="331" text-anchor="middle">Dot indicators</text>
           </g>
-          <circle class="optional" cx="360" cy="280" r="6" fill="#4a90d9" />
-          <circle class="optional" cx="385" cy="280" r="6" fill="#ddd" />
-          <circle class="optional" cx="410" cy="280" r="6" fill="#ddd" />
-          <circle class="optional" cx="435" cy="280" r="6" fill="#ddd" />
+          <circle class="optional filled" cx="360" cy="280" r="6" />
+          <circle class="optional track" cx="385" cy="280" r="6" />
+          <circle class="optional track" cx="410" cy="280" r="6" />
+          <circle class="optional track" cx="435" cy="280" r="6" />
         </svg>
       </div>
     </section>
@@ -151,11 +151,11 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Single item -->
-              <rect x="50" y="30" width="300" height="120" rx="6" fill="none" stroke="#999" stroke-width="2" />
+              <rect x="50" y="30" width="300" height="120" rx="6" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
               <rect class="media-placeholder" x="60" y="40" width="280" height="100" rx="4" />
-              <circle cx="180" cy="160" r="4" fill="#4a90d9" />
-              <circle cx="200" cy="160" r="4" fill="#ddd" />
-              <circle cx="220" cy="160" r="4" fill="#ddd" />
+              <circle class="filled" cx="180" cy="160" r="4" />
+              <circle class="track" cx="200" cy="160" r="4" />
+              <circle class="track" cx="220" cy="160" r="4" />
             </svg>
           </div>
           <figcaption>Items visible: 1</figcaption>
@@ -167,12 +167,12 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Two items -->
-              <rect x="30" y="30" width="340" height="120" rx="6" fill="none" stroke="#999" stroke-width="2" />
+              <rect x="30" y="30" width="340" height="120" rx="6" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
               <rect class="media-placeholder" x="40" y="40" width="150" height="100" rx="4" />
               <rect class="media-placeholder" x="210" y="40" width="150" height="100" rx="4" />
-              <circle cx="180" cy="160" r="4" fill="#4a90d9" />
-              <circle cx="200" cy="160" r="4" fill="#ddd" />
-              <circle cx="220" cy="160" r="4" fill="#ddd" />
+              <circle class="filled" cx="180" cy="160" r="4" />
+              <circle class="track" cx="200" cy="160" r="4" />
+              <circle class="track" cx="220" cy="160" r="4" />
             </svg>
           </div>
           <figcaption>Items visible: 2</figcaption>
@@ -184,13 +184,13 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Three items -->
-              <rect x="20" y="30" width="360" height="120" rx="6" fill="none" stroke="#999" stroke-width="2" />
+              <rect x="20" y="30" width="360" height="120" rx="6" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
               <rect class="media-placeholder" x="30" y="40" width="100" height="100" rx="4" />
               <rect class="media-placeholder" x="150" y="40" width="100" height="100" rx="4" />
               <rect class="media-placeholder" x="270" y="40" width="100" height="100" rx="4" />
-              <circle cx="180" cy="160" r="4" fill="#4a90d9" />
-              <circle cx="200" cy="160" r="4" fill="#ddd" />
-              <circle cx="220" cy="160" r="4" fill="#ddd" />
+              <circle class="filled" cx="180" cy="160" r="4" />
+              <circle class="track" cx="200" cy="160" r="4" />
+              <circle class="track" cx="220" cy="160" r="4" />
             </svg>
           </div>
           <figcaption>Items visible: 3</figcaption>
@@ -202,12 +202,12 @@
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Arrows only -->
-              <rect x="50" y="30" width="300" height="120" rx="6" fill="none" stroke="#999" stroke-width="2" />
+              <rect x="50" y="30" width="300" height="120" rx="6" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
               <rect class="media-placeholder" x="60" y="40" width="280" height="100" rx="4" />
-              <circle cx="70" cy="90" r="15" fill="rgba(255,255,255,0.8)" stroke="#999" />
-              <path d="M 74 90 L 68 87 L 68 93 Z" fill="#333" />
-              <circle cx="330" cy="90" r="15" fill="rgba(255,255,255,0.8)" stroke="#999" />
-              <path d="M 326 90 L 332 87 L 332 93 Z" fill="#333" />
+              <circle cx="70" cy="90" r="15" class="on-fill-fill" style="fill-opacity: 0.9" stroke="var(--wireframe-border)" />
+              <path class="inverse" d="M 74 90 L 68 87 L 68 93 Z" />
+              <circle cx="330" cy="90" r="15" class="on-fill-fill" style="fill-opacity: 0.9" stroke="var(--wireframe-border)" />
+              <path class="inverse" d="M 326 90 L 332 87 L 332 93 Z" />
             </svg>
           </div>
           <figcaption>Navigation: Arrows only</figcaption>

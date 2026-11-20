@@ -1,6 +1,6 @@
 <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
   <!-- Quote marks -->
-  <text x="250" y="80" font-size="48" fill="#ccc" opacity="0.6">"</text>
+  <text x="250" y="80" font-size="48" opacity="0.6">"</text>
 
   <!-- Quote -->
   <rect class="hover-target" x="250" y="100" width="300" height="80" fill="none" stroke="none" style="cursor:pointer" />
@@ -48,5 +48,5 @@
     <rect class="label-bg" x="491" y="179" width="78" height="20" />
     <text class="label-text" x="530" y="193" text-anchor="middle">Rating</text>
   </g>
-  <text x="500" y="233" font-size="14" fill="#f5a623" opacity="0.8">★ ★ ★ ★ ★</text>
+  <text x="500" y="233" font-size="14" opacity="0.8">★ ★ ★ ★ ★</text>
 </svg>

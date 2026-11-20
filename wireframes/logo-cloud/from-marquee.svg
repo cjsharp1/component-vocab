@@ -12,26 +12,26 @@
 
   <!-- Item 1 -->
   <rect class="media-placeholder" x="70" y="105" width="120" height="40" rx="4" opacity="0.5" />
-  <text x="130" y="130" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">ITEM 1</text>
+  <text x="130" y="130" text-anchor="middle" font-size="10" opacity="0.7">ITEM 1</text>
 
   <!-- Item 2 -->
   <rect class="media-placeholder" x="210" y="105" width="120" height="40" rx="4" opacity="0.5" />
-  <text x="270" y="130" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">ITEM 2</text>
+  <text x="270" y="130" text-anchor="middle" font-size="10" opacity="0.7">ITEM 2</text>
 
   <!-- Item 3 -->
   <rect class="media-placeholder" x="350" y="105" width="120" height="40" rx="4" opacity="0.5" />
-  <text x="410" y="130" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">ITEM 3</text>
+  <text x="410" y="130" text-anchor="middle" font-size="10" opacity="0.7">ITEM 3</text>
 
   <!-- Item 4 -->
   <rect class="media-placeholder" x="490" y="105" width="120" height="40" rx="4" opacity="0.5" />
-  <text x="550" y="130" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">ITEM 4</text>
+  <text x="550" y="130" text-anchor="middle" font-size="10" opacity="0.7">ITEM 4</text>
 
   <!-- Item 5 (partial) -->
   <rect class="media-placeholder" x="630" y="105" width="120" height="40" rx="4" opacity="0.5" />
-  <text x="690" y="130" text-anchor="middle" font-size="10" fill="#666" opacity="0.7">ITEM 5</text>
+  <text x="690" y="130" text-anchor="middle" font-size="10" opacity="0.7">ITEM 5</text>
 
   <!-- Motion arrows -->
-  <path d="M 60 125 L 50 125 L 55 120 M 50 125 L 55 130" stroke="#0066cc" stroke-width="2" fill="none" />
-  <path d="M 740 125 L 750 125 L 745 120 M 750 125 L 745 130" stroke="#0066cc" stroke-width="2" fill="none" />
-  <text x="400" y="190" text-anchor="middle" font-size="12" fill="#0066cc" opacity="0.7">← Continuously scrolling →</text>
+  <path class="interactive" d="M 60 125 L 50 125 L 55 120 M 50 125 L 55 130" stroke-width="2" fill="none" />
+  <path class="interactive" d="M 740 125 L 750 125 L 745 120 M 750 125 L 745 130" stroke-width="2" fill="none" />
+  <text x="400" y="190" text-anchor="middle" font-size="12" opacity="0.7">← Continuously scrolling →</text>
 </svg>

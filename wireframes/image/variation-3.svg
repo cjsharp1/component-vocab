@@ -1,5 +1,5 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="media-placeholder" x="100" y="40" width="200" height="120" rx="4" />
-  <rect x="100" y="120" width="200" height="40" fill="rgba(0,0,0,0.6)" />
-  <line x1="120" y1="138" x2="260" y2="138" stroke="#fff" stroke-width="1.5" opacity="0.9" />
+  <rect class="scrim" x="100" y="120" width="200" height="40" />
+  <line class="on-fill" x1="120" y1="138" x2="260" y2="138" stroke-width="1.5" opacity="0.9" />
 </svg>

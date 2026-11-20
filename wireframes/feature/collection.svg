@@ -1,7 +1,7 @@
 <svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
   <!-- Feature 1 -->
   <circle class="interactive" cx="130" cy="70" r="22" />
-  <circle cx="130" cy="70" r="10" fill="#0066cc" opacity="0.3" />
+  <circle class="filled" cx="130" cy="70" r="10" opacity="0.3" />
   <line class="text-line" x1="70" y1="120" x2="190" y2="120" />
   <line class="text-line" x1="50" y1="140" x2="210" y2="140" />
   <line class="text-line" x1="60" y1="155" x2="200" y2="155" />
@@ -9,7 +9,7 @@
 
   <!-- Feature 2 -->
   <circle class="interactive" cx="400" cy="70" r="22" />
-  <circle cx="400" cy="70" r="10" fill="#0066cc" opacity="0.3" />
+  <circle class="filled" cx="400" cy="70" r="10" opacity="0.3" />
   <line class="text-line" x1="340" y1="120" x2="460" y2="120" />
   <line class="text-line" x1="320" y1="140" x2="480" y2="140" />
   <line class="text-line" x1="330" y1="155" x2="470" y2="155" />
@@ -17,7 +17,7 @@
 
   <!-- Feature 3 -->
   <circle class="interactive" cx="670" cy="70" r="22" />
-  <circle cx="670" cy="70" r="10" fill="#0066cc" opacity="0.3" />
+  <circle class="filled" cx="670" cy="70" r="10" opacity="0.3" />
   <line class="text-line" x1="610" y1="120" x2="730" y2="120" />
   <line class="text-line" x1="590" y1="140" x2="750" y2="140" />
   <line class="text-line" x1="600" y1="155" x2="740" y2="155" />

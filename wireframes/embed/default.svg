@@ -7,7 +7,7 @@
     <text class="label-text" x="400" y="123" text-anchor="middle">Embedded content</text>
   </g>
   <rect class="media-placeholder" x="100" y="40" width="600" height="230" rx="4" />
-  <text x="400" y="160" text-anchor="middle" font-size="16" fill="#666" opacity="0.6">iframe / embed</text>
+  <text x="400" y="160" text-anchor="middle" font-size="16" opacity="0.6">iframe / embed</text>
 
   <!-- Caption -->
   <rect class="hover-target" x="100" y="285" width="600" height="20" fill="none" stroke="none" style="cursor:pointer" />

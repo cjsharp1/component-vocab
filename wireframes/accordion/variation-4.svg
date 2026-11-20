@@ -1,12 +1,12 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="0" y="0" width="400" height="200" />
-  <line x1="20" y1="40" x2="380" y2="40" stroke="#ccc" stroke-width="1" />
+  <line x1="20" y1="40" x2="380" y2="40" stroke="var(--wireframe-border)" stroke-width="1" />
   <line class="text-line" x1="35" y1="25" x2="180" y2="25" />
-  <path d="M 360 20 L 370 30 L 360 40" stroke="#333" stroke-width="2" fill="none" />
-  <line x1="20" y1="70" x2="380" y2="70" stroke="#ccc" stroke-width="1" />
+  <path class="interactive" d="M 360 20 L 370 30 L 360 40" stroke-width="2" fill="none" />
+  <line x1="20" y1="70" x2="380" y2="70" stroke="var(--wireframe-border)" stroke-width="1" />
   <line class="text-line" x1="35" y1="55" x2="200" y2="55" />
-  <path d="M 360 50 L 370 60 L 360 70" stroke="#333" stroke-width="2" fill="none" />
-  <line x1="20" y1="100" x2="380" y2="100" stroke="#ccc" stroke-width="1" />
+  <path class="interactive" d="M 360 50 L 370 60 L 360 70" stroke-width="2" fill="none" />
+  <line x1="20" y1="100" x2="380" y2="100" stroke="var(--wireframe-border)" stroke-width="1" />
   <line class="text-line" x1="35" y1="85" x2="190" y2="85" />
-  <path d="M 360 80 L 370 90 L 360 100" stroke="#333" stroke-width="2" fill="none" />
+  <path class="interactive" d="M 360 80 L 370 90 L 360 100" stroke-width="2" fill="none" />
 </svg>

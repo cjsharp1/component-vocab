@@ -9,10 +9,10 @@
     <rect class="label-bg" x="376" y="50" width="58" height="20" />
     <text class="label-text" x="405" y="64" text-anchor="middle">Toast</text>
   </g>
-  <rect x="500" y="30" width="270" height="60" fill="#333" stroke="none" rx="8" />
+  <rect class="inverse" x="500" y="30" width="270" height="60" stroke="none" rx="8" />
 
   <!-- Icon -->
-  <circle cx="525" cy="60" r="10" fill="#4caf50" />
+  <circle class="filled" cx="525" cy="60" r="10" />
 
   <!-- Message -->
   <rect class="hover-target" x="550" y="50" width="150" height="20" fill="none" stroke="none" style="cursor:pointer" />
@@ -21,10 +21,10 @@
     <rect class="label-bg" x="583" y="97" width="84" height="20" />
     <text class="label-text" x="625" y="111" text-anchor="middle">Message</text>
   </g>
-  <line x1="550" y1="60" x2="700" y2="60" stroke="#fff" stroke-width="2" />
+  <line class="on-fill" x1="550" y1="60" x2="700" y2="60" stroke-width="2" />
 
   <!-- Dismiss button -->
-  <circle cx="745" cy="50" r="8" fill="rgba(255,255,255,0.2)" />
-  <line x1="742" y1="47" x2="748" y2="53" stroke="#fff" stroke-width="1.5" />
-  <line x1="748" y1="47" x2="742" y2="53" stroke="#fff" stroke-width="1.5" />
+  <circle cx="745" cy="50" r="8" style="fill: var(--wireframe-label-text); fill-opacity: 0.25" />
+  <line class="on-fill" x1="742" y1="47" x2="748" y2="53" stroke-width="1.5" />
+  <line class="on-fill" x1="748" y1="47" x2="742" y2="53" stroke-width="1.5" />
 </svg>

@@ -3,7 +3,7 @@
   <rect class="interactive" x="60" y="80" width="50" height="35" rx="4" />
   <text x="85" y="103" text-anchor="middle" font-size="14">&larr;</text>
   <rect class="interactive" x="120" y="80" width="35" height="35" rx="4" />
-  <rect class="interactive" x="165" y="80" width="35" height="35" rx="4" style="fill:#0066cc" />
+  <rect class="interactive" x="165" y="80" width="35" height="35" rx="4" style="fill: var(--wireframe-interactive)" />
   <rect class="interactive" x="210" y="80" width="35" height="35" rx="4" />
   <text x="265" y="102" text-anchor="middle" font-size="14">...</text>
   <rect class="interactive" x="290" y="80" width="50" height="35" rx="4" />

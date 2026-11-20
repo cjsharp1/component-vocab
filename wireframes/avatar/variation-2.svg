@@ -2,6 +2,6 @@
   <rect class="region" x="0" y="0" width="400" height="200" />
   <!-- Stacked group -->
   <circle class="media-placeholder" cx="160" cy="100" r="35" />
-  <circle class="media-placeholder" cx="200" cy="100" r="35" stroke="#fff" stroke-width="3" />
-  <circle class="media-placeholder" cx="240" cy="100" r="35" stroke="#fff" stroke-width="3" />
+  <circle class="media-placeholder on-fill" cx="200" cy="100" r="35" stroke-width="3" />
+  <circle class="media-placeholder on-fill" cx="240" cy="100" r="35" stroke-width="3" />
 </svg>
