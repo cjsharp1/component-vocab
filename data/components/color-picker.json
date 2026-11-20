@@ -1,7 +1,7 @@
 {
   "slug": "color-picker",
   "name": "Color picker",
-  "order": 76,
+  "order": 78,
   "status": "stable",
   "group": "forms",
   "description": "A control for choosing a color, either the native <code>&lt;input type=\"color\"&gt;</code> or a panel with a color area, hue slider and value field. Use it when any color is allowed; for a few fixed colors, use a Radio group of swatches.",

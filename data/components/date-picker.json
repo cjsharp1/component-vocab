@@ -1,7 +1,7 @@
 {
   "slug": "date-picker",
   "name": "Date picker",
-  "order": 74,
+  "order": 76,
   "status": "stable",
   "group": "forms",
   "description": "A date field with a button that opens a calendar for choosing a day. Use it when the date is close to today or the weekday matters, such as booking a stay; people should still be able to type the date.",

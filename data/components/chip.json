@@ -1,7 +1,7 @@
 {
   "slug": "chip",
   "name": "Chip",
-  "order": 56,
+  "order": 58,
   "status": "stable",
   "group": "feedback-status",
   "description": "A compact control for a filter option or an entered value that can be selected or removed, such as a filter for \"Remote\" jobs or a recipient in an email field. For a static category, use a Tag.",

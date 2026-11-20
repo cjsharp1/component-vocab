@@ -1,7 +1,7 @@
 {
   "slug": "number-input",
   "name": "Number input",
-  "order": 72,
+  "order": 74,
   "status": "stable",
   "group": "forms",
   "description": "A field for entering a number, often with minus and plus buttons that step the value. Use it for amounts people count, such as a quantity; for digit strings like postcodes, use a Text input.",

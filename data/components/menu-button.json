@@ -1,7 +1,7 @@
 {
   "slug": "menu-button",
   "name": "Menu button",
-  "order": 33,
+  "order": 35,
   "status": "stable",
   "group": "actions",
   "description": "A menu of actions or navigation links revealed from a trigger element. Appears as a floating list on click.",

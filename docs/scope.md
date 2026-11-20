@@ -7,8 +7,8 @@ Counts are how many of the 12 surveyed indexes list the name, from the survey th
 | Name | In indexes | Decision | Why |
 |---|---|---|---|
 | Text, Typography | about 9 | Aliases of Rich Text | They name a styled run of text. Heading and Rich Text already cover the HTML elements involved, and a separate "Text" would overlap both. |
-| Code, Code block | 5 | Candidate to add | Native elements (`<code>`, `<pre>`), a clear accessibility story, and several frameworks ship them. Not added yet: the per-framework mapping for all 12 systems has to be verified first (Carbon, Polaris and Apple HIG weren't re-checked). |
-| Kbd | 3 | Candidate to add, with Code | Native `<kbd>` element. Same verification gap. |
+| Code, Code block | 5 | Added as Code | Native `<code>` / `<pre>`; Carbon, Polaris and Apple HIG verified Nov 2026. Code block is a variant of Code (R6), not a separate entry. See `data/components/code.json`. |
+| Kbd | 3 | Added | Native `<kbd>`; same verification. See `data/components/kbd.json`. |
 | Calendar | 4 | Alias of Date picker | A calendar grid is the popup part of a Date picker. A standalone, read-only calendar could become its own entry if someone needs it. |
 | Hover card | 3 | Not added | Interactive content that opens on hover fails keyboard and touch use. The vocabulary already has Tooltip (non-interactive) and Popover (interactive, click-opened). |
 | Context menu | 3 | Not added | An action menu opened from a right-click. It would be a trigger variant of a menu, and the vocabulary has Menu button but no bare Menu. Revisit if Menu becomes its own entry. |

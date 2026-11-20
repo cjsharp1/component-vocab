@@ -17,6 +17,8 @@ Content display,Image,Picture,—,● Images,● Image,—,● Image,● Image,�
 Content display,Icon,,● Icons,—,● Icon,—,● Icon,● Icon,● Icon,—,—,● Icon,—,—,
 Content display,Avatar,,● Avatar,—,● Avatar,—,● Avatar,● Avatar,● Avatar,● Avatar,● Avatar,● Avatar,—,—,"8 of 12 ship it, all under the same name."
 Content display,Quote,"Block quote, Pull quote",—,—,—,—,—,—,◐ Blockquote,◐ Blockquote,—,—,—,—,
+Content display,Code,"Code block, Code snippet",—,—,—,◐ Code snippet,—,● Code,● Code,● Code,◐ Code Block,—,—,—,"Verified Nov 2026. Block form is a Code variant (R6). Carbon Code snippet; Chakra also lists Code Block; shadcn/ui lists Code Block. Polaris web components: native code only."
+Content display,Kbd,"Keyboard key",—,—,—,—,—,—,● Kbd,● Kbd,● Kbd,—,—,—,"Verified Nov 2026. Chakra, Radix Themes, shadcn/ui. Polaris React Keyboard key retired to native kbd. Apple HIG Keyboards is about input devices, not a key-label control."
 Content display,List,,● List,○ List group,● List (deprecated),● List,◐ Ordered list / Unordered list,—,● List,—,—,● List,—,◐ Lists and tables,
 Content display,Table,,● Table,● Tables,● Table,◐ Data table,● Table,● Table,● Table,● Table,● Table,—,● Table,◐ Lists and tables,
 Content display,Card,Tile,● Card,● Card,● Card,◐ Tile,—,—,● Card,● Card,● Card,● Card,—,—,

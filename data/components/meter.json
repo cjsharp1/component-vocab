@@ -1,7 +1,7 @@
 {
   "slug": "meter",
   "name": "Meter",
-  "order": 58,
+  "order": 60,
   "status": "stable",
   "group": "feedback-status",
   "description": "Shows a measurement within a known range, such as disk usage, password strength or battery level. Use <code>&lt;meter&gt;</code> for a value that can go up or down; for progress toward finishing a task, use a Progress bar.",

@@ -1,7 +1,7 @@
 {
   "slug": "combobox",
   "name": "Combobox",
-  "order": 68,
+  "order": 70,
   "status": "stable",
   "group": "forms",
   "description": "A text input with a popup list of suggestions that narrows as you type. Use it when the list is long enough that typing is faster than scrolling, or when people may enter a value that isn't in the list.",

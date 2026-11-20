@@ -1,7 +1,7 @@
 {
   "slug": "progress-bar",
   "name": "Progress bar",
-  "order": 57,
+  "order": 59,
   "status": "stable",
   "group": "feedback-status",
   "description": "A visual indicator of task or process completion. Shows how far along a process is.",

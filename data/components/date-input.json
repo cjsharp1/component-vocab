@@ -1,7 +1,7 @@
 {
   "slug": "date-input",
   "name": "Date input",
-  "order": 73,
+  "order": 75,
   "status": "stable",
   "group": "forms",
   "description": "A typed date, entered in a native <code>&lt;input type=\"date\"&gt;</code> or in separate day, month and year fields. Use it for dates people already know, such as a date of birth; use a Date picker when choosing from a calendar helps.",

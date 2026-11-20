@@ -1,7 +1,7 @@
 {
   "slug": "link",
   "name": "Link",
-  "order": 30,
+  "order": 32,
   "status": "stable",
   "group": "actions",
   "description": "Text that takes the user to another page, another place on the same page, or a file. If the control performs an action on the current page instead, use a Button.",

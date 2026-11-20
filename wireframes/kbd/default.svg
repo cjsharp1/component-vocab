@@ -1,0 +1,21 @@
+<svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="160" y1="130" x2="260" y2="130" />
+  <rect class="hover-target" x="280" y="110" width="52" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="306" y1="108" x2="306" y2="96" />
+    <rect class="label-bg" x="266.5" y="76" width="79" height="20" />
+    <text class="label-text" x="306" y="90" text-anchor="middle">Key label</text>
+  </g>
+  <rect class="region" x="280" y="110" width="52" height="40" rx="6" />
+  <text x="306" y="136" font-size="16" text-anchor="middle">⌘</text>
+  <text x="348" y="136" font-size="16" text-anchor="middle">+</text>
+  <rect class="hover-target" x="368" y="110" width="52" height="40" fill="none" stroke="none" style="cursor:pointer" />
+  <g class="label-group">
+    <line class="label-line" x1="394" y1="152" x2="394" y2="164" />
+    <rect class="label-bg" x="347.5" y="164" width="93" height="20" />
+    <text class="label-text" x="394" y="178" text-anchor="middle">Combination</text>
+  </g>
+  <rect class="region" x="368" y="110" width="52" height="40" rx="6" />
+  <text x="394" y="136" font-size="16" text-anchor="middle" font-weight="bold">K</text>
+  <line class="text-line" x1="440" y1="130" x2="580" y2="130" />
+</svg>

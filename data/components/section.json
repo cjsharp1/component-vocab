@@ -129,6 +129,8 @@
     "image",
     "video",
     "quote",
+    "code",
+    "kbd",
     "list",
     "table",
     "card",

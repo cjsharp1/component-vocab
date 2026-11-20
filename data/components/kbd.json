@@ -1,0 +1,124 @@
+{
+  "slug": "kbd",
+  "name": "Kbd",
+  "order": 23,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A key or shortcut shown as the user would press it, marked up as <code>&lt;kbd&gt;</code>. Use one element per key; put separators between keys in a combination so the order stays clear when read aloud.",
+  "summary": "Keyboard key or shortcut label",
+  "htmlElement": "<code>&lt;kbd&gt;</code>",
+  "nativeHtml": "`<kbd>`",
+  "aria": "",
+  "researchNote": "Documents a shortcut; it does not register one. Nested <kbd> marks each key in a combination.",
+  "elements": [
+    {
+      "name": "Key label",
+      "required": "Yes",
+      "description": "The key name or glyph, such as Esc, Enter or ⌘"
+    },
+    {
+      "name": "Combination",
+      "required": "No",
+      "description": "Several keys with a text separator such as \"+\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Form",
+      "options": "Single key, Combination",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Size",
+      "options": "Small, Medium",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Glyphs",
+      "options": "Letter names (Ctrl), Platform symbols (⌘)",
+      "affectsLayout": "No",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Single key — Esc",
+      "wireframe": "wireframes/kbd/variation-1.svg",
+      "sameMarkup": true
+    },
+    {
+      "caption": "Combination — nested kbd per key",
+      "wireframe": "wireframes/kbd/variation-2.svg",
+      "htmlOutline": "<p>Press <kbd><kbd>Ctrl</kbd>+<kbd>K</kbd></kbd> to open search.</p>"
+    },
+    {
+      "caption": "Sequence — then another key",
+      "wireframe": "wireframes/kbd/variation-3.svg",
+      "htmlOutline": "<p>Press <kbd>G</kbd> then <kbd>I</kbd> to go to the inbox.</p>"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use <code>&lt;kbd&gt;</code> only to show keys or shortcuts people should press. Don't use it for product names or generic badges.",
+    "For a combination, nest a <code>&lt;kbd&gt;</code> per key (or use adjacent keys with a text \"+\") so screen readers hear each key, not one run-on word.",
+    "Always say what the shortcut does in nearby text. The styled key alone is not enough for people who can't see the visual treatment.",
+    "Kbd documents a shortcut; the page still needs a real keyboard handler if the shortcut should work.",
+    "Prefer plain key names (Ctrl, Shift) when the audience may not know platform glyphs, or match the user's platform when you can detect it."
+  ],
+  "wireframe": "wireframes/kbd/default.svg",
+  "thumbnail": "wireframes/kbd/thumbnail.svg",
+  "aliases": [
+    "Keyboard key"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "none"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "none"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Kbd"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Kbd"
+    },
+    "shadcn/ui": {
+      "match": "same",
+      "name": "Kbd"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "Verified Nov 2026 against each live index. Chakra UI, Radix Themes and shadcn/ui ship Kbd. Polaris React had Keyboard key; current Polaris web components point apps at native kbd instead. Apple HIG Keyboards covers physical keyboards and system shortcuts, not a key-label control.",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": [],
+  "htmlOutline": "<p>Press <kbd>Esc</kbd> to close.</p>"
+}

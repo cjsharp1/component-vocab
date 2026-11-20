@@ -1,7 +1,7 @@
 {
   "slug": "radio-group",
   "name": "Radio group",
-  "order": 70,
+  "order": 72,
   "status": "stable",
   "group": "forms",
   "description": "A set of options, all visible at once, where people pick exactly one. Use it for a small number of choices; for long lists, use a Select.",

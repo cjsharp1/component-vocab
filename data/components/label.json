@@ -1,7 +1,7 @@
 {
   "slug": "label",
   "name": "Label",
-  "order": 64,
+  "order": 66,
   "status": "stable",
   "group": "forms",
   "description": "The visible name of a form control, tied to it so that clicking the text focuses the control and screen readers announce the name. Every input, select and textarea needs one.",

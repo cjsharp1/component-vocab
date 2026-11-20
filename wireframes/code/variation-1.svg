@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="40" y1="80" x2="130" y2="80" />
+  <rect class="region" x="140" y="64" width="120" height="32" rx="5" />
+  <text x="200" y="85" font-size="12" text-anchor="middle">npm install</text>
+  <line class="text-line" x1="275" y1="80" x2="355" y2="80" />
+</svg>

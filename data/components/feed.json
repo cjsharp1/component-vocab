@@ -1,7 +1,7 @@
 {
   "slug": "feed",
   "name": "Feed",
-  "order": 42,
+  "order": 44,
   "status": "stable",
   "group": "wayfinding",
   "description": "A scrolling list of articles that loads more as the user reaches the end, such as a news or social stream. The ARIA <code>feed</code> role lets screen reader users move from article to article while new ones load.",

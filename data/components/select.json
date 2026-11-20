@@ -1,7 +1,7 @@
 {
   "slug": "select",
   "name": "Select",
-  "order": 67,
+  "order": 69,
   "status": "stable",
   "group": "forms",
   "description": "A native drop-down list for choosing one option from a known set, built on <code>&lt;select&gt;</code>. Use it when there are too many options for a Radio group and people don't need to type to find one.",
