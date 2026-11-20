@@ -12,6 +12,7 @@ Open `index.html` in a browser. Pages work from `file://` and from any static ho
 - **All 86 are stable**, with wireframes, configuration options and usage guidance. The site still supports `"status": "draft"` for new entries: a draft carries a visible Draft badge and no wireframe.
 - A **comparison table** across MUI, Bootstrap, Ant Design, Carbon, Polaris, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI, GOV.UK and Apple HIG, from `docs/research/framework-alignment.csv`.
 - **Redirect pages** at every old slug that was renamed or folded (`data/redirects.json`), so old links keep working.
+- A **Name finder** (`name-finder.html`) that maps every alias, former name and absorbed name to the canonical component, generated from the component JSON.
 
 ## Naming rules
 
@@ -41,12 +42,12 @@ data/
   redirects.json           old slug -> new slug
 wireframes/<slug>/*.svg    wireframes, inlined into pages at build time
 scripts/
-  build.mjs                writes components/*.html and index.html; --check verifies
+  build.mjs                writes components/*.html, index.html and name-finder.html; --check verifies
   validate.mjs             schema and cross-file checks
   structure.mjs            derives parents/children from structure.json
   wireframe.mjs            draws wireframe SVGs from wireframes/<slug>/spec.json
   templates/               page templates and static index fragments
-components/, index.html    generated output (don't edit by hand)
+components/, index.html, name-finder.html   generated output (don't edit by hand)
 css/, js/                  site styles and behavior
 fonts/                     self-hosted Latin WOFF2 fonts (Archivo, Public Sans, JetBrains Mono) and their OFL licenses
 ```

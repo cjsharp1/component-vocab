@@ -12,6 +12,7 @@ import { join, dirname, normalize, relative } from 'node:path';
 import { validate, loadComponents } from './validate.mjs';
 import { componentPage, redirectPage } from './templates/component.mjs';
 import { indexPage } from './templates/index.mjs';
+import { collectNameFinderRows, nameFinderPage } from './templates/name-finder.mjs';
 import { derive } from './structure.mjs';
 
 const root = process.cwd();
@@ -31,6 +32,7 @@ export function build() {
     out.set(`components/${c.slug}.html`, componentPage(c, { prev: components[i - 1], next: components[i + 1], group, svg, names }));
   });
   out.set('index.html', indexPage({ groups, components, systems, svg }));
+  out.set('name-finder.html', nameFinderPage(components));
   const redirects = existsSync(join(root, 'data/redirects.json')) ? JSON.parse(read('data/redirects.json')) : {};
   for (const [from, to] of Object.entries(redirects)) {
     const target = components.find(c => c.slug === to);
@@ -39,6 +41,44 @@ export function build() {
     out.set(`components/${from}.html`, redirectPage(target));
   }
   return out;
+}
+
+function checkNameFinder(components) {
+  const errors = [];
+  const rows = collectNameFinderRows(components);
+  const byName = new Map(rows.map(r => [r.name.toLowerCase(), r]));
+  const expected = new Map();
+  for (const c of components) {
+    for (const [name, kind] of [
+      ...(c.aliases || []).map(n => [n, 'alias']),
+      ...(c.formerNames || []).map(n => [n, 'former']),
+      ...(c.absorbed || []).map(n => [n, 'absorbed']),
+    ]) {
+      const key = name.toLowerCase();
+      if (!expected.has(key)) expected.set(key, { name, slugs: new Set() });
+      expected.get(key).slugs.add(c.slug);
+    }
+  }
+  for (const [key, { name, slugs }] of expected) {
+    const row = byName.get(key);
+    if (!row) {
+      errors.push(`name-finder: missing row for "${name}"`);
+      continue;
+    }
+    const rowSlugs = new Set(row.targets.map(t => t.component.slug));
+    for (const slug of slugs) {
+      if (!rowSlugs.has(slug)) errors.push(`name-finder: "${name}" should point at ${slug}`);
+      else if (!components.some(c => c.slug === slug)) errors.push(`name-finder: "${name}" points at missing page ${slug}`);
+    }
+  }
+  for (const row of rows) {
+    for (const t of row.targets) {
+      if (!components.some(c => c.slug === t.component.slug)) {
+        errors.push(`name-finder: "${row.name}" points at missing page ${t.component.slug}`);
+      }
+    }
+  }
+  return errors;
 }
 
 function checkLinks(out) {
@@ -84,6 +124,7 @@ if (structureErrors.length) {
 }
 const out = build();
 const { errors: linkErrors } = checkLinks(out);
+const nameFinderErrors = checkNameFinder(current);
 const generatedPages = new Set([...out.keys()].filter(f => f.startsWith('components/')));
 const stale = readdirSync(join(root, 'components')).filter(f => f.endsWith('.html')).map(f => `components/${f}`).filter(f => !generatedPages.has(f));
 
@@ -93,6 +134,7 @@ if (check) {
     ...diffs.map(f => `${f}: differs from generated output (run node scripts/build.mjs)`),
     ...stale.map(f => `${f}: not generated from data (stale page)`),
     ...linkErrors,
+    ...nameFinderErrors,
   ];
   if (problems.length) {
     console.error(problems.join('\n'));
@@ -104,5 +146,6 @@ if (check) {
   for (const [file, html] of out) writeFileSync(join(root, file), html);
   for (const f of stale) unlinkSync(join(root, f));
   if (linkErrors.length) console.error(`Warning: ${linkErrors.length} broken link(s):\n${linkErrors.join('\n')}`);
+  if (nameFinderErrors.length) console.error(`Warning: ${nameFinderErrors.length} name-finder issue(s):\n${nameFinderErrors.join('\n')}`);
   console.log(`Wrote ${out.size} pages${stale.length ? `, removed ${stale.length} stale page(s): ${stale.join(', ')}` : ''}`);
 }

@@ -123,7 +123,7 @@ export function validate(root = process.cwd()) {
   return { count: components.length, errors: [...new Set(errors)] };
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { count, errors } = validate();
   if (errors.length) { console.error(errors.join('\n')); console.error(`\n${errors.length} error(s) in ${count} components`); process.exit(1); }
   console.log(`${count} components valid`);

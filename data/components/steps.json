@@ -9,7 +9,7 @@
   "htmlElement": "<code>&lt;ol&gt;</code> with <code>aria-current=\"step\"</code>",
   "nativeHtml": "`<ol>`",
   "aria": "",
-  "researchNote": "`aria-current=\"step\"`",
+  "researchNote": "`aria-current=\"step\"`. \"Stepper\" also names a quantity control — that is Number input.",
   "elements": [
     {
       "name": "Step marker",

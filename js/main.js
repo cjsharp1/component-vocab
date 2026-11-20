@@ -138,10 +138,24 @@ function initSmoothScroll() {
   });
 }
 
+function initNameFinderFilter() {
+  const input = document.getElementById('name-filter');
+  const table = document.getElementById('name-finder-table');
+  if (!input || !table) return;
+  const rows = [...table.tBodies[0].rows];
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    rows.forEach(row => {
+      row.hidden = Boolean(q) && !row.cells[0].textContent.toLowerCase().includes(q);
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initWireframeLabels();
   initCategoryFilter();
   initCategoryCounts();
   initTableScroll();
   initSmoothScroll();
+  initNameFinderFilter();
 });
