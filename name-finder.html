@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Name finder — component-vocab</title>
+  <link rel="stylesheet" href="./css/pico.classless.min.css">
+  <link rel="stylesheet" href="./css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="./index.html">component-vocab</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="./index.html#components">Components</a></li>
+        <li><a href="./index.html#comparison">Comparison</a></li>
+        <li><a href="./name-finder.html" aria-current="page">Name finder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="name-finder">
+      <h1>Name finder</h1>
+      <p>Look up an old, competing or folded name. Each row points at the canonical component page. Notes come from <code>researchNote</code> text that mentions the name (for example when a word is reserved or split).</p>
+      <p>
+        <label for="name-filter">Filter names
+          <input type="search" id="name-filter" name="name-filter" placeholder="Banner, Stepper, Dropdown…" autocomplete="off">
+        </label>
+      </p>
+      <table id="name-finder-table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">See</th>
+            <th scope="col">Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Anchor</th>
+            <td><a href="./components/link.html">Link</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Article</th>
+            <td><a href="./components/rich-text.html">Rich Text</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Aside</th>
+            <td><a href="./components/sidebar.html">Sidebar</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Attachment</th>
+            <td><a href="./components/file.html">File</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Autocomplete</th>
+            <td><a href="./components/combobox.html">Combobox</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Autosuggest</th>
+            <td><a href="./components/combobox.html">Combobox</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Banner</th>
+            <td><a href="./components/alert.html">Alert</a></td>
+            <td>"Banner" is a landmark, so avoid it</td>
+          </tr>
+          <tr>
+            <th scope="row">Block quote</th>
+            <td><a href="./components/quote.html">Quote</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Breadcrumb</th>
+            <td><a href="./components/breadcrumbs.html">Breadcrumbs</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Breadcrumb trail</th>
+            <td><a href="./components/breadcrumbs.html">Breadcrumbs</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Calendar</th>
+            <td><a href="./components/date-picker.html">Date picker</a></td>
+            <td>Calendar popup</td>
+          </tr>
+          <tr>
+            <th scope="row">Callout</th>
+            <td><a href="./components/alert.html">Alert</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Code block</th>
+            <td><a href="./components/code.html">Code</a></td>
+            <td>Block form is a variant (R6), not a separate Code block entry. Carbon's Code snippet covers inline, single-line and multi-line.</td>
+          </tr>
+          <tr>
+            <th scope="row">Code snippet</th>
+            <td><a href="./components/code.html">Code</a></td>
+            <td>Block form is a variant (R6), not a separate Code block entry. Carbon's Code snippet covers inline, single-line and multi-line.</td>
+          </tr>
+          <tr>
+            <th scope="row">Col</th>
+            <td><a href="./components/slot.html">Slot</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Collapse</th>
+            <td><a href="./components/accordion.html">Accordion</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Collapsible</th>
+            <td><a href="./components/accordion.html">Accordion</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Column</th>
+            <td><a href="./components/slot.html">Slot</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Comparison</th>
+            <td><a href="./components/table.html">Table</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Confirm dialog</th>
+            <td><a href="./components/alert-dialog.html">Alert dialog</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Container</th>
+            <td><a href="./components/section.html">Section</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Content slider</th>
+            <td><a href="./components/carousel.html">Carousel</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Counter</th>
+            <td><a href="./components/number-input.html">Number input</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">CTA</th>
+            <td><a href="./components/call-to-action.html">Call to action</a></td>
+            <td>Often abbreviated CTA. Names a section with a primary action, not a lone Button.</td>
+          </tr>
+          <tr>
+            <th scope="row">Datetime picker</th>
+            <td><a href="./components/date-picker.html">Date picker</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Details</th>
+            <td><a href="./components/accordion.html">Accordion</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Divider</th>
+            <td><a href="./components/separator.html">Separator</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Download</th>
+            <td><a href="./components/file.html">File</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Dropdown</th>
+            <td><a href="./components/menu-button.html">Menu button</a>; <a href="./components/select.html">Select</a></td>
+            <td>Choose a value. "Dropdown" is retired as a component name (it could mean Select or Menu button).</td>
+          </tr>
+          <tr>
+            <th scope="row">Dropdown menu</th>
+            <td><a href="./components/menu-button.html">Menu button</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Dropzone</th>
+            <td><a href="./components/file-upload.html">File upload</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Expander</th>
+            <td><a href="./components/accordion.html">Accordion</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Figure</th>
+            <td><a href="./components/image.html">Image</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">File input</th>
+            <td><a href="./components/file-upload.html">File upload</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Flyout</th>
+            <td><a href="./components/drawer.html">Drawer</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Form label</th>
+            <td><a href="./components/label.html">Label</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Horizontal rule</th>
+            <td><a href="./components/separator.html">Separator</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Hyperlink</th>
+            <td><a href="./components/link.html">Link</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Jumbotron</th>
+            <td><a href="./components/hero.html">Hero</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Keyboard key</th>
+            <td><a href="./components/kbd.html">Kbd</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Lightswitch</th>
+            <td><a href="./components/switch.html">Switch</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Loader</th>
+            <td><a href="./components/spinner.html">Spinner</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Loading</th>
+            <td><a href="./components/spinner.html">Spinner</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Logo Cloud</th>
+            <td><a href="./components/logo-cloud.html">Logo cloud</a></td>
+            <td>Same pattern also appears as Customer logos (Flowbite). Logo cloud is the clearer industry label.</td>
+          </tr>
+          <tr>
+            <th scope="row">Marquee</th>
+            <td><a href="./components/logo-cloud.html">Logo cloud</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Media</th>
+            <td><a href="./components/card.html">Card</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Menu</th>
+            <td><a href="./components/navigation.html">Navigation</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Message</th>
+            <td><a href="./components/alert.html">Alert</a></td>
+            <td>In-flow message</td>
+          </tr>
+          <tr>
+            <th scope="row">Modal</th>
+            <td><a href="./components/dialog.html">Dialog</a></td>
+            <td>Modal is a variant, not a separate thing</td>
+          </tr>
+          <tr>
+            <th scope="row">Modal window</th>
+            <td><a href="./components/dialog.html">Dialog</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Mosaic</th>
+            <td><a href="./components/grid.html">Grid</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Nav</th>
+            <td><a href="./components/navigation.html">Navigation</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Notification</th>
+            <td><a href="./components/alert.html">Alert</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Nudger</th>
+            <td><a href="./components/number-input.html">Number input</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Picture</th>
+            <td><a href="./components/image.html">Image</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Popup</th>
+            <td><a href="./components/dialog.html">Dialog</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Pricing</th>
+            <td><a href="./components/pricing-table.html">Pricing table</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Profile</th>
+            <td><a href="./components/card.html">Card</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Progress</th>
+            <td><a href="./components/progress-bar.html">Progress bar</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Progress tracker</th>
+            <td><a href="./components/steps.html">Steps</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Prose</th>
+            <td><a href="./components/rich-text.html">Rich Text</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Pull quote</th>
+            <td><a href="./components/quote.html">Quote</a></td>
+            <td>A pull quote repeats text already on the page, so hide the duplicate from screen readers</td>
+          </tr>
+          <tr>
+            <th scope="row">Quantity</th>
+            <td><a href="./components/number-input.html">Number input</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Radio</th>
+            <td><a href="./components/radio-group.html">Radio group</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Radio button</th>
+            <td><a href="./components/radio-group.html">Radio group</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Range input</th>
+            <td><a href="./components/slider.html">Slider</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Screenreader only</th>
+            <td><a href="./components/visually-hidden.html">Visually hidden</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Search input</th>
+            <td><a href="./components/search.html">Search</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Select input</th>
+            <td><a href="./components/select.html">Select</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Sheet</th>
+            <td><a href="./components/drawer.html">Drawer</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Showcase</th>
+            <td><a href="./components/card.html">Card</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Skeleton loader</th>
+            <td><a href="./components/skeleton.html">Skeleton</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Snackbar</th>
+            <td><a href="./components/toast.html">Toast</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Snapshot</th>
+            <td><a href="./components/description-list.html">Description list</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Stat</th>
+            <td><a href="./components/stats.html">Stats</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Stepper</th>
+            <td><a href="./components/steps.html">Steps</a></td>
+            <td><code>aria-current="step"</code>. "Stepper" also names a quantity control — that is Number input.</td>
+          </tr>
+          <tr>
+            <th scope="row">Tabbed interface</th>
+            <td><a href="./components/tabs.html">Tabs</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Text</th>
+            <td><a href="./components/rich-text.html">Rich Text</a></td>
+            <td>"Rich text editor" (5) on the index is the editing tool, not this</td>
+          </tr>
+          <tr>
+            <th scope="row">Textbox</th>
+            <td><a href="./components/textarea.html">Textarea</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Tile</th>
+            <td><a href="./components/card.html">Card</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Toggle</th>
+            <td><a href="./components/switch.html">Switch</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Toggle button group</th>
+            <td><a href="./components/segmented-control.html">Segmented control</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Toolbar</th>
+            <td><a href="./components/button-group.html">Button group</a></td>
+            <td>A CTA pair is not a toolbar</td>
+          </tr>
+          <tr>
+            <th scope="row">Tray</th>
+            <td><a href="./components/drawer.html">Drawer</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Typography</th>
+            <td><a href="./components/rich-text.html">Rich Text</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Vertical rule</th>
+            <td><a href="./components/separator.html">Separator</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Video player</th>
+            <td><a href="./components/video.html">Video</a></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>component-vocab &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

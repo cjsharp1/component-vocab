@@ -9,7 +9,7 @@
   "htmlElement": "<code>&lt;select&gt;</code> with <code>&lt;option&gt;</code>",
   "nativeHtml": "`<select>`",
   "aria": "Listbox (custom)",
-  "researchNote": "Choose a value",
+  "researchNote": "Choose a value. \"Dropdown\" is retired as a component name (it could mean Select or Menu button).",
   "elements": [
     {
       "name": "Label",

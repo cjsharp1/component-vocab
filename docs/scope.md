@@ -15,5 +15,6 @@ Counts are how many of the 12 surveyed indexes list the name, from the survey th
 | Scroll area | 3 to 4 | Not added | A styling wrapper for custom scrollbars, not a content component. |
 | Aspect ratio | 3 | Not added | A layout utility (CSS `aspect-ratio`), not a component. |
 | Command, Backdrop, Splitter | 2 each | Not added | Too few frameworks, and each overlaps an existing name (Combobox, Dialog, Grid). |
+| Banner | (Alert alias in 2 systems; also a research alias of Hero) | Alias of Alert only | Research §4 listed Banner under both Alert and Hero. R4 reserves Banner for the ARIA landmark; §5 retires it as a component name and folds the in-flow announcement into Alert. `banner.html` already redirects to Alert; Hero keeps Jumbotron only and notes that Banner is a landmark. Do not add Banner as a Hero alias. |
 
 To add one of these, follow "Adding a component" in the README, and update this table.
