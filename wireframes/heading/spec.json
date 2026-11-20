@@ -2,17 +2,17 @@
   "default": {
     "height": 320,
     "shapes": [
-      { "type": "line", "x": 160, "y": 100, "w": 100, "weight": 1, "label": "Eyebrow (optional)" },
-      { "type": "line", "x": 160, "y": 140, "w": 360, "label": "Heading text", "at": "below" },
-      { "type": "optional", "x": 540, "y": 128, "w": 26, "h": 24, "rx": 4, "label": "Anchor link (optional)" },
-      { "type": "lines", "x": 160, "y": 210, "w": 480, "count": 3, "label": "Following content", "at": "below" }
+      { "type": "text", "x": 160, "y": 95, "value": "Heading", "size": 42, "anchor": "start", "label": "Level 1" },
+      { "type": "text", "x": 160, "y": 155, "value": "Heading", "size": 28, "anchor": "start", "label": "Level 2", "at": "below" },
+      { "type": "text", "x": 160, "y": 205, "value": "Heading", "size": 18, "anchor": "start", "label": "Level 3", "at": "below" },
+      { "type": "lines", "x": 160, "y": 255, "w": 420, "count": 2, "label": "Following content", "at": "below" }
     ]
   },
   "thumbnail": {
     "shapes": [
-      { "type": "line", "x": 30, "y": 26, "w": 150 },
-      { "type": "line", "x": 30, "y": 46, "w": 190, "weight": 1 },
-      { "type": "line", "x": 30, "y": 56, "w": 140, "weight": 1 }
+      { "type": "line", "x": 30, "y": 22, "w": 160 },
+      { "type": "line", "x": 30, "y": 42, "w": 120 },
+      { "type": "line", "x": 30, "y": 58, "w": 90, "weight": 1 }
     ]
   },
   "variations": [
@@ -29,6 +29,7 @@
     { "shapes": [
       { "type": "line", "x": 60, "y": 55, "w": 70, "weight": 1 },
       { "type": "line", "x": 60, "y": 80, "w": 220 },
+      { "type": "optional", "x": 290, "y": 66, "w": 22, "h": 20, "rx": 4 },
       { "type": "lines", "x": 60, "y": 115, "w": 280, "count": 3 }
     ] }
   ]

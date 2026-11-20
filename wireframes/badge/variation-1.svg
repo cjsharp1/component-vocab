@@ -1,8 +1,6 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect class="region" x="0" y="0" width="400" height="200" />
-  <!-- Icon with count badge -->
   <rect class="interactive" x="160" y="60" width="80" height="80" rx="6" />
-  <circle cx="200" cy="100" r="25" fill="none" stroke="#4a90d9" stroke-width="2" />
-  <circle cx="230" cy="70" r="15" fill="#ff4444" />
-  <text x="230" y="77" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">3</text>
+  <path class="interactive" d="M200 92a14 14 0 1 1-0.01 0 M210 110L222 122" stroke-linecap="round" stroke-linejoin="round" />
+  <circle class="interactive" cx="230" cy="70" r="15" style="fill: var(--wireframe-interactive)" />
+  <text x="230" y="76" font-size="14" text-anchor="middle" fill="#fff" font-weight="bold">3</text>
 </svg>

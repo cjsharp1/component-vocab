@@ -1,0 +1,44 @@
+{
+  "default": {
+    "height": 350,
+    "shapes": [
+      { "type": "interactive", "x": 320, "y": 130, "w": 160, "h": 160, "rx": 8, "label": "Position anchor", "at": "below" },
+      { "type": "path", "x": 368, "y": 178, "w": 64, "h": 64, "d": "M400 196a22 22 0 1 1-0.01 0 M416 224L436 244" },
+      { "type": "circle", "cx": 480, "cy": 140, "r": 22, "style": "filled", "label": "Value/content" },
+      { "type": "text", "x": 480, "y": 148, "value": "5", "size": 18, "fill": "#fff", "weight": "bold" }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "interactive", "x": 80, "y": 18, "w": 70, "h": 44, "rx": 4 },
+      { "type": "path", "x": 98, "y": 26, "w": 28, "h": 28, "d": "M112 34a9 9 0 1 1-0.01 0 M118 48L128 58" },
+      { "type": "circle", "cx": 150, "cy": 24, "r": 9, "style": "filled" },
+      { "type": "text", "x": 150, "y": 28, "value": "3", "size": 11, "fill": "#fff", "weight": "bold" }
+    ]
+  },
+  "variations": [
+    { "shapes": [
+      { "type": "interactive", "x": 160, "y": 60, "w": 80, "h": 80, "rx": 6 },
+      { "type": "path", "x": 180, "y": 80, "w": 40, "h": 40, "d": "M200 92a14 14 0 1 1-0.01 0 M210 110L222 122" },
+      { "type": "circle", "cx": 230, "cy": 70, "r": 15, "style": "filled" },
+      { "type": "text", "x": 230, "y": 76, "value": "3", "size": 14, "fill": "#fff", "weight": "bold" }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 160, "y": 60, "w": 80, "h": 80, "rx": 6 },
+      { "type": "path", "x": 180, "y": 80, "w": 40, "h": 40, "d": "M200 92a14 14 0 1 1-0.01 0 M210 110L222 122" },
+      { "type": "circle", "cx": 230, "cy": 70, "r": 8, "style": "filled" }
+    ] },
+    { "shapes": [
+      { "type": "interactive", "x": 160, "y": 60, "w": 80, "h": 80, "rx": 6 },
+      { "type": "path", "x": 180, "y": 80, "w": 40, "h": 40, "d": "M200 92a14 14 0 1 1-0.01 0 M210 110L222 122" },
+      { "type": "circle", "cx": 170, "cy": 70, "r": 15, "style": "filled" },
+      { "type": "text", "x": 170, "y": 76, "value": "9", "size": 14, "fill": "#fff", "weight": "bold" }
+    ] },
+    { "shapes": [
+      { "type": "line", "x": 100, "y": 95, "w": 80 },
+      { "type": "filled", "x": 190, "y": 85, "w": 50, "h": 22, "rx": 11 },
+      { "type": "text", "x": 215, "y": 100, "value": "NEW", "size": 11, "fill": "#fff", "weight": "bold" },
+      { "type": "line", "x": 250, "y": 95, "w": 55 }
+    ] }
+  ]
+}

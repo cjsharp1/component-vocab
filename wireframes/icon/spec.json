@@ -2,38 +2,38 @@
   "default": {
     "height": 300,
     "shapes": [
-      { "type": "circle", "cx": 200, "cy": 160, "r": 14, "style": "region", "label": "Symbol" },
-      { "type": "line", "x": 230, "y": 160, "w": 140, "label": "Visible label", "at": "below" },
-      { "type": "circle", "cx": 560, "cy": 160, "r": 18, "style": "region", "label": "Meaningful icon" },
+      { "type": "path", "x": 168, "y": 136, "w": 40, "h": 40, "d": "M188 148a12 12 0 1 1-0.01 0 M196 168L208 180", "label": "Symbol" },
+      { "type": "line", "x": 220, "y": 160, "w": 140, "label": "Visible label", "at": "below" },
+      { "type": "path", "x": 520, "y": 128, "w": 48, "h": 48, "d": "M544 142a16 16 0 1 1-0.01 0 M555 169L570 184", "label": "Meaningful icon" },
       { "type": "optional", "x": 500, "y": 200, "w": 120, "h": 28, "rx": 4, "label": "Accessible name", "at": "below" },
       { "type": "line", "x": 515, "y": 214, "w": 90, "weight": 1 }
     ]
   },
   "thumbnail": {
     "shapes": [
-      { "type": "circle", "cx": 70, "cy": 40, "r": 12, "style": "region" },
-      { "type": "line", "x": 92, "y": 40, "w": 60 },
-      { "type": "circle", "cx": 195, "cy": 40, "r": 16, "style": "region" }
+      { "type": "path", "x": 48, "y": 24, "w": 28, "h": 28, "d": "M62 32a9 9 0 1 1-0.01 0 M68 46L78 56" },
+      { "type": "line", "x": 86, "y": 40, "w": 55 },
+      { "type": "path", "x": 168, "y": 20, "w": 36, "h": 36, "d": "M186 30a12 12 0 1 1-0.01 0 M195 50L206 61" }
     ]
   },
   "variations": [
     { "shapes": [
-      { "type": "circle", "cx": 120, "cy": 100, "r": 8, "style": "region" },
-      { "type": "circle", "cx": 200, "cy": 100, "r": 14, "style": "region" },
-      { "type": "circle", "cx": 290, "cy": 100, "r": 22, "style": "region" }
+      { "type": "path", "x": 70, "y": 82, "w": 24, "h": 24, "d": "M82 90a7 7 0 1 1-0.01 0 M87 101L94 108" },
+      { "type": "path", "x": 160, "y": 74, "w": 36, "h": 36, "d": "M178 86a12 12 0 1 1-0.01 0 M187 106L198 117" },
+      { "type": "path", "x": 250, "y": 62, "w": 52, "h": 52, "d": "M276 78a18 18 0 1 1-0.01 0 M290 108L306 124" }
     ] },
     { "shapes": [
-      { "type": "circle", "cx": 130, "cy": 60, "r": 9, "style": "region" },
-      { "type": "line", "x": 148, "y": 60, "w": 110 },
+      { "type": "path", "x": 112, "y": 46, "w": 24, "h": 24, "d": "M124 54a7 7 0 1 1-0.01 0 M129 65L136 72" },
+      { "type": "line", "x": 144, "y": 60, "w": 110 },
       { "type": "line", "x": 120, "y": 100, "w": 110 },
-      { "type": "circle", "cx": 250, "cy": 100, "r": 9, "style": "region" },
-      { "type": "circle", "cx": 200, "cy": 140, "r": 12, "style": "region" }
+      { "type": "path", "x": 236, "y": 88, "w": 24, "h": 24, "d": "M248 96a7 7 0 1 1-0.01 0 M253 107L260 114" },
+      { "type": "path", "x": 180, "y": 124, "w": 32, "h": 32, "d": "M196 134a10 10 0 1 1-0.01 0 M204 152L214 162" }
     ] },
     { "shapes": [
       { "type": "circle", "cx": 140, "cy": 100, "r": 28, "style": "region" },
-      { "type": "circle", "cx": 140, "cy": 100, "r": 10, "style": "filled" },
+      { "type": "path", "x": 124, "y": 84, "w": 32, "h": 32, "d": "M140 94a10 10 0 1 1-0.01 0 M148 112L158 122" },
       { "type": "region", "x": 232, "y": 72, "w": 56, "h": 56, "rx": 12 },
-      { "type": "circle", "cx": 260, "cy": 100, "r": 10, "style": "filled" }
+      { "type": "path", "x": 244, "y": 84, "w": 32, "h": 32, "d": "M260 94a10 10 0 1 1-0.01 0 M268 112L278 122" }
     ] }
   ]
 }

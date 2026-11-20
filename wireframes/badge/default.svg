@@ -1,25 +1,18 @@
 <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect class="region" x="0" y="0" width="800" height="350" />
-
-  <!-- Position anchor (example: icon button) -->
   <rect class="hover-target" x="320" y="130" width="160" height="160" fill="none" stroke="none" style="cursor:pointer" />
   <g class="label-group">
-    <line class="label-line" x1="400" y1="295" x2="400" y2="315" />
-    <rect class="label-bg" x="324" y="317" width="152" height="20" />
-    <text class="label-text" x="400" y="331" text-anchor="middle">Position anchor</text>
+    <line class="label-line" x1="400" y1="292" x2="400" y2="304" />
+    <rect class="label-bg" x="339.5" y="304" width="121" height="20" />
+    <text class="label-text" x="400" y="318" text-anchor="middle">Position anchor</text>
   </g>
   <rect class="interactive" x="320" y="130" width="160" height="160" rx="8" />
-  <circle cx="400" cy="210" r="50" fill="none" stroke="#4a90d9" stroke-width="3" />
-  <rect x="385" y="175" width="30" height="70" rx="4" fill="none" stroke="#4a90d9" stroke-width="3" />
-
-  <!-- Badge -->
-  <rect class="hover-target" x="455" y="115" width="50" height="50" fill="none" stroke="none" style="cursor:pointer" />
+  <path class="interactive" d="M400 196a22 22 0 1 1-0.01 0 M416 224L436 244" stroke-linecap="round" stroke-linejoin="round" />
+  <rect class="hover-target" x="458" y="118" width="44" height="44" fill="none" stroke="none" style="cursor:pointer" />
   <g class="label-group">
-    <line class="label-line" x1="480" y1="110" x2="480" y2="85" />
-    <rect class="label-bg" x="412" y="69" width="136" height="20" />
-    <text class="label-text" x="480" y="83" text-anchor="middle">Value/content</text>
+    <line class="label-line" x1="480" y1="116" x2="480" y2="104" />
+    <rect class="label-bg" x="426.5" y="84" width="107" height="20" />
+    <text class="label-text" x="480" y="98" text-anchor="middle">Value/content</text>
   </g>
-  <circle cx="480" cy="140" r="25" fill="#ff4444" stroke="#fff" stroke-width="3" />
-  <text x="480" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#fff">5</text>
+  <circle class="interactive" cx="480" cy="140" r="22" style="fill: var(--wireframe-interactive)" />
+  <text x="480" y="148" font-size="18" text-anchor="middle" fill="#fff" font-weight="bold">5</text>
 </svg>

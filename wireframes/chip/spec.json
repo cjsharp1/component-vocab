@@ -3,8 +3,8 @@
     "height": 300,
     "shapes": [
       { "type": "filled", "x": 150, "y": 132, "w": 130, "h": 36, "rx": 18, "label": "Selected" },
-      { "type": "text", "x": 172, "y": 155, "value": "✓", "size": 14 },
-      { "type": "line", "x": 188, "y": 150, "w": 70 },
+      { "type": "text", "x": 178, "y": 156, "value": "✓", "size": 16, "fill": "#fff" },
+      { "type": "line", "x": 194, "y": 150, "w": 64 },
       { "type": "interactive", "x": 310, "y": 132, "w": 110, "h": 36, "rx": 18, "label": "Unselected", "at": "below" },
       { "type": "line", "x": 330, "y": 150, "w": 70 },
       { "type": "interactive", "x": 470, "y": 132, "w": 150, "h": 36, "rx": 18 },
@@ -27,8 +27,8 @@
   "variations": [
     { "shapes": [
       { "type": "filled", "x": 60, "y": 82, "w": 100, "h": 36, "rx": 18 },
-      { "type": "text", "x": 80, "y": 105, "value": "✓", "size": 14 },
-      { "type": "line", "x": 95, "y": 100, "w": 50 },
+      { "type": "text", "x": 82, "y": 106, "value": "✓", "size": 16, "fill": "#fff" },
+      { "type": "line", "x": 98, "y": 100, "w": 46 },
       { "type": "interactive", "x": 175, "y": 82, "w": 80, "h": 36, "rx": 18 },
       { "type": "line", "x": 195, "y": 100, "w": 40 },
       { "type": "interactive", "x": 270, "y": 82, "w": 80, "h": 36, "rx": 18 },
