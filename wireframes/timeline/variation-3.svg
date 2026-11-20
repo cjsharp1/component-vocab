@@ -1,5 +1,5 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <line x1="30" y1="100" x2="370" y2="100" stroke="#ccc" stroke-width="2" />
+  <line x1="30" y1="100" x2="370" y2="100" stroke="var(--wireframe-border)" stroke-width="2" />
   <circle class="interactive" cx="70" cy="100" r="6" />
   <line class="text-line" x1="50" y1="85" x2="90" y2="85" />
   <circle class="interactive" cx="160" cy="100" r="6" />

@@ -19,9 +19,9 @@
     <rect class="label-bg" x="327" y="69" width="146" height="20" />
     <text class="label-text" x="400" y="83" text-anchor="middle">Tooltip content</text>
   </g>
-  <rect x="310" y="110" width="180" height="45" rx="4" fill="#333" />
-  <line x1="330" y1="125" x2="470" y2="125" stroke="#fff" stroke-width="2" stroke-linecap="round" />
-  <line x1="330" y1="140" x2="450" y2="140" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+  <rect class="inverse" x="310" y="110" width="180" height="45" rx="4" />
+  <line class="on-fill" x1="330" y1="125" x2="470" y2="125" stroke-width="2" stroke-linecap="round" />
+  <line class="on-fill" x1="330" y1="140" x2="450" y2="140" stroke-width="2" stroke-linecap="round" />
 
   <!-- Arrow (optional) -->
   <rect class="hover-target" x="390" y="155" width="20" height="15" fill="none" stroke="none" style="cursor:pointer" />
@@ -30,5 +30,5 @@
     <rect class="label-bg" x="452" y="154" width="116" height="20" />
     <text class="label-text" x="510" y="168" text-anchor="middle">Arrow/pointer</text>
   </g>
-  <path class="optional" d="M 390 155 L 400 165 L 410 155 Z" fill="#333" stroke="none" />
+  <path class="optional inverse" d="M 390 155 L 400 165 L 410 155 Z" stroke="none" />
 </svg>

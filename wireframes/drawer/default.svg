@@ -9,10 +9,10 @@
     <rect class="label-bg" x="582" y="159" width="70" height="20" />
     <text class="label-text" x="617" y="173" text-anchor="middle">Backdrop</text>
   </g>
-  <rect class="optional" x="280" y="0" width="520" height="350" fill="rgba(0,0,0,0.2)" />
+  <rect class="optional scrim" x="280" y="0" width="520" height="350" />
 
   <!-- Drawer panel (from left edge) -->
-  <rect x="0" y="0" width="280" height="350" fill="#fff" stroke="#999" stroke-width="2" />
+  <rect class="on-fill-fill" x="0" y="0" width="280" height="350" stroke="var(--wireframe-border)" stroke-width="2" />
 
   <!-- Header/title -->
   <rect class="hover-target" x="15" y="15" width="200" height="30" fill="none" stroke="none" style="cursor:pointer" />
@@ -32,7 +32,7 @@
   </g>
   <path class="interactive" d="M244 24L256 36 M256 24L244 36" stroke-linecap="round" />
 
-  <line x1="15" y1="55" x2="265" y2="55" stroke="#ddd" stroke-width="1" />
+  <line x1="15" y1="55" x2="265" y2="55" stroke="var(--wireframe-border)" stroke-width="1" />
 
   <!-- Content area -->
   <rect class="hover-target" x="15" y="70" width="250" height="265" fill="none" stroke="none" style="cursor:pointer" />

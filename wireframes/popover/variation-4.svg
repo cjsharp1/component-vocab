@@ -3,7 +3,7 @@
   <!-- Trigger -->
   <rect class="interactive" x="175" y="87" width="50" height="25" rx="4" />
   <!-- No arrow -->
-  <rect x="130" y="25" width="140" height="50" rx="4" fill="#fff" stroke="#999" stroke-width="2" />
+  <rect class="on-fill-fill" x="130" y="25" width="140" height="50" rx="4" stroke="var(--wireframe-border)" stroke-width="2" />
   <line class="text-line" x1="140" y1="40" x2="240" y2="40" />
   <line class="text-line" x1="140" y1="55" x2="220" y2="55" />
 </svg>

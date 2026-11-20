@@ -55,6 +55,6 @@
     <rect class="label-bg" x="350" y="332" width="100" height="20" />
     <text class="label-text" x="400" y="346" text-anchor="middle">Copyright</text>
   </g>
-  <line x1="0" y1="260" x2="800" y2="260" stroke="#999" stroke-width="1" />
+  <line x1="0" y1="260" x2="800" y2="260" stroke="var(--wireframe-border)" stroke-width="1" />
   <line class="text-line" x1="50" y1="290" x2="300" y2="290" />
 </svg>

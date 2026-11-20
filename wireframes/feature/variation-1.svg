@@ -1,6 +1,6 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <circle class="interactive" cx="200" cy="50" r="22" />
-  <circle cx="200" cy="50" r="10" fill="#0066cc" opacity="0.3" />
+  <circle class="filled" cx="200" cy="50" r="10" opacity="0.3" />
   <line class="text-line" x1="140" y1="95" x2="260" y2="95" />
   <line class="text-line" x1="120" y1="115" x2="280" y2="115" />
   <line class="text-line" x1="130" y1="130" x2="270" y2="130" />

@@ -11,10 +11,10 @@
   </g>
   <rect class="interactive" x="300" y="50" width="200" height="45" rx="4" />
   <line class="text-line" x1="330" y1="72" x2="430" y2="72" />
-  <path d="M 460 67 L 470 77 L 480 67 Z" fill="none" stroke="#4a90d9" stroke-width="2" />
+  <path class="interactive" d="M 460 67 L 470 77 L 480 67 Z" fill="none" stroke-width="2" />
 
   <!-- Dropdown menu -->
-  <rect x="300" y="115" width="250" height="200" rx="6" fill="#fff" stroke="#999" stroke-width="2" />
+  <rect class="on-fill-fill" x="300" y="115" width="250" height="200" rx="6" stroke="var(--wireframe-border)" stroke-width="2" />
 
   <!-- Menu items -->
   <rect class="hover-target" x="310" y="125" width="230" height="35" fill="none" stroke="none" style="cursor:pointer" />
@@ -34,7 +34,7 @@
     <rect class="label-bg" x="582" y="184" width="74" height="20" />
     <text class="label-text" x="619" y="198" text-anchor="middle">Dividers</text>
   </g>
-  <line class="optional" x1="310" y1="200" x2="540" y2="200" stroke="#ddd" stroke-width="1" />
+  <line class="optional" x1="310" y1="200" x2="540" y2="200" stroke="var(--wireframe-border)" stroke-width="1" />
 
   <line class="text-line" x1="325" y1="222" x2="410" y2="222" />
   <line class="text-line" x1="325" y1="257" x2="450" y2="257" />

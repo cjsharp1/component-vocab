@@ -11,16 +11,16 @@
   </g>
 
   <!-- Home link -->
-  <line class="text-line" x1="100" y1="110" x2="150" y2="110" style="stroke:#0066cc" />
-  <text x="175" y="114" font-size="16" fill="#666">/</text>
+  <line class="text-line" x1="100" y1="110" x2="150" y2="110" style="stroke: var(--wireframe-interactive)" />
+  <text x="175" y="114" font-size="16">/</text>
 
   <!-- Category link -->
-  <line class="text-line" x1="195" y1="110" x2="265" y2="110" style="stroke:#0066cc" />
-  <text x="285" y="114" font-size="16" fill="#666">/</text>
+  <line class="text-line" x1="195" y1="110" x2="265" y2="110" style="stroke: var(--wireframe-interactive)" />
+  <text x="285" y="114" font-size="16">/</text>
 
   <!-- Subcategory link -->
-  <line class="text-line" x1="305" y1="110" x2="400" y2="110" style="stroke:#0066cc" />
-  <text x="420" y="114" font-size="16" fill="#666">/</text>
+  <line class="text-line" x1="305" y1="110" x2="400" y2="110" style="stroke: var(--wireframe-interactive)" />
+  <text x="420" y="114" font-size="16">/</text>
 
   <!-- Current page (not linked) -->
   <rect class="hover-target" x="440" y="95" width="110" height="30" fill="none" stroke="none" style="cursor:pointer" />

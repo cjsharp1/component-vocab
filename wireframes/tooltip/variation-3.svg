@@ -1,9 +1,9 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="0" y="0" width="400" height="200" />
   <!-- Tooltip left -->
-  <rect x="100" y="80" width="80" height="25" rx="3" fill="#333" />
-  <line x1="110" y1="90" x2="160" y2="90" stroke="#fff" stroke-width="2" />
-  <path d="M 180 87 L 185 92 L 180 97 Z" fill="#333" />
+  <rect class="inverse" x="100" y="80" width="80" height="25" rx="3" />
+  <line class="on-fill" x1="110" y1="90" x2="160" y2="90" stroke-width="2" />
+  <path class="inverse" d="M 180 87 L 185 92 L 180 97 Z" />
   <!-- Trigger -->
   <rect class="interactive" x="205" y="77" width="50" height="30" rx="4" />
 </svg>

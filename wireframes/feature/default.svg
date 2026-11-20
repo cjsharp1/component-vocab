@@ -7,7 +7,7 @@
     <text class="label-text" x="400" y="14" text-anchor="middle">Icon</text>
   </g>
   <circle class="interactive optional" cx="400" cy="70" r="28" />
-  <circle cx="400" cy="70" r="12" fill="#0066cc" opacity="0.3" />
+  <circle class="filled" cx="400" cy="70" r="12" opacity="0.3" />
 
   <!-- Heading -->
   <rect class="hover-target" x="300" y="120" width="200" height="20" fill="none" stroke="none" style="cursor:pointer" />

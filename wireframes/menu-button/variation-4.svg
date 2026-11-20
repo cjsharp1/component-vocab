@@ -3,13 +3,13 @@
   <!-- Button -->
   <rect class="interactive" x="130" y="50" width="100" height="30" rx="4" />
   <!-- Menu with icons -->
-  <rect x="130" y="95" width="140" height="90" rx="4" fill="#fff" stroke="#999" stroke-width="2" />
-  <circle cx="145" cy="107" r="6" fill="#4a90d9" />
+  <rect class="on-fill-fill" x="130" y="95" width="140" height="90" rx="4" stroke="var(--wireframe-border)" stroke-width="2" />
+  <circle class="filled" cx="145" cy="107" r="6" />
   <line class="text-line" x1="160" y1="107" x2="230" y2="107" />
-  <circle cx="145" cy="127" r="6" fill="#4a90d9" />
+  <circle class="filled" cx="145" cy="127" r="6" />
   <line class="text-line" x1="160" y1="127" x2="240" y2="127" />
-  <circle cx="145" cy="147" r="6" fill="#4a90d9" />
+  <circle class="filled" cx="145" cy="147" r="6" />
   <line class="text-line" x1="160" y1="147" x2="220" y2="147" />
-  <circle cx="145" cy="167" r="6" fill="#4a90d9" />
+  <circle class="filled" cx="145" cy="167" r="6" />
   <line class="text-line" x1="160" y1="167" x2="250" y2="167" />
 </svg>

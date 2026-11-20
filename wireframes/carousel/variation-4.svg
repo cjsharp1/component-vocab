@@ -1,10 +1,10 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="0" y="0" width="400" height="200" />
   <!-- Arrows only -->
-  <rect x="50" y="30" width="300" height="120" rx="6" fill="none" stroke="#999" stroke-width="2" />
+  <rect x="50" y="30" width="300" height="120" rx="6" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
   <rect class="media-placeholder" x="60" y="40" width="280" height="100" rx="4" />
-  <circle cx="70" cy="90" r="15" fill="rgba(255,255,255,0.8)" stroke="#999" />
-  <path d="M 74 90 L 68 87 L 68 93 Z" fill="#333" />
-  <circle cx="330" cy="90" r="15" fill="rgba(255,255,255,0.8)" stroke="#999" />
-  <path d="M 326 90 L 332 87 L 332 93 Z" fill="#333" />
+  <circle cx="70" cy="90" r="15" class="on-fill-fill" style="fill-opacity: 0.9" stroke="var(--wireframe-border)" />
+  <path class="inverse" d="M 74 90 L 68 87 L 68 93 Z" />
+  <circle cx="330" cy="90" r="15" class="on-fill-fill" style="fill-opacity: 0.9" stroke="var(--wireframe-border)" />
+  <path class="inverse" d="M 326 90 L 332 87 L 332 93 Z" />
 </svg>

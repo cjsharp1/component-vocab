@@ -1,6 +1,6 @@
 <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
   <!-- Vertical line (timeline axis) -->
-  <line x1="150" y1="40" x2="150" y2="310" stroke="#ccc" stroke-width="2" />
+  <line x1="150" y1="40" x2="150" y2="310" stroke="var(--wireframe-border)" stroke-width="2" />
 
   <!-- Event 1 -->
   <rect class="hover-target" x="70" y="50" width="60" height="15" fill="none" stroke="none" style="cursor:pointer" />

@@ -12,7 +12,7 @@
   <line class="text-line" x1="110" y1="135" x2="185" y2="135" />
 
   <!-- Progress bar container -->
-  <rect x="100" y="170" width="600" height="30" rx="15" fill="#e0e0e0" stroke="#999" stroke-width="1" />
+  <rect class="track" x="100" y="170" width="600" height="30" rx="15" stroke-width="1" />
 
   <!-- Bar/indicator (filled portion) -->
   <rect class="hover-target" x="100" y="170" width="360" height="30" fill="none" stroke="none" style="cursor:pointer" />
@@ -21,5 +21,5 @@
     <rect class="label-bg" x="206" y="227" width="148" height="20" />
     <text class="label-text" x="280" y="241" text-anchor="middle">Bar/indicator</text>
   </g>
-  <rect x="100" y="170" width="360" height="30" rx="15" fill="#4a90d9" />
+  <rect class="filled" x="100" y="170" width="360" height="30" rx="15" />
 </svg>

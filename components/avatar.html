@@ -86,8 +86,8 @@
             <text class="label-text" x="400" y="73" text-anchor="middle">Image</text>
           </g>
           <circle class="media-placeholder" cx="400" cy="200" r="100" />
-          <circle cx="400" cy="180" r="35" fill="#aaa" />
-          <path d="M 340 270 Q 340 230 400 230 Q 460 230 460 270" fill="#aaa" />
+          <circle class="track" cx="400" cy="180" r="35" />
+          <path class="track" d="M 340 270 Q 340 230 400 230 Q 460 230 460 270" />
 
           <!-- Status indicator (optional) -->
           <rect class="hover-target" x="475" y="265" width="40" height="40" fill="none" stroke="none" style="cursor:pointer" />
@@ -96,7 +96,7 @@
             <rect class="label-bg" x="395" y="332" width="200" height="20" />
             <text class="label-text" x="495" y="346" text-anchor="middle">Status indicator</text>
           </g>
-          <circle class="optional" cx="485" cy="285" r="20" fill="#4caf50" stroke="#fff" stroke-width="4" />
+          <circle class="optional filled on-fill" cx="485" cy="285" r="20" stroke-width="4" />
         </svg>
       </div>
     </section>
@@ -142,8 +142,8 @@
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- Stacked group -->
               <circle class="media-placeholder" cx="160" cy="100" r="35" />
-              <circle class="media-placeholder" cx="200" cy="100" r="35" stroke="#fff" stroke-width="3" />
-              <circle class="media-placeholder" cx="240" cy="100" r="35" stroke="#fff" stroke-width="3" />
+              <circle class="media-placeholder on-fill" cx="200" cy="100" r="35" stroke-width="3" />
+              <circle class="media-placeholder on-fill" cx="240" cy="100" r="35" stroke-width="3" />
             </svg>
           </div>
           <figcaption>Group: Stack overlapping</figcaption>
@@ -185,9 +185,9 @@
               <rect class="region" x="0" y="0" width="400" height="200" />
               <!-- With status -->
               <circle class="media-placeholder" cx="200" cy="100" r="45" />
-              <circle cx="200" cy="90" r="18" fill="#aaa" />
-              <path d="M 175 120 Q 175 105 200 105 Q 225 105 225 120" fill="#aaa" />
-              <circle cx="230" cy="130" r="12" fill="#4caf50" stroke="#fff" stroke-width="3" />
+              <circle class="track" cx="200" cy="90" r="18" />
+              <path class="track" d="M 175 120 Q 175 105 200 105 Q 225 105 225 120" />
+              <circle class="filled on-fill" cx="230" cy="130" r="12" stroke-width="3" />
             </svg>
           </div>
           <figcaption>With status indicator</figcaption>

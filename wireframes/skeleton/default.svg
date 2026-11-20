@@ -11,14 +11,14 @@
   </g>
 
   <!-- Avatar circle placeholder -->
-  <circle cx="130" cy="120" r="30" fill="#ddd" stroke="none" />
+  <circle class="track" cx="130" cy="120" r="30" stroke="none" />
 
   <!-- Text line placeholders -->
-  <rect x="180" y="95" width="520" height="20" rx="4" fill="#ddd" />
-  <rect x="180" y="130" width="480" height="20" rx="4" fill="#ddd" />
-  <rect x="180" y="165" width="420" height="20" rx="4" fill="#ddd" />
+  <rect class="track" x="180" y="95" width="520" height="20" rx="4" />
+  <rect class="track" x="180" y="130" width="480" height="20" rx="4" />
+  <rect class="track" x="180" y="165" width="420" height="20" rx="4" />
 
   <!-- Second block -->
-  <rect x="100" y="220" width="600" height="20" rx="4" fill="#ddd" />
-  <rect x="100" y="255" width="550" height="20" rx="4" fill="#ddd" />
+  <rect class="track" x="100" y="220" width="600" height="20" rx="4" />
+  <rect class="track" x="100" y="255" width="550" height="20" rx="4" />
 </svg>

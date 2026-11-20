@@ -14,7 +14,7 @@
     <rect class="label-bg" x="348" y="74" width="104" height="20" />
     <text class="label-text" x="400" y="88" text-anchor="middle">Rule/line</text>
   </g>
-  <line x1="100" y1="120" x2="700" y2="120" stroke="#999" stroke-width="1" />
+  <line x1="100" y1="120" x2="700" y2="120" stroke="var(--wireframe-border)" stroke-width="1" />
 
   <!-- Content below -->
   <line class="text-line" x1="100" y1="160" x2="420" y2="160" />

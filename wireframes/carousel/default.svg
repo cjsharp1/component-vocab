@@ -3,7 +3,7 @@
   <rect class="region" x="0" y="0" width="800" height="350" />
 
   <!-- Carousel container -->
-  <rect x="100" y="50" width="600" height="250" rx="8" fill="none" stroke="#999" stroke-width="2" />
+  <rect x="100" y="50" width="600" height="250" rx="8" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
 
   <!-- Slide/item (visible) -->
   <rect class="hover-target" x="130" y="70" width="540" height="180" fill="none" stroke="none" style="cursor:pointer" />
@@ -24,10 +24,10 @@
     <text class="label-text" x="125" y="113" text-anchor="middle">Navigation arrows</text>
   </g>
   <circle class="optional" cx="125" cy="165" r="20" />
-  <path d="M 131 165 L 121 160 L 121 170 Z" fill="#999" />
+  <path class="inverse" d="M 131 165 L 121 160 L 121 170 Z" />
 
   <circle class="optional" cx="675" cy="165" r="20" />
-  <path d="M 669 165 L 679 160 L 679 170 Z" fill="#999" />
+  <path class="inverse" d="M 669 165 L 679 160 L 679 170 Z" />
 
   <!-- Dot indicators (optional) -->
   <rect class="hover-target" x="340" y="270" width="120" height="20" fill="none" stroke="none" style="cursor:pointer" />
@@ -36,8 +36,8 @@
     <rect class="label-bg" x="328" y="317" width="144" height="20" />
     <text class="label-text" x="400" y="331" text-anchor="middle">Dot indicators</text>
   </g>
-  <circle class="optional" cx="360" cy="280" r="6" fill="#4a90d9" />
-  <circle class="optional" cx="385" cy="280" r="6" fill="#ddd" />
-  <circle class="optional" cx="410" cy="280" r="6" fill="#ddd" />
-  <circle class="optional" cx="435" cy="280" r="6" fill="#ddd" />
+  <circle class="optional filled" cx="360" cy="280" r="6" />
+  <circle class="optional track" cx="385" cy="280" r="6" />
+  <circle class="optional track" cx="410" cy="280" r="6" />
+  <circle class="optional track" cx="435" cy="280" r="6" />
 </svg>

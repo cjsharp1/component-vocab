@@ -2,6 +2,6 @@
   <rect class="region" x="0" y="0" width="400" height="200" />
   <!-- Solid divider -->
   <line class="text-line" x1="40" y1="50" x2="200" y2="50" />
-  <line x1="40" y1="90" x2="360" y2="90" stroke="#999" stroke-width="1" />
+  <line x1="40" y1="90" x2="360" y2="90" stroke="var(--wireframe-border)" stroke-width="1" />
   <line class="text-line" x1="40" y1="130" x2="220" y2="130" />
 </svg>

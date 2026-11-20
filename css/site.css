@@ -358,8 +358,24 @@ table .affects-layout::before {
 .component-grid svg .media-placeholder { fill: var(--wireframe-media); stroke: var(--wireframe-border); stroke-width: 1; }
 .wireframe-container svg .interactive,
 .component-grid svg .interactive { fill: none; stroke: var(--wireframe-interactive); stroke-width: 2; }
+/* .filled after .interactive so solid accents win when both classes are present. */
 .wireframe-container svg .optional { fill: none; stroke: var(--wireframe-optional); stroke-width: 1; stroke-dasharray: 4 3; }
 .wireframe-container svg .media-placeholder.optional { fill: var(--wireframe-media); }
+/* Progress/track fills and solid accent fills (older hand-drawn wireframes). */
+.wireframe-container svg .track,
+.component-grid svg .track { fill: var(--wireframe-media); stroke: var(--wireframe-border); stroke-width: 1; }
+.wireframe-container svg .filled,
+.component-grid svg .filled { fill: var(--wireframe-interactive); stroke: none; }
+/* Inverted surface (e.g. toast body) and glyphs drawn on top of it. */
+.wireframe-container svg .inverse,
+.component-grid svg .inverse { fill: var(--wireframe-label-bg); stroke: none; }
+/* Stroke-only helper for glyphs on .filled / .inverse; does not clear fill. */
+.wireframe-container svg .on-fill { stroke: var(--wireframe-label-text); }
+.wireframe-container svg .on-fill-fill { fill: var(--wireframe-label-text); stroke: none; }
+.wireframe-container svg .optional.filled { stroke-dasharray: none; }
+/* Dim overlay behind drawers/heroes. */
+.wireframe-container svg .scrim,
+.component-grid svg .scrim { fill: rgba(0, 0, 0, 0.25); stroke: none; }
 .wireframe-container svg .text-line { stroke: var(--wireframe-text-line); stroke-width: 2; stroke-linecap: round; }
 .component-grid svg .text-line { fill: var(--wireframe-text-line); stroke: none; }
 .wireframe-container svg text { fill: var(--ink-2); font-family: var(--font-mono); }

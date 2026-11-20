@@ -9,7 +9,7 @@
     <rect class="label-bg" x="-8" y="110" width="42" height="20" />
     <text class="label-text" x="13" y="124" text-anchor="middle">Alert</text>
   </g>
-  <rect x="100" y="80" width="600" height="80" fill="rgba(0,150,255,0.1)" stroke="rgba(0,150,255,0.5)" stroke-width="2" rx="6" />
+  <rect x="100" y="80" width="600" height="80" class="track" style="stroke: var(--wireframe-interactive); stroke-width: 2" stroke-width="2" rx="6" />
 
   <!-- Icon -->
   <rect class="hover-target" x="120" y="105" width="30" height="30" fill="none" stroke="none" style="cursor:pointer" />
@@ -18,7 +18,7 @@
     <rect class="label-bg" x="109" y="59" width="52" height="20" />
     <text class="label-text" x="135" y="73" text-anchor="middle">Icon</text>
   </g>
-  <circle cx="135" cy="120" r="12" fill="rgba(0,150,255,0.3)" />
+  <circle cx="135" cy="120" r="12" class="filled" style="fill-opacity: 0.45" />
 
   <!-- Title and message -->
   <rect class="hover-target" x="170" y="100" width="450" height="40" fill="none" stroke="none" style="cursor:pointer" />
@@ -32,6 +32,6 @@
 
   <!-- Dismiss button -->
   <circle cx="665" cy="110" r="10" class="optional" />
-  <line x1="661" y1="106" x2="669" y2="114" stroke="#666" stroke-width="1.5" />
-  <line x1="669" y1="106" x2="661" y2="114" stroke="#666" stroke-width="1.5" />
+  <line class="interactive" x1="661" y1="106" x2="669" y2="114" stroke-width="1.5" />
+  <line class="interactive" x1="669" y1="106" x2="661" y2="114" stroke-width="1.5" />
 </svg>

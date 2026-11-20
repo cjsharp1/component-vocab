@@ -2,10 +2,10 @@
   <rect class="region" x="0" y="0" width="400" height="200" />
   <rect class="interactive" x="20" y="30" width="160" height="25" rx="4" />
   <line class="text-line" x1="30" y1="42" x2="100" y2="42" />
-  <rect x="20" y="60" width="160" height="25" fill="none" stroke="#ccc" stroke-width="1" rx="4" />
+  <rect x="20" y="60" width="160" height="25" fill="none" stroke="var(--wireframe-border)" stroke-width="1" rx="4" />
   <line class="text-line" x1="30" y1="72" x2="110" y2="72" />
   <rect class="interactive" x="20" y="95" width="160" height="25" rx="4" />
   <line class="text-line" x1="30" y1="107" x2="105" y2="107" />
-  <rect x="20" y="125" width="160" height="25" fill="none" stroke="#ccc" stroke-width="1" rx="4" />
+  <rect x="20" y="125" width="160" height="25" fill="none" stroke="var(--wireframe-border)" stroke-width="1" rx="4" />
   <line class="text-line" x1="30" y1="137" x2="115" y2="137" />
 </svg>

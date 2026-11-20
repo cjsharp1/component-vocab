@@ -2,7 +2,7 @@
   <rect class="region" x="0" y="0" width="400" height="200" />
   <rect class="interactive" x="40" y="85" width="30" height="30" rx="4" />
   <rect class="interactive" x="80" y="85" width="30" height="30" rx="4" />
-  <rect class="interactive" x="120" y="85" width="30" height="30" rx="4" style="fill:#0066cc" />
+  <rect class="interactive" x="120" y="85" width="30" height="30" rx="4" style="fill: var(--wireframe-interactive)" />
   <rect class="interactive" x="160" y="85" width="30" height="30" rx="4" />
   <text x="205" y="104" text-anchor="middle" font-size="12">...</text>
   <rect class="interactive" x="230" y="85" width="30" height="30" rx="4" />

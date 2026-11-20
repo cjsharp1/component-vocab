@@ -3,7 +3,7 @@
   <!-- Trigger -->
   <rect class="interactive" x="145" y="77" width="50" height="30" rx="4" />
   <!-- Tooltip right -->
-  <path d="M 220 87 L 215 92 L 220 97 Z" fill="#333" />
-  <rect x="220" y="80" width="80" height="25" rx="3" fill="#333" />
-  <line x1="230" y1="90" x2="280" y2="90" stroke="#fff" stroke-width="2" />
+  <path class="inverse" d="M 220 87 L 215 92 L 220 97 Z" />
+  <rect class="inverse" x="220" y="80" width="80" height="25" rx="3" />
+  <line class="on-fill" x1="230" y1="90" x2="280" y2="90" stroke-width="2" />
 </svg>

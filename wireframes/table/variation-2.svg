@@ -1,9 +1,9 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="0" y="0" width="400" height="200" />
-  <rect x="20" y="30" width="360" height="140" fill="none" stroke="#999" stroke-width="2" />
+  <rect x="20" y="30" width="360" height="140" fill="none" stroke="var(--wireframe-border)" stroke-width="2" />
   <rect class="interactive" x="20" y="30" width="120" height="28" />
   <rect class="interactive" x="140" y="30" width="120" height="28" />
   <rect class="interactive" x="260" y="30" width="120" height="28" />
-  <rect x="20" y="58" width="360" height="28" fill="rgba(0,0,0,0.05)" />
-  <rect x="20" y="114" width="360" height="28" fill="rgba(0,0,0,0.05)" />
+  <rect class="track" x="20" y="58" width="360" height="28" />
+  <rect class="track" x="20" y="114" width="360" height="28" />
 </svg>

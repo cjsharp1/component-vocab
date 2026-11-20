@@ -1,6 +1,6 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect class="region" x="0" y="0" width="400" height="200" />
-  <rect class="interactive" x="30" y="80" width="70" height="30" style="fill:#0066cc" rx="15" />
+  <rect class="interactive" x="30" y="80" width="70" height="30" style="fill: var(--wireframe-interactive)" rx="15" />
   <rect class="interactive" x="110" y="80" width="70" height="30" rx="15" />
   <rect class="interactive" x="190" y="80" width="70" height="30" rx="15" />
   <rect class="interactive" x="270" y="80" width="70" height="30" rx="15" />

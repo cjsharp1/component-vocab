@@ -7,7 +7,7 @@
     <text class="label-text" x="400" y="14" text-anchor="middle">Icon</text>
   </g>
   <circle class="interactive optional" cx="400" cy="65" r="22" />
-  <circle cx="400" cy="65" r="10" fill="#0066cc" opacity="0.3" />
+  <circle class="filled" cx="400" cy="65" r="10" opacity="0.3" />
 
   <!-- Number/Value -->
   <rect class="hover-target" x="330" y="110" width="140" height="35" fill="none" stroke="none" style="cursor:pointer" />
@@ -16,7 +16,7 @@
     <rect class="label-bg" x="321" y="69" width="158" height="20" />
     <text class="label-text" x="400" y="83" text-anchor="middle">Number/Value</text>
   </g>
-  <text x="400" y="135" text-anchor="middle" font-size="32" font-weight="bold" fill="#333">1,234</text>
+  <text x="400" y="135" text-anchor="middle" font-size="32" font-weight="bold">1,234</text>
 
   <!-- Trend -->
   <rect class="hover-target" x="460" y="115" width="60" height="20" fill="none" stroke="none" style="cursor:pointer" />
@@ -25,7 +25,7 @@
     <rect class="label-bg" x="456" y="162" width="68" height="20" />
     <text class="label-text" x="490" y="176" text-anchor="middle">Trend</text>
   </g>
-  <text x="475" y="130" font-size="14" fill="#0a0" opacity="0.8">↑ 12%</text>
+  <text x="475" y="130" font-size="14" opacity="0.8">↑ 12%</text>
 
   <!-- Label -->
   <rect class="hover-target" x="330" y="160" width="140" height="20" fill="none" stroke="none" style="cursor:pointer" />
