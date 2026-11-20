@@ -2,6 +2,8 @@
 
 A shared vocabulary for website components: one list of names that matches what most design systems already call things, doesn't contradict native HTML, and holds up for accessibility. Each component has a page with an HTML outline, its native element and ARIA pattern, where it may be placed, wireframes (for stable components), configuration options, and the names 12 design systems use for it.
 
+**Live site:** https://cjsharp1.github.io/component-vocab/
+
 Open `index.html` in a browser. Pages work from `file://` and from any static host; there is no build step for visitors.
 
 ## What's in it
@@ -78,6 +80,7 @@ To rename or retire a page, change or delete its JSON and add `"old-slug": "new-
 ## Documents
 
 - `docs/research/`: the research inputs (consensus list, naming collisions, gap vocabulary, framework survey).
+- `docs/research/framework-survey.md`: when the 12 indexes were read, which URLs, what "—" means, and why Apple HIG mappings are approximate.
 - `docs/scope.md`: names that appear in several frameworks but aren't in the list, and why.
 - `docs/reconciliation.md`: how the original 50 pages mapped to the research list, plus the signed-off decisions.
 - `docs/migration-log.md`: how the data was migrated from the original 50 hand-written pages, including every legacy-vs-CSV disagreement and what was dropped.

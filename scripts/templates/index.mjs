@@ -58,12 +58,12 @@ ${systems.map(s => `              ${cell(c, s)}`).join('\n')}
 
   const comparison = `    <section id="comparison">
       <h2>Cross-System Comparison</h2>
-      <p>How ${systems.length} design systems name each component, from <code>docs/research/framework-alignment.csv</code>.</p>
+      <p>How ${systems.length} design systems name each component, from <code>docs/research/framework-alignment.csv</code>. See <a href="https://github.com/cjsharp1/component-vocab/blob/main/docs/research/framework-survey.md">how the survey was done</a> for the index URLs, survey date, and what "—" means.</p>
       <ul class="match-key">
         <li><span class="match-symbol" aria-hidden="true">●</span> Same name</li>
         <li><span class="match-symbol" aria-hidden="true">◐</span> Known alternative name</li>
         <li><span class="match-symbol" aria-hidden="true">○</span> Related component under another name</li>
-        <li><span class="match-symbol" aria-hidden="true">—</span> No equivalent</li>
+        <li><span class="match-symbol" aria-hidden="true">—</span> No equivalent on that system's index when surveyed</li>
         <li><sup>*</sup> Not in the CSV: names come from the old page and cover 5 systems only</li>
       </ul>
       <div class="table-scroll-controls" hidden>
