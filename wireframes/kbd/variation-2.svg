@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <line class="text-line" x1="40" y1="95" x2="110" y2="95" />
+  <rect class="region" x="120" y="76" width="60" height="40" rx="6" />
+  <text x="150" y="102" font-size="13" text-anchor="middle">Ctrl</text>
+  <text x="195" y="102" font-size="14" text-anchor="middle">+</text>
+  <rect class="region" x="210" y="76" width="44" height="40" rx="6" />
+  <text x="232" y="102" font-size="14" text-anchor="middle" font-weight="bold">K</text>
+  <line class="text-line" x1="270" y1="95" x2="360" y2="95" />
+</svg>

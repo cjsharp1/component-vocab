@@ -1,0 +1,45 @@
+{
+  "default": {
+    "height": 280,
+    "shapes": [
+      { "type": "lines", "x": 120, "y": 110, "w": 200, "count": 2, "gap": 28 },
+      { "type": "region", "x": 340, "y": 118, "w": 140, "h": 36, "rx": 6, "label": "Code text" },
+      { "type": "text", "x": 410, "y": 142, "value": "npm install", "size": 14, "anchor": "middle" },
+      { "type": "line", "x": 500, "y": 136, "w": 160 }
+    ]
+  },
+  "thumbnail": {
+    "shapes": [
+      { "type": "line", "x": 30, "y": 40, "w": 50 },
+      { "type": "region", "x": 90, "y": 26, "w": 90, "h": 28, "rx": 4 },
+      { "type": "text", "x": 135, "y": 45, "value": "code", "size": 12 },
+      { "type": "line", "x": 190, "y": 40, "w": 40 }
+    ]
+  },
+  "variations": [
+    {
+      "shapes": [
+        { "type": "line", "x": 40, "y": 80, "w": 90 },
+        { "type": "region", "x": 140, "y": 64, "w": 120, "h": 32, "rx": 5 },
+        { "type": "text", "x": 200, "y": 85, "value": "npm install", "size": 12 },
+        { "type": "line", "x": 275, "y": 80, "w": 80 }
+      ]
+    },
+    {
+      "height": 220,
+      "shapes": [
+        { "type": "region", "x": 50, "y": 40, "w": 300, "h": 140, "rx": 6, "label": "Code text" },
+        { "type": "lines", "x": 70, "y": 70, "w": 240, "count": 4, "gap": 22 }
+      ]
+    },
+    {
+      "height": 220,
+      "shapes": [
+        { "type": "region", "x": 40, "y": 40, "w": 260, "h": 140, "rx": 6, "label": "Code text" },
+        { "type": "lines", "x": 58, "y": 70, "w": 200, "count": 4, "gap": 22 },
+        { "type": "interactive", "x": 310, "y": 48, "w": 44, "h": 44, "rx": 6, "label": "Copy button", "at": "below" },
+        { "type": "path", "x": 320, "y": 58, "w": 24, "h": 24, "d": "M326 64h12v16h-12z M330 60h12v16" }
+      ]
+    }
+  ]
+}

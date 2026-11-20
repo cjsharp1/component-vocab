@@ -1,7 +1,7 @@
 {
   "slug": "textarea",
   "name": "Textarea",
-  "order": 66,
+  "order": 68,
   "status": "stable",
   "group": "forms",
   "description": "A multi-line field for longer free text, such as a message or a description. Use it when the answer may run past one line; for short values, use a Text input.",

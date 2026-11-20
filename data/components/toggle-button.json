@@ -1,7 +1,7 @@
 {
   "slug": "toggle-button",
   "name": "Toggle button",
-  "order": 36,
+  "order": 38,
   "status": "stable",
   "group": "actions",
   "description": "A button that stays pressed or not pressed, such as Bold in a text editor or Mute in a video player. For a setting that is on or off, use a Switch.",

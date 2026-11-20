@@ -1,7 +1,7 @@
 {
   "slug": "fieldset",
   "name": "Fieldset",
-  "order": 63,
+  "order": 65,
   "status": "stable",
   "group": "forms",
   "description": "Groups related form controls under a caption, such as the fields of an address or a set of radio buttons. Use it whenever several controls answer one question or belong together.",

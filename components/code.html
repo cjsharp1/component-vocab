@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code — component-vocab</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">component-vocab</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content display</a></li>
+        <li>Code</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Code</h1>
+      <p>A fragment of code or a literal value, marked up as <code>&lt;code&gt;</code>. Inline code sits in a sentence; the block variant wraps it in <code>&lt;pre&gt;</code> so whitespace is preserved. An optional copy control helps people reuse longer snippets.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Code block, Code snippet. In design systems: Code snippet (Carbon); Code (Atlassian, Chakra UI, Radix Themes); Code Block (shadcn/ui)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;code&gt;</code>, or <code>&lt;pre&gt;&lt;code&gt;</code> for a block</dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;code&gt;</code>, <code>&lt;pre&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>Block form is a variant (R6), not a separate Code block entry. Carbon's Code snippet covers inline, single-line and multi-line.</dd>
+        <dt>Category</dt>
+        <dd>C. Content display</dd>
+      </dl>
+    </section>
+
+    <section id="html-outline">
+      <h2>HTML Outline</h2>
+      <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
+      <pre class="html-outline"><code>&lt;p&gt;Run &lt;code&gt;npm install&lt;/code&gt; to get started.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Code text</td><td>Yes</td><td>The literal string or snippet</td></tr>
+          <tr><td>Language label</td><td>No</td><td>Optional label such as "JavaScript" on a block</td></tr>
+          <tr><td>Copy button</td><td>No</td><td>Copies the snippet; needs a clear name such as "Copy code"</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
+          <line class="text-line" x1="120" y1="110" x2="320" y2="110" />
+          <line class="text-line" x1="120" y1="138" x2="260" y2="138" />
+          <rect class="hover-target" x="340" y="118" width="140" height="36" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="410" y1="116" x2="410" y2="104" />
+            <rect class="label-bg" x="370.5" y="84" width="79" height="20" />
+            <text class="label-text" x="410" y="98" text-anchor="middle">Code text</text>
+          </g>
+          <rect class="region" x="340" y="118" width="140" height="36" rx="6" />
+          <text x="410" y="142" font-size="14" text-anchor="middle">npm install</text>
+          <line class="text-line" x1="500" y1="136" x2="660" y2="136" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Form</td><td>Inline, Block</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Copy</td><td>None, Copy button</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Language label</td><td>None, Shown</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Wrap</td><td>Wrap, Scroll horizontally</td><td>Yes</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="80" x2="130" y2="80" />
+              <rect class="region" x="140" y="64" width="120" height="32" rx="5" />
+              <text x="200" y="85" font-size="12" text-anchor="middle">npm install</text>
+              <line class="text-line" x1="275" y1="80" x2="355" y2="80" />
+            </svg>
+          </div>
+          <figcaption>Inline — short literal in a sentence</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hover-target" x="50" y="40" width="300" height="140" fill="none" stroke="none" style="cursor:pointer" />
+              <g class="label-group">
+                <line class="label-line" x1="200" y1="38" x2="200" y2="26" />
+                <rect class="label-bg" x="160.5" y="6" width="79" height="20" />
+                <text class="label-text" x="200" y="20" text-anchor="middle">Code text</text>
+              </g>
+              <rect class="region" x="50" y="40" width="300" height="140" rx="6" />
+              <line class="text-line" x1="70" y1="70" x2="310" y2="70" />
+              <line class="text-line" x1="70" y1="92" x2="310" y2="92" />
+              <line class="text-line" x1="70" y1="114" x2="310" y2="114" />
+              <line class="text-line" x1="70" y1="136" x2="238" y2="136" />
+            </svg>
+          </div>
+          <figcaption>Block — multi-line snippet in pre</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;pre&gt;&lt;code&gt;npm install component-vocab
+npm run build&lt;/code&gt;&lt;/pre&gt;</code></pre>
+          </details>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hover-target" x="40" y="40" width="260" height="140" fill="none" stroke="none" style="cursor:pointer" />
+              <g class="label-group">
+                <line class="label-line" x1="170" y1="38" x2="170" y2="26" />
+                <rect class="label-bg" x="130.5" y="6" width="79" height="20" />
+                <text class="label-text" x="170" y="20" text-anchor="middle">Code text</text>
+              </g>
+              <rect class="region" x="40" y="40" width="260" height="140" rx="6" />
+              <line class="text-line" x1="58" y1="70" x2="258" y2="70" />
+              <line class="text-line" x1="58" y1="92" x2="258" y2="92" />
+              <line class="text-line" x1="58" y1="114" x2="258" y2="114" />
+              <line class="text-line" x1="58" y1="136" x2="198" y2="136" />
+              <rect class="hover-target" x="310" y="48" width="44" height="44" fill="none" stroke="none" style="cursor:pointer" />
+              <g class="label-group">
+                <line class="label-line" x1="332" y1="94" x2="332" y2="106" />
+                <rect class="label-bg" x="285.5" y="106" width="93" height="20" />
+                <text class="label-text" x="332" y="120" text-anchor="middle">Copy button</text>
+              </g>
+              <rect class="interactive" x="310" y="48" width="44" height="44" rx="6" />
+              <path class="interactive" d="M326 64h12v16h-12z M330 60h12v16" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <figcaption>Block with copy — button copies the snippet</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;div class="code-block"&gt;
+  &lt;pre&gt;&lt;code&gt;npm install component-vocab&lt;/code&gt;&lt;/pre&gt;
+  &lt;button type="button"&gt;Copy code&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </details>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use <code>&lt;code&gt;</code> for short literals in prose. For a multi-line snippet, wrap it in <code>&lt;pre&gt;&lt;code&gt;</code> so indentation and line breaks stay intact.</li>
+        <li>Don't use <code>&lt;pre&gt;</code> alone for code; put the code in <code>&lt;code&gt;</code> inside it (HTML living standard).</li>
+        <li>If you offer a copy control, name the button for what it copies ("Copy code"), and confirm success without relying on color alone.</li>
+        <li>Escape angle brackets in the displayed source so the browser doesn't treat them as markup.</li>
+        <li>Syntax highlighting is presentation. Keep the underlying text selectable and copyable.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a>, <a href="slot.html">Slot</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 5 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Carbon</td><td>Code snippet</td><td>Known alternative name</td></tr>
+          <tr><td>Atlassian</td><td>Code</td><td>Same name</td></tr>
+          <tr><td>Chakra UI</td><td>Code</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Code</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Code Block</td><td>Known alternative name</td></tr>
+        </tbody>
+      </table>
+      <p>Verified Nov 2026 against each live index. Carbon ships Code snippet (inline, single-line, multi-line). Chakra also lists Code Block separately; treated here as the block variant. shadcn/ui lists Code Block. Polaris web components no longer ship InlineCode (use native code). Apple HIG has no code display component.</p>
+    </section>
+
+    <nav class="component-nav">
+      <a href="quote.html">&larr; Quote</a>
+      <a href="kbd.html">Kbd &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>component-vocab &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

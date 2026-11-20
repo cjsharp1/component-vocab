@@ -1,7 +1,7 @@
 {
   "slug": "slider",
   "name": "Slider",
-  "order": 71,
+  "order": 73,
   "status": "stable",
   "group": "forms",
   "description": "A control for setting a value, or a range between two values, by moving a thumb along a track. Use it when the relative position matters more than the exact number, such as volume or a price range.",

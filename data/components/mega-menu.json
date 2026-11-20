@@ -1,7 +1,7 @@
 {
   "slug": "mega-menu",
   "name": "Mega menu",
-  "order": 43,
+  "order": 45,
   "status": "stable",
   "group": "wayfinding",
   "description": "A large panel of grouped links that opens from a top-level item in the site Navigation, for sections with too many pages for a short list. It is built from disclosure buttons and lists of links, not from an ARIA <code>menu</code>.",

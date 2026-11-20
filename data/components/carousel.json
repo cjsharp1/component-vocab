@@ -1,7 +1,7 @@
 {
   "slug": "carousel",
   "name": "Carousel",
-  "order": 77,
+  "order": 79,
   "status": "stable",
   "group": "collections",
   "description": "A paginated slideshow cycling through cards, images, or content panels. Shows one or a few items at a time with navigation.",

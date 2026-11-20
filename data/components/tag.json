@@ -1,7 +1,7 @@
 {
   "slug": "tag",
   "name": "Tag",
-  "order": 55,
+  "order": 57,
   "status": "stable",
   "group": "feedback-status",
   "description": "A short label that puts an item in a category, such as a topic on an article. If it can be selected or removed, use a Chip; for a status or a count, use a Badge.",

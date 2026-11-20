@@ -8,8 +8,8 @@ Open `index.html` in a browser. Pages work from `file://` and from any static ho
 
 ## What's in it
 
-- **84 components** in groups A to J. Groups A to I follow the research consensus list (`docs/research/component-vocabulary-and-page-structure.md` §4). Group J holds page patterns (Feature, Testimonial, Stats, Logo cloud, Call to action, Pricing table): standard industry terms that no surveyed UI framework ships.
-- **All 84 are stable**, with wireframes, configuration options and usage guidance. The site still supports `"status": "draft"` for new entries: a draft carries a visible Draft badge and no wireframe.
+- **86 components** in groups A to J. Groups A to I follow the research consensus list (`docs/research/component-vocabulary-and-page-structure.md` §4), plus Code and Kbd from the scope candidates. Group J holds page patterns (Feature, Testimonial, Stats, Logo cloud, Call to action, Pricing table): standard industry terms that no surveyed UI framework ships.
+- **All 86 are stable**, with wireframes, configuration options and usage guidance. The site still supports `"status": "draft"` for new entries: a draft carries a visible Draft badge and no wireframe.
 - A **comparison table** across MUI, Bootstrap, Ant Design, Carbon, Polaris, Atlassian, Chakra UI, Radix Themes, shadcn/ui, Fluent UI, GOV.UK and Apple HIG, from `docs/research/framework-alignment.csv`.
 - **Redirect pages** at every old slug that was renamed or folded (`data/redirects.json`), so old links keep working.
 

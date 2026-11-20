@@ -1,7 +1,7 @@
 {
   "slug": "toggletip",
   "name": "Toggletip",
-  "order": 51,
+  "order": 53,
   "status": "stable",
   "group": "disclosure-overlays",
   "description": "A small info button that shows a short explanation when pressed and hides it again on a second press, Escape or a click elsewhere. Use it instead of a Tooltip when the button exists only to reveal the explanation, or where hover isn't available.",

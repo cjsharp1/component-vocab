@@ -1,0 +1,138 @@
+{
+  "slug": "code",
+  "name": "Code",
+  "order": 22,
+  "status": "stable",
+  "group": "content-display",
+  "description": "A fragment of code or a literal value, marked up as <code>&lt;code&gt;</code>. Inline code sits in a sentence; the block variant wraps it in <code>&lt;pre&gt;</code> so whitespace is preserved. An optional copy control helps people reuse longer snippets.",
+  "summary": "Inline or block code, with optional copy",
+  "htmlElement": "<code>&lt;code&gt;</code>, or <code>&lt;pre&gt;&lt;code&gt;</code> for a block",
+  "nativeHtml": "`<code>`, `<pre>`",
+  "aria": "",
+  "researchNote": "Block form is a variant (R6), not a separate Code block entry. Carbon's Code snippet covers inline, single-line and multi-line.",
+  "elements": [
+    {
+      "name": "Code text",
+      "required": "Yes",
+      "description": "The literal string or snippet"
+    },
+    {
+      "name": "Language label",
+      "required": "No",
+      "description": "Optional label such as \"JavaScript\" on a block"
+    },
+    {
+      "name": "Copy button",
+      "required": "No",
+      "description": "Copies the snippet; needs a clear name such as \"Copy code\""
+    }
+  ],
+  "configOptions": [
+    {
+      "config": "Form",
+      "options": "Inline, Block",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Copy",
+      "options": "None, Copy button",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Language label",
+      "options": "None, Shown",
+      "affectsLayout": "Yes",
+      "highlighted": true
+    },
+    {
+      "config": "Wrap",
+      "options": "Wrap, Scroll horizontally",
+      "affectsLayout": "Yes",
+      "highlighted": false
+    }
+  ],
+  "variants": [
+    {
+      "caption": "Inline — short literal in a sentence",
+      "wireframe": "wireframes/code/variation-1.svg",
+      "sameMarkup": true
+    },
+    {
+      "caption": "Block — multi-line snippet in pre",
+      "wireframe": "wireframes/code/variation-2.svg",
+      "htmlOutline": "<pre><code>npm install component-vocab\nnpm run build</code></pre>"
+    },
+    {
+      "caption": "Block with copy — button copies the snippet",
+      "wireframe": "wireframes/code/variation-3.svg",
+      "htmlOutline": "<div class=\"code-block\">\n  <pre><code>npm install component-vocab</code></pre>\n  <button type=\"button\">Copy code</button>\n</div>"
+    }
+  ],
+  "collections": [],
+  "usageNotes": [
+    "Use <code>&lt;code&gt;</code> for short literals in prose. For a multi-line snippet, wrap it in <code>&lt;pre&gt;&lt;code&gt;</code> so indentation and line breaks stay intact.",
+    "Don't use <code>&lt;pre&gt;</code> alone for code; put the code in <code>&lt;code&gt;</code> inside it (HTML living standard).",
+    "If you offer a copy control, name the button for what it copies (\"Copy code\"), and confirm success without relying on color alone.",
+    "Escape angle brackets in the displayed source so the browser doesn't treat them as markup.",
+    "Syntax highlighting is presentation. Keep the underlying text selectable and copyable."
+  ],
+  "wireframe": "wireframes/code/default.svg",
+  "thumbnail": "wireframes/code/thumbnail.svg",
+  "aliases": [
+    "Code block",
+    "Code snippet"
+  ],
+  "frameworkSource": "csv",
+  "frameworkNames": {
+    "MUI": {
+      "match": "none"
+    },
+    "Bootstrap": {
+      "match": "none"
+    },
+    "Ant Design": {
+      "match": "none"
+    },
+    "Carbon": {
+      "match": "alias",
+      "name": "Code snippet"
+    },
+    "Polaris": {
+      "match": "none"
+    },
+    "Atlassian": {
+      "match": "same",
+      "name": "Code"
+    },
+    "Chakra UI": {
+      "match": "same",
+      "name": "Code"
+    },
+    "Radix Themes": {
+      "match": "same",
+      "name": "Code"
+    },
+    "shadcn/ui": {
+      "match": "alias",
+      "name": "Code Block"
+    },
+    "Fluent UI": {
+      "match": "none"
+    },
+    "GOV.UK": {
+      "match": "none"
+    },
+    "Apple HIG": {
+      "match": "none"
+    }
+  },
+  "frameworkNotes": "Verified Nov 2026 against each live index. Carbon ships Code snippet (inline, single-line, multi-line). Chakra also lists Code Block separately; treated here as the block variant. shadcn/ui lists Code Block. Polaris web components no longer ship InlineCode (use native code). Apple HIG has no code display component.",
+  "parents": [
+    "section",
+    "slot"
+  ],
+  "children": [],
+  "htmlOutline": "<p>Run <code>npm install</code> to get started.</p>"
+}

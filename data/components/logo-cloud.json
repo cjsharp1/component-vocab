@@ -1,7 +1,7 @@
 {
   "slug": "logo-cloud",
   "name": "Logo cloud",
-  "order": 82,
+  "order": 84,
   "status": "stable",
   "group": "page-patterns",
   "description": "A collection of partner, client, or technology logos arranged in a row or grid. Communicates trust and social proof through recognizable brand marks.",
@@ -58,14 +58,14 @@
       "sameMarkup": true
     },
     {
-      "caption": "Spacious \u2014 fewer, larger",
+      "caption": "Spacious — fewer, larger",
       "wireframe": "wireframes/logo-cloud/variation-4.svg",
       "sameMarkup": true
     },
     {
       "caption": "Scrolling (formerly Marquee)",
       "wireframe": "wireframes/logo-cloud/from-marquee.svg",
-      "htmlOutline": "<section aria-labelledby=\"lc-title\">\n  <h2 id=\"lc-title\">Trusted by</h2>\n  <button aria-pressed=\"false\">Pause</button>\n  <ul class=\"logo-cloud\">\n    <li><img src=\"acme.svg\" alt=\"Acme\"></li>\n    <li><img src=\"globex.svg\" alt=\"Globex\"></li>\n  </ul>\n  <!-- duplicate set for a seamless loop, hidden from assistive tech -->\n  <ul class=\"logo-cloud\" aria-hidden=\"true\">\n    <li><img src=\"acme.svg\" alt=\"\"></li>\n    \u2026\n  </ul>\n</section>"
+      "htmlOutline": "<section aria-labelledby=\"lc-title\">\n  <h2 id=\"lc-title\">Trusted by</h2>\n  <button aria-pressed=\"false\">Pause</button>\n  <ul class=\"logo-cloud\">\n    <li><img src=\"acme.svg\" alt=\"Acme\"></li>\n    <li><img src=\"globex.svg\" alt=\"Globex\"></li>\n  </ul>\n  <!-- duplicate set for a seamless loop, hidden from assistive tech -->\n  <ul class=\"logo-cloud\" aria-hidden=\"true\">\n    <li><img src=\"acme.svg\" alt=\"\"></li>\n    …\n  </ul>\n</section>"
     }
   ],
   "collections": [],

@@ -1,7 +1,7 @@
 {
   "slug": "button-group",
   "name": "Button group",
-  "order": 32,
+  "order": 34,
   "status": "stable",
   "group": "actions",
   "description": "A set of related buttons or links shown together, such as a primary and a secondary call to action. It groups them visually and, when useful, with <code>role=\"group\"</code>, but adds no keyboard behavior of its own.",

@@ -1,7 +1,7 @@
 {
   "slug": "text-input",
   "name": "Text input",
-  "order": 65,
+  "order": 67,
   "status": "stable",
   "group": "forms",
   "description": "A single-line field for short free text, such as a name, email address or city. For answers that may run to several lines, use a Textarea.",

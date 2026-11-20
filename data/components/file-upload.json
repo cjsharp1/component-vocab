@@ -1,7 +1,7 @@
 {
   "slug": "file-upload",
   "name": "File upload",
-  "order": 75,
+  "order": 77,
   "status": "stable",
   "group": "forms",
   "description": "A control for choosing one or more files from the device to send with a form, built on <code>&lt;input type=\"file\"&gt;</code>. It can add a drop zone for dragged files and a list of the files chosen.",

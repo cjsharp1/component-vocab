@@ -1,7 +1,7 @@
 {
   "slug": "switch",
   "name": "Switch",
-  "order": 35,
+  "order": 37,
   "status": "stable",
   "group": "actions",
   "description": "An on/off control for a setting that takes effect as soon as it is flipped, such as email notifications. If the choice is only applied when a form is submitted, use a Checkbox.",

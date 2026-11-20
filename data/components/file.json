@@ -1,7 +1,7 @@
 {
   "slug": "file",
   "name": "File",
-  "order": 27,
+  "order": 29,
   "status": "stable",
   "group": "content-display",
   "description": "A link to a document people can download, such as a PDF or spreadsheet, shown with its file type and size so they know what they will get. To let people send you a file, use File upload instead.",

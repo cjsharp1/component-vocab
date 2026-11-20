@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kbd — component-vocab</title>
+  <link rel="stylesheet" href="../css/pico.classless.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><strong><a href="../index.html">component-vocab</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html#components">All Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="breadcrumb">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#content-display">Content display</a></li>
+        <li>Kbd</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Kbd</h1>
+      <p>A key or shortcut shown as the user would press it, marked up as <code>&lt;kbd&gt;</code>. Use one element per key; put separators between keys in a combination so the order stays clear when read aloud.</p>
+
+      <dl>
+        <dt>Also known as</dt>
+        <dd>Keyboard key. In design systems: Kbd (Chakra UI, Radix Themes, shadcn/ui)</dd>
+        <dt>Semantic element</dt>
+        <dd><code>&lt;kbd&gt;</code></dd>
+        <dt>Native HTML</dt>
+        <dd><code>&lt;kbd&gt;</code></dd>
+        <dt>Research note</dt>
+        <dd>Documents a shortcut; it does not register one. Nested &lt;kbd&gt; marks each key in a combination.</dd>
+        <dt>Category</dt>
+        <dd>C. Content display</dd>
+      </dl>
+    </section>
+
+    <section id="html-outline">
+      <h2>HTML Outline</h2>
+      <p>A high-level skeleton showing the semantic elements and ARIA this component uses. Illustrative, not production markup.</p>
+      <pre class="html-outline"><code>&lt;p&gt;Press &lt;kbd&gt;Esc&lt;/kbd&gt; to close.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Key label</td><td>Yes</td><td>The key name or glyph, such as Esc, Enter or ⌘</td></tr>
+          <tr><td>Combination</td><td>No</td><td>Several keys with a text separator such as "+"</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Default Layout</h2>
+      <div class="wireframe-container">
+        <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
+          <line class="text-line" x1="160" y1="130" x2="260" y2="130" />
+          <rect class="hover-target" x="280" y="110" width="52" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="306" y1="108" x2="306" y2="96" />
+            <rect class="label-bg" x="266.5" y="76" width="79" height="20" />
+            <text class="label-text" x="306" y="90" text-anchor="middle">Key label</text>
+          </g>
+          <rect class="region" x="280" y="110" width="52" height="40" rx="6" />
+          <text x="306" y="136" font-size="16" text-anchor="middle">⌘</text>
+          <text x="348" y="136" font-size="16" text-anchor="middle">+</text>
+          <rect class="hover-target" x="368" y="110" width="52" height="40" fill="none" stroke="none" style="cursor:pointer" />
+          <g class="label-group">
+            <line class="label-line" x1="394" y1="152" x2="394" y2="164" />
+            <rect class="label-bg" x="347.5" y="164" width="93" height="20" />
+            <text class="label-text" x="394" y="178" text-anchor="middle">Combination</text>
+          </g>
+          <rect class="region" x="368" y="110" width="52" height="40" rx="6" />
+          <text x="394" y="136" font-size="16" text-anchor="middle" font-weight="bold">K</text>
+          <line class="text-line" x1="440" y1="130" x2="580" y2="130" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configuration Options</h2>
+      <p>Universal options (background, spacing, width, alignment, theme) apply to every component. See <a href="../index.html#universal-configuration">Universal configuration</a>.</p>
+      <h3>Component-Specific</h3>
+      <table>
+        <thead>
+          <tr><th>Config</th><th>Options</th><th>Affects Layout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Form</td><td>Single key, Combination</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Size</td><td>Small, Medium</td><td class="affects-layout">Yes</td></tr>
+          <tr><td>Glyphs</td><td>Letter names (Ctrl), Platform symbols (⌘)</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Layout Variations</h2>
+      <div class="variation-grid">
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="70" y1="95" x2="160" y2="95" />
+              <rect class="region" x="175" y="76" width="70" height="40" rx="6" />
+              <text x="210" y="102" font-size="14" text-anchor="middle">Esc</text>
+              <line class="text-line" x1="260" y1="95" x2="350" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Single key — Esc</figcaption>
+          <p class="variant-outline">Same HTML as the <a href="#html-outline">default outline</a>; only the styling changes.</p>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="40" y1="95" x2="110" y2="95" />
+              <rect class="region" x="120" y="76" width="60" height="40" rx="6" />
+              <text x="150" y="102" font-size="13" text-anchor="middle">Ctrl</text>
+              <text x="195" y="102" font-size="14" text-anchor="middle">+</text>
+              <rect class="region" x="210" y="76" width="44" height="40" rx="6" />
+              <text x="232" y="102" font-size="14" text-anchor="middle" font-weight="bold">K</text>
+              <line class="text-line" x1="270" y1="95" x2="360" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Combination — nested kbd per key</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;p&gt;Press &lt;kbd&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;K&lt;/kbd&gt;&lt;/kbd&gt; to open search.&lt;/p&gt;</code></pre>
+          </details>
+        </figure>
+
+        <figure>
+          <div class="wireframe-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <line class="text-line" x1="30" y1="95" x2="90" y2="95" />
+              <rect class="region" x="100" y="76" width="44" height="40" rx="6" />
+              <text x="122" y="102" font-size="14" text-anchor="middle" font-weight="bold">G</text>
+              <text x="170" y="102" font-size="12" text-anchor="middle">then</text>
+              <rect class="region" x="205" y="76" width="44" height="40" rx="6" />
+              <text x="227" y="102" font-size="14" text-anchor="middle" font-weight="bold">I</text>
+              <line class="text-line" x1="265" y1="95" x2="365" y2="95" />
+            </svg>
+          </div>
+          <figcaption>Sequence — then another key</figcaption>
+          <details class="variant-outline">
+            <summary>HTML outline</summary>
+            <pre class="html-outline"><code>&lt;p&gt;Press &lt;kbd&gt;G&lt;/kbd&gt; then &lt;kbd&gt;I&lt;/kbd&gt; to go to the inbox.&lt;/p&gt;</code></pre>
+          </details>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Use <code>&lt;kbd&gt;</code> only to show keys or shortcuts people should press. Don't use it for product names or generic badges.</li>
+        <li>For a combination, nest a <code>&lt;kbd&gt;</code> per key (or use adjacent keys with a text "+") so screen readers hear each key, not one run-on word.</li>
+        <li>Always say what the shortcut does in nearby text. The styled key alone is not enough for people who can't see the visual treatment.</li>
+        <li>Kbd documents a shortcut; the page still needs a real keyboard handler if the shortcut should work.</li>
+        <li>Prefer plain key names (Ctrl, Shift) when the audience may not know platform glyphs, or match the user's platform when you can detect it.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Structure</h2>
+      <dl>
+        <dt>Allowed parents</dt>
+        <dd><a href="section.html">Section</a>, <a href="slot.html">Slot</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Design System Names</h2>
+      <p>From <code>docs/research/framework-alignment.csv</code>: 3 of 12 systems ship it.</p>
+      <table>
+        <thead>
+          <tr><th>System</th><th>Name</th><th>Match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chakra UI</td><td>Kbd</td><td>Same name</td></tr>
+          <tr><td>Radix Themes</td><td>Kbd</td><td>Same name</td></tr>
+          <tr><td>shadcn/ui</td><td>Kbd</td><td>Same name</td></tr>
+        </tbody>
+      </table>
+      <p>Verified Nov 2026 against each live index. Chakra UI, Radix Themes and shadcn/ui ship Kbd. Polaris React had Keyboard key; current Polaris web components point apps at native kbd instead. Apple HIG Keyboards covers physical keyboards and system shortcuts, not a key-label control.</p>
+    </section>
+
+    <nav class="component-nav">
+      <a href="code.html">&larr; Code</a>
+      <a href="list.html">List &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>component-vocab &mdash; A framework-agnostic reference for website components.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
   "slug": "tree-view",
   "name": "Tree view",
-  "order": 41,
+  "order": 43,
   "status": "stable",
   "group": "wayfinding",
   "description": "A hierarchical list whose parent items expand and collapse, such as folders in a file browser. Use it when people need to browse and select within a hierarchy; for site navigation, nested lists of links are simpler.",

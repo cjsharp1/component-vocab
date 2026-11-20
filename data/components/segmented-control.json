@@ -1,7 +1,7 @@
 {
   "slug": "segmented-control",
   "name": "Segmented control",
-  "order": 34,
+  "order": 36,
   "status": "stable",
   "group": "actions",
   "description": "A row of joined segments for choosing one option from a small set, such as List or Grid view. Build it from radio inputs in a <code>&lt;fieldset&gt;</code> so it behaves like a Radio group.",

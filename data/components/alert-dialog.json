@@ -1,7 +1,7 @@
 {
   "slug": "alert-dialog",
   "name": "Alert dialog",
-  "order": 47,
+  "order": 49,
   "status": "stable",
   "group": "disclosure-overlays",
   "description": "A Dialog that interrupts the user to confirm or acknowledge something important, such as deleting a file. It stays open until the user picks a response.",

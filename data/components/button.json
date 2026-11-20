@@ -1,7 +1,7 @@
 {
   "slug": "button",
   "name": "Button",
-  "order": 31,
+  "order": 33,
   "status": "stable",
   "group": "actions",
   "description": "A control that performs an action on the current page: submits a form, opens a dialog, saves or deletes. If the result is going somewhere else, use a Link instead.",
