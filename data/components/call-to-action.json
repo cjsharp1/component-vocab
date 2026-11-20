@@ -58,22 +58,22 @@
   ],
   "variants": [
     {
-      "caption": "Centered — default layout",
+      "caption": "Centered \u2014 default layout",
       "wireframe": "wireframes/call-to-action/variation-1.svg",
       "sameMarkup": true
     },
     {
-      "caption": "Left-aligned — content left",
+      "caption": "Left-aligned \u2014 content left",
       "wireframe": "wireframes/call-to-action/variation-2.svg",
       "sameMarkup": true
     },
     {
-      "caption": "Split — content left, image right",
+      "caption": "Split \u2014 content left, image right",
       "wireframe": "wireframes/call-to-action/variation-3.svg",
-      "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <div>\n    <h2 id=\"cta-title\">Ready to start?</h2>\n    <p>Short supporting line.</p>\n    <div class=\"button-group\">\n      <a href=\"/signup\">Sign up</a>\n    </div>\n  </div>\n  <img src=\"…\" alt=\"\">\n</section>"
+      "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <div>\n    <h2 id=\"cta-title\">Ready to start?</h2>\n    <p>Short supporting line.</p>\n    <div class=\"button-group\">\n      <a href=\"/signup\">Sign up</a>\n    </div>\n  </div>\n  <img src=\"\u2026\" alt=\"\">\n</section>"
     },
     {
-      "caption": "Background image — with overlay",
+      "caption": "Background image \u2014 with overlay",
       "wireframe": "wireframes/call-to-action/variation-4.svg",
       "sameMarkup": true
     }
@@ -132,12 +132,22 @@
   },
   "nativeHtml": "",
   "aria": "",
-  "researchNote": "",
+  "researchNote": "Often abbreviated CTA. Names a section with a primary action, not a lone Button.",
   "frameworkNotes": "",
   "parents": [
     "section",
     "slot"
   ],
   "children": [],
-  "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <h2 id=\"cta-title\">Ready to start?</h2>\n  <p>Short supporting line.</p>\n  <div class=\"button-group\">\n    <a href=\"/signup\">Sign up</a>\n  </div>\n</section>"
+  "htmlOutline": "<section class=\"call-to-action\" aria-labelledby=\"cta-title\">\n  <h2 id=\"cta-title\">Ready to start?</h2>\n  <p>Short supporting line.</p>\n  <div class=\"button-group\">\n    <a href=\"/signup\">Sign up</a>\n  </div>\n</section>",
+  "industrySources": [
+    {
+      "label": "Preline Call-to-Action Sections",
+      "url": "https://preline.co/blocks/marketing/call-to-action-sections/"
+    },
+    {
+      "label": "Flowbite CTA Sections",
+      "url": "https://flowbite.com/blocks/marketing/cta/"
+    }
+  ]
 }
